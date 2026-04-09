@@ -57,7 +57,7 @@
 				<tr><td>12th</td><td>d8</td><td>12 + CE modifier</td><td class="left">Ability Score Improvement</td></tr>
 				<tr><td>13th</td><td>d8</td><td>13 + CE modifier</td><td class="left">Advanced Shikigami</td></tr>
 				<tr><td>14th</td><td>d8</td><td>14 + CE modifier</td><td class="left"></td></tr>
-				<tr><td>15th</td><td>d8</td><td>15 + CE modifier</td><td class="left">Close Bond</td></tr>
+				<tr><td>15th</td><td>d8</td><td>15 + CE modifier</td><td class="left"></td></tr>
 				<tr><td>16th</td><td>d8</td><td>16 + CE modifier</td><td class="left">Ability Score Improvement</td></tr>
 				<tr><td>17th</td><td>d10</td><td>17 + CE modifier</td><td class="left">Swift Escape</td></tr>
 				<tr><td>18th</td><td>d10</td><td>18 + CE modifier</td><td class="left">Innate  Technique Feature</td></tr>
@@ -74,7 +74,6 @@
 			<div element="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_SHIKIGAMI_IMPROVEMENT" />
 			<div element="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_UNITED_FRONT" />
 			<div element="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_ADVANCED_SHIKIGAMI" />
-			<div element="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_CLOSE_BOND" />
 			<div element="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_SWIFT_ESCAPE" />
 			<div element="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_PERFECTED_BOND" />
 		</description>
@@ -104,7 +103,6 @@
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_SHIKIGAMI_IMPROVEMENT" level="7" />
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_UNITED_FRONT" level="10" />
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_ADVANCED_SHIKIGAMI" level="13" />
-			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_CLOSE_BOND" level="15" />
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_SWIFT_ESCAPE" level="17" />
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_PERFECTED_BOND" level="20" />
 		</rules>
@@ -304,7 +302,6 @@
 	<element name="Shikigami Improvement Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SHIKIGAMI_USER_SHIKIGAMI_IMPROVEMENT" />
 	<element name="United Front Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SHIKIGAMI_USER_UNITED_FRONT" />
 	<element name="Advanced Shikigami Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SHIKIGAMI_USER_ADVANCED_SHIKIGAMI" />
-	<element name=">Close Bond Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SHIKIGAMI_USER_CLOSE_BOND" />
 	<element name="Swift Escape Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SHIKIGAMI_USER_SWIFT_ESCAPE" />
 	<element name="Perfected Bond Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SHIKIGAMI_USER_PERFECTED_BOND" />
 </elements>
