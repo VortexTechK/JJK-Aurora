@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Companions</name>
-		<update version="5.1">
+		<update version="5.0">
       		<file name="companions.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/companions.xml"/>
     	</update>
   	</info>
@@ -43,6 +43,8 @@
       		<stat name="companion:proficiency" value="proficiency" bonus="base"/>
 			<stat name="companion:dexterity:save:proficiency" value="companion:proficiency" bonus="proficiency"/>
       		<stat name="companion:wisdom:save:proficiency" value="companion:proficiency" bonus="proficiency"/>
+			<stat name="companion:sucbmodifier" value="charisma:modifier" bonus="base" />
+			<stat name="companion:sucbmodifier" value="wisdom:modifier" bonus="base" />
 		</rules>
 	</element>
   	<element name="Innate Bond" type="Companion Trait" source="JJK" id="ID_JJK_COMPANION_TRAIT_SHIKIGAMI_COMPANION_INNATE_BOND">
@@ -50,12 +52,9 @@
 			<p>You can add your proficiency bonus to any ability check or saving throw the shikigami makes. Your shikigami uses your proficiency bonus for attacks and saves. At 5th level your shikigami has advantage on melee attack rolls against a creature if you are within 5 feet of the creature and are not incapacitated.</p>
 		</description>
 		<sheet>
-			<description level="1">You can add {{suibproficiency}} to any ability check or saving throw the shikigami makes. Your shikigami uses your proficiency bonus for attacks and saves.</description>
-      		<description level="5">You can add {{suibproficiency}} to any ability check or saving throw the shikigami makes. Your shikigami uses your proficiency bonus for attacks and saves. Your shikigami has advantage on melee attack rolls against a creature if you are within 5 feet of the creature and are not incapacitated.</description>
+			<description level="1">You can add {{proficiency}} to any ability check or saving throw the shikigami makes. Your shikigami uses your proficiency bonus for attacks and saves.</description>
+      		<description level="5">You can add {{proficiency}} to any ability check or saving throw the shikigami makes. Your shikigami uses your proficiency bonus for attacks and saves. Your shikigami has advantage on melee attack rolls against a creature if you are within 5 feet of the creature and are not incapacitated.</description>
 		</sheet>
-		<rules>
-			<stat name="companion:suibproficiency" value="proficiency"/>
-		</rules>
 	</element>
 	<element name="Close Bond" type="Companion Trait" source="JJK" id="ID_JJK_COMPANION_TRAIT_SHIKIGAMI_COMPANION_CLOSE_BOND">
 		<description>
@@ -64,20 +63,13 @@
 		<sheet action="Reaction">
 			<description level="15">When your shikigami companion hits with an attack, you can spend up to {{companion:sucbmodifier}} CE to use Cursed Strike through your companion.</description>
 		</sheet>
-		<rules>
-			<stat name="companion:sucbmodifier" value="charisma:modifier" bonus="cursed energy" />
-			<stat name="companion:sucbmodifier" value="wisdom:modifier" bonus="cursed energy" />
-		</rules>
 	</element>
 	<element name="Strike" type="Companion Action" source="JJK" id="ID_JJK_COMPANION_ACTION_SHIKIGAMI_COMPANION_STRIKE">
 		<description>
 			<p>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) + your proficiency bludgeoning, piercing, or slashing damage.</p>
 		</description>
 		<sheet>
-			<description>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) + {{companion:sustrikeproficiency}} bludgeoning, piercing, or slashing damage.</description>
+			<description>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) + {{proficiency}} bludgeoning, piercing, or slashing damage.</description>
 		</sheet>
-		<rules>
-			<stat name="companion:sustrikeproficiency" value="proficiency"/>
-		</rules>
 	</element>
 </elements>
