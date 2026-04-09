@@ -4,8 +4,8 @@
 		<name>Shikigami User</name>
 		<description>The Shikigami User class from JJK.</description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
-		<update version="5.192">
-			<file name="class-shikigamiuser.xml" url="https://raw.githubusercontent.com/liukennan321-cmd/JJK-Aurora/refs/heads/main/classes/class-shikigamiuser.xml" />
+		<update version="5.0">
+			<file name="class-shikigamiuser.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/classes/class-shikigamiuser.xml" />
 		</update>
 	</info>
 
@@ -161,16 +161,51 @@
 			<p class="indent">The shikigami is friendly to you and your companions, and it obeys your commands. Use its game statistics in the accompanying Shikigami Companion stat blocks, which uses your proficiency bonus (PB) in several places.</p>		
 			<p class="indent">In combat, the shikigami shares your initiative and takes its turn immediately after yours. It can move and use its reaction on its own, but only takes the Dodge action unless you take a bonus action on your turn to command it to take another action. That action can be one in its statblock or some other action. If you are incapacitated, the shikigami can take any action of its choice, not just Dodge.</p>		
 			<p class="indent">The shikigami remains until reduced to 0 hit points, you summon the shikigami again, or you die. Anything the shikigami was wearing or carrying is left behind when it vanishes.</p>		
+			<div class="reference">
+				<div element="ID_JJK_INFORMATION_SHIKIGAMI_COMPANION"/>
+			</div>
 		</description>
-		<sheet usage="Action, 1/Long Rest or 3 CE">
+		<sheet action="Action "usage="1/Long Rest or 3 CE">
 			<description>You can summon a shikigami that is bound to you. It appears in an unoccupied space of your choice within 30 feet of you.
 			The shikigami is friendly to you and your companions, and it obeys your commands.
 			In combat, the shikigami shares your initiative and takes its turn immediately after yours. It can move and use its reaction on its own, but only takes the Dodge action unless you take a bonus action on your turn to command it to take another action. That action can be one in its statblock or some other action. If you are incapacitated, the shikigami can take any action of its choice, not just Dodge.
 			The shikigami remains until reduced to 0 hit points, you summon the shikigami again, or you die. Anything the shikigami was wearing or carrying is left behind when it vanishes.</description>
 		</sheet>
 		<rules>
-			
+			<select type="Companion" name="Shikigami Companion" supports="Shikigami Companion" default="ID_JJK_COMPANION_SHIKIGAMI_COMPANION"/>
 		</rules>
+	</element>
+	<element name="Shikigami Companion" type="Information" source="JJK" id="ID_JJK_INFORMATION_SHIKIGAMI_COMPANION">
+		<description>
+			<p style="margin-bottom:-5px"><em>Small shikigami, unaligned</em></p>
+			<h4 style="margin-top:5px" />
+			<ul class="unstyled">
+				<li><strong>Armor Class</strong> 12 + your proficiency</li>
+				<li><strong>Hit Points</strong> 5 + five times your Shikigami User level</li>
+				<li><strong>Speed</strong> 40 ft., fly 10 ft.</li>
+			</ul>
+			<table style="text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>16 (+3)</td><td>12 (+1)</td><td>15 (+2)</td><td>8 (-1)</td><td>12 (+1)</td><td>8 (-1)</td></tr>
+			</table>
+			<ul class="unstyled">
+				<li><strong>Saving Throws</strong> Dex +3, Wis +3</li>
+				<li><strong>Condition Immunities</strong> charmed</li>
+				<li><strong>Senses</strong> passive Perception 11</li>
+				<li><strong>Languages</strong> understands Common</li>
+				<li style="margin-bottom:-1em"><strong>Challenge</strong> 1</li>
+				<li style="text-align:right; margin-top:-1em"><strong>Proficiency Bonus (PB)</strong> equals your bonus</li>
+			</ul>
+			<h4 style="margin-top:5px; margin-bottom:10px" />
+			<ul class="unstyled">
+				<li><strong><em>Innate Bond.</em></strong> You can add your proficiency bonus to any ability check or saving throw the shikigami makes. Your shikigami uses your proficiency bonus for attacks and saves. At 5th level your shikigami has advantage on melee attack rolls against a creature if you are within 5 feet of the creature and are not incapacitated.</li>
+				<li><strong><em>Close Bond.</em></strong> At 15th level, when your shikigami companion hits with an attack, you can spend cursed energy up to your CE modifier as a reaction to use Cursed Strike through your companion.</li>
+			</ul>
+			<h4 style="margin-top:10px">Actions</h4>
+			<ul class="unstyled">
+				<li><em><strong>Strike.</strong> Melee Weapon Attack:</em> +5 to hit, reach 5 ft., one target. <em>Hit:</em> 6 (1d6 + 3) + your proficiency bludgeoning, piercing, or slashing damage.</li>
+			</ul>
+		</description>
 	</element>
 	<element name="Martial Arts" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_MARTIAL_ARTS">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SHIKIGAMI_USER_MARTIAL_ARTS</requirements>
@@ -278,7 +313,7 @@
 		<description>
 			<p>At 17th level, your character is rescued at the last moment by your shikigami. When you take damage, you can use your reaction to give yourself resistance to that damage. You are moved by your shikigami and you are moved to an unoccupied space that you can see within your shikigami’s movement speed, where you reappear with the shikigami. You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
 		</description>
-		<sheet usage = "Reaction, {{se:pr}}/Long Rest">
+		<sheet action="Reaction" usage="{{se:pr}}/Long Rest">
 			<description>You gain resistance to damage. You are moved by your shikigami up to your shikigami’s movement speed to an unoccupied space that you can see where you reappear with the shikigami.</description>
 		</sheet>
 		<rules>
