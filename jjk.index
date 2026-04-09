@@ -4,12 +4,12 @@
 		<name>JJK</name>
 		<description>JJK Homebrew.</description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
-		<update version="5.0">
+		<update version="5.1">
 			<file name="jjk.index" url="https://raw.githubusercontent.com/liukennan321-cmd/JJK-Aurora/refs/heads/main/jjk.index" />
 		</update>
 	</info>
 	<files>	
 		<!-- classes -->
-		<file name="class-shikigami-user.xml" url="https://raw.githubusercontent.com/liukennan321-cmd/JJK-Aurora/refs/heads/main/classes/class-shikigami-user.xml" />
+		<file name="class-shikigamiuser.xml" url="https://raw.githubusercontent.com/liukennan321-cmd/JJK-Aurora/refs/heads/main/classes/class-shikigamiuser.xml" />
 	</files>
 </index>
