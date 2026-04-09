@@ -10,6 +10,7 @@
 	</info>
 	<files>	
 		<file name="source.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/source.xml" />
+		<file name="feats.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/feats.xml" />
 
 		<!-- classes -->
 		<file name="class-shikigamiuser.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/classes/class-shikigamiuser.xml" />
