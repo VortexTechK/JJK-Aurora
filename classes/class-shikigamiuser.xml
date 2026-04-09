@@ -4,7 +4,7 @@
 		<name>Shikigami User</name>
 		<description>The Shikigami User class from JJK.</description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
-		<update version="5.12">
+		<update version="5.13">
 			<file name="class-shikigamiuser.xml" url="https://raw.githubusercontent.com/liukennan321-cmd/JJK-Aurora/refs/heads/main/classes/class-shikigamiuser.xml" />
 		</update>
 	</info>
@@ -43,24 +43,24 @@
 				<thead>
 					<tr><td class="col-10">Level</td><td class="col-10">Dmg Dice</td><td class="col-10">Cursed Energy Points</td><td class="col-60 left">Features</td></tr>
 				</thead>
-				<tr><td>1st</td><td>d4</td><td>1 + CE modifier</td><td class="left">Cursed Energy, Innate  Technique, Shikigami Companion, Martial Arts</td></tr>
+				<tr><td>1st</td><td>d4</td><td>1 + CE modifier</td><td class="left">Cursed Energy, Innate Technique, Shikigami Companion, Martial Arts</td></tr>
 				<tr><td>2nd</td><td>d4</td><td>2 + CE modifier</td><td class="left">Shared Technique</td></tr>
 				<tr><td>3rd</td><td>d4</td><td>3 + CE modifier</td><td class="left">Innate Technique Feature</td></tr>
 				<tr><td>4th</td><td>d4</td><td>4 + CE modifier</td><td class="left">Ability Score Improvement</td></tr>
 				<tr><td>5th</td><td>d6</td><td>5 + CE modifier</td><td class="left">Coordinated Blow</td></tr>
-				<tr><td>6th</td><td>d6</td><td>6 + CE modifier</td><td class="left">Innate  Technique Feature</td></tr>
+				<tr><td>6th</td><td>d6</td><td>6 + CE modifier</td><td class="left">Innate Technique Feature</td></tr>
 				<tr><td>7th</td><td>d6</td><td>7 + CE modifier</td><td class="left">Shikigami Improvement</td></tr>
 				<tr><td>8th</td><td>d6</td><td>8 + CE modifier</td><td class="left">Ability Score Improvement</td></tr>
 				<tr><td>9th</td><td>d6</td><td>9 + CE modifier</td><td class="left"></td></tr>
 				<tr><td>10th</td><td>d6</td><td>10 + CE modifier</td><td class="left">United Front</td></tr>
-				<tr><td>11th</td><td>d8</td><td>11 + CE modifier</td><td class="left">Innate  Technique Feature</td></tr>
+				<tr><td>11th</td><td>d8</td><td>11 + CE modifier</td><td class="left">Innate Technique Feature</td></tr>
 				<tr><td>12th</td><td>d8</td><td>12 + CE modifier</td><td class="left">Ability Score Improvement</td></tr>
 				<tr><td>13th</td><td>d8</td><td>13 + CE modifier</td><td class="left">Advanced Shikigami</td></tr>
 				<tr><td>14th</td><td>d8</td><td>14 + CE modifier</td><td class="left"></td></tr>
 				<tr><td>15th</td><td>d8</td><td>15 + CE modifier</td><td class="left"></td></tr>
 				<tr><td>16th</td><td>d8</td><td>16 + CE modifier</td><td class="left">Ability Score Improvement</td></tr>
 				<tr><td>17th</td><td>d10</td><td>17 + CE modifier</td><td class="left">Swift Escape</td></tr>
-				<tr><td>18th</td><td>d10</td><td>18 + CE modifier</td><td class="left">Innate  Technique Feature</td></tr>
+				<tr><td>18th</td><td>d10</td><td>18 + CE modifier</td><td class="left">Innate Technique Feature</td></tr>
 				<tr><td>19th</td><td>d10</td><td>19 + CE modifier</td><td class="left">Ability Score Improvement</td></tr>
 				<tr><td>20th</td><td>d10</td><td>20 + CE modifier</td><td class="left">Perfected Bond</td></tr>
 			</table>	
@@ -108,7 +108,7 @@
 		</rules>
 		<multiclass id="ID_JJK_MULTICLASS_SHIKIGAMI_USER">
 			<prerequisite>Charisma 13</prerequisite>
-			<requirements>(([cha:13])</requirements>
+			<requirements>([cha:13])</requirements>
 			<setters>
 				<set name="multiclass proficiencies">Investigation, light armor, daggers, darts, slings, quarterstaffs, and handguns</set>
 			</setters>
@@ -133,9 +133,8 @@
 			<description>You have {{ce:points}}+{{ce:modifier}} Cursed Energy and your Cursed Energy DC is {{ce:dc}}+{{ce:modifier}}</description>
 		</sheet>
 		<rules>
-			<stat name="ce:points" value="level:shikigami user" bonus="martial arts" />
-			<stat name="ce:modifier" value="wisdom:modifier" bonus="martial arts"/>
-			<stat name="ce:modifier" value="charisma:modifier" bonus="martial arts"/>
+			<stat name="ce:points" value="level:shikigami user" />
+			<stat name="ce:modifier" value="max(wisdom:modifier, charisma:modifier)" />
 			<stat name="ce:dc" value="8" />
 			<stat name="ce:dc" value="proficiency" />
 		</rules>
@@ -293,7 +292,7 @@
 
 	<!--Feature Replacement Grants-->
 	<element name="Cursed Energy Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SHIKIGAMI_USER_CURSED_ENERGY" />
-	<element name="Innate  Technique Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SHIKIGAMI_USER_INNATE_TECHNIQUE" />
+	<element name="Innate Technique Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SHIKIGAMI_USER_INNATE_TECHNIQUE" />
 	<element name="Shikigami Companion Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SHIKIGAMI_USER_SHIKIGAMI_COMPANION" />
 	<element name="Martial Arts Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SHIKIGAMI_USER_MARTIAL_ARTS" />
 	<element name="Shared Technique Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SHIKIGAMI_USER_SHARED_TECHNIQUE" />
