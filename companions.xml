@@ -2,15 +2,12 @@
 <elements>
 	<info>
 		<name>Companions</name>
-		<description>Companion creatures from JJK.</description>
-		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
 		<update version="5.0">
-      <file name="companions.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/companions.xml"/>
-    </update>
-  </info>
-  <element name="Shikigami Companion" type="Companion" source="JJK" id="ID_JJK_COMPANION_SHIKIGAMI_COMPANION"> 
-    <supports>Shikigami Companion</supports>
-		<description />
+      		<file name="companions.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/companions.xml"/>
+    	</update>
+  	</info>
+  	<element name="Shikigami Companion" type="Companion" source="JJK" id="ID_JJK_COMPANION_SHIKIGAMI_COMPANION"> 
+    	<supports>Shikigami Companion</supports>
 		<setters>
 			<set name="strength">16</set>
 			<set name="dexterity">12</set>
