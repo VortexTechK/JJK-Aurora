@@ -220,7 +220,7 @@
 		</description>
 		<sheet>
 			<description>Your unarmed strike does 1d{{martial arts:dice}}+{{martial arts:damage}} damage. You can use Strength or Dexterity for these attacks.
-			When you use the Attack action with an unarmed strike or a martial arts weapon on your turn, you can make one unarmed strike as a bonus action. For example, if you take the Attack action and attack with a quarterstaff, you can also make an unarmed strike as a bonus action, assuming you haven’t already taken a bonus action this turn.</description>
+			When you use the Attack action with an unarmed strike or a martial arts weapon on your turn, you can make one unarmed strike or grapple as a bonus action.</description>
 		</sheet>
 		<rules>
 			<stat name="martial arts:attack" value="strength:modifier" bonus="martial arts" />
