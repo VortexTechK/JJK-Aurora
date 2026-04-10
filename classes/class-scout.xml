@@ -213,9 +213,11 @@
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SCOUT_SHARP_EYES</requirements>
 		<description>
 			<p>At 2nd level, you can make a bonus action Insight check against an opponent’s Deception check. On a success, you gain an advantage on all rolls against that opponent for that turn.</p>
+			<p class="indent">Beginning at 13th level, you can now as a part of Sharp Eyes tell your opponent's weaknesses(Weak Points, Vulnerabilities) and main attacks (Damage Type and highest damage action).</p>
 		</description>
 		<sheet action="Bonus Action">
-			<description>Make a Insight check against an opponent’s Deception check. On a success, you gain an advantage on all rolls against that opponent for that turn.</description>
+			<description level="2">Make a Insight check against an opponent’s Deception check. On a success, you gain an advantage on all rolls against that opponent for that turn.</description>
+			<description level="13">Make a Insight check against an opponent’s Deception check. On a success, you gain an advantage on all rolls against that opponent for that turn and learn their weaknesses(Weak Points, Vulnerabilities) and main attacks (Damage Type and highest damage action).</description>
 		</sheet>
 	</element>
 	<element name="Ability Score Improvement" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SCOUT_ABILITYSCOREIMPROVEMENT_SCOUT">
@@ -309,47 +311,44 @@
 			<p class="indent">When you reach 15th level, you can move up to twice your speed.</p>
 		</description>
 		<sheet action="Reaction">
-			<description level="10">If an opponent moves within 5ft of you, you can move up to {speed} as a reaction.</description>
+			<description level="10">If an opponent moves within 5ft of you, you can move up to {speed} ft.</description>
+			<description level="15">If an opponent moves within 5ft of you, you can move up to {sc:tr:speed:calculation} ft.</description>
 		</sheet>
 		<rules>
-			<stat name="j:bb:die" value="1" level="9" bonus="bb"/>
-			<stat name="j:bb:die" value="2" level="13" bonus="bb"/>
-			<stat name="j:bb:die" value="3" level="17" bonus="bb"/>
+			<stat name="sc:tr:speed" value="speed" />
+			<stat name="sc:tr:speed:calculation" value="sc:tr:speed:double" />
 		</rules>
 	</element>
-	<element name="Tactical Retreat" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SCOUT_SIXTH_SENSE">
+	<element name="Sixth Sense" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SCOUT_SIXTH_SENSE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SCOUT_SIXTH_SENSE</requirements>
 		<description>
-			<p>Starting at 10th level, your focus can keep you fighting despite grievous wounds. If you drop to 0 hit points while you're focusing and don't die outright, you can make a DC 10 Constitution saving throw. If you succeed, you drop to 1 hit point instead.</p>
-			<p class="indent">Each time you use this feature after the first, the DC increases by 5. When you finish a short or long rest, the DC resets to 10.</p>
+			<p>Beginning at 14th level, you gain advantage on Dexterity saving throws and blindsight out to 30 feet.</p>
 		</description>
 		<sheet>
-			<description>If you drop to 0 hit points while you're focusing and don't die outright, you can make a DC 10 Constitution saving throw. If you succeed, you drop to 1 hit point instead. Each time you use this feature after the first, the DC increases by 5. When you finish a short or long rest, the DC resets to 10.</description>
+			<description>You gain advantage on Dexterity saving throws.</description>
 		</sheet>
+		<rules>
+			<grant type="Vision" id="ID_VISION_BLINDSIGHT" />
+			<stat name="blindsight:range" value="30" bonus="base" />
+		</rules>
 	</element>
-	<element name="Endless Focus" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SCOUT_SWIFT_DODGE">
+	<element name="Swift Dodge" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SCOUT_SWIFT_DODGE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SCOUT_SWIFT_DODGE</requirements>
 		<description>
-			<p>Beginning at 15th level, your focus is so fierce that it only ends if you fall unconscious or if you choose to end it.</p>
+			<p>Starting at 17th level, when an attacker that you can see hits you with an attack, you can use your reaction to ignore the attack's damage against you. You can use this feature a number of times equal to half your proficiency bonus (rounded up) per long rest.</p>
 		</description>
-		<sheet>
-			<description>Your focus only ends if you fall unconscious or if you choose to end it.</description>
+		<sheet action="Reaction" usage="{{proficiency:half:up}}/Long Rest">
+			<description>When an attacker that you can see hits you with an attack, you can ignore the attack's damage against you.</description>
 		</sheet>
 	</element>
 	<element name="Unfathomable Speed" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SCOUT_UNFATHOMABLE_SPEED">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SCOUT_UNFATHOMABLE_SPEED</requirements>
 		<description>
-			<p>At 20th level, you are aware of your role in society and will do your best to fulfill it. Your Strength and Constitution scores increase by 4. Your maximum for those scores is now 24.</p>
+			<p>Beginning at 20th level, your speed is faster than anyone can track. Your movement becomes instant and cannot provoke opportunity attacks.</p>
 		</description>
 		<sheet>
-			<description>Your Strength and Constitution increase by 4. Your maximum for those scores is now 24</description>
+			<description>Your movement becomes instant and cannot provoke opportunity attacks.</description>
 		</sheet>
-		<rules>
-			<stat name="strength:max" value="4" />
-			<stat name="constitution:max" value="4" />
-			<stat name="strength" value="4" />
-			<stat name="constitution" value="4" />
-		</rules>
 	</element>
 
 	<!--Feature Replacement Grants-->
