@@ -331,6 +331,6 @@
 	<element name="Honed Instinct Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_HONED_INSTINCT" />
 	<element name="Brutal Blows Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_BRUTAL_BLOWS" />
 	<element name="Lock In Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_LOCK_IN" />
-	<element name="Endless Focus Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_LOCK_IN" />
+	<element name="Endless Focus Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_ENDLESS_FOCUS" />
 	<element name="Unstoppable Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_UNSTOPPABLE" />
 </elements>
