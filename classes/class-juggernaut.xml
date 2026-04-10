@@ -251,7 +251,7 @@
 			<p>Starting at 5th level, as part of your bonus action while entering a focus, you can move up to half your movement speed towards an enemy.</p>
 		</description>
 		<sheet>
-			<description>As part of your bonus action while entering a focus, you can move up to {{j:p:speed}} ft. towards an enemy.</description>
+			<description>As part of your bonus action while entering a focus, you can move up to {{speed}}/2 ft. towards an enemy.</description>
 		</sheet>
 		<rules>
 			<stat name="j:p:speed" value="speed/2" />
