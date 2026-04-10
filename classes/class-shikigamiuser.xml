@@ -130,18 +130,18 @@
 			<p class="indent"> Your cursed energy DC is 8 + user cursed energy ability modifier + proficiency bonus.</p>
 		</description>
 		<sheet>
-			<description>You have {{ce:points}} Cursed Energy and your Cursed Energy DC is {{ce:dc}}. Your curse stat is {{cu:stat}}</description>
+			<description>You have {{su:ce:points}} Cursed Energy and your Cursed Energy DC is {{su:ce:dc}}. Your curse stat is {{su:cu:stat}}</description>
 		</sheet>
 		<rules>
-			<stat name="ce:points" value="level:shikigami user" />
-			<stat name="ce:modifier" value="charisma:modifier" bonus="cursed energy" />
-			<stat name="ce:modifier" value="wisdom:modifier" bonus="cursed energy" />
-			<stat name="ce:points" value="ce:modifier" />
-			<stat name="ce:dc" value="8" />
-			<stat name="ce:dc" value="proficiency" />
-			<stat name="ce:dc" value="ce:modifier" />
-			<stat name="cu:stat" value="charisma:score" bonus="cursed energy"/>			
-			<stat name="cu:stat" value="wisdom:score" bonus="cursed energy" />
+			<stat name="su:ce:points" value="level:shikigami user" />
+			<stat name="su:ce:modifier" value="charisma:modifier" bonus="cursed energy" />
+			<stat name="su:ce:modifier" value="wisdom:modifier" bonus="cursed energy" />
+			<stat name="su:ce:points" value="su:ce:modifier" />
+			<stat name="su:ce:dc" value="8" />
+			<stat name="su:ce:dc" value="proficiency" />
+			<stat name="su:ce:dc" value="su:ce:modifier" />
+			<stat name="su:cu:stat" value="charisma:score" bonus="cursed energy"/>			
+			<stat name="su:cu:stat" value="wisdom:score" bonus="cursed energy" />
 		</rules>
 	</element>
 	<element name="Innate Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_INNATE_TECHNIQUE">
