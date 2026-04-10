@@ -40,6 +40,7 @@
       		<stat name="companion:hp:max" value="level:shikigami user"/>
 			<stat name="companion:speed" value="40" bonus="base" />
 			<stat name="companion:speed:fly" value="10" bonus="base" />
+			<stat name="companion:speed:hover" value="companion:speed" level="7" bonus="base" />
       		<stat name="companion:proficiency" value="proficiency" bonus="base"/>
 			<stat name="companion:dexterity:save:proficiency" value="companion:proficiency" bonus="proficiency"/>
       		<stat name="companion:wisdom:save:proficiency" value="companion:proficiency" bonus="proficiency"/>
