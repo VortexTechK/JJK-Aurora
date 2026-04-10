@@ -260,22 +260,56 @@
 			<p>Beginning at 7th level, you can nimbly dodge out of the way of certain area effects, such as a red dragon's fiery breath or an Ice Storm technique. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail. At 15th level, you can choose a second saving throw and gain the same effects from it.</p>
 		</description>
 		<sheet>
-			<description level="7">When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail. At 15th level, you can choose a second saving throw and gain the same effects from it.</description>
-			<description level="15">When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.<description>		
+			<description level="7">When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</description>
+			<description level="15">When you are subjected to an effect that allows you to make a Dexterity or the chosen stat saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.<description>		
 		</sheet>
 		<rules>
-			<select type="Class Feature" name="Evasion Saving Throw" supports="Innate Technique" />
-			
+			<select type="Class Feature" name="Evasion Saving Throw" supports="Evasion Saving Throw" />
 		</rules>
 	</element>
-	<element name="Brutal Blows" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SCOUT_TACTICAL_RETREAT">
+	<element name="Strength" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SCOUT_EVASION_SAVING_THROW_S">
+		<compendium display="false" />
+		<supports>Evasion Saving Throw</supports>
+		<description>
+		</description>
+		<sheet display="false" />
+	</element>
+	<element name="Constitution" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SCOUT_EVASION_SAVING_THROW_CO">
+		<compendium display="false" />
+		<supports>Evasion Saving Throw</supports>
+		<description>
+		</description>
+		<sheet display="false" />
+	</element>
+	<element name="Intelligence" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SCOUT_EVASION_SAVING_THROW_I">
+		<compendium display="false" />
+		<supports>Evasion Saving Throw</supports>
+		<description>
+		</description>
+		<sheet display="false" />
+	</element>
+	<element name="Wisdom" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SCOUT_EVASION_SAVING_THROW_W">
+		<compendium display="false" />
+		<supports>Evasion Saving Throw</supports>
+		<description>
+		</description>
+		<sheet display="false" />
+	</element>
+	<element name="Charisma" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SCOUT_EVASION_SAVING_THROW_CH">
+		<compendium display="false" />
+		<supports>Evasion Saving Throw</supports>
+		<description>
+		</description>
+		<sheet display="false" />
+	</element>
+	<element name="Tactical Retreat" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SCOUT_TACTICAL_RETREAT">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SCOUT_TACTICAL_RETREAT</requirements>
 		<description>
-			<p>Beginning at 9th level, you can roll one additional weapon damage die when determining the extra damage for a critical hit with a melee attack.</p>
-			<p class="indent">This increases to two additional dice at 13th level and three additional dice at 17th level.</p>
+			<p>At 10th level, if an opponent moves within 5ft of you, you can move up to your movement speed as a reaction.</p>
+			<p class="indent">When you reach 15th level, you can move up to twice your speed.</p>
 		</description>
-		<sheet>
-			<description>You can roll {{j:bb:die}} additional weapon damage die when determining the extra damage for a critical hit with a melee attack.</description>
+		<sheet action="Reaction">
+			<description level="10">If an opponent moves within 5ft of you, you can move up to {speed} as a reaction.</description>
 		</sheet>
 		<rules>
 			<stat name="j:bb:die" value="1" level="9" bonus="bb"/>
