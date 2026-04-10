@@ -169,55 +169,53 @@
 			</ul>
 		</description>
 		<sheet>
-			<description>Your unarmed strike or SCOUT weapon can do 1d{{combat prowess:dice}} damage instead of its normal damage.
-			When you use the Attack action with an unarmed strike or a combat prowess weapon on your turn, you can make one unarmed strike or grapple as a bonus action.</description>
+			<description>Your unarmed strike does 1d{{quick strikes:dice}}+{{quick strikes:damage}} damage. You can use Strength or Dexterity for these attacks.
+			When you use the Attack action with an unarmed strike or a quick strikes weapon on your turn, you can make one unarmed strike as a bonus action.</description>
 		</sheet>
 		<rules>
-			<stat name="combat prowess:dice" value="6" bonus="combat prowess" />
-			<stat name="combat prowess:dice" value="8" bonus="combat prowess" level="5" />
-			<stat name="combat prowess:dice" value="10" bonus="combat prowess" level="11" />
-			<stat name="combat prowess:dice" value="12" bonus="combat prowess" level="17" />
+			<stat name="quick strikes:damage" value="strength:modifier" bonus="quick strikes" />
+			<stat name="quick strikes:damage" value="dexterity:modifier" bonus="quick strikes" />
+			<stat name="quick strikes:dice" value="4" bonus="quick strikes" />
+			<stat name="quick strikes:dice" value="6" bonus="quick strikes" level="5" />
+			<stat name="quick strikes:dice" value="8" bonus="quick strikes" level="11" />
+			<stat name="quick strikes:dice" value="10" bonus="quick strikes" level="17" />
 		</rules>
 	</element>
 	<element name="Unparalleled Movement" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SCOUT_UNPARALLELED_MOVEMENT">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SCOUT_UNPARALLELED_MOVEMENT</requirements>
 		<description>
-			<p>Beginning at 1st level, while you are wearing no armor and not wielding a shield, your AC equals 10 + your Dexterity modifier + your Constitution modifier.</p>
+			<p>At 1st level, your speed increases by 10 feet. This bonus increases when you reach certain scout levels, as shown in the scout table</p>
+			<p class="indent">At 9th level, you gain the ability to move along vertical surfaces and across liquids on your turn without falling during the move.</p>
 		</description>
 		<sheet>
-			<description>While you are wearing no armor and not wielding a shield, your AC equals {{ac:unarmored defense SCOUT}}.</description>
+			<description level="1">Your speed increases by {{speed:unparalleledmovementscout}} feet.</description>
+			<description level="9">Your speed increases by {{speed:unparalleledmovementscout}} feet. You can move along vertical surfaces and across liquids on your turn without falling during the move.</description>
 		</sheet>
 		<rules>
-			<stat name="ac:unarmored defense SCOUT:base" value="10" />
-			<stat name="ac:unarmored defense SCOUT:dexterity" value="dexterity:modifier" />
-			<stat name="ac:unarmored defense SCOUT:constitution" value="constitution:modifier" />
-			<stat name="ac:unarmored defense SCOUT" value="ac:unarmored defense SCOUT:base" />
-			<stat name="ac:unarmored defense SCOUT" value="ac:unarmored defense SCOUT:dexterity" />
-			<stat name="ac:unarmored defense SCOUT" value="ac:unarmored defense SCOUT:constitution" />
-			<stat name="ac:calculation" value="ac:unarmored defense SCOUT" bonus="calculation" equipped="[armor:none],[shield:none]" alt="Unarmored Defense (SCOUT)" />
+			<stat name="speed:unparalleledmovementscout" value="10" level="1" bonus="unparalleledmovement"/>
+			<stat name="speed:unparalleledmovementscout" value="15" level="5" bonus="unparalleledmovement"/>
+			<stat name="speed:unparalleledmovementscout" value="20" level="9" bonus="unparalleledmovement"/>
+			<stat name="speed:unparalleledmovementscout" value="25" level="13" bonus="unparalleledmovement"/>
+			<stat name="speed:unparalleledmovementscout" value="30" level="17" bonus="unparalleledmovement"/>
+			<stat name="speed:unparalleledmovementscout" value="35" level="20" bonus="unparalleledmovement"/>
 		</rules>
 	</element>
 	<element name="Swift Movements" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SCOUT_SWIFT_MOVEMENTS">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SCOUT_SWIFT_MOVEMENTS</requirements>
 		<description>
-			<p>At 2nd level, in battle, you fight with an unstoppable focus. On your turn, you can enter a focus as a bonus action. While focused, you gain the following benefits if you aren't wearing heavy armor:</p>
-			<ul>
-				<li>You have advantage on Strength checks and Strength saving throws.</li>
-				<li>You have resistance to bludgeoning, piercing, and slashing damage.</li>
-			</ul>
-			<p>Your focus lasts for 1 minute. It ends early if you are knocked unconscious. You can also end your focus on your turn as a bonus action. Once you have focused a number of times equal to your proficiency modifier, you must finish a long rest before you can focus again.</p>
+			<p>Starting at 2nd level, your quick thinking and agility allow you to move and act quickly. You can take the Dash, Disengage, or Hide action as a bonus action</p>
 		</description>
-		<sheet action="Bonus Action" usage="{{Proficiency}}/Long Rest">
-			<description>If you aren't wearing heavy armor, you have advantage on Strength checks and Strength saving throws and you have resistance to bludgeoning, piercing, and slashing damage. Your focus lasts for 1 minute. It ends early if you are knocked unconscious. You can also end your focus on your turn as a bonus action.</description>
+		<sheet action="Bonus Action">
+			<description>Take the Dash, Disengage, or Hide action</description>
 		</sheet>
 	</element>
 	<element name="Sharp Eyes" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SCOUT_SHARP_EYES">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SCOUT_SHARP_EYES</requirements>
 		<description>
-			<p>Starting at 2nd level, you can throw aside all concern for defense to attack with fierce desperation. When you make your first attack on your turn, you can decide to attack recklessly. Doing so gives you advantage on melee weapon attack rolls using Strength during this turn, but attack rolls against you have advantage until your next turn.</p>
+			<p>At 2nd level, you can make a bonus action Insight check against an opponent’s Deception check. On a success, you gain an advantage on all rolls against that opponent for that turn.</p>
 		</description>
-		<sheet>
-			<description>When you make your first attack on your turn, you can decide to attack recklessly. Doing so gives you advantage on melee weapon attack rolls using Strength during this turn, but attack rolls against you have advantage until your next turn.</description>
+		<sheet action="Bonus Action">
+			<description>Make a Insight check against an opponent’s Deception check. On a success, you gain an advantage on all rolls against that opponent for that turn.</description>
 		</sheet>
 	</element>
 	<element name="Ability Score Improvement" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SCOUT_ABILITYSCOREIMPROVEMENT_SCOUT">
@@ -228,11 +226,11 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Class Feature" name="Improvement Option (SCOUT 4)" supports="Improvement Option,SCOUT,4" level="4" />
-			<select type="Class Feature" name="Improvement Option (SCOUT 8)" supports="Improvement Option,SCOUT,8" level="8" />
-			<select type="Class Feature" name="Improvement Option (SCOUT 12)" supports="Improvement Option,SCOUT,12" level="12" />
-			<select type="Class Feature" name="Improvement Option (SCOUT 16)" supports="Improvement Option,SCOUT,16" level="16" />
-			<select type="Class Feature" name="Improvement Option (SCOUT 19)" supports="Improvement Option,SCOUT,19" level="19" />
+			<select type="Class Feature" name="Improvement Option (Scout 4)" supports="Improvement Option,Scout,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Scout 8)" supports="Improvement Option,Scout,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Scout 12)" supports="Improvement Option,Scout,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Scout 16)" supports="Improvement Option,Scout,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Scout 19)" supports="Improvement Option,Scout,19" level="19" />
 		</rules>
 	</element>
 	<element name="Extra Attack" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SCOUT_EXTRA_ATTACK">
@@ -250,25 +248,25 @@
 	<element name="Eagle Eyes" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SCOUT_EAGLE_EYES">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SCOUT_EAGLE_EYES</requirements>
 		<description>
-			<p>Starting at 5th level, as part of your bonus action while entering a focus, you can move up to half your movement speed towards an enemy.</p>
+			<p>Starting at 5th level, you can see even fine details up to a mile away. You also gain advantage on Perception checks using sight.</p>
 		</description>
 		<sheet>
-			<description>As part of your bonus action while entering a focus, you can move up to {{j:p:speed:calculation}} ft. towards an enemy.</description>
+			<description>You have advantage on Perception checks using sight.</description>
 		</sheet>
-		<rules>
-			<stat name="j:p:speed" value="speed/2" />
-			<stat name="j:p:speed:calculation" value="j:p:speed:half" />
-		</rules>
 	</element>
 	<element name="Evasion" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SCOUT_EVASION">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SCOUT_EVASION</requirements>
 		<description>
-			<p>By 7th level, your instincts are so honed that you have advantage on initiative rolls.</p>
-			<p class="indent">Additionally, if you are surprised at the beginning of combat and aren't incapacitated, you can act normally on your first turn, but only if you enter your focus before doing anything else on that turn.</p>
+			<p>Beginning at 7th level, you can nimbly dodge out of the way of certain area effects, such as a red dragon's fiery breath or an Ice Storm technique. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail. At 15th level, you can choose a second saving throw and gain the same effects from it.</p>
 		</description>
 		<sheet>
-			<description>You have advantage on initiative rolls. If you are surprised at the beginning of combat and aren't incapacitated, you can act normally on your first turn if you enter your focus before doing anything else on that turn.</description>
+			<description level="7">When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail. At 15th level, you can choose a second saving throw and gain the same effects from it.</description>
+			<description level="15">When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.<description>		
 		</sheet>
+		<rules>
+			<select type="Class Feature" name="Evasion Saving Throw" supports="Innate Technique" />
+			
+		</rules>
 	</element>
 	<element name="Brutal Blows" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SCOUT_TACTICAL_RETREAT">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SCOUT_TACTICAL_RETREAT</requirements>
