@@ -4,7 +4,7 @@
 		<name>Juggernaut</name>
 		<description>The Juggernaut class from JJK.</description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
-		<update version="5.1">
+		<update version="5.2">
 			<file name="class-juggernaut.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/classes/class-juggernaut.xml" />
 		</update>
 	</info>
@@ -253,9 +253,6 @@
 		<sheet>
 			<description>As part of your bonus action while entering a focus, you can move up to {{speed}}/2 ft. towards an enemy.</description>
 		</sheet>
-		<rules>
-			<stat name="j:p:speed" value="speed/2" />
-		</rules>
 	</element>
 	<element name="Honed Instinct" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_HONED_INSTINCT">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_HONED_INSTINCT</requirements>
