@@ -33,46 +33,106 @@
 			<set name="weight" modifier="2d4">110 lb.</set>
 		</setters>
 		<rules>
-			<grant type="Size" id="ID_SIZE_MEDIUM"/>
-			<stat name="innate speed" value="30" bonus="base"/>
+			<select type="Racial Trait" name="Cursed Vessel Size" supports="JJK Size" />
+			<select type="Racial Trait" name="Cursed Vessel Speed" supports="JJK Speed" />
+			<grant type="Racial Trait" id="ID_JJK_FEATURE_THIS_BODY_IS_MINE" />
 			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<select type="Language" name="Customized Language" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
-			<select type="Race Variant" name="JJK Human Variant" supports="JJK Human Variant" optional="true" />
+			<select type="Race Variant" name="JJK Cursed Vessel Variant" supports="JJK Cursed Vessel Variant" />
 		</rules>
 	</element>
 	<!-- ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI -->
-
-	<!-- Human Variants -->
-	<element name="Jujutsu Sorcerer" type="Race Variant" source="JJK" id="ID_RACE_VARIANT_JJK_JUJUTSU_SORCERER">
-		<supports>JJK Human Variant</supports>
-		<requirements>ID_INTERNAL_OPTION_ALLOW_FEATS</requirements>
+	<element name="This Body Is Mine" type="Racial Trait" source="JJK" id="ID_JJK_FEATURE_THIS_BODY_IS_MINE">
 		<description>
-			<p>You are part of a family of sorcerers or have been involved from a young age, you gain the following:</p>
-			<p>
-				<span class="feature">Ability Score Increase.</span>One ability score of your choice increases by 2 and another by 1.<br />
-				<span class="feature">Proficiencies.</span>You gain proficiency in martial weapons.<br />
-				<span class="feature">Trained Cursed Energy.</span>You gain a Cursed Energy feat.<br />
-			</p>
+			<p>You have advantage on saving throws against effects that would alter or change your form.</p>
 		</description>
-		<sheet alt="Human" display="false"/>
+		<sheet>
+			<description>You have advantage on saving throws against effects that would alter or change your form.</description>
+		</sheet>
+	</element>
+	<element name="25 ft." type="Racial Trait" source="JJK" id="ID_JJK_FEATURE_SPEED25">
+		<supports>JJK Speed</supports>
 		<rules>
-			<select type="Ability Score Improvement" name="Ability Score Increase +2 (Jujutsu Sorcerer)" supports="Custom Ability Score Increase 2" number="1" />
-			<select type="Ability Score Improvement" name="Ability Score Increase +1 (Jujutsu Sorcerer)" supports="Custom Ability Score Increase 1" number="1" />
-			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
-			<select type="Feat" name="Cursed Energy Feat (Jujutsu Sorcerer)" />
+			<stat name="innate speed" value="25" bonus="base"/>
 		</rules>
 	</element>
-	<element name="Superhuman" type="Race Variant" source="JJK" id="ID_RACE_VARIANT_JJK_SUPERHUMAN">
+	<element name="30 ft." type="Racial Trait" source="JJK" id="ID_JJK_FEATURE_SPEED30">
+		<supports>JJK Speed</supports>
+		<rules>
+			<stat name="innate speed" value="30" bonus="base"/>
+		</rules>
+	</element>
+	<element name="35 ft." type="Racial Trait" source="JJK" id="ID_JJK_FEATURE_SPEED35">
+		<supports>JJK Speed</supports>
+		<rules>
+			<stat name="innate speed" value="35" bonus="base"/>
+		</rules>
+	</element>
+	<element name="Small" type="Racial Trait" source="JJK" id="ID_JJK_FEATURE_SIZE_SMALL">
+		<supports>JJK Size</supports>
+		<rules>
+			<grant type="Size" id="ID_SIZE_SMALL"/>
+		</rules>
+	</element>
+	<element name="Medium" type="Racial Trait" source="JJK" id="ID_JJK_FEATURE_SIZE_MEDIUM">
+		<supports>JJK Size</supports>
+		<rules>
+			<grant type="Size" id="ID_SIZE_MEDIUM"/>
+		</rules>
+	</element>
+	<element name="Large" type="Racial Trait" source="JJK" id="ID_JJK_FEATURE_SIZE_LARGE">
+		<supports>JJK Size</supports>
+		<rules>
+			<grant type="Size" id="ID_SIZE_LARGE"/>
+		</rules>
+	</element>
+	<!-- Cursed Vessel Variants -->
+	<element name="Reincarnated" type="Race Variant" source="JJK" id="ID_RACE_VARIANT_JJK_REINCARNATED">
+		<supports>JJK Cursed Vessel Variant</supports>
+		<description>
+			<p>You are a sorcerer from a past era. Now you are in your second life through some deal or accident.</p>
+			<p>
+				<span class="feature">Ability Score Increase.</span>You have been brought back to your peak, you can choose one ability score to increase by 2 and another ability score to increase by 2.<br />
+				<span class="feature">Life Experience.</span>This isn't your first shot at life and last time you learned a few things. You will gain proficiency in two skills or one skill and one tool of your choice.<br />
+				<span class="feature">Cling to Life.</span>You have died once and refuse to let it happen again. Whenever you are reduced to 0 hit points, you can choose to instead remain at 1 hit point, once per long rest.<br />
+			</p>
+		</description>
+		<sheet alt="Cursed Vessel" display="false"/>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase +2 (Jujutsu Sorcerer)" supports="Custom Ability Score Increase 2" number="2" />
+			<select type="Racial Trait" name="Life Experience" supports="Life Experience" />
+			<grant type="Racial Trait" id="ID_JJK_FEATURE_CLING_TO_LIFE" />
+		</rules>
+	</element>
+	<element name="Cling to Life" type="Racial Trait" source="JJK" id="ID_JJK_FEATURE_CLING_TO_LIFE">
+		<description>
+			<p>You have died once and refuse to let it happen again. Whenever you are reduced to 0 hit points, you can choose to instead remain at 1 hit point, once per long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>Whenever you are reduced to 0 hit points, you can choose to instead remain at 1 hit point.</description>
+		</sheet>
+	</element>
+	<element name="2 Skills" type="Racial Trait" source="JJK" id="ID_JJK_FEATURE_CLING_TO_LIFE2S">
+		<supports>Life Experience</supports>
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency (Cursed Vessel)" supports="Skill" number="2" />
+		</rules>
+	</element>
+	<element name="1 Skill, 1 Tool" type="Racial Trait" source="JJK" id="ID_JJK_FEATURE_CLING_TO_LIFE1S1T">
+		<supports>Life Experience</supports>
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency (Cursed Vessel)" supports="Skill" number="1" />
+			<select type="Proficiency" name="Tool Proficiency (Cursed Vessel)" supports="Tool" number="1" />
+		</rules>
+	</element>
+	<element name="Death Painting" type="Race Variant" source="JJK" id="ID_RACE_VARIANT_JJK_DEATH_PAINTING">
 		<supports>JJK Human Variant</supports>
 		<description>
-			<p>Very rarely, some humans may be astonishingly stronger than most others in the world, sometimes vastly stronger than the average human. If your human character happens to fall under this category, you can choose to replace the standard Human Ability Score Increase with these traits instead:</p>
+			<p>A disastrous mixture of curse and man made by an evil scientist. Stuck as a fetus until fed to a host.</p>
 			<p>
-				<span class="feature">Ability Score Increase.</span>You increase either your Strength, Dexterity, or Constitution score by 2 and the others by 1.<br />
-				<span class="feature">Natural Athlete.</span>You have proficiency in the Athletics skill, if you already have proficiency, you instead gain Expertise.<br />
-				<span class="feature">Record Breaker.</span>Your jumping distance is doubled.<br />
-				<span class="feature">Uncanny Endurance.</span>You can focus on occasionally shrugging off injury. When you take damage, you can use your reaction to roll a d12. Add your Constitution modifier to the number rolled, and reduce the damage by that total. After you use this trait, you can’t use it again until you finish a short or long rest.<br />
-				<span class="feature">Powerful Build.</span>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.<br />
-				<span class="feature">Speed.</span>Your movement speed is 35 feet.<br />
+				<span class="feature">Ability Score Increase.</span>Your cursed object has overcome the body of your initial host, so instead of gaining the host's ability scores, you gain a +3 to your Cursed Energy score. This cannot go above 20.<br />
+				<span class="feature">Durable Body.</span>Once you incarnated into a vessel, due to your unnatural properties the body became more durable. Your maximum hit points increase by 2, and increase by 2 again every time you gain a level.<br />
+				<span class="feature">Poisonous Blood.</span>Your birth came from someone from the Kamo clan, and from experimentation, your blood became poisonous. As a reaction, when you take piercing or slashing damage, you can choose a creature within 5 feet of you to take poison damage equal to your proficiency bonus. If the creature has an injury or less than their maximum hit points, they must make a DC 10 Constitution save or be poisoned until the end of their next turn.<br />
 			</p>
 		</description>
 		<sheet alt="Human" display="false"/>
@@ -85,56 +145,30 @@
 			<grant type="Racial Trait" id="ID_JJK_FEATURE_UNCANNY_ENDURANCE" />
 			<grant type="Racial Trait" id="ID_JJK_FEATURE_RECORD_BREAKER" />
 			<grant type="Racial Trait" id="ID_JJK_FEATURE_POWERFUL_BUILD" />
-
-		</rules>
-	</element>
-	<!-- Superhuman Ability Score Bundles -->
-	<element name="Superhuman Strength Focus" type="Ability Score Improvement" source="JJK" id="ID_ASI_JJK_SUPERHUMAN_STR">
-		<supports>Superhuman ASI Choice</supports>
-		<rules>
-			<stat name="strength" value="2" />
-			<stat name="dexterity" value="1" />
-			<stat name="constitution" value="1" />
-		</rules>
-	</element>
-	<element name="Superhuman Dexterity Focus" type="Ability Score Improvement" source="JJK" id="ID_ASI_JJK_SUPERHUMAN_DEX">
-		<supports>Superhuman ASI Choice</supports>
-		<rules>
-			<stat name="strength" value="1" />
-			<stat name="dexterity" value="2" />
-			<stat name="constitution" value="1" />
-		</rules>
-	</element>
-	<element name="Superhuman Constitution Focus" type="Ability Score Improvement" source="JJK" id="ID_ASI_JJK_SUPERHUMAN_CON">
-		<supports>Superhuman ASI Choice</supports>
-		<rules>
-			<stat name="strength" value="1" />
-			<stat name="dexterity" value="1" />
-			<stat name="constitution" value="2" />
 		</rules>
 	</element>
 	<element name="Uncanny Endurance" type="Racial Trait" source="JJK" id="ID_JJK_FEATURE_UNCANNY_ENDURANCE">
-	<description>
-		<p>When you take damage, you can use your reaction to roll a d12 and add your Constitution modifier, reducing the damage by that total. Once you use this trait, you can’t use it again until you finish a short or long rest.</p>
-	</description>
-	<sheet action="Reaction" usage="1/Short Rest">
-		<description>When you take damage roll a d12 and add {{constitution:modifier}}, reducing the damage by that total</description>
-	</sheet>
+		<description>
+			<p>When you take damage, you can use your reaction to roll a d12 and add your Constitution modifier, reducing the damage by that total. Once you use this trait, you can’t use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet action="Reaction" usage="1/Short Rest">
+			<description>When you take damage roll a d12 and add {{constitution:modifier}}, reducing the damage by that total</description>
+		</sheet>
 	</element>
 	<element name="Record Breaker" type="Racial Trait" source="JJK" id="ID_JJK_FEATURE_RECORD_BREAKER">
-	<description>
-		<p>Your jumping distance is doubled.</p>
-	</description>
-	<sheet>
-		<description>Your jumping distance is doubled.</description>
-	</sheet>
+		<description>
+			<p>Your jumping distance is doubled.</p>
+		</description>
+		<sheet>
+			<description>Your jumping distance is doubled.</description>
+		</sheet>
 	</element>
 	<element name="Powerful Build" type="Racial Trait" source="JJK" id="ID_JJK_FEATURE_POWERFUL_BUILD">
-	<description>
-		<p>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
-	</description>
-	<sheet>
-		<description>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</description>
-	</sheet>
+		<description>
+			<p>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
+		</description>
+		<sheet>
+			<description>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</description>
+		</sheet>
 	</element>
 </elements>
