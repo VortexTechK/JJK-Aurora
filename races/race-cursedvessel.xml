@@ -4,7 +4,7 @@
 		<name>Cursed Vessel</name>
 		<description></description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0#heading=h.ctlbc6irsjfj">JJK</author>
-		<update version="5.1">
+		<update version="5.2">
 			<file name="race-cursedvessel.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/races/race-cursedvessel.xml" />
 		</update>
 	</info>
@@ -135,7 +135,7 @@
 				<span class="feature">Poisonous Blood.</span>Your birth came from someone from the Kamo clan, and from experimentation, your blood became poisonous. As a reaction, when you take piercing or slashing damage, you can choose a creature within 5 feet of you to take poison damage equal to your proficiency bonus. If the creature has an injury or less than their maximum hit points, they must make a DC 10 Constitution save or be poisoned until the end of their next turn.<br />
 			</p>
 		</description>
-		<sheet alt="Human" display="false"/>
+		<sheet alt="Cursed Vessel" display="false"/>
 		<rules>
 			<stat name="cu:stat" value="3" />
 			<stat name="durablebody:hp" value="level" />
