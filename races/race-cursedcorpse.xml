@@ -4,7 +4,7 @@
 		<name>Cursed Corpse</name>
 		<description></description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0#heading=h.ctlbc6irsjfj">JJK</author>
-		<update version="5.0">
+		<update version="5.1">
 			<file name="race-cursedcorpse.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/races/race-cursedcorpse.xml" />
 		</update>
 	</info>
@@ -115,6 +115,7 @@
 			<stat name="jjk:surprise:dc" value="8" />
 			<stat name="jjk:surprise:dc" value="proficiency" />
 			<stat name="jjk:surprise:dc" value="charisma:modifier" />
+		</rules>
 	</element>
 	<element name="Hard Shell" type="Race Variant" source="JJK" id="ID_RACE_VARIANT_JJK_HARD_SHELL">
 		<supports>JJK Cursed Corpse Variant</supports>
