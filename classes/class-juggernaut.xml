@@ -4,7 +4,7 @@
 		<name>Juggernaut</name>
 		<description>The Juggernaut class from JJK.</description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
-		<update version="5.2">
+		<update version="5.3">
 			<file name="class-juggernaut.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/classes/class-juggernaut.xml" />
 		</update>
 	</info>
@@ -133,18 +133,18 @@
 			<p class="indent"> Your cursed energy DC is 8 + user cursed energy ability modifier + proficiency bonus.</p>
 		</description>
 		<sheet>
-			<description>You have {{j:ce:points}} Cursed Energy and your Cursed Energy DC is {{j:ce:dc}}. Your curse stat is {{j:cu:stat}}</description>
+			<description>You have {{ce:points}} Cursed Energy and your Cursed Energy DC is {{ce:dc}}. Your curse stat is {{cu:stat}}</description>
 		</sheet>
 		<rules>
-			<stat name="j:ce:points" value="level:juggernaut" />
-			<stat name="j:ce:modifier" value="charisma:modifier" bonus="cursed energy" />
-			<stat name="j:ce:modifier" value="wisdom:modifier" bonus="cursed energy" />
-			<stat name="j:ce:points" value="j:ce:modifier" />
-			<stat name="j:ce:dc" value="8" />
-			<stat name="j:ce:dc" value="proficiency" />
-			<stat name="j:ce:dc" value="j:ce:modifier" />
-			<stat name="j:cu:stat" value="charisma:score" bonus="cursed energy"/>			
-			<stat name="j:cu:stat" value="wisdom:score" bonus="cursed energy" />
+			<stat name="ce:points" value="level:juggernaut" />
+			<stat name="ce:modifier" value="charisma:modifier" bonus="cursed energy" />
+			<stat name="ce:modifier" value="wisdom:modifier" bonus="cursed energy" />
+			<stat name="ce:points" value="ce:modifier" />
+			<stat name="ce:dc" value="8" />
+			<stat name="ce:dc" value="proficiency" />
+			<stat name="ce:dc" value="ce:modifier" />
+			<stat name="cu:stat" value="charisma:score" bonus="cursed energy"/>			
+			<stat name="cu:stat" value="wisdom:score" bonus="cursed energy" />
 		</rules>
 	</element>
 	<element name="Innate Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_INNATE_TECHNIQUE">
