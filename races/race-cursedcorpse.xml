@@ -104,7 +104,7 @@
 			<grant type="Racial Trait" id="ID_JJK_FEATURE_SURPRISE" />
 		</rules>
 	</element>
-	<element name="Intimidation" type="Racial Trait" source="JJK" id="ID_JJK_FEATURE_TAILORED_APPEARANCE_INTIMIDATION">
+	<!--<element name="Intimidation" type="Racial Trait" source="JJK" id="ID_JJK_FEATURE_TAILORED_APPEARANCE_INTIMIDATION">
 		<supports>Expertise (Cursed Corpse)</supports>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION"/>
@@ -124,7 +124,7 @@
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE"/>
 			<stat name="performance:proficiency" value="proficiency" bonus="double"/>
 		</rules>
-	</element>
+	</element>-->
 	<element name="Surprise" type="Racial Trait" source="JJK" id="ID_JJK_FEATURE_SURPRISE">
 		<description>
 			<p>You can make a Performance check to disguise yourself as what you resemble. Your sudden reveal may stun an enemy. Once per long rest when you reveal yourself, you can force a creature within 10 feet to make a Wisdom saving throw:(DC 10 + your proficiency bonus + your Charisma modifier) becoming stunned until the beginning of their turn on failure.</p>
