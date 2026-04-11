@@ -154,7 +154,7 @@
 		 	<p class="indent">Your curtain has a number of hit points equal to your Cursed Energy modifier times your level. At 7th level, your curtains have health equal to your cursed energy modifier times 25, and at 13th level, it is 50 times your cursed energy modifier.</p>
 		</description>
 		<sheet>
-			<description>You have {{latent:ce:points}} latent ce.</description>
+			<description level="1" action="Action">For 5 Cursed Energy, you cover the area around you within a 2165-foot radius with a black dome for 10 minutes. The curtain changes the sky into night, provoking cursed spirits out of hiding. For each 1 extra Cursed Energy you spend, you add +1 minute to the curtain's duration. Those without cursed energy, or magic cannot see anything inside the barrier, merely seeing as if nothing but the vegetation was there. Creatures who can see into the ethereal plane or have levels in a sorcerer class can see the black half-sphere. Your curtain has {{}} hit points equal to your Cursed Energy modifier times your level.</description>
 		</sheet>
 		<rules>
 			<stat name="latent:ce:points" value="level:strategist:half:up" />
