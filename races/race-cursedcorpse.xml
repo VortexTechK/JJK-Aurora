@@ -4,7 +4,7 @@
 		<name>Cursed Corpse</name>
 		<description></description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0#heading=h.ctlbc6irsjfj">JJK</author>
-		<update version="5.2">
+		<update version="5.3">
 			<file name="race-cursedcorpse.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/races/race-cursedcorpse.xml" />
 		</update>
 	</info>
@@ -40,7 +40,7 @@
       		<grant type="Racial Trait" id="ID_JJK_FEATURE_UNNATURAL" />
 			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<select type="Language" name="Customized Language" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
-			<select type="Race Variant" name="JJK Human Variant" supports="JJK Human Variant" optional="true" />
+			<select type="Race Variant" name="JJK Cursed Corpse Variant" supports="JJK Cursed Corpse Variant" />
 		</rules>
 	</element>
 	<!-- ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI -->
