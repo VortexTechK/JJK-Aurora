@@ -4,7 +4,7 @@
 		<name>Cursed Vessel</name>
 		<description></description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0#heading=h.ctlbc6irsjfj">JJK</author>
-		<update version="5.0">
+		<update version="5.1">
 			<file name="race-cursedvessel.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/races/race-cursedvessel.xml" />
 		</update>
 	</info>
@@ -126,7 +126,7 @@
 		</rules>
 	</element>
 	<element name="Death Painting" type="Race Variant" source="JJK" id="ID_RACE_VARIANT_JJK_DEATH_PAINTING">
-		<supports>JJK Human Variant</supports>
+		<supports>JJK Cursed Vessel Variant</supports>
 		<description>
 			<p>A disastrous mixture of curse and man made by an evil scientist. Stuck as a fetus until fed to a host.</p>
 			<p>
