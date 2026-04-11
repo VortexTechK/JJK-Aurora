@@ -18,29 +18,21 @@
 				<span class="feature">Alignment.</span>Cursed vessels are almost always chaotic people, not caring about what happens to others around them and wanting to cause destruction.<br />
 				<span class="feature">Size.</span>Your size depends on the race you have possessed.<br />
 				<span class="feature">Speed.</span>Your base walking speed depends on the race you have possessed.<br />
-        <span class="feature">This Body Is Mine.</span>You have advantage on saving throws against effects that would alter or change your form.<br />
+        		<span class="feature">This Body Is Mine.</span>You have advantage on saving throws against effects that would alter or change your form.<br />
 				<span class="feature">Languages.</span>You can speak, read, and write Common.<br />
 				<span class="feature">Subrace.</span>There are multiple forms of vessels, however they are all based on consuming cursed objects. There are the reincarnated, who were simply sorcerers who were consumed by creatures who were adapted for their incarnation. There are the death paintings, which take over the body of said vessel despite its host having a will. And then there are the incomplete and complete vessels. In case the cursed object's host still had a will, it would start as an incomplete vessel and then become a complete vessel after erasing the will of the old body owner.<br />
 			</p>
 		</description>
 		<sheet display="false" />
 		<setters>
-			<set name="names" type="male">Ander, Blath, Bran, Frath, Geth, Lander, Luth, Malcer, Stor, Taman, Urth</set>
-			<set name="names" type="female">Amafrey, Betha, Cefrey, Kethra, Mara, Olga, Silifrey, Westra</set>
-			<set name="names" type="surname">Brightwood, Helder, Hornraven, Lackman, Stormwind, Windrivver</set>
+			<set name="names" type="male">Yuji, Choso, Eso, Kechizu, Hajime, Ryu, Takako, Reggie, Hiromi, Fumihiko, Daido, Miyo</set>
+			<set name="names" type="female">Yorozu, Uro</set>
+			<set name="names" type="surname">Itadori, Kashimo, Ishigori, Uro, Star, Higuruma, Takaba, Katana, Rokujushi</set>
 			<set name="names-format">{{name}} {{surname}}</set>
-			<set name="height" modifier="2d10">4'8"</set>
+			<set name="height" modifier="2d10">5'8"</set>
 			<set name="weight" modifier="2d4">110 lb.</set>
 		</setters>
 		<rules>
-			<stat name="strength" value="1" requirements="!(ID_RACE_VARIANT_JJK_JUJUTSU_SORCERER||ID_RACE_VARIANT_JJK_SUPERHUMAN||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED)" />
-			<stat name="dexterity" value="1" requirements="!(ID_RACE_VARIANT_JJK_JUJUTSU_SORCERER||ID_RACE_VARIANT_JJK_SUPERHUMAN||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED)" />
-			<stat name="constitution" value="1" requirements="!(ID_RACE_VARIANT_JJK_JUJUTSU_SORCERER||ID_RACE_VARIANT_JJK_SUPERHUMAN||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED)" />
-			<stat name="intelligence" value="1" requirements="!(ID_RACE_VARIANT_JJK_JUJUTSU_SORCERER||ID_RACE_VARIANT_JJK_SUPERHUMAN||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED)" />
-			<stat name="wisdom" value="1" requirements="!(ID_RACE_VARIANT_JJK_JUJUTSU_SORCERER||ID_RACE_VARIANT_JJK_SUPERHUMAN||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED)" />
-			<stat name="charisma" value="1" requirements="!(ID_RACE_VARIANT_JJK_JUJUTSU_SORCERER||ID_RACE_VARIANT_JJK_SUPERHUMAN||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED)" />
-			<select type="Ability Score Improvement" name="Ability Score Increase +1 (Human)" supports="Custom Ability Score Increase 1" number="1" requirements="!(ID_RACE_VARIANT_JJK_JUJUTSU_SORCERER||ID_RACE_VARIANT_JJK_SUPERHUMAN||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED)"/>
-
 			<grant type="Size" id="ID_SIZE_MEDIUM"/>
 			<stat name="innate speed" value="30" bonus="base"/>
 			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
