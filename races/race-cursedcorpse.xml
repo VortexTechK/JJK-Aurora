@@ -4,7 +4,7 @@
 		<name>Cursed Corpse</name>
 		<description></description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0#heading=h.ctlbc6irsjfj">JJK</author>
-		<update version="5.391">
+		<update version="5.392">
 			<file name="race-cursedcorpse.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/races/race-cursedcorpse.xml" />
 		</update>
 	</info>
@@ -35,7 +35,7 @@
 		</setters>
 		<rules>
 			<select type="Ability Score Improvement" name="Ability Score Increase +4 (Cursed Corpse)" supports="Purpose Built Ability Score Increase" number="1" />
-			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<select type="Racial Trait" name="Size (Cursed Corpse)" supports="ID_INTERNAL_RACIAL_TRAIT_SMALL|ID_INTERNAL_RACIAL_TRAIT_MEDIUM|ID_INTERNAL_RACIAL_TRAIT_LARGE" />
 			<stat name="innate speed" value="35" bonus="base" />
       		<grant type="Racial Trait" id="ID_JJK_FEATURE_UNNATURAL" />
 			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
