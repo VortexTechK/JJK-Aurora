@@ -4,7 +4,7 @@
 		<name>Strategist</name>
 		<description>The Strategist class from JJK.</description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
-		<update version="5.0">
+		<update version="5.1">
 			<file name="class-strategist.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/classes/class-strategist.xml" />
 		</update>
 	</info>
@@ -171,7 +171,7 @@
 			<select type="Class Feature" name="Modification" supports="TC Modification" level="17"/>
 		</rules>
 	</element>
-  <!-- Metamagic Options -->
+  	<!-- Modification Options -->
 	<element name="Careful Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_STRATEGIST_MODIFICATION_CAREFUL_TECHNIQUE">
 		<supports>TC Modification</supports>
 		<description>
