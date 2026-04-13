@@ -4,7 +4,7 @@
 		<name>Cursed Spirit</name>
 		<description></description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0#heading=h.ctlbc6irsjfj">JJK</author>
-		<update version="5.2">
+		<update version="5.3">
 			<file name="race-cursedspirit.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/races/race-cursedspirit.xml" />
 		</update>
 	</info>
@@ -137,7 +137,7 @@
 			<p>As an action, you can force all creatures within 30 feet of you to make a Wisdom saving throw against your Cursed Energy save DC. On a failure, they are frightened of you for 1 minute. A creature can repeat the save at the end of their turn. Once you use this feature, you cannot use it again until you finish a long rest.</p>
 		</description>
 		<sheet action="Action" usage="1/Long Rest">
-			<description>You can force all creatures within 30 feet of you to make a Wisdom saving throw DC{{ce:dc}}. On a failure, they are frightened of you for 1 minute. A creature can repeat the save at the end of their turn.</description>
+			<description>You can force all creatures within 30 feet of you to make a Wisdom saving throw DC{{ce:dc:total}}. On a failure, they are frightened of you for 1 minute. A creature can repeat the save at the end of their turn.</description>
 		</sheet>
 	</element>
 	<element name="Fearmonger" type="Racial Trait" source="JJK" id="ID_JJK_FEATURE_FEARMONGER">
@@ -183,7 +183,7 @@
 			<p>As an action, you can force all creatures within 30 feet of you to make a Constitution saving throw against your Cursed Energy save DC. On a failure, they gain the poisoned condition for 1 minute. A creature can repeat this save at the end of their turn. Once you use this feature, you cannot use it again until you complete a long rest.</p>
 		</description>
 		<sheet action="Action" usage="1/Long Rest">
-			<description>You can force all creatures within 30 feet of you to make a Constitution saving throw DC{{ce:dc}}. On a failure, they gain the poisoned condition for 1 minute. A creature can repeat this save at the end of their turn.</description>
+			<description>You can force all creatures within 30 feet of you to make a Constitution saving throw DC{{ce:dc:total}}. On a failure, they gain the poisoned condition for 1 minute. A creature can repeat this save at the end of their turn.</description>
 		</sheet>
 	</element>
 	<element name="Cursed Womb" type="Race Variant" source="JJK" id="ID_RACE_VARIANT_JJK_CURSED_WOMB">
