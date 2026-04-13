@@ -244,16 +244,37 @@
 			<p class="indent">In addition, you gain proficiency in the Medicine skill. If you are already proficient, you gain expertise instead. If you already have expertise you gain advantage. Whenever you make a medicine check to stabilize someone and succeed, the creature regains 1 hit point.</p>
 		</description>
 		<sheet>
-			<description>You regain 4 cursed energy on a short rest.</description>
+			<description>Whenever you make a medicine check to stabilize someone and succeed, the creature regains 1 hit point.</description>
 		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_REVERSE_CURSE_TECHNIQUE" />
+			<grant type="Proficiency" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_MEDICINE" requirements="!ID_INTERNAL_PROFICIENCY_SKILL_EXPERTISE_MEDICINE" />
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_RCT_ADVANTAGE" requirements="ID_INTERNAL_PROFICIENCY_SKILL_EXPERTISE_MEDICINE"/>
+		</rules>
 	</element>
-	<element name="Signature Move" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_REVERSE_TECHNIQUE_UNDERSTANDING">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SUPPORT_SPECIALIST_REVERSE_TECHNIQUE_UNDERSTANDING</requirements>
+	<element name="Advantage" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_RCT_ADVANTAGE">
+		<compendium display="false" />
 		<description>
-			<p>At 20th level, you can choose a feature that uses cursed energy, that is not a domain expansion, maximum, or reverse curse technique, and makes it have no cursed energy cost. It counts as the minimum input of Cursed Energy necessary.</p>
+			<p>You have advantage on medicine checks.</p>
 		</description>
 		<sheet>
-			<description>You can choose a feature that uses cursed energy, that is not a domain expansion, maximum, or reverse curse technique, and makes it have no cursed energy cost. It counts as the minimum input of Cursed Energy necessary.</description>
+			<description>You have advantage on medicine checks.</description>
+		</sheet>
+	</element>
+	<element name="Reverse Technique Understanding" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_REVERSE_TECHNIQUE_UNDERSTANDING">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SUPPORT_SPECIALIST_REVERSE_TECHNIQUE_UNDERSTANDING</requirements>
+		<description>
+			<p>When you reach 10th level, you have reached new heights with this new type of energy, becoming a high-level sorcerer. You will gain the following benefits:</p>
+			<ul>
+                <li>You can cause a creature you touch to gain the benefits of reverse cursed technique instead of you.</li>
+                <li>You can use your reverse cursed technique once as a free action on your turn.</li>
+                <li>Your reverse cursed technique healing pool is multiplied by your Cursed Energy modifier again.</li>
+				<li>You now regain 30 HP per CE with RCT instead of 20.</li>
+            </ul>
+			<p>In addition, whenever you deal damage to a Monstrosity, Undead, or Cursed Spirit with an unarmed strike or natural weapon, you can spend cursed energy to remove hit points from your healing pool to add radiant damage.</p>
+		</description>
+		<sheet>
+			<description>You can cause a creature you touch to gain the benefits of reverse cursed technique instead of you. You can use your reverse cursed technique once as a free action on your turn. Whenever you deal damage to a Monstrosity, Undead, or Cursed Spirit with an unarmed strike or natural weapon, you can spend cursed energy to remove hit points from your healing pool to add radiant damage.</description>
 		</sheet>
 	</element>
 
