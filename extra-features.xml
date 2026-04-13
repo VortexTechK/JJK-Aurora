@@ -4,22 +4,42 @@
 		<name>Extra Features</name>
 		<description>The Optional Class Features from Tasha’s Cauldron of Everything</description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
-		<update version="5.2">
+		<update version="5.3">
 			<file name="extra-features.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/extra-features.xml" />
 		</update>
 	</info>
 	<!-- Multiclass Curse Energy -->
 	<element name="Multiclass Curse Energy" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_MCURSED_ENERGY">
 		<description>
-			<p>Starting at 1st level, you can harness your negative feelings into a usable source of energy, called cursed energy. These feelings can be harnessed into attacks or abilities. The number of cursed energy you possess is based on your highest level stat. You have a curse stat equal to the chosen stat.</p>
-      		<p class="indent">After almost dying, be it being reduced to 0 in one hit while at max hp, or failing two death saves and then rolling a nat 20. Those are moments where the GM can choose to bestow reverse cursed technique. Alternatively roll a d100, on a 90+ you get Reverse Cursed Technique. </p>
-			<p class="indent">You learn to use your cursed energy in a completely opposite way, channeling positive energy instead of negative. You have a pool of healing you can use with your reverse cursed energy that's equal to 5 x your level x your Cursed Energy modifier. As a bonus action for cursed energy up to your CE Modifier, you can remove healing from that pool to regain hit points. You can also remove healing from the pool as a reaction to receiving damage once per round. For every 1 cursed energy spent, you regain 10 hit points, removing an equal amount from the pool. If you are suffering from a physical condition or injury such as a concussion or something else, one of these effects can be healed for every 10 hit points recovered with the reverse cursed technique. Limbs can be regenerated for 20 hit points. You can use your Reverse Cursed Technique until your healing pool ends before getting burned out, during which you can't use RCT until your healing pool recovers. At the beginning of every two rounds, your healing pool regains 10 hit points. Your healing pool automatically refills at the end of a long rest. </p>
+			<p>Starting at 1st level, you can harness your negative feelings into a usable source of energy, called cursed energy. These feelings can be harnessed into attacks or abilities. The number of cursed energy you possess is based on your highest level class. You have a curse stat equal to the highest among charisma and wisdom.</p>
+      		<p class="indent">Your cursed energy DC is 8 + user cursed energy ability modifier + proficiency bonus. </p>
 		</description>
 		<sheet>
-			<description>You have a pool of healing you can use with your reverse cursed energy that's equal to 5 x {{level}} x {{ce:modifier}}. If you are suffering from a physical condition or injury such as a concussion or something else, one of these effects can be healed for every 10 hit points recovered with the reverse cursed technique. Limbs can be regenerated for 20 hit points. You can use your Reverse Cursed Technique until your healing pool ends before getting burned out, during which you can't use RCT until your healing pool recovers. At the beginning of every two rounds, your healing pool regains 10 hit points. Your healing pool automatically refills at the end of a long rest.</description>
+			<description>You have {{ce:points}} Cursed Energy and your Cursed Energy DC is {{ce:dc}}. Your curse stat is {{cu:stat}}</description>
 		</sheet>
 		<rules>
-      		<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_REVERSE_CURSE_TECHNIQUE_HEAL" />
+			<stat name="ce:modifier" value="charisma:modifier" bonus="cursed energy" />
+			<stat name="ce:modifier" value="wisdom:modifier" bonus="cursed energy" />
+			<stat name="ce:pointsj" value="level:juggernaut" />
+			<stat name="ce:pointssc" value="level:scout" />
+			<stat name="ce:pointssu" value="level:shikigami user" />
+			<stat name="ce:pointsst" value="level:strategist" />
+			<stat name="ce:pointsst" value="level:strategist" />
+			<stat name="ce:pointsss" value="level:support specialist" />
+			<stat name="ce:pointsss" value="proficiency" />
+			<stat name="ce:pointsw" value="level:warrior" />
+			<stat name="ce:points" value="ce:pointsj" bonus="cursed energy" />
+			<stat name="ce:points" value="ce:pointssc" bonus="cursed energy" />
+			<stat name="ce:points" value="ce:pointssu" bonus="cursed energy" />
+			<stat name="ce:points" value="ce:pointsst" bonus="cursed energy" />
+			<stat name="ce:points" value="ce:pointsss" bonus="cursed energy" />
+			<stat name="ce:points" value="ce:pointsw" bonus="cursed energy" />
+			<stat name="ce:points" value="ce:modifier" />
+			<stat name="ce:dc" value="8" />
+			<stat name="ce:dc" value="proficiency" />
+			<stat name="ce:dc" value="ce:modifier" />
+			<stat name="cu:stat" value="charisma:score" bonus="cursed energy"/>			
+			<stat name="cu:stat" value="wisdom:score" bonus="cursed energy" />
 		</rules>
 	</element>
 	<!-- Reverse Curse Technique -->
