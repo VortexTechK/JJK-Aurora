@@ -86,7 +86,7 @@
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_JJK_MULTICLASS_WARRIOR"/>
 			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_JJK_MULTICLASS_WARRIOR"/>
-      <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" requirements="!ID_JJK_MULTICLASS_WARRIOR"/>
+     		<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" requirements="!ID_JJK_MULTICLASS_WARRIOR"/>
 			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" requirements="!ID_JJK_MULTICLASS_WARRIOR"/>
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_JJK_MULTICLASS_WARRIOR" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" requirements="!ID_JJK_MULTICLASS_WARRIOR" />
@@ -193,18 +193,15 @@
 			<stat name="combat prowess:dice" value="12" bonus="combat prowess" level="17" />
 		</rules>
 	</element>
-	<element name="Focus" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_WARRIOR_UNDAUNTED">
+	<element name="Undaunted" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_WARRIOR_UNDAUNTED">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARRIOR_UNDAUNTED</requirements>
 		<description>
-			<p>At 2nd level, in battle, you fight with an unstoppable focus. On your turn, you can enter a focus as a bonus action. While focused, you gain the following benefits if you aren't wearing heavy armor:</p>
-			<ul>
-				<li>You have advantage on Strength checks and Strength saving throws.</li>
-				<li>You have resistance to bludgeoning, piercing, and slashing damage.</li>
-			</ul>
-			<p>Your focus lasts for 1 minute. It ends early if you are knocked unconscious. You can also end your focus on your turn as a bonus action. Once you have focused a number of times equal to your proficiency modifier, you must finish a long rest before you can focus again.</p>
+			<p>At 2nd level, even after being damaged you still stand and fight as if nothing happened. On your turn, you can use a bonus action to regain hit points equal to 1d10 + your warrior level. You gain a second use at 10th level.</p>
+			<p class="indent">Once you use this feature, you must finish a short or long rest before you can use it again.</p>
 		</description>
-		<sheet action="Bonus Action" usage="{{Proficiency}}/Long Rest">
-			<description>If you aren't wearing heavy armor, you have advantage on Strength checks and Strength saving throws and you have resistance to bludgeoning, piercing, and slashing damage. Your focus lasts for 1 minute. It ends early if you are knocked unconscious. You can also end your focus on your turn as a bonus action.</description>
+		<sheet action="Bonus Action" usage="1/Short Rest">
+			<description>You regain 1d10+{{level:warrior}} hp.</description>
+			<description level="10" action="Bonus Action" usage="2/Short Rest">You regain 1d10+{{level:warrior}} hp.</description>
 		</sheet>
 	</element>
 	<element name="Ability Score Improvement" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_WARRIOR_ABILITYSCOREIMPROVEMENT_WARRIOR">
@@ -226,56 +223,64 @@
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARRIOR_EXTRA_ATTACK</requirements>
 		<description>
 			<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+			<p class="indent">The number of attacks increases to three when you reach 11th level in this class, to four when you reach 17th level in this class, and to five when you reach 20th level.</p>
 		</description>
 		<sheet>
-			<description>You can attack twice, instead of once, whenever you take the Attack action on your turn.</description>
+			<description level="5">You can attack twice, instead of once, whenever you take the Attack action on your turn</description>
+			<description level="11">You can attack three times, instead of once, whenever you take the Attack action on your turn</description>		
+			<description level="17">You can attack four times, instead of once, whenever you take the Attack action on your turn</description>
+			<description level="20">You can attack five times, instead of once, whenever you take the Attack action on your turn</description>
 		</sheet>
 		<rules>
 			<stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
+			<stat name="extra attack:count" value="3" level="11" bonus="extra attack" />
+			<stat name="extra attack:count" value="4" level="17" bonus="extra attack" />
+			<stat name="extra attack:count" value="5" level="20" bonus="extra attack" />		
 		</rules>
 	</element>
-	<element name="Pursuer" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_WARRIOR_BATTLE_READINESS">
+	<element name="Battle Readiness" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_WARRIOR_BATTLE_READINESS">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARRIOR_BATTLE_READINESS</requirements>
 		<description>
-			<p>Starting at 5th level, as part of your bonus action while entering a focus, you can move up to half your movement speed towards an enemy.</p>
+			<p>Starting at 7th level, your awareness and preparation reached a new and constant state. This gives you advantage on initiative checks.</p>
 		</description>
 		<sheet>
-			<description>As part of your bonus action while entering a focus, you can move up to {{speed}}/2 ft. towards an enemy.</description>
+			<description>You have advantage on initiative checks.</description>
 		</sheet>
 	</element>
-	<element name="Honed Instinct" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_WARRIOR_UNSTOPPABLE">
+	<element name="Unstoppable" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_WARRIOR_UNSTOPPABLE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARRIOR_UNSTOPPABLE</requirements>
 		<description>
-			<p>By 7th level, your instincts are so honed that you have advantage on initiative rolls.</p>
-			<p class="indent">Additionally, if you are surprised at the beginning of combat and aren't incapacitated, you can act normally on your first turn, but only if you enter your focus before doing anything else on that turn.</p>
+			<p> Beginning at 9th level, you can reroll a saving throw that you fail. If you do so, you must use the new roll, and you can't use this feature again until you finish a long rest.</p>
+			<p class="indent">You can use this feature twice between long rests starting at 13th level.</p>
 		</description>
-		<sheet>
-			<description>You have advantage on initiative rolls. If you are surprised at the beginning of combat and aren't incapacitated, you can act normally on your first turn if you enter your focus before doing anything else on that turn.</description>
+		<sheet usage="1/Long Rest">
+			<description>You can reroll a saving throw that you fail. If you do so, you must use the new roll.</description>
+			<description level="13" usage="2/Long Rest">You can reroll a saving throw that you fail. If you do so, you must use the new roll.</description>
 		</sheet>
 	</element>
-	<element name="Brutal Blows" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_WARRIOR_STEEL_SPIRIT">
+	<element name="Steel Spirit" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_WARRIOR_STEEL_SPIRIT">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARRIOR_STEEL_SPIRIT</requirements>
 		<description>
-			<p>Beginning at 9th level, you can roll one additional weapon damage die when determining the extra damage for a critical hit with a melee attack.</p>
-			<p class="indent">This increases to two additional dice at 13th level and three additional dice at 17th level.</p>
+			<p>Once you reach 14th level, your mastery of Cursed Energy grants you proficiency in all saving throws.</p>
 		</description>
-		<sheet>
-			<description>You can roll {{j:bb:die}} additional weapon damage die when determining the extra damage for a critical hit with a melee attack.</description>
+		<sheet display="false">
 		</sheet>
 		<rules>
-			<stat name="j:bb:die" value="1" level="9" bonus="bb"/>
-			<stat name="j:bb:die" value="2" level="13" bonus="bb"/>
-			<stat name="j:bb:die" value="3" level="17" bonus="bb"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" />
 		</rules>
 	</element>
-	<element name="Lock In" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_WARRIOR_UNERRING_BLOWS">
+	<element name="Unerring Blows" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_WARRIOR_UNERRING_BLOWS">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARRIOR_UNERRING_BLOWS</requirements>
 		<description>
-			<p>Starting at 10th level, your focus can keep you fighting despite grievous wounds. If you drop to 0 hit points while you're focusing and don't die outright, you can make a DC 10 Constitution saving throw. If you succeed, you drop to 1 hit point instead.</p>
-			<p class="indent">Each time you use this feature after the first, the DC increases by 5. When you finish a short or long rest, the DC resets to 10.</p>
+			<p>At 15th level, you hold great mastery over your attacks. When you miss an attack you can reroll the attack roll once per turn.</p>
 		</description>
-		<sheet>
-			<description>If you drop to 0 hit points while you're focusing and don't die outright, you can make a DC 10 Constitution saving throw. If you succeed, you drop to 1 hit point instead. Each time you use this feature after the first, the DC increases by 5. When you finish a short or long rest, the DC resets to 10.</description>
+		<sheet usage="1/Turn">
+			<description>When you miss an attack you can reroll the attack roll</description>
 		</sheet>
 	</element>
 
@@ -284,11 +289,11 @@
 	<element name="Innate Technique Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARRIOR_INNATE_TECHNIQUE" />
 	<element name="Unarmored Defense Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARRIOR_UNARMORED_DEFENSE" />
 	<element name="Combat Prowess Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARRIOR_COMBAT_PROWESS" />
-	<element name="Focus Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARRIOR_UNDAUNTED" />
+	<element name="Undaunted Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARRIOR_UNDAUNTED" />
 	<element name="Ability Score Improvement Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARRIOR_ABILITYSCOREIMPROVEMENT_WARRIOR" />
 	<element name="Extra Attack Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARRIOR_EXTRA_ATTACK" />
-	<element name="Pursuer Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARRIOR_BATTLE_READINESS" />
-	<element name="Honed Instinct Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARRIOR_UNSTOPPABLE" />
-	<element name="Brutal Blows Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARRIOR_STEEL_SPIRIT" />
-	<element name="Lock In Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARRIOR_UNERRING_BLOWS" />
+	<element name="Battle Readiness Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARRIOR_BATTLE_READINESS" />
+	<element name="Unstoppable Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARRIOR_UNSTOPPABLE" />
+	<element name="Steel Spirit Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARRIOR_STEEL_SPIRIT" />
+	<element name="Unerring Blows Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_WARRIOR_UNERRING_BLOWS" />
 </elements>
