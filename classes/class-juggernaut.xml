@@ -149,7 +149,7 @@
 		</rules>
 	</element>
 	<element name="Innate Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_INNATE_TECHNIQUE">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_INNATE_TECHNIQUE</requirements>
+		<requirements>!(ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_INNATE_TECHNIQUE||ID_JJK_CLASS_SCOUT||ID_JJK_CLASS_SHIKIGAMI_USER||ID_JJK_CLASS_STRATEGIST||ID_JJK_CLASS_SUPPORT_SPECIALIST||ID_JJK_CLASS_WARRIOR)||ID_JJK_ARCHETYPE_BODY_MANIPULATION</requirements>
 		<description>
 			<p>Starting at 1st level, you were born with an Innate Technique. Innate Techniques are unique abilities congenitally engraved into the user's body, specifically in the right prefrontal cortex of the brain. Most jujutsu sorcerers are born with an innate technique that manifests around the age of five or six, which continually carves its formula into the user over time. You must choose one Innate Technique, all detailed under Innate Techniques. Your choice grants you features at 1st, and again at 3rd, 6th, 11th, and 18th levels.</p>
 		</description>
