@@ -116,15 +116,16 @@
 				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
 				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
 				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
 				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
 				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
 				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
-				<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS"/>
+				<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION"/>
 			</rules>
 		</multiclass>
 	</element>
 	<element name="Cursed Energy" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_WARRIOR_CURSED_ENERGY">
-		<requirements>!(ID_INTERNAL_FEATURE_REPLACEMENT_WARRIOR_CURSED_ENERGY||ID_JJK_CLASS_SCOUT||ID_JJK_CLASS_SHIKIGAMI_USER||ID_JJK_CLASS_STRATEGIST||ID_JJK_CLASS_SUPPORT_SPECIALIST||ID_JJK_CLASS_WARRIOR)</requirements>
+		<requirements>!(ID_INTERNAL_FEATURE_REPLACEMENT_WARRIOR_CURSED_ENERGY||ID_JJK_CLASS_SCOUT||ID_JJK_CLASS_SHIKIGAMI_USER||ID_JJK_CLASS_STRATEGIST||ID_JJK_CLASS_SUPPORT_SPECIALIST||ID_JJK_CLASS_JUGGERNAUT)</requirements>
 		<description>
 			<p>Starting at 1st level, you can harness your negative feelings into a usable source of energy, called cursed energy. These feelings can be harnessed into attacks or abilities. The number of cursed energy you possess is your class level + your cursed energy modifier which is charisma or wisdom (Player’s choice). You have a curse stat equal to the chosen stat</p>
 			<p class="indent"> Your cursed energy DC is 8 + user cursed energy ability modifier + proficiency bonus.</p>
@@ -133,7 +134,7 @@
 			<description>You have {{ce:points}} Cursed Energy and your Cursed Energy DC is {{ce:dc}}. Your curse stat is {{cu:stat}}</description>
 		</sheet>
 		<rules>
-			<stat name="ce:points" value="level:juggernaut" />
+			<stat name="ce:points" value="level:warrior" />
 			<stat name="ce:modifier" value="charisma:modifier" bonus="cursed energy" />
 			<stat name="ce:modifier" value="wisdom:modifier" bonus="cursed energy" />
 			<stat name="ce:points" value="ce:modifier" />
@@ -145,7 +146,7 @@
 		</rules>
 	</element>
 	<element name="Innate Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_WARRIOR_INNATE_TECHNIQUE">
-		<requirements>!(ID_INTERNAL_FEATURE_REPLACEMENT_WARRIOR_INNATE_TECHNIQUE||ID_JJK_CLASS_SCOUT||ID_JJK_CLASS_SHIKIGAMI_USER||ID_JJK_CLASS_STRATEGIST||ID_JJK_CLASS_SUPPORT_SPECIALIST||ID_JJK_CLASS_WARRIOR)||ID_JJK_ARCHETYPE_BODY_MANIPULATION</requirements>
+		<requirements>!(ID_INTERNAL_FEATURE_REPLACEMENT_WARRIOR_INNATE_TECHNIQUE||ID_JJK_CLASS_SCOUT||ID_JJK_CLASS_SHIKIGAMI_USER||ID_JJK_CLASS_STRATEGIST||ID_JJK_CLASS_SUPPORT_SPECIALIST||ID_JJK_CLASS_JUGGERNAUT)||ID_JJK_ARCHETYPE_BODY_MANIPULATION</requirements>
 		<description>
 			<p>Starting at 1st level, you were born with an Innate Technique. Innate Techniques are unique abilities congenitally engraved into the user's body, specifically in the right prefrontal cortex of the brain. Most jujutsu sorcerers are born with an innate technique that manifests around the age of five or six, which continually carves its formula into the user over time. You must choose one Innate Technique, all detailed under Innate Techniques. Your choice grants you features at 1st, and again at 3rd, 6th, 11th, and 18th levels.</p>
 		</description>
@@ -160,16 +161,16 @@
 			<p>Beginning at 1st level, while you are wearing no armor and not wielding a shield, your AC equals 10 + your Dexterity modifier + your Constitution modifier.</p>
 		</description>
 		<sheet>
-			<description>While you are wearing no armor and not wielding a shield, your AC equals {{ac:unarmored defense juggernaut}}.</description>
+			<description>While you are wearing no armor and not wielding a shield, your AC equals {{ac:unarmored defense warrior}}.</description>
 		</sheet>
 		<rules>
-			<stat name="ac:unarmored defense juggernaut:base" value="10" />
-			<stat name="ac:unarmored defense juggernaut:dexterity" value="dexterity:modifier" />
-			<stat name="ac:unarmored defense juggernaut:constitution" value="constitution:modifier" />
-			<stat name="ac:unarmored defense juggernaut" value="ac:unarmored defense juggernaut:base" />
-			<stat name="ac:unarmored defense juggernaut" value="ac:unarmored defense juggernaut:dexterity" />
-			<stat name="ac:unarmored defense juggernaut" value="ac:unarmored defense juggernaut:constitution" />
-			<stat name="ac:calculation" value="ac:unarmored defense juggernaut" bonus="calculation" equipped="[armor:none],[shield:none]" alt="Unarmored Defense (Juggernaut)" />
+			<stat name="ac:unarmored defense warrior:base" value="10" />
+			<stat name="ac:unarmored defense warrior:dexterity" value="dexterity:modifier" />
+			<stat name="ac:unarmored defense warrior:constitution" value="constitution:modifier" />
+			<stat name="ac:unarmored defense warrior" value="ac:unarmored defense warrior:base" />
+			<stat name="ac:unarmored defense warrior" value="ac:unarmored defense warrior:dexterity" />
+			<stat name="ac:unarmored defense warrior" value="ac:unarmored defense warrior:constitution" />
+			<stat name="ac:calculation" value="ac:unarmored defense warrior" bonus="calculation" equipped="[armor:none],[shield:none]" alt="Unarmored Defense (Warrior)" />
 		</rules>
 	</element>
 	<element name="Combat Prowess" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_WARRIOR_COMBAT_PROWESS">
