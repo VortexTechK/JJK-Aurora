@@ -71,7 +71,6 @@
 			<div element="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_ABILITYSCOREIMPROVEMENT_SUPPORT_SPECIALIST" />
 			<div element="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_REVERSE_CURSE_TECHNIQUE" />
 			<div element="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_REVERSE_TECHNIQUE_UNDERSTANDING" />
-			<div element="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_MASTERED_REVERSE_TECHNIQUE" />
 			<div element="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_PERMAMENT_TECHNIQUES" />
 		</description>
 		<sheet display="false">
@@ -96,8 +95,7 @@
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_ABILITYSCOREIMPROVEMENT_SUPPORT_SPECIALIST" level="4" />
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_REVERSE_CURSE_TECHNIQUE" level="5" />
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_REVERSE_TECHNIQUE_UNDERSTANDING" level="10" />
-			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_MASTERED_REVERSE_TECHNIQUE" level="17" />
-			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_PERMANENT_TECHNIQUE" level="20" />
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_PERMANENT_TECHNIQUES" level="20" />
 		</rules>
 		<multiclass id="ID_JJK_MULTICLASS_SUPPORT_SPECIALIST">
 			<prerequisite>Wisdom 13</prerequisite>
@@ -272,34 +270,43 @@
 				<li>You now regain 30 HP per CE with RCT instead of 20.</li>
             </ul>
 			<p>In addition, whenever you deal damage to a Monstrosity, Undead, or Cursed Spirit with an unarmed strike or natural weapon, you can spend cursed energy to remove hit points from your healing pool to add radiant damage.</p>
+			<p>Beginning at 17th level, you have mastered this new type of energy, becoming a high-level sorcerer. You will gain the following benefits:</p>
+			<ul>
+                <li>You can use your reverse cursed technique twice as a free action on your turn.</li>
+                <li>Your reverse cursed technique healing pool is doubled.</li>
+                <li>You now regain 35 hit points per cursed energy instead of 30.</li>
+            </ul>
+			<p>In addition, whenever you deal damage to a Monstrosity, Undead, or Cursed Spirit with an unarmed strike or natural weapon, you can spend cursed energy to remove hit points from your healing pool to add radiant damage, the creature takes this damage as vulnerable.
 		</description>
 		<sheet>
-			<description>You can cause a creature you touch to gain the benefits of reverse cursed technique instead of you. You can use your reverse cursed technique once as a free action on your turn. Your reverse cursed technique healing pool is multiplied by {{ce:modifier}}. Whenever you deal damage to a Monstrosity, Undead, or Cursed Spirit with an unarmed strike or natural weapon, you can spend cursed energy to remove hit points from your healing pool to add radiant damage.</description>
+			<description level="10">You can cause a creature you touch to gain the benefits of reverse cursed technique instead of you. You can use your reverse cursed technique once as a free action on your turn. Your reverse cursed technique healing pool is multiplied by {{ce:modifier}}. Whenever you deal damage to a Monstrosity, Undead, or Cursed Spirit with an unarmed strike or natural weapon, you can spend cursed energy to remove hit points from your healing pool to add radiant damage.</description>
+			<description level="17">You can cause a creature you touch to gain the benefits of reverse cursed technique instead of you. You can use your reverse cursed technique twice as a free action on your turn. Your reverse cursed technique healing pool is multiplied by {{ce:modifier}} and then doubled. Whenever you deal damage to a Monstrosity, Undead, or Cursed Spirit with an unarmed strike or natural weapon, you can spend cursed energy to remove hit points from your healing pool to add radiant damage. The creature takes this damage as if it was vulnerable to it.</description>
 		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_MASTERED_REVERSE_TECHNIQUE" level="17" />
+		</rules>
 	</element>
 	<element name="Mastered Reverse Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_MASTERED_REVERSE_TECHNIQUE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SUPPORT_SPECIALIST_MASTERED_REVERSE_TECHNIQUE</requirements>
+		<compendium display="false" />
+	</element>
+	<element name="Permanent Techniques" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_PERMANENT_TECHNIQUES">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SUPPORT_SPECIALIST_PERMANENT_TECHNIQUES</requirements>
 		<description>
-			<p>Beginning at 17th level, you have mastered this new type of energy, becoming a high-level sorcerer. You will gain the following benefits:</p>
-			<ul>
-                <li>You can cause a creature you touch to gain the benefits of reverse cursed technique instead of you.</li>
-                <li>You can use your reverse cursed technique once as a free action on your turn.</li>
-                <li>Your reverse cursed technique healing pool is multiplied by your Cursed Energy modifier again.</li>
-				<li>You now regain 30 HP per CE with RCT instead of 20.</li>
-            </ul>
-			<p>In addition, whenever you deal damage to a Monstrosity, Undead, or Cursed Spirit with an unarmed strike or natural weapon, you can spend cursed energy to remove hit points from your healing pool to add radiant damage.</p>
+			<p>At 20th level, you can maintain your curtains and barriers until the barriers are destroyed.</p>
 		</description>
 		<sheet>
-			<description>You can cause a creature you touch to gain the benefits of reverse cursed technique instead of you. You can use your reverse cursed technique once as a free action on your turn. Your reverse cursed technique healing pool is multiplied by {{ce:modifier}}. Whenever you deal damage to a Monstrosity, Undead, or Cursed Spirit with an unarmed strike or natural weapon, you can spend cursed energy to remove hit points from your healing pool to add radiant damage.</description>
+			<description>You can maintain your curtains and barriers until the barriers are destroyed.</description>
 		</sheet>
 	</element>
 
 	<!--Feature Replacement Grants-->
 	<element name="Cursed Energy Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SUPPORT_SPECIALIST_CURSED_ENERGY" />
 	<element name="Innate Technique Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SUPPORT_SPECIALIST_INNATE_TECHNIQUE" />
-	<element name="Quick Recovery Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SUPPORT_SPECIALIST_CURTAIN" />
-	<element name="Technique Creativity Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SUPPORT_SPECIALIST_BARRIER_TECHNIQUES" />
+	<element name="Curtain Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SUPPORT_SPECIALIST_CURTAIN" />
+	<element name="Barrier Techniques Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SUPPORT_SPECIALIST_BARRIER_TECHNIQUES" />
 	<element name="Ability Score Improvement Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SUPPORT_SPECIALIST_ABILITYSCOREIMPROVEMENT_SUPPORT_SPECIALIST" />
-	<element name="Sorcerous Restoration Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SUPPORT_SPECIALIST_REVERSE_CURSE_TECHNIQUE" />
-	<element name="Signature Move Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SUPPORT_SPECIALIST_REVERSE_TECHNIQUE_UNDERSTANDING" />
+	<element name="Reverse Curse Technique Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SUPPORT_SPECIALIST_REVERSE_CURSE_TECHNIQUE" />
+	<element name="Reverse Technique Understanding Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SUPPORT_SPECIALIST_REVERSE_TECHNIQUE_UNDERSTANDING" />
+	<element name="Permanent Techniques Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SUPPORT_SPECIALIST_PERMANENT_TECHNIQUES" />
 </elements>
