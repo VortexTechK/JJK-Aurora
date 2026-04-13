@@ -274,7 +274,23 @@
 			<p>In addition, whenever you deal damage to a Monstrosity, Undead, or Cursed Spirit with an unarmed strike or natural weapon, you can spend cursed energy to remove hit points from your healing pool to add radiant damage.</p>
 		</description>
 		<sheet>
-			<description>You can cause a creature you touch to gain the benefits of reverse cursed technique instead of you. You can use your reverse cursed technique once as a free action on your turn. Whenever you deal damage to a Monstrosity, Undead, or Cursed Spirit with an unarmed strike or natural weapon, you can spend cursed energy to remove hit points from your healing pool to add radiant damage.</description>
+			<description>You can cause a creature you touch to gain the benefits of reverse cursed technique instead of you. You can use your reverse cursed technique once as a free action on your turn. Your reverse cursed technique healing pool is multiplied by {{ce:modifier}}. Whenever you deal damage to a Monstrosity, Undead, or Cursed Spirit with an unarmed strike or natural weapon, you can spend cursed energy to remove hit points from your healing pool to add radiant damage.</description>
+		</sheet>
+	</element>
+	<element name="Mastered Reverse Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_MASTERED_REVERSE_TECHNIQUE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SUPPORT_SPECIALIST_MASTERED_REVERSE_TECHNIQUE</requirements>
+		<description>
+			<p>Beginning at 17th level, you have mastered this new type of energy, becoming a high-level sorcerer. You will gain the following benefits:</p>
+			<ul>
+                <li>You can cause a creature you touch to gain the benefits of reverse cursed technique instead of you.</li>
+                <li>You can use your reverse cursed technique once as a free action on your turn.</li>
+                <li>Your reverse cursed technique healing pool is multiplied by your Cursed Energy modifier again.</li>
+				<li>You now regain 30 HP per CE with RCT instead of 20.</li>
+            </ul>
+			<p>In addition, whenever you deal damage to a Monstrosity, Undead, or Cursed Spirit with an unarmed strike or natural weapon, you can spend cursed energy to remove hit points from your healing pool to add radiant damage.</p>
+		</description>
+		<sheet>
+			<description>You can cause a creature you touch to gain the benefits of reverse cursed technique instead of you. You can use your reverse cursed technique once as a free action on your turn. Your reverse cursed technique healing pool is multiplied by {{ce:modifier}}. Whenever you deal damage to a Monstrosity, Undead, or Cursed Spirit with an unarmed strike or natural weapon, you can spend cursed energy to remove hit points from your healing pool to add radiant damage.</description>
 		</sheet>
 	</element>
 
