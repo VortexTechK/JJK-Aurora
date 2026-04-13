@@ -4,7 +4,7 @@
 		<name>Juggernaut</name>
 		<description>The Juggernaut class from JJK.</description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
-		<update version="5.6">
+		<update version="5.7">
 			<file name="class-juggernaut.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/classes/class-juggernaut.xml" />
 		</update>
 	</info>
@@ -134,16 +134,18 @@
 			<p class="indent"> Your cursed energy DC is 8 + user cursed energy ability modifier + proficiency bonus.</p>
 		</description>
 		<sheet>
-			<description>You have {{ce:points}} Cursed Energy and your Cursed Energy DC is {{ce:dc}}. Your curse stat is {{cu:stat}}</description>
+			<description>You have {{ce:points:total}} Cursed Energy and your Cursed Energy DC is {{ce:dc:total}}. Your curse stat is {{cu:stat}}</description>
 		</sheet>
 		<rules>
 			<stat name="ce:points" value="level:juggernaut" />
 			<stat name="ce:modifier" value="charisma:modifier" bonus="cursed energy" />
 			<stat name="ce:modifier" value="wisdom:modifier" bonus="cursed energy" />
 			<stat name="ce:points" value="ce:modifier" />
+			<stat name="ce:points:total" value="ce:points" bonus="cursed energy" />
 			<stat name="ce:dc" value="8" />
 			<stat name="ce:dc" value="proficiency" />
 			<stat name="ce:dc" value="ce:modifier" />
+			<stat name="ce:dc:total" value="ce:dc" bonus="cursed energy" />
 			<stat name="cu:stat" value="charisma:score" bonus="cursed energy"/>			
 			<stat name="cu:stat" value="wisdom:score" bonus="cursed energy" />
 		</rules>
