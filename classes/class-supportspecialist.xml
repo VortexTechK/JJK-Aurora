@@ -4,7 +4,7 @@
 		<name>Support Specialist</name>
 		<description>The Support Specialist class from JJK.</description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
-		<update version="5.2">
+		<update version="5.4">
 			<file name="class-supportspecialist.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/classes/class-supportspecialist.xml" />
 		</update>
 	</info>
@@ -71,7 +71,7 @@
 			<div element="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_ABILITYSCOREIMPROVEMENT_SUPPORT_SPECIALIST" />
 			<div element="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_REVERSE_CURSE_TECHNIQUE" />
 			<div element="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_REVERSE_TECHNIQUE_UNDERSTANDING" />
-			<div element="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_PERMAMENT_TECHNIQUES" />
+			<div element="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_PERMANENT_TECHNIQUES" />
 		</description>
 		<sheet display="false">
 			<description>Stuck in the infirmary</description>
@@ -238,7 +238,7 @@
 	<element name="Reverse Curse Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_REVERSE_CURSE_TECHNIQUE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SUPPORT_SPECIALIST_REVERSE_CURSE_TECHNIQUE</requirements>
 		<description>
-			<p>Starting at 5th level, you have been born with a great aptitude for healing others, despite never really studying medicine. You will gain the Reverse Cursed Technique feature. Your reverse cursed technique is stronger than normal, letting you use 20 hit points from your RCT pool per cursed energy spent instead of 10.</p>
+			<p>Starting at 5th level, you have been born with a great aptitude for healing others, despite never really studying medicine. You gain the Reverse Cursed Technique feature. Your reverse cursed technique is stronger than normal, letting you use 20 hit points from your RCT pool per cursed energy spent instead of 10.</p>
 			<p class="indent">In addition, you gain proficiency in the Medicine skill. If you are already proficient, you gain expertise instead. If you already have expertise you gain advantage. Whenever you make a medicine check to stabilize someone and succeed, the creature regains 1 hit point.</p>
 		</description>
 		<sheet>
