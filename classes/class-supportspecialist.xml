@@ -4,7 +4,7 @@
 		<name>Support Specialist</name>
 		<description>The Support Specialist class from JJK.</description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
-		<update version="5.0">
+		<update version="5.2">
 			<file name="class-supportspecialist.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/classes/class-supportspecialist.xml" />
 		</update>
 	</info>
@@ -276,7 +276,7 @@
                 <li>Your reverse cursed technique healing pool is doubled.</li>
                 <li>You now regain 35 hit points per cursed energy instead of 30.</li>
             </ul>
-			<p>In addition, whenever you deal damage to a Monstrosity, Undead, or Cursed Spirit with an unarmed strike or natural weapon, you can spend cursed energy to remove hit points from your healing pool to add radiant damage, the creature takes this damage as vulnerable.
+			<p>In addition, whenever you deal damage to a Monstrosity, Undead, or Cursed Spirit with an unarmed strike or natural weapon, you can spend cursed energy to remove hit points from your healing pool to add radiant damage, the creature takes this damage as vulnerable.</p>
 		</description>
 		<sheet>
 			<description level="10">You can cause a creature you touch to gain the benefits of reverse cursed technique instead of you. You can use your reverse cursed technique once as a free action on your turn. Your reverse cursed technique healing pool is multiplied by {{ce:modifier}}. Whenever you deal damage to a Monstrosity, Undead, or Cursed Spirit with an unarmed strike or natural weapon, you can spend cursed energy to remove hit points from your healing pool to add radiant damage.</description>
