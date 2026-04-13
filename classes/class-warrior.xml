@@ -176,14 +176,14 @@
 	<element name="Combat Prowess" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_WARRIOR_COMBAT_PROWESS">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARRIOR_COMBAT_PROWESS</requirements>
 		<description>
-			<p>At 1st level, your life of scrapping and battling with beasts, has given you mastery of Combat styles that use unarmed strikes and Juggernaut weapons, which are melee weapons without the two-handed property, and improvised weapons. You can not use the finesse property of a weapon while using it as a Juggernaut weapon.</p>
+			<p>At 1st level, your life of scrapping and battling with beasts, has given you mastery of Combat styles that use unarmed strikes and Warrior weapons, which are melee weapons without the two-handed property, and improvised weapons. You can not use the finesse property of a weapon while using it as a Warrior weapon.</p>
 			<ul>
-				<li>You can roll a d6 in place of the normal damage of your unarmed strike or Juggernaut weapon. This die changes as you gain Juggernaut levels, as shown in the scrapper column on the Juggernaut table.</li>
-				<li>When you use the Attack action with an unarmed strike or a Juggernaut weapon on your turn, you can make one unarmed strike or grapple as a bonus action. For example, if you take the Attack action and Attack with a Club, you can also make an Unarmed Strike or grapple as a Bonus Action, assuming you haven’t already taken a Bonus Action this turn.</li>
+				<li>You can roll a d6 in place of the normal damage of your unarmed strike or Warrior weapon. This die changes as you gain Warrior levels, as shown in the scrapper column on the Warrior table.</li>
+				<li>When you use the Attack action with an unarmed strike or a Warrior weapon on your turn, you can make one unarmed strike or grapple as a bonus action. For example, if you take the Attack action and Attack with a Club, you can also make an Unarmed Strike or grapple as a Bonus Action, assuming you haven’t already taken a Bonus Action this turn.</li>
 			</ul>
 		</description>
 		<sheet>
-			<description>Your unarmed strike or Juggernaut weapon can do 1d{{combat prowess:dice}} damage instead of its normal damage.
+			<description>Your unarmed strike or Warrior weapon can do 1d{{combat prowess:dice}} damage instead of its normal damage.
 			When you use the Attack action with an unarmed strike or a combat prowess weapon on your turn, you can make one unarmed strike or grapple as a bonus action.</description>
 		</sheet>
 		<rules>
@@ -215,11 +215,11 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Class Feature" name="Improvement Option (Juggernaut 4)" supports="Improvement Option,Juggernaut,4" level="4" />
-			<select type="Class Feature" name="Improvement Option (Juggernaut 8)" supports="Improvement Option,Juggernaut,8" level="8" />
-			<select type="Class Feature" name="Improvement Option (Juggernaut 12)" supports="Improvement Option,Juggernaut,12" level="12" />
-			<select type="Class Feature" name="Improvement Option (Juggernaut 16)" supports="Improvement Option,Juggernaut,16" level="16" />
-			<select type="Class Feature" name="Improvement Option (Juggernaut 19)" supports="Improvement Option,Juggernaut,19" level="19" />
+			<select type="Class Feature" name="Improvement Option (Warrior 4)" supports="Improvement Option,Warrior,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Warrior 8)" supports="Improvement Option,Warrior,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Warrior 12)" supports="Improvement Option,Warrior,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Warrior 16)" supports="Improvement Option,Warrior,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Warrior 19)" supports="Improvement Option,Warrior,19" level="19" />
 		</rules>
 	</element>
 	<element name="Extra Attack" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_WARRIOR_EXTRA_ATTACK">
