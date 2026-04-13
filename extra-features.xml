@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Extra Features</name>
+		<description>The Optional Class Features from Tasha’s Cauldron of Everything</description>
+		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
+		<update version="5.0">
+			<file name="extra-features.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/extra-features.xml" />
+		</update>
+	</info>
+
+	<!-- Reverse Curse Technique -->
+	<element name="Reverse Curse Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_REVERSE_CURSE_TECHNIQUE">
+		<description>
+			<p><i>JJK feature</i></p>
+			<p>Wish whoosh, reverse cursed technique processes negative energy into positive energy by taking two sources of cursed energy and multiplying them by one other. </p>
+      <p class="indent">After almost dying, be it being reduced to 0 in one hit while at max hp, or failing two death saves and then rolling a nat 20. Those are moments where the GM can choose to bestow reverse cursed technique. Alternatively roll a d100, on a 90+ you get Reverse Cursed Technique. </p>
+			<p class="indent">You learn to use your cursed energy in a completely opposite way, channeling positive energy instead of negative. You have a pool of healing you can use with your reverse cursed energy that's equal to 5 x your level x your Cursed Energy modifier. As a bonus action for cursed energy up to your CE Modifier, you can remove healing from that pool to regain hit points. You can also remove healing from the pool as a reaction to receiving damage once per round. For every 1 cursed energy spent, you regain 10 hit points, removing an equal amount from the pool. If you are suffering from a physical condition or injury such as a concussion or something else, one of these effects can be healed for every 10 hit points recovered with the reverse cursed technique. Limbs can be regenerated for 20 hit points. You can use your Reverse Cursed Technique until your healing pool ends before getting burned out, during which you can't use RCT until your healing pool recovers. At the beginning of every two rounds, your healing pool regains 10 hit points. Your healing pool automatically refills at the end of a long rest. </p>
+		</description>
+		<sheet>
+			<description>You have a pool of healing you can use with your reverse cursed energy that's equal to 5 x {{level}} x {{ce:modifier}}. If you are suffering from a physical condition or injury such as a concussion or something else, one of these effects can be healed for every 10 hit points recovered with the reverse cursed technique. Limbs can be regenerated for 20 hit points. You can use your Reverse Cursed Technique until your healing pool ends before getting burned out, during which you can't use RCT until your healing pool recovers. At the beginning of every two rounds, your healing pool regains 10 hit points. Your healing pool automatically refills at the end of a long rest.</description>
+		</sheet>
+		<rules>
+      <grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_REVERSE_CURSE_TECHNIQUE_HEAL" />
+		</rules>
+	</element>
+
+  <element name="Heal" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_REVERSE_CURSE_TECHNIQUE_HEAL">
+		<description>
+			<p> As a bonus action for cursed energy up to your CE Modifier, you can remove healing from that pool to regain hit points. You can also remove healing from the pool as a reaction to receiving damage once per round. For every 1 cursed energy spent, you regain 10 hit points, removing an equal amount from the pool. </p>
+		</description>
+		<sheet action="Action/Reaction to Damage">
+			<description>For CE up to {{ce:modifier}}, you can remove healing from that pool to regain hit points. For every 1 cursed energy spent, you regain {{rct:heal}} hit points, removing an equal amount from the pool.</description>
+		</sheet>
+    <rules>
+      <stat name="rct:heal" value="10" bonus="rct" />
+      <stat name="rct:heal" value="30" requirements="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_REVERSE_TECHNIQUE_UNDERSTANDING" bonus="rct" />
+      <stat name="rct:heal" value="35" requirements="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_MASTERED_REVERSE_TECHNIQUE" bonus="rct" />
+    </rules>
+	</element>
+
+	<element name="JJK Class: Reverse Curse Technique" type="Item" source="JJK" id="ID_JJK_ITEM_OCF_REVERSE_CURSE_TECHNIQUE">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_JJK_CLASS_FEATURE_REVERSE_CURSE_TECHNIQUE" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Optional Class Features</set>
+      <set name="keywords">first level, 1st level</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_REVERSE_CURSE_TECHNIQUE" requirements="[level:1]"/>
+		</rules>
+	</element>
