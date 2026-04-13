@@ -4,7 +4,7 @@
 		<name>JJK</name>
 		<description>JJK Homebrew.</description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
-		<update version="5.5">
+		<update version="5.6">
 			<file name="jjk.index" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/jjk.index" />
 		</update>
 	</info>
@@ -19,6 +19,7 @@
 		<file name="class-shikigamiuser.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/classes/class-shikigamiuser.xml" />
 		<file name="class-strategist.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/classes/class-strategist.xml" />
 		<file name="class-supportspecialist.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/classes/class-supportspecialist.xml" />
+		<file name="class-warrior.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/classes/class-warrior.xml" />
 
 		<!-- innate-techniques -->
 		<file name="ten-shadows.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/ten-shadows.xml" />
