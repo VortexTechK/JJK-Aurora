@@ -4,7 +4,7 @@
 		<name>Support Specialist</name>
 		<description>The Support Specialist class from JJK.</description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
-		<update version="5.5">
+		<update version="5.6">
 			<file name="class-supportspecialist.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/classes/class-supportspecialist.xml" />
 		</update>
 	</info>
@@ -71,6 +71,7 @@
 			<div element="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_ABILITYSCOREIMPROVEMENT_SUPPORT_SPECIALIST" />
 			<div element="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_REVERSE_CURSE_TECHNIQUE" />
 			<div element="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_REVERSE_TECHNIQUE_UNDERSTANDING" />
+			<div element="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_MASTERED_REVERSE_TECHNIQUE" />
 			<div element="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_PERMANENT_TECHNIQUES" />
 		</description>
 		<sheet display="false">
@@ -89,6 +90,7 @@
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" requirements="!ID_JJK_MULTICLASS_SUPPORT_SPECIALIST" />
 			<select type="Proficiency" name="Skill Proficiency (Support Specialist)" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_RELIGION" number="2" requirements="!ID_JJK_MULTICLASS_SUPPORT_SPECIALIST" />
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURSED_ENERGY" level="1" />
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_MCURSED_ENERGY" requirements="ID_JJK_CLASS_JUGGERNAUT||ID_JJK_CLASS_SHIKIGAMI_USER||ID_JJK_CLASS_STRATEGIST||ID_JJK_CLASS_SCOUT||ID_JJK_CLASS_WARRIOR">
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_INNATE_TECHNIQUE" level="1" />
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN" level="1" />
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_BARRIER_TECHNIQUES" level="2" />
@@ -114,7 +116,7 @@
 		</multiclass>
 	</element>
 	<element name="Cursed Energy" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURSED_ENERGY">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SUPPORT_SPECIALIST_CURSED_ENERGY</requirements>
+		<requirements>!(ID_INTERNAL_FEATURE_REPLACEMENT_SUPPORT_SPECIALIST_CURSED_ENERGY||ID_JJK_CLASS_JUGGERNAUT||ID_JJK_CLASS_SHIKIGAMI_USER||ID_JJK_CLASS_STRATEGIST||ID_JJK_CLASS_SCOUT||ID_JJK_CLASS_WARRIOR)</requirements>
 		<description>
 			<p>Starting at 1st level, you can harness your negative feelings into a usable source of energy, called cursed energy. These feelings can be harnessed into attacks or abilities. The number of cursed energy you possess is your class level + your cursed energy modifier which is charisma or wisdom (Player’s choice). You have a curse stat equal to the chosen stat</p>
 			<p class="indent"> Your cursed energy DC is 8 + user cursed energy ability modifier + proficiency bonus.</p>
@@ -136,7 +138,7 @@
 		</rules>
 	</element>
 	<element name="Innate Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_INNATE_TECHNIQUE">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SUPPORT_SPECIALIST_INNATE_TECHNIQUE</requirements>
+		<requirements>!(ID_INTERNAL_FEATURE_REPLACEMENT_SUPPORT_SPECIALIST_INNATE_TECHNIQUE||ID_JJK_CLASS_JUGGERNAUT||ID_JJK_CLASS_SHIKIGAMI_USER||ID_JJK_CLASS_STRATEGIST||ID_JJK_CLASS_SCOUT||ID_JJK_CLASS_WARRIOR)||ID_JJK_ARCHETYPE_BODY_MANIPULATION</requirements>
 		<description>
 			<p>Starting at 1st level, you were born with an Innate Technique. Innate Techniques are unique abilities congenitally engraved into the user's body, specifically in the right prefrontal cortex of the brain. Most jujutsu sorcerers are born with an innate technique that manifests around the age of five or six, which continually carves its formula into the user over time. You must choose one Innate Technique, all detailed under Innate Techniques. Your choice grants you features at 1st, and again at 3rd, 6th, 11th, and 18th levels.</p>
 		</description>
@@ -269,13 +271,6 @@
 				<li>You now regain 30 HP per CE with RCT instead of 20.</li>
             </ul>
 			<p>In addition, whenever you deal damage to a Monstrosity, Undead, or Cursed Spirit with an unarmed strike or natural weapon, you can spend cursed energy to remove hit points from your healing pool to add radiant damage.</p>
-			<p>Beginning at 17th level, you have mastered this new type of energy, becoming a high-level sorcerer. You will gain the following benefits:</p>
-			<ul>
-                <li>You can use your reverse cursed technique twice as a free action on your turn.</li>
-                <li>Your reverse cursed technique healing pool is doubled.</li>
-                <li>You now regain 35 hit points per cursed energy instead of 30.</li>
-            </ul>
-			<p>In addition, whenever you deal damage to a Monstrosity, Undead, or Cursed Spirit with an unarmed strike or natural weapon, you can spend cursed energy to remove hit points from your healing pool to add radiant damage, the creature takes this damage as vulnerable.</p>
 		</description>
 		<sheet>
 			<description level="10">You can cause a creature you touch to gain the benefits of reverse cursed technique instead of you. You can use your reverse cursed technique once as a free action on your turn. Your reverse cursed technique healing pool is multiplied by {{ce:modifier}}. Whenever you deal damage to a Monstrosity, Undead, or Cursed Spirit with an unarmed strike or natural weapon, you can spend cursed energy to remove hit points from your healing pool to add radiant damage.</description>
@@ -288,6 +283,15 @@
 	<element name="Mastered Reverse Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_MASTERED_REVERSE_TECHNIQUE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SUPPORT_SPECIALIST_MASTERED_REVERSE_TECHNIQUE</requirements>
 		<compendium display="false" />
+		<description>
+			<p>Beginning at 17th level, you have mastered this new type of energy, becoming a high-level sorcerer. You will gain the following benefits:</p>
+			<ul>
+                <li>You can use your reverse cursed technique twice as a free action on your turn.</li>
+                <li>Your reverse cursed technique healing pool is doubled.</li>
+                <li>You now regain 35 hit points per cursed energy instead of 30.</li>
+            </ul>
+			<p>In addition, whenever you deal damage to a Monstrosity, Undead, or Cursed Spirit with an unarmed strike or natural weapon, you can spend cursed energy to remove hit points from your healing pool to add radiant damage, the creature takes this damage as vulnerable.</p>
+		</description>
 	</element>
 	<element name="Permanent Techniques" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_PERMANENT_TECHNIQUES">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SUPPORT_SPECIALIST_PERMANENT_TECHNIQUES</requirements>
