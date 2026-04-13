@@ -4,7 +4,7 @@
 		<name>Shikigami User</name>
 		<description>The Shikigami User class from JJK.</description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
-		<update version="5.2">
+		<update version="5.4">
 			<file name="class-shikigamiuser.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/classes/class-shikigamiuser.xml" />
 		</update>
 	</info>
@@ -94,6 +94,7 @@
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" requirements="!ID_JJK_MULTICLASS_SHIKIGAMI_USER" />
 			<select type="Proficiency" name="Skill Proficiency (Shikigami User)" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_RELIGION" number="2" requirements="!ID_JJK_MULTICLASS_SHIKIGAMI_USER" />
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_CURSED_ENERGY" level="1" />
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_MCURSED_ENERGY" requirements="ID_JJK_CLASS_JUGGERNAUT||ID_JJK_CLASS_SCOUT||ID_JJK_CLASS_STRATEGIST||ID_JJK_CLASS_SUPPORT_SPECIALIST||ID_JJK_CLASS_WARRIOR">
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_INNATE_TECHNIQUE" level="1" />
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_SHIKIGAMI_COMPANION" level="1" />
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_MARTIAL_ARTS" level="1" />
@@ -124,7 +125,7 @@
 		</multiclass>
 	</element>
 	<element name="Cursed Energy" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_CURSED_ENERGY">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SHIKIGAMI_USER_CURSED_ENERGY</requirements>
+		<requirements>!(ID_INTERNAL_FEATURE_REPLACEMENT_SHIKIGAMI_USER_CURSED_ENERGY||ID_JJK_CLASS_JUGGERNAUT||ID_JJK_CLASS_SCOUT||ID_JJK_CLASS_STRATEGIST||ID_JJK_CLASS_SUPPORT_SPECIALIST||ID_JJK_CLASS_WARRIOR)</requirements>
 		<description>
 			<p>Starting at 1st level, you can harness your negative feelings into a usable source of energy, called cursed energy. These feelings can be harnessed into attacks or abilities. The number of cursed energy you possess is your class level + your cursed energy modifier which is charisma or wisdom (Player’s choice). You have a curse stat equal to the chosen stat</p>
 			<p class="indent"> Your cursed energy DC is 8 + user cursed energy ability modifier + proficiency bonus.</p>
@@ -145,7 +146,7 @@
 		</rules>
 	</element>
 	<element name="Innate Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_INNATE_TECHNIQUE">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SHIKIGAMI_USER_INNATE_TECHNIQUE</requirements>
+		<requirements>!(ID_INTERNAL_FEATURE_REPLACEMENT_SHIKIGAMI_USER_INNATE_TECHNIQUE||ID_JJK_CLASS_JUGGERNAUT||ID_JJK_CLASS_SCOUT||ID_JJK_CLASS_STRATEGIST||ID_JJK_CLASS_SUPPORT_SPECIALIST||ID_JJK_CLASS_WARRIOR)||ID_JJK_ARCHETYPE_BODY_MANIPULATION</requirements>
 		<description>
 			<p>Starting at 1st level, you were born with an Innate Technique. Innate Techniques are unique abilities congenitally engraved into the user's body, specifically in the right prefrontal cortex of the brain. Most jujutsu sorcerers are born with an innate technique that manifests around the age of five or six, which continually carves its formula into the user over time. You must choose one Innate Technique, all detailed under Innate Techniques. Your choice grants you features at 1st, and again at 3rd, 6th, 11th, and 18th levels.</p>
 		</description>
