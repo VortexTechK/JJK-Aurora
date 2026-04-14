@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="5.0">
+			<file name="body-manipulation.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/body-manipulation.xml" />
+		</update>
+	</info>
+
+	<element name="Body Manipulation" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_BODY_MANIPULATION">
+		<supports>Innate Technique</supports>
+		<description>
+			<p>Backshots were part of the plan, I swear</p>
+			<div element="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_GRAVEROBBER" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_IMMORTALITY" />
+		</description>
+		<sheet display="false">
+			<description>You were born with the horrifying but useful ability to swap bodies and take the abilities from that body</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_GRAVEROBBER" level="1" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT" level="3" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_IMMORTALITY" level="18" />
+		</rules>
+	</element>
+	<element name="Graverobber" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_GRAVEROBBER">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BODY_MANIPULATION_GRAVEROBBER</requirements>
+		<description>
+			<p>Starting at 1st level, you have a rather disgusting technique, which is frowned upon by the majority of sorcerers. When you have a humanoid creature's corpse, you can spend 1 cursed energy during a long rest to put your brain on that creature through a transfer technique. While on the creature's body, you lose any racial features of your old body but keep all of your class features. You gain the following benefits while inside the body:</p>
+      <ul>
+        <li>The creature’s innate technique features are now yours.</li>
+        <li>The creature’s cursed energy features are now yours.</li>
+        <li>The creature's racial features are now yours.</li>
+        <li>The creature's ability scores overwrite yours but you keep your Charisma, Wisdom, and Intelligence scores.</li>
+        <li>The creature's proficiencies and languages are now yours.</li>
+      </ul>
+      <p>When you change into that creature's body, it will look the same outside of having a scar on its forehead, which is a sign your brain is inside its body. You can pull the top of your head to show your brain, which is a normal brain with a human mouth. Other creatures can try to identify you're not the humanoid by making a DC 30 Insight check. Creatures who knew the body's owner before you stole it can do the roll with advantage.</p>
+    </description>
+		<sheet>
+			<description>When you have a humanoid creature's corpse, you can spend 1 cursed energy during a long rest to put your brain in that creature. While in the creature's body, you lose any racial features of your old body but keep all of your class features. The creature’s innate technique features, cursed energy features, racial features, ability scores except for intelligence, wisdom, and charisma, and proficiencies and languages are now yours. When you change into that creature's body, it will look the same outside of having a scar on its forehead, which is a sign your brain is inside its body. You can pull the top of your head to show your brain, which is a normal brain with a human mouth. Other creatures can try to identify you're not the humanoid by making a DC 30 Insight check. Creatures who knew the body's owner before you stole it can do the roll with advantage.</description>
+		</sheet>
+    <rules>
+      	<select type="Archetype" name="Graverobbed Body Innate Technique" supports="Innate Technique" />
+    </rules>
+	</element>
+	<element name="Skill Theft" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BODY_MANIPULATION_SKILL_THEFT</requirements>
+		<description>
+			<p>Beginning at 3rd, your control over the body you take over increases. You can choose to take two of the body’s Innate Technique features, Cursed Energy features, or proficiencies from a body you have inhabited in the past. You cannot use Innate Technique features from different techniques at the same time. If you do, one of them deactivates until you are only using one innate technique. You can choose two more features at 6th, 11th, and 18th levels.</p>
+		</description>
+		<sheet>
+      		<description>You can use {{skilltheftbm:num}} of a body’s Innate Technique features, Cursed Energy features, or proficiencies you have inhabited in the past. You cannot use Innate Technique features from different techniques at the same time. If you do, one of them deactivates until you are only using one innate technique.</description>
+		</sheet>
+    <rules>
+      <stat name="skilltheftbm:num" value="2" level="3" />
+      <stat name="skilltheftbm:num" value="4" level="6" />
+      <stat name="skilltheftbm:num" value="6" level="11" />
+      <stat name="skilltheftbm:num" value="8" level="18" />
+    </rules>
+	</element>
+	<element name="Immortality" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_IMMORTALITY">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BODY_MANIPULATION_IMMORTALITY</requirements>
+		<description>
+			<p>At the 18th level, your age is the same as the body you take over, making you immortal as long as you keep switching bodies.</p>
+		</description>
+		<sheet>
+			<description>Your age is the same as the body you take over, making you immortal as long as you keep switching bodies.</description>
+		</sheet>
+	</element>
+	<!--Feature Replacement Grants-->
+	<element name="Graverobber Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BODY_MANIPULATION_GRAVEROBBER" />
+	<element name="Skill Theft Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BODY_MANIPULATION_SKILL_THEFT" />
+	<element name="Immortality Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BODY_MANIPULATION_IMMORTALITY" />
+</elements>
