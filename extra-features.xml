@@ -4,7 +4,7 @@
 		<name>Extra Features</name>
 		<description>The Optional Class Features from Tasha’s Cauldron of Everything</description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
-		<update version="5.1">
+		<update version="5.2">
 			<file name="extra-features.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/extra-features.xml" />
 		</update>
 	</info>
@@ -20,21 +20,21 @@
 		<rules>
 			<stat name="ce:modifier" value="charisma:modifier" bonus="cursed energy" />
 			<stat name="ce:modifier" value="wisdom:modifier" bonus="cursed energy" />
-			<stat name="cem:pointsj" value="level:juggernaut" />
-			<stat name="cem:pointssc" value="level:scout" />
-			<stat name="cem:pointssu" value="level:shikigami user" />
-			<stat name="cem:pointsst" value="level:strategist" />
-			<stat name="cem:pointsst" value="level:strategist" />
-			<stat name="cem:pointsss" value="level:support specialist" />
-			<stat name="cem:pointsss" value="proficiency" />
-			<stat name="cem:pointsw" value="level:warrior" />
-			<stat name="cem:points" value="ce:pointsj" bonus="cursed energy" />
-			<stat name="cem:points" value="ce:pointssc" bonus="cursed energy" />
-			<stat name="cem:points" value="ce:pointssu" bonus="cursed energy" />
-			<stat name="cem:points" value="ce:pointsst" bonus="cursed energy" />
-			<stat name="cem:points" value="ce:pointsss" bonus="cursed energy" />
-			<stat name="cem:points" value="ce:pointsw" bonus="cursed energy" />
-			<stat name="cem:points" value="ce:modifier" />
+			<stat name="ce:pointsj" value="level:juggernaut" />
+			<stat name="ce:pointssc" value="level:scout" />
+			<stat name="ce:pointssu" value="level:shikigami user" />
+			<stat name="ce:pointsst" value="level:strategist" />
+			<stat name="ce:pointsst" value="level:strategist" />
+			<stat name="ce:pointsss" value="level:support specialist" />
+			<stat name="ce:pointsss" value="proficiency" />
+			<stat name="ce:pointsw" value="level:warrior" />
+			<stat name="ce:points" value="ce:pointsj" bonus="cursed energy" requirements="ID_JJK_CLASS_JUGGERNAUT" />
+			<stat name="ce:points" value="ce:pointssc" bonus="cursed energy" requirements="ID_JJK_CLASS_SCOUT" />
+			<stat name="ce:points" value="ce:pointssu" bonus="cursed energy" requirements="ID_JJK_CLASS_SHIKIGAMI_USER" />
+			<stat name="ce:points" value="ce:pointsst" bonus="cursed energy" requirements="ID_JJK_CLASS_STRATEGIST" />
+			<stat name="ce:points" value="ce:pointsss" bonus="cursed energy" requirements="ID_JJK_CLASS_SUPPORT_SPECIALIST" />
+			<stat name="ce:points" value="ce:pointsw" bonus="cursed energy" requirements="ID_JJK_CLASS_WARRIOR" />
+			<stat name="ce:points" value="ce:modifier" />
 			<stat name="ce:points:total" value="cem:points" bonus="cursed energy" />
 			<stat name="ce:dc" value="8" />
 			<stat name="ce:dc" value="proficiency" />
