@@ -4,7 +4,7 @@
 		<name>Shikigami User</name>
 		<description>The Shikigami User class from JJK.</description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
-		<update version="5.1">
+		<update version="5.0">
 			<file name="class-shikigamiuser.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/classes/class-shikigamiuser.xml" />
 		</update>
 	</info>
@@ -151,7 +151,7 @@
 			</div>
 		</description>
 		<sheet action="Action" usage="1/Long Rest or CE">
-			<description>For 3 CE you can summon a shikigami that is bound to you. It appears in an unoccupied space of your choice within 30 feet of you.
+			<description>For 3 cursed energy, you can summon a shikigami that is bound to you. It appears in an unoccupied space of your choice within 30 feet of you.
 			The shikigami is friendly to you and your companions, and it obeys your commands.
 			In combat, the shikigami shares your initiative and takes its turn immediately after yours. It can move and use its reaction on its own, but only takes the Dodge action unless you take a bonus action on your turn to command it to take another action. That action can be one in its statblock or some other action. If you are incapacitated, the shikigami can take any action of its choice, not just Dodge.
 			The shikigami remains until reduced to 0 hit points, you summon the shikigami again, or you die. Anything the shikigami was wearing or carrying is left behind when it vanishes.</description>
@@ -297,7 +297,7 @@
 			</ul>
 		</description>
 		<sheet>
-			<description>After an attack, if your shikigami is within 5 feet of you or the target of the attack, you can choose for your shikigami to do 1d8 more damage to the target, move the target one up to 15 feet horizontally in a direction of your choice and knock them prone unless they succeed on a Strength saving throw against your CE save DC, or move you 5 feet horizontally in a direction of your choice, gaining half cover until the beginning of your next turn.</description>
+			<description>After an attack, if your shikigami is within 5 feet of you or the target of the attack, you can choose for your shikigami to do 1d8 more damage to the target, move the target one up to 15 feet horizontally in a direction of your choice and knock them prone unless they succeed on a Strength saving throw DC{{ce:dc:total}}, or move you 5 feet horizontally in a direction of your choice, gaining half cover until the beginning of your next turn.</description>
 		</sheet>
 	</element>
 	<element name="Advanced Shikigami" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_ADVANCED_SHIKIGAMI">
