@@ -4,7 +4,7 @@
 		<name>Extra Features</name>
 		<description>The Extra Features from JJK</description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
-		<update version="5.87">
+		<update version="5.871">
 			<file name="extra-features.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/extra-features.xml" />
 		</update>
 	</info>
@@ -155,7 +155,7 @@
 			<stat name="ce:base_support" value="proficiency" requirements="ID_JJK_CLASS_SUPPORT_SPECIALIST||ID_JJK_MULTICLASS_SUPPORT_SPECIALIST" />
             <stat name="ce:base_warrior" value="level" requirements="ID_JJK_CLASS_WARRIOR||ID_JJK_MULTICLASS_WARRIOR" />
 
-            <!-- choose base CE from the class whose CLASS LEVEL is highest (comparisons use classlvl_*) -->
+            <!-- choose base CE from the class whose CLASS LEVEL is highest (comparisons use classlvl_*) 
             <stat name="ce:points" value="ce:base_juggernaut" requirements="(ID_JJK_CLASS_JUGGERNAUT||ID_JJK_MULTICLASS_JUGGERNAUT),[classlvl_juggernaut:classlvl_scout],[classlvl_juggernaut:classlvl_shikigami],[classlvl_juggernaut:classlvl_strategist],[classlvl_juggernaut:classlvl_support],[classlvl_juggernaut:classlvl_warrior]" bonus="cursed energy" />
             <stat name="ce:points" value="ce:base_scout" requirements="(ID_JJK_CLASS_SCOUT||ID_JJK_MULTICLASS_SCOUT),[classlvl_scout:classlvl_juggernaut],[classlvl_scout:classlvl_shikigami],[classlvl_scout:classlvl_strategist],[classlvl_scout:classlvl_support],[classlvl_scout:classlvl_warrior]" bonus="cursed energy" />
             <stat name="ce:points" value="ce:base_shikigami" requirements="(ID_JJK_CLASS_SHIKIGAMI_USER||ID_JJK_MULTICLASS_SHIKIGAMI_USER),[classlvl_shikigami:classlvl_juggernaut],[classlvl_shikigami:classlvl_scout],[classlvl_shikigami:classlvl_strategist],[classlvl_shikigami:classlvl_support],[classlvl_shikigami:classlvl_warrior]" bonus="cursed energy" />
