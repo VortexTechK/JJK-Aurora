@@ -15,7 +15,7 @@
       		<p class="indent">Your cursed energy DC is 8 + user cursed energy ability modifier + proficiency bonus. </p>
 		</description>
 		<sheet>
-			<description>You have {{ce:points:total}} Cursed Energy and your Cursed Energy DC is {{ce:dc:total}}. Your curse stat is {{cu:stat}}. test {{classlvlstrategist}} and {{classlvlshikigami}} this</description>
+			<description>You have {{ce:points:total}} Cursed Energy and your Cursed Energy DC is {{ce:dc:total}}. Your curse stat is {{cu:stat}}. </description>
 		</sheet>
         <rules>
             <stat name="ce:modifier" value="charisma:modifier" bonus="cursed energy"/>
@@ -26,12 +26,12 @@
 			<stat name="classlvlstrategist" value="0" bonus="cursed energy"/>
 			<stat name="classlvlsupport" value="0" bonus="cursed energy"/>
 			<stat name="classlvlwarrior" value="0" bonus="cursed energy"/>
-			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_LEVEL_JUGGERNAUT" />
-			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_LEVEL_SCOUT" />
-			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_LEVEL_SHIKIGAMI" />
-			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_LEVEL_STRATEGIST" />
-			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_LEVEL_SUPPORT" />
-			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_LEVEL_WARRIOR" />
+			<stat name="classlvljuggernaut" value="level:juggernaut" bonus="cursed energy" />
+			<stat name="classlvlscout" value="level:scout" bonus="cursed energy" />
+			<stat name="classlvlshikigami" value="level:shikigami user" bonus="cursed energy" />
+			<stat name="classlvlstrategist" value="level:strategist" bonus="cursed energy" />
+			<stat name="classlvlsupport" value="level:support specialist" bonus="cursed energy" />
+			<stat name="classlvlwarrior" value="level:warrior" bonus="cursed energy" />
 			<stat name="ce:basejuggernaut" value="level" />
 			<stat name="ce:basescout" value="level" />
 			<stat name="ce:baseshikigami" value="level" />
@@ -109,48 +109,6 @@
 			<stat name="cu:stat" value="charisma:score" bonus="cursed energy"/>
 			<stat name="cu:stat" value="wisdom:score" bonus="cursed energy"/>
         </rules>
-	</element>
-	<element name="ceclasslvljuggernaut" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_LEVEL_JUGGERNAUT">
-		<compendium display="false"/>
-		<sheet display="false"/>
-		<rules>
-			<stat name="classlvljuggernaut" value="level:juggernaut" bonus="cursed energy" />
-		</rules>
-	</element>
-	<element name="ceclasslvlscout" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_LEVEL_SCOUT">
-		<compendium display="false"/>
-		<sheet display="false"/>
-		<rules>
-			<stat name="classlvlscout" value="level:scout" bonus="cursed energy" />
-		</rules>
-	</element>
-	<element name="ceclasslvlshikigami" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_LEVEL_SHIKIGAMI">
-		<compendium display="false"/>
-		<sheet display="false"/>
-		<rules>
-			<stat name="classlvlshikigami" value="level:shikigami user" bonus="cursed energy" />
-		</rules>
-	</element>
-	<element name="ceclasslvlstrategist" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_LEVEL_STRATEGIST">
-		<compendium display="false"/>
-		<sheet display="false"/>
-		<rules>
-			<stat name="classlvlstrategist" value="level:strategist" bonus="cursed energy" />
-		</rules>
-	</element>
-	<element name="ceclasslvlsupport" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_LEVEL_SUPPORT">
-		<compendium display="false"/>
-		<sheet display="false"/>
-		<rules>
-			<stat name="classlvlsupport" value="level:support specialist" bonus="cursed energy" />
-		</rules>
-	</element>
-	<element name="ceclasslvlwarrior" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_LEVEL_WARRIOR">
-		<compendium display="false"/>
-		<sheet display="false"/>
-		<rules>
-			<stat name="classlvlwarrior" value="level:warrior" bonus="cursed energy" />
-		</rules>
 	</element>
 	<!-- Reverse Curse Technique -->
 	<element name="Reverse Curse Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_REVERSE_CURSE_TECHNIQUE">
