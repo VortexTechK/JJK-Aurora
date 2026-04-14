@@ -4,7 +4,7 @@
 		<name>Support Specialist</name>
 		<description>The Support Specialist class from JJK.</description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
-		<update version="5.91">
+		<update version="5.0">
 			<file name="class-supportspecialist.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/classes/class-supportspecialist.xml" />
 		</update>
 	</info>
@@ -89,8 +89,7 @@
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" requirements="!ID_JJK_MULTICLASS_SUPPORT_SPECIALIST" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" requirements="!ID_JJK_MULTICLASS_SUPPORT_SPECIALIST" />
 			<select type="Proficiency" name="Skill Proficiency (Support Specialist)" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_RELIGION" number="2" requirements="!ID_JJK_MULTICLASS_SUPPORT_SPECIALIST" />
-			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURSED_ENERGY" level="1" requirements="!ID_JJK_CLASS_FEATURE_NO_CURSED_ENERGY" />
-			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_MCURSED_ENERGY" requirements="ID_JJK_CLASS_JUGGERNAUT||ID_JJK_CLASS_SHIKIGAMI_USER||ID_JJK_CLASS_STRATEGIST||ID_JJK_CLASS_SCOUT||ID_JJK_CLASS_WARRIOR" />
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_CURSED_ENERGY" level="1" requirements="!ID_JJK_MULTICLASS_SUPPORT_SPECIALIST" />
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_INNATE_TECHNIQUE" level="1" />
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN" level="1" />
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_BARRIER_TECHNIQUES" level="2" />
@@ -116,28 +115,10 @@
 		</multiclass>
 	</element>
 	<element name="Cursed Energy" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURSED_ENERGY">
-		<requirements>!(ID_INTERNAL_FEATURE_REPLACEMENT_SUPPORT_SPECIALIST_CURSED_ENERGY||ID_JJK_CLASS_JUGGERNAUT||ID_JJK_CLASS_SHIKIGAMI_USER||ID_JJK_CLASS_STRATEGIST||ID_JJK_CLASS_SCOUT||ID_JJK_CLASS_WARRIOR)</requirements>
 		<description>
 			<p>Starting at 1st level, you can harness your negative feelings into a usable source of energy, called cursed energy. These feelings can be harnessed into attacks or abilities. The number of cursed energy you possess is your class level + your cursed energy modifier which is charisma or wisdom (Player’s choice). You have a curse stat equal to the chosen stat</p>
 			<p class="indent"> Your cursed energy DC is 8 + user cursed energy ability modifier + proficiency bonus.</p>
 		</description>
-		<sheet>
-			<description>You have {{ce:points:total}} Cursed Energy and your Cursed Energy DC is {{ce:dc:total}}. Your curse stat is {{cu:stat}}</description>
-		</sheet>
-		<rules>
-			<stat name="ce:points" value="level:support specialist" />
-			<stat name="ce:modifier" value="charisma:modifier" bonus="cursed energy" />
-			<stat name="ce:modifier" value="wisdom:modifier" bonus="cursed energy" />
-			<stat name="ce:points" value="ce:modifier" />
-			<stat name="ce:points" value="proficiency" />
-			<stat name="ce:points:total" value="ce:points" bonus="cursed energy" />
-			<stat name="ce:dc" value="8" />
-			<stat name="ce:dc" value="proficiency" />
-			<stat name="ce:dc" value="ce:modifier" />
-			<stat name="ce:dc:total" value="ce:dc" bonus="cursed energy" />
-			<stat name="cu:stat" value="charisma:score" bonus="cursed energy"/>			
-			<stat name="cu:stat" value="wisdom:score" bonus="cursed energy" />
-		</rules>
 	</element>
 	<element name="Innate Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_INNATE_TECHNIQUE">
 		<requirements>!(ID_INTERNAL_FEATURE_REPLACEMENT_SUPPORT_SPECIALIST_INNATE_TECHNIQUE||ID_JJK_CLASS_JUGGERNAUT||ID_JJK_CLASS_SHIKIGAMI_USER||ID_JJK_CLASS_STRATEGIST||ID_JJK_CLASS_SCOUT||ID_JJK_CLASS_WARRIOR)||ID_JJK_ARCHETYPE_BODY_MANIPULATION</requirements>
