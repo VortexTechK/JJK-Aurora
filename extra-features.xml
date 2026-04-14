@@ -4,11 +4,11 @@
 		<name>Extra Features</name>
 		<description>The Optional Class Features from Tasha’s Cauldron of Everything</description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
-		<update version="5.0">
+		<update version="5.1">
 			<file name="extra-features.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/extra-features.xml" />
 		</update>
 	</info>
-	<!-- Multiclass Curse Energy -->
+	<!-- Curse Energy -->
 	<element name="Curse Energy" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_CURSED_ENERGY">
 		<description>
 			<p>Starting at 1st level, you can harness your negative feelings into a usable source of energy, called cursed energy. These feelings can be harnessed into attacks or abilities. The number of cursed energy you possess is based on your highest level class. You have a curse stat equal to the highest among charisma and wisdom.</p>
@@ -28,12 +28,12 @@
 			<stat name="cem:pointsss" value="level:support specialist" />
 			<stat name="cem:pointsss" value="proficiency" />
 			<stat name="cem:pointsw" value="level:warrior" />
-			<stat name="cem:points" value="ce:pointsj" bonus="cursed energy" requirements="ID_JJK_CLASS_JUGGERNAUT" />
-			<stat name="cem:points" value="ce:pointssc" bonus="cursed energy" requirements="ID_JJK_CLASS_SCOUT" />
-			<stat name="cem:points" value="ce:pointssu" bonus="cursed energy" requirements="ID_JJK_CLASS_SHIKIGAMI_USER" />
-			<stat name="cem:points" value="ce:pointsst" bonus="cursed energy" requirements="ID_JJK_CLASS_STRATEGIST" />
-			<stat name="cem:points" value="ce:pointsss" bonus="cursed energy" requirements="ID_JJK_CLASS_SUPPORT_SPECIALIST" />
-			<stat name="cem:points" value="ce:pointsw" bonus="cursed energy" requirements="ID_JJK_CLASS_WARRIOR" />
+			<stat name="cem:points" value="ce:pointsj" bonus="cursed energy" />
+			<stat name="cem:points" value="ce:pointssc" bonus="cursed energy" />
+			<stat name="cem:points" value="ce:pointssu" bonus="cursed energy" />
+			<stat name="cem:points" value="ce:pointsst" bonus="cursed energy" />
+			<stat name="cem:points" value="ce:pointsss" bonus="cursed energy" />
+			<stat name="cem:points" value="ce:pointsw" bonus="cursed energy" />
 			<stat name="cem:points" value="ce:modifier" />
 			<stat name="ce:points:total" value="cem:points" bonus="cursed energy" />
 			<stat name="ce:dc" value="8" />
