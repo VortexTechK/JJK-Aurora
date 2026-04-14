@@ -4,7 +4,7 @@
 		<name>Extra Features</name>
 		<description>The Extra Features from JJK</description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
-		<update version="5.881">
+		<update version="5.882">
 			<file name="extra-features.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/extra-features.xml" />
 		</update>
 	</info>
@@ -40,74 +40,66 @@
 			<stat name="ce:basesupport" value="level" requirements="ID_JJK_CLASS_SUPPORT_SPECIALIST||ID_JJK_MULTICLASS_SUPPORT_SPECIALIST"/>
 			<stat name="ce:basesupport" value="proficiency" requirements="ID_JJK_CLASS_SUPPORT_SPECIALIST||ID_JJK_MULTICLASS_SUPPORT_SPECIALIST"/>
 			<stat name="ce:basewarrior" value="level" requirements="ID_JJK_CLASS_WARRIOR||ID_JJK_MULTICLASS_WARRIOR"/>
-			<stat name="ce:points" value="ce:basejuggernaut" requirements="(
-				[classlvljuggernaut:1],[level:1],![level:3])
-				||([classlvljuggernaut:2],[level:2],![level:5])
-				||([classlvljuggernaut:3],[level:3],![level:7])
-				||([classlvljuggernaut:4],[level:4],![level:9])
-				||([classlvljuggernaut:5],[level:5],![level:11])
-				||([classlvljuggernaut:6],[level:6],![level:13])
-				||([classlvljuggernaut:7],[level:7],![level:15])
-				||([classlvljuggernaut:8],[level:8],![level:17])
-				||([classlvljuggernaut:9],[level:9],![level:19])
-				||([classlvljuggernaut:10],[level:10])
-				||([classlvljuggernaut:7],(![classlvlscout:8],![classlvlshikigami:8],![classlvlstrategist:8],![classlvlsupport:8],![classlvlwarrior:8])
-				||([classlvljuggernaut:8],(![classlvlscout:9],![classlvlshikigami:9],![classlvlstrategist:9],![classlvlsupport:9],![classlvlwarrior:9])" bonus="cursed energy"/>
-			<stat name="ce:points" value="ce:basescout" requirements="(
-				[classlvlscout:1],[level:1],![level:3])
-				||([classlvlscout:2],[level:2],![level:5])
-				||([classlvlscout:3],[level:3],![level:7])
-				||([classlvlscout:4],[level:4],![level:9])
-				||([classlvlscout:5],[level:5],![level:11])
-				||([classlvlscout:6],[level:6],![level:13])
-				||([classlvlscout:7],[level:7],![level:15])
-				||([classlvlscout:8],[level:8],![level:17])
-				||([classlvlscout:9],[level:9],![level:19])
-				||([classlvlscout:10],[level:10])" bonus="cursed energy"/>
-			<stat name="ce:points" value="ce:baseshikigami" requirements="(
-				[classlvlshikigami:1],[level:1],![level:3])
-				||([classlvlshikigami:2],[level:2],![level:5])
-				||([classlvlshikigami:3],[level:3],![level:7])
-				||([classlvlshikigami:4],[level:4],![level:9])
-				||([classlvlshikigami:5],[level:5],![level:11])
-				||([classlvlshikigami:6],[level:6],![level:13])
-				||([classlvlshikigami:7],[level:7],![level:15])
-				||([classlvlshikigami:8],[level:8],![level:17])
-				||([classlvlshikigami:9],[level:9],![level:19])
-				||([classlvlshikigami:10],[level:10])" bonus="cursed energy"/>
-			<stat name="ce:points" value="ce:basestrategist" requirements="(
-				[classlvlstrategist:1],[level:1],![level:3])
-				||([classlvlstrategist:2],[level:2],![level:5])
-				||([classlvlstrategist:3],[level:3],![level:7])
-				||([classlvlstrategist:4],[level:4],![level:9])
-				||([classlvlstrategist:5],[level:5],![level:11])
-				||([classlvlstrategist:6],[level:6],![level:13])
-				||([classlvlstrategist:7],[level:7],![level:15])
-				||([classlvlstrategist:8],[level:8],![level:17])
-				||([classlvlstrategist:9],[level:9],![level:19])
-				||([classlvlstrategist:10],[level:10])" bonus="cursed energy"/>
-			<stat name="ce:points" value="ce:basesupport" requirements="(
-				[classlvlsupport:1],[level:1],![level:3])
-				||([classlvlsupport:2],[level:2],![level:5])
-				||([classlvlsupport:3],[level:3],![level:7])
-				||([classlvlsupport:4],[level:4],![level:9])
-				||([classlvlsupport:5],[level:5],![level:11])
-				||([classlvlsupport:6],[level:6],![level:13])
-				||([classlvlsupport:7],[level:7],![level:15])
-				||([classlvlsupport:8],[level:8],![level:17])
-				||([classlvlsupport:9],[level:9],![level:19])
-				||([classlvlsupport:10],[level:10])" bonus="cursed energy"/>
-			<stat name="ce:points" value="ce:basewarrior" requirements="(
-				[classlvlwarrior:1],[level:1],![level:3])
-				||([classlvlwarrior:2],[level:2],![level:5])
-				||([classlvlwarrior:3],[level:3],![level:7])
-				||([classlvlwarrior:4],[level:4],![level:9])
-				||([classlvlwarrior:5],[level:5],![level:11])
-				||([classlvlwarrior:6],[level:6],![level:13])
-				||([classlvlwarrior:7],[level:7],![level:15])
-				||([classlvlwarrior:8],[level:8],![level:17])
-				||([classlvlwarrior:9],[level:9],![level:19])
-				||([classlvlwarrior:10],[level:10])" bonus="cursed energy"/>
+			<stat name="ce:points" value="ce:basejuggernaut" requirements="([classlvljuggernaut:1],![classlvlscout:2],![classlvlshikigami:2],![classlvlstrategist:2],![classlvlsupport:2],![classlvlwarrior:2])||
+([classlvljuggernaut:2],![classlvlscout:3],![classlvlshikigami:3],![classlvlstrategist:3],![classlvlsupport:3],![classlvlwarrior:3])||
+([classlvljuggernaut:3],![classlvlscout:4],![classlvlshikigami:4],![classlvlstrategist:4],![classlvlsupport:4],![classlvlwarrior:4])||
+([classlvljuggernaut:4],![classlvlscout:5],![classlvlshikigami:5],![classlvlstrategist:5],![classlvlsupport:5],![classlvlwarrior:5])||
+([classlvljuggernaut:5],![classlvlscout:6],![classlvlshikigami:6],![classlvlstrategist:6],![classlvlsupport:6],![classlvlwarrior:6])||
+([classlvljuggernaut:6],![classlvlscout:7],![classlvlshikigami:7],![classlvlstrategist:7],![classlvlsupport:7],![classlvlwarrior:7])||
+([classlvljuggernaut:7],![classlvlscout:8],![classlvlshikigami:8],![classlvlstrategist:8],![classlvlsupport:8],![classlvlwarrior:8])||
+([classlvljuggernaut:8],![classlvlscout:9],![classlvlshikigami:9],![classlvlstrategist:9],![classlvlsupport:9],![classlvlwarrior:9])||
+([classlvljuggernaut:9],![classlvlscout:10],![classlvlshikigami:10],![classlvlstrategist:10],![classlvlsupport:10],![classlvlwarrior:10])||
+([classlvljuggernaut:10])" bonus="cursed energy"/>
+			<stat name="ce:points" value="ce:basescout" requirements="([classlvlscout:1],![classlvljuggernaut:2],![classlvlshikigami:2],![classlvlstrategist:2],![classlvlsupport:2],![classlvlwarrior:2])||
+([classlvlscout:2],![classlvljuggernaut:3],![classlvlshikigami:3],![classlvlstrategist:3],![classlvlsupport:3],![classlvlwarrior:3])||
+([classlvlscout:3],![classlvljuggernaut:4],![classlvlshikigami:4],![classlvlstrategist:4],![classlvlsupport:4],![classlvlwarrior:4])||
+([classlvlscout:4],![classlvljuggernaut:5],![classlvlshikigami:5],![classlvlstrategist:5],![classlvlsupport:5],![classlvlwarrior:5])||
+([classlvlscout:5],![classlvljuggernaut:6],![classlvlshikigami:6],![classlvlstrategist:6],![classlvlsupport:6],![classlvlwarrior:6])||
+([classlvlscout:6],![classlvljuggernaut:7],![classlvlshikigami:7],![classlvlstrategist:7],![classlvlsupport:7],![classlvlwarrior:7])||
+([classlvlscout:7],![classlvljuggernaut:8],![classlvlshikigami:8],![classlvlstrategist:8],![classlvlsupport:8],![classlvlwarrior:8])||
+([classlvlscout:8],![classlvljuggernaut:9],![classlvlshikigami:9],![classlvlstrategist:9],![classlvlsupport:9],![classlvlwarrior:9])||
+([classlvlscout:9],![classlvljuggernaut:10],![classlvlshikigami:10],![classlvlstrategist:10],![classlvlsupport:10],![classlvlwarrior:10])||
+([classlvlscout:10])" bonus="cursed energy"/>
+			<stat name="ce:points" value="ce:baseshikigami" requirements="([classlvlshikigami:1],![classlvljuggernaut:2],![classlvlscout:2],![classlvlstrategist:2],![classlvlsupport:2],![classlvlwarrior:2])||
+([classlvlshikigami:2],![classlvljuggernaut:3],![classlvlscout:3],![classlvlstrategist:3],![classlvlsupport:3],![classlvlwarrior:3])||
+([classlvlshikigami:3],![classlvljuggernaut:4],![classlvlscout:4],![classlvlstrategist:4],![classlvlsupport:4],![classlvlwarrior:4])||
+([classlvlshikigami:4],![classlvljuggernaut:5],![classlvlscout:5],![classlvlstrategist:5],![classlvlsupport:5],![classlvlwarrior:5])||
+([classlvlshikigami:5],![classlvljuggernaut:6],![classlvlscout:6],![classlvlstrategist:6],![classlvlsupport:6],![classlvlwarrior:6])||
+([classlvlshikigami:6],![classlvljuggernaut:7],![classlvlscout:7],![classlvlstrategist:7],![classlvlsupport:7],![classlvlwarrior:7])||
+([classlvlshikigami:7],![classlvljuggernaut:8],![classlvlscout:8],![classlvlstrategist:8],![classlvlsupport:8],![classlvlwarrior:8])||
+([classlvlshikigami:8],![classlvljuggernaut:9],![classlvlscout:9],![classlvlstrategist:9],![classlvlsupport:9],![classlvlwarrior:9])||
+([classlvlshikigami:9],![classlvljuggernaut:10],![classlvlscout:10],![classlvlstrategist:10],![classlvlsupport:10],![classlvlwarrior:10])||
+([classlvlshikigami:10])" bonus="cursed energy"/>
+			<stat name="ce:points" value="ce:basestrategist" requirements="([classlvlstrategist:1],![classlvljuggernaut:2],![classlvlscout:2],![classlvlshikigami:2],![classlvlsupport:2],![classlvlwarrior:2])||
+([classlvlstrategist:2],![classlvljuggernaut:3],![classlvlscout:3],![classlvlshikigami:3],![classlvlsupport:3],![classlvlwarrior:3])||
+([classlvlstrategist:3],![classlvljuggernaut:4],![classlvlscout:4],![classlvlshikigami:4],![classlvlsupport:4],![classlvlwarrior:4])||
+([classlvlstrategist:4],![classlvljuggernaut:5],![classlvlscout:5],![classlvlshikigami:5],![classlvlsupport:5],![classlvlwarrior:5])||
+([classlvlstrategist:5],![classlvljuggernaut:6],![classlvlscout:6],![classlvlshikigami:6],![classlvlsupport:6],![classlvlwarrior:6])||
+([classlvlstrategist:6],![classlvljuggernaut:7],![classlvlscout:7],![classlvlshikigami:7],![classlvlsupport:7],![classlvlwarrior:7])||
+([classlvlstrategist:7],![classlvljuggernaut:8],![classlvlscout:8],![classlvlshikigami:8],![classlvlsupport:8],![classlvlwarrior:8])||
+([classlvlstrategist:8],![classlvljuggernaut:9],![classlvlscout:9],![classlvlshikigami:9],![classlvlsupport:9],![classlvlwarrior:9])||
+([classlvlstrategist:9],![classlvljuggernaut:10],![classlvlscout:10],![classlvlshikigami:10],![classlvlsupport:10],![classlvlwarrior:10])||
+([classlvlstrategist:10])" bonus="cursed energy"/>
+			<stat name="ce:points" value="ce:basesupport" requirements="([classlvlsupport:1],![classlvljuggernaut:2],![classlvlscout:2],![classlvlshikigami:2],![classlvlstrategist:2],![classlvlwarrior:2])||
+([classlvlsupport:2],![classlvljuggernaut:3],![classlvlscout:3],![classlvlshikigami:3],![classlvlstrategist:3],![classlvlwarrior:3])||
+([classlvlsupport:3],![classlvljuggernaut:4],![classlvlscout:4],![classlvlshikigami:4],![classlvlstrategist:4],![classlvlwarrior:4])||
+([classlvlsupport:4],![classlvljuggernaut:5],![classlvlscout:5],![classlvlshikigami:5],![classlvlstrategist:5],![classlvlwarrior:5])||
+([classlvlsupport:5],![classlvljuggernaut:6],![classlvlscout:6],![classlvlshikigami:6],![classlvlstrategist:6],![classlvlwarrior:6])||
+([classlvlsupport:6],![classlvljuggernaut:7],![classlvlscout:7],![classlvlshikigami:7],![classlvlstrategist:7],![classlvlwarrior:7])||
+([classlvlsupport:7],![classlvljuggernaut:8],![classlvlscout:8],![classlvlshikigami:8],![classlvlstrategist:8],![classlvlwarrior:8])||
+([classlvlsupport:8],![classlvljuggernaut:9],![classlvlscout:9],![classlvlshikigami:9],![classlvlstrategist:9],![classlvlwarrior:9])||
+([classlvlsupport:9],![classlvljuggernaut:10],![classlvlscout:10],![classlvlshikigami:10],![classlvlstrategist:10],![classlvlwarrior:10])||
+([classlvlsupport:10])" bonus="cursed energy"/>
+			<stat name="ce:points" value="ce:basewarrior" requirements="([classlvlwarrior:1],![classlvljuggernaut:2],![classlvlscout:2],![classlvlshikigami:2],![classlvlstrategist:2],![classlvlsupport:2])||
+([classlvlwarrior:2],![classlvljuggernaut:3],![classlvlscout:3],![classlvlshikigami:3],![classlvlstrategist:3],![classlvlsupport:3])||
+([classlvlwarrior:3],![classlvljuggernaut:4],![classlvlscout:4],![classlvlshikigami:4],![classlvlstrategist:4],![classlvlsupport:4])||
+([classlvlwarrior:4],![classlvljuggernaut:5],![classlvlscout:5],![classlvlshikigami:5],![classlvlstrategist:5],![classlvlsupport:5])||
+([classlvlwarrior:5],![classlvljuggernaut:6],![classlvlscout:6],![classlvlshikigami:6],![classlvlstrategist:6],![classlvlsupport:6])||
+([classlvlwarrior:6],![classlvljuggernaut:7],![classlvlscout:7],![classlvlshikigami:7],![classlvlstrategist:7],![classlvlsupport:7])||
+([classlvlwarrior:7],![classlvljuggernaut:8],![classlvlscout:8],![classlvlshikigami:8],![classlvlstrategist:8],![classlvlsupport:8])||
+([classlvlwarrior:8],![classlvljuggernaut:9],![classlvlscout:9],![classlvlshikigami:9],![classlvlstrategist:9],![classlvlsupport:9])||
+([classlvlwarrior:9],![classlvljuggernaut:10],![classlvlscout:10],![classlvlshikigami:10],![classlvlstrategist:10],![classlvlsupport:10])||
+([classlvlwarrior:10])" bonus="cursed energy"/>
 			<stat name="ce:points" value="ce:modifier"/>
 			<stat name="ce:points:total" value="ce:points"/>
 			<stat name="ce:dc" value="8"/>
