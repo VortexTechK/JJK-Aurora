@@ -4,7 +4,7 @@
 		<name>Shikigami User</name>
 		<description>The Shikigami User class from JJK.</description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
-		<update version="5.0">
+		<update version="5.1">
 			<file name="class-shikigamiuser.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/classes/class-shikigamiuser.xml" />
 		</update>
 	</info>
@@ -150,8 +150,8 @@
 				<div element="ID_JJK_INFORMATION_SHIKIGAMI_COMPANION"/>
 			</div>
 		</description>
-		<sheet action="Action" usage="1/Long Rest or 3 CE">
-			<description>You can summon a shikigami that is bound to you. It appears in an unoccupied space of your choice within 30 feet of you.
+		<sheet action="Action" usage="1/Long Rest or CE">
+			<description>For 3 CE you can summon a shikigami that is bound to you. It appears in an unoccupied space of your choice within 30 feet of you.
 			The shikigami is friendly to you and your companions, and it obeys your commands.
 			In combat, the shikigami shares your initiative and takes its turn immediately after yours. It can move and use its reaction on its own, but only takes the Dodge action unless you take a bonus action on your turn to command it to take another action. That action can be one in its statblock or some other action. If you are incapacitated, the shikigami can take any action of its choice, not just Dodge.
 			The shikigami remains until reduced to 0 hit points, you summon the shikigami again, or you die. Anything the shikigami was wearing or carrying is left behind when it vanishes.</description>
