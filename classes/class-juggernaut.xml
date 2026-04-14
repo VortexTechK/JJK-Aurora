@@ -4,7 +4,7 @@
 		<name>Juggernaut</name>
 		<description>The Juggernaut class from JJK.</description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
-		<update version="5.5">
+		<update version="5.6">
 			<file name="class-juggernaut.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/classes/class-juggernaut.xml" />
 		</update>
 	</info>
@@ -238,11 +238,13 @@
 		<sheet>
 			<description>As part of your bonus action while entering a focus, you can move up to {{pursuer:speed}} ft. towards an enemy.</description>
 		</sheet>
-		<stat name="pursuer:speed" value="10" bonus="pursuer" requirements="[speed:20],![speed:30]"/>
-		<stat name="pursuer:speed" value="15" bonus="pursuer" requirements="[speed:30],![speed:40]"/>
-		<stat name="pursuer:speed" value="20" bonus="pursuer" requirements="[speed:40],![speed:50]"/>
-		<stat name="pursuer:speed" value="25" bonus="pursuer" requirements="[speed:50],![speed:60]"/>
-		<stat name="pursuer:speed" value="30" bonus="pursuer" requirements="[speed:60],![speed:70]"/>
+		<rules>
+			<stat name="pursuer:speed" value="10" bonus="pursuer" requirements="[speed:20],![speed:30]"/>
+			<stat name="pursuer:speed" value="15" bonus="pursuer" requirements="[speed:30],![speed:40]"/>
+			<stat name="pursuer:speed" value="20" bonus="pursuer" requirements="[speed:40],![speed:50]"/>
+			<stat name="pursuer:speed" value="25" bonus="pursuer" requirements="[speed:50],![speed:60]"/>
+			<stat name="pursuer:speed" value="30" bonus="pursuer" requirements="[speed:60],![speed:70]"/>
+		</rules>
 	</element>
 	<element name="Honed Instinct" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_HONED_INSTINCT">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_HONED_INSTINCT</requirements>
