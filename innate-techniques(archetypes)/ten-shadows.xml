@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="5.2">
+		<update version="5.0">
 			<file name="ten-shadows.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/ten-shadows.xml" />
 		</update>
 	</info>
@@ -34,11 +34,8 @@
       <p class="indent">Your shikigami cannot use actions on their own. You can spend a bonus action to command your shikigami and can also spend an action to order them to do something more specific for longer, such as protect that creature, grab that, defend that area, etc. The number of Shikigami you can control at once is equal to half your level(rounded up).</p>
 		</description>
 		<sheet action="Action" usage="CE">
-			<description>For 1 CE, Summon up to 2 Divine Dogs(1 CE per dog) within 10 ft of you. Your Divine Dogs last for 1 hour, until they are reduced to 0 hit points or you dismiss any summoned shikigami as a bonus action while within line of sight. Alternatively, as a reaction to seeing your shikigami reduced to 0 hit points, you can unsummon them as a reaction and cannot summon them again until you finish a long rest. Your shikigami cannot use actions on their own. You can spend a bonus action to command your shikigami and can also spend an action to order them to do something more specific for longer, such as protect that creature, grab that, defend that area, etc. The number of Shikigami you can control at once is {{tsdd:level}}.</description>
+			<description>For 1 cursed energy, Summon up to 2 Divine Dogs(1 CE per dog) within 10 ft of you. Your Divine Dogs last for 1 hour, until they are reduced to 0 hit points or you dismiss any summoned shikigami as a bonus action while within line of sight. Alternatively, as a reaction to seeing your shikigami reduced to 0 hit points, you can unsummon them as a reaction and cannot summon them again until you finish a long rest. Your shikigami cannot use actions on their own. You can spend a bonus action to command your shikigami and can also spend an action to order them to do something more specific for longer, such as protect that creature, grab that, defend that area, etc. The number of Shikigami you can control at once is {{level:half:up}}.</description>
 		</sheet>
-    <rules>
-      	<stat name="tsdd:level" value="level:half:up" />
-    </rules>
 	</element>
 	<element name="Trial" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_TEN_SHADOWS_TRIAL">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_TEN_SHADOWS_TRIAL</requirements>
@@ -62,11 +59,8 @@
 			</table>
 		</description>
 		<sheet action="Action">
-      		<description>Summon an untamed Shikigami within 30 ft of you without spending cursed energy. Any creature within 50 feet is considered participating in the ritual. An untamed shikigami will be berserk (attack the nearest creature), but if you have defeated the shikigami alone (not including your shikigami) and reduce it to 0 hit points, you can now summon the shikigami normally. You can summon a number of shikigami at a time equal {{tstrial:level}} (Divine Dogs and Rabbits count as one entity).</description>
+      		<description>Summon an untamed Shikigami within 30 ft of you without spending cursed energy. Any creature within 50 feet is considered participating in the ritual. An untamed shikigami will be berserk (attack the nearest creature), but if you have defeated the shikigami alone (not including your shikigami) and reduce it to 0 hit points, you can now summon the shikigami normally. You can summon {{level:half:up}} shikigami at a time(Divine Dogs and Rabbits count as one entity).</description>
 		</sheet>
-		<rules>
-			<stat name="tstrial:level" value="level:half:up" />
-		</rules>
 	</element>
 	<element name="Shadow Manipulation" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_TEN_SHADOWS_SHADOW_MANIPULATION">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_TEN_SHADOWS_SHADOW_MANIPULATION</requirements>
@@ -76,7 +70,7 @@
 		</description>
 		<sheet usage="CE">
 			<description>You can physically place something into your shadow, costing no cursed energy. You must spend 1 cursed energy to interact with an object in this space, potentially removing it. Everything in your shadow counts for your carrying capacity. 
-			Additionally, you can trap creatures within your shadow. As a bonus action for 2 ce, you can force a creature to make a Dexterity (Acrobatics) check against your CE save DC. This check is made at Disadvantage if they are in complete darkness or inside a veil, and automatically fail within your domain. On a failure they are trapped inside your shadow, counting for carrying capacity. They can hold their breath for a number of minutes equal to their Constitution modifier (min of 1) before suffocating. They can make a Strength or Dexterity saving throw at the end of their turns, freeing themselves on a success and appearing prone in an unoccupied space within 5 ft.</description>
+			Additionally, you can trap creatures within your shadow. As a bonus action for 2 cursed energy, you can force a creature to make a Dexterity (Acrobatics) check against your CE save DC. This check is made at Disadvantage if they are in complete darkness or inside a veil, and automatically fail within your domain. On a failure they are trapped inside your shadow, counting for carrying capacity. They can hold their breath for a number of minutes equal to their Constitution modifier (min of 1) before suffocating. They can make a Strength or Dexterity saving throw at the end of their turns, freeing themselves on a success and appearing prone in an unoccupied space within 5 ft.</description>
 		</sheet>
 	</element>
 	<element name="Well's Unknown Abyss" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_TEN_SHADOWS_WELLS_UNKNOWN_ABYSS">
@@ -99,12 +93,9 @@
 				<tr><td>Max Elephant</td><td>+50 hit points</td></tr>
 			</table>
 		</description>
-		<sheet action="Action">
-			<description>Combine two of your living shikigami. Spend half the CE cost of the base shikigami to summon up to {{wua:proficiency}} in altered shikigami at once, spending CE for each. An altered shikigami has half the hit points of the base shikigami and you can reduce its size category by 1 to reduce the CE cost by 1. When reduced to 0 hit points, it does not affect the shikigami used in its creation and is not eligible for Totality. You cannot summon any unaltered shikigami while altered shikigami are summoned. If the base shikigami or alteration shikigami’s CR is 4 or higher, you can only create up to two altered shikigami with them.</description>
+		<sheet action="Action" usage="CE">
+			<description>Combine two of your living shikigami. Spend half the CE cost of the base shikigami to summon up to {{proficiency}} in altered shikigami at once, spending CE for each. An altered shikigami has half the hit points of the base shikigami and you can reduce its size category by 1 to reduce the CE cost by 1. When reduced to 0 hit points, it does not affect the shikigami used in its creation and is not eligible for Totality. You cannot summon any unaltered shikigami while altered shikigami are summoned. If the base shikigami or alteration shikigami’s CR is 4 or higher, you can only create up to two altered shikigami with them.</description>
 		</sheet>
-		<rules>
-			<stat name="wua:proficiency" value="proficiency" />
-		</rules>
 	</element>
 	<element name="Domain Expansion: Chimera Shadow Garden" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_TEN_SHADOWS_DOMAIN_EXPANSION_CHIMERA_SHADOW_GARDEN">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_TEN_SHADOWS_DOMAIN_EXPANSION_CHIMERA_SHADOW_GARDEN</requirements>
@@ -116,16 +107,12 @@
 		</description>
 		<sheet action="Action + Bonus Action + Movement" usage="CE">
 			<description>
-				<p>For 20 CE any hostile creatures that end their turn within your domain must make a Dexterity (Acrobatics) check or become restrained. They can make a Strength (Athletics) check at the beginning of their turn to escape. The area counts as difficult terrain for all creatures of your choice, and you are under the effects of Freedom of Movement while within the domain.</p>
-				<p class="indent">As a bonus action you can spend up to {{ce:detscsg}} to create a number of clones of yourself equal to the CE spent. The clones have all your features and stats, but not weapons or hit points and cannot use Cursed Energy. They have {{ce:detscsg}} hit points and become a shadow puddle once reduced to 0 hit points. You can use your reaction to switch places with a clone when you are hit, making the clone take the hit instead.</p>
+				<p>For 20 cursed energy, any hostile creatures that end their turn within your domain must make a Dexterity (Acrobatics) check or become restrained. They can make a Strength (Athletics) check at the beginning of their turn to escape. The area counts as difficult terrain for all creatures of your choice, and you are under the effects of Freedom of Movement while within the domain.</p>
+				<p class="indent">As a bonus action you can spend up to {{ce:modifier}} to create a number of clones of yourself equal to the CE spent. The clones have all your features and stats, but not weapons or hit points and cannot use Cursed Energy. They have {{ce:detscsg}} hit points and become a shadow puddle once reduced to 0 hit points. You can use your reaction to switch places with a clone when you are hit, making the clone take the hit instead.</p>
 				<p class="indent">Whenever you summon a shikigami, you can instead spend cursed energy equal to the shikigami's cost(treat its price as if you were outside your domain) to summon a perfect copy of the shikigami. You can spend CE to make up to {{ce:detscsg}} shikigami copies on the same turn. You cannot create copies of Mahoraga with this feature.</p>
 				<p class="indent">Your normal Shikigami don't cost CE</p>
 			</description>
 		</sheet>
-		<rules>
-			<stat name="ce:detscsg" value="wisdom:modifier" bonus="domaintscsg" />
-			<stat name="ce:detscsg" value="charisma:modifier" bonus="domaintscsg" />
-		</rules>
 	</element>
 	<!--Feature Replacement Grants-->
 	<element name="Divine Dogs Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_TEN_SHADOWS_DIVINE_DOGS" />
