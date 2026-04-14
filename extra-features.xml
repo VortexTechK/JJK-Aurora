@@ -4,7 +4,7 @@
 		<name>Extra Features</name>
 		<description>The Extra Features from JJK</description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
-		<update version="5.886">
+		<update version="5.0">
 			<file name="extra-features.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/extra-features.xml" />
 		</update>
 	</info>
@@ -130,7 +130,7 @@
 		<description>
 			<p> As a bonus action for cursed energy up to your CE Modifier, you can remove healing from that pool to regain hit points. You can also remove healing from the pool as a reaction to receiving damage once per round. For every 1 cursed energy spent, you regain 10 hit points, removing an equal amount from the pool. </p>
 		</description>
-		<sheet action="Action/Reaction to Damage">
+		<sheet action="Action/Reaction to Damage" usage="CE">
 			<description>For CE up to {{ce:modifier}}, you can remove healing from that pool to regain hit points. For every 1 cursed energy spent, you regain {{rct:heal}} hit points, removing an equal amount from the pool.</description>
 		</sheet>
     	<rules>
