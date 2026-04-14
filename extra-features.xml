@@ -4,7 +4,7 @@
 		<name>Extra Features</name>
 		<description>The Optional Class Features from Tasha’s Cauldron of Everything</description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
-		<update version="5.84">
+		<update version="5.85">
 			<file name="extra-features.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/extra-features.xml" />
 		</update>
 	</info>
@@ -123,7 +123,26 @@
 			<stat name="classlvl_support" value="18" bonus="cursed energy" requirements="level:support specialist:18" />
 			<stat name="classlvl_support" value="19" bonus="cursed energy" requirements="level:support specialist:19" />
 			<stat name="classlvl_support" value="20" bonus="cursed energy" requirements="level:support specialist:20" />
-			
+			<stat name="classlvl_warrior" value="1" bonus="cursed energy" />
+			<stat name="classlvl_warrior" value="2" bonus="cursed energy" requirements="level:warrior:2" />
+			<stat name="classlvl_warrior" value="3" bonus="cursed energy" requirements="level:warrior:3" />
+			<stat name="classlvl_warrior" value="4" bonus="cursed energy" requirements="level:warrior:4" />
+			<stat name="classlvl_warrior" value="5" bonus="cursed energy" requirements="level:warrior:5" />
+			<stat name="classlvl_warrior" value="6" bonus="cursed energy" requirements="level:warrior:6" />
+			<stat name="classlvl_warrior" value="7" bonus="cursed energy" requirements="level:warrior:7" />
+			<stat name="classlvl_warrior" value="8" bonus="cursed energy" requirements="level:warrior:8" />
+			<stat name="classlvl_warrior" value="9" bonus="cursed energy" requirements="level:warrior:9" />
+			<stat name="classlvl_warrior" value="10" bonus="cursed energy" requirements="level:warrior:10" />
+			<stat name="classlvl_warrior" value="11" bonus="cursed energy" requirements="level:warrior:11" />
+			<stat name="classlvl_warrior" value="12" bonus="cursed energy" requirements="level:warrior:12" />
+			<stat name="classlvl_warrior" value="13" bonus="cursed energy" requirements="level:warrior:13" />
+			<stat name="classlvl_warrior" value="14" bonus="cursed energy" requirements="level:warrior:14" />
+			<stat name="classlvl_warrior" value="15" bonus="cursed energy" requirements="level:warrior:15" />
+			<stat name="classlvl_warrior" value="16" bonus="cursed energy" requirements="level:warrior:16" />
+			<stat name="classlvl_warrior" value="17" bonus="cursed energy" requirements="level:warrior:17" />
+			<stat name="classlvl_warrior" value="18" bonus="cursed energy" requirements="level:warrior:18" />
+			<stat name="classlvl_warrior" value="19" bonus="cursed energy" requirements="level:warrior:19" />
+			<stat name="classlvl_warrior" value="20" bonus="cursed energy" requirements="level:warrior:20" />
             <!-- class-specific CE base values (do NOT use these for comparisons) -->
             <stat name="ce:base_juggernaut" value="level" requirements="ID_JJK_CLASS_JUGGERNAUT||ID_JJK_MULTICLASS_JUGGERNAUT" />
             <stat name="ce:base_scout" value="level" requirements="ID_JJK_CLASS_SCOUT||ID_JJK_MULTICLASS_SCOUT" />
