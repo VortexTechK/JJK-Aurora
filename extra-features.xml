@@ -4,7 +4,7 @@
 		<name>Extra Features</name>
 		<description>The Optional Class Features from Tasha’s Cauldron of Everything</description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
-		<update version="5.21">
+		<update version="5.3">
 			<file name="extra-features.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/extra-features.xml" />
 		</update>
 	</info>
@@ -28,12 +28,12 @@
 			<stat name="ce:pointsss" value="level:support specialist" />
 			<stat name="ce:pointsss" value="proficiency" />
 			<stat name="ce:pointsw" value="level:warrior" />
-			<stat name="ce:points" value="ce:pointsj" bonus="cursed energy" requirements="ID_JJK_CLASS_JUGGERNAUT" />
-			<stat name="ce:points" value="ce:pointssc" bonus="cursed energy" requirements="ID_JJK_CLASS_SCOUT" />
-			<stat name="ce:points" value="ce:pointssu" bonus="cursed energy" requirements="ID_JJK_CLASS_SHIKIGAMI_USER" />
-			<stat name="ce:points" value="ce:pointsst" bonus="cursed energy" requirements="ID_JJK_CLASS_STRATEGIST" />
-			<stat name="ce:points" value="ce:pointsss" bonus="cursed energy" requirements="ID_JJK_CLASS_SUPPORT_SPECIALIST" />
-			<stat name="ce:points" value="ce:pointsw" bonus="cursed energy" requirements="ID_JJK_CLASS_WARRIOR" />
+			<stat name="ce:points" value="ce:pointsj" bonus="cursed energy" requirements="ID_JJK_CLASS_JUGGERNAUT||ID_JJK_MULTICLASS_JUGGERNAUT" />
+			<stat name="ce:points" value="ce:pointssc" bonus="cursed energy" requirements="ID_JJK_CLASS_SCOUT||ID_JJK_MULTICLASS_SCOUT" />
+			<stat name="ce:points" value="ce:pointssu" bonus="cursed energy" requirements="ID_JJK_CLASS_SHIKIGAMI_USER||ID_JJK_MULTICLASS_SHIKIGAMI_USER" />
+			<stat name="ce:points" value="ce:pointsst" bonus="cursed energy" requirements="ID_JJK_CLASS_STRATEGIST||ID_JJK_MULTICLASS_STRATEGIST" />
+			<stat name="ce:points" value="ce:pointsss" bonus="cursed energy" requirements="ID_JJK_CLASS_SUPPORT_SPECIALIST||ID_JJK_MULTICLASS_SUPPORT_SPECIALIST" />
+			<stat name="ce:points" value="ce:pointsw" bonus="cursed energy" requirements="ID_JJK_CLASS_WARRIOR||ID_JJK_MULTICLASS_WARRIOR" />
 			<stat name="ce:points" value="ce:modifier" />
 			<stat name="ce:points:total" value="ce:points" bonus="cursed energy" />
 			<stat name="ce:dc" value="8" />
