@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="5.1">
+		<update version="5.2">
 			<file name="ten-shadows.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/ten-shadows.xml" />
 		</update>
 	</info>
@@ -33,8 +33,8 @@
 			<p>Beginning at 1st level, you have the prized technique of the Zenin clan, the ten shadows earned to summon Shikigami from the shadows. As an action for 1 Cursed Energy, you can summon up to 2 Divine Dogs(1 CE per dog) within 10 ft of you. Your Divine Dogs last for 1 hour, until they are reduced to 0 hit points or you dismiss any summoned shikigami as a bonus action while within line of sight. Alternatively, as a reaction to seeing your shikigami reduced to 0 hit points, you can unsummon them as a reaction and cannot summon them again until you finish a long rest.</p>
       <p class="indent">Your shikigami cannot use actions on their own. You can spend a bonus action to command your shikigami and can also spend an action to order them to do something more specific for longer, such as protect that creature, grab that, defend that area, etc. The number of Shikigami you can control at once is equal to half your level(rounded up).</p>
 		</description>
-		<sheet action="Action" usage="1 CE">
-			<description>Summon up to 2 Divine Dogs(1 CE per dog) within 10 ft of you. Your Divine Dogs last for 1 hour, until they are reduced to 0 hit points or you dismiss any summoned shikigami as a bonus action while within line of sight. Alternatively, as a reaction to seeing your shikigami reduced to 0 hit points, you can unsummon them as a reaction and cannot summon them again until you finish a long rest. Your shikigami cannot use actions on their own. You can spend a bonus action to command your shikigami and can also spend an action to order them to do something more specific for longer, such as protect that creature, grab that, defend that area, etc. The number of Shikigami you can control at once is {{tsdd:level}}.</description>
+		<sheet action="Action" usage="CE">
+			<description>For 1 CE, Summon up to 2 Divine Dogs(1 CE per dog) within 10 ft of you. Your Divine Dogs last for 1 hour, until they are reduced to 0 hit points or you dismiss any summoned shikigami as a bonus action while within line of sight. Alternatively, as a reaction to seeing your shikigami reduced to 0 hit points, you can unsummon them as a reaction and cannot summon them again until you finish a long rest. Your shikigami cannot use actions on their own. You can spend a bonus action to command your shikigami and can also spend an action to order them to do something more specific for longer, such as protect that creature, grab that, defend that area, etc. The number of Shikigami you can control at once is {{tsdd:level}}.</description>
 		</sheet>
     <rules>
       	<stat name="tsdd:level" value="level:half:up" />
@@ -74,7 +74,7 @@
 			<p>Starting at 6th level, you've learned to make use of your ability to manipulate shadows, allowing you to form an extra dimensional space to hide your things and even manipulate the shadows of others.</p>
 			<p class="indent"><strong>Shadow Storage</strong>: You can store objects in an extra-dimensional space within your shadow. You can physically place something into your shadow, costing no cursed energy. However you must spend 1 cursed energy to interact with an object in this space, potentially removing it. Everything in your shadow counts for your carrying capacity. Additionally, you can trap creatures within your shadow. As a bonus action for 2 ce, you can force a creature to make a Dexterity (Acrobatics) check against your CE save DC. This check is made at Disadvantage if they are in complete darkness or inside a veil, and automatically fail within your domain. On a failure they are trapped inside your shadow, counting for carrying capacity. They can hold their breath for a number of minutes equal to their Constitution modifier (min of 1) before suffocating. They can make a Strength or Dexterity saving throw at the end of their turns, freeing themselves on a success and appearing prone in an unoccupied space within 5 ft.</p>
 		</description>
-		<sheet>
+		<sheet usage="CE">
 			<description>You can physically place something into your shadow, costing no cursed energy. You must spend 1 cursed energy to interact with an object in this space, potentially removing it. Everything in your shadow counts for your carrying capacity. 
 			Additionally, you can trap creatures within your shadow. As a bonus action for 2 ce, you can force a creature to make a Dexterity (Acrobatics) check against your CE save DC. This check is made at Disadvantage if they are in complete darkness or inside a veil, and automatically fail within your domain. On a failure they are trapped inside your shadow, counting for carrying capacity. They can hold their breath for a number of minutes equal to their Constitution modifier (min of 1) before suffocating. They can make a Strength or Dexterity saving throw at the end of their turns, freeing themselves on a success and appearing prone in an unoccupied space within 5 ft.</description>
 		</sheet>
@@ -114,9 +114,9 @@
 			<p class="indent"><strong>Shikigami Clones</strong>: Your domain allows you to summon copies of your shikigami to overwhelm your opponents. Whenever you summon a shikigami, you can instead spend cursed energy equal to the shikigami's cost(treat its price as if you were outside your domain) to summon a perfect copy of the shikigami. You can spend CE to make a number of shikigami clones up to your Cursed Energy modifier on the same turn. You cannot create copies of Mahoraga with this feature.</p>
 			<p class="indent">In addition, your normal Shikigami won't cost you Cursed Energy within your domain.</p>
 		</description>
-		<sheet action="Action + Bonus Action + Movement">
+		<sheet action="Action + Bonus Action + Movement" usage="CE">
 			<description>
-				<p>Any hostile creatures that end their turn within your domain must make a Dexterity (Acrobatics) check or become restrained. They can make a Strength (Athletics) check at the beginning of their turn to escape. The area counts as difficult terrain for all creatures of your choice, and you are under the effects of Freedom of Movement while within the domain.</p>
+				<p>For 20 CE any hostile creatures that end their turn within your domain must make a Dexterity (Acrobatics) check or become restrained. They can make a Strength (Athletics) check at the beginning of their turn to escape. The area counts as difficult terrain for all creatures of your choice, and you are under the effects of Freedom of Movement while within the domain.</p>
 				<p class="indent">As a bonus action you can spend up to {{ce:detscsg}} to create a number of clones of yourself equal to the CE spent. The clones have all your features and stats, but not weapons or hit points and cannot use Cursed Energy. They have {{ce:detscsg}} hit points and become a shadow puddle once reduced to 0 hit points. You can use your reaction to switch places with a clone when you are hit, making the clone take the hit instead.</p>
 				<p class="indent">Whenever you summon a shikigami, you can instead spend cursed energy equal to the shikigami's cost(treat its price as if you were outside your domain) to summon a perfect copy of the shikigami. You can spend CE to make up to {{ce:detscsg}} shikigami copies on the same turn. You cannot create copies of Mahoraga with this feature.</p>
 				<p class="indent">Your normal Shikigami don't cost CE</p>
