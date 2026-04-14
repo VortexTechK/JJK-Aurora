@@ -4,7 +4,7 @@
 		<name>Extra Features</name>
 		<description>The Extra Features from JJK</description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
-		<update version="5.884">
+		<update version="5.885">
 			<file name="extra-features.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/extra-features.xml" />
 		</update>
 	</info>
@@ -26,12 +26,12 @@
 			<stat name="classlvlstrategist" value="0" bonus="cursed energy"/>
 			<stat name="classlvlsupport" value="0" bonus="cursed energy"/>
 			<stat name="classlvlwarrior" value="0" bonus="cursed energy"/>
-			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_LEVEL_JUGGERNAUT" requirements="ID_JJK_CLASS_JUGGERNAUT||ID_JJK_MUTLICLASS_JUGGERNAUT"/>
-			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_LEVEL_SCOUT" requirements="ID_JJK_CLASS_SCOUT||ID_JJK_MUTLICLASS_SCOUT"/>
-			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_LEVEL_SHIKIGAMI" requirements="ID_JJK_CLASS_SHIKIGAMI_USER||ID_JJK_MUTLICLASS_SHIKIGAMI_USER"/>
-			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_LEVEL_STRATEGIST" requirements="ID_JJK_CLASS_STRATEGIST||ID_JJK_MUTLICLASS_STRATEGIST"/>
-			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_LEVEL_SUPPORT" requirements="ID_JJK_CLASS_SUPPORT_SPECIALIST||ID_JJK_MUTLICLASS_SUPPORT_SPECIALIST"/>
-			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_LEVEL_WARRIOR" requirements="ID_JJK_CLASS_WARRIOR||ID_JJK_MUTLICLASS_WARRIOR"/>
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_LEVEL_JUGGERNAUT" />
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_LEVEL_SCOUT" />
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_LEVEL_SHIKIGAMI" />
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_LEVEL_STRATEGIST" />
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_LEVEL_SUPPORT" />
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_LEVEL_WARRIOR" />
 			<stat name="ce:basejuggernaut" value="level" />
 			<stat name="ce:basescout" value="level" />
 			<stat name="ce:baseshikigami" value="level" />
@@ -111,7 +111,6 @@
         </rules>
 	</element>
 	<element name="ceclasslvljuggernaut" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_LEVEL_JUGGERNAUT">
-		<requirements>ID_JJK_CLASS_JUGGERNAUT||ID_JJK_MUTLICLASS_JUGGERNAUT</requirements>
 		<compendium display="false"/>
 		<sheet display="false"/>
 		<rules>
@@ -119,7 +118,6 @@
 		</rules>
 	</element>
 	<element name="ceclasslvlscout" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_LEVEL_SCOUT">
-		<requirements>ID_JJK_CLASS_SCOUT||ID_JJK_MUTLICLASS_SCOUT</requirements>
 		<compendium display="false"/>
 		<sheet display="false"/>
 		<rules>
@@ -127,7 +125,6 @@
 		</rules>
 	</element>
 	<element name="ceclasslvlshikigami" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_LEVEL_SHIKIGAMI">
-		<requirements>ID_JJK_CLASS_SHIKIGAMI_USER||ID_JJK_MUTLICLASS_SHIKIGAMI_USER</requirements>
 		<compendium display="false"/>
 		<sheet display="false"/>
 		<rules>
@@ -135,7 +132,6 @@
 		</rules>
 	</element>
 	<element name="ceclasslvlstrategist" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_LEVEL_STRATEGIST">
-		<requirements>ID_JJK_CLASS_STRATEGIST||ID_JJK_MUTLICLASS_STRATEGIST</requirements>
 		<compendium display="false"/>
 		<sheet display="false"/>
 		<rules>
@@ -143,7 +139,6 @@
 		</rules>
 	</element>
 	<element name="ceclasslvlsupport" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_LEVEL_SUPPORT">
-		<requirements>ID_JJK_CLASS_SUPPORT_SPECIALIST||ID_JJK_MUTLICLASS_SUPPORT_SPECIALIST</requirements>
 		<compendium display="false"/>
 		<sheet display="false"/>
 		<rules>
@@ -151,7 +146,6 @@
 		</rules>
 	</element>
 	<element name="ceclasslvlwarrior" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_LEVEL_WARRIOR">
-		<requirements>ID_JJK_CLASS_WARRIOR||ID_JJK_MUTLICLASS_WARRIOR</requirements>
 		<compendium display="false"/>
 		<sheet display="false"/>
 		<rules>
