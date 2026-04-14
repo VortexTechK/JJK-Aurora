@@ -131,7 +131,7 @@
 			<p> As a bonus action for cursed energy up to your CE Modifier, you can remove healing from that pool to regain hit points. You can also remove healing from the pool as a reaction to receiving damage once per round. For every 1 cursed energy spent, you regain 10 hit points, removing an equal amount from the pool. </p>
 		</description>
 		<sheet action="Action/Reaction to Damage" usage="CE">
-			<description>For CE up to {{ce:modifier}}, you can remove healing from that pool to regain hit points. For every 1 cursed energy spent, you regain {{rct:heal}} hit points, removing an equal amount from the pool.</description>
+			<description>For up to {{ce:modifier}} cursed energy, you can remove healing from that pool to regain hit points. For every 1 cursed energy spent, you regain {{rct:heal}} hit points, removing an equal amount from the pool.</description>
 		</sheet>
     	<rules>
      		<stat name="rct:heal" value="10" bonus="rct" />
