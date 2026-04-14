@@ -4,7 +4,7 @@
 		<name>Extra Features</name>
 		<description>The Optional Class Features from Tasha’s Cauldron of Everything</description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
-		<update version="5.85">
+		<update version="5.86">
 			<file name="extra-features.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/extra-features.xml" />
 		</update>
 	</info>
@@ -23,7 +23,7 @@
             <stat name="ce:modifier" value="wisdom:modifier" bonus="cursed energy" />
 
             <!-- pure class-level anchors (used only for comparisons) -->
-			<stat name="classlvl_juggernaut" value="1" bonus="cursed energy" />
+			<stat name="classlvl_juggernaut" value="1" bonus="cursed energy" requirements="level:juggernaut:1" />
 			<stat name="classlvl_juggernaut" value="2" bonus="cursed energy" requirements="level:juggernaut:2" />
 			<stat name="classlvl_juggernaut" value="3" bonus="cursed energy" requirements="level:juggernaut:3" />
 			<stat name="classlvl_juggernaut" value="4" bonus="cursed energy" requirements="level:juggernaut:4" />
@@ -43,7 +43,7 @@
 			<stat name="classlvl_juggernaut" value="18" bonus="cursed energy" requirements="level:juggernaut:18" />
 			<stat name="classlvl_juggernaut" value="19" bonus="cursed energy" requirements="level:juggernaut:19" />
 			<stat name="classlvl_juggernaut" value="20" bonus="cursed energy" requirements="level:juggernaut:20" />
-			<stat name="classlvl_scout" value="1" bonus="cursed energy" />
+			<stat name="classlvl_scout" value="1" bonus="cursed energy" requirements="level:scout:1" />
 			<stat name="classlvl_scout" value="2" bonus="cursed energy" requirements="level:scout:2" />
 			<stat name="classlvl_scout" value="3" bonus="cursed energy" requirements="level:scout:3" />
 			<stat name="classlvl_scout" value="4" bonus="cursed energy" requirements="level:scout:4" />
@@ -63,7 +63,7 @@
 			<stat name="classlvl_scout" value="18" bonus="cursed energy" requirements="level:scout:18" />
 			<stat name="classlvl_scout" value="19" bonus="cursed energy" requirements="level:scout:19" />
 			<stat name="classlvl_scout" value="20" bonus="cursed energy" requirements="level:scout:20" />
-			<stat name="classlvl_shikigami" value="1" bonus="cursed energy" />
+			<stat name="classlvl_shikigami" value="1" bonus="cursed energy" requirements="level:shikigami user:1" />
 			<stat name="classlvl_shikigami" value="2" bonus="cursed energy" requirements="level:shikigami user:2" />
 			<stat name="classlvl_shikigami" value="3" bonus="cursed energy" requirements="level:shikigami user:3" />
 			<stat name="classlvl_shikigami" value="4" bonus="cursed energy" requirements="level:shikigami user:4" />
@@ -83,7 +83,7 @@
 			<stat name="classlvl_shikigami" value="18" bonus="cursed energy" requirements="level:shikigami user:18" />
 			<stat name="classlvl_shikigami" value="19" bonus="cursed energy" requirements="level:shikigami user:19" />
 			<stat name="classlvl_shikigami" value="20" bonus="cursed energy" requirements="level:shikigami user:20" />
-			<stat name="classlvl_strategist" value="1" bonus="cursed energy" />
+			<stat name="classlvl_strategist" value="1" bonus="cursed energy" requirements="level:strategist:1"/>
 			<stat name="classlvl_strategist" value="2" bonus="cursed energy" requirements="level:strategist:2" />
 			<stat name="classlvl_strategist" value="3" bonus="cursed energy" requirements="level:strategist:3" />
 			<stat name="classlvl_strategist" value="4" bonus="cursed energy" requirements="level:strategist:4" />
@@ -103,7 +103,7 @@
 			<stat name="classlvl_strategist" value="18" bonus="cursed energy" requirements="level:strategist:18" />
 			<stat name="classlvl_strategist" value="19" bonus="cursed energy" requirements="level:strategist:19" />
 			<stat name="classlvl_strategist" value="20" bonus="cursed energy" requirements="level:strategist:20" />
-			<stat name="classlvl_support" value="1" bonus="cursed energy" />
+			<stat name="classlvl_support" value="1" bonus="cursed energy" requirements="level:support specialist:1" />
 			<stat name="classlvl_support" value="2" bonus="cursed energy" requirements="level:support specialist:2" />
 			<stat name="classlvl_support" value="3" bonus="cursed energy" requirements="level:support specialist:3" />
 			<stat name="classlvl_support" value="4" bonus="cursed energy" requirements="level:support specialist:4" />
@@ -123,7 +123,7 @@
 			<stat name="classlvl_support" value="18" bonus="cursed energy" requirements="level:support specialist:18" />
 			<stat name="classlvl_support" value="19" bonus="cursed energy" requirements="level:support specialist:19" />
 			<stat name="classlvl_support" value="20" bonus="cursed energy" requirements="level:support specialist:20" />
-			<stat name="classlvl_warrior" value="1" bonus="cursed energy" />
+			<stat name="classlvl_warrior" value="1" bonus="cursed energy" requirements="level:warrior:1" />
 			<stat name="classlvl_warrior" value="2" bonus="cursed energy" requirements="level:warrior:2" />
 			<stat name="classlvl_warrior" value="3" bonus="cursed energy" requirements="level:warrior:3" />
 			<stat name="classlvl_warrior" value="4" bonus="cursed energy" requirements="level:warrior:4" />
