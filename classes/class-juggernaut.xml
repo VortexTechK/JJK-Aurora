@@ -4,7 +4,7 @@
 		<name>Juggernaut</name>
 		<description>The Juggernaut class from JJK.</description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
-		<update version="5.61">
+		<update version="5.62">
 			<file name="class-juggernaut.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/classes/class-juggernaut.xml" />
 		</update>
 	</info>
@@ -171,7 +171,7 @@
 		</description>
 		<sheet>
 			<description>Your unarmed strike or Juggernaut weapon can do 1d{{combat prowess:dice}} damage instead of its normal damage.
-			When you use the Attack action with an unarmed strike or a combat prowess weapon on your turn, you can make one unarmed strike or grapple as a bonus action. TEST{{level:scout}}</description>
+			When you use the Attack action with an unarmed strike or a combat prowess weapon on your turn, you can make one unarmed strike or grapple as a bonus action. Between{{level:scout}}here</description>
 		</sheet>
 		<rules>
 			<stat name="combat prowess:dice" value="6" bonus="combat prowess" />
