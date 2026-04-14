@@ -4,12 +4,12 @@
 		<name>Extra Features</name>
 		<description>The Optional Class Features from Tasha’s Cauldron of Everything</description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
-		<update version="5.81">
+		<update version="5.0">
 			<file name="extra-features.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/extra-features.xml" />
 		</update>
 	</info>
 	<!-- Multiclass Curse Energy -->
-	<element name="Multiclass Curse Energy" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_MCURSED_ENERGY">
+	<element name="Curse Energy" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_CURSED_ENERGY">
 		<description>
 			<p>Starting at 1st level, you can harness your negative feelings into a usable source of energy, called cursed energy. These feelings can be harnessed into attacks or abilities. The number of cursed energy you possess is based on your highest level class. You have a curse stat equal to the highest among charisma and wisdom.</p>
       		<p class="indent">Your cursed energy DC is 8 + user cursed energy ability modifier + proficiency bonus. </p>
@@ -20,20 +20,20 @@
 		<rules>
 			<stat name="ce:modifier" value="charisma:modifier" bonus="cursed energy" />
 			<stat name="ce:modifier" value="wisdom:modifier" bonus="cursed energy" />
-			<stat name="ce:pointsj" value="level:juggernaut" />
-			<stat name="ce:pointssc" value="level:scout" />
-			<stat name="ce:pointssu" value="level:shikigami user" />
-			<stat name="ce:pointsst" value="level:strategist" />
-			<stat name="ce:pointsst" value="level:strategist" />
-			<stat name="ce:pointsss" value="level:support specialist" />
-			<stat name="ce:pointsss" value="proficiency" />
-			<stat name="ce:pointsw" value="level:warrior" />
-			<stat name="cem:points" value="ce:pointsj" bonus="cursed energy" />
-			<stat name="cem:points" value="ce:pointssc" bonus="cursed energy" />
-			<stat name="cem:points" value="ce:pointssu" bonus="cursed energy" />
-			<stat name="cem:points" value="ce:pointsst" bonus="cursed energy" />
-			<stat name="cem:points" value="ce:pointsss" bonus="cursed energy" />
-			<stat name="cem:points" value="ce:pointsw" bonus="cursed energy" />
+			<stat name="cem:pointsj" value="level:juggernaut" />
+			<stat name="cem:pointssc" value="level:scout" />
+			<stat name="cem:pointssu" value="level:shikigami user" />
+			<stat name="cem:pointsst" value="level:strategist" />
+			<stat name="cem:pointsst" value="level:strategist" />
+			<stat name="cem:pointsss" value="level:support specialist" />
+			<stat name="cem:pointsss" value="proficiency" />
+			<stat name="cem:pointsw" value="level:warrior" />
+			<stat name="cem:points" value="ce:pointsj" bonus="cursed energy" requirements="ID_JJK_CLASS_JUGGERNAUT" />
+			<stat name="cem:points" value="ce:pointssc" bonus="cursed energy" requirements="ID_JJK_CLASS_SCOUT" />
+			<stat name="cem:points" value="ce:pointssu" bonus="cursed energy" requirements="ID_JJK_CLASS_SHIKIGAMI_USER" />
+			<stat name="cem:points" value="ce:pointsst" bonus="cursed energy" requirements="ID_JJK_CLASS_STRATEGIST" />
+			<stat name="cem:points" value="ce:pointsss" bonus="cursed energy" requirements="ID_JJK_CLASS_SUPPORT_SPECIALIST" />
+			<stat name="cem:points" value="ce:pointsw" bonus="cursed energy" requirements="ID_JJK_CLASS_WARRIOR" />
 			<stat name="cem:points" value="ce:modifier" />
 			<stat name="ce:points:total" value="cem:points" bonus="cursed energy" />
 			<stat name="ce:dc" value="8" />
@@ -42,12 +42,7 @@
 			<stat name="ce:dc:total" value="ce:dc" bonus="cursed energy" />
 			<stat name="cu:stat" value="charisma:score" bonus="cursed energy"/>			
 			<stat name="cu:stat" value="wisdom:score" bonus="cursed energy" />
-			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_NO_CURSED_ENERGY" />
 		</rules>
-	</element>
-	<element name="No Cursed Energy" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_NO_CURSED_ENERGY">
-		<compendium display="false"/>
-		<sheet display="false" />
 	</element>
 	<!-- Reverse Curse Technique -->
 	<element name="Reverse Curse Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_REVERSE_CURSE_TECHNIQUE">
