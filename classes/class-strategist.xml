@@ -161,7 +161,7 @@
 		<description>
 			<p>When you use a technique that forces other creatures to make a saving throw, you can protect some of those creatures from the technique's full force. To do so, you spend 1 cursed energy and choose a number of those creatures up to your Cursed Energy modifier (minimum of one). A chosen creature automatically succeeds on its saving throw against the technique.</p>
 		</description>
-		<sheet>
+		<sheet usage="CE">
 			<description>When you use a technique that forces other creatures to make a saving throw, you can protect some of those creatures from the spell’s full force. To do so, you spend 1 cursed energy and choose up to {{modification careful technique:creatures}} of those creatures. A chosen creature automatically succeeds on its saving throw against the technique.</description>
 		</sheet>
 		<rules>
@@ -175,7 +175,7 @@
 		<description>
 			<p>When you use a technique that has a range of 5 feet or greater, you can spend 1 cursed energy to double the range of the technique. When you use a technique that has a range of touch, you can spend 1 cursed energy to make the range of the technique 30 feet.</p>
 		</description>
-		<sheet>
+		<sheet usage="CE">
 			<description>When you use a technique that has a range of 5 feet or greater, you can spend 1 cursed energy to double the range of the technique. When you use a technique that has a range of touch, you can spend 1 cursed energy to make the range of the technique 30 feet.</description>
 		</sheet>
 	</element>
@@ -185,7 +185,7 @@
 			<p>When you roll damage for a technique, you can spend 1 cursed energy to reroll a number of the damage dice up to your Cursed Energy modifier (minimum of one). You must use the new rolls.</p>
 			<p class="indent">You can use Empowered Technique even if you have already used a different Modification option during the casting of the technique.</p>
 		</description>
-		<sheet>
+		<sheet usage="CE">
 			<description>When you roll damage for a technique, you can spend 1 cursed energy to reroll {{modification empowered technique:rerolls}} damage dice. You must use the new rolls. You can use Empowered Technique even if you have already used a different Modification option during the casting of the technique.</description>
 		</sheet>
 		<rules>
@@ -199,7 +199,7 @@
 		<description>
 			<p>When you use a technique that has a duration of 1 minute or longer, you can spend 1 cursed energy to double its duration, to a maximum duration of 24 hours.</p>
 		</description>
-		<sheet>
+		<sheet usage="CE">
 			<description>When you use a technique that has a duration of 1 minute or longer, you can spend 1 cursed energy to double its duration, to a maximum duration of 24 hours.</description>
 		</sheet>
 	</element>
@@ -208,8 +208,8 @@
 		<description>
 			<p>When you use a technique that forces a creature to make a saving throw to resist its effects, you can spend 3 cursed energys to give one target of the technique disadvantage on its first saving throw made against the technique.</p>
 		</description>
-		<sheet>
-			<description>When you use a technique that forces a creature to make a saving throw to resist its effects, you can spend 3 cursed energys to give one target of the technique disadvantage on its first saving throw made against the technique.</description>
+		<sheet usage="CE">
+			<description>When you use a technique that forces a creature to make a saving throw to resist its effects, you can spend 3 cursed energy to give one target of the technique disadvantage on its first saving throw made against the technique.</description>
 		</sheet>
 	</element>
 	<element name="Quickened Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_STRATEGIST_MODIFICATION_QUICKENED_TECHNIQUE">
@@ -217,7 +217,7 @@
 		<description>
 			<p>When you use a technique that has a casting time of 1 action, you can spend 2 cursed energy to change the casting time to 1 bonus action for this casting.</p>
 		</description>
-		<sheet>
+		<sheet usage="CE">
 			<description>When you use a technique that has a casting time of 1 action, you can spend 2 cursed energy to change the casting time to 1 bonus action for this casting.</description>
 		</sheet>
 	</element>
@@ -227,7 +227,7 @@
 			<p>If you make an attack roll for a technique and miss, you can spend 2 cursed energy to reroll the d20, and you must use the new roll.</p>
       <p class="indent">You can use Seeking Technique even if you have already used a different Modification option during the casting of the technique.</p>
 		</description>
-		<sheet>
+		<sheet usage="CE">
 			<description>If you make an attack roll for a technique and miss, you can spend 2 cursed energy to reroll the d20, and you must use the new roll. You can use Seeking Technique even if you have already used a different Modification option during the casting of the technique.</description>
 		</sheet>
 	</element>
@@ -236,7 +236,7 @@
 		<description>
 			<p>When you use a technique, you can spend 1 cursed energy to cast it without any somatic or verbal components.</p>
 		</description>
-		<sheet>
+		<sheet usage="CE">
 			<description>When you use a technique, you can spend 1 cursed energy to cast it without any somatic or verbal components.</description>
 		</sheet>
 	</element>
@@ -245,7 +245,7 @@
 		<description>
 			<p>When you use a technique that deals a type of damage from the following list, you can spend 1 cursed energy to change that damage type to one of the other listed types: acid, cold, fire, lightning, poison, or thunder.</p>
 		</description>
-		<sheet>
+		<sheet usage="CE">
 			<description>When you use a technique that deals a type of damage from the following list, you can spend 1 cursed energy to change that damage type to one of the other listed types: acid, cold, fire, lightning, poison, or thunder.</description>
 		</sheet>
 	</element>
@@ -254,7 +254,7 @@
 		<description>
 			<p>When you use a technique that targets only one creature and doesn’t have a range of self, you can spend a number of cursed energy equal to the technique’s cost to target a second creature in range with the same technique (1 cursed energy if the technique is free). To be eligible, a technique must be incapable of targeting more than one creature at the technique’s current level.</p>
 		</description>
-		<sheet>
+		<sheet usage="CE">
 			<description>When you use a technique that targets only one creature and doesn’t have a range of self, you can spend a number of cursed energy equal to the technique’s cost to target a second creature in range with the same technique (1 cursed energy if the technique is free).</description>
 		</sheet>
 	</element>
