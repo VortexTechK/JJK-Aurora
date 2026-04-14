@@ -4,7 +4,7 @@
 		<name>Extra Features</name>
 		<description>The Optional Class Features from Tasha’s Cauldron of Everything</description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
-		<update version="5.5">
+		<update version="5.6">
 			<file name="extra-features.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/extra-features.xml" />
 		</update>
 	</info>
@@ -20,20 +20,26 @@
 		<rules>
 			<stat name="ce:modifier" value="charisma:modifier" bonus="cursed energy" />
 			<stat name="ce:modifier" value="wisdom:modifier" bonus="cursed energy" />
-			<stat name="ce:pointsj" value="level" />
-			<stat name="ce:pointssc" value="level" />
-			<stat name="ce:pointssu" value="level" />
+			<stat name="ce:pointsjscsuw" value="level" />
 			<stat name="ce:pointsst" value="level" />
 			<stat name="ce:pointsst" value="level" />
 			<stat name="ce:pointsss" value="level" />
 			<stat name="ce:pointsss" value="proficiency" />
-			<stat name="ce:pointsw" value="level" />
-			<stat name="ce:points" value="ce:pointsj" bonus="cursed energy" requirements="(ID_JJK_CLASS_JUGGERNAUT||ID_JJK_MULTICLASS_JUGGERNAUT),[level:juggernaut:level:scout],[level:juggernaut:level:shikigami user],[level:juggernaut:level:strategist],[level:juggernaut:level:support specialist],[level:juggernaut:level:warrior]" />
-			<stat name="ce:points" value="ce:pointssc" bonus="cursed energy" requirements="(ID_JJK_CLASS_SCOUT||ID_JJK_MULTICLASS_SCOUT),[level:scout:level:juggernaut],[level:scout:level:shikigami user],[level:scout:level:strategist],[level:scout:level:support specialist],[level:scout:level:warrior]" />
-			<stat name="ce:points" value="ce:pointssu" bonus="cursed energy" requirements="(ID_JJK_CLASS_SHIKIGAMI_USER||ID_JJK_MULTICLASS_SHIKIGAMI_USER),[level:shikigami user:level:scout],[level:shikigami user:level:juggernaut],[level:shikigami user:level:strategist],[level:shikigami user:level:support specialist],[level:shikigami user:level:warrior]" />
+			<stat name="ce:pointsjlevel" value="level:juggernaut" requirements="ID_JJK_CLASS_JUGGERNAUT||ID_JJK_MULTICLASS_JUGGERNAUT" bonus="cursed energy">
+			<stat name="ce:pointsjlevel" value="1" bonus="cursed energy">
+			<stat name="ce:pointssclevel" value="level:scout" requirements="ID_JJK_CLASS_SCOUT||ID_JJK_MULTICLASS_SCOUT" bonus="cursed energy">
+			<stat name="ce:pointssclevel" value="1" bonus="cursed energy">
+			<stat name="ce:pointssulevel" value="level:shikigami user" requirements="ID_JJK_CLASS_SHIKIGAMI_USER||ID_JJK_MULTICLASS_SHIKIGAMI_USER" bonus="cursed energy">
+			<stat name="ce:pointssulevel" value="1" bonus="cursed energy">
+			<stat name="ce:pointsstlevel" value="level:strategist" requirements="ID_JJK_CLASS_STRATEGIST||ID_JJK_MULTICLASS_STRATEGIST" bonus="cursed energy">
+			<stat name="ce:pointsstlevel" value="1" bonus="cursed energy">
+			<stat name="ce:pointssslevel" value="level:support specialist" requirements="ID_JJK_CLASS_SUPPORT_SPECIALIST||ID_JJK_MULTICLASS_SUPPORT_SPECIALIST" bonus="cursed energy">
+			<stat name="ce:pointssslevel" value="1" bonus="cursed energy">
+			<stat name="ce:pointswlevel" value="level:warrior" requirements="ID_JJK_CLASS_WARRIOR||ID_JJK_MULTICLASS_WARRIOR" bonus="cursed energy">
+			<stat name="ce:pointswlevel" value="1" bonus="cursed energy">
+			<stat name="ce:points" value="ce:pointsjscsuw" bonus="cursed energy" requirements="((ID_JJK_CLASS_JUGGERNAUT||ID_JJK_MULTICLASS_JUGGERNAUT),[level:juggernaut:level:scout],[level:juggernaut:level:shikigami user],[level:juggernaut:level:strategist],[level:juggernaut:level:support specialist],[level:juggernaut:level:warrior])||((ID_JJK_CLASS_SCOUT||ID_JJK_MULTICLASS_SCOUT),[level:scout:level:juggernaut],[level:scout:level:shikigami user],[level:scout:level:strategist],[level:scout:level:support specialist],[level:scout:level:warrior])||((ID_JJK_CLASS_SHIKIGAMI_USER||ID_JJK_MULTICLASS_SHIKIGAMI_USER),[level:shikigami user:level:scout],[level:shikigami user:level:juggernaut],[level:shikigami user:level:strategist],[level:shikigami user:level:support specialist],[level:shikigami user:level:warrior])||(ID_JJK_CLASS_WARRIOR||ID_JJK_MULTICLASS_WARRIOR),[level:warrior:level:scout],[level:warrior:level:shikigami user],[level:warrior:level:strategist],[level:warrior:level:support specialist],[level:warrior:level:juggernaut])" />
 			<stat name="ce:points" value="ce:pointsst" bonus="cursed energy" requirements="(ID_JJK_CLASS_STRATEGIST||ID_JJK_MULTICLASS_STRATEGIST),[level:strategist:level:scout],[level:strategist:level:shikigami user],[level:strategist:level:juggernaut],[level:strategist:level:support specialist],[level:strategist:level:warrior]" />
 			<stat name="ce:points" value="ce:pointsss" bonus="cursed energy" requirements="(ID_JJK_CLASS_SUPPORT_SPECIALIST||ID_JJK_MULTICLASS_SUPPORT_SPECIALIST),[level:support specialist:level:scout],[level:support specialist:level:shikigami user],[level:support specialist:level:strategist],[level:support specialist:level:juggernaut],[level:support specialist:level:warrior]" />
-			<stat name="ce:points" value="ce:pointsw" bonus="cursed energy" requirements="(ID_JJK_CLASS_WARRIOR||ID_JJK_MULTICLASS_WARRIOR),[level:warrior:level:scout],[level:warrior:level:shikigami user],[level:warrior:level:strategist],[level:warrior:level:support specialist],[level:warrior:level:juggernaut]" />
 			<stat name="ce:points" value="ce:modifier" />
 			<stat name="ce:points:total" value="ce:points" bonus="cursed energy" />
 			<stat name="ce:dc" value="8" />
