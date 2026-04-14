@@ -4,7 +4,7 @@
 		<name>Extra Features</name>
 		<description>The Extra Features from JJK</description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
-		<update version="5.875">
+		<update version="5.876">
 			<file name="extra-features.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/extra-features.xml" />
 		</update>
 	</info>
@@ -29,12 +29,12 @@
 			<stat name="classlvlstrategist" value="0" bonus="cursed energy" />
 			<stat name="classlvlsupport" value="0" bonus="cursed energy" />
 			<stat name="classlvlwarrior" value="0" bonus="cursed energy" />
-			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_LEVEL_JUGGERNAUT" />
-			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_LEVEL_SCOUT" />
-			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_LEVEL_SHIKIGAMI" />
-			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_LEVEL_STRATEGIST" />
-			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_LEVEL_SUPPORT" />
-			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_LEVEL_WARRIOR" />
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_LEVEL_JUGGERNAUT" requirements="ID_JJK_CLASS_JUGGERNAUT||ID_JJK_MUTLICLASS_JUGGERNAUT" />
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_LEVEL_SCOUT" requirements="ID_JJK_CLASS_SCOUT||ID_JJK_MUTLICLASS_SCOUT" />
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_LEVEL_SHIKIGAMI" requirements="ID_JJK_CLASS_SHIKIGAMI_USER||ID_JJK_MUTLICLASS_SHIKIGAMI_USER" />
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_LEVEL_STRATEGIST" requirements="ID_JJK_CLASS_STRATEGIST||ID_JJK_MUTLICLASS_STRATEGIST" />
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_LEVEL_SUPPORT" requirements="ID_JJK_CLASS_SUPPORT_SPECIALIST||ID_JJK_MUTLICLASS_SUPPORT_SPECIALIST" />
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_LEVEL_WARRIOR" requirements="ID_JJK_CLASS_WARRIOR||ID_JJK_MUTLICLASS_WARRIOR" />
 
             <!-- class-specific CE base values (do NOT use these for comparisons) -->
             <stat name="ce:base_juggernaut" value="level" requirements="ID_JJK_CLASS_JUGGERNAUT||ID_JJK_MULTICLASS_JUGGERNAUT" />
@@ -78,26 +78,7 @@
 		<compendium display="false"/>
 		<sheet display="false"/>
 		<rules>
-			<stat name="classlvljuggernaut" value="1" bonus="cursed energy" />
-			<stat name="classlvljuggernaut" value="2" bonus="cursed energy" requirements="level:juggernaut:2" />
-			<stat name="classlvljuggernaut" value="3" bonus="cursed energy" requirements="level:juggernaut:3" />
-			<stat name="classlvljuggernaut" value="4" bonus="cursed energy" requirements="level:juggernaut:4" />
-			<stat name="classlvljuggernaut" value="5" bonus="cursed energy" requirements="level:juggernaut:5" />
-			<stat name="classlvljuggernaut" value="6" bonus="cursed energy" requirements="level:juggernaut:6" />
-			<stat name="classlvljuggernaut" value="7" bonus="cursed energy" requirements="level:juggernaut:7" />
-			<stat name="classlvljuggernaut" value="8" bonus="cursed energy" requirements="level:juggernaut:8" />
-			<stat name="classlvljuggernaut" value="9" bonus="cursed energy" requirements="level:juggernaut:9" />
-			<stat name="classlvljuggernaut" value="10" bonus="cursed energy" requirements="level:juggernaut:10" />
-			<stat name="classlvljuggernaut" value="11" bonus="cursed energy" requirements="level:juggernaut:11" />
-			<stat name="classlvljuggernaut" value="12" bonus="cursed energy" requirements="level:juggernaut:12" />
-			<stat name="classlvljuggernaut" value="13" bonus="cursed energy" requirements="level:juggernaut:13" />
-			<stat name="classlvljuggernaut" value="14" bonus="cursed energy" requirements="level:juggernaut:14" />
-			<stat name="classlvljuggernaut" value="15" bonus="cursed energy" requirements="level:juggernaut:15" />
-			<stat name="classlvljuggernaut" value="16" bonus="cursed energy" requirements="level:juggernaut:16" />
-			<stat name="classlvljuggernaut" value="17" bonus="cursed energy" requirements="level:juggernaut:17" />
-			<stat name="classlvljuggernaut" value="18" bonus="cursed energy" requirements="level:juggernaut:18" />
-			<stat name="classlvljuggernaut" value="19" bonus="cursed energy" requirements="level:juggernaut:19" />
-			<stat name="classlvljuggernaut" value="20" bonus="cursed energy" requirements="level:juggernaut:20" />
+			<stat name="classlvljuggernaut" value="level:juggernaut" bonus="cursed energy" />
 		</rules>
 	</element>
 	<element name="ceclasslvlscout" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_LEVEL_SCOUT">
@@ -105,26 +86,7 @@
 		<compendium display="false"/>
 		<sheet display="false"/>
 		<rules>
-			<stat name="classlvlscout" value="1" bonus="cursed energy" />
-			<stat name="classlvlscout" value="2" bonus="cursed energy" requirements="level:scout:2" />
-			<stat name="classlvlscout" value="3" bonus="cursed energy" requirements="level:scout:3" />
-			<stat name="classlvlscout" value="4" bonus="cursed energy" requirements="level:scout:4" />
-			<stat name="classlvlscout" value="5" bonus="cursed energy" requirements="level:scout:5" />
-			<stat name="classlvlscout" value="6" bonus="cursed energy" requirements="level:scout:6" />
-			<stat name="classlvlscout" value="7" bonus="cursed energy" requirements="level:scout:7" />
-			<stat name="classlvlscout" value="8" bonus="cursed energy" requirements="level:scout:8" />
-			<stat name="classlvlscout" value="9" bonus="cursed energy" requirements="level:scout:9" />
-			<stat name="classlvlscout" value="10" bonus="cursed energy" requirements="level:scout:10" />
-			<stat name="classlvlscout" value="11" bonus="cursed energy" requirements="level:scout:11" />
-			<stat name="classlvlscout" value="12" bonus="cursed energy" requirements="level:scout:12" />
-			<stat name="classlvlscout" value="13" bonus="cursed energy" requirements="level:scout:13" />
-			<stat name="classlvlscout" value="14" bonus="cursed energy" requirements="level:scout:14" />
-			<stat name="classlvlscout" value="15" bonus="cursed energy" requirements="level:scout:15" />
-			<stat name="classlvlscout" value="16" bonus="cursed energy" requirements="level:scout:16" />
-			<stat name="classlvlscout" value="17" bonus="cursed energy" requirements="level:scout:17" />
-			<stat name="classlvlscout" value="18" bonus="cursed energy" requirements="level:scout:18" />
-			<stat name="classlvlscout" value="19" bonus="cursed energy" requirements="level:scout:19" />
-			<stat name="classlvlscout" value="20" bonus="cursed energy" requirements="level:scout:20" />
+			<stat name="classlvlscout" value="level:scout" bonus="cursed energy" />
 		</rules>
 	</element>
 	<element name="ceclasslvlshikigami" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_LEVEL_SHIKIGAMI">
@@ -132,26 +94,7 @@
 		<compendium display="false"/>
 		<sheet display="false"/>
 		<rules>
-			<stat name="classlvlshikigami" value="1" bonus="cursed energy" />
-			<stat name="classlvlshikigami" value="2" bonus="cursed energy" requirements="level:shikigami user:2" />
-			<stat name="classlvlshikigami" value="3" bonus="cursed energy" requirements="level:shikigami user:3" />
-			<stat name="classlvlshikigami" value="4" bonus="cursed energy" requirements="level:shikigami user:4" />
-			<stat name="classlvlshikigami" value="5" bonus="cursed energy" requirements="level:shikigami user:5" />
-			<stat name="classlvlshikigami" value="6" bonus="cursed energy" requirements="level:shikigami user:6" />
-			<stat name="classlvlshikigami" value="7" bonus="cursed energy" requirements="level:shikigami user:7" />
-			<stat name="classlvlshikigami" value="8" bonus="cursed energy" requirements="level:shikigami user:8" />
-			<stat name="classlvlshikigami" value="9" bonus="cursed energy" requirements="level:shikigami user:9" />
-			<stat name="classlvlshikigami" value="10" bonus="cursed energy" requirements="level:shikigami user:10" />
-			<stat name="classlvlshikigami" value="11" bonus="cursed energy" requirements="level:shikigami user:11" />
-			<stat name="classlvlshikigami" value="12" bonus="cursed energy" requirements="level:shikigami user:12" />
-			<stat name="classlvlshikigami" value="13" bonus="cursed energy" requirements="level:shikigami user:13" />
-			<stat name="classlvlshikigami" value="14" bonus="cursed energy" requirements="level:shikigami user:14" />
-			<stat name="classlvlshikigami" value="15" bonus="cursed energy" requirements="level:shikigami user:15" />
-			<stat name="classlvlshikigami" value="16" bonus="cursed energy" requirements="level:shikigami user:16" />
-			<stat name="classlvlshikigami" value="17" bonus="cursed energy" requirements="level:shikigami user:17" />
-			<stat name="classlvlshikigami" value="18" bonus="cursed energy" requirements="level:shikigami user:18" />
-			<stat name="classlvlshikigami" value="19" bonus="cursed energy" requirements="level:shikigami user:19" />
-			<stat name="classlvlshikigami" value="20" bonus="cursed energy" requirements="level:shikigami user:20" />
+			<stat name="classlvlshikigami" value="level:shikigami user" bonus="cursed energy" />
 		</rules>
 	</element>
 	<element name="ceclasslvlstrategist" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_LEVEL_STRATEGIST">
@@ -159,26 +102,7 @@
 		<compendium display="false"/>
 		<sheet display="false"/>
 		<rules>
-			<stat name="classlvlstrategist" value="1" bonus="cursed energy" />
-			<stat name="classlvlstrategist" value="2" bonus="cursed energy" requirements="level:strategist:2" />
-			<stat name="classlvlstrategist" value="3" bonus="cursed energy" requirements="level:strategist:3" />
-			<stat name="classlvlstrategist" value="4" bonus="cursed energy" requirements="level:strategist:4" />
-			<stat name="classlvlstrategist" value="5" bonus="cursed energy" requirements="level:strategist:5" />
-			<stat name="classlvlstrategist" value="6" bonus="cursed energy" requirements="level:strategist:6" />
-			<stat name="classlvlstrategist" value="7" bonus="cursed energy" requirements="level:strategist:7" />
-			<stat name="classlvlstrategist" value="8" bonus="cursed energy" requirements="level:strategist:8" />
-			<stat name="classlvlstrategist" value="9" bonus="cursed energy" requirements="level:strategist:9" />
-			<stat name="classlvlstrategist" value="10" bonus="cursed energy" requirements="level:strategist:10" />
-			<stat name="classlvlstrategist" value="11" bonus="cursed energy" requirements="level:strategist:11" />
-			<stat name="classlvlstrategist" value="12" bonus="cursed energy" requirements="level:strategist:12" />
-			<stat name="classlvlstrategist" value="13" bonus="cursed energy" requirements="level:strategist:13" />
-			<stat name="classlvlstrategist" value="14" bonus="cursed energy" requirements="level:strategist:14" />
-			<stat name="classlvlstrategist" value="15" bonus="cursed energy" requirements="level:strategist:15" />
-			<stat name="classlvlstrategist" value="16" bonus="cursed energy" requirements="level:strategist:16" />
-			<stat name="classlvlstrategist" value="17" bonus="cursed energy" requirements="level:strategist:17" />
-			<stat name="classlvlstrategist" value="18" bonus="cursed energy" requirements="level:strategist:18" />
-			<stat name="classlvlstrategist" value="19" bonus="cursed energy" requirements="level:strategist:19" />
-			<stat name="classlvlstrategist" value="20" bonus="cursed energy" requirements="level:strategist:20" />
+			<stat name="classlvlstrategist" value="level:strategist" bonus="cursed energy" />
 		</rules>
 	</element>
 	<element name="ceclasslvlsupport" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_LEVEL_SUPPORT">
@@ -186,26 +110,7 @@
 		<compendium display="false"/>
 		<sheet display="false"/>
 		<rules>
-			<stat name="classlvlsupport" value="1" bonus="cursed energy" />
-			<stat name="classlvlsupport" value="2" bonus="cursed energy" requirements="level:support specialist:2" />
-			<stat name="classlvlsupport" value="3" bonus="cursed energy" requirements="level:support specialist:3" />
-			<stat name="classlvlsupport" value="4" bonus="cursed energy" requirements="level:support specialist:4" />
-			<stat name="classlvlsupport" value="5" bonus="cursed energy" requirements="level:support specialist:5" />
-			<stat name="classlvlsupport" value="6" bonus="cursed energy" requirements="level:support specialist:6" />
-			<stat name="classlvlsupport" value="7" bonus="cursed energy" requirements="level:support specialist:7" />
-			<stat name="classlvlsupport" value="8" bonus="cursed energy" requirements="level:support specialist:8" />
-			<stat name="classlvlsupport" value="9" bonus="cursed energy" requirements="level:support specialist:9" />
-			<stat name="classlvlsupport" value="10" bonus="cursed energy" requirements="level:support specialist:10" />
-			<stat name="classlvlsupport" value="11" bonus="cursed energy" requirements="level:support specialist:11" />
-			<stat name="classlvlsupport" value="12" bonus="cursed energy" requirements="level:support specialist:12" />
-			<stat name="classlvlsupport" value="13" bonus="cursed energy" requirements="level:support specialist:13" />
-			<stat name="classlvlsupport" value="14" bonus="cursed energy" requirements="level:support specialist:14" />
-			<stat name="classlvlsupport" value="15" bonus="cursed energy" requirements="level:support specialist:15" />
-			<stat name="classlvlsupport" value="16" bonus="cursed energy" requirements="level:support specialist:16" />
-			<stat name="classlvlsupport" value="17" bonus="cursed energy" requirements="level:support specialist:17" />
-			<stat name="classlvlsupport" value="18" bonus="cursed energy" requirements="level:support specialist:18" />
-			<stat name="classlvlsupport" value="19" bonus="cursed energy" requirements="level:support specialist:19" />
-			<stat name="classlvlsupport" value="20" bonus="cursed energy" requirements="level:support specialist:20" />
+			<stat name="classlvlsupport" value="level:support specialist" bonus="cursed energy" />
 		</rules>
 	</element>
 	<element name="ceclasslvlwarrior" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_LEVEL_WARRIOR">
@@ -213,26 +118,7 @@
 		<compendium display="false"/>
 		<sheet display="false"/>
 		<rules>
-			<stat name="classlvlwarrior" value="1" bonus="cursed energy" />
-			<stat name="classlvlwarrior" value="2" bonus="cursed energy" requirements="level:warrior:2" />
-			<stat name="classlvlwarrior" value="3" bonus="cursed energy" requirements="level:warrior:3" />
-			<stat name="classlvlwarrior" value="4" bonus="cursed energy" requirements="level:warrior:4" />
-			<stat name="classlvlwarrior" value="5" bonus="cursed energy" requirements="level:warrior:5" />
-			<stat name="classlvlwarrior" value="6" bonus="cursed energy" requirements="level:warrior:6" />
-			<stat name="classlvlwarrior" value="7" bonus="cursed energy" requirements="level:warrior:7" />
-			<stat name="classlvlwarrior" value="8" bonus="cursed energy" requirements="level:warrior:8" />
-			<stat name="classlvlwarrior" value="9" bonus="cursed energy" requirements="level:warrior:9" />
-			<stat name="classlvlwarrior" value="10" bonus="cursed energy" requirements="level:warrior:10" />
-			<stat name="classlvlwarrior" value="11" bonus="cursed energy" requirements="level:warrior:11" />
-			<stat name="classlvlwarrior" value="12" bonus="cursed energy" requirements="level:warrior:12" />
-			<stat name="classlvlwarrior" value="13" bonus="cursed energy" requirements="level:warrior:13" />
-			<stat name="classlvlwarrior" value="14" bonus="cursed energy" requirements="level:warrior:14" />
-			<stat name="classlvlwarrior" value="15" bonus="cursed energy" requirements="level:warrior:15" />
-			<stat name="classlvlwarrior" value="16" bonus="cursed energy" requirements="level:warrior:16" />
-			<stat name="classlvlwarrior" value="17" bonus="cursed energy" requirements="level:warrior:17" />
-			<stat name="classlvlwarrior" value="18" bonus="cursed energy" requirements="level:warrior:18" />
-			<stat name="classlvlwarrior" value="19" bonus="cursed energy" requirements="level:warrior:19" />
-			<stat name="classlvlwarrior" value="20" bonus="cursed energy" requirements="level:warrior:20" />
+			<stat name="classlvlwarrior" value="level:warrior" bonus="cursed energy" />
 		</rules>
 	</element>
 	<!-- Reverse Curse Technique -->
