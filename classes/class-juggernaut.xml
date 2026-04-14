@@ -4,7 +4,7 @@
 		<name>Juggernaut</name>
 		<description>The Juggernaut class from JJK.</description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
-		<update version="5.63">
+		<update version="5.0">
 			<file name="class-juggernaut.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/classes/class-juggernaut.xml" />
 		</update>
 	</info>
