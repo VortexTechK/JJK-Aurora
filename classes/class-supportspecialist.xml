@@ -4,7 +4,7 @@
 		<name>Support Specialist</name>
 		<description>The Support Specialist class from JJK.</description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
-		<update version="5.1">
+		<update version="5.0">
 			<file name="class-supportspecialist.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/classes/class-supportspecialist.xml" />
 		</update>
 	</info>
@@ -137,7 +137,7 @@
 		 	<p class="indent">Your curtain has a number of hit points equal to your Cursed Energy modifier times your level. At 7th level, your curtains have health equal to your cursed energy modifier times 25, and at 13th level, it is 50 times your cursed energy modifier.</p>
 		</description>
 		<sheet action="Action" usage="CE">
-			<description>For 5 Cursed Energy, you cover the area around you within a 2165-foot radius with a black dome for 10 minutes. The curtain changes the sky into night, provoking cursed spirits out of hiding. For each 1 extra Cursed Energy you spend, you add +1 minute to the curtain's duration. Those without cursed energy, or magic cannot see anything inside the barrier, merely seeing as if nothing but the vegetation was there. Creatures who can see into the ethereal plane or have levels in a sorcerer class can see the black half-sphere. Your curtain has {{curtain:hp}} hit points.</description>
+			<description>For 5 cursed energy, you cover the area around you within a 2165-foot radius with a black dome for 10 minutes. The curtain changes the sky into night, provoking cursed spirits out of hiding. For each 1 extra Cursed Energy you spend, you add +1 minute to the curtain's duration. Those without cursed energy, or magic cannot see anything inside the barrier, merely seeing as if nothing but the vegetation was there. Creatures who can see into the ethereal plane or have levels in a sorcerer class can see the black half-sphere. Your curtain has {{curtain:hp}} hit points.</description>
 		</sheet>
 		<rules>
 			<stat name="curtain:hp" value="ce:modifier" level="1"/>
