@@ -4,7 +4,7 @@
 		<name>Extra Features</name>
 		<description>The Extra Features from JJK</description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
-		<update version="5.871">
+		<update version="5.872">
 			<file name="extra-features.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/extra-features.xml" />
 		</update>
 	</info>
@@ -161,7 +161,7 @@
             <stat name="ce:points" value="ce:base_shikigami" requirements="(ID_JJK_CLASS_SHIKIGAMI_USER||ID_JJK_MULTICLASS_SHIKIGAMI_USER),[classlvl_shikigami:classlvl_juggernaut],[classlvl_shikigami:classlvl_scout],[classlvl_shikigami:classlvl_strategist],[classlvl_shikigami:classlvl_support],[classlvl_shikigami:classlvl_warrior]" bonus="cursed energy" />
             <stat name="ce:points" value="ce:base_strategist" requirements="(ID_JJK_CLASS_STRATEGIST||ID_JJK_MULTICLASS_STRATEGIST),[classlvl_strategist:classlvl_juggernaut],[classlvl_strategist:classlvl_scout],[classlvl_strategist:classlvl_shikigami],[classlvl_strategist:classlvl_support],[classlvl_strategist:classlvl_warrior]" bonus="cursed energy" />
             <stat name="ce:points" value="ce:base_support" requirements="(ID_JJK_CLASS_SUPPORT_SPECIALIST||ID_JJK_MULTICLASS_SUPPORT_SPECIALIST),[classlvl_support:classlvl_juggernaut],[classlvl_support:classlvl_scout],[classlvl_support:classlvl_shikigami],[classlvl_support:classlvl_strategist],[classlvl_support:classlvl_warrior]" bonus="cursed energy" />
-            <stat name="ce:points" value="ce:base_warrior" requirements="(ID_JJK_CLASS_WARRIOR||ID_JJK_MULTICLASS_WARRIOR),[classlvl_warrior:classlvl_juggernaut],[classlvl_warrior:classlvl_scout],[classlvl_warrior:classlvl_shikigami],[classlvl_warrior:classlvl_strategist],[classlvl_warrior:classlvl_support]" bonus="cursed energy" />
+            <stat name="ce:points" value="ce:base_warrior" requirements="(ID_JJK_CLASS_WARRIOR||ID_JJK_MULTICLASS_WARRIOR),[classlvl_warrior:classlvl_juggernaut],[classlvl_warrior:classlvl_scout],[classlvl_warrior:classlvl_shikigami],[classlvl_warrior:classlvl_strategist],[classlvl_warrior:classlvl_support]" bonus="cursed energy" /> -->
 
             <!-- add curse ability modifier -->
             <stat name="ce:points" value="ce:modifier" />
