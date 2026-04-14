@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="5.0">
+		<update version="5.1">
 			<file name="ten-shadows.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/ten-shadows.xml" />
 		</update>
 	</info>
@@ -129,7 +129,7 @@
 	</element>
 	<!--Feature Replacement Grants-->
 	<element name="Divine Dogs Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_TEN_SHADOWS_DIVINE_DOGS" />
-	<element name="Trial Rage Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_TEN_SHADOWS_TRIAL" />
+	<element name="Trial Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_TEN_SHADOWS_TRIAL" />
 	<element name="Shadow Manipulation Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_TEN_SHADOWS_SHADOW_MANIPULATION" />
 	<element name="Well's Unknown Abyss Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_TEN_SHADOWS_WELLS_UNKNOWN_ABYSS" />
 	<element name="Domain Expansion: Chimera Shadow Garden Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_TEN_SHADOWS_DOMAIN_EXPANSION_CHIMERA_SHADOW_GARDEN" />
