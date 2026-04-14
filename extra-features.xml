@@ -4,7 +4,7 @@
 		<name>Extra Features</name>
 		<description>The Extra Features from JJK</description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
-		<update version="5.873">
+		<update version="5.874">
 			<file name="extra-features.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/extra-features.xml" />
 		</update>
 	</info>
@@ -23,6 +23,12 @@
             <stat name="ce:modifier" value="wisdom:modifier" bonus="cursed energy" />
 
             <!-- pure class-level anchors (used only for comparisons) -->
+			<stat name="classlvl_juggernaut" value="0" bonus="cursed energy" />
+			<stat name="classlvl_scout" value="0" bonus="cursed energy" />
+			<stat name="classlvl_shikigami" value="0" bonus="cursed energy" />
+			<stat name="classlvl_strategist" value="0" bonus="cursed energy" />
+			<stat name="classlvl_support" value="0" bonus="cursed energy" />
+			<stat name="classlvl_warrior" value="0" bonus="cursed energy" />
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_LEVEL_JUGGERNAUT" />
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_LEVEL_SCOUT" />
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_LEVEL_SHIKIGAMI" />
@@ -180,7 +186,7 @@
 		<compendium display="false"/>
 		<sheet display="false"/>
 		<rules>
-			<stat name="classlvl_support" value="0" bonus="cursed energy" />
+			<stat name="classlvl_support" value="1" bonus="cursed energy" />
 			<stat name="classlvl_support" value="2" bonus="cursed energy" requirements="level:support specialist:2" />
 			<stat name="classlvl_support" value="3" bonus="cursed energy" requirements="level:support specialist:3" />
 			<stat name="classlvl_support" value="4" bonus="cursed energy" requirements="level:support specialist:4" />
@@ -207,7 +213,7 @@
 		<compendium display="false"/>
 		<sheet display="false"/>
 		<rules>
-			<stat name="classlvl_warrior" value="0" bonus="cursed energy" />
+			<stat name="classlvl_warrior" value="1" bonus="cursed energy" />
 			<stat name="classlvl_warrior" value="2" bonus="cursed energy" requirements="level:warrior:2" />
 			<stat name="classlvl_warrior" value="3" bonus="cursed energy" requirements="level:warrior:3" />
 			<stat name="classlvl_warrior" value="4" bonus="cursed energy" requirements="level:warrior:4" />
