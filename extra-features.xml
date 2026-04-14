@@ -4,7 +4,7 @@
 		<name>Extra Features</name>
 		<description>The Extra Features from JJK</description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
-		<update version="5.877">
+		<update version="5.878">
 			<file name="extra-features.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/extra-features.xml" />
 		</update>
 	</info>
@@ -49,8 +49,8 @@
             <stat name="ce:base_warrior" value="level" requirements="ID_JJK_CLASS_WARRIOR||ID_JJK_MULTICLASS_WARRIOR" />
 
             <!-- choose base CE from the class whose CLASS LEVEL is highest (comparisons use classlvl*) -->
-            <!--<stat name="ce:points" value="ce:base_juggernaut" requirements="(ID_JJK_CLASS_JUGGERNAUT||ID_JJK_MULTICLASS_JUGGERNAUT),[classlvljuggernaut:classlvlscout],[classlvljuggernaut:classlvlshikigami],[classlvljuggernaut:classlvlstrategist],[classlvljuggernaut:classlvlsupport],[classlvljuggernaut:classlvlwarrior]" bonus="cursed energy" />
-            <stat name="ce:points" value="ce:base_scout" requirements="(ID_JJK_CLASS_SCOUT||ID_JJK_MULTICLASS_SCOUT),[classlvlscout:classlvljuggernaut],[classlvlscout:classlvlshikigami],[classlvlscout:classlvlstrategist],[classlvlscout:classlvlsupport],[classlvlscout:classlvlwarrior]" bonus="cursed energy" />
+            <stat name="ce:points" value="ce:base_juggernaut" requirements="(ID_JJK_CLASS_JUGGERNAUT||ID_JJK_MULTICLASS_JUGGERNAUT),[classlvljuggernaut:classlvlscout],[classlvljuggernaut:classlvlshikigami],[classlvljuggernaut:classlvlstrategist],[classlvljuggernaut:classlvlsupport],[classlvljuggernaut:classlvlwarrior]" bonus="cursed energy" />
+            <!--<stat name="ce:points" value="ce:base_scout" requirements="(ID_JJK_CLASS_SCOUT||ID_JJK_MULTICLASS_SCOUT),[classlvlscout:classlvljuggernaut],[classlvlscout:classlvlshikigami],[classlvlscout:classlvlstrategist],[classlvlscout:classlvlsupport],[classlvlscout:classlvlwarrior]" bonus="cursed energy" />
             <stat name="ce:points" value="ce:base_shikigami" requirements="(ID_JJK_CLASS_SHIKIGAMI_USER||ID_JJK_MULTICLASS_SHIKIGAMI_USER),[classlvlshikigami:classlvljuggernaut],[classlvlshikigami:classlvlscout],[classlvlshikigami:classlvlstrategist],[classlvlshikigami:classlvlsupport],[classlvlshikigami:classlvlwarrior]" bonus="cursed energy" />
             <stat name="ce:points" value="ce:base_strategist" requirements="(ID_JJK_CLASS_STRATEGIST||ID_JJK_MULTICLASS_STRATEGIST),[classlvlstrategist:classlvljuggernaut],[classlvlstrategist:classlvlscout],[classlvlstrategist:classlvlshikigami],[classlvlstrategist:classlvlsupport],[classlvlstrategist:classlvlwarrior]" bonus="cursed energy" />
             <stat name="ce:points" value="ce:base_support" requirements="(ID_JJK_CLASS_SUPPORT_SPECIALIST||ID_JJK_MULTICLASS_SUPPORT_SPECIALIST),[classlvlsupport:classlvljuggernaut],[classlvlsupport:classlvlscout],[classlvlsupport:classlvlshikigami],[classlvlsupport:classlvlstrategist],[classlvlsupport:classlvlwarrior]" bonus="cursed energy" />
