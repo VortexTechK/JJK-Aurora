@@ -4,7 +4,7 @@
 		<name>Extra Features</name>
 		<description>The Optional Class Features from Tasha’s Cauldron of Everything</description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
-		<update version="5.7">
+		<update version="5.8">
 			<file name="extra-features.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/extra-features.xml" />
 		</update>
 	</info>
@@ -44,6 +44,10 @@
 			<stat name="cu:stat" value="wisdom:score" bonus="cursed energy" />
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_NO_CURSED_ENERGY" />
 		</rules>
+	</element>
+	<element name="No Cursed Energy" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_NO_CURSED_ENERGY">
+		<compendium display="false"/>
+		<sheet display="false" />
 	</element>
 	<!-- Reverse Curse Technique -->
 	<element name="Reverse Curse Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_REVERSE_CURSE_TECHNIQUE">
