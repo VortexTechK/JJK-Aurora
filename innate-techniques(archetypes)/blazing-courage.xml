@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="5.0">
+		<update version="5.1">
 			<file name="blazing-courage.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/blazing-courage.xml" />
 		</update>
 	</info>
@@ -37,10 +37,10 @@
 			<description>You can spend up to {{ce:modifier}} cursed energy while holding a melee weapon, igniting it in flames for 1 minute. The weapon deals 1d{{ignition:damagedice}} fire damage on a hit per CE spent, and emits bright light for 5 feet and dim light for another 10 feet.</description>
 		</sheet>
         <rules>
-            <set name="ignition:damagedice" value="6" />
-            <set name="ignition:damagedice" value="8" level="6" />
-            <set name="ignition:damagedice" value="10" level="11" />
-            <set name="ignition:damagedice" value="12" level="18" />
+            <set name="ignition:damagedice" value="6" bonus="ignition" />
+            <set name="ignition:damagedice" value="8" level="6" bonus="ignition" />
+            <set name="ignition:damagedice" value="10" level="11" bonus="ignition" />
+            <set name="ignition:damagedice" value="12" level="18" bonus="ignition" />
         </rules>
 	</element>
 	<element name="Mantle of Courage" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BLAZING_COURAGE_MANTLE_OF_COURAGE">
@@ -63,9 +63,9 @@
 			<description>When you spend at least 3 cursed energy on Ignition, you can increase the weapon's range by 10 feet, ignore resistance to fire damage and when you miss with a weapon attack by {{eternalflames:miss}} or less, you deal half your Ignition damage.</description>
 		</sheet>
         <rules>
-            <set name="eternalflames:miss" value="2" />
-            <set name="eternalflames:miss" value="3" level="11" />
-            <set name="eternalflames:miss" value="4" level="18" />
+            <set name="eternalflames:miss" value="2" bonus="eternalflames" />
+            <set name="eternalflames:miss" value="3" level="11" bonus="eternalflames" />
+            <set name="eternalflames:miss" value="4" level="18" bonus="eternalflames" />
         </rules>
 	</element>
 	<element name="Maximum: Conflagration" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BLAZING_COURAGE_MAXIMUM_CONFLAGRATION">
