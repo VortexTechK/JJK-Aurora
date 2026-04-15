@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="5.0">
+		<update version="5.1">
 			<file name="antigravity-system.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/antigravity-system.xml" />
 		</update>
 	</info>
@@ -56,8 +56,8 @@
 		    <p class="indent"><strong>Focused System.</strong> When you use your innate technique, you can choose a number of creatures equal to your CE modifier + your proficiency bonus to be unaffected by your technique. </p>
             <p class="indent"><strong>Disorienting Gravity.</strong> Any creature that is lifted upwards by your Antigravity must make a Constitution saving throw. On a failure, they make any attacks at disadvantage and cannot maintain concentration while within your field. </p>
         </description>
-		<sheet action="Action">
-      		<description>When you use your innate technique, you can choose {{gravity:field:focused}} creaturesto be unaffected by your technique. Any creature that is lifted upwards by your Antigravity must make a Constitution saving throw. On a failure, they make any attacks at disadvantage and cannot maintain concentration while within your field.</description>
+		<sheet>
+      		<description>When you use your innate technique, you can choose {{gravity:field:focused}} creatures to be unaffected by your technique. Any creature that is lifted upwards by your Antigravity must make a Constitution saving throw. On a failure, they make any attacks at disadvantage and cannot maintain concentration while within your field.</description>
 		</sheet>
 		<rules>
                 <stat name="gravity:field:focused" value="ce:modifier" />
@@ -79,7 +79,7 @@
 			<p>At 6th level, you have learned to defend yourself from attacks using your antigravity. As a reaction for 2 CE, you can encase yourself in a field of antigravity, causing attack rolls against you to be made at disadvantage and any damage other than psychic is reduced by your CE modifier + your level until the beginning of your next turn. If you are taking the Dodge action, you can use this reaction on another creature within 5 feet.</p>
 		</description>
 		<sheet action="Reaction" usage="CE">
-			<description>For 2 cursed energy, attack rolls against you to be made at disadvantage and any damage other than psychic is reduced by {{antigravityshield:reduction}} until the beginning of your next turn. If you are taking the Dodge action, you can use this on another creature within 5 feet.</description>
+			<description>For 2 cursed energy, attack rolls against you are made at disadvantage and any damage other than psychic is reduced by {{antigravityshield:reduction}} until the beginning of your next turn. If you are taking the Dodge action, you can use this on another creature within 5 feet.</description>
 		</sheet>
         <rules>
             <stat name="antigravityshield:reduction" value="ce:modifier" />
@@ -92,7 +92,7 @@
 			<p> At 11th level, you master all aspects of your technique and gain the following improvements to your Antigravity:</p>
             <p class="indent"><strong>Lasting Field.</strong> You can spend additional CE up to your modifier to increase the range by 10 feet and the duration by 1 round per CE.</p>
 		    <p class="indent"><strong>Sweeping Gravity.</strong> Creatures with a Dexterity score below your CE save DC cannot make a Dexterity saving throw against your technique.</p>
-            <p class="indent"><strong>Nauseating Gravity.</strong> If a creature fails a saving throw against your Disorienting Gravity, they are also stunned until the end of their next turn.</p>
+            <p class="indent"><strong>Nauseating Gravity.</strong> If a creature fails a saving throw against Gravity Field's effect, they are also stunned until the end of their next turn.</p>
             <p class="indent"><strong>Hard Fall.</strong> Fall damage from your field becomes d12 bludgeoning.</p>
         </description>
 		<sheet>
