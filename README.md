@@ -1,7 +1,7 @@
 # Jujustu Kaisen(JJK) Homebrew Aurora Support (WIP)
 Main Index: https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/jjk.index
 
-Link to OG Doc: https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0
+Link to OG Doc: https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit
 
 ## Before You Complain
 _**READ**_ the google doc before making pull requests; there are a lot of nuances. Don't waste both of our times. 
