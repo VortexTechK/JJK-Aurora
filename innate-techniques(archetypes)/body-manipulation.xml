@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="5.1">
+		<update version="5.0.1">
 			<file name="body-manipulation.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/body-manipulation.xml" />
 		</update>
 	</info>
@@ -40,7 +40,7 @@
 			<description>When you have a humanoid creature's corpse, you can spend 1 cursed energy during a long rest to put your brain in that creature. While in the creature's body, you lose any racial features of your old body but keep all of your class features. The creature’s innate technique features, cursed energy features, racial features, ability scores except for intelligence, wisdom, and charisma, and proficiencies and languages are now yours. When you change into that creature's body, it will look the same outside of having a scar on its forehead, which is a sign your brain is inside its body. You can pull the top of your head to show your brain, which is a normal brain with a human mouth. Other creatures can try to identify you're not the humanoid by making a DC 30 Insight check. Creatures who knew the body's owner before you stole it can do the roll with advantage.</description>
 		</sheet>
     <rules>
-      	<select type="Archetype" name="Graverobbed Body Innate Technique" supports="Innate Technique" />
+      	<select type="Archetype" name="Graverobbed Body Innate Technique" supports="Innate Technique" optional="true" />
     </rules>
 	</element>
 	<element name="Skill Theft" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT">
