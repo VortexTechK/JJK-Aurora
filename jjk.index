@@ -4,7 +4,7 @@
 		<name>JJK</name>
 		<description>JJK Homebrew.</description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
-		<update version="5.1">
+		<update version="5.0.1">
 			<file name="jjk.index" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/jjk.index" />
 		</update>
 	</info>
@@ -27,6 +27,11 @@
 		<file name="black-bird.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/black-bird.xml" />	
 		<file name="blazing-courage.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/blazing-courage.xml" />	
 		<file name="blood-manipulation.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/blood-manipulation.xml" />	
+		<file name="body-manipulation.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/body-manipulation.xml" />
+		<file name="boogie-woogie.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/boogie-woogie.xml" />
+		<file name="clone.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/clone.xml" />
+		<file name="construction.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/construction.xml" />
+		<file name="contractual-recreation.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/contractual-recreation.xml" />
 		<file name="body-manipulation.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/body-manipulation.xml" />
 		<file name="ten-shadows.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/ten-shadows.xml" />
 
