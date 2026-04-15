@@ -180,9 +180,9 @@
 		</sheet>
 	</element>
 	<!--Feature Replacement Grants-->
-	<element name="Antigravity Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_AUSPICIOUS_SUMMON_KAICHI" />
-	<element name="Gravity Field Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_AUSPICIOUS_SUMMON_REIKI" />
-	<element name="Antigravity Shield Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_AUSPICIOUS_SUMMON_KIRIN" />
-	<element name="Boosted System Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_AUSPICIOUS_SUMMON_RYU" />
-	<element name="Domain Expansion: Zero Gravity Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_AUSPICIOUS_SUMMON_DOMAIN_EXPANSION_BEASTS_REALM" />
+	<element name="Summon Kaichi Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_AUSPICIOUS_SUMMON_KAICHI" />
+	<element name="Summon Reiki Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_AUSPICIOUS_SUMMON_REIKI" />
+	<element name="Summon Kirin Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_AUSPICIOUS_SUMMON_KIRIN" />
+	<element name="Summon Ryu Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_AUSPICIOUS_SUMMON_RYU" />
+	<element name="Domain Expansion: Beasts Realm Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_AUSPICIOUS_SUMMON_DOMAIN_EXPANSION_BEASTS_REALM" />
 </elements>
