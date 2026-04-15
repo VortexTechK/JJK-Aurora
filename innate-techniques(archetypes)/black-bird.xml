@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="5.0">
+			<file name="black-bird.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/black-bird.xml" />
+		</update>
+	</info>
+
+	<element name="Black Bird Manipulation" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_BLACK_BIRD">
+		<supports>Innate Technique</supports>
+		<description>
+			<p>Don't be a predator.</p>
+			<div element="ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_CURSED_CROWS" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_OMEN_OF_DEATH" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_RAVENS_EYE" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_BIRD_STRIKE" />
+      		<div element="ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_DOMAIN_EXPANSION_BLACK_MAHAKALA" />
+		</description>
+		<sheet display="false">
+			<description>You were born with a simple ability many called weak, the ability to control and see through crows.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_CURSED_CROWS" level="1" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_OMEN_OF_DEATH" level="3" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_RAVENS_EYE" level="6" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_BIRD_STRIKE" level="11" />
+      		<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_DOMAIN_EXPANSION_BLACK_MAHAKALA" level="18" />
+		</rules>
+	</element>
+	<element name="Cursed Crows" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_CURSED_CROWS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BLACK_BIRD_CURSED_CROWS</requirements>
+		<description>
+			<p> At 1st level, you have learned how to imbue crows with cursed energy to use them as part of your technique. As an action for 1 Cursed Energy, you can imbue a raven with cursed energy if it's restrained, grappled, or incapacitated. It then becomes one of your cursed ravens, it will become charmed by you and will follow your orders no matter what. As an action, you can close your eyes giving you the blinded condition unless you have blindsight, in exchange for being able to see through one of your crows. While seeing through your crows, you can use your passive perception instead of the crows. You can only see one crow at a time and can switch between them as an action or stop as a bonus action. You can start with 3 cursed crows.</p>
+        </description>
+		<sheet action="Action" usage="CE">
+			<description>For 1 cursed energy, you can imbue a raven with cursed energy if it's restrained, grappled, or incapacitated. It then becomes one of your cursed ravens, it will become charmed by you and will follow your orders no matter what. As an action, you can close your eyes giving you the blinded condition unless you have blindsight, in exchange for being able to see through one of your crows. While seeing through your crows, you can use your passive perception instead of the crows. You can only see one crow at a time and can switch between them as an action or stop as a bonus action.</description>
+		</sheet>
+	</element>
+	<element name="Omen of Death" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_OMEN_OF_DEATH">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BLACK_BIRD_OMEN_OF_DEATH</requirements>
+		<description>
+			<p> When you reach 3rd level, you are constantly followed by an omen of death, giving you an aura of terror. As a bonus action, you force each creature of your choice that you can see within 30 feet of you to make a Wisdom saving throw. On a failed save, a creature becomes frightened of you for 1 minute. The frightened creature can repeat this saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+        </description>
+		<sheet action="Bonus Action">
+      		<description>Force each creature of your choice that you can see within 30 feet of you to make a Wisdom saving throw. On a failed save, a creature becomes frightened of you for 1 minute. The frightened creature can repeat this saving throw at the end of each of its turns, ending the effect on itself on a success.</description>
+		</sheet>
+	</element>
+	<element name="Raven's Eye" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_RAVENS_EYE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BLACK_BIRD_RAVENS_EYE</requirements>
+		<description>
+			<p>Starting at 6th level, your crows have been enhancing your sight. You will gain +1 to your passive perception for every crow you currently have. In addition, you can switch between crows as a bonus action and can stop seeing through them at will.</p>
+		</description>
+		<sheet>
+			<description>You gain +1 to your passive perception for every crow you currently have. You can switch between crows as a bonus action and can stop seeing through them at will.</description>
+		</sheet>
+	</element>
+	<element name="Bird Strike" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_BIRD_STRIKE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BLACK_BIRD_BIRD_STRIKE</requirements>
+		<description>
+			<p> Beginning 11th level, your mastery of the Black Bird Manipulation has made you develop its most powerful technique. As an action for 10 Cursed Energy, you can order one of your crows to launch themselves at a creature from their flying speed range. The target must make a Dexterity saving throw, on a success they will take half damage and won't damage a limb. On a failure, however, they will receive 10d10 necrotic damage and have one of their limbs damaged, rolling a d6 to see the damaged limb. The crow dies afterwards.</p>
+		</description>
+		<sheet action="Action" usage="CE">
+			<description>For 10 cursed energy, order one of your crows to launch themselves at a creature from their flying speed range. The target must make a Dexterity saving throw, on a success they take half damage and won't damage a limb. On a failure they receive 10d10 necrotic damage and have one of their limbs damaged, rolling a d6 to see the damaged limb. The crow dies afterwards.</description>
+		</sheet>
+	</element>
+	<element name="Domain Expansion: Black Mahakala" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_DOMAIN_EXPANSION_BLACK_MAHAKALA">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BLACK_BIRD_DOMAIN_EXPANSION_BLACK_MAHAKALA</requirements>
+		<description>
+			<p>If you reach 18th level, you gain your domain expansion. At Initiative 20, you can choose up to three targets to suffer the full effects of Bird Strike.</p>
+		</description>
+		<sheet action="Action + Bonus Action + Movement" usage="CE">
+			<description>
+				<p>For 20 cursed energy, at Initiative 20, you can choose up to three targets to suffer the full effects of Bird Strike.</p>
+			</description>
+		</sheet>
+	</element>
+	<!--Feature Replacement Grants-->
+	<element name="Cursed Crows Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BLACK_BIRD_CURSED_CROWS" />
+	<element name="Omen of Death Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BLACK_BIRD_OMEN_OF_DEATH" />
+	<element name="Raven's Eye Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BLACK_BIRD_RAVENS_EYE" />
+	<element name="Bird Strike Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BLACK_BIRD_BIRD_STRIKE" />
+	<element name="Domain Expansion: Black Mahakala Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BLACK_BIRD_DOMAIN_EXPANSION_BLACK_MAHAKALA" />
+</elements>

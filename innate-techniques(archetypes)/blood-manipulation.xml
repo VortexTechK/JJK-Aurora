@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="5.0">
+			<file name="blood-manipulation.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/blood-manipulation.xml" />
+		</update>
+	</info>
+
+	<element name="Blood Manipulation" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_BLOOD_MANIPULATION">
+		<supports>Innate Technique</supports>
+		<description>
+			<p>Blood loss? Yes.</p>
+			<div element="ID_JJK_ARCHETYPE_FEATURE_BLOOD_MANIPULATION_BLOOD_CONSTRUCTS" />
+            <div element="ID_JJK_ARCHETYPE_FEATURE_BLOOD_MANIPULATION_BLOOD_TECHNIQUES" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_BLOOD_MANIPULATION_FLOWING_RED_SCALE" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_BLOOD_MANIPULATION_CONVERGENCE" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_BLOOD_MANIPULATION_PIERCING_BLOOD" />
+      		<div element="ID_JJK_ARCHETYPE_FEATURE_BLOOD_MANIPULATION_DOMAIN_EXPANSION_BLOODBATH" />
+		</description>
+		<sheet display="false">
+			<description> You were born with a complex ability held and practiced by the Kamo family, you can control your blood.</description>
+		</sheet>
+		<rules>
+        	<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_BLOOD_MANIPULATION_BLOOD_CONSTRUCTS" level="1" />
+        	<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_BLOOD_MANIPULATION_BLOOD_TECHNIQUES" level="1" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_BLOOD_MANIPULATION_FLOWING_RED_SCALE" level="3" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_BLOOD_MANIPULATION_CONVERGENCE" level="6" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_BLOOD_MANIPULATION_PIERCING_BLOOD" level="11" />
+      		<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_BLOOD_MANIPULATION_DOMAIN_EXPANSION_BLOODBATH" level="18" />
+		</rules>
+	</element>
+	<element name="Blood Constructs" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BLOOD_MANIPULATION_BLOOD_CONSTRUCTS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BLOOD_MANIPULATION_BLOOD_CONSTRUCTS</requirements>
+		<description>
+			<p> Starting at 1st level, you have been blessed with the Innate Technique of the Kamo clan, making you begin with the most basic technique, the blood constructs. You can pull blood from an available source to create a semi-solid construct. As an action for 1 CE and 1 HP, you can create a small construct smaller than a 5ft by 5ft space. For every 5 ft the price increases by 1 CE and HP. You can ignore the HP cost if you have an alternate source of blood. These constructs have HP equal to your level times CE spent. </p>
+            <p class="indent">Once as part of a long rest, you can spend $100/1 Gold and hit points up to your proficiency bonus to fill a Blood Bag with your own blood. This Blood Bag counts as a source of hit points for your Blood Manipulation features. A Blood Bag lasts 5 days outside of refrigeration before it goes bad. You can have a number of Blood Bags equal to your Constitution modifier at once.</p>
+        </description>
+		<sheet action="Action" usage="CE">
+			<description>For 1 cursed energy and 1 HP, you can create a small construct smaller than a 5ft by 5ft space. For every 5 ft the price increases by 1 CE and HP. You can ignore the HP cost if you have an alternate source of blood. These constructs have HP equal to your level times CE spent.</description>
+            <description>Once as part of a long rest, you can spend $100/1 Gold and up to {{proficiency}} hit points to fill a Blood Bag with your own blood. This Blood Bag counts as a source of hit points for your Blood Manipulation features. A Blood Bag lasts 5 days outside of refrigeration before it goes bad. You can have {{constitution:modifier}} Blood Bags at once.</description>
+        </sheet>
+	</element>
+    <element name="Blood Techniques" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BLOOD_MANIPULATION_BLOOD_TECHNIQUES">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BLOOD_MANIPULATION_BLOOD_TECHNIQUES</requirements>
+		<description>
+			<p> Starting at 1st level, you can harness your blood in a manner fit for battle. When you use a Blood Manipulation feature, you can ignore the HP cost if you have an alternate source of blood. You gain three of following techniques and gain an additional two at 6th and 11th level: </p>
+        </description>
+		<sheet>
+			<description>When you use a Blood Manipulation feature, you can ignore the HP cost if you have an alternate source of blood.</description>
+		</sheet>
+        <rules>
+			<select type="Class Feature" name="Blood Techniques" supports="Blood Techniques" level="1" number="3"/>
+			<select type="Class Feature" name="Blood Techniques" supports="Blood Techniques" level="6" number="2"/>
+			<select type="Class Feature" name="Blood Techniques" supports="Blood Techniques" level="11" number="2"/>
+		</rules>
+	</element>
+
+	<element name="Flowing Red Scale" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BLOOD_MANIPULATION_FLOWING_RED_SCALE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BLOOD_MANIPULATION_FLOWING_RED_SCALE</requirements>
+		<description>
+			<p> At 3rd level, this technique can increase the user's body temperature, pulse rate, and the number of red blood cells to give themselves greatly increased energy and physical capabilities. You can spend 3 Cursed Energy as a bonus action to gain the following benefits for 1 minute:</p>
+            <ul>
+                <li>Your speed is doubled</li>
+                <li>You will gain a +2 bonus to your AC</li>
+                <li>You gain advantage on Dexterity saving throws and Strength checks</li>
+                <li>You will gain an additional action on each of your turns. That action can be used only to take the Attack (one weapon attack only), Dash, Disengage, Hide, or Use an Object action.</li>
+            </ul>
+        </description>
+		<sheet action="Bonus Action" usage="CE">
+      		<description>For 3 cursed energy, for the following minute your speed is doubled, you gain a +2 bonus to your AC, you have advantage on Dexterity saving throws and Strength checks, and you gain an additional action on each of your turns. That action can be used only to take the Attack (one weapon attack only), Dash, Disengage, Hide, or Use an Object action.</description>
+		</sheet>
+	</element>
+	<element name="Convergence" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BLOOD_MANIPULATION_CONVERGENCE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BLOOD_MANIPULATION_CONVERGENCE</requirements>
+		<description>
+			<p> At 6th level, you compress and condense blood to its absolute limit. Before you use a blood manipulation technique with a casting time of one action, you can spend your bonus action, reaction and movement to enhance the technique's potency, gaining the following benefits:</p>
+            <ul>
+                <li>You deal additional damage equal to your proficiency bonus</li>
+                <li>Your damage die increases by 1 level(d10-d12-2d8)</li>
+                <li>The range increases by 30 feet</li>
+            </ul>
+            <p class="indent">If you spend an additional turn using your action, bonus action, reaction and movement to charge up Convergence before using your technique, you gain these benefits an additional time and gain advantage on the first technique attack roll or can force creatures to make their first saving throw against your technique at disadvantage. </p>
+            <p class="indent">Certain techniques may have additional or different bonuses if used with Convergence that are listed with each technique.</p>
+        </description>
+		<sheet>
+			<description action="Bonus Action + Reaction + Movement">Before you use a blood manipulation technique with a casting time of one action, enhance the technique's potency, making it deal {{proficiency}} additional damage, increasing its damage die by 1 level, and increasing the range by 30 feet. If you spend an additional turn using your action, bonus action, reaction and movement to charge up Convergence before using your technique, you gain these benefits an additional time and gain advantage on the first technique attack roll or can force creatures to make their first saving throw against your technique at disadvantage.</description>
+		</sheet>
+	</element>
+	<element name="Piercing Blood" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BLOOD_MANIPULATION_PIERCING_BLOOD">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BLOOD_MANIPULATION_PIERCING_BLOOD</requirements>
+		<description>
+			<p> Beginning at 11th level, you can compress your blood into a deadly supersonic beam. As an action for 8 CE and 5 HP, you unleash a 100ft line of blood. Creatures in range must make a Dexterity save taking 10d8 piercing on a failure. </p>
+            <p class="indent">If used with Convergence, you can continue shooting the beam for an additional round. Any creature that enters the lingering Piercing Blood must make the saving throw. As an action you can swing the line, making it into a 130 feet cone forcing an additional Dexterity save and the technique ends.</p>
+        </description>
+		<sheet action="Action" usage="CE">
+			<description>For 8 cursed energy and 5 hit points, you unleash a 100ft line of blood. Creatures in range must make a Dexterity save taking 10d8 piercing on a failure. If used with Convergence, you can continue shooting the beam for an additional round. Any creature that enters the lingering Piercing Blood must make the saving throw. As an action you can swing the line, making it into a 130 feet cone forcing an additional Dexterity save and the technique ends.</description>
+		</sheet>
+	</element>
+	<element name="Domain Expansion: Bloodbath" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BLOOD_MANIPULATION_DOMAIN_EXPANSION_BLOODBATH">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BLOOD_MANIPULATION_DOMAIN_EXPANSION_BLOODBATH</requirements>
+		<description>
+			<p>When you reach 18th level, you gain your domain expansion.  At Initiative 20, all creatures take 4d12 necrotic damage as their blood attacks them from the inside. While in the domain your blood manipulation techniques use hit points from other creatures within the domain.</p>
+		</description>
+		<sheet action="Action + Bonus Action + Movement" usage="CE">
+			<description>
+				<p>For 20 cursed energy, at Initiative 20, all creatures take 4d12 necrotic damage. While in the domain your blood manipulation techniques use hit points from other creatures within the domain.</p>
+			</description>
+		</sheet>
+	</element>
+    <!--Blood Techniques-->
+    <element name="Crimson Binding" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_BLOOD_MANIPULATION_CRIMSON_BINDING">
+		<supports>Blood Techniques</supports>
+		<description>
+			<p>As an action for 1 CE and 1 HP, you unleash a red blood net, forcing a target Large or smaller within 30ft to make a Strength saving throw or be restrained. They can repeat the save at the start of their turn.</p>
+		</description>
+		<sheet action="Action" usage="CE">
+			<description>For 1 cursed energy and 1 HP, you unleash a red blood net, forcing a target Large or smaller within 30ft to make a Strength saving throw or be restrained. They can repeat the save at the start of their turn.</description>
+		</sheet>
+	</element>
+    <element name="Slicing Exorcism" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_BLOOD_MANIPULATION_SLICING_EXORCISM">
+		<supports>Blood Techniques</supports>
+		<description>
+			<p>As an action for 1 CE and 1 HP you spin a ring of blood and unleash it as a projectile. Make a ranged CE attack against a target within 60 ft, on a hit you deal 1d10 + CE modifier necrotic Damage. If used with Convergence, the attack still deals your CE modifier on a miss of 5 or less.</p>
+		</description>
+		<sheet action="Action" usage="CE">
+			<description>For 1 cursed energy and 1 HP, you spin a ring of blood and unleash it as a projectile. Make a ranged CE attack against a target within 60 ft, on a hit you deal 1d10 + {{ce:modifier}} necrotic Damage. If used with Convergence, the attack still deals your {{ce:modifier}} on a miss of 5 or less.</description>
+		</sheet>
+	</element>
+    <element name="Blood Edge" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_BLOOD_MANIPULATION_BLOOD_EDGE">
+		<supports>Blood Techniques</supports>
+		<description>
+			<p>You can spend CE up to your Cursed Energy modifier to create a melee weapon as a free action which counts as magical for overcoming resistances. For every two Cursed Energy used the weapon gains an additional damage tier(d10-d12-2d8) and lasts 1 minute. If used with Convergence, the damage tier increases by one again.</p>
+		</description>
+		<sheet usage="CE">
+			<description>Spend up to {{ce:modifier}} cursed energy to create a melee weapon as a free action which counts as magical for overcoming resistances. For every two cursed energy used the weapon gains an additional damage tier and lasts 1 minute. If used with Convergence, the damage tier increases by one again.</description>
+		</sheet>
+	</element>
+    <element name="Crimson Rain" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_BLOOD_MANIPULATION_CRIMSON_RAIN">
+        <supports>Blood Techniques</supports>
+        <description>
+            <p>As an action for 3 CE and 2 HP, you pick an area within 60 ft, that spot becomes the center of a 15 ft radius of a rain of blood spikes. All creatures in that radius must make a Dexterity Saving throw taking 3d10 piercing damage on failure or half as much on a success. If used with Convergence, a target is also knocked prone on a failed save.</p>
+        </description>
+        <sheet action="Action" usage="CE">
+            <description>For 3 cursed energy and 2 HP, you pick an area within 60 ft. That spot becomes the center of a 15 ft radius of a rain of blood spikes. All creatures in that radius must make a Dexterity Saving throw taking 3d10 piercing damage on failure or half as much on a success. If used with Convergence, a target is also knocked prone on a failed save.</description>
+        </sheet>
+    </element>
+    <element name="Blood Burst" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_BLOOD_MANIPULATION_BLOOD_BURST">
+        <supports>Blood Techniques</supports>
+        <description>
+            <p>For 1 CE and 1 HP upon hitting with a weapon attack once per turn, you cover your strike with blood, causing it to explode on impact. The creature must make a Dexterity saving throw. On a failure they take 4d6 necrotic damage.</p>
+        </description>
+        <sheet usage="CE">
+            <description>For 1 cursed energy and 1 HP, upon hitting with a weapon attack once per turn, you cover your strike with blood, causing it to explode on impact. The creature must make a Dexterity saving throw. On a failure they take 4d6 necrotic damage.</description>
+        </sheet>
+    </element>
+    <element name="Blood Meteorite" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_BLOOD_MANIPULATION_BLOOD_METEORITE">
+        <supports>Blood Techniques</supports>
+        <description>
+            <p>As an action for 1 CE and 3 HP you create a solid crystal of blood launched like an asteroid. You can make a ranged CE attack against a target in 30 ft. On a hit, this attack deals 4d4 + CE modifier in bludgeoning damage.</p>
+        </description>
+        <sheet action="Action" usage="CE">
+            <description>For 1 cursed energy and 3 HP, you create a solid crystal of blood launched like an asteroid. You can make a ranged CE attack against a target in 30 ft. On a hit, this attack deals 4d4 + {{ce:modifier}} in bludgeoning damage.</description>
+        </sheet>
+    </element>
+    <element name="Blood Geyser" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_BLOOD_MANIPULATION_BLOOD_GEYSER">
+        <supports>Blood Techniques</supports>
+        <description>
+            <p>As an action for 3 CE and 3 HP, you can choose a 5 feet space within 10 ft of yourself and saturate it with blood. When a creature starts their turn there or enters that area, all creatures within 5 feet must make a Dexterity saving throw or take 5d10 bludgeoning damage and get launched 30ft in the air or half as much on a success.</p>
+        </description>
+        <sheet action="Action" usage="CE">
+            <description>For 3 cursed energy and 3 HP, you can choose a 5 feet space within 10 ft of yourself and saturate it with blood. When a creature starts their turn there or enters that area, all creatures within 5 feet must make a Dexterity saving throw or take 5d10 bludgeoning damage and get launched 30ft in the air or half as much on a success.</description>
+        </sheet>
+    </element>
+    <!--Feature Replacement Grants-->
+	<element name="Blood Constructs Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BLOOD_MANIPULATION_BLOOD_CONSTRUCTS" />
+    <element name="Blood Techniques Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BLOOD_MANIPULATION_BLOOD_TECHNIQUES" />
+	<element name="Flowing Red Scale Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BLOOD_MANIPULATION_FLOWING_RED_SCALE" />
+	<element name="Convergence Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BLOOD_MANIPULATION_CONVERGENCE" />
+	<element name="Piercing Blood Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BLOOD_MANIPULATION_PIERCING_BLOOD" />
+	<element name="Domain Expansion: Bloodbath Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BLOOD_MANIPULATION_DOMAIN_EXPANSION_BLOODBATH" />
+</elements>

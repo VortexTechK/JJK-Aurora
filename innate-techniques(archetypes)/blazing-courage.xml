@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="5.0">
+			<file name="blazing-courage.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/blazing-courage.xml" />
+		</update>
+	</info>
+
+	<element name="Blazing Courage" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_BLAZING_COURAGE">
+		<supports>Innate Technique</supports>
+		<description>
+			<p>Be a good and loving father.</p>
+			<div element="ID_JJK_ARCHETYPE_FEATURE_BLAZING_COURAGE_IGNITION" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_BLAZING_COURAGE_MANTLE_OF_COURAGE" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_BLAZING_COURAGE_ETERNAL_FLAMES" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_BLAZING_COURAGE_MAXIMUM_CONFLAGRATION" />
+      		<div element="ID_JJK_ARCHETYPE_FEATURE_BLAZING_COURAGE_DOMAIN_EXPANSION_FIRE_OF_THE_HEART" />
+		</description>
+		<sheet display="false">
+			<description>Through your beliefs, you set both your weapon and heart alight with your blazing courage.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_BLAZING_COURAGE_IGNITION" level="1" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_BLAZING_COURAGE_MANTLE_OF_COURAGE" level="3" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_BLAZING_COURAGE_ETERNAL_FLAMES" level="6" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_BLAZING_COURAGE_MAXIMUM_CONFLAGRATION" level="11" />
+      		<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_BLAZING_COURAGE_DOMAIN_EXPANSION_FIRE_OF_THE_HEART" level="18" />
+		</rules>
+	</element>
+	<element name="Ignition" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BLAZING_COURAGE_IGNITION">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BLAZING_COURAGE_IGNITION</requirements>
+		<description>
+			<p> Starting at 1st level, your technique allows yourself to ignite your weapon in flames, increasing your fire power. You can spend up to your CE modifier (min of 1) as a bonus action while holding a melee weapon, igniting said weapon in flames for 1 minute. For the duration, the weapon deals 1d6 fire damage on a hit per ce spent, and emits bright light for 5 feet and dim light for another 10 feet.</p>
+            <p class="indent">This increases to 1d8 per CE spent at 6th level and again to 1d10 at 11th level and 1d12 at 18th level.</p>
+        </description>
+		<sheet action="Bonus Action" usage="CE">
+			<description>You can spend up to {{ce:modifier}} cursed energy while holding a melee weapon, igniting it in flames for 1 minute. The weapon deals 1d{{ignition:damagedice}} fire damage on a hit per CE spent, and emits bright light for 5 feet and dim light for another 10 feet.</description>
+		</sheet>
+        <rules>
+            <set name="ignition:damagedice" value="6" />
+            <set name="ignition:damagedice" value="8" level="6" />
+            <set name="ignition:damagedice" value="10" level="11" />
+            <set name="ignition:damagedice" value="12" level="18" />
+        </rules>
+	</element>
+	<element name="Mantle of Courage" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BLAZING_COURAGE_MANTLE_OF_COURAGE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BLAZING_COURAGE_MANTLE_OF_COURAGE</requirements>
+		<description>
+			<p> Starting at 3rd level, you can strengthen both yourself and your weapon. When you use Ignition, you ignore any detriments or penalties of the weapon or can use it on yourself for your unarmed strikes, potentially recreating a lost limb for the duration.</p>
+            <p class="indent">While Ignition is active, you can spend 3 CE as a free action on your turn. You emit an aura of flames within 10 feet of you for 1 minute, giving you resistance to fire and cold damage. An enemy that enters your mantle or starts their turn there must make a Constitution saving throw, taking your Ignition damage on a failed save or half as much on a successful save.</p>
+        </description>
+		<sheet>
+      		<description>When you use Ignition, you ignore any detriments or penalties of the weapon or can use it on yourself for your unarmed strikes, potentially recreating a lost limb for the duration. While Ignition is active, you can spend 3 CE as a free action on your turn. You emit an aura of flames within 10 feet of you for 1 minute, giving you resistance to fire and cold damage. An enemy that enters your mantle or starts their turn there must make a Constitution saving throw, taking your Ignition damage on a failed save or half as much on a successful save.</description>
+		</sheet>
+	</element>
+	<element name="Eternal Flames" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BLAZING_COURAGE_ETERNAL_FLAMES">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BLAZING_COURAGE_ETERNAL_FLAMES</requirements>
+		<description>
+			<p>At 6th level, when you spend at least 3 cursed energy on Ignition, you can increase the weapon's range by 10 feet, ignore resistance to fire damage and when you miss with a weapon attack by 2 or less, you deal half your Ignition damage. </p>
+            <p class="indent">This increases to 3 or less at 11th level and 4 or less at 18th level.</p>
+        </description>
+		<sheet>
+			<description>When you spend at least 3 cursed energy on Ignition, you can increase the weapon's range by 10 feet, ignore resistance to fire damage and when you miss with a weapon attack by {{eternalflames:miss}} or less, you deal half your Ignition damage.</description>
+		</sheet>
+        <rules>
+            <set name="eternalflames:miss" value="2" />
+            <set name="eternalflames:miss" value="3" level="11" />
+            <set name="eternalflames:miss" value="4" level="18" />
+        </rules>
+	</element>
+	<element name="Maximum: Conflagration" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BLAZING_COURAGE_MAXIMUM_CONFLAGRATION">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BLAZING_COURAGE_MAXIMUM_CONFLAGRATION</requirements>
+		<description>
+			<p>  At 11th level, while your technique may be simple, that does not mean it isn't powerful. While holding a melee weapon you can spend 10 ce as an action to swing your weapon, creating a 30 feet cone of intense flame and heat. All creatures within range must make a Constitution saving throw, taking 10d12 fire damage and being knocked prone on a failed save or half as much on a successful save.</p>
+            <p class="indent">If a creature fails by 5 or more, they gain severe burns and take additional fire damage equal to your proficiency bonus from any source of fire damage until they finish a long rest.</p>
+        </description>
+		<sheet action="Action" usage="CE">
+			<description>While holding a melee weapon you can spend 10 cursed energy to swing your weapon, creating a 30 feet cone. All creatures within range must make a Constitution saving throw, taking 10d12 fire damage and being knocked prone on a failed save or half as much on a successful save. If a creature fails by 5 or more, they gain severe burns and take {{proficiency}} additional fire damage from any source of fire damage until they finish a long rest.</description>
+		</sheet>
+	</element>
+	<element name="Domain Expansion: Fire of the Heart" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BLAZING_COURAGE_DOMAIN_EXPANSION_FIRE_OF_THE_HEART">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BLAZING_COURAGE_DOMAIN_EXPANSION_FIRE_OF_THE_HEART</requirements>
+		<description>
+			<p>Finally at 18th level you have learned to expand your domain. Any melee weapon you are holding is treated as having the maximum cursed energy used for Ignition and is imbued with your domain's guaranteed hit. At initiative 20, all creatures of your choice within your domain suffer the damage of your Mantle of Courage.</p>
+		</description>
+		<sheet action="Action + Bonus Action + Movement" usage="CE">
+			<description>
+				<p>For 20 cursed energy, any melee weapon you are holding is treated as having the maximum cursed energy used for Ignition and is imbued with your domain's guaranteed hit. At initiative 20, all creatures of your choice within your domain suffer the damage of your Mantle of Courage.</p>
+			</description>
+		</sheet>
+	</element>
+	<!--Feature Replacement Grants-->
+	<element name="Ignition Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BLAZING_COURAGE_IGNITION" />
+	<element name="Mantle of Courage Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BLAZING_COURAGE_MANTLE_OF_COURAGE" />
+	<element name="Eternal Flames Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BLAZING_COURAGE_ETERNAL_FLAMES" />
+	<element name="Maximum: Conflagration Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BLAZING_COURAGE_MAXIMUM_CONFLAGRATION" />
+	<element name="Domain Expansion: Fire of the Heart Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BLAZING_COURAGE_DOMAIN_EXPANSION_FIRE_OF_THE_HEART" />
+</elements>
