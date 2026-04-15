@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="5.0">
+		<update version="5.1">
 			<file name="body-manipulation.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/body-manipulation.xml" />
 		</update>
 	</info>
@@ -52,10 +52,10 @@
       		<description>You can use {{skilltheftbm:num}} of a body’s Innate Technique features, Cursed Energy features, or proficiencies you have inhabited in the past. You cannot use Innate Technique features from different techniques at the same time. If you do, one of them deactivates until you are only using one innate technique.</description>
 		</sheet>
     <rules>
-      <stat name="skilltheftbm:num" value="2" level="3" />
-      <stat name="skilltheftbm:num" value="4" level="6" />
-      <stat name="skilltheftbm:num" value="6" level="11" />
-      <stat name="skilltheftbm:num" value="8" level="18" />
+      <stat name="skilltheftbm:num" value="2" level="3" bonus="skilltheft" />
+      <stat name="skilltheftbm:num" value="4" level="6" bonus="skilltheft" />
+      <stat name="skilltheftbm:num" value="6" level="11" bonus="skilltheft" />
+      <stat name="skilltheftbm:num" value="8" level="18" bonus="skilltheft" />
     </rules>
 	</element>
 	<element name="Immortality" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_IMMORTALITY">
