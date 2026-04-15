@@ -38,14 +38,14 @@
 			<description>For 3 cursed energy, you can reverse gravity in a 10 foot-radius {{antigravity:height}} foot-high cylinder centered on you for all creatures but yourself until the beginning of your next turn. All creatures and objects that aren’t anchored to the ground in the area fall upward. A creature can make a Dexterity saving throw to grab onto a fixed object it can reach, thus avoiding the fall. If a solid object (such as a ceiling) is encountered in this fall, falling objects and creatures strike it and take the remaining height as fall damage. If an object or creature reaches the top of the area without striking anything, it remains there, oscillating slightly, for the duration. At the end of the duration, affected objects and creatures fall back down, taking fall damage ignoring resistance or immunity. This damage is d{{antigravity:falldamage}}s with a max of 20d{{antigravity:falldamage}}.</description>
 		</sheet>
         <rules>
-      	    <stat name="antigravity:height" value="30" level="1" />
-            <stat name="antigravity:height" value="50" level="3" />
-            <stat name="antigravity:height" value="100" level="11" />
-            <stat name="antigravity:height" value="200" level="18" />
-            <stat name="antigravity:falldamage" value="6" level="1" />
-            <stat name="antigravity:falldamage" value="8" level="3" />
-            <stat name="antigravity:falldamage" value="10" level="6" />
-            <stat name="antigravity:falldamage" value="12" level="11" />
+      	    <stat name="antigravity:height" value="30" level="1" bonus="antigravity" />
+            <stat name="antigravity:height" value="50" level="3" bonus="antigravity" />
+            <stat name="antigravity:height" value="100" level="11" bonus="antigravity" />
+            <stat name="antigravity:height" value="200" level="18" bonus="antigravity" />
+            <stat name="antigravity:falldamage" value="6" level="1" bonus="antigravity" />
+            <stat name="antigravity:falldamage" value="8" level="3" bonus="antigravity" />
+            <stat name="antigravity:falldamage" value="10" level="6" bonus="antigravity" />
+            <stat name="antigravity:falldamage" value="12" level="11" bonus="antigravity" />
         </rules>
 	</element>
 	<element name="Gravity Field" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_ANTIGRAVITY_SYSTEM_GRAVITY_FIELD">
