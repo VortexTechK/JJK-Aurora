@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="5.2">
+		<update version="5.3">
 			<file name="auspicious-summon.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/auspicious-summon.xml" />
 		</update>
 	</info>
@@ -14,6 +14,9 @@
 			<div element="ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_REIKI" />
 			<div element="ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_KIRIN" />
 			<div element="ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_RYU" />
+			<div class="reference">
+				<div element="ID_JJK_COMPANION_RYU" />
+			</div>
       		<div element="ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_DOMAIN_EXPANSION_BEASTS_REALM" />
 		</description>
 		<sheet display="false">
@@ -66,7 +69,7 @@
 		<description>
 			<p> When you get to 11th level, you gain the last and most powerful Auspicious Beast. As an action for 10 Cursed Energy, you unleash the full power of a dragon. When you use this action, you summon Ryu, and you can command Ryu as a bonus action. Otherwise Ryu takes the dodge action.</p>
         	<div class="reference">
-				<div element="ID_WOTC_TCOE_INFORMATION_STEEL_DEFENDER"/>
+				<div element="ID_JJK_COMPANION_RYU"/>
 			</div>
 		</description>
 		<sheet action="Action" usage="CE">
