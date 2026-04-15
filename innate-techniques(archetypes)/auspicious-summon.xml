@@ -66,7 +66,7 @@
 		<description>
 			<p> When you get to 11th level, you gain the last and most powerful Auspicious Beast. As an action for 10 Cursed Energy, you unleash the full power of a dragon. When you use this action, you summon Ryu, and you can command Ryu as a bonus action. Otherwise Ryu takes the dodge action.</p>
         	<div class="reference">
-				<div element="ID_JJK_INFORMATION_RYU"/>
+				<div element="ID_WOTC_TCOE_INFORMATION_STEEL_DEFENDER"/>
 			</div>
 		</description>
 		<sheet action="Action" usage="CE">
