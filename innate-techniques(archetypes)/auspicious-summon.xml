@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="5.0">
+		<update version="5.1">
 			<file name="auspicious-summon.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/auspicious-summon.xml" />
 		</update>
 	</info>
@@ -49,10 +49,7 @@
 			<p> At 3rd level, you summon dark water to assist yourself. You can use a bonus action to spend 1 Cursed Energy and double your movement until the end of your next turn. Additionally, as a reaction for 2 Cursed Energy, you gain a +5 bonus to AC until the beginning of your next turn.</p>
         </description>
 		<sheet action="Bonus Action" usage="CE">
-      		<description>For 1 cursed energy, double your movement until the end of your next turn.</description>
-		</sheet>
-		<sheet action="Reaction" usage="CE">
-	  		<description>For 2 cursed energy, you gain a +5 bonus to AC until the beginning of your next turn.</description>
+      		<description>For 1 cursed energy, double your movement until the end of your next turn. As a reaction for 2 cursed energy, you gain a +5 bonus to AC until the beginning of your next turn.</description>
 		</sheet>
 	</element>
 	<element name="Auspicious Beast #3: Kirin" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_KIRIN">
