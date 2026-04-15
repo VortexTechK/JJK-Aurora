@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="5.0">
+			<file name="auspicious-summon.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/auspicious-summon.xml" />
+		</update>
+	</info>
+
+	<element name="Auspicious Beast Summon" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_AUSPICIOUS_SUMMON">
+		<supports>Innate Technique</supports>
+		<description>
+			<p>How do you even see out of the mask???</p>
+			<div element="ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_KAICHI" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_REIKI" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_KIRIN" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_RYU" />
+      		<div element="ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_DOMAIN_EXPANSION_BEASTS_REALM" />
+		</description>
+		<sheet display="false">
+			<description>By covering your face you can become a medium for the spirit of the four auspicious beasts. These four beasts give you great abilities.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_KAICHI" level="1" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_REIKI" level="3" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_KIRIN" level="6" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_RYU" level="11" />
+      		<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_DOMAIN_EXPANSION_BEASTS_REALM" level="18" />
+		</rules>
+	</element>
+	<element name="Auspicious Beast #1: Kaichi" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_KAICHI">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_AUSPICIOUS_SUMMON_KAICHI</requirements>
+		<description>
+			<p> Beginning at 1st level, as an action using 1 Cursed Energy, you summon a yellow drill horn for 1 minute. This horn can be used to make an additional melee Cursed Energy attack against a creature within 30 ft as part of your turn, dealing 1d6 piercing damage on a hit. The damage increases to 1d8 at 3rd level, 1d10 at 6th level, 1d12 at 11th level, and 3d6 at 18th level. You can only have one Kaichi at a time.</p>
+        </description>
+		<sheet action="Action" usage="CE">
+			<description level="1">For 1 cursed energy, summon a yellow drill horn for 1 minute. This horn can be used to make an additional melee Cursed Energy attack against a creature within 30 ft as part of your turn, dealing 1d{{kaichi:damage}} piercing damage on a hit.</description>
+			<description level="18">For 1 cursed energy, summon a yellow drill horn for 1 minute. This horn can be used to make an additional melee Cursed Energy attack against a creature within 30 ft as part of your turn, dealing 3d6 piercing damage on a hit.</description>
+		</sheet>
+        <rules>
+            <stat name="kaichi:damage" value="6" level="1" bonus="kaichi" />
+            <stat name="kaichi:damage" value="8" level="3" bonus="kaichi" />
+            <stat name="kaichi:damage" value="10" level="6" bonus="kaichi" />
+            <stat name="kaichi:damage" value="12" level="11" bonus="kaichi" />
+        </rules>
+	</element>
+	<element name="Auspicious Beast #2: Reiki" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_REIKI">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_AUSPICIOUS_SUMMON_REIKI</requirements>
+		<description>
+			<p> At 3rd level, you summon dark water to assist yourself. You can use a bonus action to spend 1 Cursed Energy and double your movement until the end of your next turn. Additionally, as a reaction for 2 Cursed Energy, you gain a +5 bonus to AC until the beginning of your next turn.</p>
+        </description>
+		<sheet action="Bonus Action" usage="CE">
+      		<description>For 1 cursed energy, double your movement until the end of your next turn.</description>
+		</sheet>
+		<sheet action="Reaction" usage="CE">
+	  		<description>For 2 cursed energy, you gain a +5 bonus to AC until the beginning of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Auspicious Beast #3: Kirin" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_KIRIN">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_AUSPICIOUS_SUMMON_KIRIN</requirements>
+		<description>
+			<p>Once you reach 6th level, you gain a power to help you last longer in battles. As a bonus action, for every 1 Cursed Energy you spend you gain 5 temporary hit points. While you have these temporary hit points, you ignore exhaustion. However, after activating, your movement is 0 until the start of your next turn.</p>
+		</description>
+		<sheet action="Bonus Action" usage="CE">
+			<description>For every 1 cursed energy, gain 5 temporary hit points. While you have these points, you ignore exhaustion. Your movement is 0 until the start of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Auspicious Beast #4: Ryu" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_RYU">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_AUSPICIOUS_SUMMON_RYU</requirements>
+		<description>
+			<p> When you get to 11th level, you gain the last and most powerful Auspicious Beast. As an action for 10 Cursed Energy, you unleash the full power of a dragon. When you use this action, you summon Ryu, and you can command Ryu as a bonus action. Otherwise Ryu takes the dodge action.</p>
+        	<div class="reference">
+				<div element="ID_JJK_INFORMATION_RYU"/>
+			</div>
+		</description>
+		<sheet action="Action" usage="CE">
+			<description>For 10 cursed energy, summon Ryu. You can command Ryu as a bonus action. Otherwise, Ryu takes the dodge action.</description>
+		</sheet>
+		<rules>
+			<select type="Companion" name="Ryu" supports="Ryu" />
+		</rules>
+	</element>
+	<element name="Domain Expansion: Auspicious Beasts' Realm" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_DOMAIN_EXPANSION_BEASTS_REALM">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_AUSPICIOUS_SUMMON_DOMAIN_EXPANSION_BEASTS_REALM</requirements>
+		<description>
+			<p>Finally, at 18th level, you have honed your Cursed Technique to an extreme. While in this domain, all of your Auspicious Beasts are constantly active without any side effects. Attacks made by Kaichi and Ryu always hit.</p>
+		</description>
+		<sheet action="Action + Bonus Action + Movement" usage="CE">
+			<description>
+				<p>For 20 cursed energy, all of your Auspicious Beasts are constantly active without any side effects. Attacks made by Kaichi and Ryu always hit.</p>
+			</description>
+		</sheet>
+	</element>
+	<!--	Companion Reference	-->
+	<element name="Ryu" type="Information" source="JJK" id="ID_JJK_INFORMATION_RYU">
+		<description>
+			<p style="margin-bottom:-5px"><em>Huge dragon, unaligned</em></p>
+			<h4 style="margin-top:5px" />
+			<ul class="unstyled">
+				<li><strong>Armor Class</strong> 17 (natural armor)</li>
+				<li><strong>Hit Points</strong> 114</li>
+				<li><strong>Speed</strong> 40 ft., fly 80 ft.</li>
+			</ul>
+			<table style="text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>19 (+4)</td><td>10 (+0)</td><td>17 (+3)</td><td>12 (+1)</td><td>11 (+0)</td><td>15 (+2)</td></tr>
+			</table>
+			<ul class="unstyled">
+				<li><strong>Saving Throws</strong> Dex +3, Con +6, Wis +3, Cha +5</li>
+				<li><strong>Skills</strong> Perception +3, Stealth +4</li>
+				<li><strong>Senses</strong> blindsight 30 ft., darkvision 60 ft., passive Perception 16</li>
+				<li><strong>Languages</strong>-</li>
+				<li style="margin-bottom:-1em"><strong>Challenge</strong> 6</li>
+			</ul>
+			<h4 style="margin-top:10px">Actions</h4>
+			<ul class="unstyled">
+				<li><em><strong>Multiattack.</strong></em> Ryu makes three attacks: one with its bite and two with its claws.</li>
+				<li><em><strong>Bite.</strong> Melee Weapon Attack:</em> +7 to hit, reach 10 ft., one target. <em>Hit:</em> 20 (3d10 + 4) piercing damage.</li>
+				<li><em><strong>Claw.</strong> Melee Weapon Attack:</em> +7 to hit, reach 5 ft., one target. <em>Hit:</em> 13 (2d8 + 4) slashing damage.</li>
+			</ul>
+		</description>
+	</element>
+	<!--	Companion	-->
+	<element name="Ryu" type="Companion" source="JJK" id="ID_JJK_COMPANION_RYU"> 
+    	<supports>Ryu</supports>
+		<setters>
+			<set name="strength">19</set>
+			<set name="dexterity">10</set>
+			<set name="constitution">17</set>
+			<set name="intelligence">12</set>
+			<set name="wisdom">11</set>
+			<set name="charisma">15</set>
+			<set name="ac">17 (natural armor)</set>
+			<set name="hp">114 (12d12 + 36)</set>
+			<set name="speed">40 ft., fly 80 ft.</set>
+			<set name="saves">Dex +3, Con +6, Wis +3, Cha +5</set>
+			<set name="skills">Perception +3, Stealth +4</set>
+			<set name="senses">blindsight 30 ft., darkvision 60 ft., passive Perception 16</set>
+			<set name="languages">-</set>
+			<set name="type">Dragon</set>
+			<set name="size">Huge</set>
+			<set name="alignment">unaligned</set>
+			<set name="challenge">6</set>
+	  		<set name="actions">ID_JJK_COMPANION_ACTION_RYU_MULTIATTACK,ID_JJK_COMPANION_ACTION_RYU_BITE,ID_JJK_COMPANION_ACTION_RYU_CLAW</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="17" />
+			<stat name="companion:hp:max" value="114" bonus="base" />
+			<stat name="companion:speed" value="40" bonus="base" />
+			<stat name="companion:speed:fly" value="80" bonus="base" />
+			<stat name="companion:dexterity:save:proficiency" value="companion:proficiency" bonus="base"/>
+			<stat name="companion:constitution:save:proficiency" value="companion:proficiency" bonus="base"/>
+      		<stat name="companion:wisdom:save:proficiency" value="companion:proficiency" bonus="base"/>
+			<stat name="companion:charisma:save:proficiency" value="companion:proficiency" bonus="base"/>
+			<stat name="companion:perception:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:stealth:proficiency" value="companion:proficiency" bonus="base" />
+		</rules>
+	</element>
+	<element name="Multiattack" type="Companion Action" source="JJK" id="ID_JJK_COMPANION_ACTION_RYU_MULTIATTACK">
+		<description>
+			<p>Ryu makes three attacks: one with its bite and two with its claws.</p>
+		</description>
+		<sheet>
+			<description>Ryu makes three attacks: one with its bite and two with its claws.</description>
+		</sheet>
+	</element>
+	<element name="Bite" type="Companion Action" source="JJK" id="ID_JJK_COMPANION_ACTION_RYU_BITE">
+		<description>
+			<p>Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 20 (3d10 + 4) piercing damage. Once bitten, the target must succeed on a DC 15 Dexterity saving throw or be grappled. If you attack a grappled creature again they are restrained.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 20 (3d10 + 4) piercing damage. Once bitten, the target must succeed on a DC 15 Dexterity saving throw or be grappled. If you attack a grappled creature again they are restrained.</description>
+		</sheet>
+	</element>
+	<element name="Claw" type="Companion Action" source="JJK" id="ID_JJK_COMPANION_ACTION_RYU_CLAW">
+		<description>
+			<p>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) slashing damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) slashing damage.</description>
+		</sheet>
+	</element>
+	<!--Feature Replacement Grants-->
+	<element name="Antigravity Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_AUSPICIOUS_SUMMON_KAICHI" />
+	<element name="Gravity Field Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_AUSPICIOUS_SUMMON_REIKI" />
+	<element name="Antigravity Shield Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_AUSPICIOUS_SUMMON_KIRIN" />
+	<element name="Boosted System Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_AUSPICIOUS_SUMMON_RYU" />
+	<element name="Domain Expansion: Zero Gravity Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_AUSPICIOUS_SUMMON_DOMAIN_EXPANSION_BEASTS_REALM" />
+</elements>
