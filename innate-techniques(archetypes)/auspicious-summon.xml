@@ -58,7 +58,7 @@
 			<p>Once you reach 6th level, you gain a power to help you last longer in battles. As a bonus action, for every 1 Cursed Energy you spend you gain 5 temporary hit points. While you have these temporary hit points, you ignore exhaustion. However, after activating, your movement is 0 until the start of your next turn.</p>
 		</description>
 		<sheet action="Bonus Action" usage="CE">
-			<description>For every 1 cursed energy, gain 5 temporary hit points. While you have these points, you ignore exhaustion. Your movement is 0 until the start of your next turn.</description>
+			<description>For every 1 cursed energy spent, gain 5 temporary hit points. While you have these points, you ignore exhaustion. Your movement is 0 until the start of your next turn.</description>
 		</sheet>
 	</element>
 	<element name="Auspicious Beast #4: Ryu" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_RYU">
