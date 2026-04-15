@@ -4,7 +4,7 @@
 		<name>Shikigami User</name>
 		<description>The Shikigami User class from JJK.</description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
-		<update version="5.1">
+		<update version="5.2">
 			<file name="class-shikigamiuser.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/classes/class-shikigamiuser.xml" />
 		</update>
 	</info>
@@ -67,6 +67,9 @@
 			<div element="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_CURSED_ENERGY" />
 			<div element="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_INNATE_TECHNIQUE" />
 			<div element="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_SHIKIGAMI_COMPANION" />
+			<div class="reference">
+				<div element="ID_JJK_INFORMATION_SHIKIGAMI_COMPANION"/>
+			</div>
 			<div element="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_MARTIAL_ARTS" />
 			<div element="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_SHARED_TECHNIQUE" />
 			<div element="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_ABILITYSCOREIMPROVEMENT_SHIKIGAMI_USER" />
