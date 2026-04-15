@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="5.0">
+			<file name="construction.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/construction.xml" />
+		</update>
+	</info>
+
+	<element name="Construction" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_CONSTRUCTION">
+		<supports>Innate Technique</supports>
+		<description>
+			<p>Make one thing, then die.</p>
+			<div element="ID_JJK_ARCHETYPE_FEATURE_CONSTRUCTION_CONSTRUCT" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_CONSTRUCTION_CURSED_CREATION" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_CONSTRUCTION_LIQUID_METAL" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_CONSTRUCTION_INSECTOID_ARMOR" />
+      		<div element="ID_JJK_ARCHETYPE_FEATURE_CONSTRUCTION_DOMAIN_EXPANSION_THREEFOLD AFFLICTION" />
+		</description>
+		<sheet display="false">
+			<description>Construction, as the name implies, allows the user to conjure objects from nothing.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_CONSTRUCTION_CONSTRUCT" level="1" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_CONSTRUCTION_CURSED_CREATION" level="3" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_CONSTRUCTION_LIQUID_METAL" level="6" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_CONSTRUCTION_INSECTOID_ARMOR" level="11" />
+      		<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_CONSTRUCTION_DOMAIN_EXPANSION_THREEFOLD AFFLICTION" level="18" />
+		</rules>
+	</element>
+	<element name="Construct" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CONSTRUCTION_CONSTRUCT">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CONSTRUCTION_CONSTRUCT</requirements>
+		<description>
+			<p> Beginning at 1st, you can create any kind of object you understand with your technique, although without much efficiency. As a bonus action for 3 CE, you create one non-magical weapon OR simple object that fits in a 3 ft cube in your hand or within 5 ft of you, as long as you have basic understanding and information of its properties. </p>
+            <p class="indent">You can spend additional CE to create an object with one additional object's properties or increase the cube by 1 ft. (Eg. You create a greatsword mixed with a spear with both the Heavy, two-handed, and the Versatile and Thrown (20/60) properties. When mixing a light and heavy weapon, choose which property it will maintain.)</p>
+        </description>
+		<sheet action="Bonus Action" usage="CE">
+			<description>For 3 cursed energy, you create one non-magical weapon OR simple object that fits in a 3 ft cube in your hand or within 5 ft of you, as long as you have basic understanding and information of its properties. You can spend additional CE to create an object with one additional object's properties or increase the cube by 1 ft.</description>
+		</sheet>
+	</element>
+	<element name="Cursed Creation" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CONSTRUCTION_CURSED_CREATION">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CONSTRUCTION_CURSED_CREATION</requirements>
+		<description>
+			<p> At 3rd level, your construction technique has improved by a lot, you can now even create cursed objects. You can create a generic imbued Cursed Tool or a specific technique cursed tool you have seen for 3 cursed energy + 2 for every grade it has above 4. These cursed tools last a number of hours equal to your Cursed Energy modifier, before disappearing.</p>
+            <p class="indent">You can make a Special Grade (Legendary) Cursed Tool. However, due to the backlash of your technique, you will die afterward. You cannot be revived in any way, shape or form after using this feature.</p>
+        </description>
+		<sheet usage="CE">
+      		<description>You can create a generic imbued Cursed Tool or a specific technique cursed tool you have seen for 3 cursed energy + 2 for every grade it has above 4. These cursed tools last for {{ce:modifier}} hours, before disappearing. You can make a Special Grade (Legendary) Cursed Tool, but due to the backlash of your technique, you will die afterward. You cannot be revived in any way, shape or form after using this feature.</description>
+		</sheet>
+	</element>
+	<element name="Liquid Metal" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CONSTRUCTION_LIQUID_METAL">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CONSTRUCTION_LIQUID_METAL</requirements>
+		<description>
+			<p> At 6th level, you have learned how to create liquid metal, a substance with fluid form and changeable volume but stable physical properties due to semi-autonomous cursed energy. As part of creating a weapon with your construction, you can spend up to an additional 4 cursed energy to make them become fluid with volume. This allows you to extend the range of melee weapons 10ft per cursed energy. </p>
+            <p class="indent">In addition, whenever you attack with them in this increased range form their damage die tier will increase equal to the cursed energy used. (1d8-1d10-1d12-2d6-2d8)</p>
+        </description>
+		<sheet usage="CE">
+			<description>As part of creating a weapon with your construction, you can spend up to an additional 4 cursed energy to make them become fluid with volume. This allows you to extend the range of melee weapons 10ft per cursed energy. In addition, whenever you attack with them in this increased range form their damage die tier will increase equal to the cursed energy used. (1d8-1d10-1d12-2d6-2d8)</description>
+		</sheet>
+	</element>
+	<element name="Insectoid Armor" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CONSTRUCTION_INSECTOID_ARMOR">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CONSTRUCTION_INSECTOID_ARMOR</requirements>
+		<description>
+			<p> At 11th level, you realize you need a way to efficiently use your cursed energy despite being an inefficient technique. You have learned how to create armor that simulates the efficiency of an insect's bug body. As a bonus action for 10 cursed energy, you can surround yourself in this armor and gain the following benefits for 1 hour:</p>
+            <ul>
+                <li>Your Strength, Dexterity, and Armor Class scores increase by +4, as a result of the efficiency of the constructs.</li>
+                <li>You will gain resistance to non-magical bludgeoning, piercing and slashing damage. This becomes immunity at 18th level.</li>
+                <li>Wings will sprout from your back, granting you a flying speed equal to your walking speed. In addition, you can now use a free action to dash on your turn.</li>
+                <li>Your unarmed strikes deal two additional damage dice and your unarmed strikes roll one additional damage dice on a critical.</li>
+            </ul>
+        </description>
+		<sheet action="Bonus Action" usage="CE">
+			<description level="11">For 10 cursed energy, you can surround yourself in armor and gain the following benefits for 1 hour: your Strength, Dexterity, and Armor Class scores increase by +4, you gain resistance to non-magical bludgeoning, piercing, and slashing damage, you gain a {{speed}} ft. flying speed and the ability to dash as a free action, and your unarmed strikes deal two additional damage dice and roll one additional damage dice on a critical.</description>
+		    <description level="18">For 10 cursed energy, you can surround yourself in armor and gain the following benefits for 1 hour: your Strength, Dexterity, and Armor Class scores increase by +4, you gain immunity to non-magical bludgeoning, piercing, and slashing damage, you gain a {{speed}} ft. flying speed and the ability to dash as a free action, and your unarmed strikes deal two additional damage dice and roll one additional damage dice on a critical.</description>
+        </sheet>
+	</element>
+	<element name="Domain Expansion: Threefold Affliction" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CONSTRUCTION_DOMAIN_EXPANSION_THREEFOLD AFFLICTION">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CONSTRUCTION_DOMAIN_EXPANSION_THREEFOLD AFFLICTION</requirements>
+		<description>
+			<p>Finally at 18th level, you have refined your technique to the maximum point, now gaining your domain expansion. While inside your domain, you can now create any of your items by spending no cursed energy. All of these items will deal one additional damage dice and attacks made with them cannot miss. However, these weapons will only last until the end of the domain.</p>
+		</description>
+		<sheet action="Action + Bonus Action + Movement" usage="CE">
+			<description>
+				<p>For 20 cursed energy, you can now create any of your items by spending no cursed energy. All of these items will deal one additional damage dice and attacks made with them cannot miss. However, these weapons will only last until the end of the domain.</p>
+			</description>
+		</sheet>
+	</element>
+	<!--Feature Replacement Grants-->
+	<element name="Construct Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CONSTRUCTION_CONSTRUCT" />
+	<element name="Cursed Creation Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CONSTRUCTION_CURSED_CREATION" />
+	<element name="Liquid Metal Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CONSTRUCTION_LIQUID_METAL" />
+	<element name="Insectoid Armor Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CONSTRUCTION_INSECTOID_ARMOR" />
+	<element name="Domain Expansion: Threefold Affliction Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CONSTRUCTION_DOMAIN_EXPANSION_THREEFOLD AFFLICTION" />
+</elements>

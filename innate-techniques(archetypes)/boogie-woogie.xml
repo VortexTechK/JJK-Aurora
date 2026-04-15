@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="5.0">
+			<file name="boogie-woogie.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/boogie-woogie.xml" />
+		</update>
+	</info>
+
+	<element name="Boogie Woogie" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_BOOGIE_WOOGIE">
+		<supports>Innate Technique</supports>
+		<description>
+			<p><strong>We</strong> are the exception. <strong>We</strong> have dementia.</p>
+			<div element="ID_JJK_ARCHETYPE_FEATURE_BOOGIE_WOOGIE_BOOGIE" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_BOOGIE_WOOGIE_WOOGIE" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_BOOGIE_WOOGIE_CLAP_BACK" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_BOOGIE_WOOGIE_ROUND_OF_APPLAUSE" />
+      		<div element="ID_JJK_ARCHETYPE_FEATURE_BOOGIE_WOOGIE_DOMAIN_EXPANSION_STANDING_OVATION" />
+		</description>
+		<sheet display="false">
+			<description>You were born with a simple although tricky ability to swap places with your opponents with a clap. </description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_BOOGIE_WOOGIE_BOOGIE" level="1" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_BOOGIE_WOOGIE_WOOGIE" level="3" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_BOOGIE_WOOGIE_CLAP_BACK" level="6" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_BOOGIE_WOOGIE_ROUND_OF_APPLAUSE" level="11" />
+      		<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_BOOGIE_WOOGIE_DOMAIN_EXPANSION_STANDING_OVATION" level="18" />
+		</rules>
+	</element>
+	<element name="Boogie" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BOOGIE_WOOGIE_BOOGIE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BOOGIE_WOOGIE_BOOGIE</requirements>
+		<description>
+			<p> At 1st level, you have created a unique technique to switch places with your others, extremely simple yet effective. You can switch places with a willing creature or magical object within 30 feet of you by clapping for 1 Cursed Energy. You can use this technique as an action or bonus action, or you can also swap as a reaction for 2 additional Cursed Energy.</p>
+        </description>
+		<sheet action="Action/Bonus Action" usage="CE">
+			<description level="1">For 1 cursed energy, you can switch places with a willing creature or magical object within 30 feet of you by clapping. You can also swap as a reaction for 2 additional cursed energy.</description>
+            <description level="3">For 1 cursed energy, you can switch places with a creature or magical object or make two other creature swap places within 30 feet of you by clapping. You can also swap as a reaction for 2 additional cursed energy. Enemies teleported are disorientated and lose their reaction.</description>
+            <description level="6">For 1 cursed energy, you can switch places with a creature or magical object or make two other creature swap places within 45 feet of you by clapping. You can also swap as a reaction for 1 additional cursed energy. Enemies teleported are disorientated and lose their reaction. You can use Boogie once per turn as a free action.</description>
+            <description level="11">For 1 cursed energy, you can switch the places of up to 4 creatures or magical object including yourself within 60 feet of you by clapping. You can also swap as a reaction for 1 additional cursed energy. Enemies teleported are disorientated and lose their reaction. You can use Boogie once per turn as a free action. When you switch places with an ally who was previously in melee range of an enemy right before the switch, your next attack roll has advantage. The same goes if you teleport an enemy into range or an ally into range.</description>
+        </sheet>
+	</element>
+	<element name="Woogie" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BOOGIE_WOOGIE_WOOGIE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BOOGIE_WOOGIE_WOOGIE</requirements>
+		<description>
+			<p> Starting at 3rd level, you have extended the grasp of your technique as well as its versatility. Your Boogie gains the following bonuses:</p>
+            <ul>
+                <li>Unwilling creatures can be switched</li>
+                <li>You can make two creatures other than yourself swap places</li>
+                <li>Enemies teleported are disorientated and lose their reaction</li>
+            </ul>
+        </description>
+		<sheet display="false"/>
+	</element>
+	<element name="Clap Back" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BOOGIE_WOOGIE_CLAP_BACK">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BOOGIE_WOOGIE_CLAP_BACK</requirements>
+		<description>
+			<p> Beginning at 6th level, “The act of applause is an acclamation of the soul”, you have gained a deeper understanding of your technique and how it can be used, your Boogie gains the following benefits:</p>
+            <ul>
+                <li>Your range increases to 45 feet.</li>
+                <li>The Cursed Energy cost is reduced by 1 Cursed Energy for all Boogie Woogie techniques (min cost of 1).</li>
+                <li>You can use Boogie once per turn as a free action.</li>
+            </ul>
+        </description>
+		<sheet display="false"/>
+	</element>
+	<element name="Round of Applause" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BOOGIE_WOOGIE_ROUND_OF_APPLAUSE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BOOGIE_WOOGIE_ROUND_OF_APPLAUSE</requirements>
+		<description>
+			<p> When you reach 11th level, you have understood the true depths of Boogie Woogie, your Boogie gains the following:</p>
+            <ul>
+                <li>Your range increases to 60 feet</li>
+                <li>When you switch places with an ally who was previously in melee range of an enemy right before the switch, your next attack roll has advantage. The same goes if you teleport an enemy into range or an ally into range.</li>
+                <li>You can use Boogie on up to four creatures at once.</li>
+            </ul>
+        </description>
+		<sheet display="false"/>
+	</element>
+	<element name="Domain Expansion: Standing Ovation" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BOOGIE_WOOGIE_DOMAIN_EXPANSION_STANDING_OVATION">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BOOGIE_WOOGIE_DOMAIN_EXPANSION_STANDING_OVATION</requirements>
+		<description>
+			<p>Reaching 18th level, you have mastered the beat of Boogie Woogie, you gain your domain expansion.  Within your domain, you can use Boogie as a free action an unlimited number of times.</p>
+		</description>
+		<sheet action="Action + Bonus Action + Movement" usage="CE">
+			<description>
+				<p>For 20 cursed energy, you can use Boogie as a free action an unlimited number of times.</p>
+			</description>
+		</sheet>
+	</element>
+	<!--Feature Replacement Grants-->
+	<element name="Boogie Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BOOGIE_WOOGIE_BOOGIE" />
+	<element name="Woogie Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BOOGIE_WOOGIE_WOOGIE" />
+	<element name="Clap Back Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BOOGIE_WOOGIE_CLAP_BACK" />
+	<element name="Round of Applause Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BOOGIE_WOOGIE_ROUND_OF_APPLAUSE" />
+	<element name="Domain Expansion: Standing Ovation Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BOOGIE_WOOGIE_DOMAIN_EXPANSION_STANDING_OVATION" />
+</elements>

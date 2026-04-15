@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="5.0">
+			<file name="contractual-recreation.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/contractual-recreation.xml" />
+		</update>
+	</info>
+
+	<element name="Contractual Recreation" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_CONTRACTUAL_RECREATION">
+		<supports>Innate Technique</supports>
+		<description>
+			<p>You have something for every occasion.</p>
+			<div element="ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_RECREATION" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_QUICK_SPENDER" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_SPLURGE" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_CONTRACTUAL_CONTROL" />
+      		<div element="ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_DOMAIN_EXPANSION_BLACK_FRIDAY" />
+		</description>
+		<sheet display="false">
+			<description>You can recreate the subject of contracts you find, like receipts.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_RECREATION" level="1" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_QUICK_SPENDER" level="3" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_SPLURGE" level="6" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_CONTRACTUAL_CONTROL" level="11" />
+      		<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_DOMAIN_EXPANSION_BLACK_FRIDAY" level="18" />
+		</rules>
+	</element>
+	<element name="Recreation" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_RECREATION">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CONTRACTUAL_RECREATION_RECREATION</requirements>
+		<description>
+			<p> Starting at 1st level, you have learned the basics of your technique in materializing things from receipts, paying the cost in cursed energy. You start with 5 receipts of your choice. To materialize from a receipt, you spend the required cursed energy as an action. The receipt then becomes ashes and you cannot use this technique if the receipts are wet. You can summon materializations within 100 ft.</p>
+            <h5 class="caption">Recreation</h5>
+			<table>
+				<thead>
+					<tr><td>Size</td><td>CE Cost</td></tr>
+				</thead>
+				<tr><td>Tiny</td><td>2</td></tr>
+        		<tr><td>Small</td><td>4</td></tr>
+				<tr><td>Medium</td><td>6</td></tr>
+				<tr><td>Large</td><td>8</td></tr>
+				<tr><td>Huge</td><td>10</td></tr>
+				<tr><td>Gargantuan</td><td>20</td></tr>
+			</table>
+            <p class="indent"><strong>Object. </strong>You summon an object from the receipt, spending cursed energy equal to its size.</p>
+            <p class="indent"><strong>Vehicle. </strong>You can summon a vehicle from the receipt, spending cursed energy equal to its size.</p>
+            <p class="indent"><strong>Reservation. </strong>You can use a reservation receipt for 4 cursed energy, giving you the same effects staying on said place for all of the duration would. For example, a 2 day spa reservation would give you the benefits of a long rest.</p>
+            <p class="indent"><strong>Structure. </strong>You can create a structure from a receipt for 20 cursed energy.</p>
+            <p class="indent">If you create an object over a creature, they must make a Dexterity save. On a failure they take 2d12 bludgeoning damage for every size larger than Tiny the object is. If the object is Huge or larger, a creature takes half as much damage on a successful save or is knocked prone and restrained under the object in addition to damage on a fail. Anything created through your technique lasts indefinitely.</p>
+        </description>
+		<sheet action="Action" usage="CE">
+			<description level="1">Spend the required cursed energy to materialize an object from a receipt. The receipt then becomes ashes and you cannot use this technique if the receipts are wet. You can summon materializations within 100 ft. If you create an object over a creature, they must make a Dexterity save. On a failure they take 2d12 bludgeoning damage for every size larger than Tiny the object is. If the object is Huge or larger, a creature takes half as much damage on a successful save or is knocked prone and restrained under the object in addition to damage on a fail. Anything created through your technique lasts indefinitely.</description>
+			<description level="3" action="Action/Bonus Action">Spend the required cursed energy to materialize an object from a receipt. The receipt then becomes ashes and you cannot use this technique if the receipts are wet. You can summon materializations within 100 ft. If you create an object over a creature, they must make a Dexterity save. On a failure they take 2d12 bludgeoning damage for every size larger than Tiny the object is. If the object is Huge or larger, a creature takes half as much damage on a successful save or is knocked prone and restrained under the object in addition to damage on a fail. Anything created through your technique lasts indefinitely.</description>
+			<description level="18" action="Action/Bonus Action/Free Action">Spend the required cursed energy to materialize an object from a receipt. The receipt then becomes ashes and you cannot use this technique if the receipts are wet. You can summon materializations within 100 ft. If you create an object over a creature, they must make a Dexterity save. On a failure they take 2d12 bludgeoning damage for every size larger than Tiny the object is. If the object is Huge or larger, a creature takes half as much damage on a successful save or is knocked prone and restrained under the object in addition to damage on a fail. Anything created through your technique lasts indefinitely.</description>
+        </sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_OBJECT" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_VEHICLE" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_RESERVATION" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_STRUCTURE" />
+		</rules>
+	</element>
+	<element name="Object" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_OBJECT" >
+		<description>
+			<p><strong>Object. </strong>You summon an object from the receipt, spending cursed energy equal to its size.</p>
+		</description>
+		<sheet>
+			<description>You summon an object from the receipt, spending cursed energy equal to its size.</description>
+		</sheet>
+	</element>
+	<element name="Vehicle" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_VEHICLE" >
+		<description>
+			<p><strong>Vehicle. </strong>You can summon a vehicle from the receipt, spending cursed energy equal to its size.</p>
+		</description>
+		<sheet>
+			<description>You can summon a vehicle from the receipt, spending cursed energy equal to its size.</description>
+		</sheet>
+	</element>
+	<element name="Reservation" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_RESERVATION" >
+		<description>
+			<p><strong>Reservation. </strong>You can use a reservation receipt for 4 cursed energy, giving you the same effects staying on said place for all of the duration would. For example, a 2 day spa reservation would give you the benefits of a long rest.</p>
+		</description>
+		<sheet>
+			<description>You can use a reservation receipt for 4 cursed energy, giving you the same effects staying on said place for all of the duration would. For example, a 2 day spa reservation would give you the benefits of a long rest.</description>
+		</sheet>
+	</element>
+	<element name="Structure" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_STRUCTURE" >
+		<description>
+			<p><strong>Structure. </strong>You can create a structure from a receipt for 20 cursed energy.</p>
+		</description>
+		<sheet>
+			<description>You can create a structure from a receipt for 20 cursed energy.</description>
+		</sheet>
+	</element>
+	<element name="Quick Spender" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_QUICK_SPENDER">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CONTRACTUAL_RECREATION_QUICK_SPENDER</requirements>
+		<description>
+			<p> At 3rd level, you become better in using your technique with faster activation. You can now materialize receipts as an action or bonus action. At 18th level, you can materialize receipts as an action, bonus action or free action on your turn.</p>
+        </description>
+		<sheet display="false"/>
+	</element>
+	<element name="Splurge" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_SPLURGE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CONTRACTUAL_RECREATION_SPLURGE</requirements>
+		<description>
+			<p>At 6th level, you become even better with your technique and can use multiple receipts at a time. You can now use a number of receipts at once equal to your proficiency bonus, as long as you're holding them.</p>
+        </description>
+		<sheet>
+			<description>You can use {{proficiency}} receipts at once, as long as you're holding them.</description>
+		</sheet>
+	</element>
+	<element name="Contractual Control" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_CONTRACTUAL_CONTROL">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CONTRACTUAL_RECREATION_CONTRACTUAL_CONTROL</requirements>
+		<description>
+			<p> At 11th level, you have learned how to manipulate your materializations using your mind. You can manipulate objects or vehicles as a bonus action by spending 3 cursed energy per object or vehicle manipulated. Anything you use this on disappears afterwards.</p>
+        	<p class="indent"><strong>Object. </strong>You can manipulate a number of objects you have summoned telepathically. You can move them in the air up to 60 ft, and can use them normally from afar.</p>
+            <p class="indent"><strong>Weapon. </strong>Once per turn when you take the attack action, you can replace one of your attacks with a melee cursed energy attack roll with said object if it was a weapon. On a hit, it deals up to 5 of the weapon's damage dice. This increases to 7 dice at 15th level and 10 at 18th level.</p>
+			<p class="indent"><strong>Vehicle. </strong>You can order a vehicle to ride up to 60 ft. A creature in the path must make a Dexterity save or take the vehicle damage dice (depending on size) and be knocked prone.</p>
+		</description>
+		<sheet action="Bonus Action" usage="CE">
+			<description>You can manipulate objects or vehicles by spending 3 cursed energy per object or vehicle manipulated. Anything you use this on disappears afterwards.You can manipulate a number of objects you have summoned telepathically. You can move them in the air up to 60 ft, and can use them normally from afar. Once per turn when you take the attack action, you can replace one of your attacks with a melee cursed energy attack roll with said object if it was a weapon. On a hit, it deals up to {{contractual:control:damage}} of the weapon's damage dice. You can order a vehicle to ride up to 60 ft. A creature in the path must make a Dexterity save or take the vehicle damage dice (depending on size) and be knocked prone.</description>
+		</sheet>
+		<rules>
+			<stat name="contractual:control:damage" value="5" level="11" />
+			<stat name="contractual:control:damage" value="7" level="15" />
+			<stat name="contractual:control:damage" value="10" level="18" />
+		</rules>
+	</element>
+	<element name="Domain Expansion: Black Friday" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_DOMAIN_EXPANSION_BLACK_FRIDAY">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CONTRACTUAL_RECREATION_DOMAIN_EXPANSION_BLACK_FRIDAY</requirements>
+		<description>
+			<p>At 18th level, you have mastered your technique allowing you to expand your domain. You can use Recreation and Contractual Control at no cursed energy cost within your domain. At initiative 20, you gain a random receipt. D4 (1: Object, 2: Vehicles, 3: Reservation, 4: Structure) The DM decides the nature of the receipt.</p>
+		</description>
+		<sheet action="Action + Bonus Action + Movement" usage="CE">
+			<description>
+				<p>For 20 cursed energy, you can use Recreation and Contractual Control at no cursed energy cost within your domain. At initiative 20, roll a d4 and gain a random receipt. (1: Object, 2: Vehicles, 3: Reservation, 4: Structure) The DM decides the nature of the receipt.</p>
+			</description>
+		</sheet>
+	</element>
+	<!--Feature Replacement Grants-->
+	<element name="Recreation Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CONTRACTUAL_RECREATION_RECREATION" />
+	<element name="Quick Spender Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CONTRACTUAL_RECREATION_QUICK_SPENDER" />
+	<element name="Splurge Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CONTRACTUAL_RECREATION_SPLURGE" />
+	<element name="Contractual Control Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CONTRACTUAL_RECREATION_CONTRACTUAL_CONTROL" />
+	<element name="Domain Expansion: Black Friday Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CONTRACTUAL_RECREATION_DOMAIN_EXPANSION_BLACK_FRIDAY" />
+</elements>

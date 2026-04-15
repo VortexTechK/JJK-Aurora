@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="5.0">
+			<file name="clone.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/clone.xml" />
+		</update>
+	</info>
+
+	<element name="Clone" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_CLONE">
+		<supports>Innate Technique</supports>
+		<description>
+			<p>Don't be freaky with them.</p>
+			<div element="ID_JJK_ARCHETYPE_FEATURE_CLONE_ONE_MAN_ARMY" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_CLONE_TWICE_THE_FUN" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_CLONE_THREE_IS_A_CROWD" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_CLONE_FOUR_IS_A_PARTY" />
+      		<div element="ID_JJK_ARCHETYPE_FEATURE_CLONE_DOMAIN_EXPANSION_DIVIDE_AND_CONQUER" />
+		</description>
+		<sheet display="false">
+			<description>Your technique allows you to create perfect clones of yourself.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_CLONE_ONE_MAN_ARMY" level="1" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_CLONE_TWICE_THE_FUN" level="3" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_CLONE_THREE_IS_A_CROWD" level="6" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_CLONE_FOUR_IS_A_PARTY" level="11" />
+      		<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_CLONE_DOMAIN_EXPANSION_DIVIDE_AND_CONQUER" level="18" />
+		</rules>
+	</element>
+	<element name="One Man Army" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CLONE_ONE_MAN_ARMY">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLONE_ONE_MAN_ARMY</requirements>
+		<description>
+			<p> Starting at 1st level, you can spend 3 CE as an action to create a clone within 5 feet of yourself for 8 hours. They are completely indistinguishable from you in every way. A clone has 1/4 of your hit point maximum (rounded up) as well as your AC and access to all your class features and cursed techniques, but not innate technique features. Any cursed energy it spends is treated as if you spent it. Your Clones act on your turn, but can only make one attack on their turn even if you have Extra Attack or bonus action attacks. You can replace any of your attacks on your turn with an attack from the Clone's space. Your Clones do not have any of your items.</p>
+            <p class="indent">You can have a number of clones equal to your proficiency bonus at once and when a clone dies, the number of clones you can have is reduced by 1 for 1 minute.</p>
+        </description>
+		<sheet action="Action" usage="CE">
+			<description level="1">Spend 3 cursed energy to create a clone within 5 feet of yourself for 8 hours. They are completely indistinguishable from you in every way. A clone a hit point maximum of {{hp}}/4 (rounded up) as well as your AC and access to all your class features and cursed techniques, but not innate technique features. Any cursed energy it spends is treated as if you spent it. Your Clones act on your turn, but can only make one attack on their turn even if you have Extra Attack or bonus action attacks. You can replace any of your attacks on your turn with an attack from the Clone's space. Your Clones do not have any of your items. You can have {{proficiency}} clones at once and when a clone dies, the number of clones you can have is reduced by 1 for 1 minute.</description>
+			<description level="3">Spend 3 cursed energy to create a clone within 5 feet of yourself for 8 hours. They are completely indistinguishable from you in every way. A clone a hit point maximum of {{hp}}/4 (rounded up) as well as your AC and access to all your class features and cursed techniques, but not innate technique features. Any cursed energy it spends is treated as if you spent it. Your Clones act on your turn, but can only make one attack on their turn even if you have Extra Attack or bonus action attacks. You can replace any of your attacks on your turn with an attack from the Clone's space. Your Clones do not have any of your items. You can have {{proficiency}} clones at once and when a clone dies, the number of clones you can have is reduced by 1 for 1 minute. You can create multiple clones by spending 3 CE for each clone.</description>
+            <description level="6">Spend 3 cursed energy to create a clone within 5 feet of yourself for 8 hours. They are completely indistinguishable from you in every way. A clone a hit point maximum of {{hp}}/2 (rounded up) as well as your AC and access to all your class features and cursed techniques, but not innate technique features. Any cursed energy it spends is treated as if you spent it. Your Clones act on your turn and can make as many attacks as you can. You can replace any of your attacks on your turn with an attack from the Clone's space. Your Clones do not have any of your items. You can have {{proficiency}} clones at once and when a clone dies, the number of clones you can have is reduced by 1 for 1 minute. You can create multiple clones by spending 3 CE for each clone.</description>
+            <description level="11">Spend 3 cursed energy to create a clone within 5 feet of yourself for 8 hours. They are completely indistinguishable from you in every way. A clone a hit point maximum of {{hp}} as well as your AC and access to all your class features and cursed techniques, but not innate technique features. Any cursed energy it spends is treated as if you spent it. Your Clones act on your turn and can make as many attacks as you can. You can replace any of your attacks on your turn with an attack from the Clone's space. Your Clones do not have any of your items. You can have {{proficiency}} clones at once and when a clone dies, the number of clones you can have is reduced by 1 for 1 minute. You can create multiple clones by spending 3 CE for each clone. Your Clones can now create one Clone by spending your Cursed Energy with each Clone counting against your limit.</description>
+
+        </sheet>
+	</element>
+	<element name="Twice the Fun" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CLONE_TWICE_THE_FUN">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLONE_TWICE_THE_FUN</requirements>
+		<description>
+			<p> At 3rd level, you can now create multiple clones as an action by spending 3 CE for each clone. When you make a melee attack against a creature while a Clone is within 5 feet of the target, you gain advantage on the attack roll.</p>
+        </description>
+		<sheet>
+      		<description>When you make a melee attack against a creature while a Clone is within 5 feet of the target, you gain advantage on the attack roll.</description>
+		</sheet>
+	</element>
+	<element name="Three is a Crowd" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CLONE_THREE_IS_A_CROWD">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLONE_THREE_IS_A_CROWD</requirements>
+		<description>
+			<p> At 6th level you have become more skillful and efficient with the creation of your clones. Your Clones can now make as many attacks as you and have 1/2 of your total hit points. When one of your Clones is reduced to 0 hit points, you regain 1 cursed energy.</p>
+        </description>
+		<sheet>
+			<description>When one of your Clones is reduced to 0 hit points, you regain 1 cursed energy.</description>
+		</sheet>
+	</element>
+	<element name="Four is a Party" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CLONE_FOUR_IS_A_PARTY">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLONE_FOUR_IS_A_PARTY</requirements>
+		<description>
+			<p> At 11th level, you have mastered the ability to choose which of your Clones is your actual body. Your Clones have hit points equal to yours and you can swap bodies with one of your clones as a bonus action for 1 CE, trading hit points and causing that Clone to become your new body. When you are reduced to 0 hit points or killed outright while you have a Clone active, you can instead transfer yourself into one of your clones, gaining the Clone's current hit points.</p>
+            <p class="indent">Your Clones can now create one Clone by spending your Cursed Energy with each Clone counting against your limit.</p>
+        </description>
+		<sheet action="Bonus Action" usage="CE">
+			<description>You can swap bodies with one of your clones for 1 cursed energy, trading hit points and causing that Clone to become your new body. When you are reduced to 0 hit points or killed outright while you have a Clone active, you can instead transfer yourself into one of your clones, gaining the Clone's current hit points.</description>
+		</sheet>
+	</element>
+	<element name="Domain Expansion: Divide and Conquer" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CLONE_DOMAIN_EXPANSION_DIVIDE_AND_CONQUER">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLONE_DOMAIN_EXPANSION_DIVIDE_AND_CONQUER</requirements>
+		<description>
+			<p>Finally at 18th level you have perfected your technique, allowing you to expand your domain. You can now create one Clone as a bonus action without spending cursed energy once per turn (Your Clones do not gain this benefit). Within your domain, you can have an unlimited number of Clones. Your Clone's attacks are guaranteed hits within your domain. </p>
+            <p class="indent">At initiative 20, an additional clone appears. All Clones created with your domain disappear when the domain ends.</p>
+        </description>
+		<sheet action="Action + Bonus Action + Movement" usage="CE">
+			<description>
+				<p>For 20 cursed energy, you can now create one Clone as a bonus action without spending cursed energy once per turn (Your Clones do not gain this benefit). Within your domain, you can have an unlimited number of Clones. Your Clone's attacks are guaranteed hits within your domain. At initiative 20, an additional clone appears. All Clones created with your domain disappear when the domain ends.</p>
+			</description>
+		</sheet>
+	</element>
+	<!--Feature Replacement Grants-->
+	<element name="One Man Army Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CLONE_ONE_MAN_ARMY" />
+	<element name="Twice the Fun Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CLONE_TWICE_THE_FUN" />
+	<element name="Three is a Crowd Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CLONE_THREE_IS_A_CROWD" />
+	<element name="Four is a Party Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CLONE_FOUR_IS_A_PARTY" />
+	<element name="Domain Expansion: Divide and Conquer Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CLONE_DOMAIN_EXPANSION_DIVIDE_AND_CONQUER" />
+</elements>
