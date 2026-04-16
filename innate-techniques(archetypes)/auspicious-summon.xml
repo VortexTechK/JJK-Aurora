@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="5.0.2">
+		<update version="5.0.3">
 			<file name="auspicious-summon.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/auspicious-summon.xml" />
 		</update>
 	</info>
@@ -106,10 +106,10 @@
 			</table>
 			<ul class="unstyled">
 				<li><strong>Saving Throws</strong> Dex +3, Con +6, Wis +3, Cha +5</li>
-				<li><strong>Skills</strong> Perception +3, Stealth +4</li>
-				<li><strong>Senses</strong> blindsight 30 ft., darkvision 60 ft., passive Perception 16</li>
+				<li><strong>Skills</strong> Perception +6, Persuasion +5, Stealth +3</li>
+				<li><strong>Senses</strong> blindsight 30 ft., darkvision 120 ft., passive Perception 16</li>
 				<li><strong>Languages</strong> -</li>
-				<li style="margin-bottom:-1em"><strong>Challenge</strong> 6</li>
+				<li style="margin-bottom:-1em"><strong>Challenge</strong> 6 (2,300 XP)</li>
 			</ul>
 			<h4 style="margin-top:10px">Actions</h4>
 			<ul class="unstyled">
@@ -133,8 +133,8 @@
 			<set name="hp">114 (12d12 + 36)</set>
 			<set name="speed">40 ft., fly 80 ft.</set>
 			<set name="saves">Dex +3, Con +6, Wis +3, Cha +5</set>
-			<set name="skills">Perception +3, Stealth +4</set>
-			<set name="senses">blindsight 30 ft., darkvision 60 ft., passive Perception 16</set>
+			<set name="skills">Perception +6, Persuasion +5, Stealth +3</set>
+			<set name="senses">blindsight 30 ft., darkvision 120 ft., passive Perception 16</set>
 			<set name="languages">-</set>
 			<set name="type">Dragon</set>
 			<set name="size">Huge</set>
@@ -151,7 +151,10 @@
 			<stat name="companion:constitution:save:proficiency" value="companion:proficiency" bonus="base"/>
       		<stat name="companion:wisdom:save:proficiency" value="companion:proficiency" bonus="base"/>
 			<stat name="companion:charisma:save:proficiency" value="companion:proficiency" bonus="base"/>
-			<stat name="companion:perception:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:perception:proficiency:calc" value="companion:proficiency"/>
+			<stat name="companion:perception:proficiency:calc" value="companion:proficiency"/>
+			<stat name="companion:perception:proficiency" value="companion:perception:proficiency:calc" bonus="base" />
+			<stat name="companion:persuasion:proficiency" value="companion:proficiency" bonus="base" />
 			<stat name="companion:stealth:proficiency" value="companion:proficiency" bonus="base" />
 		</rules>
 	</element>
