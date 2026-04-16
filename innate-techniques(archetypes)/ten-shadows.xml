@@ -73,16 +73,16 @@
 		<sheet action="Action">
       		<description>
                 <p>Any shikigami reduced to 0 hit points dies and cannot be summoned again.</p>
-                <p>During a short or long rest you can perform a 1-hour ritual to pass on the strength of one deceased shikigami with the exception of Rabbit Escape and Mahoraga to a different Non-Totality, granting it a permanent Totality form.</p>
-                <p>When you make a Totality, their scores become those of the creature who has the higher score.</p>
-                <p>Then they gain a bonus to that ability score equal to the modifier of the creature with the smaller score.</p>
-                <p>They have the higher AC of the shikigami used.</p>
-                <p>They receive the hit points of both creatures.</p>
-                <p>Their movement speed is added together.</p>
-                <p>They receive all features, traits, actions, bonus actions, reactions, legendary actions, skill, saving throw proficiencies, damage resistances, damage immunities and condition immunities from both creatures.</p>
-                <p>Their size can be either of the shikigami.</p>
-                <p>The CE cost becomes the higher shikigami + half of the lower shikigami's cost.</p>
-                <p>Their CR equals the creature with a higher CR + half the CR of the creature with the smaller CR rounded up.</p>
+                <p> During a short or long rest you can perform a 1-hour ritual to pass on the strength of one deceased shikigami with the exception of Rabbit Escape and Mahoraga to a different Non-Totality, granting it a permanent Totality form.</p>
+                <p> When you make a Totality, their scores become those of the creature who has the higher score.</p>
+                <p> Then they gain a bonus to that ability score equal to the modifier of the creature with the smaller score.</p>
+                <p> They have the higher AC of the shikigami used.</p>
+                <p> They receive the hit points of both creatures.</p>
+                <p> Their movement speed is added together.</p>
+                <p> They receive all features, traits, actions, bonus actions, reactions, legendary actions, skill, saving throw proficiencies, damage resistances, damage immunities and condition immunities from both creatures.</p>
+                <p> Their size can be either of the shikigami.</p>
+                <p> The CE cost becomes the higher shikigami + half of the lower shikigami's cost.</p>
+                <p> Their CR equals the creature with a higher CR + half the CR of the creature with the smaller CR rounded up.</p>
             </description>
 		</sheet>
 	</element>
