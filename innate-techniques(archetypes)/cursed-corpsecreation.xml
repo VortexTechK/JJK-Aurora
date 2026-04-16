@@ -191,6 +191,7 @@
 		</sheet>
 	</element>
 
+	<!-- Companion Reference -->
 	<element name="Cursed Corpse" type="Information" source="JJK" id="ID_JJK_INFORMATION_CURSED_CORPSE">
 		<description>
 			<p style="margin-bottom:-5px"><em>Tiny construct, unaligned</em></p>
@@ -226,6 +227,7 @@
 		</description>
 	</element>
 
+	<!-- Companion -->
 	<element name="Cursed Corpse" type="Companion" source="JJK" id="ID_JJK_COMPANION_CURSED_CORPSE">
 		<supports>Cursed Corpse</supports>
 		<setters>
