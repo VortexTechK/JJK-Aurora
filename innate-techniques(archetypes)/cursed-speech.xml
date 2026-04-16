@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="5.0.1">
+			<file name="cursed-speech.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/cursed-speech.xml" />
+		</update>
+	</info>
+
+	<element name="Cursed Speech" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_CURSED_SPEECH">
+		<supports>Innate Technique</supports>
+		<description>
+			<p>Salmon.</p>
+			<div element="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_POWER_OF_WORDS" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_INTERJECTION" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_IRON_CHORDS" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_RESOUNDING_VOICE" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_DOMAIN_EXPANSION_ECHO_CHAMBER" />
+		</description>
+		<sheet display="false">
+			<description>This power is called both a blessing and a curse, you can speak your will to reality.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_POWER_OF_WORDS" level="1" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_INTERJECTION" level="3" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_IRON_CHORDS" level="6" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_RESOUNDING_VOICE" level="11" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_DOMAIN_EXPANSION_ECHO_CHAMBER" level="18" />
+		</rules>
+	</element>
+
+	<element name="Power of Words" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_POWER_OF_WORDS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CURSED_SPEECH_POWER_OF_WORDS</requirements>
+		<description>
+			<p>Starting at 1st level, you have been born with the Inumaki clan's snake eyes and fangs seal on you, and can now curse other people just by merely speaking. However, this takes extreme strain on your vocal cords. Your vocal cords have a number of hit points equal to 1/3rd of your maximum hit points(rounded up). You are unable to speak unless in terms of whatever meaningless concept you choose such as sushi ingredients. For every Cursed Energy you spend in a cursed word, your vocal cords lose one hit point. Your vocal cords hit points all come back in a short or long rest. If your vocal chords reach 0 hit points, you won't be able to regain the hit points unless you receive hit points from Reverse Cursed Technique or take a long rest. If you have 0 hit points you cannot use your cursed words, and will always be under one level of exhaustion. Your vocal cords will regain 1 hit point at the beginning of your turns unless they are at 0 hit points. Any kind of hit point gain you receive affects your vocal cords' hit points. You can the Cursed Words below(X=Cursed Energy Mod):</p>
+            <ul>
+                <li><strong>Sleep:</strong> As an action for 1 cursed energy, you can cast Sleep at 1st level. You can add 3d8 per 1 per extra Cursed Energy added at 3rd, 6th, 11th, and 18th levels.</li>
+                <li><strong>Return:</strong> As an action for 1 cursed energy, you can make a summoned creature within 60 feet make a Charisma save against your save DC or be unsummoned. At 3rd, 6th, 11th, and 18th levels you can choose to add a +1 to your DC per Cursed Energy.</li>
+                <li><strong>Run Away:</strong> As an action for 2 cursed energy, you can attempt to force one creature within 60 feet away from you but not into harm. At 3rd, 6th, 11th, and 18th levels you can choose to add a +1 to your DC or a number of targets per Cursed Energy.</li>
+                <li><strong>Blast Away:</strong> As an action for 4 cursed energy, you force one target to make a Charisma saving throw. On a failure, they will be launched 60 ft back from the spot they were in, taking 1d8 force damage per 10ft traveled. At 3rd level, you can spend 1 additional Cursed Energy to add +10 to the distance the target is blasted away. You can spend another +1 at 6th, 11th, and 18th levels.</li>
+                <li><strong>Plummet:</strong> As an action for 6 cursed energy, you force a target to make a Charisma saving throw. On a failure, they will receive Cursed Energy mod d10 force damage and will be knocked prone for 1 minute as a field of intensified gravity crushes them. They can remove the prone condition if they succeed on a Strength saving throw. At 3rd level, you can spend 1 additional Xd10 force damage. You can spend another +1 at 6th, 11th, and 18th levels.</li>
+                <li><strong>Get Twisted:</strong> As an action for 8 cursed energy, you force a target to make a Charisma saving throw. On a failure one of their legs or arms of your choice will be twisted, breaking the limb. In addition, the target will lose hit points equal to their Constitution score times half your proficiency bonus(rounded down). An arm twisted removes the ability to use that arm and reduces the creature's Strength by 2, and twisting a leg halves movement and reduces Dexterity by 2. At 3rd level, you can spend 1 additional Cursed Energy to add a +1 to the DC. You can spend another +1 at 6th, 11th, and 18th levels.</li>
+                <li><strong>Get Crushed:</strong> As an action for 10 cursed energy, you force a target to make a Charisma saving throw. On a failure, they are imploded which makes them lose xd12 maximum hit points and become paralyzed. They will keep being imploded for 1 minute, this can be ended early if they succeed on a Strength saving throw, on a failure they will keep losing xd12 of their maximum hit points at the beginning of their turns. The hit points lost will be regained at the end of a long rest. At 3rd level, you can spend 1 additional Cursed Energy to add a d12 to the amount of hit points lost. You can spend another +1 at 6th, 11th, and 18th levels.</li>
+                <li><strong>Don't Move:</strong> As an action for 12 cursed energy, you cast Power Word Stun at 8th level. You increase the HP limit by 25 HP per 1 point of Cursed Energy added at 3rd, 6th, 11th, and 18th levels.</li>
+                <li><strong>Explode:</strong> As an action for 14 cursed energy, you force a target and every creature within 5ft. of it to make a Charisma saving throw. On a failure, they will explode from the inside out making them receive 3d8 force damage + xd6 fire damage. At 3rd level, you can spend 1 additional Cursed Energy to add a d8 to the force damage. You can spend another +1 at 6th, 11th, and 18th levels.</li>
+                <li><strong>Die:</strong> As an action for 16 cursed energy, you force a target with 30 times your Cursed Energy modifier hit points or less to make a Charisma saving throw. On a failure, they die instantly. At 3rd level, you can spend 1 additional Cursed Energy to add a +1 to the DC and 10 hit points to the requirement. You can spend another +1 at 6th, 11th, and 18th levels.</li>
+            </ul>
+        </description>
+		<sheet>
+			<description level="1">Your vocal cords have {{hp}}/3 (rounded up) hit points. You are unable to speak unless in terms of whatever meaningless concept you choose. For every Cursed Energy you spend in a cursed word, your vocal cords lose one hit point. Your vocal cords hit points all come back in a short or long rest. If your vocal chords reach 0 hit points, you won't be able to regain the hit points unless you receive hit points from Reverse Cursed Technique or take a long rest. If you have 0 hit points you cannot use your cursed words, and will always be under one level of exhaustion. Your vocal cords will regain 1 hit point at the beginning of your turns unless they are at 0 hit points. Any kind of hit point gain you receive affects your vocal cords' hit points.</description>
+            <description level="6">Your vocal cords have {{hp}}/2 (rounded up) hit points. You are unable to speak unless in terms of whatever meaningless concept you choose. For every Cursed Energy you spend in a cursed word, your vocal cords lose one hit point. Your vocal cords hit points all come back in a short or long rest. If your vocal chords reach 0 hit points, you won't be able to regain the hit points unless you receive hit points from Reverse Cursed Technique or take a long rest. If you have 0 hit points you cannot use your cursed words, and will always be under one level of exhaustion. Your vocal cords will regain 1 hit point at the beginning of your turns unless they are at 0 hit points. Any kind of hit point gain you receive affects your vocal cords' hit points.</description>
+        </sheet>
+        <rules>
+            <stat name="cursed:speech:add" value="0" level="1" bonus="cursed speech"/>
+            <stat name="cursed:speech:add" value="1" level="3" bonus="cursed speech"/>
+            <stat name="cursed:speech:add" value="2" level="6" bonus="cursed speech"/>
+            <stat name="cursed:speech:add" value="3" level="11" bonus="cursed speech"/>
+            <stat name="cursed:speech:add" value="4" level="18" bonus="cursed speech"/>
+        </rules>
+	</element>
+
+    <element name="Sleep" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_SLEEP">
+        <supports>Interjection</supports>
+        <description>
+            <p>As an action for 1 cursed energy, you can cast Sleep at 1st level. You can add 3d8 per extra Cursed Energy added at 3rd, 6th, 11th, and 18th levels.</p>
+        </description>
+        <sheet action="Action" usage="CE">
+            <description>For 1 cursed energy, you can cast Sleep at 1st level. You can add up to {{cursed:speech:add}} cursed energy to add 3d8 to Sleep for each cursed energy added.</description>
+        </sheet>
+    </element>
+
+    <element name="Return" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_RETURN">
+        <supports>Interjection</supports>
+        <description>
+            <p>As an action for 1 cursed energy, you can make a summoned creature within 60 feet make a Charisma save against your save DC or be unsummoned. At 3rd, 6th, 11th, and 18th levels you can choose to add a +1 to your DC per Cursed Energy.</p>
+        </description>
+        <sheet action="Action" usage="CE">
+            <description>For 1 cursed energy, you can make a summoned creature within 60 feet make a Charisma save. On a failure, it is unsummoned. You can add up to {{cursed:speech:add}} cursed energy to give +1 to your DC for each cursed energy added.</description>
+        </sheet>
+    </element>
+
+    <element name="Run Away" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_RUN_AWAY">
+        <supports>Interjection</supports>
+        <description>
+            <p>As an action for 2 cursed energy, you can attempt to force one creature within 60 feet away from you but not into harm. At 3rd, 6th, 11th, and 18th levels you can choose to add a +1 to your DC or a number of targets per Cursed Energy.</p>
+        </description>
+        <sheet action="Action" usage="CE">
+            <description>For 2 cursed energy, you can make a creature within 60 feet make a Charisma save. On a failure, it moves 60 feet away from you but not into harm. You can add up to {{cursed:speech:add}} cursed energy to give +1 to your DC for each cursed energy added.</description>
+        </sheet>
+    </element>
+
+    <element name="Blast Away" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_BLAST_AWAY">
+        <supports>Interjection</supports>
+        <description>
+            <p>As an action for 4 cursed energy, you force one target to make a Charisma saving throw. On a failure, they will be launched 60 ft back from the spot they were in, taking 1d8 force damage per 10ft traveled. At 3rd level, you can spend 1 additional Cursed Energy to add +10 to the distance the target is blasted away. You can spend another +1 at 6th, 11th, and 18th levels.</p>
+        </description>
+        <sheet action="Action" usage="CE">
+            <description>For 4 cursed energy, you can force one target to make a Charisma save. On a failure, they are launched 60 ft back from the spot they were in, taking 1d8 force damage per 10ft traveled. You can add up to {{cursed:speech:add}} cursed energy to add +10 to the distance for each cursed energy added.</description>
+        </sheet>
+    </element>
+
+    <element name="Plummet" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_PLUMMET">
+        <supports>Interjection</supports>
+        <description>
+            <p>As an action for 6 cursed energy, you force a target to make a Charisma saving throw. On a failure, they will receive Cursed Energy mod d10 force damage and will be knocked prone for 1 minute as a field of intensified gravity crushes them. They can remove the prone condition if they succeed on a Strength saving throw. At 3rd level, you can spend 1 additional Xd10 force damage. You can spend another +1 at 6th, 11th, and 18th levels.</p>
+        </description>
+        <sheet action="Action" usage="CE">
+            <description>For 6 cursed energy, you can force a target to make a Charisma save. On a failure, they take {{ce:modifier}}d10 force damage and are knocked prone for 1 minute. They can remove the prone condition if they succeed on a Strength saving throw. You can add up to {{cursed:speech:add}} cursed energy to add {{ce:modifier}}d10 to the damage for each cursed energy added.</description>
+        </sheet>
+    </element>
+
+    <element name="Get Twisted" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_GET_TWISTED">
+        <supports>Interjection</supports>
+        <description>
+            <p>As an action for 8 cursed energy, you force a target to make a Charisma saving throw. On a failure one of their legs or arms of your choice will be twisted, breaking the limb. In addition, the target will lose hit points equal to their Constitution score times half your proficiency bonus(rounded down). An arm twisted removes the ability to use that arm and reduces the creatur's Strength by 2, and twisting a leg halves movement and reduces Dexterity by 2. At 3rd level, you can spend 1 additional Cursed Energy to add a +1 to the DC. You can spend another +1 at 6th, 11th, and 18th levels.</p>
+        </description>
+        <sheet action="Action" usage="CE">
+            <description>For 8 cursed energy, you can force a target to make a Charisma save. On a failure, one of their legs or arms will be twisted, breaking the limb. In addition, the target will lose hit points equal to their Constitution score times {{proficiency:half}}. An arm twisted removes the ability to use that arm and reduces the creature's Strength by 2, and twisting a leg halves movement and reduces Dexterity by 2. You can add up to {{cursed:speech:add}} cursed energy to give +1 to your DC for each cursed energy added.</description>
+        </sheet>
+    </element>
+
+    <element name="Get Crushed" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_GET_CRUSHED">
+        <supports>Interjection</supports>
+        <description>
+            <p>As an action for 10 cursed energy, you force a target to make a Charisma saving throw. On a failure, they are imploded which makes them lose xd12 maximum hit points and become paralyzed. They will keep being imploded for 1 minute, this can be ended early if they succeed on a Strength saving throw, on a failure they will keep losing xd12 of their maximum hit points at the beginning of their turns. The hit points lost will be regained at the end of a long rest. At 3rd level, you can spend 1 additional Cursed Energy to add a d12 to the amount of hit points lost. You can spend another +1 at 6th, 11th, and 18th levels.</p>
+        </description>
+        <sheet action="Action" usage="CE">
+            <description>For 10 cursed energy, you can force a target to make a Charisma save. On a failure, they lose {{ce:modifier}}d12 maximum hit points immediately and at the beginning of their turns and become paralyzed for 1 minute. The hit points lost will be regained at the end of a long rest. This can be ended early if they succeed on a Strength saving throw. You can add up to {{cursed:speech:add}} cursed energy to add a d12 to the amount of hit points lost for each cursed energy added.</description>
+        </sheet>
+    </element>
+
+    <element name="Don't Move" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_DONT_MOVE">
+        <supports>Interjection</supports>
+        <description>
+            <p>As an action for 12 cursed energy, you cast Power Word Stun at 8th level. You increase the HP limit by 25 HP per 1 point of Cursed Energy added at 3rd, 6th, 11th, and 18th levels.</p>
+        </description>
+        <sheet action="Action" usage="CE">
+            <description>For 12 cursed energy, you can cast Power Word Stun at 8th level. You can add up to {{cursed:speech:add}} cursed energy to increase the HP limit by 25 HP for each cursed energy added.</description>
+        </sheet>
+    </element>
+
+    <element name="Explode" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_EXPLODE">
+        <supports>Interjection</supports>
+        <description>
+            <p>As an action for 14 cursed energy, you force a target and every creature within 5ft. of it to make a Charisma saving throw. On a failure, they will explode from the inside out making them receive 3d8 force damage + xd6 fire damage. At 3rd level, you can spend 1 additional Cursed Energy to add a d8 to the force damage. You can spend another +1 at 6th, 11th, and 18th levels.</p>
+        </description>
+        <sheet action="Action" usage="CE">
+            <description>For 14 cursed energy, you can force a target and every creature within 5ft. of it to make a Charisma saving throw. On a failure, they take 3d8 force damage + {{ce:modifier}}d6 fire damage. You can add up to {{cursed:speech:add}} cursed energy to add a d8 to the force energy for each cursed energy added.</description>
+        </sheet>
+    </element>
+
+    <element name="Die" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_DIE">
+        <supports>Interjection</supports>
+        <description>
+            <p>As an action for 16 Cursed Energy, you force a target with 30 times your Cursed Energy modifier hit points or less to make a Charisma saving throw. On a failure, they die instantly. At 3rd level, you can spend 1 additional Cursed Energy to add a +1 to the DC and 10 hit points to the requirement. You can spend another +1 at 6th, 11th, and 18th levels.</p>
+        </description>
+        <sheet action="Action" usage="CE">
+            <description>For 16 cursed energy, you can force a a target with {{cursed:speech:die:hp}} hit points or less to make a Charisma saving throw. On a failure, they die instantly. You can add up to {{cursed:speech:add}} cursed energy to give +1 to your DC and 10 hit points to the requirement for each cursed energy added.</description>
+        </sheet>
+        <rules>
+            <stat name="cursed:speech:die:hp" value="ce:modifier" />
+            <stat name="cursed:speech:die:hp" value="ce:modifier" />
+            <stat name="cursed:speech:die:hp" value="ce:modifier" />
+            <stat name="cursed:speech:die:hp" value="ce:modifier" />
+            <stat name="cursed:speech:die:hp" value="ce:modifier" />
+            <stat name="cursed:speech:die:hp" value="ce:modifier" />
+            <stat name="cursed:speech:die:hp" value="ce:modifier" />
+            <stat name="cursed:speech:die:hp" value="ce:modifier" />
+            <stat name="cursed:speech:die:hp" value="ce:modifier" />
+            <stat name="cursed:speech:die:hp" value="ce:modifier" />
+            <stat name="cursed:speech:die:hp" value="ce:modifier" />
+            <stat name="cursed:speech:die:hp" value="ce:modifier" />
+            <stat name="cursed:speech:die:hp" value="ce:modifier" />
+            <stat name="cursed:speech:die:hp" value="ce:modifier" />
+            <stat name="cursed:speech:die:hp" value="ce:modifier" />
+            <stat name="cursed:speech:die:hp" value="ce:modifier" />
+            <stat name="cursed:speech:die:hp" value="ce:modifier" />
+            <stat name="cursed:speech:die:hp" value="ce:modifier" />
+            <stat name="cursed:speech:die:hp" value="ce:modifier" />
+            <stat name="cursed:speech:die:hp" value="ce:modifier" />
+            <stat name="cursed:speech:die:hp" value="ce:modifier" />
+            <stat name="cursed:speech:die:hp" value="ce:modifier" />
+            <stat name="cursed:speech:die:hp" value="ce:modifier" />
+            <stat name="cursed:speech:die:hp" value="ce:modifier" />
+            <stat name="cursed:speech:die:hp" value="ce:modifier" />
+            <stat name="cursed:speech:die:hp" value="ce:modifier" />
+            <stat name="cursed:speech:die:hp" value="ce:modifier" />
+            <stat name="cursed:speech:die:hp" value="ce:modifier" />
+            <stat name="cursed:speech:die:hp" value="ce:modifier" />
+            <stat name="cursed:speech:die:hp" value="ce:modifier" />
+        </rules>
+    </element>
+
+	<element name="Interjection" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_INTERJECTION">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CURSED_SPEECH_INTERJECTION</requirements>
+		<description>
+			<p>Beginning at 3rd, you have learned how to say one specific word quicker than the others. You can choose one of your cursed words to use as a Bonus Action or Reaction. You can change the chosen word at the end of a long rest.</p>
+		</description>
+		<sheet>
+			<description>You can use the chosen curse word as a Bonus Action or Reaction. You can change the chosen word at the end of a long rest.</description>
+		</sheet>
+        <rules>
+            <select type="Archetype Feature" name="Interjection" supports="Interjection" />
+        </rules>
+	</element>
+
+	<element name="Iron Chords" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_IRON_CHORDS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CURSED_SPEECH_IRON_CHORDS</requirements>
+		<description>
+			<p>When you reach 6th level,  due to the constant usage of your vocal cords, they have gotten stronger. Your vocal cords' hit points increase to half your maximum hit points(rounded up). </p>
+		</description>
+        <sheet display="false"/>
+	</element>
+
+	<element name="Resounding Voice" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_RESOUNDING_VOICE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CURSED_SPEECH_RESOUNDING_VOICE</requirements>
+		<description>
+			<p>At 11th level, you can spend 3 extra Cursed Energy to change the effect range of your technique into a 35-foot cone.</p>
+		</description>
+        <sheet usage="CE">
+			<description>You can spend 3 extra cursed energy to change the effect range of a cursed word into a 35-foot cone.</description>
+		</sheet>
+	</element>
+
+	<element name="Echo Chamber" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_DOMAIN_EXPANSION_ECHO_CHAMBER">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CURSED_SPEECH_DOMAIN_EXPANSION_ECHO_CHAMBER</requirements>
+		<description>
+			<p>If you reach 18th level, you have honed your technique to a fine edge, gaining your domain expansion. While inside it, at Initiative 20, you can make all creatures fall under the effect of a word of your choice for no cost.</p>
+		</description>
+        <sheet action="Action + Bonus Action + Movement" usage="CE">
+			<description>For 20 cursed energy, at Initiative 20, you can make all creatures fall under the effect of a word of your choice for no cost.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Power of Words Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CURSED_SPEECH_POWER_OF_WORDS" />
+	<element name="Interjection Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CURSED_SPEECH_INTERJECTION" />
+	<element name="Iron Chords Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CURSED_SPEECH_IRON_CHORDS" />
+	<element name="Resounding Voice Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CURSED_SPEECH_RESOUNDING_VOICE" />
+	<element name="Echo Chamber Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CURSED_SPEECH_DOMAIN_EXPANSION_ECHO_CHAMBER" />
+</elements>

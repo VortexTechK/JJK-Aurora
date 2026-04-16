@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="5.0.1">
+			<file name="cursed-cannon.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/cursed-cannon.xml" />
+		</update>
+	</info>
+
+	<element name="Cursed Cannon" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_CURSED_CANNON">
+		<supports>Innate Technique</supports>
+		<description>
+			<p>The highest larp output.</p>
+			<div element="ID_JJK_ARCHETYPE_FEATURE_CURSED_CANNON_GRANITE_BLAST" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_CURSED_CANNON_GRAPE_SHOT" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_CURSED_CANNON_GUIDED_SHELL" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_CURSED_CANNON_NUCLEAR_SHELL" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_CURSED_CANNON_DOMAIN_EXPANSION_SHOOTING_RANGE" />
+		</description>
+		<sheet display="false">
+			<description>Cursed Cannon, as the name says, allows you to unleash blasts of cursed energy. As simple as it is, its power is undeniable.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_CANNON_GRANITE_BLAST" level="1" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_CANNON_GRAPE_SHOT" level="3" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_CANNON_GUIDED_SHELL" level="6" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_CANNON_NUCLEAR_SHELL" level="11" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_CANNON_DOMAIN_EXPANSION_SHOOTING_RANGE" level="18" />
+		</rules>
+	</element>
+
+	<element name="Granite Blast" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_CANNON_GRANITE_BLAST">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CURSED_CANNON_GRANITE_BLAST</requirements>
+		<description>
+			<p>Starting at 1st level, your CE output is off the charts, and thanks to your technique allowing you to output it in a destructive death ray. As an action, you can spend 1 cursed energy to release a beam of cursed energy. Make a ranged cursed energy attack roll with a range of 150/600 feet. On a hit, it deals 3d8 necrotic damage.</p>
+            <p class="indent">Beginning at 3rd level, the damage increases to 6d8, to 8d8 at 6th, to 10d8 at 11th, to 12d8 at 18th level.</p>
+		</description>
+		<sheet action="Action" usage="CE">
+			<description>For 1 cursed energy, make a ranged cursed energy attack roll with a range of 150/600 feet. On a hit, it deals {{granite:blast:damage}}d8 necrotic damage.</description>
+		</sheet>
+        <rules>
+            <stat name="granite:blast:damage" value="3" level="1" bonus="granite blast" />
+            <stat name="granite:blast:damage" value="6" level="3" bonus="granite blast" />
+            <stat name="granite:blast:damage" value="8" level="6" bonus="granite blast" />
+            <stat name="granite:blast:damage" value="10" level="11" bonus="granite blast" />
+            <stat name="granite:blast:damage" value="12" level="18" bonus="granite blast" />
+        </rules>
+	</element>
+
+	<element name="Grape Shot" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_CANNON_GRAPE_SHOT">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CURSED_CANNON_GRAPE_SHOT</requirements>
+		<description>
+			<p>At 3rd level, your versatility with your blasts has increased. For 1 extra cursed energy, you can split your Granite Blast into however many blasts as you would like, with damage dice spread evenly between blasts.</p>
+		</description>
+		<sheet usage="CE">
+			<description>For 1 extra cursed energy, you can split your Granite Blast into however many blasts as you would like, with damage dice spread evenly between blasts.</description>
+		</sheet>
+	</element>
+
+	<element name="Guided Shell" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_CANNON_GUIDED_SHELL">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CURSED_CANNON_GUIDED_SHELL</requirements>
+		<description>
+			<p>Beginning at 6th level, your shots are malleable and extremely difficult to avoid. Once per attack, you can choose to spend up to 5 cursed energy points to add to the attack roll.</p>
+		</description>
+        <sheet usage="CE">
+			<description>Once per attack, you can choose to spend up to 5 cursed energy to add to the attack roll.</description>
+		</sheet>
+	</element>
+
+	<element name="Nuclear Shell" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_CANNON_NUCLEAR_SHELL">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CURSED_CANNON_NUCLEAR_SHELL</requirements>
+		<description>
+			<p>Once you reach 11th level, you have managed the peak of Granite Blast. As a Full Turn Action (Action + Bonus Action + Movement), you can charge up the blast for 4 cursed energy to release on your next turn as an action. After charging and releasing on your next turn, Granite Blast becomes a 150 ft cone, forcing creatures in it to make a Dexterity Save against your Cursed Energy DC, on a failure the creature takes your Granite Blast damage plus an additional amount of dice equal to your Cursed Energy modifier.</p>
+		</description>
+        <sheet action="Action + Bonus Action + Movement" usage="CE">
+			<description>You can charge Granite Blast for 4 cursed energy to release on your next turn as an action. After charging and releasing on your next turn, Granite Blast becomes a 150 ft cone, forcing creatures in it to make a Dexterity Save against your Cursed Energy DC. On a failure the creature takes your Granite Blast damage plus {{ce:modifier}} dice.</description>
+		</sheet>
+	</element>
+
+	<element name="Domain Expansion: Shooting Range" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_CANNON_DOMAIN_EXPANSION_SHOOTING_RANGE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CURSED_CANNON_DOMAIN_EXPANSION_SHOOTING_RANGE</requirements>
+		<description>
+			<p>Finally, at 18th level, you have honed your technique to the maximum, gaining your domain expansion. While inside it, at Initiative 20, you can choose up to three targets to suffer the full effects of Granite Blast.</p>
+		</description>
+        <sheet action="Action + Bonus Action + Movement" usage="CE">
+			<description>For 20 cursed energy, at Initiative 20 you can choose up to three targets to suffer the full effects of Granite Blast.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Granite Blast Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CURSED_CANNON_GRANITE_BLAST" />
+	<element name="Grape Shot Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CURSED_CANNON_GRAPE_SHOT" />
+	<element name="Guided Shell Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CURSED_CANNON_GUIDED_SHELL" />
+	<element name="Nuclear Shell Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CURSED_CANNON_NUCLEAR_SHELL" />
+	<element name="Domain Expansion: Shooting Range Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CURSED_CANNON_DOMAIN_EXPANSION_SHOOTING_RANGE" />
+</elements>
