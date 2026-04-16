@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="5.0.1">
+		<update version="5.0.2">
 			<file name="cursed-spiritmanipulation.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/cursed-spiritmanipulation.xml" />
 		</update>
 	</info>
@@ -50,7 +50,7 @@
                 <p> As a bonus action, you can command each cursed spirit to attack, use their cursed techniques, or do something more specific.</p>
                 <p> As a bonus action, you can unsummon any number of cursed spirits, provided they are within line of sight.</p>
                 <p> You can consume orbs without punishment if the creature consumed has a CR lower than {{level}}. Otherwise you must roll a DC 5 + the creature's CR Constitution Saving Throw - {{ce:modifier}}. On a success, you can absorb the creature and can use it after a short or long rest. On a failure you gain 2 levels of exhaustion and take xd12 Necrotic Damage, X being the creature's CR. You're also able to absorb other sorcerer's cursed spirits as long as you kill the master first.</p>
-                <p> You can have as many cursed spirits as you want, but for every 10 cursed spirits you consume, you must make a DC 20 Wisdom saving throw. On a failure, you gain a level of exhaustion, on a failure by 5 or more, you gain two exhaustion levels, and on a failure by 10 or more you gain three levels of exhaustion.</p>
+                <p> You can have as many cursed spirits as you want, but for every 20 cursed spirits you consume, you must make a DC 10 Wisdom saving throw. On a failure, you gain a level of exhaustion, on a failure by 5 or more, you gain two exhaustion levels, and on a failure by 10 or more you gain three levels of exhaustion.</p>
             </description>
 		</sheet>
 	</element>
