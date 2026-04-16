@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="5.0.1">
+		<update version="5.0.2">
 			<file name="deadly-sentencing.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/deadly-sentencing.xml" />
 		</update>
 	</info>
 
-	<element name="ARCHETYPE NAME" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_DEADLY_SENTENCING">
+	<element name="Deadly Sentencing" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_DEADLY_SENTENCING">
 		<supports>Innate Technique</supports>
 		<description>
 			<p>Objection!</p>
@@ -59,9 +59,11 @@
         </description>
 		<sheet action="Action + Bonus Action + Movement" usage="1/Long Rest or CE">
 			<description level="3">For 20 cursed energy, no offensive action can be taken by either party. The target must make a contested Persuasion check against you to prove their innocence. You gain a piece of Evidence determined by a d20 roll. If you succeed, they suffer the punishment based on your Evidence for 1 minute and the domain ends. On a confiscation the target loses their innate technique or any magic items they have. A creature without a technique loses their CE. On a dealth penalty your Judge's Gavel is replaced by the Executioner's Sword which instantly kills the accused on a hit. If you manage to convict a target with Confiscation or Death Penalty, you are not affected by Technique Burnout when your domain ends.</description>
-            <description level="18" usage="{{ce:modifier}}/Long Rest or CE">For 20 cursed energy, no offensive action can be taken by either party. The target must make a contested Persuasion check against you to prove their innocence. You gain a piece of Evidence determined by a d20 roll. If you succeed, they suffer the punishment based on your Evidence for 1 minute and the domain ends. On a confiscation the target loses their innate technique or any magic items they have. A creature without a technique loses their CE. On a dealth penalty your Judge's Gavel is replaced by the Executioner's Sword which instantly kills the accused on a hit. If you manage to convict a target with Confiscation or Death Penalty, you are not affected by Technique Burnout when your domain ends.</description>
+            <description level="18" usage="{{deadly:sentencing:use}}/Long Rest or CE">For 20 cursed energy, no offensive action can be taken by either party. The target must make a contested Persuasion check against you to prove their innocence. You gain a piece of Evidence determined by a d20 roll. If you succeed, they suffer the punishment based on your Evidence for 1 minute and the domain ends. On a confiscation the target loses their innate technique or any magic items they have. A creature without a technique loses their CE. On a dealth penalty your Judge's Gavel is replaced by the Executioner's Sword which instantly kills the accused on a hit. If you manage to convict a target with Confiscation or Death Penalty, you are not affected by Technique Burnout when your domain ends.</description>
         </sheet>
         <rules>
+			<stat name="deadly:sentencing:use" value="1" />
+			<stat name="deadly:sentencing:use" value="ce:modifier" />
             <grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_DEADLY_SENTENCING_ONE" />
             <grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_DEADLY_SENTENCING_TWO" />
             <grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_DEADLY_SENTENCING_TEN" />
