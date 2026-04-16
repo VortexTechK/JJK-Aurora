@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="5.0.1">
+			<file name="explosive-flesh.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/explosive-flesh.xml" />
+		</update>
+	</info>
+
+	<element name="Explosive Flesh" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_EXPLOSIVE_FLESH">
+		<supports>Innate Technique</supports>
+		<description>
+			<p>A devilishily explosive technique.</p>
+			<div element="ID_JJK_ARCHETYPE_FEATURE_EXPLOSIVE_FLESH_SELF_DESTRUCTION" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_EXPLOSIVE_FLESH_FASTER_THROWS" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_EXPLOSIVE_FLESH_GUERILLA TACTICS" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_EXPLOSIVE_FLESH_STRONGER_EXPLOSIONS" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_EXPLOSIVE_FLESH_DOMAIN_EXPANSION_TRUE_ART" />
+		</description>
+		<sheet display="false">
+			<description>You can make your body into a deadly bomb.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_EXPLOSIVE_FLESH_SELF_DESTRUCTION" level="1" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_EXPLOSIVE_FLESH_FASTER_THROWS" level="3" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_EXPLOSIVE_FLESH_GUERILLA TACTICS" level="6" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_EXPLOSIVE_FLESH_STRONGER_EXPLOSIONS" level="11" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_EXPLOSIVE_FLESH_DOMAIN_EXPANSION_TRUE_ART" level="18" />
+		</rules>
+	</element>
+
+	<element name="Self-Destruction" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_EXPLOSIVE_FLESH_SELF_DESTRUCTION">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_EXPLOSIVE_FLESH_SELF_DESTRUCTION</requirements>
+		<description>
+			<p>Starting at 1st level, you can make any part of you a deadly bomb. You spend cursed energy to remove and throw your body parts. You remove the part as described below. Throwing takes an action:</p>
+            <h5 class="caption">SELF-DESTRUCTION</h5>
+            <table>
+                <thead>
+                    <tr><td>Attack</td><td>Cost</td><td>Action</td><td>Effect</td></tr>
+                </thead>
+                <tr><td>Tiny(Tooth, Finger, Hair)</td><td>1 CE + Con mod HP</td><td>Free Action</td><td>You throw the body part at a point within 120ft. Creatures within 5 ft make a Dex save. On a failure, they take Xd6 force damage. On a success, they take half.</td></tr>
+                <tr><td>Small(Ears, Nose)</td><td>2 CE + (Con mod*half your level) HP</td><td>Bonus Action</td><td>You throw the body part at a point within 100ft. Creatures within 10 ft make a Dex save. On a failure, they take Xd8 force damage and are knocked prone. On a success they take half.</td></tr>
+                <tr><td>Medium(Hands, Feet)</td><td>4 CE + (Con mod*level) HP</td><td>Action</td><td>You throw the body part at a point within 80ft. Creatures within 15 ft make a Dex save. On a failure, they take Xd10 force damage and are knocked prone. On a success, they take half.</td></tr>
+                <tr><td>Large(Arms, Legs)</td><td>6 CE + (Con mod*level) HP</td><td>Full Turn Action</td><td>You throw the body part at a point within 60ft. Creatures within 20 ft make a Dex save. On a failure, they take Xd12 force damage and are knocked prone. On a success, they take half.</td></tr>
+            </table>
+            <p class="indent">After using a limb or body part in an explosion, it will be considered removed (Con mod is treated as min of 1).</p>
+            <p class="indent">The X is your CE modifier. Damage from this technique deals twice as much damage to objects and structures.</p>
+        </description>
+		<sheet>
+			<description>You can spend cursed energy to remove and throw your body parts.</description>
+		</sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_INTERNAL_FEATURE_REPLACEMENT_EXPLOSIVE_FLESH_SELF_DESTRUCTION_TINY" />
+            <grant type="Archetype Feature" id="ID_INTERNAL_FEATURE_REPLACEMENT_EXPLOSIVE_FLESH_SELF_DESTRUCTION_SMALL" />
+            <grant type="Archetype Feature" id="ID_INTERNAL_FEATURE_REPLACEMENT_EXPLOSIVE_FLESH_SELF_DESTRUCTION_MEDIUM" />
+            <grant type="Archetype Feature" id="ID_INTERNAL_FEATURE_REPLACEMENT_EXPLOSIVE_FLESH_SELF_DESTRUCTION_LARGE" />
+        </rules>
+	</element>
+    
+    <element name="Tiny(Tooth, Finger, Hair)" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_EXPLOSIVE_FLESH_SELF_DESTRUCTION_TINY">
+        <description>
+            <p>Cost: 1 CE + Con mod HP</p>
+            <p>Action: Free Action</p>
+            <p>Effect: You throw the body part at a point within 120ft. Creatures within 5 ft make a Dex save. On a failure, they take Xd6 force damage. On a success, they take half.</p>
+        </description>
+        <sheet action="Free Action" usage="CE">
+            <description>For 1 cursed energy + {{constitution:modifier}} HP, you throw the body part at a point within 120ft. Creatures within 5 ft make a Dex save. On a failure, they take Xd6 force damage. On a success, they take half.</description>
+        </sheet>
+    </element>
+
+    <element name="Small(Ears, Nose)" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_EXPLOSIVE_FLESH_SELF_DESTRUCTION_SMALL">
+        <description>
+            <p>Cost: 2 CE + (Con mod*half your level) HP</p>
+            <p>Action: Bonus Action</p>
+            <p>Effect: You throw the body part at a point within 100ft. Creatures within 10 ft make a Dex save. On a failure, they take Xd8 force damage and are knocked prone. On a success they take half.</p>
+        </description>
+        <sheet action="Bonus Action" usage="CE">
+            <description>For 2 cursed energy + ({{constitution:modifier}}*{{level:half}}) HP, you throw the body part at a point within 100ft. Creatures within 10 ft make a Dex save. On a failure, they take Xd8 force damage and are knocked prone. On a success they take half.</description>
+        </sheet>
+    </element>
+
+    <element name="Medium(Hands, Feet)" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_EXPLOSIVE_FLESH_SELF_DESTRUCTION_MEDIUM">
+        <description>
+            <p>Cost: 4 CE + (Con mod*level) HP</p>
+            <p>Action: Action</p>
+            <p>Effect: You throw the body part at a point within 80ft. Creatures within 15 ft make a Dex save. On a failure, they take Xd10 force damage and are knocked prone. On a success, they take half.</p>
+        </description>
+        <sheet action="Action" usage="CE">
+            <description>For 4 cursed energy + ({{constitution:modifier}}*{{level}}) HP, you throw the body part at a point within 80ft. Creatures within 15 ft make a Dex save. On a failure, they take Xd10 force damage and are knocked prone. On a success, they take half.</description>
+        </sheet>
+    </element>
+
+    <element name="Large(Arms, Legs)" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_EXPLOSIVE_FLESH_SELF_DESTRUCTION_LARGE">
+        <description>
+            <p>Cost: 6 CE + (Con mod*level) HP</p>
+            <p>Action: Full Turn Action</p>
+            <p>Effect: You throw the body part at a point within 60ft. Creatures within 20 ft make a Dex save. On a failure, they take Xd12 force damage and are knocked prone. On a success, they take half.</p>
+        </description>
+        <sheet action="Full Turn Action" usage="CE">
+            <description>For 6 cursed energy + ({{constitution:modifier}}*{{level}}) HP, you throw the body part at a point within 60ft. Creatures within 20 ft make a Dex save. On a failure, they take Xd12 force damage and are knocked prone. On a success, they take half.</description>
+        </sheet>
+    </element>
+
+	<element name="Faster Throws" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_EXPLOSIVE_FLESH_FASTER_THROWS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_EXPLOSIVE_FLESH_FASTER_THROWS</requirements>
+		<description>
+			<p>At 3rd level, you have gained more expertise over your technique, and can now throw your bombs faster. You can now throw a body part as an action or bonus action.</p>
+		</description>
+		<sheet>
+			<description>You can now throw a body part as an action or bonus action.</description>
+		</sheet>
+	</element>
+
+	<element name="Guerilla Tactics" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_EXPLOSIVE_FLESH_GUERILLA TACTICS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_EXPLOSIVE_FLESH_GUERILLA TACTICS</requirements>
+		<description>
+			<p>At 6th level, your practice with your explosions allowed you to make them in an instant. You can now instantly explode one of your body parts for the normal cost, as a reaction to receiving or hitting a melee attack roll as the body part explodes on your body. All creatures make the Dexterity saving throw with disadvantage unless their passive perception is higher than your cursed energy DC.</p>
+		</description>
+        <sheet action="Reaction" usage="CE">
+            <description>As a reaction to receiving or hitting a melee attack roll explode a body part for the normal cost. All creatures make the Dexterity saving throw with disadvantage unless their passive perception is higher than {{ce:dc:total}}.</description>
+        </sheet>
+	</element>
+
+	<element name="Stronger Explosions" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_EXPLOSIVE_FLESH_STRONGER_EXPLOSIONS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_EXPLOSIVE_FLESH_STRONGER_EXPLOSIONS</requirements>
+		<description>
+			<p> At 11th level, with the extensive use of your technique, your explosions became deadlier. When a creature fails the saving throw of your explosions, they gain the deafened condition for 1 minute. They can make a Constitution saving throw at the beginning of their turns, ending the condition early on a success. Also, your explosions deal three times as much damage to objects and structures and their explosion range is increased by 5ft.</p>
+            <p class="indent">At 18th level, the creature also gains the blinded condition.</p>
+        </description>
+        <sheet>
+			<description level="11">When a creature fails the saving throw of your explosions, they gain the deafened condition for 1 minute. They can make a Constitution saving throw at the beginning of their turns, ending the condition early on a success. Also, your explosions deal three times as much damage to objects and structures and their explosion range is increased by 5ft.</description>
+			<description level="18">When a creature fails the saving throw of your explosions, they gain the deafened and blinded conditions for 1 minute. They can make a Constitution saving throw at the beginning of their turns, ending the condition early on a success. Also, your explosions deal three times as much damage to objects and structures and their explosion range is increased by 5ft.</description>
+        </sheet>
+	</element>
+
+	<element name="Domain Expansion: True Art" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_EXPLOSIVE_FLESH_DOMAIN_EXPANSION_TRUE_ART">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_EXPLOSIVE_FLESH_DOMAIN_EXPANSION_TRUE_ART</requirements>
+		<description>
+			<p>At 18th level, you have mastered your technique, allowing you to expand your domain. You can detonate any of your body parts for no CE cost. At initiative 20, you can choose a limb from a creature inside your domain and detonate it.</p>
+		</description>
+        <sheet action="Action + Bonus Action + Movement" usage="CE">
+			<description>For 20 cursed energy, you can detonate any of your body parts for no CE cost. At initiative 20, you can choose a limb from a creature inside your domain and detonate it.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Self Destruction Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_EXPLOSIVE_FLESH_SELF_DESTRUCTION" />
+	<element name="Faster Throws Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_EXPLOSIVE_FLESH_FASTER_THROWS" />
+	<element name="Guerilla Tactics Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_EXPLOSIVE_FLESH_GUERILLA TACTICS" />
+	<element name="Stronger Explosions Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_EXPLOSIVE_FLESH_STRONGER_EXPLOSIONS" />
+	<element name="Domain Expansion: True Art Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_EXPLOSIVE_FLESH_DOMAIN_EXPANSION_TRUE_ART" />
+</elements>

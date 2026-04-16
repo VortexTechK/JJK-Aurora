@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="5.0.1">
+			<file name="earth-manipulation.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/earth-manipulation.xml" />
+		</update>
+	</info>
+
+	<element name="Earth Manipulation" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_EARTH_MANIPULATION">
+		<supports>Innate Technique</supports>
+		<description>
+			<p>Long ago, the clans lived in harmony. Then the Maki attacked.</p>
+			<div element="ID_JJK_ARCHETYPE_FEATURE_EARTH_MANIPULATION_EXCAVATION" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_EARTH_MANIPULATION_SCULPTED_EARTH" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_EARTH_MANIPULATION_WALL_OF_STONE" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_EARTH_MANIPULATION_STONE_ARMS" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_EARTH_MANIPULATION_DOMAIN_EXPANSION_TRICHILIOCOSM" />
+		</description>
+		<sheet display="false">
+			<description>A simple yet powerful technique to mold rock as you please.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_EARTH_MANIPULATION_EXCAVATION" level="1" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_EARTH_MANIPULATION_SCULPTED_EARTH" level="3" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_EARTH_MANIPULATION_WALL_OF_STONE" level="6" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_EARTH_MANIPULATION_STONE_ARMS" level="11" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_EARTH_MANIPULATION_DOMAIN_EXPANSION_TRICHILIOCOSM" level="18" />
+		</rules>
+	</element>
+
+	<element name="Excavation" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_EARTH_MANIPULATION_EXCAVATION">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_EARTH_MANIPULATION_EXCAVATION</requirements>
+		<description>
+			<p>Starting at 1st level, your technique allows you to mold stone using your cursed energy. As an action for 1 cursed energy, you can shape the stone around yourself to make a 5-foot cubes of stone within 30 feet. You can choose to create multiple stone cubes up to your CE modifier (the cubes must be connected) as part of the same action, spending 1 CE for each cube. Each cube has an AC equal to your cursed energy DC and hit points equal to 5 times your CE modifier.</p>
+            <p class="indent">You can move a creature using these cubes. When creating the cubes in a creature's area, you can attempt to move the target to a space within 5 feet. The creature must make a Dexterity saving throw, being pushed on a failure. If you create multiple stone cubes as part of the same action, a creature that fails the save is pushed to the end of the connected cubes.</p>
+        </description>
+		<sheet action="Action" usage="CE">
+			<description>For 1 cursed energy, you can shape the stone around yourself to make a 5-foot cubes of stone within 30 feet. You can choose to create up to {{ce:modifier}} multiple stone cubes (the cubes must be connected) as part of the same action, spending 1 CE for each cube. Each cube has an AC of {{ce:dc:total}} and {{earth:manipulation:excavation:hp}} hit points. When creating the cubes in a creature's area, you can attempt to move the target to a space within 5 feet. The creature must make a Dexterity saving throw, being pushed on a failure. If you create multiple stone cubes as part of the same action, a creature that fails the save is pushed to the end of the connected cubes.</description>
+		</sheet>
+        <rules>
+            <stat name="earth:manipulation:excavation:hp" value="ce:modifier" />
+            <stat name="earth:manipulation:excavation:hp" value="ce:modifier" />
+            <stat name="earth:manipulation:excavation:hp" value="ce:modifier" />
+            <stat name="earth:manipulation:excavation:hp" value="ce:modifier" />
+            <stat name="earth:manipulation:excavation:hp" value="ce:modifier" />
+        </rules>
+	</element>
+
+	<element name="Sculpted Earth" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_EARTH_MANIPULATION_SCULPTED_EARTH">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_EARTH_MANIPULATION_SCULPTED_EARTH</requirements>
+		<description>
+			<p>At 3rd level, you gain access to new ways to manipulate the earth around yourself.</p>
+            <p class="indent"><strong>Rock Blast.</strong> As an action, you can spend 1 CE to imbue your cursed energy into a rock and launch it at a target within 30 feet. You can use your CE modifier or Strength modifier for the attack and damage roll. On a hit, you deal 1d12 bludgeoning damage (you can spend 1 additional CE to instead deal necrotic damage). If you have the extra attack feature, you can replace one of your attacks this way.</p>
+            <p class="indent"><strong>Earthen Armor.</strong> As a bonus action, you can spend CE up to your proficiency bonus to protect yourself with earth. For 1 minute, you gain a bonus to your AC equal to the cursed energy spent.</p>
+            <p class="indent"><strong>Tremor.</strong> As an action, you can spend 3 cursed energy to strike the ground. Creatures in a 20-foot radius around yourself must make a Dexterity saving throw. On a failure, they take 3d10 bludgeoning damage and are knocked prone. On a success, they take half as much damage and are not prone. Structures automatically fail and take maximum damage. This increases to 4d10 at 6th level, 5d10 at 11th level, and 6d10 at 18th level.</p>
+        </description>
+		<sheet>
+			<description>You can use Rock Blast, Earthen Armor, and Tremor.</description>
+		</sheet>
+        <rules>
+            <grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_EARTH_MANIPULATION_ROCK_BLAST" />
+            <grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_EARTH_MANIPULATION_EARTHEN_ARMOR" />
+            <grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_EARTH_MANIPULATION_TREMOR" />
+        </rules>
+	</element>
+
+    <element name="Rock Blast" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_EARTH_MANIPULATION_ROCK_BLAST">
+		<description>
+			<p>As an action, you can spend 1 CE to imbue your cursed energy into a rock and launch it at a target within 30 feet. You can use your CE modifier or Strength modifier for the attack and damage roll. On a hit, you deal 1d12 bludgeoning damage (you can spend 1 additional CE to instead deal necrotic damage). If you have the extra attack feature, you can replace one of your attacks this way.</p>
+		</description>
+		<sheet action="Action" usage="CE">
+			<description>For 1 cursed energy, you launch a cursed energy imbued rock that does 1d12 bludgeoning damage. You can use your CE modifier or Strength modifier for the attack and damage rolls. You can spend 1 additional CE to instead deal necrotic damage. If you have the extra attack feature, you can replace one of your attacks this way.</description>
+		</sheet>
+	</element>
+
+	<element name="Earthen Armor" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_EARTH_MANIPULATION_EARTHEN_ARMOR">
+		<description>
+			<p>As a bonus action, you can spend CE up to your proficiency bonus to protect yourself with earth. For 1 minute, you gain a bonus to your AC equal to the cursed energy spent.</p>
+		</description>
+		<sheet action="Bonus Action" usage="CE">
+			<description>You can spend up to {{proficiency}} cursed energy to protect yourself with earth. For 1 minute, you gain a bonus to your AC equal to the cursed energy spent.</description>
+		</sheet>
+	</element>
+
+	<element name="Tremor" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_EARTH_MANIPULATION_TREMOR">
+		<description>
+			<p>As an action, you can spend 3 cursed energy to strike the ground. Creatures in a 20-foot radius around yourself must make a Dexterity saving throw. On a failure, they take 3d10 bludgeoning damage and are knocked prone. On a success, they take half as much damage and are not prone. Structures automatically fail and take maximum damage. This increases to 4d10 at 6th level, 5d10 at 11th level, and 6d10 at 18th level.</p>
+		</description>
+		<sheet action="Action" usage="CE">
+			<description>For 3 cursed energy, creatures in a 20-foot radius around yourself must make a Dexterity saving throw. On a failure, they take {{earth:manipulation:tremor:damage}}d10 bludgeoning damage and are knocked prone. On a success, they take half as much damage and are not prone. Structures automatically fail and take maximum damage.</description>
+		</sheet>
+        <rules>
+            <stat name="earth:manipulation:tremor:damage" value="3" level="3" bonus="tremor"/>
+            <stat name="earth:manipulation:tremor:damage" value="4" level="6" bonus="tremor"/>
+            <stat name="earth:manipulation:tremor:damage" value="5" level="11" bonus="tremor"/>
+            <stat name="earth:manipulation:tremor:damage" value="6" level="18" bonus="tremor"/>
+        </rules>
+	</element>
+
+	<element name="Wall of Stone" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_EARTH_MANIPULATION_WALL_OF_STONE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_EARTH_MANIPULATION_WALL_OF_STONE</requirements>
+		<description>
+			<p>At 6th level, you have learned to create large scale constructs. As an action for 4 cursed energy, you make a wall of stone. This wall is made of ten 10 foot by 10 foot panels that are 1 inch thick. Each panel must be touching at least one other panel. The wall has an AC equal to your cursed energy DC and a number of hit points equal to 10 times your CE modifier.</p>
+            <p class="indent">You can spend 1 CE as a bonus action to move connected panels within 60 feet of you up to 30 feet in a direction of your choice that is in contact with the ground. If this movement would move a creature, they must make a Dexterity saving throw or be pushed by the wall.</p>
+        </description>
+        <sheet action="Action" usage="CE">
+            <description>For 4 cursed energy, you make a wall of stone made of ten 10 foot by 10 foot panels that are 1 inch thick. Each panel must be touching at least one other panel. The wall has an AC of {{ce:dc:total}} and a {{earth:manipulation:wallofstone:hitpoints}} hit points. You can spend 1 CE as a bonus action to move connected panels within 60 feet of you up to 30 feet in a direction of your choice that is in contact with the ground. If this movement would move a creature, they must make a Dexterity saving throw or be pushed by the wall.</description>
+        </sheet>
+        <rules>
+            <stat name="earth:manipulation:wallofstone:hitpoints" value="ce:modifier" />
+            <stat name="earth:manipulation:wallofstone:hitpoints" value="ce:modifier" />
+            <stat name="earth:manipulation:wallofstone:hitpoints" value="ce:modifier" />
+            <stat name="earth:manipulation:wallofstone:hitpoints" value="ce:modifier" />
+            <stat name="earth:manipulation:wallofstone:hitpoints" value="ce:modifier" />
+            <stat name="earth:manipulation:wallofstone:hitpoints" value="ce:modifier" />
+            <stat name="earth:manipulation:wallofstone:hitpoints" value="ce:modifier" />
+            <stat name="earth:manipulation:wallofstone:hitpoints" value="ce:modifier" />
+            <stat name="earth:manipulation:wallofstone:hitpoints" value="ce:modifier" />
+            <stat name="earth:manipulation:wallofstone:hitpoints" value="ce:modifier" />
+        </rules>
+	</element>
+
+	<element name="Stone Arms" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_EARTH_MANIPULATION_STONE_ARMS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_EARTH_MANIPULATION_STONE_ARMS</requirements>
+		<description>
+			<p> At 11th level, you have learned a new way to use the stone you manipulate. You are now able to create two big arms that can catch a target. As an action for 5 cursed energy, you can force a target within 60 ft to make a Dexterity saving throw. On a failure, they are wedged between the arms taking 6d12 bludgeoning damage, and are restrained, becoming stuck between the hands until the start of your next turn. On a success, they are not restrained and take half damage.</p>
+            <p class="indent"> You can also choose to keep the hands active by spending 1 CE at the start of your turns. Every turn you have it active you can use an action to crush a creature restrained by your hands, forcing them to make a Strength saving throw. If they fail they take another 4d12 bludgeoning damage or half as much on a success. A creature can use their action to make an Athletics or Acrobatics check against your Cursed Energy DC, escaping on a success. While maintaining your stone arms, they have AC 18 and HP equal to your maximum hit points and you must maintain concentration.</p>
+        </description>
+        <sheet>
+			<description> For 5 cursed energy, you can force a target within 60 ft to make a Dexterity saving throw. On a failure, they are wedged between two arms taking 6d12 bludgeoning damage, and are restrained until the start of your next turn. On a success, they are not restrained and take half damage. You can keep the hands active by spending 1 CE at the start of your turns. Every turn you have it active you can use an action to crush a creature restrained by your hands, forcing them to make a Strength saving throw. If they fail they take another 4d12 bludgeoning damage or half as much on a success. A creature can use their action to make an Athletics or Acrobatics check against your Cursed Energy DC, escaping on a success. While maintaining your stone arms, they have AC 18 and {hp} HP and you must maintain concentration.</description>
+		</sheet>
+	</element>
+
+	<element name="Domain Expansion: Trichiliocosm" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_EARTH_MANIPULATION_DOMAIN_EXPANSION_TRICHILIOCOSM">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_EARTH_MANIPULATION_DOMAIN_EXPANSION_TRICHILIOCOSM</requirements>
+		<description>
+			<p>At 18th level you have learned to expand your domain. At initiative 20, all creatures of your choice within your domain take 6d12 bludgeoning damage and are restrained by shifting stone until the start of their next turn. You can spend an action to change the environment of your domain.</p>
+            <ul>
+                <li>You can create a large 20 ft radius, 1d10 x 10 feet deep chasm causing creatures to fall and take falling damage. </li>
+                <li>You can create a 100 ft tall tower of stone (as if casting Galdur's Tower with 10 stories).</li>
+                <li>You can create 100 ft of difficult terrain in an area you can see. A creature that moves through this area takes 2d4 piercing damage for every 5 feet moved.</li>
+            </ul>
+        </description>
+        <sheet action="Action + Bonus Action + Movement" usage="CE">
+			<description>For 20 cursed energy, at initiative 20, all creatures of your choice within your domain take 6d12 bludgeoning damage and are restrained until the start of their next turn. You can spend an action to change the environment of your domain into a large 20 ft radius, 1d10 x 10 feet deep chasm causing creatures to fall and take falling damage, a 100 ft tall tower of stone, or a 100 ft area of difficult terrain that causes 2d4 piercing damage for every 5 feet moved.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Excavation Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_EARTH_MANIPULATION_EXCAVATION" />
+	<element name="Sculpted Earth Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_EARTH_MANIPULATION_SCULPTED_EARTH" />
+	<element name="Wall of Stone Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_EARTH_MANIPULATION_WALL_OF_STONE" />
+	<element name="Stone Arms Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_EARTH_MANIPULATION_STONE_ARMS" />
+	<element name="Domain Expansion: Trichiliocosm Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_EARTH_MANIPULATION_DOMAIN_EXPANSION_TRICHILIOCOSM" />
+</elements>

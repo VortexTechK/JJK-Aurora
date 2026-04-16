@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="5.0.1">
+			<file name="divergent-fist.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/divergent-fist.xml" />
+		</update>
+	</info>
+
+	<element name="ARCHETYPE NAME" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_DIVERGENT_FIST">
+		<supports>Innate Technique</supports>
+		<description>
+			<p>Punch kick merchant.</p>
+			<div element="ID_JJK_ARCHETYPE_FEATURE_DIVERGENT_FIST_DIVERGENT_FLOW" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_DIVERGENT_FIST_MARTIAL_PROWESS" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_DIVERGENT_FIST_EXTREME_DIVERGENT_FLOW" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_DIVERGENT_FIST_STANCE_OF_THE_SPARKS" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_DIVERGENT_FIST_CHOSEN_BY_THE_SPARKS" />
+		</description>
+		<sheet display="false">
+			<description>A learnt technique using cursed energy manipulation created accidentally due to slow cursed energy, turns out to be effective. </description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_DIVERGENT_FIST_DIVERGENT_FLOW" level="1" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_DIVERGENT_FIST_MARTIAL_PROWESS" level="3" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_DIVERGENT_FIST_EXTREME_DIVERGENT_FLOW" level="6" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_DIVERGENT_FIST_STANCE_OF_THE_SPARKS" level="11" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_DIVERGENT_FIST_CHOSEN_BY_THE_SPARKS" level="18" />
+		</rules>
+	</element>
+
+	<element name="Divergent Flow" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DIVERGENT_FIST_DIVERGENT_FLOW">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DIVERGENT_FIST_DIVERGENT_FLOW</requirements>
+		<description>
+			<p>At 1st level, once per turn, you can choose the damage of one of your unarmed strikes or weapon attacks. For 1 cursed energy, you can cause the creature to take that attack's damage in necrotic damage at the beginning of their turn. These strikes can't be black flashes.</p>
+		</description>
+		<sheet usage="CE">
+			<description level="1">For 1 cursed energy, once per turn you can cause a creature to take damage of one of your unarmed strikes or weapon attacks in necrotic damage at the beginning of their turn. These strikes can't be black flashes.</description>
+			<description level="6">For 1 cursed energy, twice per turn you can cause a creature to take damage of one of your unarmed strikes or weapon attacks in necrotic damage at the beginning of their turn. These strikes can't be black flashes.</description>
+        </sheet>
+	</element>
+
+	<element name="Martial Prowess" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DIVERGENT_FIST_MARTIAL_PROWESS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DIVERGENT_FIST_MARTIAL_PROWESS</requirements>
+		<description>
+			<p>At 3rd level, your lack of an innate technique has caused you to make up for it with pure martial prowess. Once per round, you can use one of the following abilities:</p>
+            <ul>
+                <li><strong>Manji Kick:</strong> As part of an unarmed strike, drop your knees and rotate your body down to give a massive kick in your opponent's face. On a hit, the opponent must make a Constitution saving throw (DC 8 + your proficiency bonus + your Strength or Dexterity modifier). On a failure, the creature will be stunned until the beginning of their next turn and take twice as much damage.</li>
+                <li><strong>One-Two:</strong> As a bonus action, you land a massive One-Two combo. Make two unarmed attacks. The first damage roll doesn't add your ability modifier, but on a hit the second gains advantage. The second attack adds three times your Strength or Dexterity modifier to the damage roll if both attacks hit.</li>
+                <li><strong>Weave:</strong> As a reaction, you enter a defensive stance. You take the dodge action using a reaction instead.</li>
+            </ul>
+        </description>
+		<sheet>
+			<description>Once per round, you can use Manji Kick, One-Two, or Weave.</description>
+		</sheet>
+	</element>
+
+    <element name="Manji Kick" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DIVERGENT_FIST_MANJI_KICK">
+		<description>
+			<p>As part of an unarmed strike, drop your knees and rotate your body down to give a massive kick in your opponent's face. On a hit, the opponent must make a Constitution saving throw (DC 8 + your proficiency bonus + your Strength or Dexterity modifier). On a failure, the creature will be stunned until the beginning of their next turn and take twice as much damage.</p>
+        </description>
+		<sheet>
+			<description>As part of an unarmed strike hit, the opponent must make a Constitution saving throw DC {{divergent:fist:manjikick:dc}}. On a failure, the creature is stunned until the beginning of their next turn and takes twice as much damage.</description>
+		</sheet>
+        <rules>
+            <stat name="divergent:fist:manjikick:mod" value="strength:modifier" bonus="manji kick" />
+            <stat name="divergent:fist:manjikick:mod" value="dexterity:modifier" bonus="manji kick" />
+            <stat name="divergent:fist:manjikick:dc" value="8" />
+            <stat name="divergent:fist:manjikick:dc" value="proficiency" />
+            <stat name="divergent:fist:manjikick:dc" value="divergent:fist:manjikick:mod" />
+        </rules>
+	</element>
+
+    <element name="One-Two" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DIVERGENT_FIST_ONE_TWO">
+		<description>
+			<p>As a bonus action, you land a massive One-Two combo. Make two unarmed attacks. The first damage roll doesn't add your ability modifier, but on a hit the second gains advantage. The second attack adds three times your Strength or Dexterity modifier to the damage roll if both attacks hit.</p>
+        </description>
+		<sheet action="Bonus Action">
+			<description>Make two unarmed attacks. The first damage roll doesn't add your ability modifier, but on a hit the second gains advantage. The second attack adds {{divergent:fist:onetwo:add}} to the damage roll if both attacks hit.</description>
+        </sheet>
+        <rules>
+            <stat name="divergent:fist:onetwo:mod" value="strength:modifier" bonus="onetwo" />
+            <stat name="divergent:fist:onetwo:mod" value="dexterity:modifier" bonus="onetwo" />
+            <stat name="divergent:fist:onetwo:add" value="divergent:fist:onetwo:mod" />
+            <stat name="divergent:fist:onetwo:add" value="divergent:fist:onetwo:mod" />
+            <stat name="divergent:fist:onetwo:add" value="divergent:fist:onetwo:mod" />
+        </rules>          
+		</sheet>
+	</element>
+
+    <element name="Weave" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DIVERGENT_FIST_WEAVE">
+        <description>
+            <p>As a reaction, you enter a defensive stance. You take the dodge action using a reaction instead.</p>
+        </description>
+        <sheet action="Reaction">
+            <description>You take the dodge action.</description>
+        </sheet>
+    </element>
+
+	<element name="Extreme Divergent Flow" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DIVERGENT_FIST_EXTREME_DIVERGENT_FLOW">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DIVERGENT_FIST_EXTREME_DIVERGENT_FLOW</requirements>
+		<description>
+			<p>Once you reach 6th level, you have gained better manipulation over your divergent fist attack. You can now use Divergent Flow on two separate attacks on your turn. When a creature is damaged by your Divergent Flow, they must make a Constitution saving throw. On a failure they become disoriented. Their next attack is made at disadvantage or creatures have advantage on the next saving throw forced by that creature.</p>
+		</description>
+        <sheet>
+            <description>When a creature is damaged by your Divergent Flow, they must make a Constitution saving throw. On a failure they their next attack is made at disadvantage or creatures have advantage on the next saving throw forced by that creature.</description>
+        </sheet>
+	</element>
+
+	<element name="Stance of the Sparks" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DIVERGENT_FIST_STANCE_OF_THE_SPARKS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DIVERGENT_FIST_STANCE_OF_THE_SPARKS</requirements>
+		<description>
+			<p>Starting at 11th level, as an action, crouch, placing your fist over your palm. While in this stance, your movement is 0 and you can only make one attack on your following turn. This attack allows you to roll for a black flash, even if the attack is not a critical hit. You make all rolls for a black flash at advantage.</p>
+		</description>
+        <sheet action="Action">
+			<description>Enter a stance where your movement is 0 and you can only make one attack on your following turn. This attack allows you to roll for a black flash, even if the attack is not a critical hit. You make all rolls for a black flash at advantage.</description>
+		</sheet>
+	</element>
+
+	<element name="Chosen by the Sparks" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DIVERGENT_FIST_CHOSEN_BY_THE_SPARKS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DIVERGENT_FIST_CHOSEN_BY_THE_SPARKS</requirements>
+		<description>
+			<p>Finally, at 18th level, you no longer need to roll for a black flash after a critical hit or using Stance of Sparks, you always hit a black flash.</p>
+		</description>
+        <sheet>
+			<description>You always hit a black flash after a critical hit or using Stance of Sparks.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Divergent Flow Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DIVERGENT_FIST_DIVERGENT_FLOW" />
+	<element name="Martial Prowess Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DIVERGENT_FIST_MARTIAL_PROWESS" />
+	<element name="Extreme Divergent Flow Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DIVERGENT_FIST_EXTREME_DIVERGENT_FLOW" />
+	<element name="Stance of the Sparks Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DIVERGENT_FIST_STANCE_OF_THE_SPARKS" />
+	<element name="Chosen by the Sparks Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DIVERGENT_FIST_CHOSEN_BY_THE_SPARKS" />
+</elements>

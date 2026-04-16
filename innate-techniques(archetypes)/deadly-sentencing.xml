@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="5.0.1">
+			<file name="deadly-sentencing.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/deadly-sentencing.xml" />
+		</update>
+	</info>
+
+	<element name="ARCHETYPE NAME" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_DEADLY_SENTENCING">
+		<supports>Innate Technique</supports>
+		<description>
+			<p>Objection!</p>
+			<div element="ID_JJK_ARCHETYPE_FEATURE_DEADLY_SENTENCING_JUDGES_GAVEL" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_DEADLY_SENTENCING_DOMAIN_EXPANSION_DEADLY_SENTENCING" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_DEADLY_SENTENCING_GAVEL_IMPROVEMENTS" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_DEADLY_SENTENCING_BETTER_EVIDENCE" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_DEADLY_SENTENCING_UNSTOPPING_JUSTICE" />
+		</description>
+		<sheet display="false">
+			<description>The technique you have is made for one purpose, justice.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_DEADLY_SENTENCING_JUDGES_GAVEL" level="1" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_DEADLY_SENTENCING_DOMAIN_EXPANSION_DEADLY_SENTENCING" level="3" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_DEADLY_SENTENCING_GAVEL_IMPROVEMENTS" level="6" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_DEADLY_SENTENCING_BETTER_EVIDENCE" level="11" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_DEADLY_SENTENCING_UNSTOPPING_JUSTICE" level="18" />
+		</rules>
+	</element>
+
+	<element name="Judge's Gavel" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DEADLY_SENTENCING_JUDGES_GAVEL">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DEADLY_SENTENCING_JUDGES_GAVEL</requirements>
+		<description>
+			<p>At 1st level, once per long rest, you can summon a magical gavel for free once per long rest. Otherwise, you can spend 1 Cursed Energy to resummon it to your hand. This weapon has 3 forms: a base form a light hammer, maul, and pole hammer (Reach, d10).</p>
+		</description>
+		<sheet usage="1/Long Rest or CE">
+			<description>For one cursed energy, you can summon a magical gavel.This weapon has 3 forms: light hammer, maul, and pole hammer (Reach, d10).</description>
+		</sheet>
+	</element>
+
+	<element name="Domain Expansion: Deadly Sentencing" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DEADLY_SENTENCING_DOMAIN_EXPANSION_DEADLY_SENTENCING">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DEADLY_SENTENCING_DOMAIN_EXPANSION_DEADLY_SENTENCING</requirements>
+		<description>
+			<p>Beginning at 3rd level, your will lets you expand your domain for free once per long rest. Within the domain, no offensive action can be taken by either party. The target must make a contested Persuasion check against you to prove their innocence. You gain a piece of Evidence determined by a d20 roll. If you succeed, they suffer the punishment based on your Evidence for 1 minute and the domain ends.</p>
+            <h5 class="caption">TRIAL REQUIREMENTS</h5>
+			<table>
+				<thead>
+					<tr><td>Roll</td><td>Evidence</td></tr>
+				</thead>
+				<tr><td>1</td><td><strong>Innocent:</strong> The person is innocent but accused of a heinous crime which is easily excusable. You fail unless the defendant admits to it for some reason, if so a dependent punishment can apply.</td></tr>
+        		<tr><td>2-9</td><td><strong>Guilty:</strong> The person is guilty of a small crime with minimum evidence, your roll is normal. <em>Confiscation</em></td></tr>
+				<tr><td>10-15</td><td><strong>Very Guilty:</strong> The person is guilty of a crime, and you have good evidence, your roll is at advantage. <em>Confiscation</em></td></tr>
+				<tr><td>16-19</td><td><strong>Severly Guilty:</strong> The person is guilty of a severe crime, and you have decent evidence. <em>Death Penalty</em></td></tr>
+				<tr><td>20</td><td><strong>Unforgivably Guilty:</strong> The person is guilty beyond a doubt of an unforgivable sin, you instantly succeed. <em>Death Penalty, Confiscation</em></td></tr>
+			</table>
+            <p class="indent"><strong>Confiscation:</strong> The target loses either their innate technique or any magic items they have. A creature without a technique loses their CE.</p>
+            <p class="indent"><strong>Death Penalty:</strong> Your Judge's Gavel is replaced by the Executioner's Sword which instantly kills the accused on a hit.</p>
+            <p class="indent">Your DM may impose bonuses or penalties to Evidence rolls if fitting. Your domain is Non-Lethal and instead of a guaranteed hit, gains the benefits of Peace Treaty as listed in Non-Lethal Domains. If you manage to convict a target with Confiscation or Death Penalty, you are not affected by Technique Burnout when your domain ends.</p>
+        </description>
+		<sheet action="Action + Bonus Action + Movement" usage="1/Long Rest or CE">
+			<description level="3">For 20 cursed energy, no offensive action can be taken by either party. The target must make a contested Persuasion check against you to prove their innocence. You gain a piece of Evidence determined by a d20 roll. If you succeed, they suffer the punishment based on your Evidence for 1 minute and the domain ends. On a confiscation the target loses their innate technique or any magic items they have. A creature without a technique loses their CE. On a dealth penalty your Judge's Gavel is replaced by the Executioner's Sword which instantly kills the accused on a hit. If you manage to convict a target with Confiscation or Death Penalty, you are not affected by Technique Burnout when your domain ends.</description>
+            <description level="18" usage="{{ce:modifier}}/Long Rest or CE">For 20 cursed energy, no offensive action can be taken by either party. The target must make a contested Persuasion check against you to prove their innocence. You gain a piece of Evidence determined by a d20 roll. If you succeed, they suffer the punishment based on your Evidence for 1 minute and the domain ends. On a confiscation the target loses their innate technique or any magic items they have. A creature without a technique loses their CE. On a dealth penalty your Judge's Gavel is replaced by the Executioner's Sword which instantly kills the accused on a hit. If you manage to convict a target with Confiscation or Death Penalty, you are not affected by Technique Burnout when your domain ends.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_DEADLY_SENTENCING_ONE" />
+            <grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_DEADLY_SENTENCING_TWO" />
+            <grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_DEADLY_SENTENCING_TEN" />
+            <grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_DEADLY_SENTENCING_SIXTEEN" />
+            <grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_DEADLY_SENTENCING_TWENTY" />
+        </rules>
+	</element>
+
+    <element name="Roll:1" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DEADLY_SENTENCING_ONE">
+        <description>
+            <p><strong>Innocent:</strong> The person is innocent but accused of a heinous crime which is easily excusable. You fail unless the defendant admits to it for some reason, if so a dependent punishment can apply.</p>
+        </description>
+        <sheet>
+            <description><strong>Innocent:</strong> The person is innocent but accused of a heinous crime which is easily excusable. You fail unless the defendant admits to it for some reason, if so a dependent punishment can apply.</description>
+        </sheet>
+    </element>
+
+    <element name="Roll:2-5" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DEADLY_SENTENCING_TWO">
+        <description>
+            <p><strong>Guilty:</strong> The person is guilty of a small crime with minimum evidence, your roll is normal. <em>Confiscation</em></p>
+        </description>
+        <sheet>
+            <description><strong>Guilty:</strong> The person is guilty of a small crime with minimum evidence, your roll is normal. <em>Confiscation</em></description>
+        </sheet>
+    </element>
+
+    <element name="Roll:10-15" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DEADLY_SENTENCING_TEN">
+        <description>
+            <p><strong>Very Guilty:</strong> The person is guilty of a crime, and you have good evidence, your roll is at advantage. <em>Confiscation</em></p>
+        </description>
+        <sheet>
+            <description><strong>Very Guilty:</strong> The person is guilty of a crime, and you have good evidence, your roll is at advantage. <em>Confiscation</em></description>
+        </sheet>
+    </element>
+
+    <element name="Roll:16-19" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DEADLY_SENTENCING_SIXTEEN">
+        <description>
+            <p><strong>Severely Guilty:</strong> The person is guilty of a severe crime, and you have decent evidence. <em>Death Penalty</em></p>
+        </description>
+        <sheet>
+            <description><strong>Severly Guilty:</strong> The person is guilty of a severe crime, and you have decent evidence. <em>Death Penalty</em></description>
+        </sheet>
+    </element>
+
+    <element name="Roll:20" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DEADLY_SENTENCING_TWENTY">
+        <description>
+            <p><strong>Unforgivably Guilty:</strong> The person is guilty beyond a doubt of an unforgivable sin, you instantly succeed. <em>Death Penalty, Confiscation</em></p>
+        </description>
+        <sheet>
+            <description><strong>Unforgivably Guilty:</strong> The person is guilty beyond a doubt of an unforgivable sin, you instantly succeed. <em>Death Penalty, Confiscation</em></description>
+        </sheet>
+    </element>
+
+	<element name="Gavel Improvements" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DEADLY_SENTENCING_GAVEL_IMPROVEMENTS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DEADLY_SENTENCING_GAVEL_IMPROVEMENTS</requirements>
+		<description>
+			<p>Starting at 6th level, your mastery over Judge's Gavel has improved. You can now re-summon your gavel as a free action. You can also spend 2 CE to increase the size of the gavel for 1 minute. The damage dice increase by one tier (d8-d10-d12-2d8). As an action, you can swing the enlarged gavel down on a 10 feet diameter square within 5 feet of you, forcing creatures within range to make a Dexterity saving throw or take twice your gavel's damage.</p>
+		</description>
+        <sheet usage="CE">
+            <description>You can now re-summon your gavel as a free action. For 2 cursed energy, increase the size of the gavel for 1 minute. The damage dice increase by one tier. As an action, you can swing the enlarged gavel down on a 10 feet diameter square within 5 feet of you, forcing creatures within range to make a Dexterity saving throw or take twice your gavel's damage.</description>
+        </sheet>
+	</element>
+
+	<element name="Better Evidence" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DEADLY_SENTENCING_BETTER_EVIDENCE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DEADLY_SENTENCING_BETTER_EVIDENCE</requirements>
+		<description>
+			<p>At 11th level, when rolling for evidence you can roll two dice and pick the one you find more beneficial. This becomes 3 at 18th level.</p>
+		</description>
+        <sheet>
+			<description level="11">When rolling for evidence you can roll two dice and pick the one you find more beneficial.</description>
+            <description level="18">When rolling for evidence you can roll three dice and pick the one you find more beneficial.</description>
+        </sheet>
+	</element>
+
+	<element name="Unstoppable Justice" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DEADLY_SENTENCING_UNSTOPPING_JUSTICE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DEADLY_SENTENCING_UNSTOPPING_JUSTICE</requirements>
+		<description>
+			<p>Finally, at 18th level, you have reached the peak of your technique, showing off to others that only with skill you can truly win. You can now use Deadly Sentencing a number of times equal to your CE modifier without spending Cursed Energy each long rest. </p>
+		</description>
+        <sheet display="false"/>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Judge's Gavel Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DEADLY_SENTENCING_JUDGES_GAVEL" />
+	<element name="Domain Expansion: Deadly Sentencing Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DEADLY_SENTENCING_DOMAIN_EXPANSION_DEADLY_SENTENCING" />
+	<element name="Gavel Improvements Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DEADLY_SENTENCING_GAVEL_IMPROVEMENTS" />
+	<element name="Better Evidence Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DEADLY_SENTENCING_BETTER_EVIDENCE" />
+	<element name="Unstoppable Justice Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DEADLY_SENTENCING_UNSTOPPING_JUSTICE" />
+</elements>

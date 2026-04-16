@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="5.0.1">
+			<file name="heart-catch.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/heart-catch.xml" />
+		</update>
+	</info>
+
+	<element name="Heart Catch" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_HEART_CATCH">
+		<supports>Innate Technique</supports>
+		<description>
+			<p>Gay?</p>
+			<div element="ID_JJK_ARCHETYPE_FEATURE_HEART_CATCH_HANDS_OF_LOVE" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_HEART_CATCH_HANDY" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_HEART_CATCH_HAND_SHIELD" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_HEART_CATCH_CUTIE_HONEY" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_HEART_CATCH_DOMAIN_EXPANSION_LOVERS_GRASP" />
+		</description>
+		<sheet display="false">
+			<description>A simple yet effective technique, powered by the heart.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_HEART_CATCH_HANDS_OF_LOVE" level="1" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_HEART_CATCH_HANDY" level="3" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_HEART_CATCH_HAND_SHIELD" level="6" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_HEART_CATCH_CUTIE_HONEY" level="11" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_HEART_CATCH_DOMAIN_EXPANSION_LOVERS_GRASP" level="18" />
+		</rules>
+	</element>
+
+	<element name="Hands of Love" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_HEART_CATCH_HANDS_OF_LOVE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_HEART_CATCH_HANDS_OF_LOVE</requirements>
+		<description>
+			<p>Starting at 1st level, you create a pair of translucent hands as a bonus action for 1 Cursed Energy. These hands stay within 15 ft of you and each count as medium constructs. You can replace any attacks you make on your turn with an attack from your Love Hands. These hands deal your unarmed damage, and have advantage on grappling and shoving. The hands have an AC equal to your Cursed Energy save DC, HP equal to twice your cursed energy score and you take 1/10th of damage they take. This increases to three times your cursed energy score at 6th level and four times at 11th level.</p>
+		</description>
+		<sheet action="Bonus Action" usage="CE">
+			<description level="1">For 1 cursed energy, create a pair of translucent hands that stay within 15 ft of you and count as medium constructs. You can replace any attacks you make on your turn with an attack from your Love Hands. These hands deal your unarmed damage, and have advantage on grappling and shoving. The hands have an AC of {{heart:catch:hands:dc}}, {{heart:catch:hands:hp}} HP, and you take 1/10th of damage they take.</description>
+            <description level="3">For 1 cursed energy, create a pair of translucent hands that stay within 30 ft of you and count as medium constructs. You can replace any attacks you make on your turn with an attack from your Love Hands. These hands deal your unarmed damage, and have advantage on grappling and shoving. The hands have an AC of {{heart:catch:hands:dc}}, {{heart:catch:hands:hp}} HP, and you take 1/10th of damage they take.</description>
+		</sheet>
+        <rules>
+            <stat name="heart:catch:hands:hp" value="cu:stat" />
+            <stat name="heart:catch:hands:hp" value="cu:stat" />
+            <stat name="heart:catch:hands:hp" value="cu:stat" level="6" />
+            <stat name="heart:catch:hands:hp" value="cu:stat" level="11" />
+            <stat name="heart:catch:hands:dc" value="ce:dc:total" />
+            <stat name="heart:catch:hands:dc" value="proficiency" level="3" />
+        </rules>
+	</element>
+
+	<element name="Handy" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_HEART_CATCH_HANDY">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_HEART_CATCH_HANDY</requirements>
+		<description>
+			<p>At 3rd level, your love hands improve. Your hands gain the following benefits:</p>
+            <ul>
+                <li>Your hands AC increase by your proficiency bonus.</li>
+                <li>Your hands gain a damage bonus equal to your CE modifier.</li>
+                <li>The range of your hands increases to a total of 30 feet.</li>
+                <li>Grappled creatures are also restrained.</li>
+                <li>You can use cursed feats and abilities using your hands.</li>
+            </ul>
+		</description>
+		<sheet>
+			<description>Your hands deal {{ce:modifier}} more damage, restrain creatures while grappling, and can be used to use cursed feats and abilities.</description>
+		</sheet>
+	</element>
+
+	<element name="Feature Name" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_HEART_CATCH_HAND_SHIELD">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_HEART_CATCH_HAND_SHIELD</requirements>
+		<description>
+			<p>Beginning at 6th level, you can use your Love Hands to guard a creature within 5 ft of both hands, granting them three quarters cover. Alternatively, you can have each hand guard a different target to grant them half cover.</p>
+		</description>
+        <sheet>
+            <description>You can use your Love Hands to guard a creature within 5 ft of both hands, granting them three quarters cover or have each hand guard a different target to grant them half cover.</description>
+        </sheet>
+	</element>
+
+	<element name="Cutie Honey" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_HEART_CATCH_CUTIE_HONEY">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_HEART_CATCH_CUTIE_HONEY</requirements>
+		<description>
+			<p>Starting at 11th level, on a hit you can spend 5 Cursed Energy to force a creature you hit with a melee attack to become Charmed. A creature charmed in this way can only target you with attacks and harmful effects for 1 minute and must make a Wisdom save at the start of their turn to end the condition.</p>
+		</description>
+        <sheet>
+			<description usage="CE">On a hit you can spend 5 cursed energy to charm the hit creature. A creature charmed in this way can only target you with attacks and harmful effects for 1 minute and can make a Wisdom save at the start of their turn to end the condition.</description>
+		</sheet>
+	</element>
+
+	<element name="Domain Expansion: Lover's Grasp" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_HEART_CATCH_DOMAIN_EXPANSION_LOVERS_GRASP">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_HEART_CATCH_DOMAIN_EXPANSION_LOVERS_GRASP</requirements>
+		<description>
+			<p>At 18th level, you have learned the true meaning of love. At initiative 20 all creatures in the Domain are restrained and charmed until the end of their next turn. Additionally, your Love Hands automatically hit all attack rolls and creatures automatically fail grapple and shove checks as well as saving throws made by the hands.</p>
+		</description>
+        <sheet action="Action + Bonus Action + Movement" usage="CE">
+			<description>For 20 cursed energy, at initiative 20 all creatures in the Domain are restrained and charmed until the end of their next turn. Additionally, your Love Hands automatically hit all attack rolls and creatures automatically fail grapple and shove checks as well as saving throws made by the hands.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Hands of Love Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_HEART_CATCH_HANDS_OF_LOVE" />
+	<element name="Handy Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_HEART_CATCH_HANDY" />
+	<element name="Hand Shield Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_HEART_CATCH_HAND_SHIELD" />
+	<element name="Cutie Honey Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_HEART_CATCH_CUTIE_HONEY" />
+	<element name="Domain Expansion: Lover's Grasp Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_HEART_CATCH_DOMAIN_EXPANSION_LOVERS_GRASP" />
+</elements>
