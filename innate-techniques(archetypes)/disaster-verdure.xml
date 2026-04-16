@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="5.0.1">
+		<update version="5.0.2">
 			<file name="disaster-verdure.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/disaster-verdure.xml" />
 		</update>
 	</info>
@@ -39,7 +39,7 @@
             </ul>
         </description>
 		<sheet>
-			<description>You can cast Druidcraft at will and gain the following cursed techniques:</description>
+			<description>You can cast Druidcraft at will.</description>
 		</sheet>
         <rules>
             <grant type="Spell" id="ID_PHB_SPELL_DRUIDCRAFT" />
