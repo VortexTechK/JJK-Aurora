@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="5.0.1">
+		<update version="5.0.2">
 			<file name="disaster-flames.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/disaster-flames.xml" />
 		</update>
 	</info>
@@ -70,7 +70,7 @@
             <description>For 5 cursed energy, you can create 1 Ember Insects Swarm within 5 ft of you. These shikigami act immediately after your turn.</description>
         </sheet>
 		<rules>
-			<select type="Companion" id="ID_JJK_COMPANION_SWARM_OF_EMBER_INSECTS" />
+			<select type="Companion" name="Ember Insects" supports="Swarm of Ember Insects" />
 		</rules>
 	</element>
 
