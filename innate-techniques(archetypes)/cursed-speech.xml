@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="5.0.1">
+		<update version="5.0.2">
 			<file name="cursed-speech.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/cursed-speech.xml" />
 		</update>
 	</info>
@@ -50,12 +50,22 @@
             <description level="6">Your vocal cords have {{hp}}/2 (rounded up) hit points. You are unable to speak unless in terms of whatever meaningless concept you choose. For every Cursed Energy you spend in a cursed word, your vocal cords lose one hit point. Your vocal cords hit points all come back in a short or long rest. If your vocal chords reach 0 hit points, you won't be able to regain the hit points unless you receive hit points from Reverse Cursed Technique or take a long rest. If you have 0 hit points you cannot use your cursed words, and will always be under one level of exhaustion. Your vocal cords will regain 1 hit point at the beginning of your turns unless they are at 0 hit points. Any kind of hit point gain you receive affects your vocal cords' hit points.</description>
         </sheet>
         <rules>
-            <stat name="cursed:speech:add" value="0" level="1" bonus="cursed speech"/>
-            <stat name="cursed:speech:add" value="1" level="3" bonus="cursed speech"/>
-            <stat name="cursed:speech:add" value="2" level="6" bonus="cursed speech"/>
-            <stat name="cursed:speech:add" value="3" level="11" bonus="cursed speech"/>
-            <stat name="cursed:speech:add" value="4" level="18" bonus="cursed speech"/>
-        </rules>
+            <stat name="cursed:speech:add" value="0" level="1" bonus="cursed speech" />
+            <stat name="cursed:speech:add" value="1" level="3" bonus="cursed speech" />
+            <stat name="cursed:speech:add" value="2" level="6" bonus="cursed speech" />
+            <stat name="cursed:speech:add" value="3" level="11" bonus="cursed speech" />
+            <stat name="cursed:speech:add" value="4" level="18" bonus="cursed speech" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_SLEEP" />
+        	<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_RETURN" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_RUN_AWAY" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_BLAST_AWAY" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_PLUMMET" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_GET_TWISTED" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_GET_CRUSHED" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_DONT_MOVE" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_EXPLODE" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_DIE" />
+		</rules>
 	</element>
 
     <element name="Sleep" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_SLEEP">
