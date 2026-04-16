@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="5.0.2">
+		<update version="5.0.3">
 			<file name="ten-shadows.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/ten-shadows.xml" />
 		</update>
 	</info>
@@ -167,16 +167,26 @@
 	<element name="Shikigami" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_TEN_SHADOWS_SHIKIGAMI" >
 		<description>
 			<div class="reference">
-				<div style="margin-bottom:10px"><div element="ID_JJK_INFORMATION_DIVINE_DOGS"/></div>
-				<div style="margin-bottom:10px"><div element="ID_JJK_INFORMATION_GAMA"/></div>
-				<div style="margin-bottom:10px"><div element="ID_JJK_INFORMATION_NUE"/></div>
-				<div style="margin-bottom:10px"><div element="ID_JJK_INFORMATION_GREAT_SERPENT"/></div>
-				<div style="margin-bottom:10px"><div element="ID_JJK_INFORMATION_RABBIT_ESCAPE"/></div>
-				<div style="margin-bottom:10px"><div element="ID_JJK_INFORMATION_MOURN_TIGER"/></div>
-				<div style="margin-bottom:10px"><div element="ID_JJK_INFORMATION_MAX_ELEPHANT"/></div>
-				<div style="margin-bottom:10px"><div element="ID_JJK_INFORMATION_ROUND_DEER"/></div>
-				<div style="margin-bottom:10px"><div element="ID_JJK_INFORMATION_PIERCING_OX"/></div>
-				<div style="margin-bottom:10px"><div element="ID_JJK_INFORMATION_MAHORAGA"/></div>
+				<div element="ID_JJK_INFORMATION_DIVINE_DOGS"/>
+				<div style="height:10px"></div>
+				<div element="ID_JJK_INFORMATION_GAMA"/>
+				<div style="height:10px"></div>
+				<div element="ID_JJK_INFORMATION_NUE"/>
+				<div style="height:10px"></div>
+				<div element="ID_JJK_INFORMATION_GREAT_SERPENT"/>
+				<div style="height:10px"></div>
+				<div element="ID_JJK_INFORMATION_RABBIT_ESCAPE"/>
+				<div style="height:10px"></div>
+				<div element="ID_JJK_INFORMATION_MOURN_TIGER"/>
+				<div style="height:10px"></div>
+				<div element="ID_JJK_INFORMATION_MAX_ELEPHANT"/>
+				<div style="height:10px"></div>
+				<div element="ID_JJK_INFORMATION_ROUND_DEER"/>
+				<div style="height:10px"></div>
+				<div element="ID_JJK_INFORMATION_PIERCING_OX"/>
+				<div style="height:10px"></div>
+				<div element="ID_JJK_INFORMATION_MAHORAGA"/>
+				<div style="height:10px"></div>
 				<div element="ID_JJK_INFORMATION_DIVINE_DOG_TOTALITY"/>
 			</div>
 		</description>
