@@ -30,6 +30,7 @@
       		<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_DOMAIN_EXPANSION_BEASTS_REALM" level="18" />
 		</rules>
 	</element>
+	
 	<element name="Auspicious Beast #1: Kaichi" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_KAICHI">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_AUSPICIOUS_SUMMON_KAICHI</requirements>
 		<description>
@@ -46,6 +47,7 @@
             <stat name="kaichi:damage" value="12" level="11" bonus="kaichi" />
         </rules>
 	</element>
+	
 	<element name="Auspicious Beast #2: Reiki" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_REIKI">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_AUSPICIOUS_SUMMON_REIKI</requirements>
 		<description>
@@ -55,6 +57,7 @@
       		<description>For 1 cursed energy, double your movement until the end of your next turn. As a reaction for 2 cursed energy, you gain a +5 bonus to AC until the beginning of your next turn.</description>
 		</sheet>
 	</element>
+	
 	<element name="Auspicious Beast #3: Kirin" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_KIRIN">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_AUSPICIOUS_SUMMON_KIRIN</requirements>
 		<description>
@@ -64,6 +67,7 @@
 			<description>For every 1 cursed energy spent, gain 5 temporary hit points. While you have these points, you ignore exhaustion. Your movement is 0 until the start of your next turn.</description>
 		</sheet>
 	</element>
+	
 	<element name="Auspicious Beast #4: Ryu" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_RYU">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_AUSPICIOUS_SUMMON_RYU</requirements>
 		<description>
@@ -79,6 +83,7 @@
 			<select type="Companion" name="Ryu" supports="Ryu" />
 		</rules>
 	</element>
+	
 	<element name="Domain Expansion: Auspicious Beasts' Realm" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_DOMAIN_EXPANSION_BEASTS_REALM">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_AUSPICIOUS_SUMMON_DOMAIN_EXPANSION_BEASTS_REALM</requirements>
 		<description>
@@ -90,6 +95,7 @@
 			</description>
 		</sheet>
 	</element>
+	
 	<!--	Companion Reference	-->
 	<element name="Ryu" type="Information" source="JJK" id="ID_JJK_INFORMATION_RYU">
 		<description>
@@ -119,6 +125,7 @@
 			</ul>
 		</description>
 	</element>
+	
 	<!--	Companion	-->
 	<element name="Ryu" type="Companion" source="JJK" id="ID_JJK_COMPANION_RYU"> 
     	<supports>Ryu</supports>
@@ -158,6 +165,7 @@
 			<stat name="companion:stealth:proficiency" value="companion:proficiency" bonus="base" />
 		</rules>
 	</element>
+	
 	<element name="Multiattack" type="Companion Action" source="JJK" id="ID_JJK_COMPANION_ACTION_RYU_MULTIATTACK">
 		<description>
 			<p>Ryu makes three attacks: one with its bite and two with its claws.</p>
@@ -166,6 +174,7 @@
 			<description>Ryu makes three attacks: one with its bite and two with its claws.</description>
 		</sheet>
 	</element>
+	
 	<element name="Bite" type="Companion Action" source="JJK" id="ID_JJK_COMPANION_ACTION_RYU_BITE">
 		<description>
 			<p>Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 20 (3d10 + 4) piercing damage. Once bitten, the target must succeed on a DC 15 Dexterity saving throw or be grappled. If you attack a grappled creature again they are restrained.</p>
@@ -174,6 +183,7 @@
 			<description>Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 20 (3d10 + 4) piercing damage. Once bitten, the target must succeed on a DC 15 Dexterity saving throw or be grappled. If you attack a grappled creature again they are restrained.</description>
 		</sheet>
 	</element>
+	
 	<element name="Claw" type="Companion Action" source="JJK" id="ID_JJK_COMPANION_ACTION_RYU_CLAW">
 		<description>
 			<p>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) slashing damage.</p>
@@ -182,6 +192,7 @@
 			<description>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) slashing damage.</description>
 		</sheet>
 	</element>
+	
 	<!--Feature Replacement Grants-->
 	<element name="Summon Kaichi Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_AUSPICIOUS_SUMMON_KAICHI" />
 	<element name="Summon Reiki Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_AUSPICIOUS_SUMMON_REIKI" />
