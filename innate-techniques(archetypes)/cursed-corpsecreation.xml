@@ -229,7 +229,7 @@
 			</ul>
 			<h4 style="margin-top:10px">Actions</h4>
 			<ul class="unstyled">
-				<li><strong><em>Corpse Crusher.</strong> Melee Weapon Attack:</em> (Str or Dex + PB) to hit, reach 5 ft., one target. Hit: (1d4 + Str or Dex) bludgeoning, slashing, or piercing damage. The damage die increases with for every size above Tiny. (Tiny d4, Small d6, Medium d8, Large d10, Huge d12, Gargantuan d20).</li>
+				<li><em><strong>Corpse Crusher.</strong> Melee Weapon Attack:</em> (Str or Dex + PB) to hit, reach 5 ft., one target. Hit: (1d4 + Str or Dex) bludgeoning, slashing, or piercing damage. The damage die increases with for every size above Tiny. (Tiny d4, Small d6, Medium d8, Large d10, Huge d12, Gargantuan d20).</li>
 			</ul>
 		</description>
 	</element>
