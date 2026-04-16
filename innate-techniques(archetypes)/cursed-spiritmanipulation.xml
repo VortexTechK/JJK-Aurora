@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="5.0.1">
+			<file name="cursed-spiritmanipulation.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/cursed-spiritmanipulation.xml" />
+		</update>
+	</info>
+
+	<element name="Cursed Spirit Manipulation" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_CURSED_SPIRIT_MANIPULATION">
+		<supports>Innate Technique</supports>
+		<description>
+			<p>The throat goat.</p>
+			<div element="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPIRIT_MANIPULATION_CURSED_SPIRIT_ABSORPTION" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPIRIT_MANIPULATION_CURSE_INFUSED_SPIRITS" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPIRIT_MANIPULATION_PERFECT_CONTROL" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPIRIT_MANIPULATION_MAXIMUM_UZUMAKI" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPIRIT_MANIPULATION_DOMAIN_EXPANSION_WOMB_PROFUSION" />
+		</description>
+		<sheet display="false">
+			<description>You are blessed with an amazing technique to control Cursed Spirits.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPIRIT_MANIPULATION_CURSED_SPIRIT_ABSORPTION" level="1" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPIRIT_MANIPULATION_CURSE_INFUSED_SPIRITS" level="3" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPIRIT_MANIPULATION_PERFECT_CONTROL" level="6" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPIRIT_MANIPULATION_MAXIMUM_UZUMAKI" level="11" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPIRIT_MANIPULATION_DOMAIN_EXPANSION_WOMB_PROFUSION" level="18" />
+		</rules>
+	</element>
+
+	<element name="Cursed Spirit Absorption" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPIRIT_MANIPULATION_CURSED_SPIRIT_ABSORPTION">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CURSED_SPIRIT_MANIPULATION_CURSED_SPIRIT_ABSORPTION</requirements>
+		<description>
+			<p>Beginning at 1st level, you know the taste that no one will ever know, the one of curses. As an action or reaction for 1 Cursed Energy, you can exorcise a cursed spirit with 0 hit points, or a cursed spirit whose CR is less than your proficiency modifier within 120 feet of you that you can see and transform its soul into a small black orb for you to eat. After that, you can summon it as an ally to fight for you. You can summon your Cursed Spirits as an action by spending Cursed Energy equal to their CR. You can summon as many cursed spirits as part of your action equal to your Cursed Energy modifier. They lose their free will and follow each and every command you give them. If they are reduced to 0 hit points they die and cannot be revived by any means. They cannot use actions on their own. You can spend a bonus action to command each cursed spirit to attack, use their cursed techniques, or do something more specific, such as 'protect that creature, grab that, defend that area, etc. You can unsummon any number of cursed spirits as a bonus action, provided they are within line of sight.</p>
+            <p class="indent">You can only consume orbs without physical detriments if the creature consumed has a CR lower or equal to your level. If you try to eat an orb out of a creature with a CR higher than your level, you must roll a DC 5 + the creature's CR Constitution Saving Throw. On a success, you can absorb the creature and can use it after a short or long rest, on a failure you gain 2 levels of exhaustion and receive xd12 Necrotic Damage, X being the creature's CR.</p>
+            <p class="indent">You're also able to absorb other sorcerer's cursed spirits as long as you kill the master first. You can have as many cursed spirits as you want, but for every 10 cursed spirits you consume, you must make a DC 10 Wisdom saving throw. On a success, you will gain no aftereffects. On a failure, you will gain a level of exhaustion, you will gain two exhaustion levels if you fail the save by 5 or more, and you will gain three levels of exhaustion if you fail the save by 10 or more.</p>
+        </description>
+		<sheet action="Action/Reaction" usage="CE">
+			<description level="1">
+                <p>For 1 Cursed Energy, you can exorcise a cursed spirit with 0 hit points, or a cursed spirit whose CR is less than {{proficiency}} within 120 feet of you that you can see and transform its soul into a small black orb.</p>
+                <p> As an action, you can summon your Cursed Spirits by spending Cursed Energy equal to their CR. You can summon {{ce:modifier}} cursed spirits as part of your action. They lose their free will and follow each and every command you give them. If they are reduced to 0 hit points they die and cannot be revived by any means. They cannot use actions on their own.</p>
+                <p> As a bonus action, you can command each cursed spirit to attack, use their cursed techniques, or do something more specific.</p>
+                <p> As a bonus action, you can unsummon any number of cursed spirits, provided they are within line of sight.</p>
+                <p> You can consume orbs without punishment if the creature consumed has a CR lower than {{level}}. Otherwise you must roll a DC 5 + the creature's CR Constitution Saving Throw. On a success, you can absorb the creature and can use it after a short or long rest. On a failure you gain 2 levels of exhaustion and take xd12 Necrotic Damage, X being the creature's CR. You're also able to absorb other sorcerer's cursed spirits as long as you kill the master first.</p>
+                <p> You can have as many cursed spirits as you want, but for every 10 cursed spirits you consume, you must make a DC 10 Wisdom saving throw. On a failure, you gain a level of exhaustion, on a failure by 5 or more, you gain two exhaustion levels, and on a failure by 10 or more you gain three levels of exhaustion.</p>
+            </description>
+            <description level="6">
+                <p>For 1 Cursed Energy, you can exorcise a cursed spirit with 0 hit points, or a cursed spirit whose CR is less than {{proficiency}} within 120 feet of you that you can see and transform its soul into a small black orb.</p>
+                <p> As an action or bonus action, you can summon your Cursed Spirits by spending Cursed Energy equal to their CR reduced by {{ce:modifier}}. You can summon {{ce:modifier}} cursed spirits as part of your action. They lose their free will and follow each and every command you give them. If they are reduced to 0 hit points they die and cannot be revived by any means. They cannot use actions on their own.</p>
+                <p> As a bonus action, you can command each cursed spirit to attack, use their cursed techniques, or do something more specific.</p>
+                <p> As a bonus action, you can unsummon any number of cursed spirits, provided they are within line of sight.</p>
+                <p> You can consume orbs without punishment if the creature consumed has a CR lower than {{level}}. Otherwise you must roll a DC 5 + the creature's CR Constitution Saving Throw - {{ce:modifier}}. On a success, you can absorb the creature and can use it after a short or long rest. On a failure you gain 2 levels of exhaustion and take xd12 Necrotic Damage, X being the creature's CR. You're also able to absorb other sorcerer's cursed spirits as long as you kill the master first.</p>
+                <p> You can have as many cursed spirits as you want, but for every 10 cursed spirits you consume, you must make a DC 20 Wisdom saving throw. On a failure, you gain a level of exhaustion, on a failure by 5 or more, you gain two exhaustion levels, and on a failure by 10 or more you gain three levels of exhaustion.</p>
+            </description>
+		</sheet>
+	</element>
+
+	<element name="Curse Infused Spirits" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPIRIT_MANIPULATION_CURSE_INFUSED_SPIRITS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CURSED_SPIRIT_MANIPULATION_CURSE_INFUSED_SPIRITS</requirements>
+		<description>
+			<p>Once you reach 3rd level, your Cursed Energy increases the power of your Cursed Spirits in the following ways:</p>
+            <ul>
+                <li>Their Strength, Dexterity, and Constitution scores will gain a bonus equal to your Cursed Energy modifier.</li>
+                <li>They regain all HP at the end of a short rest.</li>
+                <li>They become immune to the frightened or charmed condition.</li>
+                <li>Regardless of distance, you'll know if your cursed spirits were exorcised.</li>
+                <li>In addition, as a reaction for x Cursed Energy you can sacrifice a cursed spirit in exchange for reducing incoming damage by xd20, with x being the CR of the creature sacrificed in the process.</li>
+            </ul>
+		</description>
+		<sheet>
+			<description>Your Cursed Spirits' Strength, Dexterity, and Constitution scores increase by {{ce:modifier}}, regain all HP at the end of a short rest, and become immune to the frightened and charmed conditions. You know if your cursed spirits were exorcised regardless of distance, and can sacrifice a cursed spirit as a reaction for x cursed energy to reduce incoming damage by xd20 where x is the CR of the cursed spirit.</description>
+		</sheet>
+	</element>
+
+	<element name="Perfect Control" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPIRIT_MANIPULATION_PERFECT_CONTROL">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CURSED_SPIRIT_MANIPULATION_PERFECT_CONTROL</requirements>
+		<description>
+			<p>At 6th level, you have grown experienced with your cursed technique, giving you perfect control over your spirits. You will gain the following benefits:</p>
+            <ul>
+                <li>The amount of cursed spirits it takes for you to make a Wisdom saving throw is increased to 20.</li>
+                <li>Your cursed spirits cost is reduced by your Cursed Energy modifier (minimum cost of 1 Cursed Energy).</li>
+                <li>Your DC for eating cursed spirits with a CR higher than your level is decreased by your Cursed Energy modifier.</li>
+                <li>You can now summon cursed spirits as a bonus action.</li>
+            </ul>  
+		</description>
+        <sheet display="false"/>
+	</element>
+
+	<element name="Maximum: Uzumaki" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPIRIT_MANIPULATION_MAXIMUM_UZUMAKI">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CURSED_SPIRIT_MANIPULATION_MAXIMUM_UZUMAKI</requirements>
+		<description>
+			<p>When you reach 11th level, As an action you can put any number of your cursed spirits in a spiral-like pattern(minimum 2), making them into a dark spiral that you can use in an attack. Every creature in a 30-foot cone must make a Dexterity saving throw, on a success they take half damage, on a failure they take 2d12 Necrotic damage.</p>
+            <p class="indent">For every cursed spirit above 2, the area of effect will be increased by 5 feet, and the damage will increase by 1d12.</p>
+            <p class="indent">All of the cursed spirits that were used in the Uzumaki are killed. However, you can obtain the actions(including legendary actions)they have at a cost which must be paid when extracting them via Uzumaki. You can extract multiple actions from different curses as part of the process, but you must pay the cost for each action.</p>
+            <p class="indent">The cost for the actions is listed below and once extracted, the action can be used only once:</p>
+            <h5 class="caption">EXTRACTION COSTS</h5>
+			<table>
+				<thead>
+					<tr><td>Action Type</td><td>Cursed Energy Cost</td></tr>
+				</thead>
+				<tr><td>Bonus Action</td><td>3</td></tr>
+        		<tr><td>Action</td><td>4</td></tr>
+				<tr><td>Reaction</td><td>5</td></tr>
+				<tr><td>Legendary Action</td><td>10</td></tr>
+			</table>
+        </description>
+        <sheet action="Action">
+			<description>You can put any number of your cursed spirits into a spiral-like pattern(minimum 2). Every creature in a 30-foot cone must make a Dexterity saving throw. On a success they take half damage, on a failure they take 2d12 Necrotic damage. For every cursed spirit above 2, the area of effect is increased by 5 feet, and the damage increases by 1d12. All of the cursed spirits that were used in the Uzumaki are killed.</description>
+		</sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPIRIT_MANIPULATION_MAXIMUM_UZUMAKI_EXTRACTION" />
+        </rules>
+    </element>
+    
+    <element name="Maximum: Uzumaki Extraction" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPIRIT_MANIPULATION_MAXIMUM_UZUMAKI_EXTRACTION">
+        <description>
+            <p>You can obtain the actions(including legendary actions)they have at a cost which must be paid when extracting them via Uzumaki. You can extract multiple actions from different curses as part of the process, but you must pay the cost for each action.</p>
+            <p class="indent">The cost for the actions is listed below and once extracted, the action can be used only once:</p>
+			<h5 class="caption">EXTRACTION COSTS</h5>
+            <table>
+                <thead>
+					<tr><td>Action Type</td><td>Cursed Energy Cost</td></tr>
+				</thead>
+				<tr><td>Bonus Action</td><td>3</td></tr>
+        		<tr><td>Action</td><td>4</td></tr>
+				<tr><td>Reaction</td><td>5</td></tr>
+				<tr><td>Legendary Action</td><td>10</td></tr>
+			</table>
+        </description>
+        <sheet usage="CE">
+            <description>You can obtain the features of cursed spirits consumed in Maximum: Uzumaki by paying 3, 4, 5, or 10 cursed energy for bonus actions, actions, reactions, and legendary actions respectively. You can extract multiple actions from different curses as part of the process, but you must pay the cost for each action. Once extracted, the action can be used only once.</description>
+        </sheet>
+	</element>
+
+	<element name="Domain Expansion: Womb Profusion" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPIRIT_MANIPULATION_DOMAIN_EXPANSION_WOMB_PROFUSION">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CURSED_SPIRIT_MANIPULATION_DOMAIN_EXPANSION_WOMB_PROFUSION</requirements>
+		<description>
+			<p>Finally at 18th level, you have learned how to expand your domain. A tree of souls surrounded by four seated Buddhas at the cardinal points emerges behind you, as your barrier starts opening. The area targeted by this feature counts as difficult terrain for all creatures. You can use any of your cursed spirits without any cost. Cursed spirits within your domain must make a Charisma saving throw at the beginning of their turns or be instantly absorbed by you.</p>
+		</description>
+        <sheet action="Action + Bonus Action + Movement" usage="CE">
+			<description>For 20 cursed energy, the area targeted by this feature counts as difficult terrain for all creatures. You can use any of your cursed spirits without any cost. Cursed spirits within your domain must make a Charisma saving throw at the beginning of their turns or be instantly absorbed by you.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Cursed Spirit Absorption Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CURSED_SPIRIT_MANIPULATION_CURSED_SPIRIT_ABSORPTION" />
+	<element name="Curse Infused Spirits Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CURSED_SPIRIT_MANIPULATION_CURSE_INFUSED_SPIRITS" />
+	<element name="Perfect Control Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CURSED_SPIRIT_MANIPULATION_PERFECT_CONTROL" />
+	<element name="Maximum: Uzumaki Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CURSED_SPIRIT_MANIPULATION_MAXIMUM_UZUMAKI" />
+	<element name="Domain Expansion: Womb Profusion Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CURSED_SPIRIT_MANIPULATION_DOMAIN_EXPANSION_WOMB_PROFUSION" />
+</elements>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="5.0.1">
+			<file name="disaster-flames.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/disaster-flames.xml" />
+		</update>
+	</info>
+
+	<element name="Disaster Flames" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_DISASTER_FLAMES">
+		<supports>Innate Technique</supports>
+		<description>
+			<p>The JoGoat</p>
+			<div element="ID_JJK_ARCHETYPE_FEATURE_DISASTER_FLAMES_FLAMES_OF_DISASTER" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_DISASTER_FLAMES_ERUPTING_VOLCANOES" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_DISASTER_FLAMES_EMBER_INSECTS" />
+			<div class="reference">
+				<div element="ID_JJK_INFORMATION_SWARM_OF_EMBER_INSECTS"/>
+			</div>
+			<div element="ID_JJK_ARCHETYPE_FEATURE_DISASTER_FLAMES_MAXIMUM_METEOR" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_DISASTER_FLAMES_DOMAIN_EXPANSION_COFFIN_OF_THE_IRON_MOUNTAIN" />
+		</description>
+		<sheet display="false">
+			<description>You are born with a great power, with nigh-endless possibilities, fire manipulation, allowing you to burn down everything in your way.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_DISASTER_FLAMES_FLAMES_OF_DISASTER" level="1" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_DISASTER_FLAMES_ERUPTING_VOLCANOES" level="3" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_DISASTER_FLAMES_EMBER_INSECTS" level="6" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_DISASTER_FLAMES_MAXIMUM_METEOR" level="11" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_DISASTER_FLAMES_DOMAIN_EXPANSION_COFFIN_OF_THE_IRON_MOUNTAIN" level="18" />
+		</rules>
+	</element>
+
+	<element name="Flames of Disaster" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DISASTER_FLAMES_FLAMES_OF_DISASTER">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DISASTER_FLAMES_FLAMES_OF_DISASTER</requirements>
+		<description>
+			<p>Starting at 1st level, you have learned the basics of fire manipulation, being able to launch a wave of flames from your hands as well as the ability to cast Control Flames. As a bonus action for 1 Cursed Energy, you unleash a 15-foot cone which forces people to make a Dexterity save. On a failure, they take 2d8 fire damage or half as much damage on a success. The fire ignites any flammable objects in the area that aren’t being worn or carried. Your damage dice increases to 3d8 at 5th level, 4d8 at 11th level, and 5d8 at 17th level.</p>
+		</description>
+		<sheet action="Bonus Action" usage="CE">
+			<description>For 1 cursed energy, you unleash a 15-foot cone which forces people to make a Dexterity saving throw. On a failure, they take {{flames:of:disaster:damage}}d8 fire damage or half as much damage on a success. The fire ignites any flammable objects in the area that aren't being worn or carried. You can cast Control Flames.</description>
+		</sheet>
+        <rules>
+            <grant type="Spell" id="ID_XGTE_SPELL_CONTROL_FLAMES" />
+            <stat name="flames:of:disaster:damage" value="2" level="1" bonus="flames of disaster" />
+            <stat name="flames:of:disaster:damage" value="3" level="5" bonus="flames of disaster" />
+            <stat name="flames:of:disaster:damage" value="4" level="11" bonus="flames of disaster" />
+            <stat name="flames:of:disaster:damage" value="5" level="17" bonus="flames of disaster" />
+        </rules>
+	</element>
+
+	<element name="Erupting Volcanoes" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DISASTER_FLAMES_ERUPTING_VOLCANOES">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DISASTER_FLAMES_ERUPTING_VOLCANOES</requirements>
+		<description>
+			<p>Beginning 3rd level, with a better understanding of the flames you possess, you can now create volcanoes. As an action for 2 Cursed Energy per volcano, you can create a number of volcanos up to your Cursed Energy modifier within 120 ft. of you, with each volcano occupying a 5 ft. radius circle. As a bonus action, you can force every creature in a 30-foot-long and 10-foot-wide line originating from each volcano to make a Dexterity saving throw as the volcanos erupt. On a failure, they take 5d10 fire damage and become restrained by the magma for 1 minute. On success, they take half as much damage and are not restrained. The creature can make a Strength saving throw at the beginning of their turns, ending the condition early on success. Any area targeted by this feature becomes difficult terrain.</p>
+		</description>
+		<sheet action="Action" usage="CE">
+			<description>For 2 Cursed Energy per volcano, you can create up to {{ce:modifier}} volcanos within 120 ft. of you, with each volcano occupying a 5 ft. radius circle. As a bonus action, you can force every creature in a 30-foot-long and 10-foot-wide line originating from each volcano to make a Dexterity saving throw. On a failure, they take 5d10 fire damage and become restrained for 1 minute. On success, they take half as much damage and are not restrained. The creature can make a Strength saving throw at the beginning of their turns, ending the condition early on success. Any area targeted by this feature becomes difficult terrain.</description>
+		</sheet>
+	</element>
+
+	<element name="Ember Insects" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DISASTER_FLAMES_EMBER_INSECTS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DISASTER_FLAMES_EMBER_INSECTS</requirements>
+		<description>
+			<p>At 6th level, you have learned how to create small insect shikigami from your body. As an action for 5 Cursed Energy, you can create 1 Ember Insects Swarm within 5 ft of you. These shikigami act immediately after your turn.</p>
+			<div class="reference">
+				<div element="ID_JJK_INFORMATION_SWARM_OF_EMBER_INSECTS"/>
+			</div>
+		</description>
+        <sheet action="Action" usage="CE">
+            <description>For 5 cursed energy, you can create 1 Ember Insects Swarm within 5 ft of you. These shikigami act immediately after your turn.</description>
+        </sheet>
+		<rules>
+			<select type="Companion" id="ID_JJK_COMPANION_SWARM_OF_EMBER_INSECTS" />
+		</rules>
+	</element>
+
+	<element name="Maximum: Meteor" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DISASTER_FLAMES_MAXIMUM_METEOR">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DISASTER_FLAMES_MAXIMUM_METEOR</requirements>
+		<description>
+			<p>When you reach 11th level, you have learned how to extract the maximum out of your Disaster Flames, creating your maximum technique. As an action for 10 Cursed Energy, you can fly up high in the air gathering materials into a single gigantic meteor. In the following turn as you reach the ground. Every creature except you since you don't take the damage, in a 120 feet radius from you must attempt a Dexterity saving throw. On a failure, they take 10d4 bludgeoning damage + 10d6 fire damage and are knocked prone. On a success, they take half the damage.</p>
+		</description>
+        <sheet action="Action" usage="CE">
+			<description>For 10 cursed energy, you fly up high in the air. The following turn as you reach the ground, every creature except you in a 120 feet radius from you must attempt a Dexterity saving throw. On a failure, they take 10d4 bludgeoning damage + 10d6 fire damage and are knocked prone. On a success, they take half the damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Domain Expansion: Coffin of the Iron Mountain" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DISASTER_FLAMES_DOMAIN_EXPANSION_COFFIN_OF_THE_IRON_MOUNTAIN">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DISASTER_FLAMES_DOMAIN_EXPANSION_COFFIN_OF_THE_IRON_MOUNTAIN</requirements>
+		<description>
+			<p>At 18th level, you have learned how to expand your domain to create a massive magma dimension. Your domain is a huge volcano-like dimension, which irradiates extreme heat. While inside it, every creature except you must attempt a Constitution saving throw at the end of each of their turns. On a failure, they take 10d8 fire damage. On a success, they take half as much damage.</p>
+		</description>
+        <sheet action="Action + Bonus Action + Movement" usage="CE">
+			<description>For 20 cursed energy, every creature except you must attempt a Constitution saving throw at the end of each of their turns. On a failure, they take 10d8 fire damage. On a success, they take half as much damage.</description>
+		</sheet>
+	</element>
+
+    <!-- Companion Reference -->
+    <element name="Swarm of Ember Insects" type="Information" source="JJK" id="ID_JJK_INFORMATION_SWARM_OF_EMBER_INSECTS">
+	    <description>
+		    <p style="margin-bottom:-5px"><em>Medium shikigami (swarm), unaligned</em></p>
+		    <h4 style="margin-top:5px"></h4>
+		    <ul class="unstyled">
+		    	<li><strong>Armor Class</strong> 12 (natural armor)</li>
+		    	<li><strong>Hit Points</strong> 22 (5d8)</li>
+		    	<li><strong>Speed</strong> 20 ft., burrow 5 ft., climb 20 ft.</li>
+		    </ul>
+		    <table style="text-align:center;margin-top:10px;margin-bottom:10px">
+			    <thead>
+			    	<tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr>
+		      	</thead>
+			    <tr>
+				    <td>3 (-4)</td><td>13 (+1)</td><td>10 (+0)</td><td>1 (-5)</td><td>7 (-2)</td><td>1 (-5)</td>
+			    </tr>
+		    </table>
+		    <ul class="unstyled">
+		    	<li><strong>Damage Resistances</strong> bludgeoning, piercing, slashing</li>
+		    	<li><strong>Condition Immunities</strong> charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned</li>
+	    		<li><strong>Senses</strong> blindsight 10 ft., passive Perception 8</li>
+		    	<li><strong>Languages</strong> —</li>
+	    		<li style="margin-bottom:-1em"><strong>Challenge</strong> 1/2 (100 XP)</li>
+	    	</ul>
+	    	<h4 style="margin-top:10px">Traits</h4>
+	    	<ul class="unstyled">
+		    	<li><strong><em>Swarm.</em></strong> The swarm can occupy another creature's space and vice versa, and can move through any opening large enough for a Tiny insect. The swarm can't regain hit points or gain temporary hit points.</li>
+		    	<li><strong><em>Loud Swarm.</em></strong> The swarm emits a constant high-pitched buzzing. Creatures within 100 ft. can hear it. The swarm has disadvantage on Stealth checks.</li>
+	    	</ul>
+		    <h4 style="margin-top:10px">Actions</h4>
+		    <ul class="unstyled">
+		    	<li><strong><em>Explosive Charge.</em></strong> Melee Weapon Attack: +3 to hit, one target. Hit: 10 (4d4) piercing damage. After the attack, hit or miss, all creatures within a 10 ft. radius sphere of the target must make a Dexterity saving throw or take 37 (15d4) fire damage. The swarm dies after this action.</li>
+		    </ul>
+	    </description>
+    </element>
+
+    <!-- Companion -->
+    <element name="Swarm of Ember Insects" type="Companion" source="JJK" id="ID_JJK_COMPANION_SWARM_OF_EMBER_INSECTS">
+	    <supports>Swarm of Ember Insects</supports>
+	    <setters>
+	    	<set name="strength">3</set>
+	    	<set name="dexterity">13</set>
+	    	<set name="constitution">10</set>
+	    	<set name="intelligence">1</set>
+		    <set name="wisdom">7</set>
+	     	<set name="charisma">1</set>
+			<set name="ac">12 (natural armor)</set>
+			<set name="hp">22 (5d8)</set>
+			<set name="speed">20 ft., burrow 5 ft., climb 20 ft.</set>
+		    <set name="type">Swarm</set>
+		    <set name="size">Medium</set>
+		    <set name="alignment">unaligned</set>
+		    <set name="senses">blindsight 10 ft., passive Perception 8</set>
+		    <set name="languages"></set>
+		    <set name="resistances">bludgeoning, piercing, slashing</set>
+		    <set name="conditionImmunities">charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned</set>
+			<set name="challenge">1/2 (100 XP)</set>
+			<set name="traits">ID_JJK_COMPANION_TRAIT_EMBER_INSECTS_SWARM, ID_JJK_COMPANION_TRAIT_EMBER_INSECTS_LOUD_SWARM</set>
+		    <set name="actions">ID_JJK_COMPANION_ACTION_EMBER_INSECTS_EXPLOSIVE_CHARGE</set>
+	    </setters>
+	    <rules>
+		    <stat name="companion:ac" value="12" bonus="base" />
+		    <stat name="companion:hp:max" value="22" bonus="base" />
+		    <stat name="companion:speed" value="20" bonus="base" />
+		    <stat name="companion:speed:burrow" value="5" bonus="base" />
+		    <stat name="companion:speed:climb" value="20" bonus="base" />
+	    </rules>
+    </element>
+
+	<element name="Swarm" type="Companion Trait" source="JJK" id="ID_JJK_COMPANION_TRAIT_EMBER_INSECTS_SWARM">
+	    <description>
+	    	<p>The swarm can occupy another creature's space and vice versa, and can move through any opening large enough for a Tiny insect. The swarm can't regain hit points or gain temporary hit points.</p>
+	    </description>
+	    <sheet>
+	        <description>The swarm can occupy another creature's space and vice versa, and can move through any opening large enough for a Tiny insect. The swarm can't regain hit points or gain temporary hit points.</description>
+	    </sheet>
+	</element>
+
+	<element name="Loud Swarm" type="Companion Trait" source="JJK" id="ID_JJK_COMPANION_TRAIT_EMBER_INSECTS_LOUD_SWARM">
+	    <description>
+	    	<p>The swarm emits a constant high-pitched buzzing. Creatures within 100 ft. can hear it. The swarm has disadvantage on Stealth checks.</p>
+	    </description>
+	    <sheet>
+	        <description>The swarm emits a constant high-pitched buzzing. Creatures within 100 ft. can hear it. The swarm has disadvantage on Stealth checks.</description>
+	    </sheet>
+	</element>
+
+    <element name="Explosive Charge" type="Companion Action" source="JJK" id="ID_JJK_COMPANION_ACTION_EMBER_INSECTS_EXPLOSIVE_CHARGE">
+	    <description>
+	    	<p>Melee Weapon Attack: +3 to hit, one target. Hit: 10 (4d4) piercing damage. After the attack, hit or miss, all creatures within a 10 ft. radius sphere of the target must make a Dexterity saving throw or take 37 (15d4) fire damage. The swarm dies after this action.</p>
+	    </description>
+	    <sheet>
+	        <description>Melee Weapon Attack: +3 to hit, one target. Hit: 10 (4d4) piercing damage. After the attack, hit or miss, all creatures within a 10 ft. radius sphere of the target must make a Dexterity saving throw or take 37 (15d4) fire damage. The swarm dies after this action.</description>
+	    </sheet>
+    </element>
+    
+	<!--Feature Replacement Grants-->
+	<element name="Flames of Disaster Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DISASTER_FLAMES_FLAMES_OF_DISASTER" />
+	<element name="Erupting Volcanoes Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DISASTER_FLAMES_ERUPTING_VOLCANOES" />
+	<element name="Ember Insects Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DISASTER_FLAMES_EMBER_INSECTS" />
+	<element name="Maximum: Meteor Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DISASTER_FLAMES_MAXIMUM_METEOR" />
+	<element name="Domain Expansion: Coffin of the Iron Mountain Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DISASTER_FLAMES_DOMAIN_EXPANSION_COFFIN_OF_THE_IRON_MOUNTAIN" />
+</elements>

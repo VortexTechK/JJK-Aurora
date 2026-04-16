@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="5.0.1">
+			<file name="disaster-verdure.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/disaster-verdure.xml" />
+		</update>
+	</info>
+
+	<element name="Disaster Verdure" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_DISASTER_VERDURE">
+		<supports>Innate Technique</supports>
+		<description>
+			<p>Holy zoner.</p>
+			<div element="ID_JJK_ARCHETYPE_FEATURE_DISASTER_VERDURE_FORESTS_OF_DISASTER" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_DISASTER_VERDURE_ROOT_BUNDLE" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_DISASTER_VERDURE_FLOWER_FIELD" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_DISASTER_VERDURE_CURSED_BUDS" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_DISASTER_VERDURE_DOMAIN_EXPANSION_CEREMONIAL_SEA_OF_LIGHT" />
+		</description>
+		<sheet display="false">
+			<description> You are born with an amazing power, with many possibilities, plant manipulation, allowing you to protect those you care about.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_DISASTER_VERDURE_FORESTS_OF_DISASTER" level="1" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_DISASTER_VERDURE_ROOT_BUNDLE" level="3" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_DISASTER_VERDURE_FLOWER_FIELD" level="6" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_DISASTER_VERDURE_CURSED_BUDS" level="11" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_DISASTER_VERDURE_DOMAIN_EXPANSION_CEREMONIAL_SEA_OF_LIGHT" level="18" />
+		</rules>
+	</element>
+
+	<element name="Forests of Disaster" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DISASTER_VERDURE_FORESTS_OF_DISASTER">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DISASTER_VERDURE_FORESTS_OF_DISASTER</requirements>
+		<description>
+			<p>Beginning at 1st level, you have begun to understand the power of nature. You gain the ability to manipulate nature at will. You can cast Druidcraft at will and gain the following cursed techniques:</p>
+            <ul>
+                <li><strong>Binding Plants.</strong> As an action for 1 Cursed Energy, you can choose one target within 30 feet of you trapped by plants. The target must make a Strength saving throw, on a failure it will be restrained. It can make a Strength check to break free from the plants, on a success they are free from the binds, on a failure they remain stuck.</li>
+                <li><strong>Piercing Roots.</strong> As an action for 1 Cursed Energy, you can raise a bunch of roots from the ground to strike a target. You force all creatures in a 50ft line to make a Dexterity saving throw, on a failure they take 1d12 piercing damage, on a success they take half as much damage. This damage increases to 2d12 at 5th level, 3d12 at 11th level, and to 4d12 at 18th level.</li>
+                <li><strong>Wall of Roots.</strong> As a reaction for 1 Cursed Energy, you rise deep roots from the ground to defend yourself or your allies from attacks. As a reaction to when you or an ally is targeted by an attack roll, you can spring forth a wall of roots that it's 10ft. tall and 5ft. wide, covering 10fts around you. The wall has an amount of hit points equal to your Cursed Energy modifier times your proficiency bonus.</li>
+            </ul>
+        </description>
+		<sheet>
+			<description>You can cast Druidcraft at will and gain the following cursed techniques:</description>
+		</sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_DRUIDCRAFT" />
+            <grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_DISASTER_VERDURE_BINDING_PLANTS" />
+            <grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_DISASTER_VERDURE_PIERCING_ROOTS" />
+            <grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_DISASTER_VERDURE_WALL_OF_ROOTS" />
+        </rules>
+	</element>
+
+    <element name="Binding Plants" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DISASTER_VERDURE_BINDING_PLANTS">
+		<description>
+			<p>As an action for 1 Cursed Energy, you can choose one target within 30 feet of you trapped by plants. The target must make a Strength saving throw, on a failure it will be restrained. It can make a Strength check to break free from the plants, on a success they are free from the binds, on a failure they remain stuck.</p>
+        </description>
+		<sheet action="Action" usage="CE">
+			<description>For 1 cursed energy, choose one target within 30 feet of you to make a Strength saving throw. On a failure it is restrained. On its turn it can make a Strength check to break free.</description>
+		</sheet>
+	</element>
+
+    <element name="Piercing Roots" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DISASTER_VERDURE_PIERCING_ROOTS">
+		<description>
+			<p>As an action for 1 Cursed Energy, you can raise a bunch of roots from the ground to strike a target. You force all creatures in a 50ft line to make a Dexterity saving throw, on a failure they take 1d12 piercing damage, on a success they take half as much damage. This damage increases to 2d12 at 5th level, 3d12 at 11th level, and to 4d12 at 18th level.</p>
+        </description>
+		<sheet action="Action" usage="CE">
+			<description>For 1 cursed energy, force creatures in a 50ft line to make a Dexterity saving throw. On a failure they take {{disaster:verdure:piercing:roots:damage}}d12 piercing damage and on a success half as much.</description>
+		</sheet>
+        <rules>
+            <stat name="disaster:verdure:piercing:roots:damage" value="1" bonus="piercing roots" level="1" />
+            <stat name="disaster:verdure:piercing:roots:damage" value="2" bonus="piercing roots" level="5" />
+            <stat name="disaster:verdure:piercing:roots:damage" value="3" bonus="piercing roots" level="11" />
+            <stat name="disaster:verdure:piercing:roots:damage" value="4" bonus="piercing roots" level="18" />
+        </rules>
+    </element>
+
+    <element name="Wall of Roots" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DISASTER_VERDURE_WALL_OF_ROOTS">
+        <description>
+            <p>As a reaction for 1 Cursed Energy, you rise deep roots from the ground to defend yourself or your allies from attacks. As a reaction to when you or an ally is targeted by an attack roll, you can spring forth a wall of roots that is 10ft. tall and 5ft. wide, covering 10fts around you. The wall has an amount of hit points equal to your Cursed Energy modifier times your proficiency bonus.</p>
+        </description>
+        <sheet action="Reaction" usage="CE">
+            <description>For 1 cursed energy, as a reaction to when you or an ally is targeted by an attack roll, create a wall of roots that is 10ft. tall and 5ft. wide within 10ft. of you. The wall has {{ce:modifier}}x{{proficiency}} hit points.</description>
+        </sheet>
+    </element>
+
+	<element name="Root Bundle" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DISASTER_VERDURE_ROOT_BUNDLE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DISASTER_VERDURE_ROOT_BUNDLE</requirements>
+		<description>
+			<p>At 3rd level, you have learned how to create small wooden balls to launch and pierce your opponents. As an action, you can create a number of two wooden balls, at the price of two cursed energy. The wooden balls will have a number of hit points equal to your Cursed Energy modifier, an AC of 10 + your CE modifier, and will keep floating around you. As a bonus action, you can send one or more of your balls towards a target within 30 feet of you. Make a cursed energy attack roll, on a hit the balls create large branches that pierce through its target, dealing 2d10 piercing damage. Right after they hit or miss the balls will disappear. You can also spend your bonus action to get above one of the balls, gaining flying speed equal to half your walking speed while above them.</p>
+		</description>
+		<sheet action="Action" usage="CE">
+			<description>For 2 cursed energy, create two wooden balls with {{ce:modifier}} hit points and AC of {{disaster:verdure:root:bundle:ac}}. As a bonus action, you can make a cursed energy attack roll towards a target within 30 feet of you. On a hit deal 2d10 piercing damage. Right after they hit or miss the balls will disappear. You can also spend your bonus action to get above one of the balls, gaining flying speed equal to half your walking speed while above them.</description>
+		</sheet>
+        <rules>
+            <stat name="disaster:verdure:root:bundle:ac" value="10" />
+            <stat name="disaster:verdure:root:bundle:ac" value="ce:modifier" />
+        </rules>
+	</element>
+
+	<element name="Flower Field" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DISASTER_VERDURE_FLOWER_FIELD">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DISASTER_VERDURE_FLOWER_FIELD</requirements>
+		<description>
+			<p>At 6th level, you can create a circle of flower petals that surrounds your opponents and removes their will to fight. As an action for 5 Cursed Energy, you create a 30-foot radius circle in a point within 100 feet of yourself, all creatures within that circle must make a Wisdom saving throw. On a failure they are charmed for 1 minute as their will to fight is completely drained and their mind enters a state of tranquility and happiness. While charmed in this way, they are unable to take any kind of actions that would help in the battle. A creature can repeat the save at the beginning of its turn or when they take damage. Any attacks against a charmed creature is made at advantage, and any saving throws the creature makes are at disadvantage.</p>
+		</description>
+        <sheet action="Action" usage="CE">
+            <description>For 5 cursed energy, you create a 30-foot radius circle in a point within 100 feet of yourself. All creatures within that circle must make a Wisdom saving throw. On a failure they are charmed for 1 minute. While charmed in this way, they are unable to take any kind of actions that would help in the battle. A creature can repeat the save at the beginning of its turn or when they take damage. Any attacks against a charmed creature is made at advantage, and any saving throws the creature makes are at disadvantage.</description>
+        </sheet>
+	</element>
+
+	<element name="Cursed Buds" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DISASTER_VERDURE_CURSED_BUDS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DISASTER_VERDURE_CURSED_BUDS</requirements>
+		<description>
+			<p>At 11th level, you have studied the true nature of your innate technique, creating a new type of plant that feeds on cursed energy. As an action for 6 Cursed Energy, you can create and launch a number of cursed buds equal to your CE modifier toward one or more targets within 30 feet. Make a cursed energy attack roll for each, on a hit they will attach to the creature. At the beginning of the creature's turns it loses an amount of Hit Points equal to your CE modifier and you steal 1 CE from the target. If an affected creature uses cursed energy while infected with a cursed bud, they lose hit points equal to your proficiency bonus. An affected creature can attempt a Strength check as an action against your CE save DC to remove the curse bud.</p>
+            <p class="indent">You can instead spend 10 Cursed Energy to create a Large tree within 10 feet that will launch one cursed bud at every hostile creature within 30 feet. The tree has an AC equal to your Cursed Energy save DC, hit points equal to your proficiency bonus times your level and lasts for 1 minute, launching one cursed bud at creatures within range at the beginning of your turn.</p>
+		</description>
+        <sheet action="Action" usage="CE">
+			<description>For 6 cursed energy, you can launch {{ce:modifier}} cursed buds toward one or more targets within 30 feet. Make a cursed energy attack roll for each, on a hit they will attach to the creature. At the beginning of the creature's turns it loses {{ce:modifier}} Hit Points and you steal 1 CE from the target. If an affected creature uses cursed energy while infected with a cursed bud, they lose {{proficiency}} hit points. An affected creature can attempt a Strength check as an action against your CE save DC to remove the curse bud. You can instead spend 10 cursed energy to create a Large tree within 10 feet that will launch one cursed bud at every hostile creature within 30 feet. The tree has an AC of {{ce:dc:total}}, {{proficiency}}x{{level}} hit points, and lasts for 1 minute, launching one cursed bud at creatures within range at the beginning of your turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Domain Expansion: Ceremonial Sea of Light" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DISASTER_VERDURE_DOMAIN_EXPANSION_CEREMONIAL_SEA_OF_LIGHT">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DISASTER_VERDURE_DOMAIN_EXPANSION_CEREMONIAL_SEA_OF_LIGHT</requirements>
+		<description>
+			<p>At 18th level, you have refined your technique to the absolute and learned to expand your domain. At initiative 20, creatures within your domain fall under the effect of Flower Field and take 2d4 Necrotic damage. You gain half of the damage as temporary Cursed Energy that disappears once your domain ends.</p>
+		</description>
+        <sheet action="Action + Bonus Action + Movement" usage="CE">
+			<description>For 20 cursed energy, at initiative 20, creatures within your domain fall under the effect of Flower Field and take 2d4 Necrotic damage. You gain half of the damage as temporary Cursed Energy that disappears once your domain ends.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Forests of Disaster Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DISASTER_VERDURE_FORESTS_OF_DISASTER" />
+	<element name="Root Bundle Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DISASTER_VERDURE_ROOT_BUNDLE" />
+	<element name="Flower Field Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DISASTER_VERDURE_FLOWER_FIELD" />
+	<element name="Cursed Buds Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DISASTER_VERDURE_CURSED_BUDS" />
+	<element name="Domain Expansion: Ceremonial Sea of Light Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DISASTER_VERDURE_DOMAIN_EXPANSION_CEREMONIAL_SEA_OF_LIGHT" />
+</elements>

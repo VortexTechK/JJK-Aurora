@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="5.0.1">
+			<file name="disaster-tides.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/disaster-tides.xml" />
+		</update>
+	</info>
+
+	<element name="Disaster Tides" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_DISASTER_TIDES">
+		<supports>Innate Technique</supports>
+		<description>
+			<p>The Waterboy.</p>
+			<div element="ID_JJK_ARCHETYPE_FEATURE_DISASTER_TIDES_TIDES_OF_DISASTER" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_DISASTER_TIDES_DOMAIN_EXPANSION_HORIZON_OF_CAPTIVATING_SKHANDA" />
+            <div class="reference">
+				<div element="ID_JJK_INFORMATION_GIANT_SEA_EEL" />
+				<div element="ID_JJK_INFORMATION_SWARM_OF_PIRANHAS" />
+				<div element="ID_JJK_INFORMATION_RIVER_SERPENT" />
+				<div element="ID_JJK_INFORMATION_KILLER_WHALE" />
+				<div element="ID_JJK_INFORMATION_SPERM_WHALE" />
+			</div>
+			<div element="ID_JJK_ARCHETYPE_FEATURE_DISASTER_TIDES_WATER_DEFENSIVE_RING" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_DISASTER_TIDES_FLASH_FLOOD" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_DISASTER_TIDES_MAXIMUM_TSUNAMI" />
+		</description>
+		<sheet display="false">
+			<description>You are born with a great power, with great possibilities, and astounding potential, water manipulation.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_DISASTER_TIDES_TIDES_OF_DISASTER" level="1" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_DISASTER_TIDES_DOMAIN_EXPANSION_HORIZON_OF_CAPTIVATING_SKHANDA" level="3" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_DISASTER_TIDES_WATER_DEFENSIVE_RING" level="6" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_DISASTER_TIDES_FLASH_FLOOD" level="11" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_DISASTER_TIDES_MAXIMUM_TSUNAMI" level="18" />
+		</rules>
+	</element>
+
+	<element name="Tides of Disaster" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DISASTER_TIDES_TIDES_OF_DISASTER">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DISASTER_TIDES_TIDES_OF_DISASTER</requirements>
+		<description>
+			<p>Starting at 1st level you have the ability of hydrokinesis. You can cast the Shape Water cantrip. You can spend 1 Cursed Energy as an action to roll a ranged cursed energy attack roll against a target within 80 feet, dealing 2d8 cold damage on a hit. This feature’s damage increases by 1d8 when you reach 5th level (3d8), 11th level (4d8), and 18th level (5d8).</p>
+		</description>
+		<sheet action="Action" usage="CE">
+			<description>For 1 cursed energy, roll a ranged cursed energy attack roll against a target within 80 feet, dealing {{disaster:tides:tides:of:disaster:damage}}d8 cold damage on a hit.</description>
+		</sheet>
+        <rules>
+            <grant type="Spell" id="ID_XGTE_SPELL_SHAPE_WATER" />
+            <stat name="disaster:tides:tides:of:disaster:damage" value="2" bonus="tides of disaster" level="1" />
+            <stat name="disaster:tides:tides:of:disaster:damage" value="3" bonus="tides of disaster" level="5" />
+            <stat name="disaster:tides:tides:of:disaster:damage" value="4" bonus="tides of disaster" level="11" />
+            <stat name="disaster:tides:tides:of:disaster:damage" value="5" bonus="tides of disaster" level="18" />
+        </rules>
+	</element>
+
+	<element name="Domain Expansion: Horizon of Captivating Skanda" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DISASTER_TIDES_DOMAIN_EXPANSION_HORIZON_OF_CAPTIVATING_SKHANDA">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DISASTER_TIDES_DOMAIN_EXPANSION_HORIZON_OF_CAPTIVATING_SKHANDA</requirements>
+		<description>
+			<p>At 3rd level, due to being a prodigy, you have already learned to expand your domain as a calm beach. Your domain can be opened for free twice per long rest, otherwise it costs you 20 Cursed Energy. If you don't catch hostile creatures in your domain, it lasts indefinitely.</p>
+            <p class="indent"><strong>Death Swarm.</strong> While on your domain expansion, you can use your Death Swarm technique. Making their attacks also count for the sure-hit effect, making one attack as they are summoned. As an action for X Cursed Energy, you can summon a number of sea Shikigami up to your Cursed Energy modifier within sight range. These shikigami can use swimming speed as a flying speed and can have a number equal to your Cursed Energy score active at once.</p>
+            <h5 class="caption">SHIKIGAMI COSTS</h5>
+			<table>
+				<thead>
+					<tr><td>Shikigami</td><td>Cost</td></tr>
+				</thead>
+				<tr><td>Giant Sea Eel</td><td>1 Cursed Energy</td></tr>
+        		<tr><td>Swarm of Piranhas</td><td>2 Cursed Energy</td></tr>
+				<tr><td>River Serpent</td><td>4 Cursed Energy</td></tr>
+				<tr><td>Killer Whale</td><td>6 Cursed Energy</td></tr>
+				<tr><td>Sperm Whale</td><td>12 Cursed Energy</td></tr>
+			</table>
+            <div class="reference">
+				<div element="ID_JJK_INFORMATION_GIANT_SEA_EEL" />
+				<div element="ID_JJK_INFORMATION_SWARM_OF_PIRANHAS" />
+				<div element="ID_JJK_INFORMATION_RIVER_SERPENT" />
+				<div element="ID_JJK_INFORMATION_KILLER_WHALE" />
+				<div element="ID_JJK_INFORMATION_SPERM_WHALE" />
+			</div>
+        </description>
+		<sheet action="Action + Bonus Action + Movement" usage="2/Long Rest or CE">
+			<description>For 20 cursed energy, as an action you can summon up to {{ce:modifier}} sea shikigami within sight range, paying for their costs. These shikigami also count for the sure-hit effect, making one attack as they are summoned and can use swimming speed as a flying speed. You can have up to {{cu:stat}} active at once. If you don't catch hostile creatures in your domain, it lasts indefinitely.</description>
+		</sheet>
+	</element>
+
+	<element name="Water Defensive Ring" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DISASTER_TIDES_WATER_DEFENSIVE_RING">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DISASTER_TIDES_WATER_DEFENSIVE_RING</requirements>
+		<description>
+			<p>Beginning at 6th level, you can make a ring of water that protects you from any incoming attack. As an action for 6 Cursed Energy, you can create a ring of water around you, granting you temporary hit points equal to your Cursed Energy modifier times 15. This can also be used as a reaction to incoming damage for 8 Cursed Energy. While the ring is active, you gain immunity to cold damage and resistance to bludgeoning, slashing, and piercing damage. You can only use this cursed technique again after the current ring is over.</p>
+		</description>
+        <sheet action="Action" usage="CE">
+            <description>For 6 cursed energy, you gain {{disaster:tides:water:defensive:ring:temp:hp}} temporary hit points. This can also be used as a reaction to incoming damage for 8 Cursed Energy. While the ring is active, you gain immunity to cold damage and resistance to bludgeoning, slashing, and piercing damage. You can only use this cursed technique again after the current ring is over.</description>
+        </sheet>
+        <rules>
+            <stat name="disaster:tides:water:defensive:ring:temp:hp" value="ce:modifier" />
+            <stat name="disaster:tides:water:defensive:ring:temp:hp" value="ce:modifier" />
+            <stat name="disaster:tides:water:defensive:ring:temp:hp" value="ce:modifier" />
+            <stat name="disaster:tides:water:defensive:ring:temp:hp" value="ce:modifier" />
+            <stat name="disaster:tides:water:defensive:ring:temp:hp" value="ce:modifier" />
+            <stat name="disaster:tides:water:defensive:ring:temp:hp" value="ce:modifier" />
+            <stat name="disaster:tides:water:defensive:ring:temp:hp" value="ce:modifier" />
+            <stat name="disaster:tides:water:defensive:ring:temp:hp" value="ce:modifier" />
+            <stat name="disaster:tides:water:defensive:ring:temp:hp" value="ce:modifier" />
+            <stat name="disaster:tides:water:defensive:ring:temp:hp" value="ce:modifier" />
+            <stat name="disaster:tides:water:defensive:ring:temp:hp" value="ce:modifier" />
+            <stat name="disaster:tides:water:defensive:ring:temp:hp" value="ce:modifier" />
+            <stat name="disaster:tides:water:defensive:ring:temp:hp" value="ce:modifier" />
+            <stat name="disaster:tides:water:defensive:ring:temp:hp" value="ce:modifier" />
+            <stat name="disaster:tides:water:defensive:ring:temp:hp" value="ce:modifier" />
+        </rules>
+	</element>
+
+	<element name="Flash Flood" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DISASTER_TIDES_FLASH_FLOOD">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DISASTER_TIDES_FLASH_FLOOD</requirements>
+		<description>
+			<p>Starting at 11th level, with your studies you have learned how to condense the water that you create and use it as a ball of mass destruction. As an action for 6 Cursed Energy, you can choose one target within 30 feet of you. Make a cursed energy attack roll against it. On a hit, it will take 10d8 cold damage and be pushed 80 feet away from you. </p>
+            <p class="indent">You can instead as an action for 8 Cursed Energy choose a point within 30 feet of you. All creatures within a 10-foot radius circle of that point must make a Dexterity saving throw. On a failure they take 8d12 cold damage or half as much damage on a success. If the area is enclosed it is filled with 10 feet of water.</p>
+		</description>
+        <sheet action="Action" usage="CE">
+			<description>For 6 cursed energy, you can make a cursed energy attack roll against within 30 feet of you. On a hit, it takes 10d8 cold damage and is pushed 80 feet away from you. For 8 cursed energy choose a point within 30 feet of you. All creatures within a 10-foot radius circle of that point must make a Dexterity saving throw. On a failure they take 8d12 cold damage or half as much damage on a success. If the area is enclosed it is filled with 10 feet of water.</description>
+		</sheet>
+	</element>
+
+	<element name="Maximum: Tsunami" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DISASTER_TIDES_MAXIMUM_TSUNAMI">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DISASTER_TIDES_MAXIMUM_TSUNAMI</requirements>
+		<description>
+			<p>At 18th level, you have reached the pinnacle of manipulating your tides, creating a massive wave that destroys everything in its path. As an action for 10 Cursed Energy, you can cast the Tsunami spell as an 8th-level spell.</p>
+		</description>
+        <sheet action="Action" usage="CE">
+			<description>For 10 cursed energy, you can cast the Tsunami spell as an 8th-level spell.</description>
+		</sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_TSUNAMI" />
+        </rules>
+	</element>
+
+    <!--Sea Shikigami-->
+    <element name="Giant Sea Eel" type="Information" source="JJK" id="ID_JJK_INFORMATION_GIANT_SEA_EEL">
+	    <description>
+		    <p style="margin-bottom:-5px"><em>Large beast, unaligned</em></p>
+		    <h4 style="margin-top:5px"></h4>
+		    <ul class="unstyled">
+		    	<li><strong>Armor Class</strong> 14 (natural armor)</li>
+		    	<li><strong>Hit Points</strong> 19 (3d10 + 3)</li>
+		    	<li><strong>Speed</strong> 0 ft., swim 40 ft.</li>
+		    </ul>
+            <table style="text-align:center;margin-top:10px;margin-bottom:10px">
+			    <thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+			    <tr><td>11 (+0)</td><td>14 (+2)</td><td>12 (+1)</td><td>7 (-2)</td><td>10 (+0)</td><td>7 (-2)</td></tr>
+		    </table>
+		    <ul class="unstyled">
+		    	<li><strong>Skills</strong> Perception +2, Stealth +4</li>
+			    <li><strong>Senses</strong> darkvision 60 ft., passive Perception 12</li>
+			    <li><strong>Languages</strong> —</li>
+		    	<li style="margin-bottom:-1em"><strong>Challenge</strong> 1/2 (100 XP)</li>
+		    </ul>
+		    <h4 style="margin-top:5px; margin-bottom:10px" />
+		    <ul class="unstyled">
+		    	<li><strong><em>Water Breathing.</em></strong> The eel can breathe only underwater.</li>
+		    </ul>
+	    	<h4 style="margin-top:10px">Actions</h4>
+	    	<ul class="unstyled">
+		    	<li><em><strong>Bite.</strong> Melee Weapon Attack:</em> +4 to hit, reach 5 ft., one target. Hit: 13 (2d10 + 2) piercing damage.</li>
+		    </ul>
+	    </description>
+    </element>
+
+    <element name="Swarm of Piranhas" type="Information" source="JJK" id="ID_JJK_INFORMATION_SWARM_OF_PIRANHAS">
+	    <description>
+		    <p style="margin-bottom:-5px"><em>Medium swarm of Tiny beasts, unaligned</em></p>
+		    <h4 style="margin-top:5px"></h4>
+		    <ul class="unstyled">
+			    <li><strong>Armor Class</strong> 13</li>
+			    <li><strong>Hit Points</strong> 28 (8d8 - 8)</li>
+			    <li><strong>Speed</strong> 0 ft., swim 40 ft.</li>
+	    	</ul>
+		    <table style="text-align:center;margin-top:10px;margin-bottom:10px">
+		    	<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+		    	<tr><td>13 (+1)</td><td>16 (+3)</td><td>9 (-1)</td><td>1 (-5)</td><td>7 (-2)</td><td>2 (-4)</td></tr>
+		    </table>
+		    <ul class="unstyled">
+		    	<li><strong>Damage Resistances</strong> bludgeoning, piercing, slashing</li>
+			    <li><strong>Condition Immunities</strong> charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned</li>
+			    <li><strong>Senses</strong> darkvision 60 ft., passive Perception 8</li>
+			    <li><strong>Languages</strong> —</li>
+			    <li style="margin-bottom:-1em"><strong>Challenge</strong> 1 (200 XP)</li>
+		    </ul>
+		    <h4 style="margin-top:5px; margin-bottom:10px" />
+		    <ul class="unstyled">
+		    	<li><strong><em>Blood Frenzy.</em></strong> The swarm has advantage on melee attack rolls against creatures that don't have all their hit points.</li>
+		    	<li><strong><em>Swarm.</em></strong> The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny piranha. The swarm can't regain hit points or gain temporary hit points.</li>
+		    	<li><strong><em>Water Breathing.</em></strong> The swarm can breathe only underwater.</li>
+		    </ul>
+		    <h4 style="margin-top:10px">Actions</h4>
+		    <ul class="unstyled">
+		    	<li><em><strong>Bites.</strong> Melee Weapon Attack:</em> +5 to hit, reach 0 ft., one creature in the swarm's space. Hit: 14 (4d6) piercing damage, or 7 (2d6) if the swarm has half HP or fewer.</li>
+		    </ul>
+	    </description>
+    </element>
+
+    <element name="River Serpent" type="Information" source="JJK" id="ID_JJK_INFORMATION_RIVER_SERPENT">
+	    <description>
+		    <p style="margin-bottom:-5px"><em>Huge beast, unaligned</em></p>
+		    <h4 style="margin-top:5px"></h4>
+		    <ul class="unstyled">
+		    	<li><strong>Armor Class</strong> 12</li>
+		    	<li><strong>Hit Points</strong> 60 (8d12 + 8)</li>
+		    	<li><strong>Speed</strong> 30 ft., swim 30 ft.</li>
+		    </ul>
+	    	<table style="text-align:center;margin-top:10px;margin-bottom:10px">
+		    	<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+	    		<tr><td>19 (+4)</td><td>14 (+2)</td><td>12 (+1)</td><td>1 (-5)</td><td>10 (+0)</td><td>3 (-4)</td></tr>
+	    	</table>
+		    <ul class="unstyled">
+		    	<li><strong>Skills</strong> Perception +2</li>
+		    	<li><strong>Senses</strong> blindsight 10 ft., passive Perception 12</li>
+		    	<li><strong>Languages</strong> —</li>
+		    	<li style="margin-bottom:-1em"><strong>Challenge</strong> 2 (450 XP)</li>
+		    </ul>
+		    <h4 style="margin-top:10px">Actions</h4>
+		    <ul class="unstyled">
+		    	<li><em><strong>Bite.</strong> Melee Weapon Attack:</em> +6 to hit, reach 10 ft., one target. Hit: 11 (2d6 + 4) piercing damage.</li>
+		    	<li><em><strong>Constrict.</strong> Melee Weapon Attack:</em> +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage, and the target is grappled (escape DC 16). While grappled, the target is restrained and the serpent can't constrict another target.</li>
+		    </ul>
+	    </description>
+    </element>
+
+    <element name="Killer Whale" type="Information" source="JJK" id="ID_JJK_INFORMATION_KILLER_WHALE">
+	<description>
+            <p style="margin-bottom:-5px"><em>Huge beast, unaligned</em></p>
+            <h4 style="margin-top:5px"></h4>
+            <ul class="unstyled">
+                <li><strong>Armor Class</strong> 12 (natural armor)</li>
+                <li><strong>Hit Points</strong> 90 (12d12 + 12)</li>
+                <li><strong>Speed</strong> 0 ft., swim 60 ft.</li>
+            </ul>
+            <table style="text-align:center;margin-top:10px;margin-bottom:10px">
+                <thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+                <tr><td>19 (+4)</td><td>10 (+0)</td><td>13 (+1)</td><td>3 (-4)</td><td>12 (+1)</td><td>7 (-2)</td></tr>
+            </table>
+            <ul class="unstyled">
+                <li><strong>Skills</strong> Perception +3</li>
+                <li><strong>Senses</strong> blindsight 120 ft., passive Perception 13</li>
+                <li><strong>Languages</strong> —</li>
+                <li style="margin-bottom:-1em"><strong>Challenge</strong> 3 (700 XP)</li>
+            </ul>
+		    <h4 style="margin-top:5px; margin-bottom:10px" />
+            <ul class="unstyled">
+                <li><strong><em>Echolocation.</em></strong> The whale can't use blindsight while deafened.</li>
+                <li><strong><em>Hold Breath.</em></strong> The whale can hold its breath for 30 minutes.</li>
+                <li><strong><em>Keen Hearing.</em></strong> The whale has advantage on Wisdom (Perception) checks that rely on hearing.</li>
+            </ul>
+            <h4 style="margin-top:10px">Actions</h4>
+            <ul class="unstyled">
+                <li><em><strong>Bite.</strong> Melee Weapon Attack:</em> +6 to hit, reach 5 ft., one target. Hit: 21 (5d6 + 4) piercing damage.</li>
+            </ul>
+        </description>
+    </element>
+
+    <element name="Sperm Whale" type="Information" source="JJK" id="ID_JJK_INFORMATION_SPERM_WHALE">
+        <description>
+            <p style="margin-bottom:-5px"><em>Gargantuan beast, unaligned</em></p>
+            <h4 style="margin-top:5px"></h4>
+            <ul class="unstyled">
+                <li><strong>Armor Class</strong> 13 (natural armor)</li>
+                <li><strong>Hit Points</strong> 189 (14d20 + 42)</li>
+                <li><strong>Speed</strong> 0 ft., swim 60 ft.</li>
+            </ul>
+            <table style="text-align:center;margin-top:10px;margin-bottom:10px">
+                <thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+                <tr><td>26 (+8)</td><td>8 (-1)</td><td>17 (+3)</td><td>3 (-4)</td><td>12 (+1)</td><td>5 (-3)</td></tr>
+            </table>
+            <ul class="unstyled">
+                <li><strong>Senses</strong> blindsight 120 ft., passive Perception 11</li>
+                <li><strong>Languages</strong> —</li>
+                <li style="margin-bottom:-1em"><strong>Challenge</strong> 8 (3,900 XP)</li>
+            </ul>
+		    <h4 style="margin-top:5px; margin-bottom:10px" />
+            <ul class="unstyled">
+                <li><strong><em>Echolocation.</em></strong> The whale can't use blindsight while deafened.</li>
+                <li><strong><em>Hold Breath.</em></strong> The whale can hold its breath for 90 minutes.</li>
+                <li><strong><em>Keen Hearing.</em></strong> The whale has advantage on Wisdom (Perception) checks that rely on hearing.</li>
+            </ul>
+            <h4 style="margin-top:10px">Actions</h4>
+            <ul class="unstyled">
+                <li><strong><em>Multiattack.</em></strong> The whale makes two attacks: one with its bite and one with its tail.</li>
+                <li><em><strong>Bite.</strong> Melee Weapon Attack:</em> +11 to hit, reach 5 ft., one target. Hit: 21 (3d8 + 8) piercing damage. On hit, large or smaller targets may be swallowed (Dex save DC 14). A swallowed creature has total cover against attacks and other effects outside the whale, and takes 3 (1d6) acid damage at the start of each of the whale's turns. If the whale takes 30 damage or more on a single turn from a creature inside it, the whale must succeed on a DC 16 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of the whale. If the whale dies, a swallowed creature can escape from the corpse by using 20 feet of movement, exiting prone.</li>
+                <li><em><strong>Tail.</strong> Melee Weapon Attack:</em> +11 to hit, reach 15 ft., one target. Hit: 18 (3d6 + 8) bludgeoning damage. or 37 (6d6 + 16) bludgeoning damage if the target is an object.</li>
+            </ul>
+        </description>
+    </element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Tides of Disaster Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DISASTER_TIDES_TIDES_OF_DISASTER" />
+	<element name="Domain Expansion: Horizon of Captivating Skhanda Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DISASTER_TIDES_DOMAIN_EXPANSION_HORIZON_OF_CAPTIVATING_SKHANDA" />
+	<element name="Water Defensive Ring Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DISASTER_TIDES_WATER_DEFENSIVE_RING" />
+	<element name="Flash Flood Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DISASTER_TIDES_FLASH_FLOOD" />
+	<element name="Maximum: Tsunami Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DISASTER_TIDES_MAXIMUM_TSUNAMI" />
+</elements>
