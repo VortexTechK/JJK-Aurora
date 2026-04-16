@@ -4,22 +4,33 @@
 		<name>Extra Features</name>
 		<description>The Extra Features from JJK</description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
-		<update version="5.0.2">
+		<update version="5.0.3">
 			<file name="extra-features.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/extra-features.xml" />
 		</update>
 	</info>
 	<!-- Curse Energy -->
 	<element name="Curse Energy" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_CURSED_ENERGY">
 		<description>
-			<p>Starting at 1st level, you can harness your negative feelings into a usable source of energy, called cursed energy. These feelings can be harnessed into attacks or abilities. The number of cursed energy you possess is based on your highest level class. You have a curse stat equal to the highest among charisma and wisdom.</p>
+			<p>Starting at 1st level, you can harness your negative feelings into a usable source of energy, called cursed energy. These feelings can be harnessed into attacks or abilities. The number of cursed energy you possess is based on your highest level class. You have a curse energy stat equal to the highest among charisma and wisdom.</p>
       		<p class="indent">Your cursed energy DC is 8 + user cursed energy ability modifier + proficiency bonus. </p>
 		</description>
 		<sheet>
-			<description>You have {{ce:points:total}} Cursed Energy and your Cursed Energy DC is {{ce:dc:total}}. Your cursed energy stat is {{cu:stat}}. </description>
+			<description>You have {{ce:points:total}} Cursed Energy and your Cursed Energy DC is {{ce:dc:total}}. Your cursed energy stat is {{cu:stat}} (+{{ce:modifier}}). </description>
 		</sheet>
         <rules>
+			<stat name="cu:stat" value="charisma:score" bonus="cursed energy"/>
+			<stat name="cu:stat" value="wisdom:score" bonus="cursed energy"/>
+			<stat name="cu:statsubtract" value="charisma:score" bonus="cursed energy"/>
+			<stat name="cu:statsubtract" value="wisdom:score" bonus="cursed energy"/>
+			<stat name="cu:stat:calc" value="cu:stat"/>
+			<stat name="cu:stat:calc" value="-cu:statsubtract"/>
             <stat name="ce:modifier" value="charisma:modifier" bonus="cursed energy"/>
 			<stat name="ce:modifier" value="wisdom:modifier" bonus="cursed energy"/>
+			<stat name="ce:modifier" value="1" requirements="[cu:stat:calc:2],![cu:stat:calc:4]"/>
+			<stat name="ce:modifier" value="2" requirements="[cu:stat:calc:4],![cu:stat:calc:6]"/>
+			<stat name="ce:modifier" value="3" requirements="[cu:stat:calc:6],![cu:stat:calc:8]"/>
+			<stat name="ce:modifier" value="4" requirements="[cu:stat:calc:8],![cu:stat:calc:10]"/>
+			<stat name="ce:modifier" value="5" requirements="[cu:stat:calc:10],![cu:stat:calc:12]"/>
 			<stat name="classlvljuggernaut" value="0" bonus="cursed energy"/>
 			<stat name="classlvlscout" value="0" bonus="cursed energy"/>
 			<stat name="classlvlshikigami" value="0" bonus="cursed energy"/>
@@ -106,8 +117,6 @@
 			<stat name="ce:dc" value="proficiency"/>
 			<stat name="ce:dc" value="ce:modifier"/>
 			<stat name="ce:dc:total" value="ce:dc" bonus="cursed energy"/>
-			<stat name="cu:stat" value="charisma:score" bonus="cursed energy"/>
-			<stat name="cu:stat" value="wisdom:score" bonus="cursed energy"/>
         </rules>
 	</element>
 	<!-- Reverse Curse Technique -->
