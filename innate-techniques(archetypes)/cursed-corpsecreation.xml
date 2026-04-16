@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="5.0.2">
+		<update version="5.0.3">
 			<file name="cursed-corpsecreation.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/cursed-corpsecreation.xml" />
 		</update>
 	</info>
@@ -244,6 +244,9 @@
 			<set name="intelligence">6</set>
 			<set name="wisdom">6</set>
 			<set name="charisma">6</set>
+			<set name="ac">12 (natural armor)</set>
+			<set name="hp">Xd4 (2 x proficiency)</set>
+			<set name="speed">30 ft.</set>
 			<set name="type">Construct</set>
 			<set name="size">Tiny</set>
 			<set name="alignment">unaligned</set>
@@ -251,6 +254,7 @@
 			<set name="languages">-</set>
 			<set name="immunities">poison, psychic</set>
 			<set name="conditionImmunities">charmed, exhaustion, frightened</set>
+			<set name="challenge">0</set>
 			<set name="traits">ID_JJK_COMPANION_TRAIT_CURSED_CORPSE_ARMOR_CLASS,ID_JJK_COMPANION_TRAIT_CURSED_CORPSE_HIT_DICE</set>
 			<set name="actions">ID_JJK_COMPANION_ACTION_CURSED_CORPSE_CRUSHER</set>
 		</setters>
