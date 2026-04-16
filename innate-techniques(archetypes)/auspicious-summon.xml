@@ -96,7 +96,7 @@
 		</sheet>
 	</element>
 	
-	<!--	Companion Reference	-->
+	<!-- Companion Reference -->
 	<element name="Ryu" type="Information" source="JJK" id="ID_JJK_INFORMATION_RYU">
 		<description>
 			<p style="margin-bottom:-5px"><em>Huge dragon, unaligned</em></p>
@@ -126,7 +126,7 @@
 		</description>
 	</element>
 	
-	<!--	Companion	-->
+	<!-- Companion -->
 	<element name="Ryu" type="Companion" source="JJK" id="ID_JJK_COMPANION_RYU"> 
     	<supports>Ryu</supports>
 		<setters>
