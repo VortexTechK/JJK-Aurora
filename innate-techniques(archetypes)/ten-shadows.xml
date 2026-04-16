@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="5.0">
+		<update version="5.0.1">
 			<file name="ten-shadows.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/ten-shadows.xml" />
 		</update>
 	</info>
@@ -11,16 +11,32 @@
 		<description>
 			<p>You have great <strong>potential</strong>, said to rival the six eyes</p>
 			<div element="ID_JJK_ARCHETYPE_FEATURE_TEN_SHADOWS_DIVINE_DOGS" />
+            <div element="ID_JJK_ARCHETYPE_FEATURE_TEN_SHADOWS_TOTALITY" />
 			<div element="ID_JJK_ARCHETYPE_FEATURE_TEN_SHADOWS_TRIAL" />
 			<div element="ID_JJK_ARCHETYPE_FEATURE_TEN_SHADOWS_SHADOW_MANIPULATION" />
 			<div element="ID_JJK_ARCHETYPE_FEATURE_TEN_SHADOWS_WELLS_UNKNOWN_ABYSS" />
       		<div element="ID_JJK_ARCHETYPE_FEATURE_TEN_SHADOWS_DOMAIN_EXPANSION_CHIMERA_SHADOW_GARDEN" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_TEN_SHADOWS_SHIKIGAMI" />
+			<div class="reference">
+				<div element="ID_JJK_INFORMATION_DIVINE_DOGS"/>
+				<div element="ID_JJK_INFORMATION_GAMA"/>
+				<div element="ID_JJK_INFORMATION_NUE"/>
+				<div element="ID_JJK_INFORMATION_GREAT_SERPENT"/>
+				<div element="ID_JJK_INFORMATION_RABBIT_ESCAPE"/>
+				<div element="ID_JJK_INFORMATION_MOURN_TIGER"/>
+				<div element="ID_JJK_INFORMATION_MAX_ELEPHANT"/>
+				<div element="ID_JJK_INFORMATION_ROUND_DEER"/>
+				<div element="ID_JJK_INFORMATION_PIERCING_OX"/>
+				<div element="ID_JJK_INFORMATION_MAHORAGA"/>
+				<div element="ID_JJK_INFORMATION_DIVINE_DOG_TOTALITY"/>
+			</div>
 		</description>
 		<sheet display="false">
-			<description>You have the Zenin Clan’s praised technique, said to rival the six eyes.</description>
+			<description>You have the Zenin Clan's praised technique, said to rival the six eyes.</description>
 		</sheet>
 		<rules>
 			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_TEN_SHADOWS_DIVINE_DOGS" level="1" />
+            <grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_TEN_SHADOWS_TOTALITY" level="1" />
 			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_TEN_SHADOWS_TRIAL" level="3" />
 			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_TEN_SHADOWS_SHADOW_MANIPULATION" level="6" />
 			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_TEN_SHADOWS_WELLS_UNKNOWN_ABYSS" level="11" />
@@ -35,6 +51,39 @@
 		</description>
 		<sheet action="Action" usage="CE">
 			<description>For 1 cursed energy, Summon up to 2 Divine Dogs(1 CE per dog) within 10 ft of you. Your Divine Dogs last for 1 hour, until they are reduced to 0 hit points or you dismiss any summoned shikigami as a bonus action while within line of sight. Alternatively, as a reaction to seeing your shikigami reduced to 0 hit points, you can unsummon them as a reaction and cannot summon them again until you finish a long rest. Your shikigami cannot use actions on their own. You can spend a bonus action to command your shikigami and can also spend an action to order them to do something more specific for longer, such as protect that creature, grab that, defend that area, etc. The number of Shikigami you can control at once is {{level:half:up}}.</description>
+		</sheet>
+	</element>
+    <element name="Totality" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_TEN_SHADOWS_TOTALITY">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_TEN_SHADOWS_TOTALITY</requirements>
+		<description>
+			<p> Any shikigami reduced to 0 hit points dies and cannot be summoned again. A destroyed shikigami is eligible for Totality, with the exception of Rabbit Escape or Mahoraga.</p>
+            <p class="indent">If one of your shikigami is killed, during a short or long rest you can perform a 1-hour ritual to pass on the strength of one deceased shikigami to a different Non-Totality (other than Rabbit Escape or Mahoraga), granting it a permanent Totality form. When you make a Totality, they gain the following changes:</p>
+            <ul>
+                <li>Their Strength, Dexterity, Constitution, Wisdom, and Charisma scores become those of the creature who has the higher score. Then they gain a bonus to that ability score equal to the modifier of the creature with the smaller score.(Ex: Nue has 16 Strength while Divine Dog has 12, their Totality would have 17 Strength.) They also gain the higher AC of the shikigami used. They receive the hit points of both creatures.</li>
+                <li>They receive the hit points of both creatures.</li>
+                <li>Their movement speed is added together.(2 with 30 would have 60)</li>
+                <li>They receive all features, traits, actions, bonus actions, reactions, legendary actions, skill, saving throw proficiencies, damage resistances, damage immunities and condition immunities from both creatures.</li>
+                <li>Their size can be either of the shikigami.</li>
+                <li>The CE cost becomes the higher shikigami + half of the lower shikigami's cost.</li>
+                <li>Their CR equals the creature with a higher CR + half the CR of the creature with the smaller CR rounded up.(Ex: Nue's CR is 4, and Great Serpent's CR is 5, their totality's CR would be 7)</li>
+                <li>After calculating ability scores, the difference in the ability modifier of the original user of a damaging feature and the Totality is added to the amount of dice. For save effects damage, the score corresponding to the save is used. (Ex: Mourn Tiger has a +5 in Dexterity and Nue has a +3. Mourn Tiger's Dexterity Score increases by +3, meaning a +1 bonus to Dexterity modifier so you add 1 additional dice to the Totality's attack to the damage dice that use Dexterity as the ability modifier, changing Mourn Tiger's bite attack from a 1d10+5 into a 2d10+6.) This increase only applies to direct attack rolls and saving throws.</li>
+            </ul>
+            <p class="indent"><strong>As an optional ruling, your DM can choose to ignore Totality, instead having all shikigami come back on a long rest, rather than being killed and eligible for Totality.</strong></p>
+		</description>
+		<sheet action="Action">
+      		<description>
+                <p>Any shikigami reduced to 0 hit points dies and cannot be summoned again.</p>
+                <p>During a short or long rest you can perform a 1-hour ritual to pass on the strength of one deceased shikigami with the exception of Rabbit Escape and Mahoraga to a different Non-Totality, granting it a permanent Totality form.</p>
+                <p>When you make a Totality, their scores become those of the creature who has the higher score.</p>
+                <p>Then they gain a bonus to that ability score equal to the modifier of the creature with the smaller score.</p>
+                <p>They have the higher AC of the shikigami used.</p>
+                <p>They receive the hit points of both creatures.</p>
+                <p>Their movement speed is added together.</p>
+                <p>They receive all features, traits, actions, bonus actions, reactions, legendary actions, skill, saving throw proficiencies, damage resistances, damage immunities and condition immunities from both creatures.</p>
+                <p>Their size can be either of the shikigami.</p>
+                <p>The CE cost becomes the higher shikigami + half of the lower shikigami's cost.</p>
+                <p>Their CR equals the creature with a higher CR + half the CR of the creature with the smaller CR rounded up.</p>
+            </description>
 		</sheet>
 	</element>
 	<element name="Trial" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_TEN_SHADOWS_TRIAL">
@@ -61,7 +110,7 @@
 		<sheet action="Action">
       		<description>Summon an untamed Shikigami within 30 ft of you without spending cursed energy. Any creature within 50 feet is considered participating in the ritual. An untamed shikigami will be berserk (attack the nearest creature), but if you have defeated the shikigami alone (not including your shikigami) and reduce it to 0 hit points, you can now summon the shikigami normally. You can summon {{level:half:up}} shikigami at a time(Divine Dogs and Rabbits count as one entity).</description>
 		</sheet>
-	</element>
+	</element>  
 	<element name="Shadow Manipulation" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_TEN_SHADOWS_SHADOW_MANIPULATION">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_TEN_SHADOWS_SHADOW_MANIPULATION</requirements>
 		<description>
@@ -108,16 +157,413 @@
 		<sheet action="Action + Bonus Action + Movement" usage="CE">
 			<description>
 				<p>For 20 cursed energy, any hostile creatures that end their turn within your domain must make a Dexterity (Acrobatics) check or become restrained. They can make a Strength (Athletics) check at the beginning of their turn to escape. The area counts as difficult terrain for all creatures of your choice, and you are under the effects of Freedom of Movement while within the domain.</p>
-				<p class="indent">As a bonus action you can spend up to {{ce:modifier}} to create a number of clones of yourself equal to the CE spent. The clones have all your features and stats, but not weapons or hit points and cannot use Cursed Energy. They have {{ce:detscsg}} hit points and become a shadow puddle once reduced to 0 hit points. You can use your reaction to switch places with a clone when you are hit, making the clone take the hit instead.</p>
-				<p class="indent">Whenever you summon a shikigami, you can instead spend cursed energy equal to the shikigami's cost(treat its price as if you were outside your domain) to summon a perfect copy of the shikigami. You can spend CE to make up to {{ce:detscsg}} shikigami copies on the same turn. You cannot create copies of Mahoraga with this feature.</p>
-				<p class="indent">Your normal Shikigami don't cost CE</p>
+				<p class="indent"> As a bonus action you can spend up to {{ce:modifier}} to create a number of clones of yourself equal to the CE spent. The clones have all your features and stats, but not weapons or hit points and cannot use Cursed Energy. They have {{ce:modifier}} hit points and become a shadow puddle once reduced to 0 hit points. You can use your reaction to switch places with a clone when you are hit, making the clone take the hit instead.</p>
+				<p class="indent"> Whenever you summon a shikigami, you can instead spend cursed energy equal to the shikigami's cost(treat its price as if you were outside your domain) to summon a perfect copy of the shikigami. You can spend CE to make up to {{ce:modifier}} shikigami copies on the same turn. You cannot create copies of Mahoraga with this feature.</p>
+				<p class="indent"> Your normal Shikigami don't cost CE</p>
 			</description>
 		</sheet>
 	</element>
+	<!--Shikigami-->
+	<element name="Shikigami" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_TEN_SHADOWS_SHIKIGAMI" >
+		<description>
+			<div class="reference">
+				<div element="ID_JJK_INFORMATION_DIVINE_DOGS"/>
+				<div element="ID_JJK_INFORMATION_GAMA"/>
+				<div element="ID_JJK_INFORMATION_NUE"/>
+				<div element="ID_JJK_INFORMATION_GREAT_SERPENT"/>
+				<div element="ID_JJK_INFORMATION_RABBIT_ESCAPE"/>
+				<div element="ID_JJK_INFORMATION_MOURN_TIGER"/>
+				<div element="ID_JJK_INFORMATION_MAX_ELEPHANT"/>
+				<div element="ID_JJK_INFORMATION_ROUND_DEER"/>
+				<div element="ID_JJK_INFORMATION_PIERCING_OX"/>
+				<div element="ID_JJK_INFORMATION_MAHORAGA"/>
+				<div element="ID_JJK_INFORMATION_DIVINE_DOG_TOTALITY"/>
+			</div>
+		</description>
+		<sheet display="false" />
+	</element>
+	<element name="Divine Dogs" type="Information" source="JJK" id="ID_JJK_INFORMATION_DIVINE_DOGS">
+		<description>
+			<p style="margin-bottom:-5px"><em>Medium shikigami, unaligned</em></p>
+			<h4 style="margin-top:5px" />
+			<ul class="unstyled">
+				<li><strong>Armor Class</strong> 13 + your proficiency</li>
+				<li><strong>Hit Points</strong> 16 + (2 x your proficiency)</li>
+				<li><strong>Speed</strong> 40 ft.</li>
+			</ul>
+			<table style="text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>12 (+1)</td><td>15 (+2)</td><td>12 (+1)</td><td>3 (-1)</td><td>12 (+1)</td><td>6 (-2)</td></tr>
+			</table>
+			<ul class="unstyled">
+				<li><strong>Saving Throws</strong> Dex +4</li>
+				<li><strong>Skills</strong> Perception +3, Stealth +4</li>
+				<li><strong>Senses</strong> passive Perception 13</li>
+				<li><strong>Languages</strong> -</li>
+				<li style="margin-bottom:-1em"><strong>Challenge</strong> 1/4 (50 XP)</li>
+			</ul>
+			<h4 style="margin-top:5px; margin-bottom:10px" />
+			<ul class="unstyled">
+				<li><strong><em>Keen Hearing and Smell.</em></strong> The wolf has advantage on Wisdom (Perception) checks that rely on hearing or smell.</li>
+				<li><strong><em>Pack Tactics.</em></strong> The wolf has advantage on attack rolls against a creature if at least one of its allies is within 5 feet of the creature and the ally is not incapacitated.</li>
+			</ul>
+			<h4 style="margin-top:10px">Actions</h4>
+			<ul class="unstyled">
+				<li><em><strong>Bite.</strong> Melee Weapon Attack:</em> +4 to hit, reach 5 ft., one target. <em>Hit:</em> (2d4 + 2 + your proficiency bonus) piercing damage. If the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone.</li>
+			</ul>
+		</description>
+	</element>
+	<element name="Gama" type="Information" source="JJK" id="ID_JJK_INFORMATION_GAMA">
+		<description>
+			<p style="margin-bottom:-5px"><em>Medium shikigami, unaligned</em></p>
+			<h4 style="margin-top:5px" />
+			<ul class="unstyled">
+				<li><strong>Armor Class</strong> 11 + your proficiency</li>
+				<li><strong>Hit Points</strong> 22 + (2 x your proficiency)</li>
+				<li><strong>Speed</strong> 30 ft., climb 30 ft., swim 30 ft.</li>
+			</ul>
+			<table style="text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>14 (+2)</td><td>13 (+1)</td><td>11 (+0)</td><td>2 (-4)</td><td>13 (+1)</td><td>3 (-2)</td></tr>
+			</table>
+			<ul class="unstyled">
+				<li><strong>Saving Throws</strong> Dex +3</li>
+				<li><strong>Skills</strong> Acrobatics: +3, Stealth: +3</li>
+				<li><strong>Senses</strong> darkvision 30 ft., passive Perception 11</li>
+				<li><strong>Languages</strong> -</li>
+				<li style="margin-bottom:-1em"><strong>Challenge</strong> 1/4 (50 XP)</li>
+			</ul>
+			<h4 style="margin-top:5px; margin-bottom:10px" />
+			<ul class="unstyled">
+				<li><strong><em>Amphibious.</em></strong> Gama can breathe both air and water.</li>
+				<li><strong><em>Standing Leap.</em></strong> Gama's long jump is up to 20 feet and its high jump is up to 10 feet, with or without a running start.</li>
+			</ul>
+			<h4 style="margin-bottom:10px">Actions</h4>
+			<ul class="unstyled">
+				<li><em><strong>Tounge.</strong> Melee Weapon Attack:</em> +4 to hit, reach 10 ft., one target. <em>Hit:</em> 5 (1d6 + 2) bludgeoning damage and the creature is grappled if it is the same size or smaller than Gama (escape DC 11). Until the grapple ends, the creature is restrained and Gama cannot use its Tounge attack.</li>
+				<li><em><strong>Swallow.</strong></em> Gama swallows a creature it has grappled with its tounge. While swallowed, the creature is blinded and restrained and has total cover against attacks and other effects from outside Gama and takes 2d4 acid damage at the start of Gama's turns. Gama can only have one creature swallowed at a time. If Gama dies, a swallowed creature is no longer restrained and can escape the corpse with 5 feet of movement, exiting prone.</li>
+			</ul>
+		</description>
+	</element>
+	<element name="Nue" type="Information" source="JJK" id="ID_JJK_INFORMATION_NUE">
+		<description>
+			<p style="margin-bottom:-5px"><em>Medium shikigami, unaligned</em></p>
+			<h4 style="margin-top:5px" />
+			<ul class="unstyled">
+				<li><strong>Armor Class</strong> 13 + your proficiency</li>
+				<li><strong>Hit Points</strong> 42 + (2 x your proficiency)</li>
+				<li><strong>Speed</strong> 10 ft., fly 80 ft.</li>
+			</ul>
+			<table style="text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>16 (+3)</td><td>17 (+3)</td><td>13 (+1)</td><td>8 (-2)</td><td>14 (+2)</td><td>10 (-1)</td></tr>
+			</table>
+			<ul class="unstyled">
+				<li><strong>Saving Throws</strong> Dex +5</li>
+				<li><strong>Skills</strong> Perception +4, Stealth +5</li>
+				<li><strong>Senses</strong> darkvision 30 ft., passive Perception 14</li>
+				<li><strong>Languages</strong> -</li>
+				<li style="margin-bottom:-1em"><strong>Challenge</strong> 1 (200 XP)</li>
+			</ul>
+			<h4 style="margin-top:5px; margin-bottom:10px" />
+			<ul class="unstyled">
+				<li><strong><em>Flyby.</em></strong> Nue doesn't provoke opportunity attacks when it flies out of an enemy's reach.</li>
+				<li><strong><em>Keen Hearing and Sight.</em></strong> Nue has advantage on Wisdom (Perception) checks that rely on hearing or sight.</li>
+				<li><strong><em>Cursed Energy Boost.</em></strong> On a hit with Nue, you can spend cursed energy up to your proficiency bonus to both deal additional 1d8 lightning damage and increase the save DC by 1 per CE spent. A creature that fails its save against Nue's electrified wings with this boosted attack also has disadvantage on Strength and Dexterity saves for 1 minute and can repeat the save at the beginning of their turns. If you spend at least 3 cursed energy, the target is also stunned until the beginning of their turn on a failed save.</li>
+			</ul>
+			<h4 style="margin-bottom:10px">Actions</h4>
+			<ul class="unstyled">
+				<li><em><strong>Multiattack.</strong></em> Nue makes two electrified wing attacks.</li>
+				<li><em><strong>Electrified Wings.</strong> Melee Weapon Attack:</em> +5 to hit, reach 5 ft., one target. <em>Hit:</em> 12 (2d8 + 3) lightning damage and the target must make a DC 12 Constitution saving throw. On a failed save, the target cannot take reactions until the start of their turn. If in contact with water, all creatures within 15 ft. of the target are targeted by this attack roll.</li>
+			</ul>
+			<h4 style="margin-bottom:10px">Bonus Actions</h4>
+			<ul class="unstyled">
+				<li><em><strong>Swoop.</strong></em> Nue grapples a willing creature and moves up to half its fly speed.</li>
+			</ul>
+		</description>
+	</element>
+	<element name="Great Serpent" type="Information" source="JJK" id="ID_JJK_INFORMATION_GREAT_SERPENT">
+		<description>
+			<p style="margin-bottom:-5px"><em>Huge shikigami, unaligned</em></p>
+			<h4 style="margin-top:5px" />
+			<ul class="unstyled">
+				<li><strong>Armor Class</strong> 12 + your proficiency</li>
+				<li><strong>Hit Points</strong> 84 + (3 x your proficiency)</li>
+				<li><strong>Speed</strong> 30 ft., burrow 30 ft.</li>
+			</ul>
+			<table style="text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>19 (+4)</td><td>14 (+2)</td><td>14 (+2)</td><td>1 (-4)</td><td>10 (+0)</td><td>3 (-4)</td></tr>
+			</table>
+			<ul class="unstyled">
+				<li><strong>Saving Throws</strong> Str +6</li>
+				<li><strong>Skills</strong> Stealth +4</li>
+				<li><strong>Senses</strong> blindsight 10 ft., passive Perception 10</li>
+				<li><strong>Languages</strong> -</li>
+				<li style="margin-bottom:-1em"><strong>Challenge</strong> 1 (200 XP)</li>
+			</ul>
+			<h4 style="margin-bottom:10px">Actions</h4>
+			<ul class="unstyled">
+				<li><em><strong>Bite.</strong> Melee Weapon Attack:</em> +6 to hit, reach 10 ft., one target. <em>Hit:</em> 11 (2d6 + 4) piercing damage.</li>
+				<li><em><strong>Constrict.</strong> Melee Weapon Attack:</em> +6 to hit, reach 5 ft., one target. <em>Hit:</em> 13 (2d8 + 4) bludgeoning damage and if the target is the same size or smaller than Great Serpent, it is grappled (escape DC 16). While grappled, the target is restrained and Great Serpent can't constrict another target.</li>
+			</ul>
+		</description>
+	</element>
+	<element name="Rabbit Escape" type="Information" source="JJK" id="ID_JJK_INFORMATION_RABBIT_ESCAPE">
+		<description>
+			<p style="margin-bottom:-5px"><em>Huge shikigami (swarm), unaligned</em></p>
+			<h4 style="margin-top:5px" />
+			<ul class="unstyled">
+				<li><strong>Armor Class</strong> 10 + your proficiency</li>
+				<li><strong>Hit Points</strong> 66 + (5 x your proficiency)</li>
+				<li><strong>Speed</strong> 45 ft., burrow 15 ft.</li>
+			</ul>
+			<table style="text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>9 (-1)</td><td>14 (+2)</td><td>9 (-1)</td><td>2 (-4)</td><td>10 (+0)</td><td>3 (-4)</td></tr>
+			</table>
+			<ul class="unstyled">
+				<li><strong>Saving Throws</strong> Dex +4</li>
+				<li><strong>Damage Resistances</strong> bludgeoning, piercing, slashing</li>
+				<li><strong>Condition Immunities</strong> charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned</li>
+				<li><strong>Senses</strong> darkvision 60 ft., passive Perception 10</li>
+				<li><strong>Languages</strong> -</li>
+				<li style="margin-bottom:-1em"><strong>Challenge</strong> 1 (200 XP)</li>
+			</ul>
+			<h4 style="margin-top:5px; margin-bottom:10px" />
+			<ul class="unstyled">
+				<li><strong><em>Keen Hearing.</em></strong> Rabbit Escape has advantage on Wisdom (Perception) checks that rely on hearing.</li>
+				<li><strong><em>Swarm.</em></strong> The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a rabbit. The swarm can't regain hit points or gain temporary hit points.</li>
+				<li><strong><em>Cursed Energy Boost.</em></strong> You can instead spend 1 cursed energy to summon a singular rabbits. This rabbits functions according to the Find Familiar spell for 8 hours. You can use this for free once per long rest.</li>
+			</ul>
+			<h4 style="margin-bottom:10px">Actions</h4>
+			<ul class="unstyled">
+				<li><em><strong>Kick.</strong> Melee Weapon Attack:</em> +4 to hit, reach 0 ft., one target. <em>Hit:</em> 7 (2d6) bludgeoning damage or half as much if the swarm has half or less its hit points.</li>
+			</ul>
+			<h4 style="margin-bottom:10px">Reactions</h4>
+			<ul class="unstyled">
+				<li><em><strong>Living Cover.</strong></em> While occupying a creature's space, Rabbit Escape can give the creature three quarters cover until the beginning of its turn, but any attack that misses because of the cover damages Rabbit Escape. This becomes half cover if the swarm has half or fewer of its hit points.</li>
+			</ul>
+		</description>
+	</element>
+	<element name="Mourning Tiger" type="Information" source="JJK" id="ID_JJK_INFORMATION_MOURN_TIGER">
+		<description>
+			<p style="margin-bottom:-5px"><em>Large shikigami, unaligned</em></p>
+			<h4 style="margin-top:5px" />
+			<ul class="unstyled">
+				<li><strong>Armor Class</strong> 15 + your proficiency</li>
+				<li><strong>Hit Points</strong> 96 + (4 x your proficiency)</li>
+				<li><strong>Speed</strong> 40 ft., climb 25 ft.</li>
+			</ul>
+			<table style="text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>16 (+3)</td><td>20 (+5)</td><td>16 (+3)</td><td>3 (-4)</td><td>15 (+2)</td><td>8 (-1)</td></tr>
+			</table>
+			<ul class="unstyled">
+				<li><strong>Saving Throws</strong> Dex +8</li>
+				<li><strong>Skills</strong> Acrobatics +8, Perception +8, Stealth +11</li>
+				<li><strong>Senses</strong> darkvision 60 ft., passive Perception 18</li>
+				<li><strong>Languages</strong> -</li>
+				<li style="margin-bottom:-1em"><strong>Challenge</strong> 5 (1,800 XP)</li>
+			</ul>
+			<h4 style="margin-top:5px; margin-bottom:10px" />
+			<ul class="unstyled">
+				<li><strong><em>Keen Hearing and Smell.</em></strong> The Mourning Tiger has advantage on Wisdom (Perception) checks that rely on hearing or smell.</li>
+				<li><strong><em>Pounce.</em></strong> If the Mourning Tiger moves at least 20 ft. straight toward a target and then hits it with a claw attack on the same turn, the target must succed on a DC 16 Strength saving throw or be knocked prone. If the target is prone, the Mourning Tiger can make a bite attack against it as a bonus action.</li>
+				<li><strong><em>Incorporeal.</em></strong> The Mourning Tiger can move through other creatures and objects as if they were difficult terrain. It takes 5 (2d4) force damage if it ends its turn inside a object.</li>
+			</ul>
+			<h4 style="margin-bottom:10px">Actions</h4>
+			<ul class="unstyled">
+				<li><em><strong>Multiattack.</strong></em> Mourn Tiger makes one attack with its Claw and one attack with its Bite in any order.</li>
+				<li><em><strong>Bite.</strong> Melee Weapon Attack:</em> +8 to hit, reach 5 ft., one target. <em>Hit:</em> 9 (1d8 + 5) piercing damage.</li>
+				<li><em><strong>Claws.</strong> Melee Weapon Attack:</em> +8 to hit, reach 5 ft., one target. <em>Hit:</em> 10 (1d10 + 5) piercing damage.</li>
+				<li><em><strong>Mourning Roar (Recharge 6).</strong></em> All creatures within 30 feet must make a cursed energy saving throw. On a failed save, a creature takes 5d6 psychic damage and is paralyzed until the end of their next turn. On a success, the creature takes half as much damage and is not paralyzed.</li> 
+			</ul>
+		</description>
+	</element>
+	<element name="Max Elephant" type="Information" source="JJK" id="ID_JJK_INFORMATION_MAX_ELEPHANT">
+		<description>
+			<p style="margin-bottom:-5px"><em>Huge shikigami, unaligned</em></p>
+			<h4 style="margin-top:5px" />
+			<ul class="unstyled">
+				<li><strong>Armor Class</strong> 13 + your proficiency</li>
+				<li><strong>Hit Points</strong> 112 + (4 x your proficiency)</li>
+				<li><strong>Speed</strong> 30 ft.</li>
+			</ul>
+			<table style="text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>22 (+6)</td><td>9 (-1)</td><td>17 (+3)</td><td>3 (-4)</td><td>11 (+0)</td><td>6 (-2)</td></tr>
+			</table>
+			<ul class="unstyled">
+				<li><strong>Saving Throws</strong> Con +5</li>
+				<li><strong>Skills</strong> Athletics +8</li>
+				<li><strong>Senses</strong> passive Perception 10</li>
+				<li><strong>Languages</strong> -</li>
+				<li style="margin-bottom:-1em"><strong>Challenge</strong> 4 (1,100 XP)</li>
+			</ul>
+			<h4 style="margin-top:5px; margin-bottom:10px" />
+			<ul class="unstyled">
+				<li><strong><em>Trampling Charge.</em></strong> If the Max Elephant moves at least 20 ft. straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 7 (2d6) piercing damage. If the same target is a creature, it must also succeed on a DC 16 Strength saving throw or be knocked prone. If the target is prone, the Max Elephant can make a stomp attack against it as a bonus action.</li>
+			</ul>
+			<h4 style="margin-bottom:10px">Actions</h4>
+			<ul class="unstyled">
+				<li><em><strong>Gore.</strong> Melee Weapon Attack:</em> +8 to hit, reach 5 ft., one target. <em>Hit:</em> 16 (3d6 + 6) piercing damage.</li>
+				<li><em><strong>Stomp.</strong> Melee Weapon Attack:</em> +8 to hit, reach 5 ft., one target. <em>Hit:</em> 19 (3d8 + 5) bludgeoning damage.</li>
+				<li><em><strong>Flood (Recharge 6).</strong></em> Max Elephant shoots water in a 60 feet cone. Each creature within range must make a DC 16 Strength saving throw, taking 10d6 cold damage and being knocked prone on a failed save or half as much on a successful save.</li> 
+			</ul>
+		</description>
+	</element>
+	<element name="Round Deer" type="Information" source="JJK" id="ID_JJK_INFORMATION_ROUND_DEER">
+		<description>
+			<p style="margin-bottom:-5px"><em>Medium shikigami, unaligned</em></p>
+			<h4 style="margin-top:5px" />
+			<ul class="unstyled">
+				<li><strong>Armor Class</strong> 9 + your proficiency</li>
+				<li><strong>Hit Points</strong> 148 + (4 x your proficiency)</li>
+				<li><strong>Speed</strong> 30 ft.</li>
+			</ul>
+			<table style="text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>14 (+2)</td><td>9 (-1)</td><td>23 (+6)</td><td>7 (-2)</td><td>18 (+4)</td><td>20 (+5)</td></tr>
+			</table>
+			<ul class="unstyled">
+				<li><strong>Saving Throws</strong> Con +9</li>
+				<li><strong>Senses</strong> darkvision 60 ft., passive Perception 14</li>
+				<li><strong>Languages</strong> -</li>
+				<li style="margin-bottom:-1em"><strong>Challenge</strong> 8 (3,900 XP)</li>
+			</ul>
+			<h4 style="margin-top:5px; margin-bottom:10px" />
+			<ul class="unstyled">
+				<li><strong><em>RCT Pool.</em></strong> Round Deer has a pool of Reverse Cursed Energy equal to its Chrarisma score times your proficiency bonus and regains 10 healing towards its pool at the start of its turns.</li>
+				<li><strong><em>Reverse Curse Technique Aura.</em></strong> Round Deer has a 10 feet aura of reverse cursed energy around it at all times. Round Deer can spend 10 healing from its RCT Pool for each creature within its aura at the start of its turn, healing them for that amount. This aura also functions as an antimagic aura for all creatures other than its summoner. A creature that attempts to use cursed energy must make a DC 15 Cursed Energy check or be unable to use cursed energy while they are within the aura. Round Deer can suppress this aura while concentrating.</li>
+				<li><strong><em>Cursed Energy Boost.</em></strong> As a bonus action or reaction, you can spend cursed energy ip to your CE modifier to use Reverse Cursed Technique using Round Deer as a point of origin and drawing from its RCT Pool to heal a creature within its aura. You can use 10 points of healing for every 1 cursed energy spent.</li>
+			</ul>
+			<h4 style="margin-bottom:10px">Actions</h4>
+			<ul class="unstyled">
+				<li><em><strong>Horn.</strong> Melee Weapon Attack:</em> +5 to hit, reach 5 ft., one target. <em>Hit:</em> 5 (1d6 + 2) piercing damage + 27 (5d10) radiant damage if the target is a cursed spirit.</li>
+				<li><em><strong>Reverse Cursed Technique.</strong></em> Round Deer can spend healing from its RCT Pool on a creature within its aura. Round Deer can spend up to 10 times your proficiency bonus at once in increments of 10.</li>
+			</ul>
+			<h4 style="margin-bottom:10px">Reactions</h4>
+			<ul class="unstyled">
+				<li><em><strong>Reverse Cursed Technique.</strong></em> Round Deer can use Reverse Cursed Technique on itself as a reaction to damage.</li>
+			</ul>
+		</description>
+	</element>
+	<element name="Piercing Ox" type="Information" source="JJK" id="ID_JJK_INFORMATION_PIERCING_OX">
+		<description>
+			<p style="margin-bottom:-5px"><em>Large shikigami, unaligned</em></p>
+			<h4 style="margin-top:5px" />
+			<ul class="unstyled">
+				<li><strong>Armor Class</strong> 13 + your proficiency</li>
+				<li><strong>Hit Points</strong> 118 + (4 x your proficiency)</li>
+				<li><strong>Speed</strong> 60 ft.</li>
+			</ul>
+			<table style="text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>24 (+7)</td><td>12 (+1)</td><td>18 (+4)</td><td>7 (-2)</td><td>12 (+1)</td><td>7 (-2)</td></tr>
+			</table>
+			<ul class="unstyled">
+				<li><strong>Saving Throws</strong> Str +10</li>
+				<li><strong>Skills</strong> Athletics +13</li>
+				<li><strong>Senses</strong> darkvision 60 ft., passive Perception 11</li>
+				<li><strong>Languages</strong> -</li>
+				<li style="margin-bottom:-1em"><strong>Challenge</strong> 8 (3,900 XP)</li>
+			</ul>
+			<h4 style="margin-top:5px; margin-bottom:10px" />
+			<ul class="unstyled">
+				<li><strong><em>Unrelenting Charge.</em></strong> Piercing Ox deals an additional d12 of damage for every 10 feet it moves in a straight line before hitting a target with its gore.</li>
+			</ul>
+			<h4 style="margin-bottom:10px">Actions</h4>
+			<ul class="unstyled">
+				<li><em><strong>Gore.</strong> Melee Weapon Attack:</em> +10 to hit, reach 5 ft., one target. <em>Hit:</em> 13 (1d12 + 7) piercing damage.</li>
+			</ul>
+			<h4 style="margin-bottom:10px">Bonus Action</h4>
+			<ul class="unstyled">
+				<li><em><strong>Aggressive.</strong></em> As a bonus action, Piercing Ox can move up to its speed toward a hostile creature that it can see.</li>
+			</ul>
+		</description>
+	</element>
+	<element name="Eight-Handled Divergent Sila Divine General Mahoraga" type="Information" source="JJK" id="ID_JJK_INFORMATION_MAHORAGA">
+		<description>
+			<p style="margin-bottom:-5px"><em>Large shikigami, unaligned</em></p>
+			<h4 style="margin-top:5px" />
+			<ul class="unstyled">
+				<li><strong>Armor Class</strong> 20 + your proficiency</li>
+				<li><strong>Hit Points</strong> 400 + (20 x your proficiency)</li>
+				<li><strong>Speed</strong> 50 ft.</li>
+			</ul>
+			<table style="text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>30 (+10)</td><td>22 (+6)</td><td>30 (+10)</td><td>12 (+1)</td><td>16 (+3)</td><td>8 (-1)</td></tr>
+			</table>
+			<ul class="unstyled">
+				<li><strong>Saving Throws</strong> Str +18, Dex +14, Con +18, Int +9, Wis +11, Cha +7</li>
+				<li><strong>Skills</strong> Athletics +26, Insight +11, Investigation +9, Perception +11, Sleight of Hand +14</li>
+				<li><strong>Senses</strong> passive Perception 21</li>
+				<li><strong>Languages</strong> -</li>
+				<li style="margin-bottom:-1em"><strong>Challenge</strong> 25 (75,000 XP)</li>
+			</ul>
+			<h4 style="margin-top:5px; margin-bottom:10px" />
+			<ul class="unstyled">
+				<li><strong><em>Legendary Resistance (4/day).</em></strong> If Eight-Handled Divergent Sila Divine General Mahoraga fails a saving throw, it can choose to succeed instead.</li>
+				<li><strong><em>Regeneration.</em></strong> Mahoraga regains 40 hit points at the start of its turns.</li>
+				<li><strong><em>Conditional Adaptation.</em></strong> When Mahoraga gains a condition, it removes that condition at the end of its turn and begins adapting to it. After 3 rounds have passed, it becomes immune to that condition.</li>
+				<li><strong><em>Eight Handled Wheel.</em></strong> When Mahoraga takes damage, the wheel above its head spins at the end of its turn. Once the wheel has turned twice, it gains resistance to the damage type it took. Upon three turns, it gains immunity. Mahoraga can only adapt to one damage type at a time.</li>
+				<li><strong><em>Obstacle Adaptation.</em></strong> Mahoraga possesses the ability to adapt to all phenomena. If Mahoraga encounters an obstruction such as a flying enemy, a obstruction it cannot pass, or a special attack or technique used against it, Mahoraga will begin adapting according to the Eight-Handled Wheel. Such as by jumping up to the despite its own movement speed, phasing through barriers, or slowly becoming immune to certain technique, spell effect, or ability up to the DM.</li>
+			</ul>
+			<h4 style="margin-bottom:10px">Actions</h4>
+			<ul class="unstyled">
+				<li><em><strong>Multiattack.</strong></em> Eight-Handled Divergent Sila Divine General Mahoraga makes three attacks with its slam or one attack with the Sword of Extermination and one slam attack.</li>
+				<li><em><strong>Slam.</strong> Melee Weapon Attack:</em> +18 to hit, reach 5 ft., one target. <em>Hit:</em> 37 (5d10 + 10) bludgeoning damage.</li>
+				<li><em><strong>Sword of Extermination.</strong> Melee Weapon Attack:</em> +22 to hit, reach 5 ft., one target. Hit: 27 (5d6 + 10) piercing damage and if the target is a cursed spirit or undead, it must make a DC 30 Constitution saving throw or be instantly exorcised and die.</li>
+			</ul>
+			<h4 style="margin-bottom:10px">Bonus Action</h4>
+			<ul class="unstyled">
+				<li><em><strong>Size Shift.</strong></em> Mahoraga changes their size to Huge or Gargantuan for 1 minute or until they return to their original size as a bonus action.</li>
+			</ul>
+			<h4 style="margin-bottom:10px">Legendary Actions</h4>
+			<p>The monster can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The monster regains spent legendary actions at the start of its turn.</p>
+			<ul class="unstyled">
+				<li><em><strong>Flurry.</strong></em> Mahoraga makes one attack with its slam or sword of extermination against a creature within range.</li>
+				<li><em><strong>Quick Adaptation (Costs 3 Actions).</strong></em> Mahoraga's wheel spins violently, immediately completing one turn of adaptation.</li>
+			</ul>
+		</description>
+	</element>
+	<element name="Divine Dog Totality" type="Information" source="JJK" id="ID_JJK_INFORMATION_DIVINE_DOG_TOTALITY">
+		<description>
+		<p style="margin-bottom:-5px"><em>Large shikigami, unaligned</em></p>
+			<h4 style="margin-top:5px" />
+			<ul class="unstyled">
+				<li><strong>Armor Class</strong> 13 + your proficiency</li>
+				<li><strong>Hit Points</strong> 32 + (4 x your proficiency)</li>
+				<li><strong>Speed</strong> 80 ft.</li>
+			</ul>
+			<table style="text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>13 (+1)</td><td>17 (+3)</td><td>13 (+1)</td><td>3 (-4)</td><td>13 (+1)</td><td>6 (-2)</td></tr>
+			</table>
+			<ul class="unstyled">
+				<li><strong>Skills</strong> Perception +7, Stealth +5</li>
+				<li><strong>Senses</strong> passive Perception 13</li>
+				<li><strong>Languages</strong> -</li>
+				<li style="margin-bottom:-1em"><strong>Challenge</strong> 1/4 (50 XP)</li>
+			</ul>
+			<h4 style="margin-top:5px; margin-bottom:10px" />
+			<ul class="unstyled">
+				<li><strong><em>Keen Hearing and Smell.</em></strong> The wolf has advantage on Wisdom (Perception) checks that rely on hearing or smell.</li>
+				<li><strong><em>Pack Tactics.</em></strong> The wolf has advantage on an attack roll against a creature if at least one of the wolf's allies is within 5 ft. of the creature and the ally isn't incapacitated.</li>
+			</ul>
+			<h4 style="margin-bottom:10px">Actions</h4>
+			<ul class="unstyled">
+				<li><em><strong>Bite.</strong> Melee Weapon Attack:</em> +4 to hit, reach 5 ft., one target. <em>Hit:</em> 7 (4d4 + 2 + your proficiency) piercing damage. If the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone.</li>
+			</ul>
+		</description>
+	</element>
 	<!--Feature Replacement Grants-->
 	<element name="Divine Dogs Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_TEN_SHADOWS_DIVINE_DOGS" />
-	<element name="Trial Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_TEN_SHADOWS_TRIAL" />
-	<element name="Shadow Manipulation Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_TEN_SHADOWS_SHADOW_MANIPULATION" />
+	<element name="Totality Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_TEN_SHADOWS_TOTALITY" />
+    <element name="Trial Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_TEN_SHADOWS_TRIAL" />
+    <element name="Shadow Manipulation Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_TEN_SHADOWS_SHADOW_MANIPULATION" />
 	<element name="Well's Unknown Abyss Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_TEN_SHADOWS_WELLS_UNKNOWN_ABYSS" />
 	<element name="Domain Expansion: Chimera Shadow Garden Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_TEN_SHADOWS_DOMAIN_EXPANSION_CHIMERA_SHADOW_GARDEN" />
 </elements>
