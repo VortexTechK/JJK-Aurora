@@ -11,6 +11,9 @@
 		<description>
 			<p>A true father.</p>
 			<div element="ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_CORPSE_CREATION" />
+			<div class="reference">
+				<div element="ID_JJK_INFORMATION_CURSED_CORPSE"/>
+			</div>
 			<div element="ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_CORPSE_TACTICS" />
 			<div element="ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_CORPSE_MUTATION" />
 			<div element="ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_MAXIMUM_PRIZED_CREATION" />
@@ -73,6 +76,9 @@
 				<tr><td>Charisma</td><td>10</td><td>9</td><td>8</td><td>8</td><td>8</td><td>6</td></tr>
 			</table>
 			<p>You can command a number of cursed corpses up to your proficiency bonus as a bonus action to act on your turn to have them act. Additionally, you can command the same number of cursed corpses as an action to give them a complex command that allows them to function for much longer as long as they are following that command. A Cursed Corpse with the Autonomy Mutation does not require commands to act, but can be commanded as a free action on your turn. </p>
+			<div class="reference">
+				<div element="ID_JJK_INFORMATION_CURSED_CORPSE"/>
+			</div>
 		</description>
 		<sheet>
 			<description>As part of a long rest you can create up to a {{cursed:corpse:creation:size}} core and cursed corpse. While you have a core, as an action you can grant it any amount of your cursed energy up to its maximum. If the corpse uses cursed energy it comes from this pool and must be recharged by you. A tiny or small cursed corpse expends 1 ce for each day it is active. A medium or large consumes 5, huge consumes 10, and gargantuan consumes 20. The cursed corpse inherits your proficiency bonus at the time of its creation. They regain their health normally on a short or long rest, and cannot be healed using Reversed Cursed Technique. Each of its scores are a 6 before allocation and you have 27 points that you allocate between scores. You can command up to {{proficiency}} cursed corpses as a bonus action. You can command the same number of cursed corpses as an action to give them a complex command that allows them to function for much longer as long as they are following that command. A Cursed Corpse with the Autonomy Mutation does not require commands to act, but can be commanded as a free action on your turn. </description>
@@ -83,6 +89,7 @@
 			<stat name="cursed:corpse:creation:size" value="large" level="6" inline="true" />
 			<stat name="cursed:corpse:creation:size" value="huge" level="11" inline="true" />
 			<stat name="cursed:corpse:creation:size" value="gargantuan" level="18" inline="true" />
+			<select type="Companion" name="Cursed Corpse" supports="Cursed Corpse" />
 		</rules>
 	</element>
 
@@ -198,7 +205,7 @@
 			<h4 style="margin-top:5px"></h4>
 			<ul class="unstyled">
 				<li><strong>Armor Class</strong> 12 (natural armor)</li>
-				<li><strong>Hit Points</strong> Xd4 (2 × proficiency)</li>
+				<li><strong>Hit Points</strong> Xd4 (2 x proficiency)</li>
 				<li><strong>Speed</strong> 30 ft.</li>
 			</ul>
 			<table style="text-align:center;margin-top:10px;margin-bottom:10px">
@@ -218,11 +225,11 @@
 			<h4 style="margin-top:10px">Traits</h4>
 			<ul class="unstyled">
 				<li><strong><em>Armor Class.</em></strong> The corpse’s AC increases by +1 for every size above Tiny.</li>
-				<li><strong><em>Hit Dice.</em></strong> The corpse’s hit die increases by one size for every size above Tiny (Tiny d4, Small d6, Medium d8, Large d10, Huge d12, Gargantuan d20).</li>
+				<li><strong><em>Hit Dice.</em></strong> The corpse’s hit die increases by one size for every size above Tiny (Tiny d4, Small d6, Medium d8, Large d10, Huge d12, Gargantuan d20). Add the average of all the hit die (half + 0.5) + their Constitution modifier together to get their hit points. Examples: Tiny corpse: Hit die (4d4), Con mod (+2) = 18 = (2.5 × 4). Small corpse: Hit die (4d6), Con mod (+2) = 22 = (3.5 × 4). </li>
 			</ul>
 			<h4 style="margin-top:10px">Actions</h4>
 			<ul class="unstyled">
-				<li><strong><em>Corpse Crusher.</em></strong> Melee Weapon Attack: (Str or Dex + PB) to hit, reach 5 ft., one target. Hit: 1d4 + Str or Dex bludgeoning, slashing, or piercing damage. The damage die increases with size.</li>
+				<li><strong><em>Corpse Crusher.</strong> Melee Weapon Attack:</em> (Str or Dex + PB) to hit, reach 5 ft., one target. Hit: (1d4 + Str or Dex) bludgeoning, slashing, or piercing damage. The damage die increases with for every size above Tiny. (Tiny d4, Small d6, Medium d8, Large d10, Huge d12, Gargantuan d20).</li>
 			</ul>
 		</description>
 	</element>
@@ -241,28 +248,43 @@
 			<set name="size">Tiny</set>
 			<set name="alignment">unaligned</set>
 			<set name="senses">passive Perception 8</set>
-			<set name="languages"></set>
+			<set name="languages">-</set>
 			<set name="immunities">poison, psychic</set>
 			<set name="conditionImmunities">charmed, exhaustion, frightened</set>
+			<set name="traits">ID_JJK_COMPANION_TRAIT_CURSED_CORPSE_ARMOR_CLASS,ID_JJK_COMPANION_TRAIT_CURSED_CORPSE_HIT_DICE</set>
 			<set name="actions">ID_JJK_COMPANION_ACTION_CURSED_CORPSE_CRUSHER</set>
 		</setters>
 		<rules>
 			<stat name="companion:ac" value="12" bonus="base" />
 			<stat name="companion:speed" value="30" bonus="base" />
-			<stat name="companion:hp:max" value="2" bonus="base" />
-			<stat name="companion:hp:max" value="proficiency" />
-			<stat name="companion:hp:max" value="proficiency" />
-			<stat name="companion:proficiency" value="proficiency" bonus="base" />
-			<stat name="companion:proficiency" value="-2" bonus="base companion PB removal"/>
+			<stat name="companion:hp:max" value="4" bonus="base" />
 		</rules>
+	</element>
+
+	<element name="Armor Class" type="Companion Action" source="JJK" id="ID_JJK_COMPANION_TRAIT_CURSED_CORPSE_ARMOR_CLASS">
+		<description>
+			<p>The Corpse’s AC increases by +1 for every size above Tiny.</p>
+		</description>
+		<sheet>
+			<description>The Corpse’s AC increases by +1 for every size above Tiny.</description>
+		</sheet>
+	</element>
+
+	<element name="Hit Dice" type="Companion Action" source="JJK" id="ID_JJK_COMPANION_TRAIT_CURSED_CORPSE_HIT_DICE">
+		<description>
+			<p>The corpse’s hit die increases by one size for every size above Tiny (Tiny d4, Small d6, Medium d8, Large d10, Huge d12, Gargantuan d20). Add the average of all the hit die (half + 0.5) + their Constitution modifier together to get their hit points. Examples: Tiny corpse: Hit die (4d4), Con mod (+2) = 18 = (2.5 × 4). Small corpse: Hit die (4d6), Con mod (+2) = 22 = (3.5 × 4).</p>
+		</description>
+		<sheet>
+			<description>The corpse’s hit die increases by one size for every size above Tiny (Tiny d4, Small d6, Medium d8, Large d10, Huge d12, Gargantuan d20). Add the average of all the hit die (half + 0.5) + their Constitution modifier together to get their hit points. Examples: Tiny corpse: Hit die (4d4), Con mod (+2) = 18 = (2.5 × 4). Small corpse: Hit die (4d6), Con mod (+2) = 22 = (3.5 × 4).</description>
+		</sheet>
 	</element>
 	
 	<element name="Corpse Crusher" type="Companion Action" source="JJK" id="ID_JJK_COMPANION_ACTION_CURSED_CORPSE_CRUSHER">
 		<description>
-			<p>Melee Weapon Attack: (Str or Dex + PB) to hit, reach 5 ft., one target. Hit: 1d4 + Str or Dex bludgeoning, slashing, or piercing damage. The damage die increases by one size for every size above Tiny.</p>
+			<p>Melee Weapon Attack: (Str or Dex + PB) to hit, reach 5 ft., one target. Hit: (1d4 + Str or Dex) bludgeoning, slashing, or piercing damage. The damage die increases by one size for every size above Tiny. (Tiny d4, Small d6, Medium d8, Large d10, Huge d12, Gargantuan d20).</p>
 		</description>
 		<sheet>
-			<description>Melee Weapon Attack: (Str or Dex + PB) to hit, reach 5 ft., one target. Hit: 1d4 + Str or Dex damage. Damage die scales with size.</description>
+			<description>Melee Weapon Attack: (Str or Dex + PB) to hit, reach 5 ft., one target. Hit: (1d4 + Str or Dex) damage. Damage die scales with size. (Tiny d4, Small d6, Medium d8, Large d10, Huge d12, Gargantuan d20).</description>
 		</sheet>
 	</element>
 	
