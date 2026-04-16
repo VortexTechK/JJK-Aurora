@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="5.0.1">
+		<update version="5.0.2">
 			<file name="cursed-corpsecreation.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/cursed-corpsecreation.xml" />
 		</update>
 	</info>
@@ -191,6 +191,79 @@
 		</sheet>
 	</element>
 
+	<element name="Cursed Corpse" type="Information" source="JJK" id="ID_JJK_INFORMATION_CURSED_CORPSE">
+		<description>
+			<p style="margin-bottom:-5px"><em>Tiny construct, unaligned</em></p>
+			<h4 style="margin-top:5px"></h4>
+			<ul class="unstyled">
+				<li><strong>Armor Class</strong> 12 (natural armor)</li>
+				<li><strong>Hit Points</strong> Xd4 (2 × proficiency)</li>
+				<li><strong>Speed</strong> 30 ft.</li>
+			</ul>
+			<table style="text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead>
+					<tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr>
+				</thead>
+				<tr>
+					<td>6 (−2)</td><td>6 (−2)</td><td>6 (−2)</td><td>6 (−2)</td><td>6 (−2)</td><td>6 (−2)</td>
+				</tr>
+			</table>
+			<ul class="unstyled">
+				<li><strong>Damage Immunities</strong> poison, psychic</li>
+				<li><strong>Condition Immunities</strong> charmed, exhaustion, frightened</li>
+				<li><strong>Senses</strong> passive Perception 8</li>
+				<li><strong>Languages</strong> —</li>
+			</ul>
+			<h4 style="margin-top:10px">Traits</h4>
+			<ul class="unstyled">
+				<li><strong><em>Armor Class.</em></strong> The corpse’s AC increases by +1 for every size above Tiny.</li>
+				<li><strong><em>Hit Dice.</em></strong> The corpse’s hit die increases by one size for every size above Tiny (Tiny d4, Small d6, Medium d8, Large d10, Huge d12, Gargantuan d20).</li>
+			</ul>
+			<h4 style="margin-top:10px">Actions</h4>
+			<ul class="unstyled">
+				<li><strong><em>Corpse Crusher.</em></strong> Melee Weapon Attack: (Str or Dex + PB) to hit, reach 5 ft., one target. Hit: 1d4 + Str or Dex bludgeoning, slashing, or piercing damage. The damage die increases with size.</li>
+			</ul>
+		</description>
+	</element>
+
+	<element name="Cursed Corpse" type="Companion" source="JJK" id="ID_JJK_COMPANION_CURSED_CORPSE">
+		<supports>Cursed Corpse</supports>
+		<setters>
+			<set name="strength">6</set>
+			<set name="dexterity">6</set>
+			<set name="constitution">6</set>
+			<set name="intelligence">6</set>
+			<set name="wisdom">6</set>
+			<set name="charisma">6</set>
+			<set name="type">Construct</set>
+			<set name="size">Tiny</set>
+			<set name="alignment">unaligned</set>
+			<set name="senses">passive Perception 8</set>
+			<set name="languages"></set>
+			<set name="immunities">poison, psychic</set>
+			<set name="conditionImmunities">charmed, exhaustion, frightened</set>
+			<set name="actions">ID_JJK_COMPANION_ACTION_CURSED_CORPSE_CRUSHER</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="12" bonus="base" />
+			<stat name="companion:speed" value="30" bonus="base" />
+			<stat name="companion:hp:max" value="2" bonus="base" />
+			<stat name="companion:hp:max" value="proficiency" />
+			<stat name="companion:hp:max" value="proficiency" />
+			<stat name="companion:proficiency" value="proficiency" bonus="base" />
+			<stat name="companion:proficiency" value="-2" bonus="base companion PB removal"/>
+		</rules>
+	</element>
+	
+	<element name="Corpse Crusher" type="Companion Action" source="JJK" id="ID_JJK_COMPANION_ACTION_CURSED_CORPSE_CRUSHER">
+		<description>
+			<p>Melee Weapon Attack: (Str or Dex + PB) to hit, reach 5 ft., one target. Hit: 1d4 + Str or Dex bludgeoning, slashing, or piercing damage. The damage die increases by one size for every size above Tiny.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: (Str or Dex + PB) to hit, reach 5 ft., one target. Hit: 1d4 + Str or Dex damage. Damage die scales with size.</description>
+		</sheet>
+	</element>
+	
 	<!--Feature Replacement Grants-->
 	<element name="Cursed Corpse Creation Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CORPSE_CREATION_CORPSE_CREATION" />
 	<element name="Cursed Corpse Tactics Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CORPSE_CREATION_CORPSE_TACTICS" />
