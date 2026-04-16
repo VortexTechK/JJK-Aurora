@@ -4,7 +4,7 @@
 		<name>Extra Features</name>
 		<description>The Extra Features from JJK</description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
-		<update version="5.0.3">
+		<update version="5.0.4">
 			<file name="extra-features.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/extra-features.xml" />
 		</update>
 	</info>
@@ -26,11 +26,11 @@
 			<stat name="cu:stat:calc" value="-cu:statsubtract"/>
             <stat name="ce:modifier" value="charisma:modifier" bonus="cursed energy"/>
 			<stat name="ce:modifier" value="wisdom:modifier" bonus="cursed energy"/>
-			<stat name="ce:modifier" value="1" requirements="[cu:stat:calc:2],![cu:stat:calc:4]"/>
-			<stat name="ce:modifier" value="2" requirements="[cu:stat:calc:4],![cu:stat:calc:6]"/>
-			<stat name="ce:modifier" value="3" requirements="[cu:stat:calc:6],![cu:stat:calc:8]"/>
-			<stat name="ce:modifier" value="4" requirements="[cu:stat:calc:8],![cu:stat:calc:10]"/>
-			<stat name="ce:modifier" value="5" requirements="[cu:stat:calc:10],![cu:stat:calc:12]"/>
+			<stat name="ce:modifier" value="1" requirements="([cu:stat:calc:2],![cu:stat:calc:4])||(([cu:stat:calc:1],![cu:stat:calc:2]),(([cu:statsubtract:1],![cu:statsubtract:2])||([cu:statsubtract:3],![cu:statsubtract:4])||([cu:statsubtract:5],![cu:statsubtract:6])||([cu:statsubtract:7],![cu:statsubtract:8])||([cu:statsubtract:9],![cu:statsubtract:10])||([cu:statsubtract:11],![cu:statsubtract:12])||([cu:statsubtract:13],![cu:statsubtract:14])||([cu:statsubtract:15],![cu:statsubtract:16])||([cu:statsubtract:17],![cu:statsubtract:18])||([cu:statsubtract:19],![cu:statsubtract:20])||([cu:statsubtract:21],![cu:statsubtract:22])||([cu:statsubtract:23],![cu:statsubtract:24])))"/>
+			<stat name="ce:modifier" value="2" requirements="([cu:stat:calc:4],![cu:stat:calc:6])||(([cu:stat:calc:3],![cu:stat:calc:4]),(([cu:statsubtract:1],![cu:statsubtract:2])||([cu:statsubtract:3],![cu:statsubtract:4])||([cu:statsubtract:5],![cu:statsubtract:6])||([cu:statsubtract:7],![cu:statsubtract:8])||([cu:statsubtract:9],![cu:statsubtract:10])||([cu:statsubtract:11],![cu:statsubtract:12])||([cu:statsubtract:13],![cu:statsubtract:14])||([cu:statsubtract:15],![cu:statsubtract:16])||([cu:statsubtract:17],![cu:statsubtract:18])||([cu:statsubtract:19],![cu:statsubtract:20])||([cu:statsubtract:21],![cu:statsubtract:22])||([cu:statsubtract:23],![cu:statsubtract:24])))"/>
+			<stat name="ce:modifier" value="3" requirements="([cu:stat:calc:6],![cu:stat:calc:8])||(([cu:stat:calc:5],![cu:stat:calc:6]),(([cu:statsubtract:1],![cu:statsubtract:2])||([cu:statsubtract:3],![cu:statsubtract:4])||([cu:statsubtract:5],![cu:statsubtract:6])||([cu:statsubtract:7],![cu:statsubtract:8])||([cu:statsubtract:9],![cu:statsubtract:10])||([cu:statsubtract:11],![cu:statsubtract:12])||([cu:statsubtract:13],![cu:statsubtract:14])||([cu:statsubtract:15],![cu:statsubtract:16])||([cu:statsubtract:17],![cu:statsubtract:18])||([cu:statsubtract:19],![cu:statsubtract:20])||([cu:statsubtract:21],![cu:statsubtract:22])||([cu:statsubtract:23],![cu:statsubtract:24])))"/>
+			<stat name="ce:modifier" value="4" requirements="([cu:stat:calc:8],![cu:stat:calc:10])||(([cu:stat:calc:7],![cu:stat:calc:8]),(([cu:statsubtract:1],![cu:statsubtract:2])||([cu:statsubtract:3],![cu:statsubtract:4])||([cu:statsubtract:5],![cu:statsubtract:6])||([cu:statsubtract:7],![cu:statsubtract:8])||([cu:statsubtract:9],![cu:statsubtract:10])||([cu:statsubtract:11],![cu:statsubtract:12])||([cu:statsubtract:13],![cu:statsubtract:14])||([cu:statsubtract:15],![cu:statsubtract:16])||([cu:statsubtract:17],![cu:statsubtract:18])||([cu:statsubtract:19],![cu:statsubtract:20])||([cu:statsubtract:21],![cu:statsubtract:22])||([cu:statsubtract:23],![cu:statsubtract:24])))"/>
+			<stat name="ce:modifier" value="5" requirements="([cu:stat:calc:10],![cu:stat:calc:12])||(([cu:stat:calc:9],![cu:stat:calc:10]),(([cu:statsubtract:1],![cu:statsubtract:2])||([cu:statsubtract:3],![cu:statsubtract:4])||([cu:statsubtract:5],![cu:statsubtract:6])||([cu:statsubtract:7],![cu:statsubtract:8])||([cu:statsubtract:9],![cu:statsubtract:10])||([cu:statsubtract:11],![cu:statsubtract:12])||([cu:statsubtract:13],![cu:statsubtract:14])||([cu:statsubtract:15],![cu:statsubtract:16])||([cu:statsubtract:17],![cu:statsubtract:18])||([cu:statsubtract:19],![cu:statsubtract:20])||([cu:statsubtract:21],![cu:statsubtract:22])||([cu:statsubtract:23],![cu:statsubtract:24])))"/>
 			<stat name="classlvljuggernaut" value="0" bonus="cursed energy"/>
 			<stat name="classlvlscout" value="0" bonus="cursed energy"/>
 			<stat name="classlvlshikigami" value="0" bonus="cursed energy"/>
