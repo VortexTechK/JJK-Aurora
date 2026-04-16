@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="5.0.2">
+		<update version="5.0.3">
 			<file name="cursed-speech.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/cursed-speech.xml" />
 		</update>
 	</info>
@@ -55,6 +55,8 @@
             <stat name="cursed:speech:add" value="2" level="6" bonus="cursed speech" />
             <stat name="cursed:speech:add" value="3" level="11" bonus="cursed speech" />
             <stat name="cursed:speech:add" value="4" level="18" bonus="cursed speech" />
+			<grant type="Spell" id="ID_PHB_SPELL_SLEEP" />
+			<grant type="Spell" id="ID_PHB_SPELL_POWER_WORD_STUN" />
 			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_SLEEP" />
         	<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_RETURN" />
 			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_RUN_AWAY" />
@@ -69,7 +71,6 @@
 	</element>
 
     <element name="Sleep" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_SLEEP">
-        <supports>Interjection</supports>
         <description>
             <p>As an action for 1 cursed energy, you can cast Sleep at 1st level. You can add 3d8 per extra Cursed Energy added at 3rd, 6th, 11th, and 18th levels.</p>
         </description>
@@ -79,7 +80,6 @@
     </element>
 
     <element name="Return" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_RETURN">
-        <supports>Interjection</supports>
         <description>
             <p>As an action for 1 cursed energy, you can make a summoned creature within 60 feet make a Charisma save against your save DC or be unsummoned. At 3rd, 6th, 11th, and 18th levels you can choose to add a +1 to your DC per Cursed Energy.</p>
         </description>
@@ -89,7 +89,6 @@
     </element>
 
     <element name="Run Away" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_RUN_AWAY">
-        <supports>Interjection</supports>
         <description>
             <p>As an action for 2 cursed energy, you can attempt to force one creature within 60 feet away from you but not into harm. At 3rd, 6th, 11th, and 18th levels you can choose to add a +1 to your DC or a number of targets per Cursed Energy.</p>
         </description>
@@ -99,7 +98,6 @@
     </element>
 
     <element name="Blast Away" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_BLAST_AWAY">
-        <supports>Interjection</supports>
         <description>
             <p>As an action for 4 cursed energy, you force one target to make a Charisma saving throw. On a failure, they will be launched 60 ft back from the spot they were in, taking 1d8 force damage per 10ft traveled. At 3rd level, you can spend 1 additional Cursed Energy to add +10 to the distance the target is blasted away. You can spend another +1 at 6th, 11th, and 18th levels.</p>
         </description>
@@ -109,7 +107,6 @@
     </element>
 
     <element name="Plummet" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_PLUMMET">
-        <supports>Interjection</supports>
         <description>
             <p>As an action for 6 cursed energy, you force a target to make a Charisma saving throw. On a failure, they will receive Cursed Energy mod d10 force damage and will be knocked prone for 1 minute as a field of intensified gravity crushes them. They can remove the prone condition if they succeed on a Strength saving throw. At 3rd level, you can spend 1 additional Xd10 force damage. You can spend another +1 at 6th, 11th, and 18th levels.</p>
         </description>
@@ -119,7 +116,6 @@
     </element>
 
     <element name="Get Twisted" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_GET_TWISTED">
-        <supports>Interjection</supports>
         <description>
             <p>As an action for 8 cursed energy, you force a target to make a Charisma saving throw. On a failure one of their legs or arms of your choice will be twisted, breaking the limb. In addition, the target will lose hit points equal to their Constitution score times half your proficiency bonus(rounded down). An arm twisted removes the ability to use that arm and reduces the creatur's Strength by 2, and twisting a leg halves movement and reduces Dexterity by 2. At 3rd level, you can spend 1 additional Cursed Energy to add a +1 to the DC. You can spend another +1 at 6th, 11th, and 18th levels.</p>
         </description>
@@ -129,7 +125,6 @@
     </element>
 
     <element name="Get Crushed" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_GET_CRUSHED">
-        <supports>Interjection</supports>
         <description>
             <p>As an action for 10 cursed energy, you force a target to make a Charisma saving throw. On a failure, they are imploded which makes them lose xd12 maximum hit points and become paralyzed. They will keep being imploded for 1 minute, this can be ended early if they succeed on a Strength saving throw, on a failure they will keep losing xd12 of their maximum hit points at the beginning of their turns. The hit points lost will be regained at the end of a long rest. At 3rd level, you can spend 1 additional Cursed Energy to add a d12 to the amount of hit points lost. You can spend another +1 at 6th, 11th, and 18th levels.</p>
         </description>
@@ -139,7 +134,6 @@
     </element>
 
     <element name="Don't Move" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_DONT_MOVE">
-        <supports>Interjection</supports>
         <description>
             <p>As an action for 12 cursed energy, you cast Power Word Stun at 8th level. You increase the HP limit by 25 HP per 1 point of Cursed Energy added at 3rd, 6th, 11th, and 18th levels.</p>
         </description>
@@ -149,7 +143,6 @@
     </element>
 
     <element name="Explode" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_EXPLODE">
-        <supports>Interjection</supports>
         <description>
             <p>As an action for 14 cursed energy, you force a target and every creature within 5ft. of it to make a Charisma saving throw. On a failure, they will explode from the inside out making them receive 3d8 force damage + xd6 fire damage. At 3rd level, you can spend 1 additional Cursed Energy to add a d8 to the force damage. You can spend another +1 at 6th, 11th, and 18th levels.</p>
         </description>
@@ -159,7 +152,6 @@
     </element>
 
     <element name="Die" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_DIE">
-        <supports>Interjection</supports>
         <description>
             <p>As an action for 16 Cursed Energy, you force a target with 30 times your Cursed Energy modifier hit points or less to make a Charisma saving throw. On a failure, they die instantly. At 3rd level, you can spend 1 additional Cursed Energy to add a +1 to the DC and 10 hit points to the requirement. You can spend another +1 at 6th, 11th, and 18th levels.</p>
         </description>
@@ -211,6 +203,56 @@
         <rules>
             <select type="Archetype Feature" name="Interjection" supports="Interjection" />
         </rules>
+	</element>
+
+	<element name="Sleep" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_INTERJECTION_SLEEP">
+		<supports>Interjection</supports>
+		<compendium display="false"/>
+	</element>
+
+	<element name="Return" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_INTERJECTION_RETURN">
+		<supports>Interjection</supports>
+		<compendium display="false"/>
+	</element>
+
+	<element name="Run Away" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_INTERJECTION_RUN_AWAY">
+		<supports>Interjection</supports>
+		<compendium display="false"/>
+	</element>
+
+	<element name="Blast Away" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_INTERJECTION_BLAST_AWAY">
+		<supports>Interjection</supports>
+		<compendium display="false"/>
+	</element>
+
+	<element name="Plummet" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_INTERJECTION_PLUMMET">
+		<supports>Interjection</supports>
+		<compendium display="false"/>
+	</element>
+
+	<element name="Get Twisted" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_INTERJECTION_GET_TWISTED">
+		<supports>Interjection</supports>
+		<compendium display="false"/>
+	</element>
+
+	<element name="Get Crushed" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_INTERJECTION_GET_CRUSHED">
+		<supports>Interjection</supports>
+		<compendium display="false"/>
+	</element>
+
+	<element name="Don't Move" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_INTERJECTION_DONT_MOVE">
+		<supports>Interjection</supports>
+		<compendium display="false"/>
+	</element>
+
+	<element name="Explode" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_INTERJECTION_EXPLODE">
+		<supports>Interjection</supports>
+		<compendium display="false"/>
+	</element>
+
+	<element name="Die" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_INTERJECTION_DIE">
+		<supports>Interjection</supports>
+		<compendium display="false"/>
 	</element>
 
 	<element name="Iron Chords" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CURSED_SPEECH_IRON_CHORDS">
