@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="5.0.2">
+		<update version="5.0.3">
 			<file name="divergent-fist.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/divergent-fist.xml" />
 		</update>
 	</info>
 
-	<element name="ARCHETYPE NAME" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_DIVERGENT_FIST">
+	<element name="Divergent Fist" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_DIVERGENT_FIST">
 		<supports>Innate Technique</supports>
 		<description>
 			<p>Punch kick merchant.</p>
@@ -52,6 +52,11 @@
 		<sheet>
 			<description>Once per round, you can use Manji Kick, One-Two, or Weave.</description>
 		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_DIVERGENT_FIST_MANJI_KICK" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_DIVERGENT_FIST_ONE_TWO" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_DIVERGENT_FIST_WEAVE" />
+		</rules>
 	</element>
 
     <element name="Manji Kick" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DIVERGENT_FIST_MANJI_KICK">
