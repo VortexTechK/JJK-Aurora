@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="5.0.1">
+		<update version="5.0.2">
 			<file name="disaster-tides.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/disaster-tides.xml" />
 		</update>
 	</info>
@@ -13,11 +13,11 @@
 			<div element="ID_JJK_ARCHETYPE_FEATURE_DISASTER_TIDES_TIDES_OF_DISASTER" />
 			<div element="ID_JJK_ARCHETYPE_FEATURE_DISASTER_TIDES_DOMAIN_EXPANSION_HORIZON_OF_CAPTIVATING_SKHANDA" />
             <div class="reference">
-				<div element="ID_JJK_INFORMATION_GIANT_SEA_EEL" />
-				<div element="ID_JJK_INFORMATION_SWARM_OF_PIRANHAS" />
-				<div element="ID_JJK_INFORMATION_RIVER_SERPENT" />
-				<div element="ID_JJK_INFORMATION_KILLER_WHALE" />
-				<div element="ID_JJK_INFORMATION_SPERM_WHALE" />
+				<div element="ID_JJK_INFORMATION_GIANT_SEA_EEL" /><br/><br/><br/>
+				<div element="ID_JJK_INFORMATION_SWARM_OF_PIRANHAS" /><br/><br/><br/>
+				<div element="ID_JJK_INFORMATION_RIVER_SERPENT" /><br/><br/><br/>
+				<div element="ID_JJK_INFORMATION_KILLER_WHALE" /><br/><br/><br/>
+				<div element="ID_JJK_INFORMATION_SPERM_WHALE" /><br/><br/><br/>
 			</div>
 			<div element="ID_JJK_ARCHETYPE_FEATURE_DISASTER_TIDES_WATER_DEFENSIVE_RING" />
 			<div element="ID_JJK_ARCHETYPE_FEATURE_DISASTER_TIDES_FLASH_FLOOD" />
