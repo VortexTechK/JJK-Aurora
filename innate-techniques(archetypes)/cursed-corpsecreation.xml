@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="5.0.3">
+		<update version="5.0.4">
 			<file name="cursed-corpsecreation.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/cursed-corpsecreation.xml" />
 		</update>
 	</info>
@@ -265,7 +265,7 @@
 		</rules>
 	</element>
 
-	<element name="Armor Class" type="Companion Action" source="JJK" id="ID_JJK_COMPANION_TRAIT_CURSED_CORPSE_ARMOR_CLASS">
+	<element name="Armor Class" type="Companion Trait" source="JJK" id="ID_JJK_COMPANION_TRAIT_CURSED_CORPSE_ARMOR_CLASS">
 		<description>
 			<p>The Corpse’s AC increases by +1 for every size above Tiny.</p>
 		</description>
@@ -274,7 +274,7 @@
 		</sheet>
 	</element>
 
-	<element name="Hit Dice" type="Companion Action" source="JJK" id="ID_JJK_COMPANION_TRAIT_CURSED_CORPSE_HIT_DICE">
+	<element name="Hit Dice" type="Companion Trait" source="JJK" id="ID_JJK_COMPANION_TRAIT_CURSED_CORPSE_HIT_DICE">
 		<description>
 			<p>The corpse’s hit die increases by one size for every size above Tiny (Tiny d4, Small d6, Medium d8, Large d10, Huge d12, Gargantuan d20). Add the average of all the hit die (half + 0.5) + their Constitution modifier together to get their hit points. Examples: Tiny corpse: Hit die (4d4), Con mod (+2) = 18 = (2.5 × 4). Small corpse: Hit die (4d6), Con mod (+2) = 22 = (3.5 × 4).</p>
 		</description>
