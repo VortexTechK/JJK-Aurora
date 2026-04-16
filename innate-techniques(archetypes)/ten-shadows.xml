@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="5.0.3">
+		<update version="5.0.4">
 			<file name="ten-shadows.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/ten-shadows.xml" />
 		</update>
 	</info>
@@ -91,7 +91,7 @@
 		<description>
 			<p> Once you reach the 3rd level, you have gained access to your other spirits, and you must face them in ritual combat alone to gain access to them. As an action, you can summon an untamed Shikigami within 30 ft of you without spending cursed energy. Any creature within 50 feet is considered participating in the ritual. An untamed shikigami will be berserk (attack the nearest creature), but if you have defeated the shikigami alone (not including your shikigami) and reduce it to 0 hit points, you can now summon the shikigami normally. You can summon a number of shikigami at a time equal to half your level rounded up (Divine Dogs and Rabbits count as one entity).</p>
       <p class="indent">If reduced to 0 hit points during a trial with multiple participants, you do not make death saving throws until all participants are unconscious.</p>
-      <h5 class="caption">TRIAL</h5>
+      <h5 class="caption">TRIAL REQUIREMENTS</h5>
 			<table>
 				<thead>
 					<tr><td>Cursed Energy Requirement</td><td>Shikigami</td></tr>
@@ -127,7 +127,7 @@
 		<description>
 			<p>When you reach 11th level, you can combine your shikigami into different forms. As an action, you can temporarily combine two of your living shikigami into a single type, granting the base shikigami an alteration feature from the other. You spend half the CE cost of the base shikigami to summon up to your proficiency bonus in altered shikigami at once, spending CE for each.</p>
   			<p class="indent">An altered shikigami has half the hit points of the base shikigami and you can reduce its size category by 1 to reduce the CE cost by 1. When reduced to 0 hit points, it does not affect the shikigami used in its creation and is not eligible for Totality. You cannot summon any unaltered shikigami while altered shikigami are summoned. If the base shikigami or alteration shikigami’s CR is 4 or higher, you can only create up to two altered shikigami with them.</p>
-			<h5 class="caption">TRIAL</h5>
+			<h5 class="caption">COMBINATION ALTERATIONS</h5>
 			<table>
 				<thead>
 					<tr><td>Shikigami</td><td>Alteration</td></tr>
