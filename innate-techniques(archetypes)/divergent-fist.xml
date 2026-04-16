@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="5.0.1">
+		<update version="5.0.2">
 			<file name="divergent-fist.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/divergent-fist.xml" />
 		</update>
 	</info>
@@ -84,7 +84,6 @@
             <stat name="divergent:fist:onetwo:add" value="divergent:fist:onetwo:mod" />
             <stat name="divergent:fist:onetwo:add" value="divergent:fist:onetwo:mod" />
         </rules>          
-		</sheet>
 	</element>
 
     <element name="Weave" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DIVERGENT_FIST_WEAVE">
