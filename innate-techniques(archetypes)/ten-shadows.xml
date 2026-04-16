@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="5.0.5">
+		<update version="5.0.6">
 			<file name="ten-shadows.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/ten-shadows.xml" />
 		</update>
 	</info>
@@ -18,17 +18,17 @@
       		<div element="ID_JJK_ARCHETYPE_FEATURE_TEN_SHADOWS_DOMAIN_EXPANSION_CHIMERA_SHADOW_GARDEN" />
 			<div element="ID_JJK_ARCHETYPE_FEATURE_TEN_SHADOWS_SHIKIGAMI" />
 			<div class="reference">
-				<div element="ID_JJK_INFORMATION_DIVINE_DOGS"/>
-				<div element="ID_JJK_INFORMATION_GAMA"/>
-				<div element="ID_JJK_INFORMATION_NUE"/>
-				<div element="ID_JJK_INFORMATION_GREAT_SERPENT"/>
-				<div element="ID_JJK_INFORMATION_RABBIT_ESCAPE"/>
-				<div element="ID_JJK_INFORMATION_MOURN_TIGER"/>
-				<div element="ID_JJK_INFORMATION_MAX_ELEPHANT"/>
-				<div element="ID_JJK_INFORMATION_ROUND_DEER"/>
-				<div element="ID_JJK_INFORMATION_PIERCING_OX"/>
-				<div element="ID_JJK_INFORMATION_MAHORAGA"/>
-				<div element="ID_JJK_INFORMATION_DIVINE_DOG_TOTALITY"/>
+				<div element="ID_JJK_INFORMATION_DIVINE_DOGS" style="height:10px"/>
+				<div element="ID_JJK_INFORMATION_GAMA" style="height:10px"/>
+				<div element="ID_JJK_INFORMATION_NUE" style="height:10px"/>
+				<div element="ID_JJK_INFORMATION_GREAT_SERPENT" style="height:10px"/>
+				<div element="ID_JJK_INFORMATION_RABBIT_ESCAPE" style="height:10px"/>
+				<div element="ID_JJK_INFORMATION_MOURN_TIGER" style="height:10px"/>
+				<div element="ID_JJK_INFORMATION_MAX_ELEPHANT" style="height:10px"/>
+				<div element="ID_JJK_INFORMATION_ROUND_DEER" style="height:10px"/>
+				<div element="ID_JJK_INFORMATION_PIERCING_OX" style="height:10px"/>
+				<div element="ID_JJK_INFORMATION_MAHORAGA" style="height:10px"/>
+				<div element="ID_JJK_INFORMATION_DIVINE_DOG_TOTALITY" style="height:10px"/>
 			</div>
 		</description>
 		<sheet display="false">
