@@ -4,7 +4,7 @@
 		<name>Shikigami User</name>
 		<description>The Shikigami User class from JJK.</description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
-		<update version="5.0.2">
+		<update version="5.0.3">
 			<file name="class-shikigamiuser.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/classes/class-shikigamiuser.xml" />
 		</update>
 	</info>
@@ -407,16 +407,15 @@
 			<p>You can add your proficiency bonus to any ability check or saving throw the shikigami makes. Your shikigami uses your proficiency bonus for attacks and saves. At 5th level your shikigami has advantage on melee attack rolls against a creature if you are within 5 feet of the creature and are not incapacitated.</p>
 		</description>
 		<sheet>
-			<description level="1">You can add PB to any ability check or saving throw the shikigami makes. Your shikigami uses your proficiency bonus for attacks and saves.</description>
-      		<description level="5">You can add PB to any ability check or saving throw the shikigami makes. Your shikigami uses your proficiency bonus for attacks and saves. Your shikigami has advantage on melee attack rolls against a creature if you are within 5 feet of the creature and are not incapacitated.</description>
+      		<description>You can add your PB to any ability check or saving throw the shikigami makes. Your shikigami uses your proficiency bonus for attacks and saves. At 5th level your shikigami has advantage on melee attack rolls against a creature if you are within 5 feet of the creature and are not incapacitated.</description>
 		</sheet>
 	</element>
 	<element name="Close Bond" type="Companion Trait" source="JJK" id="ID_JJK_COMPANION_TRAIT_SHIKIGAMI_COMPANION_CLOSE_BOND">
 		<description>
 			<p>At 15th level, when your shikigami companion hits with an attack, you can spend cursed energy up to your CE modifier as a reaction to use Cursed Strike through your companion.</p>
 		</description>
-		<sheet action="Reaction">
-			<description level="15">When your shikigami companion hits with an attack, you can spend CE up to your cursed energy modifier to use Cursed Strike through your companion.</description>
+		<sheet>
+			<description>At 15th level, when your shikigami companion hits with an attack, you can spend cursed energy up to your CE modifier as a reaction to use Cursed Strike through your companion.</description>
 		</sheet>
 	</element>
 	<element name="Strike" type="Companion Action" source="JJK" id="ID_JJK_COMPANION_ACTION_SHIKIGAMI_COMPANION_STRIKE">
