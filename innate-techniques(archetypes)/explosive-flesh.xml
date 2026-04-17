@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="5.0.1">
+		<update version="5.0.2">
 			<file name="explosive-flesh.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/explosive-flesh.xml" />
 		</update>
 	</info>
@@ -12,7 +12,7 @@
 			<p>A devilishily explosive technique.</p>
 			<div element="ID_JJK_ARCHETYPE_FEATURE_EXPLOSIVE_FLESH_SELF_DESTRUCTION" />
 			<div element="ID_JJK_ARCHETYPE_FEATURE_EXPLOSIVE_FLESH_FASTER_THROWS" />
-			<div element="ID_JJK_ARCHETYPE_FEATURE_EXPLOSIVE_FLESH_GUERILLA TACTICS" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_EXPLOSIVE_FLESH_GUERILLA_TACTICS" />
 			<div element="ID_JJK_ARCHETYPE_FEATURE_EXPLOSIVE_FLESH_STRONGER_EXPLOSIONS" />
 			<div element="ID_JJK_ARCHETYPE_FEATURE_EXPLOSIVE_FLESH_DOMAIN_EXPANSION_TRUE_ART" />
 		</description>
@@ -49,10 +49,10 @@
 			<description>You can spend cursed energy to remove and throw your body parts.</description>
 		</sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID_INTERNAL_FEATURE_REPLACEMENT_EXPLOSIVE_FLESH_SELF_DESTRUCTION_TINY" />
-            <grant type="Archetype Feature" id="ID_INTERNAL_FEATURE_REPLACEMENT_EXPLOSIVE_FLESH_SELF_DESTRUCTION_SMALL" />
-            <grant type="Archetype Feature" id="ID_INTERNAL_FEATURE_REPLACEMENT_EXPLOSIVE_FLESH_SELF_DESTRUCTION_MEDIUM" />
-            <grant type="Archetype Feature" id="ID_INTERNAL_FEATURE_REPLACEMENT_EXPLOSIVE_FLESH_SELF_DESTRUCTION_LARGE" />
+            <grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_EXPLOSIVE_FLESH_SELF_DESTRUCTION_TINY" />
+            <grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_EXPLOSIVE_FLESH_SELF_DESTRUCTION_SMALL" />
+            <grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_EXPLOSIVE_FLESH_SELF_DESTRUCTION_MEDIUM" />
+            <grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_EXPLOSIVE_FLESH_SELF_DESTRUCTION_LARGE" />
         </rules>
 	</element>
     
@@ -110,8 +110,8 @@
 		</sheet>
 	</element>
 
-	<element name="Guerilla Tactics" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_EXPLOSIVE_FLESH_GUERILLA TACTICS">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_EXPLOSIVE_FLESH_GUERILLA TACTICS</requirements>
+	<element name="Guerilla Tactics" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_EXPLOSIVE_FLESH_GUERILLA_TACTICS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_EXPLOSIVE_FLESH_GUERILLA_TACTICS</requirements>
 		<description>
 			<p>At 6th level, your practice with your explosions allowed you to make them in an instant. You can now instantly explode one of your body parts for the normal cost, as a reaction to receiving or hitting a melee attack roll as the body part explodes on your body. All creatures make the Dexterity saving throw with disadvantage unless their passive perception is higher than your cursed energy DC.</p>
 		</description>
@@ -145,7 +145,7 @@
 	<!--Feature Replacement Grants-->
 	<element name="Self Destruction Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_EXPLOSIVE_FLESH_SELF_DESTRUCTION" />
 	<element name="Faster Throws Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_EXPLOSIVE_FLESH_FASTER_THROWS" />
-	<element name="Guerilla Tactics Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_EXPLOSIVE_FLESH_GUERILLA TACTICS" />
+	<element name="Guerilla Tactics Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_EXPLOSIVE_FLESH_GUERILLA_TACTICS" />
 	<element name="Stronger Explosions Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_EXPLOSIVE_FLESH_STRONGER_EXPLOSIONS" />
 	<element name="Domain Expansion: True Art Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_EXPLOSIVE_FLESH_DOMAIN_EXPANSION_TRUE_ART" />
 </elements>
