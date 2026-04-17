@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="5.0.3">
+		<update version="5.0.4">
 			<file name="explosive-flesh.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/explosive-flesh.xml" />
 		</update>
 	</info>
@@ -46,7 +46,7 @@
             <p class="indent">The X is your CE modifier. Damage from this technique deals twice as much damage to objects and structures.</p>
         </description>
 		<sheet>
-			<description>You can spend cursed energy to remove and throw your body parts.</description>
+			<description>You can spend cursed energy to remove and throw your body parts. Damage from this technique deals twice as much damage to objects and structures.</description>
 		</sheet>
         <rules>
             <grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_EXPLOSIVE_FLESH_SELF_DESTRUCTION_TINY" />
@@ -63,7 +63,7 @@
             <p>Effect: You throw the body part at a point within 120ft. Creatures within 5 ft make a Dex save. On a failure, they take Xd6 force damage. On a success, they take half.</p>
         </description>
         <sheet action="Free Action" usage="CE">
-            <description>For 1 cursed energy + {{constitution:modifier}} HP, you throw the body part at a point within 120ft. Creatures within 5 ft make a Dex save. On a failure, they take Xd6 force damage. On a success, they take half.</description>
+            <description>For 1 cursed energy + {{constitution:modifier}} HP, you throw the body part at a point within 120ft. Creatures within 5 ft make a Dex save. On a failure, they take {{ce:modifier}}d6 force damage. On a success, they take half.</description>
         </sheet>
     </element>
 
@@ -74,7 +74,7 @@
             <p>Effect: You throw the body part at a point within 100ft. Creatures within 10 ft make a Dex save. On a failure, they take Xd8 force damage and are knocked prone. On a success they take half.</p>
         </description>
         <sheet action="Bonus Action" usage="CE">
-            <description>For 2 cursed energy + ({{constitution:modifier}}*{{level:half}}) HP, you throw the body part at a point within 100ft. Creatures within 10 ft make a Dex save. On a failure, they take Xd8 force damage and are knocked prone. On a success they take half.</description>
+            <description>For 2 cursed energy + ({{constitution:modifier}}*{{level:half}}) HP, you throw the body part at a point within 100ft. Creatures within 10 ft make a Dex save. On a failure, they take {{ce:modifier}}d8 force damage and are knocked prone. On a success they take half.</description>
         </sheet>
     </element>
 
@@ -85,7 +85,7 @@
             <p>Effect: You throw the body part at a point within 80ft. Creatures within 15 ft make a Dex save. On a failure, they take Xd10 force damage and are knocked prone. On a success, they take half.</p>
         </description>
         <sheet action="Action" usage="CE">
-            <description>For 4 cursed energy + ({{constitution:modifier}}*{{level}}) HP, you throw the body part at a point within 80ft. Creatures within 15 ft make a Dex save. On a failure, they take Xd10 force damage and are knocked prone. On a success, they take half.</description>
+            <description>For 4 cursed energy + ({{constitution:modifier}}*{{level}}) HP, you throw the body part at a point within 80ft. Creatures within 15 ft make a Dex save. On a failure, they take {{ce:modifier}}d10 force damage and are knocked prone. On a success, they take half.</description>
         </sheet>
     </element>
 
@@ -96,7 +96,7 @@
             <p>Effect: You throw the body part at a point within 60ft. Creatures within 20 ft make a Dex save. On a failure, they take Xd12 force damage and are knocked prone. On a success, they take half.</p>
         </description>
         <sheet action="Full Turn Action" usage="CE">
-            <description>For 6 cursed energy + ({{constitution:modifier}}*{{level}}) HP, you throw the body part at a point within 60ft. Creatures within 20 ft make a Dex save. On a failure, they take Xd12 force damage and are knocked prone. On a success, they take half.</description>
+            <description>For 6 cursed energy + ({{constitution:modifier}}*{{level}}) HP, you throw the body part at a point within 60ft. Creatures within 20 ft make a Dex save. On a failure, they take {{ce:modifier}}d12 force damage and are knocked prone. On a success, they take half.</description>
         </sheet>
     </element>
 
