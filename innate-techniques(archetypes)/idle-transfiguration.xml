@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="5.0.1">
+		<update version="5.0.2">
 			<file name="idle-transfiguration.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/idle-transfiguration.xml" />
 		</update>
 	</info>
@@ -162,7 +162,7 @@
             <description>You create a Polymorphic Soul Isomer for 1 minute. Each Transfigured Creature counts as one soul.</description>
         </sheet>
         <rules>
-            <select type="Companion" supports="ID_JJK_COMPANION_POLYMORPHIC_SOUL_ISOMER" />
+            <select type="Companion" name="Polymorphic Soul Isomer" supports="ID_JJK_COMPANION_POLYMORPHIC_SOUL_ISOMER" />
         </rules>
     </element>
 
