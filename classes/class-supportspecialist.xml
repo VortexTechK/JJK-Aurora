@@ -4,7 +4,7 @@
 		<name>Support Specialist</name>
 		<description>The Support Specialist class from JJK.</description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
-		<update version="5.0.2">
+		<update version="6.0.0">
 			<file name="class-supportspecialist.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/classes/class-supportspecialist.xml" />
 		</update>
 	</info>
