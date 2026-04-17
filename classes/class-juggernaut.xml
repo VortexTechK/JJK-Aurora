@@ -4,7 +4,7 @@
 		<name>Juggernaut</name>
 		<description>The Juggernaut class from JJK.</description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
-		<update version="5.0.2">
+		<update version="6.0.0">
 			<file name="class-juggernaut.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/classes/class-juggernaut.xml" />
 		</update>
 	</info>
@@ -187,11 +187,12 @@
 			<ul>
 				<li>You have advantage on Strength checks and Strength saving throws.</li>
 				<li>You have resistance to bludgeoning, piercing, and slashing damage.</li>
+				<li>You add your proficiency bonus to Strength based melee damage rolls.</li>
 			</ul>
 			<p>Your focus lasts for 1 minute. It ends early if you are knocked unconscious. You can also end your focus on your turn as a bonus action. Once you have focused a number of times equal to your proficiency modifier, you must finish a long rest before you can focus again.</p>
 		</description>
 		<sheet action="Bonus Action" usage="{{Proficiency}}/Long Rest">
-			<description>If you aren't wearing heavy armor, you have advantage on Strength checks and Strength saving throws and you have resistance to bludgeoning, piercing, and slashing damage. Your focus lasts for 1 minute. It ends early if you are knocked unconscious. You can also end your focus on your turn as a bonus action.</description>
+			<description>If you aren't wearing heavy armor, you have advantage on Strength checks and Strength saving throws, resistance to bludgeoning, piercing, and slashing damage, and add +{{proficiency}} to your Strength based melee damage rolls. Your focus lasts for 1 minute. It ends early if you are knocked unconscious. You can also end your focus on your turn as a bonus action.</description>
 		</sheet>
 	</element>
 	<element name="Reckless Blows" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_RECKLESS_BLOWS">
