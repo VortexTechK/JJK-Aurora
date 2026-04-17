@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="5.0.3">
+		<update version="6.0.0">
 			<file name="disaster-flames.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/disaster-flames.xml" />
 		</update>
 	</info>
@@ -87,10 +87,10 @@
 	<element name="Domain Expansion: Coffin of the Iron Mountain" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DISASTER_FLAMES_DOMAIN_EXPANSION_COFFIN_OF_THE_IRON_MOUNTAIN">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DISASTER_FLAMES_DOMAIN_EXPANSION_COFFIN_OF_THE_IRON_MOUNTAIN</requirements>
 		<description>
-			<p>At 18th level, you have learned how to expand your domain to create a massive magma dimension. Your domain is a huge volcano-like dimension, which irradiates extreme heat. While inside it, every creature except you must attempt a Constitution saving throw at the end of each of their turns. On a failure, they take 10d8 fire damage. On a success, they take half as much damage.</p>
+			<p>At 18th level, you have learned how to expand your domain to create a massive magma dimension. Your domain is a huge volcano-like dimension, which irradiates extreme heat. At initiative 20, all creatures other than you within your domain take 10d8 fire damage.</p>
 		</description>
         <sheet action="Action + Bonus Action + Movement" usage="CE">
-			<description>For 20 cursed energy, every creature except you must attempt a Constitution saving throw at the end of each of their turns. On a failure, they take 10d8 fire damage. On a success, they take half as much damage.</description>
+			<description>For 20 cursed energy, At initiative 20, all creatures other than you within your domain take 10d8 fire damage.</description>
 		</sheet>
 	</element>
 
