@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="5.0.1">
+		<update version="5.0.2">
 			<file name="earth-manipulation.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/earth-manipulation.xml" />
 		</update>
 	</info>
@@ -127,7 +127,7 @@
             <p class="indent"> You can also choose to keep the hands active by spending 1 CE at the start of your turns. Every turn you have it active you can use an action to crush a creature restrained by your hands, forcing them to make a Strength saving throw. If they fail they take another 4d12 bludgeoning damage or half as much on a success. A creature can use their action to make an Athletics or Acrobatics check against your Cursed Energy DC, escaping on a success. While maintaining your stone arms, they have AC 18 and HP equal to your maximum hit points and you must maintain concentration.</p>
         </description>
         <sheet>
-			<description> For 5 cursed energy, you can force a target within 60 ft to make a Dexterity saving throw. On a failure, they are wedged between two arms taking 6d12 bludgeoning damage, and are restrained until the start of your next turn. On a success, they are not restrained and take half damage. You can keep the hands active by spending 1 CE at the start of your turns. Every turn you have it active you can use an action to crush a creature restrained by your hands, forcing them to make a Strength saving throw. If they fail they take another 4d12 bludgeoning damage or half as much on a success. A creature can use their action to make an Athletics or Acrobatics check against your Cursed Energy DC, escaping on a success. While maintaining your stone arms, they have AC 18 and {hp} HP and you must maintain concentration.</description>
+			<description> For 5 cursed energy, you can force a target within 60 ft to make a Dexterity saving throw. On a failure, they are wedged between two arms taking 6d12 bludgeoning damage, and are restrained until the start of your next turn. On a success, they are not restrained and take half damage. You can keep the hands active by spending 1 CE at the start of your turns. Every turn you have it active you can use an action to crush a creature restrained by your hands, forcing them to make a Strength saving throw. If they fail they take another 4d12 bludgeoning damage or half as much on a success. A creature can use their action to make an Athletics or Acrobatics check against your Cursed Energy DC, escaping on a success. While maintaining your stone arms, they have AC 18 and {{hp}} HP and you must maintain concentration.</description>
 		</sheet>
 	</element>
 
