@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="5.0.2">
+		<update version="5.0.3">
 			<file name="deadly-sentencing.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/deadly-sentencing.xml" />
 		</update>
 	</info>
@@ -42,7 +42,7 @@
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DEADLY_SENTENCING_DOMAIN_EXPANSION_DEADLY_SENTENCING</requirements>
 		<description>
 			<p>Beginning at 3rd level, your will lets you expand your domain for free once per long rest. Within the domain, no offensive action can be taken by either party. The target must make a contested Persuasion check against you to prove their innocence. You gain a piece of Evidence determined by a d20 roll. If you succeed, they suffer the punishment based on your Evidence for 1 minute and the domain ends.</p>
-            <h5 class="caption">TRIAL REQUIREMENTS</h5>
+            <h5 class="caption">EVIDENCE</h5>
 			<table>
 				<thead>
 					<tr><td>Roll</td><td>Evidence</td></tr>
