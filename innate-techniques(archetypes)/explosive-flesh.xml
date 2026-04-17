@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="5.0.2">
+		<update version="5.0.3">
 			<file name="explosive-flesh.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/explosive-flesh.xml" />
 		</update>
 	</info>
@@ -22,7 +22,7 @@
 		<rules>
 			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_EXPLOSIVE_FLESH_SELF_DESTRUCTION" level="1" />
 			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_EXPLOSIVE_FLESH_FASTER_THROWS" level="3" />
-			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_EXPLOSIVE_FLESH_GUERILLA TACTICS" level="6" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_EXPLOSIVE_FLESH_GUERILLA_TACTICS" level="6" />
 			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_EXPLOSIVE_FLESH_STRONGER_EXPLOSIONS" level="11" />
 			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_EXPLOSIVE_FLESH_DOMAIN_EXPANSION_TRUE_ART" level="18" />
 		</rules>
