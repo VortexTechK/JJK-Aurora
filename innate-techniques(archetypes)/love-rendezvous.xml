@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="5.0.1">
+			<file name="love-rendezvous.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/love-rendezvous.xml" />
+		</update>
+	</info>
+
+	<element name="Love Rendezvous" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_LOVE_RENDEZVOUS">
+		<supports>Innate Technique</supports>
+		<description>
+			<p>Brain hurt.</p>
+			<div element="ID_JJK_ARCHETYPE_FEATURE_LOVE_RENDEZVOUS_LOVE_RENDEZVOUS" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_LOVE_RENDEZVOUS_EFFECTIVE_MARKING" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_LOVE_RENDEZVOUS_GRAVITY" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_LOVE_RENDEZVOUS_SHINING_STARS" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_LOVE_RENDEZVOUS_DOMAIN_EXPANSION_STAR_CROSSED_LOVERS" />
+		</description>
+		<sheet display="false">
+			<description>Love Rendezvous is a technique based on the Southern Cross. It marks creatures or objects with cursed energy and makes the lowest star have to pass through the other ones before they can move.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_LOVE_RENDEZVOUS_LOVE_RENDEZVOUS" level="1" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_LOVE_RENDEZVOUS_EFFECTIVE_MARKING" level="3" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_LOVE_RENDEZVOUS_GRAVITY" level="6" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_LOVE_RENDEZVOUS_SHINING_STARS" level="11" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_LOVE_RENDEZVOUS_DOMAIN_EXPANSION_STAR_CROSSED_LOVERS" level="18" />
+		</rules>
+	</element>
+
+	<element name="Love Rendezvous" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_LOVE_RENDEZVOUS_LOVE_RENDEZVOUS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_LOVE_RENDEZVOUS_LOVE_RENDEZVOUS</requirements>
+		<description>
+			<p>Starting at 1st level, you have a very complex technique, and you have learned the basics of how to use it. As a free action when you touch a creature or object(this can be done with yourself) with cursed energy or as part of hitting an unarmed strike, you can spend 1 cursed energy to mark the target's cursed energy with a star of your choice. Only one star can be placed in one creature's cursed energy at a time, however the same star can be applied to different people's cursed energy at a time. You can mark a number of creatures with the same star up to your Cursed Energy modifier. If you mark a creature, everything that has their cursed energy will be marked as well, like Shikigami, cursed tools etc. </p>
+            <p class="indent">The following stars are available to mark: ★Imai, ★Acrux, ★Mimosa, ★Ginan and ★Gacrux.</p>
+            <p class="indent">When you mark a creature, a sparking light will appear above their head. They can also find the star's name marked on their body with a Wisdom (Perception) check.</p>
+            <h5 class="caption">COLLIDE DAMAGE</h5>
+				<table>
+					<thead>
+						<tr><td>Size</td><td>Damage Dice</td></tr>
+					</thead>
+					<tr><td>Tiny</td><td>1d4</td></tr>
+					<tr><td>Small</td><td>1d6</td></tr>
+					<tr><td>Medium</td><td>1d8</td></tr>
+					<tr><td>Large</td><td>1d10</td></tr>
+					<tr><td>Huge</td><td>1d12</td></tr>
+					<tr><td>Gargantuan</td><td>2d12</td></tr>
+				</table>
+            <p class="indent">Anyone appointed with a star must follow a sequential order if they want to attempt approaching another star. When they make their movement, they must move directly towards the next star in order and touch them, which allows them to move on to the next star in order. Failing to do this will make them restrained until the beginning of their next turn and every single creature or object marked with the same star will be attracted to the point with the highest cursed energy, being all rapidly thrown at that point. The highest cursed energy point will take 1 dice of bludgeoning damage per 5ft the other stars have travelled and their size, while the objects and creatures that crashed into it will take half as much damage. See the following chart for measure of damage:</p>
+            <p class="indent">The order of the stars is as follows: ★Imai → ★Acrux → ★Mimosa → ★Ginan → ★Gacrux</p>
+            <p class="indent">If there is no possible path for a target to follow the order, the target isn't affected by the technique until such a possible path is created. The target is immediately affected again once such a path exists. For example, if Gacrux is placed in front of Ginan for a creature marked with Acrux, then the technique no longer functions for that creature, as there is no way to touch Ginan without approaching Gacrux. Once the creature passes Gacrux, thus opening a path for them to get to Ginan, the technique functions for them once more, and they must touch Ginan before approaching Gacrux.</p>
+            <p class="indent">The stars last for 10 minutes or until you remove one or more of them.</p>
+            <p class="indent">Creatures won't know they're being affected by the technique until they suffer the consequences from not following the order. After that, they can make a Perception check to find the star. After they discover the star, they can make a Wisdom (Insight) check at disadvantage against your cursed energy DC to try to understand your technique. Unless they have the Cursed Energy Perception feat or are familiar with the southern star constellation, which allows them to ignore disadvantage to the roll.</p>
+        </description>
+		<sheet usage="CE">
+		    <description>As a free action when you touch a creature or object with cursed energy or as part of hitting an unarmed strike, you can spend 1 cursed energy to mark the target's cursed energy with ★Imai, ★Acrux, ★Mimosa, ★Ginan or ★Gacrux. Only one star can be placed in one creature's cursed energy at a time, however the same star can be applied to different people's cursed energy at a time. You can mark {{love:rendezvous:stars}} creatures with the same star. If you mark a creature, everything that has their cursed energy will be marked as well. When you mark a creature, a sparking light will appear above their head. They can also find the star's name marked on their body with a Wisdom (Perception) check. Anyone with a star must follow the above order if they want to attempt approaching another star. When they make their movement, they must move directly towards the next star in order and touch them, which allows them to move on to the next star in order. Failing to do this will make them restrained until the beginning of their next turn and every single creature or object marked with the same star will be attracted to the point with the highest cursed energy, being all rapidly thrown at that point. The highest cursed energy point will take dice of bludgeoning damage per 5ft the other stars have travelled which are 1d4, 1d6, 1d8, 1d10, 1d12, and 2d12 for sizes Tiny, Small, Medium, Large, Huge, and Gargantuan respectively, while the objects and creatures that crashed into it will take half as much damage. If there is no possible path for a target to follow the order, the target isn't affected by the technique until such a possible path is created. The target is immediately affected again once such a path exists. The stars last for 10 minutes or until you remove one or more of them. Creatures won't know they're being affected by the technique until they suffer the consequences from not following the order. After that, they can make a Perception check to find the star. After they discover the star, they can make a Wisdom (Insight) check at disadvantage against your cursed energy DC to try to understand your technique. Unless they have the Cursed Energy Perception feat or are familiar with the southern star constellation, which allows them to ignore disadvantage to the roll,</description>
+		</sheet>
+        <rules>
+            <stat name="love:rendezvous:stars" value="ce:modifier" />
+            <stat name="love:rendezvous:stars" value="ce:modifier" level="11" />
+        </rules>
+	</element>
+
+	<element name="Effective Marking" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_LOVE_RENDEZVOUS_EFFECTIVE_MARKING">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_LOVE_RENDEZVOUS_EFFECTIVE_MARKING</requirements>
+		<description>
+			<p>At 3rd level, you learned how to mark creatures in a quicker and more effective manner. You can now mark creatures with stars as a reaction. Also, you gain a number of additional reactions equal to your Cursed Energy modifier that can only be used to mark other creatures.</p>
+		</description>
+		<sheet>
+			<description>You can mark creatures with stars as a reaction. You gain {{ce:modifier}} additional reactions that can only be used to mark other creatures.</description>
+		</sheet>
+	</element>
+
+	<element name="Gravity" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_LOVE_RENDEZVOUS_GRAVITY">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_LOVE_RENDEZVOUS_GRAVITY</requirements>
+		<description>
+			<p>At 6th level, your technique's attraction has grown stronger. The damage of creatures colliding now ignores resistance to bludgeoning damage. This becomes force damage at 11th level and ignores resistance to force damage at 18th level.</p>
+		</description>
+        <sheet>
+            <description level="6">The damage of creatures colliding now ignores resistance to bludgeoning damage.</description>
+            <description level="11">The damage of creatures colliding now becomes force damage.</description>
+            <description level="18">The damage of creatures colliding now becomes force damage and ignores resistance to force damage.</description>
+        </sheet>
+	</element>
+
+	<element name="Shining Stars" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_LOVE_RENDEZVOUS_SHINING_STARS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_LOVE_RENDEZVOUS_SHINING_STARS</requirements>
+		<description>
+			<p>At 11th level, you became better with your technique, now being able to have more stars. The amount of stars you can put of the same type is increased to twice your Cursed Energy modifier.</p>
+		</description>
+        <sheet display="false"/>
+	</element>
+
+	<element name="Domain Expansion: Star-Crossed Lovers" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_LOVE_RENDEZVOUS_DOMAIN_EXPANSION_STAR_CROSSED_LOVERS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_LOVE_RENDEZVOUS_DOMAIN_EXPANSION_STAR_CROSSED_LOVERS</requirements>
+		<description>
+			<p>At 18th level, you have learned to expand your domain. At initiative 20, you can mark any creatures within your domain with any of your available stars. As an action, you can cause a creature marked with one of your stars to move up to 30 ft towards another marked target, taking collision damage if they impact and counting as part of your guaranteed hit. Any marks created by your domain disappear when your domain ends. </p>
+		</description>
+        <sheet action="Action + Bonus Action + Movement" usage="CE">
+			<description>For 20 cursed energy, at initiative 20, you can mark any creatures within your domain with any of your available stars. As an action, you can cause a creature marked with one of your stars to move up to 30 ft towards another marked target, taking collision damage if they impact and counting as part of your guaranteed hit. Any marks created by your domain disappear when your domain ends.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Love Rendezvous Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_LOVE_RENDEZVOUS_LOVE_RENDEZVOUS" />
+	<element name="Effective Marking Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_LOVE_RENDEZVOUS_EFFECTIVE_MARKING" />
+	<element name="Gravity Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_LOVE_RENDEZVOUS_GRAVITY" />
+	<element name="Shining Stars Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_LOVE_RENDEZVOUS_SHINING_STARS" />
+	<element name="Domain Expansion: Star-Crossed Lovers Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_LOVE_RENDEZVOUS_DOMAIN_EXPANSION_STAR_CROSSED_LOVERS" />
+</elements>

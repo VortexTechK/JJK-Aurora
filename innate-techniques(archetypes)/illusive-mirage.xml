@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="5.0.1">
+			<file name="illusive-mirage.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/illusive-mirage.xml" />
+		</update>
+	</info>
+
+	<element name="Illusive Mirage" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_ILLUSIVE_MIRAGE">
+		<supports>Innate Technique</supports>
+		<description>
+			<p>Who?</p>
+			<div element="ID_JJK_ARCHETYPE_FEATURE_ILLUSIVE_MIRAGE_CURSED_ILLUSION" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_ILLUSIVE_MIRAGE_SELF_DISTORTION" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_ILLUSIVE_MIRAGE_OBJECT_DISTORTION" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_ILLUSIVE_MIRAGE_ILLUSIVE_TERRAIN" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_ILLUSIVE_MIRAGE_DOMAIN_EXPANSION_HOUSE_OF_MIRRORS" />
+		</description>
+		<sheet display="false">
+			<description>Your technique lets you curse people and make them see illusions.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_ILLUSIVE_MIRAGE_CURSED_ILLUSION" level="1" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_ILLUSIVE_MIRAGE_SELF_DISTORTION" level="3" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_ILLUSIVE_MIRAGE_OBJECT_DISTORTION" level="6" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_ILLUSIVE_MIRAGE_ILLUSIVE_TERRAIN" level="11" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_ILLUSIVE_MIRAGE_DOMAIN_EXPANSION_HOUSE_OF_MIRRORS" level="18" />
+		</rules>
+	</element>
+
+	<element name="Cursed Illusion" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_ILLUSIVE_MIRAGE_CURSED_ILLUSION">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ILLUSIVE_MIRAGE_CURSED_ILLUSION</requirements>
+		<description>
+			<p>At 1st level, your technique allows you to curse creatures and make them see other people's faces in a distorted way. You are also able to track those you have cursed. As an action for 2 cursed energy, you can curse a creature within 60 feet. The target must make a Charisma saving throw. On a failure, the next person they see has a distorted face. Upon seeing this distortion for the first time, the creature must make an Intelligence saving throw. On a failure, the creature is confused and has disadvantage on attack rolls and Intelligence, Wisdom, and Charisma checks until the end of their next turn. A sorcerer can repeat the Charisma save at the end of their turns to end the curse.</p>
+            <p class="indent">When a creature fails their Charisma saving throw, you gain the ability to track them up to 400 feet away. While a creature is cursed, you know its general location. The cursed creature keeps seeing the distorted face until they succeed the save or leave your tracking range.</p>
+            <p class="indent">At 6th level, you can target a number of creatures up to your Cursed Energy modifier as an action, spending 2 CE for each. Additionally, a creature that fails its save also has disadvantage on Intelligence, Wisdom, and Charisma saves and loses concentration on any technique or feature it was concentrating on.</p>
+		</description>
+		<sheet action="Action" usage="CE">
+			<description level="1">For 2 cursed energy, you can curse a creature within 60 feet. The target must make a Charisma saving throw. On a failure, you can track them up to 400 feet away and the next time they see a person, the creature must make an Intelligence saving throw. On a failure, the creature is confused and has disadvantage on attack rolls and Intelligence, Wisdom, and Charisma checks until the end of their next turn. A sorcerer can repeat the Charisma save at the end of their turns or leave the tracking range to end the curse.</description>
+            <description level="6">For 2 cursed energy, you can curse up to {{ce:modifier}} creatures within 60 feet. The targets must make a Charisma saving throw. On a failure, you can track them up to 400 feet away, they have disadvantage on Intelligence, Wisdom, and Charisma saves, they lose concentration on any technique or feature it was concentrating on, and the next time they see a person, the creature must make an Intelligence saving throw. On a failure, the creature is confused and has disadvantage on attack rolls and Intelligence, Wisdom, and Charisma checks until the end of their next turn. A sorcerer can repeat the Charisma save at the end of their turns or leave the tracking range to end the curse.</description>
+        </sheet>
+	</element>
+
+	<element name="Self Distortion" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_ILLUSIVE_MIRAGE_SELF_DISTORTION">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ILLUSIVE_MIRAGE_SELF_DISTORTION</requirements>
+		<description>
+			<p>At 3rd level, you've learned how to distort your own body to confuse your opponents. You learn the 3 following distortion techniques:</p>
+            <p class="indent"><strong>Phase Fist.</strong> As part of making a melee attack, you can spend 3 cursed energy to create a duplicate of your weapon. Make a melee cursed attack roll at disadvantage, afterwards you make your normal attack against the same target. If the phase attack misses the actual attack will deal double the damage dice on a hit and if the phase attack hits the main attack will instead be made at advantage.</p>
+            <p class="indent"><strong>Blurring.</strong> As an action for 3 cursed energy, your body becomes blurred, shifting and wavering to all who can see you. For a number of rounds equal to your Cursed Energy modifier, a creature that can see you has disadvantage on attack rolls against you. An attacker is immune to this effect if it doesn't rely on sight like blindsight or can see through illusions like with true sight.</p> 
+            <p class="indent"><strong>Distorting Disguise.</strong> For 3 cursed energy, you make yourself (including your clothing, armor, weapons, and other belongings) look different for a number of hours equal to your Cursed Energy modifier. The changes of this feature fail to hold up to physical inspection. For example, if you use this technique to add a hat to your outfit, objects pass through the hat, and anyone who touches it would feel nothing or would feel your head and hair. If you use this spell to appear thinner than you are, the hand of someone who reaches out to touch you would bump into you while it was seemingly still in midair. To discern that you are disguised, a creature can use its action to inspect your appearance and must succeed on an Intelligence (Investigation) check against your cursed energy save DC.</p>
+		</description>
+		<sheet>
+			<description>You can use 3 cursed energy to use Phase Fist, Blurring, or Distorting Disguise.</description>
+		</sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_ILLUSIVE_MIRAGE_PHASE_FIST" />
+            <grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_ILLUSIVE_MIRAGE_BLURRING" />
+            <grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_ILLUSIVE_MIRAGE_DISTORTING_DISGUISE" />
+        </rules>
+	</element>
+
+    <element name="Phase Fist" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_ILLUSIVE_MIRAGE_PHASE_FIST">
+        <description>
+            <p>As part of making a melee attack, you can spend 3 cursed energy to create a duplicate of your weapon. Make a melee cursed attack roll at disadvantage, afterwards you make your normal attack against the same target. If the phase attack misses the actual attack will deal double the damage dice on a hit and if the phase attack hits the main attack will instead be made at advantage.</p>
+        </description>
+        <sheet>
+            <description>As part of making a melee attack, you may make a melee cursed attack roll at disadvantage, afterwards you make your normal attack against the same target. If the first attack misses, the main attack will deal double the damage dice on a hit and if the first attack hits, the main attack will instead be made at advantage.</description>
+        </sheet>
+    </element>
+
+    <element name="Blurring" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_ILLUSIVE_MIRAGE_BLURRING">
+        <description>
+            <p>As an action for 3 cursed energy, your body becomes blurred, shifting and wavering to all who can see you. For a number of rounds equal to your Cursed Energy modifier, a creature that can see you has disadvantage on attack rolls against you. An attacker is immune to this effect if it doesn't rely on sight like blindsight or can see through illusions like with true sight.</p>
+        </description>
+        <sheet action="Action">
+            <description>For 3 cursed energy, for {{ce:modifier}} rounds a creature that can see you has disadvantage on attack rolls against you. An attacker is immune to this effect if it doesn't rely on sight to see or can see through illusions.</description>
+        </sheet>
+    </element>
+
+    <element name="Distorting Disguise" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_ILLUSIVE_MIRAGE_DISTORTING_DISGUISE">
+        <description>
+            <p>For 3 cursed energy, you make yourself (including your clothing, armor, weapons, and other belongings) look different for a number of hours equal to your Cursed Energy modifier. The changes of this feature fail to hold up to physical inspection. For example, if you use this technique to add a hat to your outfit, objects pass through the hat, and anyone who touches it would feel nothing or would feel your head and hair. If you use this spell to appear thinner than you are, the hand of someone who reaches out to touch you would bump into you while it was seemingly still in midair. To discern that you are disguised, a creature can use its action to inspect your appearance and must succeed on an Intelligence (Investigation) check against your cursed energy save DC.</p>
+        </description>
+        <sheet>
+            <description>For 3 cursed energy, for {{ce:modifier}} hours you can make yourself look different. The changes of this feature fail to hold up to physical inspection. To discern that you are disguised, a creature can use its action to inspect your appearance and must succeed on an Intelligence (Investigation) check against your cursed energy save DC.</description>
+        </sheet>
+    </element>
+
+	<element name="Object Distortion" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_ILLUSIVE_MIRAGE_OBJECT_DISTORTION">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ILLUSIVE_MIRAGE_OBJECT_DISTORTION</requirements>
+		<description>
+			<p>At 6th level, you have now learned a new way to distort the surroundings of those you have cursed. As an action, you may choose an object within the range of your cursed illusion that you can see to distort its appearance, this can include changing its opacity, luster, visible texture, or its seen value. A creature can attempt to discern the illusion by rolling an investigation check against your cursed energy save DC. You can spend an additional 3 CE to make the object invisible. If a creature runs into a medium or larger invisible object, they take 1d6 bludgeoning and lose their reaction. The cost of the technique depends on the size of the targeted object:</p>
+            <h5 class="caption">DISTORTION COSTS</h5>
+				<table>
+					<thead>
+						<tr><td>Size</td><td>CE Cost</td></tr>
+					</thead>
+					<tr><td>Tiny</td><td>1</td></tr>
+					<tr><td>Small</td><td>2</td></tr>
+					<tr><td>Medium</td><td>3</td></tr>
+					<tr><td>Large</td><td>4</td></tr>
+					<tr><td>Huge</td><td>6</td></tr>
+					<tr><td>Gargantuan</td><td>10</td></tr>
+				</table>
+		</description>
+        <sheet action="Action" usage="CE">
+            <description>You may choose an object within the range of your cursed illusion that you can see to distort its appearance. A creature can attempt to discern the illusion by rolling an investigation check against your cursed energy save DC. You can spend an additional 3 CE to make the object invisible. If a creature runs into a medium or larger invisible object, they take 1d6 bludgeoning and lose their reaction. The cost of the technique is 1, 2, 3, 4, 6, or 10 cursed energy for Tiny, Small, Medium, Large, Huge, or Gargantuan objects, respectively.</description>
+        </sheet>
+	</element>
+
+	<element name="Illusive Terrain" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_ILLUSIVE_MIRAGE_ILLUSIVE_TERRAIN">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ILLUSIVE_MIRAGE_ILLUSIVE_TERRAIN</requirements>
+		<description>
+			<p>At 11th level, you have decided that affecting the area around people can lead to strategic victory. As an action for 10 cursed energy, you can manipulate the surrounding terrain around you in a 150 ft radius in the following ways:</p>
+            <ul>
+                <li><strong>Rough Ground.</strong> You make the terrain appear difficult to traverse, when a creature attempts to walk in this area they must spend twice as much movement per 5 ft of travel.</li>
+                <li><strong>Obstructing Illusion.</strong> As an action, you make a false structure or wall within range. A creature is convinced that the structure is real, meaning that they cannot target you with features that require line of sight.</li>
+            </ul>
+            <p class="indent">A creature can attempt to see through the illusion by rolling an Investigation or Perception check (using their Cursed Energy score if they are a Sorcerer) against your Cursed Energy save DC. A creature automatically succeeds if they have an ability like true sight.</p>
+        </description>
+        <sheet action="Action" usage="CE">
+            <description>For 10 cursed energy, you can manipulate the surrounding terrain around you in a 150 ft radius to create difficult terrain or an false structure which blocks line of sight. A creature can attempt to see through the illusion by rolling an Investigation or Perception check against your Cursed Energy save DC. A creature automatically succeeds if they have an ability like true sight.</description>
+		</sheet>
+	</element>
+
+	<element name="Domain Expansion: House of Mirrors" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_ILLUSIVE_MIRAGE_DOMAIN_EXPANSION_HOUSE_OF_MIRRORS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ILLUSIVE_MIRAGE_DOMAIN_EXPANSION_HOUSE_OF_MIRRORS</requirements>
+		<description>
+			<p>At 18th level, you have mastered your technique allowing you to open your domain. At initiative 20, you can force all creatures to fall under an illusion of your choice. Additionally, you can use your reaction to trick a creature that attacks you to target a random creature within range. They must roll a dice to see who is targeted with the dice depending on the number of creatures within range. On a 1, you are still targeted. On a higher roll, a different creature is targeted. If there are no other creatures in range, roll a d2. On a 2, the attack targets a random direction, missing you completely.</p>
+		</description>
+        <sheet action="Action + Bonus Action + Movement" usage="CE">
+			<description>For 20 cursed energy, at initiative 20, you can force all creatures to fall under an illusion of your choice. Additionally, you can use your reaction to trick a creature that attacks you to target a random creature within range. They must roll a dice to see who is targeted with the dice depending on the number of creatures within range. On a 1, you are still targeted. On a higher roll, a different creature is targeted. If there are no other creatures in range, roll a d2. On a 2, the attack targets a random direction, missing you completely.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Cursed Illusion Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_ILLUSIVE_MIRAGE_CURSED_ILLUSION" />
+	<element name="Self Distortion Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_ILLUSIVE_MIRAGE_SELF_DISTORTION" />
+	<element name="Object Distortion Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_ILLUSIVE_MIRAGE_OBJECT_DISTORTION" />
+	<element name="Illusive Terrain Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_ILLUSIVE_MIRAGE_ILLUSIVE_TERRAIN" />
+	<element name="Domain Expansion: House of Mirrors Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_ILLUSIVE_MIRAGE_DOMAIN_EXPANSION_HOUSE_OF_MIRRORS" />
+</elements>

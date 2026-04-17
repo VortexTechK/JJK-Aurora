@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="5.0.1">
+			<file name="ice-formation.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/ice-formation.xml" />
+		</update>
+	</info>
+
+	<element name="Ice Formation" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_ICE_FORMATION">
+		<supports>Innate Technique</supports>
+		<description>
+			<p>Simp.</p>
+			<div element="ID_JJK_ARCHETYPE_FEATURE_ICE_FORMATION_ICE_CREATION" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_ICE_FORMATION_EXTREME_COLD" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_ICE_FORMATION_FROST_CALM" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_ICE_FORMATION_ICE_FALL" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_ICE_FORMATION_DOMAIN_EXPANSION_ICE_AGE" />
+		</description>
+		<sheet display="false">
+			<description>Your technique is beautiful in its simplicity, and the ability to make and control ice.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_ICE_FORMATION_ICE_CREATION" level="1" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_ICE_FORMATION_EXTREME_COLD" level="3" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_ICE_FORMATION_FROST_CALM" level="6" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_ICE_FORMATION_ICE_FALL" level="11" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_ICE_FORMATION_DOMAIN_EXPANSION_ICE_AGE" level="18" />
+		</rules>
+	</element>
+
+	<element name="Ice Creation" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_ICE_FORMATION_ICE_CREATION">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ICE_FORMATION_ICE_CREATION</requirements>
+		<description>
+			<p>Beginning at 1st level, your innate technique has allowed you to mess with the temperature around you, creating extreme levels of cold. As an action for 1 cursed energy, you can force creatures in a 10ft cone to make a Dexterity saving throw. On a failure, they take 1d10 cold damage and are restrained as ice covers part of their bodies. On a success, they take half as much damage and are not restrained.</p>
+            <p class="indent">The creature can make a Strength saving throw at the beginning of its turns to break the ice and end the restrained condition.</p>
+            <p class="indent">All ice created by your technique will last until you end it as a free action, a creature breaks it, or you are poisoned, incapacitated, or unconscious.</p>
+            <p class="indent">At 3rd level, the damage of this feature increases to 2d10, to 3d10 at 6th, to 4d10 at 10th, to 5d10 at 14th, and to 6d10 cold damage at 20th level.</p>
+		</description>
+		<sheet action="Action" usage="CE">
+			<description>For 1 cursed energy, you can force creatures in a 10ft cone to make a Dexterity saving throw. On a failure, they take {{ice:formation:creation:damage}}d10 cold damage and are restrained by ice. On a success, they take half as much damage and are not restrained. The creature can make a Strength saving throw at the beginning of its turns to end the restrained condition. All ice created by your technique will last until you end it as a free action, a creature breaks it, or you are poisoned, incapacitated, or unconscious.</description>
+		</sheet>
+        <rules>
+            <stat name="ice:formation:creation:damage" value="1" level="1" bonus="ice creation"/>
+            <stat name="ice:formation:creation:damage" value="2" level="3" bonus="ice creation"/>
+            <stat name="ice:formation:creation:damage" value="3" level="6" bonus="ice creation"/>
+            <stat name="ice:formation:creation:damage" value="4" level="10" bonus="ice creation"/>
+            <stat name="ice:formation:creation:damage" value="5" level="14" bonus="ice creation"/>
+            <stat name="ice:formation:creation:damage" value="6" level="20" bonus="ice creation"/>
+        </rules>
+	</element>
+
+	<element name="Extreme Cold" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_ICE_FORMATION_EXTREME_COLD">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ICE_FORMATION_EXTREME_COLD</requirements>
+		<description>
+			<p>At 3rd level, being stuck on your ice feels like staying in a cold mountain while you wait for death. A creature inside your ice is under one level of Exhaustion. Any creatures within 5ft of your ice that don't have resistance or immunity to cold damage have their movement speed halved.</p>
+		</description>
+		<sheet>
+			<description>A creature inside your ice is under one level of Exhaustion. Any creatures within 5ft of your ice that don't have resistance or immunity to cold damage have their movement speed halved.</description>
+		</sheet>
+	</element>
+
+	<element name="Frost Calm" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_ICE_FORMATION_FROST_CALM">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ICE_FORMATION_FROST_CALM</requirements>
+		<description>
+			<p>When you reach 6th level, you have learned how to unleash thick layers of ice through the mist. As an action for 4 cursed energy, you can send a cloud of freezing mist to a spot within 60 feet of you. Every creature in a 30-foot radius circle in that spot must make a Dexterity saving throw. On a failure, they take 6d8 cold damage and are restrained by the ice layer formed in the square. On a success, they take half as much damage and are not restrained.</p>
+            <p class="indent">The creature can make a Strength saving throw at the beginning of its turns to break the ice and end the restrained condition.</p>
+		</description>
+        <sheet action="Action" usage="CE">
+            <description>For 4 cursed energy, you send a mist to a spot within 60 feet of you. Every creature in a 30-foot radius circle from that spot must make a Dexterity saving throw. On a failure, they take 6d8 cold damage and are restrained by ice. On a success, they take half as much damage and are not restrained. The creature can make a Strength saving throw at the beginning of its turns to break the ice and end the restrained condition.</description>
+        </sheet>
+	</element>
+
+	<element name="Ice Fall" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_ICE_FORMATION_ICE_FALL">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ICE_FORMATION_ICE_FALL</requirements>
+		<description>
+			<p>Once you reach 11th level, you learn a great execution method that makes sure your enemies won't escape. As an action for 8 cursed energy, you fall prone until the beginning of your next turn to create ice on the ground. You telepathically manipulate the ice created, launching one for every creature within 30 ft of you of your choice. Make a cursed energy attack roll, on a hit they take 1d10 cold damage and become restrained.</p>
+            <p class="indent">The creature can make a Strength saving throw at the beginning of its turns to break the ice and end the restrained condition.</p>
+            <p class="indent">Hitting or missing, giant spikes of ice will fall from the sky on top of the targeted creatures, forcing them to make a Dexterity saving throw. On a failure, they take 6d8 cold damage and 6d8 piercing damage. On a success, they take half as much damage.</p>
+		</description>
+        <sheet action="Action" usage="CE">
+            <description>For 8 cursed energy, you fall prone until the beginning of your next turn. You make a cursed energy attack roll at every creature within 30 ft of you. On a hit, they take 1d10 cold damage and become restrained. The creature can make a Strength saving throw at the beginning of its turns to break the ice and end the restrained condition. All targeted creatures must make a Dexterity saving throw. On a failure, they take 6d8 cold damage and 6d8 piercing damage. On a success, they take half as much damage.</description>
+        </sheet>
+	</element>
+
+	<element name="Domain Expansion: Ice Age" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_ICE_FORMATION_DOMAIN_EXPANSION_ICE_AGE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ICE_FORMATION_DOMAIN_EXPANSION_ICE_AGE</requirements>
+		<description>
+			<p>If you achieve 18th level, you hone your technique to a fine edge, allowing you to use your Domain Expansion. While inside it, every creature except you takes 10d8 cold damage and is restrained at the end of their turn. A creature can make a Strength (Athletics) check at the beginning of their turn to break out.</p>
+		</description>
+        <sheet action="Action + Bonus Action + Movement" usage="CE">
+			<description>For 20 cursed energy, every creature except you takes 10d8 cold damage and is restrained at the end of their turn. A creature can make a Strength (Athletics) check at the beginning of their turn to break out.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Ice Creation Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_ICE_FORMATION_ICE_CREATION" />
+	<element name="Extreme Cold Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_ICE_FORMATION_EXTREME_COLD" />
+	<element name="Frost Calm Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_ICE_FORMATION_FROST_CALM" />
+	<element name="Ice Fall Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_ICE_FORMATION_ICE_FALL" />
+	<element name="Domain Expansion: Ice Age Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_ICE_FORMATION_DOMAIN_EXPANSION_ICE_AGE" />
+</elements>
