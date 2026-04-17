@@ -76,11 +76,11 @@
 	<element name="Domain Expansion: Threefold Affliction" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CONSTRUCTION_DOMAIN_EXPANSION_THREEFOLD AFFLICTION">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CONSTRUCTION_DOMAIN_EXPANSION_THREEFOLD AFFLICTION</requirements>
 		<description>
-			<p>Finally at 18th level, you have refined your technique to the maximum point, now gaining your domain expansion. While inside your domain, you can now create any of your items by spending no cursed energy. All of these items will deal one additional damage dice and attacks made with them cannot miss. However, these weapons will only last until the end of the domain.</p>
+			<p>Finally at 18th level, you have refined your technique to the maximum point, now gaining your domain expansion. While inside your domain, you can now create any of your items by spending no cursed energy. All of these items will deal two additional damage dice and attacks made with them cannot miss. However, these weapons will only last until the end of the domain.</p>
 		</description>
 		<sheet action="Action + Bonus Action + Movement" usage="CE">
 			<description>
-				<p>For 20 cursed energy, you can now create any of your items by spending no cursed energy. All of these items will deal one additional damage dice and attacks made with them cannot miss. However, these weapons will only last until the end of the domain.</p>
+				<p>For 20 cursed energy, you can now create any of your items by spending no cursed energy. All of these items will deal two additional damage dice and attacks made with them cannot miss. However, these weapons will only last until the end of the domain.</p>
 			</description>
 		</sheet>
 	</element>
