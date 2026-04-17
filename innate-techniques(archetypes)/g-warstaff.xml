@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="5.0.1">
+		<update version="5.0.2">
 			<file name="g-warstaff.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/g-warstaff.xml" />
 		</update>
 	</info>
 
-	<element name="ARCHETYPE NAME" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_G_WARSTAFF">
+	<element name="G Warstaff" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_G_WARSTAFF">
 		<supports>Innate Technique</supports>
 		<description>
 			<p>You have manga on your mind.</p>
@@ -33,17 +33,18 @@
 		<description>
 			<p>Starting at 1st level, you can summon a pen-like cursed tool that allows you to see into the future of your opponents. As a bonus action for 2 cursed energy, you create an oversized pen-like cursed tool. This cursed tool has the reach and two-handed properties and you can use your CE modifier for its attack and damage rolls. On a hit it deals 1d4 + your CE modifier piercing damage and counts as a grade 4 cursed tool and can be used with martial arts die. You can dismiss the Warstaff at will and can only have one created at a time.</p>
             <p> When you hit a creature with G Warstaff, you fulfill the condition for ink and attach a manga panel to the target, being able to view 1 second into the target's future. Hitting a target more than once adds another 1 second to the total, making you gain the benefits of the earlier seconds and the current. As a reaction or bonus action for 1 cursed energy, you can view that creature's future again and gain the following foresights until the beginning of your next turn depending on the creature's marks. You cannot use this while blinded.</p>
-            <table>
-                <thead>
-                    <tr><td>Seconds</td><td>Foresight</td></tr>
-                </thead>
-                <tr><td>1 Second</td><td>The creature's attack rolls against you are made at disadvantage</td></tr>
-                <tr><td>2 Seconds</td><td>You have advantage on saving throws from that creature</td></tr>
-                <tr><td>3 Seconds</td><td>You have advantage on attack rolls against that creature</td></tr>
-                <tr><td>4 Seconds</td><td>You know the next actions of the creature (The DM tells you at the start of their turn)</td></tr>
-                <tr><td>5 Seconds</td><td>You know the next actions of the creature (The DM tells you at the end of your turn)</td></tr>
-                <tr><td>6 Seconds</td><td>You know the next actions of the creature (The DM tells you at the beginning of your turn)</td></tr>
-            </table>
+            <h5 class="caption">FORESIGHTS</h5>
+				<table>
+                	<thead>
+                    	<tr><td>Seconds</td><td>Foresight</td></tr>
+                	</thead>
+                	<tr><td>1 Second</td><td>The creature's attack rolls against you are made at disadvantage</td></tr>
+                	<tr><td>2 Seconds</td><td>You have advantage on saving throws from that creature</td></tr>
+                	<tr><td>3 Seconds</td><td>You have advantage on attack rolls against that creature</td></tr>
+                	<tr><td>4 Seconds</td><td>You know the next actions of the creature (The DM tells you at the start of their turn)</td></tr>
+               	 	<tr><td>5 Seconds</td><td>You know the next actions of the creature (The DM tells you at the end of your turn)</td></tr>
+                	<tr><td>6 Seconds</td><td>You know the next actions of the creature (The DM tells you at the beginning of your turn)</td></tr>
+            	</table>
             <p>You can only see into a number of seconds into a creature's future equal to your proficiency bonus. The number of creatures that can be affected by this technique is equal to your CE modifier, and you can end the technique at will or it ends when the combat ends.</p>
         </description>
 		<sheet action="Bonus Action" usage="CE">
@@ -51,6 +52,26 @@
 		</sheet>
 	</element>
 
+	<element name="Foresight" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_G_WARSTAFF_FORESIGHT">
+		<description> 
+		<h5 class="caption">FORESIGHTS</h5>
+				<table>
+                	<thead>
+                    	<tr><td>Seconds</td><td>Foresight</td></tr>
+                	</thead>
+                	<tr><td>1 Second</td><td>The creature's attack rolls against you are made at disadvantage</td></tr>
+                	<tr><td>2 Seconds</td><td>You have advantage on saving throws from that creature</td></tr>
+                	<tr><td>3 Seconds</td><td>You have advantage on attack rolls against that creature</td></tr>
+                	<tr><td>4 Seconds</td><td>You know the next actions of the creature (The DM tells you at the start of their turn)</td></tr>
+               	 	<tr><td>5 Seconds</td><td>You know the next actions of the creature (The DM tells you at the end of your turn)</td></tr>
+                	<tr><td>6 Seconds</td><td>You know the next actions of the creature (The DM tells you at the beginning of your turn)</td></tr>
+            	</table>
+		</description>
+		<sheet>
+			<description>At 1 second, the creature's attack rolls against you are made at disadvantage. At 2 seconds, you have advantage on saving throws from that creature. At 3 seconds, you have advantage on attack rolls against that creature. At 4, 5, or 6 seconds the DM tells you the next actions of the creature at the start of their turn, end of your turn, or beginning of your turn</description>
+		</sheet>
+	</element>
+	
 	<element name="Highlighted Panels" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_G_WARSTAFF_HIGHLIGHTED_PANELS">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_G_WARSTAFF_HIGHLIGHTED_PANELS</requirements>
 		<description>
