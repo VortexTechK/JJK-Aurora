@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Test</name>
-		<update version="0.0.5">
+		<update version="5.0.1">
 			<file name="test.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/items/test.xml" />
 		</update>
 	</info>
@@ -14,7 +14,7 @@
 			<p></p>
 		</description>
 		<setters>
-			<set name="category">Weapons</set>
+			<set name="category">Test</set>
 			<set name="cost" currency="sp">1</set>
 			<set name="weight" lb="2">2 lb.</set>
 			<set name="slot">onehand</set>
