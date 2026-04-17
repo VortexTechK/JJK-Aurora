@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="5.0.2">
+		<update version="5.0.3">
 			<file name="g-warstaff.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/g-warstaff.xml" />
 		</update>
 	</info>
@@ -50,6 +50,9 @@
 		<sheet action="Bonus Action" usage="CE">
 			<description>For 2 cursed energy, you create an oversized pen-like cursed tool. This cursed tool has the reach and two-handed properties and you can use your CE modifier for its attack and damage rolls. On a hit it deals 1d4 + {{ce:modifier}} piercing damage and counts as a grade 4 cursed tool and can be used with martial arts die. You can dismiss the Warstaff at will and can only have one created at a time. Hitting a target adds 1 second to the creature. As a reaction or bonus action for 1 cursed energy, you gain the foresights until the beginning of your next turn depending on the creature's marks. You cannot use this while blinded. You can only see {{proficiency}} seconds into a creature's future. You can affect {{ce:modifier}} creatures with this technique, and you can end the technique at will or it ends when the combat ends.</description>
 		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_G_WARSTAFF_FORESIGHT" />
+		</rules>
 	</element>
 
 	<element name="Foresight" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_G_WARSTAFF_FORESIGHT">
