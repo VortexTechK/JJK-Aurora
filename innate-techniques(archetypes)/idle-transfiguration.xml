@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="5.0.2">
+		<update version="5.0.3">
 			<file name="idle-transfiguration.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/idle-transfiguration.xml" />
 		</update>
 	</info>
@@ -142,6 +142,7 @@
         <rules>
             <grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_IDLE_TRANSFIGURATION_SOUL_MULTIPLICITY_BODY_REPEL" />
             <grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_IDLE_TRANSFIGURATION_SOUL_MULTIPLICITY_POLYMORPHIC_SOUL_ISOMER" />
+			<select type="Companion" name="Polymorphic Soul Isomer" supports="Polymorphic Soul Isomer" />
         </rules>
 	</element>
 
@@ -161,9 +162,6 @@
         <sheet>
             <description>You create a Polymorphic Soul Isomer for 1 minute. Each Transfigured Creature counts as one soul.</description>
         </sheet>
-        <rules>
-            <select type="Companion" name="Polymorphic Soul Isomer" supports="ID_JJK_COMPANION_POLYMORPHIC_SOUL_ISOMER" />
-        </rules>
     </element>
 
 	<element name="Domain Expansion: Self-Embodiment of Perfection" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_IDLE_TRANSFIGURATION_DOMAIN_EXPANSION_SELF_EMBODIMENT_OF_PERFECTION">
