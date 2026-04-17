@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="5.0.2">
+		<update version="5.0.3">
 			<file name="disaster-flames.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/disaster-flames.xml" />
 		</update>
 	</info>
@@ -119,7 +119,7 @@
 		    	<li><strong>Languages</strong> —</li>
 	    		<li style="margin-bottom:-1em"><strong>Challenge</strong> 1/2 (100 XP)</li>
 	    	</ul>
-	    	<h4 style="margin-top:10px">Traits</h4>
+			<h4 style="margin-top:5px; margin-bottom:10px" />
 	    	<ul class="unstyled">
 		    	<li><strong><em>Swarm.</em></strong> The swarm can occupy another creature's space and vice versa, and can move through any opening large enough for a Tiny insect. The swarm can't regain hit points or gain temporary hit points.</li>
 		    	<li><strong><em>Loud Swarm.</em></strong> The swarm emits a constant high-pitched buzzing. Creatures within 100 ft. can hear it. The swarm has disadvantage on Stealth checks.</li>
