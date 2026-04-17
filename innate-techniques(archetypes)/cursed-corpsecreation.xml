@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="5.0.4">
+		<update version="5.0.5">
 			<file name="cursed-corpsecreation.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/cursed-corpsecreation.xml" />
 		</update>
 	</info>
@@ -222,7 +222,7 @@
 				<li><strong>Senses</strong> passive Perception 8</li>
 				<li><strong>Languages</strong> —</li>
 			</ul>
-			<h4 style="margin-top:10px">Traits</h4>
+			<h4 style="margin-top:5px; margin-bottom:10px" />
 			<ul class="unstyled">
 				<li><strong><em>Armor Class.</em></strong> The corpse’s AC increases by +1 for every size above Tiny.</li>
 				<li><strong><em>Hit Dice.</em></strong> The corpse’s hit die increases by one size for every size above Tiny (Tiny d4, Small d6, Medium d8, Large d10, Huge d12, Gargantuan d20). Add the average of all the hit die (half + 0.5) + their Constitution modifier together to get their hit points. Examples: Tiny corpse: Hit die (4d4), Con mod (+2) = 18 = (2.5 × 4). Small corpse: Hit die (4d6), Con mod (+2) = 22 = (3.5 × 4). </li>
