@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="6.0.0">
+			<file name="fate.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/fate.xml" />
+		</update>
+	</info>
+
+	<element name="Fate" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_FATE">
+		<supports>Innate Technique</supports>
+		<description>
+			<p>Special Grade monologuer</p>
+			<div element="ID_JJK_ARCHETYPE_FEATURE_FATE_FATE_MANIPULATION" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_FATE_CURSED_EYES_OF_FATE" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_FATE_STRONG_DESTINY" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_FATE_KARMIC_ENTANGLEMENT" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_FATE_DOMAIN_EXPANSION_ROAD_OF_KARMA" />
+		</description>
+		<sheet display="false">
+			<description>The wheel of fate is yours to steer and yours alone.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_FATE_FATE_MANIPULATION" level="1" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_FATE_CURSED_EYES_OF_FATE" level="3" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_FATE_STRONG_DESTINY" level="6" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_FATE_KARMIC_ENTANGLEMENT" level="11" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_FATE_DOMAIN_EXPANSION_ROAD_OF_KARMA" level="18" />
+		</rules>
+	</element>
+
+	<element name="Fate Manipulation" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_FATE_FATE_MANIPULATION">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FATE_FATE_MANIPULATION</requirements>
+		<description>
+			<p>Beginning at 1st level, you can weave together threads of fate. As an action for 2 cursed energy, you bind two creatures within 30 ft of you with an invisible red thread for 1 minute. If a Fate requires Touch, you must touch both targets, but not necessarily at the same time. You choose a Fate, +1 Fate per additional CE, up to your proficiency bonus that affects both while within 30 ft of each other:</p>
+			<h5 class="caption">FATES</h5>
+				<table>
+					<thead>
+						<tr><td>Fate</td><td>Effect</td><td>Requirement</td></tr>
+					</thead>
+					<tr><td>Bonds</td><td>The targets gain a +2 bonus to AC.</td><td>N/A</td></tr>
+					<tr><td>Promsied Time?</td><td>The creatures both have either advantage or disadvantage on attacks against each other.</td><td>N/A</td></tr>
+					<tr><td>Mirrored</td><td>If one target rolls a 20 or 1 on their turn, the other's next roll will be the opposite.</td><td>N/A</td></tr>
+					<tr><td>Magnetic</td><td>If targets start their turn within 30 ft of each other, they are pulled 10 ft closer. If this brings them within 5 ft, they become tangled and prone (Str save to pull away).</td><td>Touch</td></tr>
+					<tr><td>Shared Strengths</td><td>Choose a damage resistance, immunity, vulnerability or condition immunity of a target. Both targets share that strength/weakness.</td><td>6th level</td></tr>
+					<tr><td>Linked Suffering</td><td>When one of the linked targets takes damage, they take half as much damage and the linked creature takes the other half.</td><td>6th level, Touch</td></tr>
+					<tr><td>Destined Death</td><td>The targets both have either advantage or disadvantage on saves against each other.</td><td>11th level, Touch</td></tr>
+				</table>
+			<p class="indent">An effect that would damage the soul is capable of cutting your thread and removing your technique's effects. Additionally, you cannot manipulate the fate of a creature that is completely lacking cursed energy (such as via Heavenly Restriction). </p>
+		</description>
+		<sheet action="Action" usage="CE">
+			<description>For 2 cursed energy, you bind two creatures within 30 ft of you with an invisible red thread for 1 minute, granting them a fate while within 30 ft of each other. If a Fate requires Touch, you must touch both targets at some point. Grant +1 Fate per additional CE spent, up to {{proficiency}}. An effect that would damage the soul is capable of cutting your thread and removing your technique's effects. You cannot manipulate the fate of a creature that is completely lacking cursed energy.</description>
+			<description level="6">For 2 cursed energy, you bind two creatures within 30 ft of you with an invisible red thread for 1 minute, granting them a fate while within 30 ft of each other. If a Fate requires Touch, you must touch both targets at some point. Grant +1 Fate and minute to the duration per additional CE spent, up to {{proficiency}}. An effect that would damage the soul is capable of cutting your thread and removing your technique's effects. You cannot manipulate the fate of a creature that is completely lacking cursed energy.</description>
+			<description level="11">For 2 cursed energy, you bind two creatures within 30 ft of you with an invisible red thread for 1 hour, granting them a fate while within 30 ft of each other. If a Fate requires Touch, you must touch both targets at some point. Grant +1 Fate and hour to the duration per additional CE spent, up to {{proficiency}}. An effect that would damage the soul is capable of cutting your thread and removing your technique's effects. You cannot manipulate the fate of a creature that is completely lacking cursed energy.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_FATE_FATES" />
+		</rules>
+	</element>
+
+	<element name="Fates" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_FATE_FATES">
+		<description>
+			<h5 class="caption">FATES</h5>
+				<table>
+					<thead>
+						<tr><td>Fate</td><td>Effect</td><td>Requirement</td></tr>
+					</thead>
+					<tr><td>Bonds</td><td>The targets gain a +2 bonus to AC.</td><td>N/A</td></tr>
+					<tr><td>Promsied Time?</td><td>The creatures both have either advantage or disadvantage on attacks against each other.</td><td>N/A</td></tr>
+					<tr><td>Mirrored</td><td>If one target rolls a 20 or 1 on their turn, the other's next roll will be the opposite.</td><td>N/A</td></tr>
+					<tr><td>Magnetic</td><td>If targets start their turn within 30 ft of each other, they are pulled 10 ft closer. If this brings them within 5 ft, they become tangled and prone (Str save to pull away).</td><td>Touch</td></tr>
+					<tr><td>Shared Strengths</td><td>Choose a damage resistance, immunity, vulnerability or condition immunity of a target. Both targets share that strength/weakness.</td><td>6th level</td></tr>
+					<tr><td>Linked Suffering</td><td>When one of the linked targets takes damage, they take half as much damage and the linked creature takes the other half.</td><td>6th level, Touch</td></tr>
+					<tr><td>Destined Death</td><td>The targets both have either advantage or disadvantage on saves against each other.</td><td>11th level, Touch</td></tr>
+				</table>
+		</description> 
+		<sheet>
+			<description><strong>Bonds:</strong> The targets gain a +2 bonus to AC. <strong>Promised Time?:</strong> The creatures both have either advantage or disadvantage on attacks against each other. <strong>Mirrored:</strong> If one target rolls a 20 or 1 on their turn, the other's next roll will be the opposite. <strong>Magnetic (Touch):</strong> If targets start their turn within 30 ft of each other, they are pulled 10 ft closer. If this brings them within 5 ft, they become tangled and prone (Str save to pull away).</description>
+			<description level="6"><strong>Bonds:</strong> The targets gain a +2 bonus to AC. <strong>Promised Time?:</strong> The creatures both have either advantage or disadvantage on attacks against each other. <strong>Mirrored:</strong> If one target rolls a 20 or 1 on their turn, the other's next roll will be the opposite. <strong>Magnetic (Touch):</strong> If targets start their turn within 30 ft of each other, they are pulled 10 ft closer. If this brings them within 5 ft, they become tangled and prone (Str save to pull away). <strong>Shared Strengths:</strong> Choose a damage resistance, immunity, vulnerability or condition immunity of a target. Both targets share that strength/weakness. <strong>Linked Suffering (Touch):</strong> When one of the linked targets takes damage, they take half as much damage and the linked creature takes the other half.</description>
+			<description level="11"><strong>Bonds:</strong> The targets gain a +2 bonus to AC. <strong>Promised Time?:</strong> The creatures both have either advantage or disadvantage on attacks against each other. <strong>Mirrored:</strong> If one target rolls a 20 or 1 on their turn, the other's next roll will be the opposite. <strong>Magnetic (Touch):</strong> If targets start their turn within 30 ft of each other, they are pulled 10 ft closer. If this brings them within 5 ft, they become tangled and prone (Str save to pull away). <strong>Shared Strengths:</strong> Choose a damage resistance, immunity, vulnerability or condition immunity of a target. Both targets share that strength/weakness. <strong>Linked Suffering (Touch):</strong> When one of the linked targets takes damage, they take half as much damage and the linked creature takes the other half. <strong>Destined Death (Touch):</strong> The targets both have either advantage or disadvantage on saves against each other.</description>
+		</sheet>
+	</element>
+
+	<element name="Cursed Eyes of Fate" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_FATE_CURSED_EYES_OF_FATE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FATE_CURSED_EYES_OF_FATE</requirements>
+		<description>
+			<p>At 3rd level, you learn that fate is not simple. It is what makes up all connections between people and everything else. As a bonus action for 1 CE, when you look at a creature you can focus until you see the red threads of fate that connect all living creatures. As part of this free action, you can tell who the threads connect to if they are within sight, as well as the type of connection. This can range from familial connections, admiration, or feelings of love.</p>
+			<p class="indent">Alternatively, you can read the target's personal thread of fate to learn one of the following:</p>
+			<ul>
+				<li>The target's damage resistances, immunities, or vulnerabilities.</li>
+				<li>The target's CR or Level.</li>
+				<li>The target's remaining hit points.</li>
+				<li>The target's AC or an Ability modifier.</li>
+				<li>The target's current emotions.</li>
+			</ul>
+		</description>
+		<sheet action="Bonus Action" usage="CE">
+			<description>For 1 cursed energy, you can tell who the creatures threads of fate connect to if they are within sight, as well as the type of connection. This can range from familial connections, admiration, or feelings of love. Alternatively, you can read the target's personal thread of fate to learn the target's damage resistances, immunities, or vulnerabilities, CR or Level, remaining hit points, AC or an Ability modifier, or its current emotions.</description>
+		</sheet>
+	</element>
+
+	<element name="Strong Destiny" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_FATE_STRONG_DESTINY">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FATE_STRONG_DESTINY</requirements>
+		<description>
+			<p> At 6th level, you have learned to strengthen your threads of fate with cursed energy. When you apply a fate to creatures, you can increase the duration by 1 minute per additional cursed energy spent. At 11th level, your Fate Manipulation now lasts for 1 hour and you can increase the duration by 1 hour per additional cursed energy spent.</p>
+		</description>
+        <sheet display="false" />
+	</element>
+
+	<element name="Karmic Entanglement" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_FATE_KARMIC_ENTANGLEMENT">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FATE_KARMIC_ENTANGLEMENT</requirements>
+		<description>
+			<p>At 11th level, you have learned to permanently entangle the people in the web of fate. Over an uninterrupted period of 8 hours, you permanently intertwine the fates of two or more creatures together. The creatures become destined to meet by fate. You can attach this to an incredibly unique part of one of the creatures, such as an Inherited Technique, the Six Eyes, or a unique Constitution like Star Plasma Vessels to cause it to be passed down even after the targets' deaths. You can only have a number of creatures with permanently intertwined fate equal to your proficiency bonus at once (including yourself).</p>
+			<p class="indent">As a side effect of your technique, your fate has become set. You cannot die of old age, but still grow older. Every 500 years you must assimilate with a genetically similar human to reset your body and appearance. Otherwise you begin to evolve beyond humanity, becoming more akin to a Cursed Spirit.</p>
+		</description>
+        <sheet>
+			<description>Over an uninterrupted period of 8 hours, you permanently intertwine the fates of two or more creatures together. The creatures become destined to meet by fate. You can attach this to an incredibly unique part of one of the creatures to cause it to be passed down even after the targets' deaths. You can only have {{proficiency}} creatures with permanently intertwined fates. You cannot die of old age, but still grow older. Every 500 years you must assimilate with a genetically similar human to reset your body and appearance. Otherwise you begin to evolve beyond humanity, becoming more akin to a Cursed Spirit.</description>
+		</sheet>
+	</element>
+
+	<element name="Domain Expansion: Road of Karma" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_FATE_DOMAIN_EXPANSION_ROAD_OF_KARMA">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FATE_DOMAIN_EXPANSION_ROAD_OF_KARMA</requirements>
+		<description>
+			<p>Finally at 18th level, you have learned to expand your domain. At initiative 20, you select a creature within your domain as your Destined Foe. While your Destined Foe is within your domain, all your attacks against them are imbued with your guaranteed hit. You can switch your Destined Foe to another creature within your domain at initiative 20. </p>
+			<p class="indent">Additionally, your innate technique features count the entirety of your domain as being within range and you can ignore the Touch Requirement of Fates.</p>
+		</description>
+        <sheet action="Action + Bonus Action + Movement" usage="CE">
+			<description>For 20 cursed energy, at initiative 20, you select a creature within your domain as your Destined Foe. While your Destined Foe is within your domain, all your attacks against them are imbued with your guaranteed hit. You can switch your Destined Foe to another creature within your domain at initiative 20. Your innate technique features count the entirety of your domain as being within range and you can ignore the Touch Requirement of Fates.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Fate Manipulation Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_FATE_FATE_MANIPULATION" />
+	<element name="Cursed Eyes of Fate Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_FATE_CURSED_EYES_OF_FATE" />
+	<element name="Strong Destiny Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_FATE_STRONG_DESTINY" />
+	<element name="Karmic Entanglement Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_FATE_KARMIC_ENTANGLEMENT" />
+	<element name="Domain Expansion: Road of Karma Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_FATE_DOMAIN_EXPANSION_ROAD_OF_KARMA" />
+</elements>

@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="6.0.0">
+			<file name="dark-claw.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/dark-claw.xml" />
+		</update>
+	</info>
+
+	<element name="Dark Claw" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_DARK_CLAW">
+		<supports>Innate Technique</supports>
+		<description>
+			<p>Go back to MHA.</p>
+			<div element="ID_JJK_ARCHETYPE_FEATURE_DARK_CLAW_CLAW" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_DARK_CLAW_CLAWS_MODIFICATIONS" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_DARK_CLAW_ULTIMATE_CLAWS" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_DARK_CLAW_MAXIMUM_ZENITH_CLAW_OPTION" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_DARK_CLAW_DOMAIN_EXPANSION_HALL_OF_THE_FIVE_CLAWED_DRAGON" />
+		</description>
+		<sheet display="false">
+			<description>You possess powerful claws that can do anything.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_DARK_CLAW_CLAW" level="1" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_DARK_CLAW_CLAWS_MODIFICATIONS" level="3" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_DARK_CLAW_ULTIMATE_CLAWS" level="6" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_DARK_CLAW_MAXIMUM_ZENITH_CLAW_OPTION" level="11" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_DARK_CLAW_DOMAIN_EXPANSION_HALL_OF_THE_FIVE_CLAWED_DRAGON" level="18" />
+		</rules>
+	</element>
+
+	<element name="Claw" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DARK_CLAW_CLAW">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DARK_CLAW_CLAW</requirements>
+		<description>
+			<p>Beginning at 1st level, you have learned to harden your cursed energy into dark claws on your left hand. As a bonus action for 1 cursed energy, you form your claw for 1 hour. Your claws are natural weapons, which counts as a simple melee weapon you are proficient with. It deals 1d6 slashing damage and has the light and finesse property and can use your Cursed Energy modifier for attack and damage rolls. This increases to 1d8 at 3rd level, 1d10 at 6th level, 1d12 at 11th level, and 2d8 at 18th.</p>
+		</description>
+		<sheet action="Bonus Action" usage="CE">
+				<description>For 1 cursed energy, form your claws for 1 hour which are natural weapons and count as a simple melee weapon you are proficient with. It deals 1d{{dark:claw:claw:damage}}+{{dark:claw:claw:damage}} slashing damage and has the light and finesse property and can use your Cursed Energy modifier for attack and damage rolls. </description>
+				<description level="18">For 1 cursed energy, form your claws for 1 hour which are natural weapons and count as a simple melee weapon you are proficient with. It deals 2d8+{{dark:claw:claw:damage}} slashing damage and has the light and finesse property. You can use your Cursed Energy modifier for attack and damage rolls. </description>
+		</sheet>
+		<rules>
+			<stat name="dark:claw:claw:damage" value="6" bonus="claw" />
+			<stat name="dark:claw:claw:attack" value="8" bonus="claw" level="3" />
+			<stat name="dark:claw:claw:attack" value="10" bonus="claw" level="6" />
+			<stat name="dark:claw:claw:attack" value="12" bonus="claw" level="11" />
+			<stat name="dark:claw:claw:damage" value="strength:modifier" bonus="claw" />
+			<stat name="dark:claw:claw:damage" value="dexterity:modifier" bonus="claw" />
+			<stat name="dark:claw:claw:damage" value="ce:modifier" bonus="claw" />
+		</rules>
+	</element>
+
+	<element name="Claws Modifications" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DARK_CLAW_CLAWS_MODIFICATIONS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DARK_CLAW_CLAWS_MODIFICATIONS</requirements>
+		<description>
+			<p> At 3rd level, you have learned new methods of enhancement. You gain two Claw options and one more option at 6th, 11th, and 18th level.</p>
+			<ul>
+				<li><strong>Brutal Claws.</strong> Your claws deal an additional damage dice.</li>
+				<li><strong>Elemental Claws.</strong> You can choose to change the damage type of your claws to one of the following types: fire, cold, lightning, thunder, acid. You can change the type during a long rest.</li>
+				<li><strong>Absorbing Claws.</strong> On a hit, you can spend 1 CE to deal an additional 1d6 necrotic damage. You regain hit points equal to the necrotic damage dealt.</li>
+				<li><strong>Pure Claws.</strong> Your claws ignore resistances to damage.</li>
+				<li><strong>Barbed Claws.</strong> Once per turn on a hit, you can spend 2 CE to force the target to make a Constitution saving throw. On a failed save, they are bleeding and take 1d6 slashing damage at the start of their turn until a creature uses their action to staunch the wound or they regain hit points.</li>
+			</ul>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<select type="Archetype Feature" name="Claws Modifications" supports="Claws Modifications" number="2" />
+			<select type="Archetype Feature" name="Claws Modifications" supports="Claws Modifications" level="6" />
+			<select type="Archetype Feature" name="Claws Modifications" supports="Claws Modifications" level="11" />
+			<select type="Archetype Feature" name="Claws Modifications" supports="Claws Modifications" level="18" />
+		</rules>
+	</element>
+
+	<element name="Brutal Claws" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DARK_CLAW_BRUTAL_CLAWS">
+		<supports>Claws Modifications</supports>
+		<description>
+			<p>Your claws deal an additional damage dice.</p>
+		</description>
+		<sheet>
+			<description>Your claws deal an additional damage dice.</description>
+		</sheet>
+	</element>
+
+	<element name="Elemental Claws" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DARK_CLAW_ELEMENTAL_CLAWS">
+		<supports>Claws Modifications</supports>
+		<description>
+			<p>You can choose to change the damage type of your claws to one of the following types: fire, cold, lightning, thunder, acid. You can change the type during a long rest.</p>
+		</description>
+		<sheet>
+			<description>Your claws deal the chosen elemental damage. You can change the type during a long rest.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Elemental Claws" supports="Elemental Claws" />
+		</rules>
+	</element>
+
+	<element name="Fire" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DARK_CLAW_ELEMENTAL_CLAWS_FIRE">
+		<supports>Elemental Claws</supports>
+		<description>
+			<p>Your claws deal fire damage instead of slashing damage.</p>
+		</description>
+		<sheet>
+			<description></description>
+		</sheet>
+	</element>
+
+	<element name="Cold" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DARK_CLAW_ELEMENTAL_CLAWS_COLD">
+		<supports>Elemental Claws</supports>
+		<description>
+			<p>Your claws deal cold damage instead of slashing damage.</p>
+		</description>
+		<sheet>
+			<description></description>
+		</sheet>
+	</element>
+
+	<element name="Lightning" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DARK_CLAW_ELEMENTAL_CLAWS_LIGHTNING">
+		<supports>Elemental Claws</supports>
+		<description>
+			<p>Your claws deal lightning damage instead of slashing damage.</p>
+		</description>
+		<sheet>
+			<description></description>
+		</sheet>
+	</element>
+
+	<element name="Thunder" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DARK_CLAW_ELEMENTAL_CLAWS_THUNDER">
+		<supports>Elemental Claws</supports>
+		<description>
+			<p>Your claws deal thunder damage instead of slashing damage.</p>
+		</description>
+		<sheet>
+			<description></description>
+		</sheet>
+	</element>
+
+	<element name="Acid" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DARK_CLAW_ELEMENTAL_CLAWS_ACID">
+		<supports>Elemental Claws</supports>
+		<description>
+			<p>Your claws deal acid damage instead of slashing damage.</p>
+		</description>
+		<sheet>
+			<description></description>
+		</sheet>
+	</element>
+
+	<element name="Absorbing Claws" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DARK_CLAW_ABSORBING_CLAWS">
+		<supports>Claws Modifications</supports>
+		<description>
+			<p>On a hit, you can spend 1 CE to deal an additional 1d6 necrotic damage. You regain hit points equal to the necrotic damage dealt.</p>
+		</description>
+		<sheet usage="CE">
+			<description>On a hit, you can spend 1 cursed energy to deal an additional {{dark:claw:uabsorbing:claws:damage}}d6 necrotic damage. You regain hit points equal to the necrotic damage dealt. </description>
+		</sheet>
+		<rules>
+			<stat name="dark:claw:uabsorbing:claws:damage" value="1" bonus="uabsorbingclaws" />
+			<stat name="dark:claw:uabsorbing:claws:damage" value="2" bonus="uabsorbingclaws" requirements="ID_JJK_ARCHETYPE_FEATURE_DARK_CLAW_UABSORBING_CLAWS" />
+			<stat name="dark:claw:uabsorbing:claws:damage" value="3" bonus="uabsorbingclaws" requirements="ID_JJK_ARCHETYPE_FEATURE_DARK_CLAW_UABSORBING_CLAWS" level="11" />
+		</rules>
+	</element>
+
+	<element name="Pure Claws" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DARK_CLAW_PURE_CLAWS">
+		<supports>Claws Modifications</supports>
+		<description>
+			<p>Your claws ignore resistances to damage.</p>
+		</description>
+		<sheet>
+			<description>Your claws ignore resistances to damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Barbed Claws" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DARK_CLAW_BARBED_CLAWS">
+		<supports>Claws Modifications</supports>
+		<description>
+			<p>Once per turn on a hit, you can spend 2 CE to force the target to make a Constitution saving throw. On a failed save, they are bleeding and take 1d6 slashing damage at the start of their turn until a creature uses their action to staunch the wound or they regain hit points.</p>
+		</description>
+		<sheet usage="CE">
+			<description>On a hit, you can spend 2 cursed energy to force the target to make a Constitution saving throw. On a failed save, they take {{dark:claw:ubarbedclaws:damage}}d6 slashing damage at the start of their turn until a creature uses their action to staunch the wound or they regain hit points.</description>
+		</sheet>
+		<rules>
+			<stat name="dark:claw:ubarbedclaws:damage" value="1" bonus="ubarbedclaws" />
+			<stat name="dark:claw:ubarbedclaws:damage" value="2" bonus="ubarbedclaws" requirements="ID_JJK_ARCHETYPE_FEATURE_DARK_CLAW_UBARBED_CLAWS" />
+		</rules>
+	</element>
+
+	<element name="Ultimate Claws" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DARK_CLAW_ULTIMATE_CLAWS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DARK_CLAW_ULTIMATE_CLAWS</requirements>
+		<description>
+			<p>At 6th level, choose one of your Claw options to gain an Upgraded Claw option. You choose an additional Upgraded Claw option at 11th and 18th level. You can have two Upgraded Claw options at a time and switch as part of short or long rest.</p>
+			<ul>
+				<li><strong>Brutal Claws.</strong> Your claws deal one additional damage dice on a hit and gain a +2 bonus to attack and damage rolls. This increases to +3 at 11th level.</li>
+				<li><strong>Elemental Claws.</strong> You can choose to change the damage type of your claws to one of the following types: fire, cold, lightning, thunder, acid. You deal additional damage equal to your proficiency bonus on a hit. You can change the damage type during a long rest.</li>
+				<li><strong>Absorbing Claws.</strong> On a hit, you can spend 1 CE to deal an additional 2d6 necrotic damage. You regain hit points equal to the necrotic damage dealt. This increases to 3d6 at 11th level.</li>
+				<li><strong>Pure Claws.</strong> Your claws ignore damage resistances and immunities. At 18th level, you deal maximum slashing damage against a creature without immunities or resistances to your damage.</li>
+				<li><strong>Barbed Claws.</strong> Once per turn on a hit with your claws, you can spend 2 CE to force the target to make a Constitution saving throw. On a failed save, they are bleeding and take 2d6 slashing damage at the start of their turn. This ends if the creature uses their action to staunch the wound or regains hit points.</li>
+			</ul>
+		</description>
+        <sheet>
+            <description>You can have two Upgraded Claw options active at a time and switch as part of short or long rest.</description>
+        </sheet>
+		<rules>
+			<select type="Archetype Feature" name="Ultimate Claws" supports="Ultimate Claws" />
+			<select type="Archetype Feature" name="Ultimate Claws" supports="Ultimate Claws" level="11" />
+			<select type="Archetype Feature" name="Ultimate Claws" supports="Ultimate Claws" level="18" />
+		</rules>
+	</element>
+
+	<element name="Ultimate Brutal Claws" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DARK_CLAW_UBRUTAL_CLAWS">
+		<requirements>ID_JJK_ARCHETYPE_FEATURE_DARK_CLAW_BRUTAL_CLAWS</requirements>
+		<supports>Ultimate Claws</supports>
+		<description>
+			<p>Your claws deal one additional damage dice on a hit and claws gain a +2 bonus to attack and damage rolls. This increases to +3 at 11th level.</p>
+		</description>
+		<sheet>
+			<description>Your claws gain a +{{dark:claw:ubrutalclaws:attack}} to attack and damage rolls.</description>
+		</sheet>
+		<rules>
+			<stat name="dark:claw:ubrutalclaws:attack" value="2" bonus="ubrutalclaws" />
+			<stat name="dark:claw:ubrutalclaws:attack" value="3" bonus="ubrutalclaws" level="11" />
+		</rules>
+	</element>
+
+	<element name="Ultimate Elemental Claws" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DARK_CLAW_UELEMENTAL_CLAWS">
+		<requirements>ID_JJK_ARCHETYPE_FEATURE_DARK_CLAW_ELEMENTAL_CLAWS</requirements>
+		<supports>Ultimate Claws</supports>
+		<description>
+			<p>You can choose to change the damage type of your claws to one of the following types: fire, cold, lightning, thunder, acid. You deal additional damage equal to your proficiency bonus on a hit. You can change the damage type during a long rest.</p>
+		</description>
+		<sheet>
+			<description>You deal {{proficiency}} additional damage on a hit.</description>
+		</sheet>
+	</element>
+
+	<element name="Ultimate Absorbing Claws" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DARK_CLAW_UABSORBING_CLAWS">
+		<requirements>ID_JJK_ARCHETYPE_FEATURE_DARK_CLAW_ABSORBING_CLAWS</requirements>
+		<supports>Ultimate Claws</supports>
+		<description>
+			<p>On a hit, you can spend 1 CE to deal an additional 2d6 necrotic damage. You regain hit points equal to the necrotic damage dealt. This increases to 3d6 at 11th level.</p>
+		</description>
+		<sheet display="false"/>
+	</element>
+
+	<element name="Ultimate Pure Claws" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DARK_CLAW_UPURE_CLAWS">
+		<requirements>ID_JJK_ARCHETYPE_FEATURE_DARK_CLAW_PURE_CLAWS</requirements>
+		<supports>Ultimate Claws</supports>
+		<description>
+			<p>Your claws ignore damage resistances and immunities. At 18th level, you deal maximum slashing damage against a creature without immunities or resistances to your damage.</p>
+		</description>
+		<sheet>
+			<description>Your claws ignore immunities to damage.</description>
+			<description level="18">Your claws ignore immunities to damage and deal maximum damage against creatures without immunities or resistances to your damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Ultimate Barbed Claws" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DARK_CLAW_UBARBED_CLAWS">
+		<requirements>ID_JJK_ARCHETYPE_FEATURE_DARK_CLAW_BARBED_CLAWS</requirements>
+		<supports>Ultimate Claws</supports>
+		<description>
+			<p>Once per turn on a hit with your claws, you can spend 2 CE to force the target to make a Constitution saving throw. On a failed save, they are bleeding and take 2d6 slashing damage at the start of their turn. This ends if the creature uses their action to staunch the wound or regains hit points.</p>
+		</description>
+		<sheet display="false"/>
+	</element>
+
+	<element name="Maximum: Zenith Claw Option" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DARK_CLAW_MAXIMUM_ZENITH_CLAW_OPTION">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DARK_CLAW_MAXIMUM_ZENITH_CLAW_OPTION</requirements>
+		<description>
+			<p>At 11th level, you have learned that your claws have even more room for growth and can destroy cursed tools to strengthen your claws. As an action while holding a cursed tool, you must spend CE depending on the cursed tool's grade and then crush it in your claws to destroy it. You can then use its abilities and bonuses as a Zenith Claw option.  You can only have one Zenith Claw option active at a time and can swap options as part of a short or long rest.</p>
+			<h5 class="caption">ZENITH CLAW COSTS</h5>
+				<table>
+					<thead>
+						<tr><td>Grade</td><td>Cursed Energy Cost</td></tr>
+					</thead>
+					<tr><td>4th Grade</td><td>3</td></tr>
+					<tr><td>3rd Grade</td><td>4</td></tr>
+					<tr><td>2nd Grade</td><td>6</td></tr>
+					<tr><td>1st Grade</td><td>10</td></tr>
+				</table>
+		</description>
+        <sheet action="Action" usage="CE">
+			<description>While holding a cursed tool, you can spend 3, 4, 6, or 10 cursed energy for 4th, 3rd, 2nd, and 1st grade tools respectively to destroy it. You can then use its abilities and bonuses as a Zenith Claw option. You can only have one Zenith Claw option active at a time and can swap options as part of a short or long rest.</description>
+		</sheet>
+	</element>
+
+	<element name="Domain Expansion: Hall of the Five Clawed Dragon" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DARK_CLAW_DOMAIN_EXPANSION_HALL_OF_THE_FIVE_CLAWED_DRAGON">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DARK_CLAW_DOMAIN_EXPANSION_HALL_OF_THE_FIVE_CLAWED_DRAGON</requirements>
+		<description>
+			<p>Finally at 18th level, you have learned to expand your domain. At initiative 20, you stab your claws through space targeting a creature within your domain with a guaranteed hit with your claws while ignoring distance and dealing critical damage (cannot roll for Black Flash). All of your Claw attacks are guaranteed hits within your domain and you can swap any number of your Claw options at the beginning of your turn.</p>
+		</description>
+        <sheet action="Action + Bonus Action + Movement" usage="CE">
+			<description>For 20 cursed energy, at initiative 20, target a creature within your domain with a guaranteed hit with your claws while ignoring distance and dealing critical damage (cannot roll for Black Flash). All of your Claw attacks are guaranteed hits within your domain and you can swap any number of your Claw options at the beginning of your turn.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Claw Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DARK_CLAW_CLAW" />
+	<element name="Claws Modifications Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DARK_CLAW_CLAWS_MODIFICATIONS" />
+	<element name="Ultimate Claws Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DARK_CLAW_ULTIMATE_CLAWS" />
+	<element name="Maximum: Zenith Claw Option Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DARK_CLAW_MAXIMUM_ZENITH_CLAW_OPTION" />
+	<element name="Domain Expansion: Hall of the Five Clawed Dragon Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DARK_CLAW_DOMAIN_EXPANSION_HALL_OF_THE_FIVE_CLAWED_DRAGON" />
+</elements>
