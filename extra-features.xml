@@ -4,7 +4,7 @@
 		<name>Extra Features</name>
 		<description>The Extra Features from JJK</description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
-		<update version="6.0.0">
+		<update version="6.0.1">
 			<file name="extra-features.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/extra-features.xml" />
 		</update>
 	</info>
@@ -117,8 +117,37 @@
 			<stat name="ce:dc" value="proficiency"/>
 			<stat name="ce:dc" value="ce:modifier"/>
 			<stat name="ce:dc:total" value="ce:dc" bonus="cursed energy"/>
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_MAXIMUM_OUTPUT" requirements="[cu:stat:20]">
         </rules>
 	</element>
+
+	<element name="Maximum Output" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_MAXIMUM_OUTPUT">
+		<description>
+			<p>After reaching 20 Cursed Energy score, you have learned to use Maximum Output techniques with the highest possible cursed energy channeled into them. When spending the most possible CE, you can spend half the cursed energy cost an additional time to amplify the output of your techniques, using one of the following benefits (rounded up):</p>
+      		<ul>
+				<li>The technique's range is increased by half its original range rounded to the highest 5. For example, a technique with 10 feet of range would become a 15 feet range technique. This does not work with touch based techniques.</li>
+				<li>The technique's damage dice is increased by half of its original dice. For example, a technique with 10d10 damage die would add 5d10 die of damage to the total damage dice.</li>
+				<li>The technique's attack bonus is increased by half of its original bonus rounded up. For example, a technique with a +7 to hit would add a +4 to hit. DCs increase by half your proficiency bonus.</li>
+				<li>The technique's duration increase by half the original duration. Eg. techniques that last 1 minute now last 1 minute + 5 rounds.</li>
+				<li>Another value of your technique increases by half its original. If using Maximum Output on a shikigami summoning technique, you instead choose one of the following:</li>
+				<li>Increase the size category by 1 and the shikigami deals an additional damage dice in necrotic on a hit.</li>
+				<li>The shikigami's hit points increase by half its original value.</li>
+				<li>The shikigami's attack bonus increases by half your proficiency bonus (rounded up).</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When spending the most possible CE on a technique, you can spend half the cursed energy cost an additional time to use one of the following benefits (rounded up): </description>
+			<description> • The technique's range is increased by half its original range rounded to the highest 5.</description>
+			<description> • The technique's damage dice is increased by half of its original dice.</description>
+			<description> • The technique's attack bonus is increased by half of its original bonus rounded up.</description>
+			<description> • The technique's duration increase by half the original duration.</description>
+			<description> • Another value of your technique increases by half its original. If using Maximum Output on a shikigami summoning technique, you instead choose one of the following:</description>
+			<description> • Increase the size category by 1 and the shikigami deals an additional damage dice in necrotic on a hit.</description>
+			<description> • The shikigami's hit points increase by half its original value.</description>
+			<description> • The shikigami's attack bonus increases by half your proficiency bonus (rounded up).</description>
+		</sheet>
+	</element>
+	
 	<!-- Reverse Curse Technique -->
 	<element name="Reverse Curse Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_REVERSE_CURSE_TECHNIQUE">
 		<description>
