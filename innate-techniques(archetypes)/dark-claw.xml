@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.0">
+		<update version="6.0.1">
 			<file name="dark-claw.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/dark-claw.xml" />
 		</update>
 	</info>
@@ -235,7 +235,9 @@
 		<description>
 			<p>On a hit, you can spend 1 CE to deal an additional 2d6 necrotic damage. You regain hit points equal to the necrotic damage dealt. This increases to 3d6 at 11th level.</p>
 		</description>
-		<sheet display="false"/>
+		<sheet>
+			<description></description>
+		</sheet>
 	</element>
 
 	<element name="Ultimate Pure Claws" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DARK_CLAW_UPURE_CLAWS">
@@ -256,7 +258,9 @@
 		<description>
 			<p>Once per turn on a hit with your claws, you can spend 2 CE to force the target to make a Constitution saving throw. On a failed save, they are bleeding and take 2d6 slashing damage at the start of their turn. This ends if the creature uses their action to staunch the wound or regains hit points.</p>
 		</description>
-		<sheet display="false"/>
+		<sheet>
+			<description></description>
+		</sheet>
 	</element>
 
 	<element name="Maximum: Zenith Claw Option" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DARK_CLAW_MAXIMUM_ZENITH_CLAW_OPTION">
