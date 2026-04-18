@@ -4,7 +4,7 @@
 		<name>Extra Features</name>
 		<description>The Extra Features from JJK</description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
-		<update version="6.0.1">
+		<update version="6.0.2">
 			<file name="extra-features.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/extra-features.xml" />
 		</update>
 	</info>
@@ -117,10 +117,11 @@
 			<stat name="ce:dc" value="proficiency"/>
 			<stat name="ce:dc" value="ce:modifier"/>
 			<stat name="ce:dc:total" value="ce:dc" bonus="cursed energy"/>
-			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_MAXIMUM_OUTPUT" requirements="[cu:stat:20]">
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_MAXIMUM_OUTPUT" requirements="[cu:stat:20]" />
         </rules>
 	</element>
-
+	
+	<!-- Maximum Output -->
 	<element name="Maximum Output" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_MAXIMUM_OUTPUT">
 		<description>
 			<p>After reaching 20 Cursed Energy score, you have learned to use Maximum Output techniques with the highest possible cursed energy channeled into them. When spending the most possible CE, you can spend half the cursed energy cost an additional time to amplify the output of your techniques, using one of the following benefits (rounded up):</p>
