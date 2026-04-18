@@ -4,7 +4,7 @@
 		<name>Extra Features</name>
 		<description>The Extra Features from JJK</description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
-		<update version="6.0.2">
+		<update version="6.0.3">
 			<file name="extra-features.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/extra-features.xml" />
 		</update>
 	</info>
@@ -137,15 +137,7 @@
 			</ul>
 		</description>
 		<sheet>
-			<description>When spending the most possible CE on a technique, you can spend half the cursed energy cost an additional time to use one of the following benefits (rounded up): </description>
-			<description> • The technique's range is increased by half its original range rounded to the highest 5.</description>
-			<description> • The technique's damage dice is increased by half of its original dice.</description>
-			<description> • The technique's attack bonus is increased by half of its original bonus rounded up.</description>
-			<description> • The technique's duration increase by half the original duration.</description>
-			<description> • Another value of your technique increases by half its original. If using Maximum Output on a shikigami summoning technique, you instead choose one of the following:</description>
-			<description> • Increase the size category by 1 and the shikigami deals an additional damage dice in necrotic on a hit.</description>
-			<description> • The shikigami's hit points increase by half its original value.</description>
-			<description> • The shikigami's attack bonus increases by half your proficiency bonus (rounded up).</description>
+			<description>When spending the most possible CE on a technique, you can spend half the cursed energy cost an additional time to use one of the following benefits (rounded up): • The technique's range is increased by half its original range rounded to the highest 5. • The technique's damage dice is increased by half of its original dice. • The technique's attack bonus is increased by half of its original bonus rounded up. • The technique's duration increase by half the original duration. • Another value of your technique increases by half its original. If using Maximum Output on a shikigami summoning technique, you instead choose one of the following: • Increase the size category by 1 and the shikigami deals an additional damage dice in necrotic on a hit. • The shikigami's hit points increase by half its original value. • The shikigami's attack bonus increases by half your proficiency bonus (rounded up).</description>
 		</sheet>
 	</element>
 	
