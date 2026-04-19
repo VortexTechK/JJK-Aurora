@@ -2,9 +2,9 @@
 <elements>
 	<info>
 		<name>Feats</name>
-		<description>Feats from the Player’s Handbook.</description>
+		<description>Feats from JJK.</description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
-		<update version="6.0.0">
+		<update version="6.0.1">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/feats.xml" />
 		</update>
 	</info>
