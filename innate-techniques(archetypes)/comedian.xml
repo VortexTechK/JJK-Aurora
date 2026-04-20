@@ -158,7 +158,7 @@
 			<description>At initiative 20, you can force a cutaway. A creature within your domain cannot attack you unless they can make it fit into the cutaway gag. If a creature does not act according to your jokes and gags, they take 8d8 psychic damage. A creature can only take this damage once per round. As a Full Turn Action while within your domain, you can tell a joke and make a Charisma (Persuasion) check. All creatures within your domain can make a Wisdom (Insight) check to criticize or attack it. A creature that chooses not to roll or rolls lower than you takes 8d8 psychic damage.</description>
 		</sheet>
 		<rules>
-			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION">
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION" />
 		</rules>
 	</element>
 
