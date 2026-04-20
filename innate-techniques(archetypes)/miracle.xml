@@ -111,9 +111,12 @@
 			<p>Finally at 18th level you have mastered your technique allowing you to expand your domain. Your domain costs 2d20 CE to expand and lasts for 1d4 minutes. If you lack the Cursed Energy to expand your domain, you must reattempt on your next turn and reroll the 2d20. If you expand your domain as a reaction to another Domain Expansion, you can choose to spend 20 CE or to roll 2d20.</p>
             <p class="indent">At initiative 20, you gain 3 Miracles and have no limit on your max amount of Miracles. Within your domain, you can spend a Miracle on yourself or another creature when they make an attack or use a technique to imbue it with your domain's guaranteed hit.</p>
 		</description>
-        <sheet action="Action + Bonus Action + Movement" usage="CE">
-			<description>For 2d20 cursed energy, at initiative 20, you gain 3 Miracles and have no limit on your max amount of Miracles. Within your domain, you can spend a Miracle on yourself or another creature when they make an attack or use a technique to imbue it with your domain's guaranteed hit. If you lack the Cursed Energy to expand your domain, you must reattempt on your next turn and reroll the 2d20. If you expand your domain as a reaction to another Domain Expansion, you can choose to spend 20 CE or to roll 2d20. Your domain lasts for 1d4 minutes.</description>
+        <sheet>
+			<description>Your domain costs 2d20 cursed energy. At initiative 20, you gain 3 Miracles and have no limit on your max amount of Miracles. Within your domain, you can spend a Miracle on yourself or another creature when they make an attack or use a technique to imbue it with your domain's guaranteed hit. If you lack the Cursed Energy to expand your domain, you must reattempt on your next turn and reroll the 2d20. If you expand your domain as a reaction to another Domain Expansion, you can choose to spend 20 CE or to roll 2d20. Your domain lasts for 1d4 minutes.</description>
 		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION">
+		</rules>
 	</element>
 
 	<!--Feature Replacement Grants-->
