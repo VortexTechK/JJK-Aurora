@@ -87,9 +87,12 @@
 		<description>
 			<p>If you achieve 18th level, you hone your technique to a fine edge, allowing you to use your Domain Expansion. While inside it, every creature except you takes 10d8 cold damage and is restrained at the end of their turn. A creature can make a Strength (Athletics) check at the beginning of their turn to break out.</p>
 		</description>
-        <sheet action="Action + Bonus Action + Movement" usage="CE">
-			<description>For 20 cursed energy, every creature except you takes 10d8 cold damage and is restrained at the end of their turn. A creature can make a Strength (Athletics) check at the beginning of their turn to break out.</description>
+        <sheet>
+			<description>Every creature except you takes 10d8 cold damage and is restrained at the end of their turn. A creature can make a Strength (Athletics) check at the beginning of their turn to break out.</description>
 		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION">
+		</rules>
 	</element>
 
 	<!--Feature Replacement Grants-->
