@@ -84,9 +84,12 @@
 		<description>
 			<p>Finally, at 18th level you have learned how to expand your own domain, showing the dangers of the Unlimited Void. You can create a void in space that causes victims to receive all kinds of stimuli and information endlessly, restricting their thought processes and actions. At initiative 20, every creature within your domain that is not touching you must make an Intelligence saving throw. On a failure, they take 12d8 psychic damage, their Intelligence, Wisdom, and Charisma scores become 1 and they are unable to cast spells, attack, use magic items, understand language, or communicate in any intelligible way, and fall unconscious for 1 minute. At the end of every minute, the creature can repeat this saving throw, ending these effects on a success. This effect can also be ended by Greater Restoration or Wish.</p>
 		</description>
-        <sheet action="Action + Bonus Action + Movement" usage="CE">
-			<description>For 20 cursed energy, at initiative 20, every creature within your domain that is not touching you must make an Intelligence saving throw. On a failure, they take 12d8 psychic damage, their Intelligence, Wisdom, and Charisma scores become 1 and they are unable to cast spells, attack, use magic items, understand language, or communicate in any intelligible way, and fall unconscious for 1 minute. At the end of every minute, the creature can repeat this saving throw, ending these effects on a success. This effect can also be ended by Greater Restoration or Wish.</description>
+        <sheet>
+			<description>At initiative 20, every creature within your domain that is not touching you must make an Intelligence saving throw. On a failure, they take 12d8 psychic damage, their Intelligence, Wisdom, and Charisma scores become 1 and they are unable to cast spells, attack, use magic items, understand language, or communicate in any intelligible way, and fall unconscious for 1 minute. At the end of every minute, the creature can repeat this saving throw, ending these effects on a success. This effect can also be ended by Greater Restoration or Wish.</description>
 		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION">
+		</rules>
 	</element>
 
 	<!--Feature Replacement Grants-->
