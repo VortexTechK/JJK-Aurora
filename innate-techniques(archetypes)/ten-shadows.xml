@@ -43,6 +43,7 @@
       		<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_TEN_SHADOWS_DOMAIN_EXPANSION_CHIMERA_SHADOW_GARDEN" level="18" />
 		</rules>
 	</element>
+	
 	<element name="Divine Dogs" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_TEN_SHADOWS_DIVINE_DOGS">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_TEN_SHADOWS_DIVINE_DOGS</requirements>
 		<description>
@@ -53,6 +54,7 @@
 			<description>For 1 cursed energy, Summon up to 2 Divine Dogs(1 CE per dog) within 10 ft of you. Your Divine Dogs last for 1 hour, until they are reduced to 0 hit points or you dismiss any summoned shikigami as a bonus action while within line of sight. Alternatively, as a reaction to seeing your shikigami reduced to 0 hit points, you can unsummon them as a reaction and cannot summon them again until you finish a long rest. Your shikigami cannot use actions on their own. You can spend a bonus action to command your shikigami and can also spend an action to order them to do something more specific for longer, such as protect that creature, grab that, defend that area, etc. The number of Shikigami you can control at once is {{level:half:up}}.</description>
 		</sheet>
 	</element>
+	
     <element name="Totality" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_TEN_SHADOWS_TOTALITY">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_TEN_SHADOWS_TOTALITY</requirements>
 		<description>
@@ -86,31 +88,33 @@
             </description>
 		</sheet>
 	</element>
+	
 	<element name="Trial" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_TEN_SHADOWS_TRIAL">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_TEN_SHADOWS_TRIAL</requirements>
 		<description>
 			<p> Once you reach the 3rd level, you have gained access to your other spirits, and you must face them in ritual combat alone to gain access to them. As an action, you can summon an untamed Shikigami within 30 ft of you without spending cursed energy. Any creature within 50 feet is considered participating in the ritual. An untamed shikigami will be berserk (attack the nearest creature), but if you have defeated the shikigami alone (not including your shikigami) and reduce it to 0 hit points, you can now summon the shikigami normally. You can summon a number of shikigami at a time equal to half your level rounded up (Divine Dogs and Rabbits count as one entity).</p>
-      <p class="indent">If reduced to 0 hit points during a trial with multiple participants, you do not make death saving throws until all participants are unconscious.</p>
-      <h5 class="caption">TRIAL REQUIREMENTS</h5>
-			<table>
-				<thead>
-					<tr><td>Cursed Energy Requirement</td><td>Shikigami</td></tr>
-				</thead>
-				<tr><td>1 Cursed Energy</td><td>Gama</td></tr>
-        		<tr><td>2 Cursed Energy</td><td>Nue</td></tr>
-				<tr><td>4 Cursed Energy</td><td>Great Serpent</td></tr>
-				<tr><td>6 Cursed Energy</td><td>Rabbit Escape</td></tr>
-				<tr><td>7 Cursed Energy</td><td>Mourn Tiger</td></tr>
-				<tr><td>8 Cursed Energy</td><td>Max Elephant</td></tr>
-				<tr><td>9 Cursed Energy</td><td>Round Deer</td></tr>
-				<tr><td>10 Cursed Energy</td><td>Piercing Ox</td></tr>
-				<tr><td>20 Cursed Energy</td><td>Divine General Mahoraga</td></tr>
-			</table>
+      		<p class="indent">If reduced to 0 hit points during a trial with multiple participants, you do not make death saving throws until all participants are unconscious.</p>
+      		<h5 class="caption">TRIAL REQUIREMENTS</h5>
+				<table>
+					<thead>
+						<tr><td>Cursed Energy Requirement</td><td>Shikigami</td></tr>
+					</thead>
+					<tr><td>1 Cursed Energy</td><td>Gama</td></tr>
+	        		<tr><td>2 Cursed Energy</td><td>Nue</td></tr>
+					<tr><td>4 Cursed Energy</td><td>Great Serpent</td></tr>
+					<tr><td>6 Cursed Energy</td><td>Rabbit Escape</td></tr>
+					<tr><td>7 Cursed Energy</td><td>Mourn Tiger</td></tr>
+					<tr><td>8 Cursed Energy</td><td>Max Elephant</td></tr>
+					<tr><td>9 Cursed Energy</td><td>Round Deer</td></tr>
+					<tr><td>10 Cursed Energy</td><td>Piercing Ox</td></tr>
+					<tr><td>20 Cursed Energy</td><td>Divine General Mahoraga</td></tr>
+				</table>
 		</description>
 		<sheet action="Action">
       		<description>Summon an untamed Shikigami within 30 ft of you without spending cursed energy. Any creature within 50 feet is considered participating in the ritual. An untamed shikigami will be berserk (attack the nearest creature), but if you have defeated the shikigami alone (not including your shikigami) and reduce it to 0 hit points, you can now summon the shikigami normally. You can summon {{level:half:up}} shikigami at a time(Divine Dogs and Rabbits count as one entity).</description>
 		</sheet>
 	</element>  
+	
 	<element name="Shadow Manipulation" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_TEN_SHADOWS_SHADOW_MANIPULATION">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_TEN_SHADOWS_SHADOW_MANIPULATION</requirements>
 		<description>
@@ -122,6 +126,7 @@
 			Additionally, you can trap creatures within your shadow. As a bonus action for 2 cursed energy, you can force a creature to make a Dexterity (Acrobatics) check against your CE save DC. This check is made at Disadvantage if they are in complete darkness or inside a veil, and automatically fail within your domain. On a failure they are trapped inside your shadow, counting for carrying capacity. They can hold their breath for a number of minutes equal to their Constitution modifier (min of 1) before suffocating. They can make a Strength or Dexterity saving throw at the end of their turns, freeing themselves on a success and appearing prone in an unoccupied space within 5 ft.</description>
 		</sheet>
 	</element>
+	
 	<element name="Well's Unknown Abyss" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_TEN_SHADOWS_WELLS_UNKNOWN_ABYSS">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_TEN_SHADOWS_WELLS_UNKNOWN_ABYSS</requirements>
 		<description>
@@ -146,6 +151,7 @@
 			<description>Combine two of your living shikigami. Spend half the CE cost of the base shikigami to summon up to {{proficiency}} in altered shikigami at once, spending CE for each. An altered shikigami has half the hit points of the base shikigami and you can reduce its size category by 1 to reduce the CE cost by 1. When reduced to 0 hit points, it does not affect the shikigami used in its creation and is not eligible for Totality. You cannot summon any unaltered shikigami while altered shikigami are summoned. If the base shikigami or alteration shikigami’s CR is 4 or higher, you can only create up to two altered shikigami with them.</description>
 		</sheet>
 	</element>
+	
 	<element name="Domain Expansion: Chimera Shadow Garden" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_TEN_SHADOWS_DOMAIN_EXPANSION_CHIMERA_SHADOW_GARDEN">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_TEN_SHADOWS_DOMAIN_EXPANSION_CHIMERA_SHADOW_GARDEN</requirements>
 		<description>
@@ -154,15 +160,19 @@
 			<p class="indent"><strong>Shikigami Clones</strong>: Your domain allows you to summon copies of your shikigami to overwhelm your opponents. Whenever you summon a shikigami, you can instead spend cursed energy equal to the shikigami's cost(treat its price as if you were outside your domain) to summon a perfect copy of the shikigami. You can spend CE to make a number of shikigami clones up to your Cursed Energy modifier on the same turn. You cannot create copies of Mahoraga with this feature.</p>
 			<p class="indent">In addition, your normal Shikigami won't cost you Cursed Energy within your domain.</p>
 		</description>
-		<sheet action="Action + Bonus Action + Movement" usage="CE">
+		<sheet>
 			<description>
-				<p>For 20 cursed energy, any hostile creatures that end their turn within your domain must make a Dexterity (Acrobatics) check or become restrained. They can make a Strength (Athletics) check at the beginning of their turn to escape. The area counts as difficult terrain for all creatures of your choice, and you are under the effects of Freedom of Movement while within the domain.</p>
+				<p>Any hostile creatures that end their turn within your domain must make a Dexterity (Acrobatics) check or become restrained. They can make a Strength (Athletics) check at the beginning of their turn to escape. The area counts as difficult terrain for all creatures of your choice, and you are under the effects of Freedom of Movement while within the domain.</p>
 				<p class="indent"> As a bonus action you can spend up to {{ce:modifier}} to create a number of clones of yourself equal to the CE spent. The clones have all your features and stats, but not weapons or hit points and cannot use Cursed Energy. They have {{ce:modifier}} hit points and become a shadow puddle once reduced to 0 hit points. You can use your reaction to switch places with a clone when you are hit, making the clone take the hit instead.</p>
 				<p class="indent"> Whenever you summon a shikigami, you can instead spend cursed energy equal to the shikigami's cost(treat its price as if you were outside your domain) to summon a perfect copy of the shikigami. You can spend CE to make up to {{ce:modifier}} shikigami copies on the same turn. You cannot create copies of Mahoraga with this feature.</p>
 				<p class="indent"> Your normal Shikigami don't cost CE</p>
 			</description>
 		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION">
+		</rules>
 	</element>
+	
 	<!--Shikigami-->
 	<element name="Shikigami" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_TEN_SHADOWS_SHIKIGAMI" >
 		<description>
@@ -182,6 +192,7 @@
 		</description>
 		<sheet display="false" />
 	</element>
+	
 	<element name="Divine Dogs" type="Information" source="JJK" id="ID_JJK_INFORMATION_DIVINE_DOGS">
 		<description>
 			<p style="margin-bottom:-5px"><em>Medium shikigami, unaligned</em></p>
@@ -213,6 +224,7 @@
 			</ul>
 		</description>
 	</element>
+	
 	<element name="Gama" type="Information" source="JJK" id="ID_JJK_INFORMATION_GAMA">
 		<description>
 			<p style="margin-bottom:-5px"><em>Medium shikigami, unaligned</em></p>
@@ -245,6 +257,7 @@
 			</ul>
 		</description>
 	</element>
+	
 	<element name="Nue" type="Information" source="JJK" id="ID_JJK_INFORMATION_NUE">
 		<description>
 			<p style="margin-bottom:-5px"><em>Medium shikigami, unaligned</em></p>
@@ -282,6 +295,7 @@
 			</ul>
 		</description>
 	</element>
+	
 	<element name="Great Serpent" type="Information" source="JJK" id="ID_JJK_INFORMATION_GREAT_SERPENT">
 		<description>
 			<p style="margin-bottom:-5px"><em>Huge shikigami, unaligned</em></p>
@@ -309,6 +323,7 @@
 			</ul>
 		</description>
 	</element>
+	
 	<element name="Rabbit Escape" type="Information" source="JJK" id="ID_JJK_INFORMATION_RABBIT_ESCAPE">
 		<description>
 			<p style="margin-bottom:-5px"><em>Huge shikigami (swarm), unaligned</em></p>
@@ -346,6 +361,7 @@
 			</ul>
 		</description>
 	</element>
+	
 	<element name="Mourning Tiger" type="Information" source="JJK" id="ID_JJK_INFORMATION_MOURN_TIGER">
 		<description>
 			<p style="margin-bottom:-5px"><em>Large shikigami, unaligned</em></p>
@@ -381,6 +397,7 @@
 			</ul>
 		</description>
 	</element>
+	
 	<element name="Max Elephant" type="Information" source="JJK" id="ID_JJK_INFORMATION_MAX_ELEPHANT">
 		<description>
 			<p style="margin-bottom:-5px"><em>Huge shikigami, unaligned</em></p>
@@ -413,6 +430,7 @@
 			</ul>
 		</description>
 	</element>
+	
 	<element name="Round Deer" type="Information" source="JJK" id="ID_JJK_INFORMATION_ROUND_DEER">
 		<description>
 			<p style="margin-bottom:-5px"><em>Medium shikigami, unaligned</em></p>
@@ -449,6 +467,7 @@
 			</ul>
 		</description>
 	</element>
+	
 	<element name="Piercing Ox" type="Information" source="JJK" id="ID_JJK_INFORMATION_PIERCING_OX">
 		<description>
 			<p style="margin-bottom:-5px"><em>Large shikigami, unaligned</em></p>
@@ -483,6 +502,7 @@
 			</ul>
 		</description>
 	</element>
+	
 	<element name="Eight-Handled Divergent Sila Divine General Mahoraga" type="Information" source="JJK" id="ID_JJK_INFORMATION_MAHORAGA">
 		<description>
 			<p style="margin-bottom:-5px"><em>Large shikigami, unaligned</em></p>
@@ -529,6 +549,7 @@
 			</ul>
 		</description>
 	</element>
+	
 	<element name="Divine Dog Totality" type="Information" source="JJK" id="ID_JJK_INFORMATION_DIVINE_DOG_TOTALITY">
 		<description>
 		<p style="margin-bottom:-5px"><em>Large shikigami, unaligned</em></p>
@@ -559,6 +580,7 @@
 			</ul>
 		</description>
 	</element>
+	
 	<!--Feature Replacement Grants-->
 	<element name="Divine Dogs Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_TEN_SHADOWS_DIVINE_DOGS" />
 	<element name="Totality Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_TEN_SHADOWS_TOTALITY" />
