@@ -9,7 +9,7 @@
 	<element name="Blazing Courage" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_BLAZING_COURAGE">
 		<supports>Innate Technique</supports>
 		<description>
-			<p>Be a good and loving father.</p>
+			<p>Through your beliefs, you set both your weapon and heart alight with your blazing courage.</p>
 			<div element="ID_JJK_ARCHETYPE_FEATURE_BLAZING_COURAGE_IGNITION" />
 			<div element="ID_JJK_ARCHETYPE_FEATURE_BLAZING_COURAGE_MANTLE_OF_COURAGE" />
 			<div element="ID_JJK_ARCHETYPE_FEATURE_BLAZING_COURAGE_ETERNAL_FLAMES" />
@@ -94,7 +94,7 @@
 			</description>
 		</sheet>
 		<rules>
-			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION">
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION" />
 		</rules>
 	</element>
 	
