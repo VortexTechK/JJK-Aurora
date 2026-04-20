@@ -292,7 +292,7 @@
 			<description>At initiative 20, target a creature within your domain with a guaranteed hit with your claws while ignoring distance and dealing critical damage (cannot roll for Black Flash). All of your Claw attacks are guaranteed hits within your domain and you can swap any number of your Claw options at the beginning of your turn.</description>
 		</sheet>
 		<rules>
-			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION">
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION" />
 		</rules>
 	</element>
 
