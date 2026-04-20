@@ -27,6 +27,7 @@
       		<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_BLAZING_COURAGE_DOMAIN_EXPANSION_FIRE_OF_THE_HEART" level="18" />
 		</rules>
 	</element>
+	
 	<element name="Ignition" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BLAZING_COURAGE_IGNITION">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BLAZING_COURAGE_IGNITION</requirements>
 		<description>
@@ -43,6 +44,7 @@
             <stat name="ignition:damagedice" value="12" level="18" bonus="ignition" />
         </rules>
 	</element>
+	
 	<element name="Mantle of Courage" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BLAZING_COURAGE_MANTLE_OF_COURAGE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BLAZING_COURAGE_MANTLE_OF_COURAGE</requirements>
 		<description>
@@ -53,6 +55,7 @@
       		<description>When you use Ignition, you ignore any detriments or penalties of the weapon or can use it on yourself for your unarmed strikes, potentially recreating a lost limb for the duration. While Ignition is active, you can spend 3 CE as a free action on your turn. You emit an aura of flames within 10 feet of you for 1 minute, giving you resistance to fire and cold damage. An enemy that enters your mantle or starts their turn there must make a Constitution saving throw, taking your Ignition damage on a failed save or half as much on a successful save.</description>
 		</sheet>
 	</element>
+	
 	<element name="Eternal Flames" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BLAZING_COURAGE_ETERNAL_FLAMES">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BLAZING_COURAGE_ETERNAL_FLAMES</requirements>
 		<description>
@@ -68,6 +71,7 @@
             <stat name="eternalflames:miss" value="4" level="18" bonus="eternalflames" />
         </rules>
 	</element>
+	
 	<element name="Maximum: Conflagration" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BLAZING_COURAGE_MAXIMUM_CONFLAGRATION">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BLAZING_COURAGE_MAXIMUM_CONFLAGRATION</requirements>
 		<description>
@@ -78,6 +82,7 @@
 			<description>While holding a melee weapon you can spend 10 cursed energy to swing your weapon, creating a 30 feet cone. All creatures within range must make a Constitution saving throw, taking 10d12 fire damage and being knocked prone on a failed save or half as much on a successful save. If a creature fails by 5 or more, they gain severe burns and take {{proficiency}} additional fire damage from any source of fire damage until they finish a long rest.</description>
 		</sheet>
 	</element>
+	
 	<element name="Domain Expansion: Fire of the Heart" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BLAZING_COURAGE_DOMAIN_EXPANSION_FIRE_OF_THE_HEART">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BLAZING_COURAGE_DOMAIN_EXPANSION_FIRE_OF_THE_HEART</requirements>
 		<description>
@@ -88,7 +93,11 @@
 				<p>Any melee weapon you are holding is treated as having the maximum cursed energy used for Ignition and is imbued with your domain's guaranteed hit. At initiative 20, all creatures of your choice within your domain suffer the damage of your Mantle of Courage.</p>
 			</description>
 		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION">
+		</rules>
 	</element>
+	
 	<!--Feature Replacement Grants-->
 	<element name="Ignition Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BLAZING_COURAGE_IGNITION" />
 	<element name="Mantle of Courage Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BLAZING_COURAGE_MANTLE_OF_COURAGE" />
