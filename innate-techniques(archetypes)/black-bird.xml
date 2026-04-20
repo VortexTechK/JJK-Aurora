@@ -9,7 +9,7 @@
 	<element name="Black Bird Manipulation" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_BLACK_BIRD">
 		<supports>Innate Technique</supports>
 		<description>
-			<p>Don't be a predator.</p>
+			<p>You were born with a simple ability many called weak, the ability to control and see through crows.</p>
 			<div element="ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_CURSED_CROWS" />
 			<div element="ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_OMEN_OF_DEATH" />
 			<div element="ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_RAVENS_EYE" />
@@ -74,7 +74,7 @@
 			</description>
 		</sheet>
 		<rules>
-			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION">
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION" />
 		</rules>
 	</element>
 	<!--Feature Replacement Grants-->
