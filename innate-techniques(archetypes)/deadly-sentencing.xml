@@ -69,7 +69,7 @@
             <grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_DEADLY_SENTENCING_TEN" />
             <grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_DEADLY_SENTENCING_SIXTEEN" />
             <grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_DEADLY_SENTENCING_TWENTY" />
-			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION">
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION" />
         </rules>
 	</element>
 
