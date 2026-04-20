@@ -85,7 +85,7 @@
 		<description>
 			<p>Reaching 18th level, you have mastered the beat of Boogie Woogie, you gain your domain expansion.  Within your domain, you can use Boogie as a free action an unlimited number of times.</p>
 		</description>
-		<sheet action="Action + Bonus Action + Movement" usage="CE">
+		<sheet>
 			<description>
 				<p>You can use Boogie as a free action an unlimited number of times.</p>
 			</description>
