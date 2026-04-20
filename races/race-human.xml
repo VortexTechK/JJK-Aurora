@@ -47,7 +47,6 @@
 			<select type="Race Variant" name="JJK Human Variant" supports="JJK Human Variant" optional="true" />
 		</rules>
 	</element>
-	<!-- ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI -->
 
 	<!-- Human Variants -->
 	<element name="Jujutsu Sorcerer" type="Race Variant" source="JJK" id="ID_RACE_VARIANT_JJK_JUJUTSU_SORCERER">
