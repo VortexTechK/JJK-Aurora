@@ -3,8 +3,8 @@
 	<info>
 		<name>Human</name>
 		<description></description>
-		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0#heading=h.ctlbc6irsjfj">JJK</author>
-		<update version="6.0.0">
+		<author url="https://docs.google.com/document/d/1eC8tEMHnupOuaX6At1X8JORz5iarNe6I-A7j2QzScrE/edit?tab=t.0">JJK</author>
+		<update version="6.0.1">
 			<file name="race-human.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/races/race-human.xml" />
 		</update>
 	</info>
@@ -66,7 +66,7 @@
 			<select type="Ability Score Improvement" name="Ability Score Increase +2 (Jujutsu Sorcerer)" supports="Custom Ability Score Increase 2" number="1" />
 			<select type="Ability Score Improvement" name="Ability Score Increase +1 (Jujutsu Sorcerer)" supports="Custom Ability Score Increase 1" number="1" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
-			<select type="Feat" name="Cursed Energy Feat (Jujutsu Sorcerer)" />
+			<select type="Feat" name="Cursed Energy Feat (Jujutsu Sorcerer)" supports="Cursed Energy Feats" />
 		</rules>
 	</element>
 	<element name="Superhuman" type="Race Variant" source="JJK" id="ID_RACE_VARIANT_JJK_SUPERHUMAN">
