@@ -194,6 +194,7 @@
 			<stat name="domain:expansion:hp" value="ce:modifier">
 			<stat name="domain:expansion:hp" value="ce:modifier">
 			<stat name="domain:expansion:hp" value="ce:modifier">
+		</rules>
 	</element>
 	
 	<!-- Breakthroughs -->
