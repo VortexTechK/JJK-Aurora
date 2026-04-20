@@ -27,6 +27,7 @@
       		<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_DOMAIN_EXPANSION_BLACK_FRIDAY" level="18" />
 		</rules>
 	</element>
+	
 	<element name="Recreation" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_RECREATION">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CONTRACTUAL_RECREATION_RECREATION</requirements>
 		<description>
@@ -61,6 +62,7 @@
 			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_STRUCTURE" />
 		</rules>
 	</element>
+	
 	<element name="Object" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_OBJECT" >
 		<description>
 			<p><strong>Object. </strong>You summon an object from the receipt, spending cursed energy equal to its size.</p>
@@ -69,6 +71,7 @@
 			<description>You summon an object from the receipt, spending cursed energy equal to its size.</description>
 		</sheet>
 	</element>
+	
 	<element name="Vehicle" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_VEHICLE" >
 		<description>
 			<p><strong>Vehicle. </strong>You can summon a vehicle from the receipt, spending cursed energy equal to its size.</p>
@@ -77,6 +80,7 @@
 			<description>You can summon a vehicle from the receipt, spending cursed energy equal to its size.</description>
 		</sheet>
 	</element>
+	
 	<element name="Reservation" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_RESERVATION" >
 		<description>
 			<p><strong>Reservation. </strong>You can use a reservation receipt for 4 cursed energy, giving you the same effects staying on said place for all of the duration would. For example, a 2 day spa reservation would give you the benefits of a long rest.</p>
@@ -93,6 +97,7 @@
 			<description>You can create a structure from a receipt for 20 cursed energy.</description>
 		</sheet>
 	</element>
+	
 	<element name="Quick Spender" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_QUICK_SPENDER">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CONTRACTUAL_RECREATION_QUICK_SPENDER</requirements>
 		<description>
@@ -100,6 +105,7 @@
         </description>
 		<sheet display="false"/>
 	</element>
+	
 	<element name="Splurge" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_SPLURGE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CONTRACTUAL_RECREATION_SPLURGE</requirements>
 		<description>
@@ -109,6 +115,7 @@
 			<description>You can use {{proficiency}} receipts at once, as long as you're holding them.</description>
 		</sheet>
 	</element>
+	
 	<element name="Contractual Control" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_CONTRACTUAL_CONTROL">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CONTRACTUAL_RECREATION_CONTRACTUAL_CONTROL</requirements>
 		<description>
@@ -126,17 +133,22 @@
 			<stat name="contractual:control:damage" value="10" level="18" />
 		</rules>
 	</element>
+	
 	<element name="Domain Expansion: Black Friday" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_DOMAIN_EXPANSION_BLACK_FRIDAY">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CONTRACTUAL_RECREATION_DOMAIN_EXPANSION_BLACK_FRIDAY</requirements>
 		<description>
 			<p>At 18th level, you have mastered your technique allowing you to expand your domain. You can use Recreation and Contractual Control at no cursed energy cost within your domain. At initiative 20, you gain a random receipt. D4 (1: Object, 2: Vehicles, 3: Reservation, 4: Structure) The DM decides the nature of the receipt.</p>
 		</description>
-		<sheet action="Action + Bonus Action + Movement" usage="CE">
+		<sheet>
 			<description>
-				<p>For 20 cursed energy, you can use Recreation and Contractual Control at no cursed energy cost within your domain. At initiative 20, roll a d4 and gain a random receipt. (1: Object, 2: Vehicles, 3: Reservation, 4: Structure) The DM decides the nature of the receipt.</p>
+				<p>You can use Recreation and Contractual Control at no cursed energy cost within your domain. At initiative 20, roll a d4 and gain a random receipt. (1: Object, 2: Vehicles, 3: Reservation, 4: Structure) The DM decides the nature of the receipt.</p>
 			</description>
 		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION">
+		</rules>
 	</element>
+	
 	<!--Feature Replacement Grants-->
 	<element name="Recreation Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CONTRACTUAL_RECREATION_RECREATION" />
 	<element name="Quick Spender Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CONTRACTUAL_RECREATION_QUICK_SPENDER" />
