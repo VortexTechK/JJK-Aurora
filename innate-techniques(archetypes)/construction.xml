@@ -9,7 +9,7 @@
 	<element name="Construction" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_CONSTRUCTION">
 		<supports>Innate Technique</supports>
 		<description>
-			<p>Make one thing, then die.</p>
+			<p>Construction, as the name implies, allows the user to conjure objects from nothing.</p>
 			<div element="ID_JJK_ARCHETYPE_FEATURE_CONSTRUCTION_CONSTRUCT" />
 			<div element="ID_JJK_ARCHETYPE_FEATURE_CONSTRUCTION_CURSED_CREATION" />
 			<div element="ID_JJK_ARCHETYPE_FEATURE_CONSTRUCTION_LIQUID_METAL" />
@@ -84,12 +84,10 @@
 			<p>Finally at 18th level, you have refined your technique to the maximum point, now gaining your domain expansion. While inside your domain, you can now create any of your items by spending no cursed energy. All of these items will deal two additional damage dice and attacks made with them cannot miss. However, these weapons will only last until the end of the domain.</p>
 		</description>
 		<sheet>
-			<description>
-				<p>You can create any of your items by spending no cursed energy. All of these items will deal two additional damage dice and attacks made with them cannot miss. However, these weapons will only last until the end of the domain.</p>
-			</description>
+			<description>You can create any of your items by spending no cursed energy. All of these items will deal two additional damage dice and attacks made with them cannot miss. However, these weapons will only last until the end of the domain.</description>
 		</sheet>
 		<rules>
-			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION">
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION" />
 		</rules>
 	</element>
 	
