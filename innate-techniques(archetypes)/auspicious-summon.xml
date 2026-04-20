@@ -9,7 +9,7 @@
 	<element name="Auspicious Beast Summon" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_AUSPICIOUS_SUMMON">
 		<supports>Innate Technique</supports>
 		<description>
-			<p>How do you even see out of the mask???</p>
+			<p>If the mask is your power, what are you without it?</p>
 			<div element="ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_KAICHI" />
 			<div element="ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_REIKI" />
 			<div element="ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_KIRIN" />
