@@ -89,9 +89,9 @@
 		<description>
 			<p>Finally, at 18th level, you have honed your Cursed Technique to an extreme. While in this domain, all of your Auspicious Beasts are constantly active without any side effects. Attacks made by Kaichi and Ryu always hit.</p>
 		</description>
-		<sheet action="Action + Bonus Action + Movement" usage="CE">
+		<sheet>
 			<description>
-				<p>For 20 cursed energy, all of your Auspicious Beasts are constantly active without any side effects. Attacks made by Kaichi and Ryu always hit.</p>
+				<p>All of your Auspicious Beasts are constantly active without any side effects. Attacks made by Kaichi and Ryu always hit.</p>
 			</description>
 		</sheet>
 	</element>
