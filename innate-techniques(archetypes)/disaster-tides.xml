@@ -80,7 +80,7 @@
 			<description>As an action you can summon up to {{ce:modifier}} sea shikigami within sight range, paying for their costs. These shikigami also count for the sure-hit effect, making one attack as they are summoned and can use swimming speed as a flying speed. You can have up to {{cu:stat}} active at once. If you don't catch hostile creatures in your domain, it lasts indefinitely.</description>
 		</sheet>
 		<rules>
-			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION">
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION" />
 		</rules>
 	</element>
 
