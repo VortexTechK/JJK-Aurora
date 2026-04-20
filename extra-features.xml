@@ -4,7 +4,7 @@
 		<name>Extra Features</name>
 		<description>The Extra Features from JJK</description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
-		<update version="6.0.3">
+		<update version="6.0.4">
 			<file name="extra-features.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/extra-features.xml" />
 		</update>
 	</info>
@@ -169,24 +169,5 @@
       		<stat name="rct:heal" value="30" requirements="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_REVERSE_TECHNIQUE_UNDERSTANDING" bonus="rct" />
       		<stat name="rct:heal" value="35" requirements="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_MASTERED_REVERSE_TECHNIQUE" bonus="rct" />
     	</rules>
-	</element>
-
-	<element name="JJK Class: Reverse Curse Technique" type="Item" source="JJK" id="ID_JJK_ITEM_OCF_REVERSE_CURSE_TECHNIQUE">
-		<compendium display="false" />
-		<description>
-			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
-			<div class="reference">
-				<div element="ID_JJK_CLASS_FEATURE_REVERSE_CURSE_TECHNIQUE" />
-			</div>
-		</description>
-		<setters>
-			<set name="category">Optional Class Features</set>
-      		<set name="keywords">first level, 1st level</set>
-			<set name="slot">misc</set>
-			<set name="inventory-hidden">true</set>
-		</setters>
-		<rules>
-			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_REVERSE_CURSE_TECHNIQUE" requirements="[level:1]"/>
-		</rules>
 	</element>
 </elements>
