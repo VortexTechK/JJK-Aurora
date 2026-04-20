@@ -81,9 +81,12 @@
 		<description>
 			<p>Finally, at 18th level, you have honed your technique to the maximum, gaining your domain expansion. While inside it, at Initiative 20, you can choose up to three targets to suffer the full effects of Granite Blast.</p>
 		</description>
-        <sheet action="Action + Bonus Action + Movement" usage="CE">
-			<description>For 20 cursed energy, at Initiative 20 you can choose up to three targets to suffer the full effects of Granite Blast.</description>
+        <sheet>
+			<description>At Initiative 20, you can choose up to three targets to suffer the full effects of Granite Blast.</description>
 		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION">
+		</rules>
 	</element>
 
 	<!--Feature Replacement Grants-->
