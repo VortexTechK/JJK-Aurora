@@ -104,9 +104,9 @@
 		<description>
 			<p>At 18th level you have learned how to expand your domain. At initiative 20, all creatures of your choice are affected by and fail all saving throws against Antigravity, which can be released by you at will.</p>
 		</description>
-		<sheet action="Action + Bonus Action + Movement" usage="CE">
+		<sheet>
 			<description>
-				<p>For 20 cursed energy, at initiative 20, all creatures of your choice are affected by and fail all saving throws against Antigravity, which can be released by you at will.</p>
+				<p>At initiative 20, all creatures of your choice are affected by and fail all saving throws against Antigravity, which can be released by you at will.</p>
 			</description>
 		</sheet>
 	</element>
