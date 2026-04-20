@@ -9,7 +9,7 @@
 	<element name="Blood Manipulation" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_BLOOD_MANIPULATION">
 		<supports>Innate Technique</supports>
 		<description>
-			<p>Blood loss? Yes.</p>
+			<p>You were born with a complex ability held and practiced by the Kamo family, you can control your blood.</p>
 			<div element="ID_JJK_ARCHETYPE_FEATURE_BLOOD_MANIPULATION_BLOOD_CONSTRUCTS" />
             <div element="ID_JJK_ARCHETYPE_FEATURE_BLOOD_MANIPULATION_BLOOD_TECHNIQUES" />
 			<div element="ID_JJK_ARCHETYPE_FEATURE_BLOOD_MANIPULATION_FLOWING_RED_SCALE" />
@@ -18,7 +18,7 @@
       		<div element="ID_JJK_ARCHETYPE_FEATURE_BLOOD_MANIPULATION_DOMAIN_EXPANSION_BLOODBATH" />
 		</description>
 		<sheet display="false">
-			<description> You were born with a complex ability held and practiced by the Kamo family, you can control your blood.</description>
+			<description>You were born with a complex ability held and practiced by the Kamo family, you can control your blood.</description>
 		</sheet>
 		<rules>
         	<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_BLOOD_MANIPULATION_BLOOD_CONSTRUCTS" level="1" />
@@ -121,7 +121,7 @@
 			</description>
 		</sheet>
 		<rules>
-			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION">
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION" />
 		</rules>
 	</element>
 	
