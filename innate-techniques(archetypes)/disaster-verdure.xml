@@ -122,9 +122,12 @@
 		<description>
 			<p>At 18th level, you have refined your technique to the absolute and learned to expand your domain. At initiative 20, creatures within your domain fall under the effect of Flower Field and take 2d4 Necrotic damage. You gain half of the damage as temporary Cursed Energy that disappears once your domain ends.</p>
 		</description>
-        <sheet action="Action + Bonus Action + Movement" usage="CE">
-			<description>For 20 cursed energy, at initiative 20, creatures within your domain fall under the effect of Flower Field and take 2d4 Necrotic damage. You gain half of the damage as temporary Cursed Energy that disappears once your domain ends.</description>
+        <sheet>
+			<description>At initiative 20, creatures within your domain fall under the effect of Flower Field and take 2d4 Necrotic damage. You gain half of the damage as temporary Cursed Energy that disappears once your domain ends.</description>
 		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION">
+		</rules>
 	</element>
 
 	<!--Feature Replacement Grants-->
