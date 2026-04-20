@@ -80,12 +80,10 @@
             <p class="indent">At initiative 20, an additional clone appears. All Clones created with your domain disappear when the domain ends.</p>
         </description>
 		<sheet>
-			<description>
-				<p>You can create one Clone as a bonus action without spending cursed energy once per turn (Your Clones do not gain this benefit). Within your domain, you can have an unlimited number of Clones. Your Clone's attacks are guaranteed hits within your domain. At initiative 20, an additional clone appears. All Clones created with your domain disappear when the domain ends.</p>
-			</description>
+			<description>You can create one Clone as a bonus action without spending cursed energy once per turn (Your Clones do not gain this benefit). Within your domain, you can have an unlimited number of Clones. Your Clone's attacks are guaranteed hits within your domain. At initiative 20, an additional clone appears. All Clones created with your domain disappear when the domain ends.</description>
 		</sheet>
 		<rules>
-			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION">
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION" />
 		</rules>
 	</element>
 	
