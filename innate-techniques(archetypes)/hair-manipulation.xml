@@ -9,7 +9,7 @@
 	<element name="Hair Manipulation" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_HAIR_MANIPULATION">
 		<supports>Innate Technique</supports>
 		<description>
-			<p>Feels bad.</p>
+			<p>Your technique allows you to form your hair into a variety of shapes.</p>
 			<div element="ID_JJK_ARCHETYPE_FEATURE_HAIR_MANIPULATION_SCORPION_HAIR" />
 			<div element="ID_JJK_ARCHETYPE_FEATURE_HAIR_MANIPULATION_DRILL_HAIR" />
 			<div element="ID_JJK_ARCHETYPE_FEATURE_HAIR_MANIPULATION_AIRCRAFT_HAIR" />
@@ -130,9 +130,12 @@
 		<description>
 			<p>Finally at 18th level you have learned to expand your domain. Creatures other than you take 2d10 slashing damage for every 5 ft they move within your domain as infinitesimally small and sharp hairs cut into them with their every movement. Your domain counts as difficult terrain for creatures other than you.</p>
 		</description>
-        <sheet action="Action + Bonus Action + Movement" usage="CE">
-			<description>For 20 cursed energy, creatures other than you take 2d10 slashing damage for every 5 ft they move. Your domain counts as difficult terrain for creatures other than you.</description>
+        <sheet>
+			<description>Creatures other than you take 2d10 slashing damage for every 5 ft they move. Your domain counts as difficult terrain for creatures other than you.</description>
 		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION">
+		</rules>
 	</element>
 
 	<!--Feature Replacement Grants-->
