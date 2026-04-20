@@ -140,12 +140,10 @@
 			<p>At 18th level, you have mastered your technique allowing you to expand your domain. You can use Recreation and Contractual Control at no cursed energy cost within your domain. At initiative 20, you gain a random receipt. D4 (1: Object, 2: Vehicles, 3: Reservation, 4: Structure) The DM decides the nature of the receipt.</p>
 		</description>
 		<sheet>
-			<description>
-				<p>You can use Recreation and Contractual Control at no cursed energy cost within your domain. At initiative 20, roll a d4 and gain a random receipt. (1: Object, 2: Vehicles, 3: Reservation, 4: Structure) The DM decides the nature of the receipt.</p>
-			</description>
+			<description>You can use Recreation and Contractual Control at no cursed energy cost within your domain. At initiative 20, roll a d4 and gain a random receipt. (1: Object, 2: Vehicles, 3: Reservation, 4: Structure) The DM decides the nature of the receipt.</description>
 		</sheet>
 		<rules>
-			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION">
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION" />
 		</rules>
 	</element>
 	
