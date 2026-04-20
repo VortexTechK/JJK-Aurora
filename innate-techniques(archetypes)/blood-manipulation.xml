@@ -115,9 +115,9 @@
 		<description>
 			<p>When you reach 18th level, you gain your domain expansion.  At Initiative 20, all creatures take 4d12 necrotic damage as their blood attacks them from the inside. While in the domain your blood manipulation techniques use hit points from other creatures within the domain.</p>
 		</description>
-		<sheet action="Action + Bonus Action + Movement" usage="CE">
+		<sheet>
 			<description>
-				<p>For 20 cursed energy, at Initiative 20, all creatures take 4d12 necrotic damage. While in the domain your blood manipulation techniques use hit points from other creatures within the domain.</p>
+				<p>At Initiative 20, all creatures take 4d12 necrotic damage. While in the domain your blood manipulation techniques use hit points from other creatures within the domain.</p>
 			</description>
 		</sheet>
 	</element>
