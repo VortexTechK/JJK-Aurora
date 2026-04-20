@@ -141,9 +141,12 @@
                 <li>You can create 100 ft of difficult terrain in an area you can see. A creature that moves through this area takes 2d4 piercing damage for every 5 feet moved.</li>
             </ul>
         </description>
-        <sheet action="Action + Bonus Action + Movement" usage="CE">
-			<description>For 20 cursed energy, at initiative 20, all creatures of your choice within your domain take 6d12 bludgeoning damage and are restrained until the start of their next turn. You can spend an action to change the environment of your domain into a large 20 ft radius, 1d10 x 10 feet deep chasm causing creatures to fall and take falling damage, a 100 ft tall tower of stone, or a 100 ft area of difficult terrain that causes 2d4 piercing damage for every 5 feet moved.</description>
+        <sheet>
+			<description>At initiative 20, all creatures of your choice within your domain take 6d12 bludgeoning damage and are restrained until the start of their next turn. You can spend an action to change the environment of your domain into a large 20 ft radius, 1d10 x 10 feet deep chasm causing creatures to fall and take falling damage, a 100 ft tall tower of stone, or a 100 ft area of difficult terrain that causes 2d4 piercing damage for every 5 feet moved.</description>
 		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION">
+		</rules>
 	</element>
 
 	<!--Feature Replacement Grants-->
