@@ -4,10 +4,11 @@
 		<name>Extra Features</name>
 		<description>The Extra Features from JJK</description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
-		<update version="6.0.4">
+		<update version="6.0.5">
 			<file name="extra-features.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/extra-features.xml" />
 		</update>
 	</info>
+	
 	<!-- Curse Energy -->
 	<element name="Curse Energy" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_CURSED_ENERGY">
 		<description>
@@ -118,7 +119,8 @@
 			<stat name="ce:dc" value="ce:modifier"/>
 			<stat name="ce:dc:total" value="ce:dc" bonus="cursed energy"/>
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_MAXIMUM_OUTPUT" requirements="[cu:stat:20]" />
-        </rules>
+        	<stat name="breakthrough:points" value="0" />
+		</rules>
 	</element>
 	
 	<!-- Maximum Output -->
@@ -169,5 +171,134 @@
       		<stat name="rct:heal" value="30" requirements="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_REVERSE_TECHNIQUE_UNDERSTANDING" bonus="rct" />
       		<stat name="rct:heal" value="35" requirements="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_MASTERED_REVERSE_TECHNIQUE" bonus="rct" />
     	</rules>
+	</element>
+	
+	<!-- Breakthroughs -->
+	<element name="Breakthrough 1" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_BREAKTHROUGH1">
+		<description>
+			<p>You have obtained your 1ST Breakthrough (You must equip every single one). Events reached either during extreme focus or moments near death, you manage to glimpse the core of cursed energy. Breakthroughs take one of two forms.</p>
+			<p class="indent"><strong>Black Flash.</strong> Channeling cursed energy into an attack within 0.000001, you cause a spatial distortion where cursed energy sparks black. This event is called a black flash.</p>
+			<p class="indent">In order to land a black flash, you must land a critical hit. After landing a critical hit, you roll a second d20, on a natural 20 you activate a black flash. This causes the melee attack to deal triple critical damage, rolling 3x the dice instead of 2x and ignore damage resistances.</p>
+			<p class="indent"><strong>Reverse Curse Technique.</strong>Wish whoosh, reverse cursed technique processes negative energy into positive energy by taking two sources of cursed energy and multiplying them by one other.</p>
+			<p class="indent">After almost dying, be it being reduced to 0 in one hit while at max hp, or failing two death saves and then rolling a nat 20. Those are moments where the GM can choose to bestow reverse cursed technique. Alternatively roll a d100, on a 90+ you get Reverse Cursed Technique.</p>
+			<p class="indent">You learn to use your cursed energy in a completely opposite way, channeling positive energy instead of negative. You have a pool of healing you can use with your reverse cursed energy that's equal to 5 x your level x your Cursed Energy modifier. As a bonus action for cursed energy up to your CE Modifier, you can remove healing from that pool to regain hit points. You can also remove healing from the pool as a reaction to receiving damage once per round. For every 1 cursed energy spent, you regain 10 hit points, removing an equal amount from the pool. If you are suffering from a physical condition or injury such as a concussion or something else, one of these effects can be healed for every 10 hit points recovered with the reverse cursed technique. Limbs can be regenerated for 20 hit points.</p>
+			<p class="indent">You can use your Reverse Cursed Technique until your healing pool ends before getting burned out, during which you can't use RCT until your healing pool recovers. At the beginning of every two rounds, your healing pool regains 10 hit points. Your healing pool automatically refills at the end of a long rest.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="breakthrough:points" value="1" />
+		</rules>
+	</element>
+
+	<element name="Breakthrough 2" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_BREAKTHROUGH2">
+		<description>
+			<p>You have obtained your 2ND Breakthrough. Events reached either during extreme focus or moments near death, you manage to glimpse the core of cursed energy. Breakthroughs take one of two forms.</p>
+			<p class="indent"><strong>Black Flash.</strong> Channeling cursed energy into an attack within 0.000001, you cause a spatial distortion where cursed energy sparks black. This event is called a black flash.</p>
+			<p class="indent">In order to land a black flash, you must land a critical hit. After landing a critical hit, you roll a second d20, on a natural 20 you activate a black flash. This causes the melee attack to deal triple critical damage, rolling 3x the dice instead of 2x and ignore damage resistances.</p>
+			<p class="indent"><strong>Reverse Curse Technique.</strong>Wish whoosh, reverse cursed technique processes negative energy into positive energy by taking two sources of cursed energy and multiplying them by one other.</p>
+			<p class="indent">After almost dying, be it being reduced to 0 in one hit while at max hp, or failing two death saves and then rolling a nat 20. Those are moments where the GM can choose to bestow reverse cursed technique. Alternatively roll a d100, on a 90+ you get Reverse Cursed Technique.</p>
+			<p class="indent">You learn to use your cursed energy in a completely opposite way, channeling positive energy instead of negative. You have a pool of healing you can use with your reverse cursed energy that's equal to 5 x your level x your Cursed Energy modifier. As a bonus action for cursed energy up to your CE Modifier, you can remove healing from that pool to regain hit points. You can also remove healing from the pool as a reaction to receiving damage once per round. For every 1 cursed energy spent, you regain 10 hit points, removing an equal amount from the pool. If you are suffering from a physical condition or injury such as a concussion or something else, one of these effects can be healed for every 10 hit points recovered with the reverse cursed technique. Limbs can be regenerated for 20 hit points.</p>
+			<p class="indent">You can use your Reverse Cursed Technique until your healing pool ends before getting burned out, during which you can't use RCT until your healing pool recovers. At the beginning of every two rounds, your healing pool regains 10 hit points. Your healing pool automatically refills at the end of a long rest.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="breakthrough:points" value="1" />
+		</rules>
+	</element>
+
+	<element name="Breakthrough 3" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_BREAKTHROUGH3">
+		<description>
+			<p>You have obtained your 3RD Breakthrough. Events reached either during extreme focus or moments near death, you manage to glimpse the core of cursed energy. Breakthroughs take one of two forms.</p>
+			<p class="indent"><strong>Black Flash.</strong> Channeling cursed energy into an attack within 0.000001, you cause a spatial distortion where cursed energy sparks black. This event is called a black flash.</p>
+			<p class="indent">In order to land a black flash, you must land a critical hit. After landing a critical hit, you roll a second d20, on a natural 20 you activate a black flash. This causes the melee attack to deal triple critical damage, rolling 3x the dice instead of 2x and ignore damage resistances.</p>
+			<p class="indent"><strong>Reverse Curse Technique.</strong>Wish whoosh, reverse cursed technique processes negative energy into positive energy by taking two sources of cursed energy and multiplying them by one other.</p>
+			<p class="indent">After almost dying, be it being reduced to 0 in one hit while at max hp, or failing two death saves and then rolling a nat 20. Those are moments where the GM can choose to bestow reverse cursed technique. Alternatively roll a d100, on a 90+ you get Reverse Cursed Technique.</p>
+			<p class="indent">You learn to use your cursed energy in a completely opposite way, channeling positive energy instead of negative. You have a pool of healing you can use with your reverse cursed energy that's equal to 5 x your level x your Cursed Energy modifier. As a bonus action for cursed energy up to your CE Modifier, you can remove healing from that pool to regain hit points. You can also remove healing from the pool as a reaction to receiving damage once per round. For every 1 cursed energy spent, you regain 10 hit points, removing an equal amount from the pool. If you are suffering from a physical condition or injury such as a concussion or something else, one of these effects can be healed for every 10 hit points recovered with the reverse cursed technique. Limbs can be regenerated for 20 hit points.</p>
+			<p class="indent">You can use your Reverse Cursed Technique until your healing pool ends before getting burned out, during which you can't use RCT until your healing pool recovers. At the beginning of every two rounds, your healing pool regains 10 hit points. Your healing pool automatically refills at the end of a long rest.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="breakthrough:points" value="1" />
+		</rules>
+	</element>
+
+	<element name="Breakthrough 4" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_BREAKTHROUGH4">
+		<description>
+			<p>You have obtained your 4TH Breakthrough. Events reached either during extreme focus or moments near death, you manage to glimpse the core of cursed energy. Breakthroughs take one of two forms.</p>
+			<p class="indent"><strong>Black Flash.</strong> Channeling cursed energy into an attack within 0.000001, you cause a spatial distortion where cursed energy sparks black. This event is called a black flash.</p>
+			<p class="indent">In order to land a black flash, you must land a critical hit. After landing a critical hit, you roll a second d20, on a natural 20 you activate a black flash. This causes the melee attack to deal triple critical damage, rolling 3x the dice instead of 2x and ignore damage resistances.</p>
+			<p class="indent"><strong>Reverse Curse Technique.</strong>Wish whoosh, reverse cursed technique processes negative energy into positive energy by taking two sources of cursed energy and multiplying them by one other.</p>
+			<p class="indent">After almost dying, be it being reduced to 0 in one hit while at max hp, or failing two death saves and then rolling a nat 20. Those are moments where the GM can choose to bestow reverse cursed technique. Alternatively roll a d100, on a 90+ you get Reverse Cursed Technique.</p>
+			<p class="indent">You learn to use your cursed energy in a completely opposite way, channeling positive energy instead of negative. You have a pool of healing you can use with your reverse cursed energy that's equal to 5 x your level x your Cursed Energy modifier. As a bonus action for cursed energy up to your CE Modifier, you can remove healing from that pool to regain hit points. You can also remove healing from the pool as a reaction to receiving damage once per round. For every 1 cursed energy spent, you regain 10 hit points, removing an equal amount from the pool. If you are suffering from a physical condition or injury such as a concussion or something else, one of these effects can be healed for every 10 hit points recovered with the reverse cursed technique. Limbs can be regenerated for 20 hit points.</p>
+			<p class="indent">You can use your Reverse Cursed Technique until your healing pool ends before getting burned out, during which you can't use RCT until your healing pool recovers. At the beginning of every two rounds, your healing pool regains 10 hit points. Your healing pool automatically refills at the end of a long rest.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="breakthrough:points" value="1" />
+		</rules>
+	</element>
+
+	<element name="Breakthrough 5" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_BREAKTHROUGH5">
+		<description>
+			<p>You have obtained your 5TH Breakthrough. Events reached either during extreme focus or moments near death, you manage to glimpse the core of cursed energy. Breakthroughs take one of two forms.</p>
+			<p class="indent"><strong>Black Flash.</strong> Channeling cursed energy into an attack within 0.000001, you cause a spatial distortion where cursed energy sparks black. This event is called a black flash.</p>
+			<p class="indent">In order to land a black flash, you must land a critical hit. After landing a critical hit, you roll a second d20, on a natural 20 you activate a black flash. This causes the melee attack to deal triple critical damage, rolling 3x the dice instead of 2x and ignore damage resistances.</p>
+			<p class="indent"><strong>Reverse Curse Technique.</strong>Wish whoosh, reverse cursed technique processes negative energy into positive energy by taking two sources of cursed energy and multiplying them by one other.</p>
+			<p class="indent">After almost dying, be it being reduced to 0 in one hit while at max hp, or failing two death saves and then rolling a nat 20. Those are moments where the GM can choose to bestow reverse cursed technique. Alternatively roll a d100, on a 90+ you get Reverse Cursed Technique.</p>
+			<p class="indent">You learn to use your cursed energy in a completely opposite way, channeling positive energy instead of negative. You have a pool of healing you can use with your reverse cursed energy that's equal to 5 x your level x your Cursed Energy modifier. As a bonus action for cursed energy up to your CE Modifier, you can remove healing from that pool to regain hit points. You can also remove healing from the pool as a reaction to receiving damage once per round. For every 1 cursed energy spent, you regain 10 hit points, removing an equal amount from the pool. If you are suffering from a physical condition or injury such as a concussion or something else, one of these effects can be healed for every 10 hit points recovered with the reverse cursed technique. Limbs can be regenerated for 20 hit points.</p>
+			<p class="indent">You can use your Reverse Cursed Technique until your healing pool ends before getting burned out, during which you can't use RCT until your healing pool recovers. At the beginning of every two rounds, your healing pool regains 10 hit points. Your healing pool automatically refills at the end of a long rest.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="breakthrough:points" value="1" />
+		</rules>
+	</element>
+
+	<element name="Breakthrough 6" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_BREAKTHROUGH6">
+		<description>
+			<p>You have obtained your 6TH Breakthrough. Events reached either during extreme focus or moments near death, you manage to glimpse the core of cursed energy. Breakthroughs take one of two forms.</p>
+			<p class="indent"><strong>Black Flash.</strong> Channeling cursed energy into an attack within 0.000001, you cause a spatial distortion where cursed energy sparks black. This event is called a black flash.</p>
+			<p class="indent">In order to land a black flash, you must land a critical hit. After landing a critical hit, you roll a second d20, on a natural 20 you activate a black flash. This causes the melee attack to deal triple critical damage, rolling 3x the dice instead of 2x and ignore damage resistances.</p>
+			<p class="indent"><strong>Reverse Curse Technique.</strong>Wish whoosh, reverse cursed technique processes negative energy into positive energy by taking two sources of cursed energy and multiplying them by one other.</p>
+			<p class="indent">After almost dying, be it being reduced to 0 in one hit while at max hp, or failing two death saves and then rolling a nat 20. Those are moments where the GM can choose to bestow reverse cursed technique. Alternatively roll a d100, on a 90+ you get Reverse Cursed Technique.</p>
+			<p class="indent">You learn to use your cursed energy in a completely opposite way, channeling positive energy instead of negative. You have a pool of healing you can use with your reverse cursed energy that's equal to 5 x your level x your Cursed Energy modifier. As a bonus action for cursed energy up to your CE Modifier, you can remove healing from that pool to regain hit points. You can also remove healing from the pool as a reaction to receiving damage once per round. For every 1 cursed energy spent, you regain 10 hit points, removing an equal amount from the pool. If you are suffering from a physical condition or injury such as a concussion or something else, one of these effects can be healed for every 10 hit points recovered with the reverse cursed technique. Limbs can be regenerated for 20 hit points.</p>
+			<p class="indent">You can use your Reverse Cursed Technique until your healing pool ends before getting burned out, during which you can't use RCT until your healing pool recovers. At the beginning of every two rounds, your healing pool regains 10 hit points. Your healing pool automatically refills at the end of a long rest.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="breakthrough:points" value="1" />
+		</rules>
+	</element>
+
+	<element name="Breakthrough 7" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_BREAKTHROUGH7">
+		<description>
+			<p>You have obtained your 7TH Breakthrough. Events reached either during extreme focus or moments near death, you manage to glimpse the core of cursed energy. Breakthroughs take one of two forms.</p>
+			<p class="indent"><strong>Black Flash.</strong> Channeling cursed energy into an attack within 0.000001, you cause a spatial distortion where cursed energy sparks black. This event is called a black flash.</p>
+			<p class="indent">In order to land a black flash, you must land a critical hit. After landing a critical hit, you roll a second d20, on a natural 20 you activate a black flash. This causes the melee attack to deal triple critical damage, rolling 3x the dice instead of 2x and ignore damage resistances.</p>
+			<p class="indent"><strong>Reverse Curse Technique.</strong>Wish whoosh, reverse cursed technique processes negative energy into positive energy by taking two sources of cursed energy and multiplying them by one other.</p>
+			<p class="indent">After almost dying, be it being reduced to 0 in one hit while at max hp, or failing two death saves and then rolling a nat 20. Those are moments where the GM can choose to bestow reverse cursed technique. Alternatively roll a d100, on a 90+ you get Reverse Cursed Technique.</p>
+			<p class="indent">You learn to use your cursed energy in a completely opposite way, channeling positive energy instead of negative. You have a pool of healing you can use with your reverse cursed energy that's equal to 5 x your level x your Cursed Energy modifier. As a bonus action for cursed energy up to your CE Modifier, you can remove healing from that pool to regain hit points. You can also remove healing from the pool as a reaction to receiving damage once per round. For every 1 cursed energy spent, you regain 10 hit points, removing an equal amount from the pool. If you are suffering from a physical condition or injury such as a concussion or something else, one of these effects can be healed for every 10 hit points recovered with the reverse cursed technique. Limbs can be regenerated for 20 hit points.</p>
+			<p class="indent">You can use your Reverse Cursed Technique until your healing pool ends before getting burned out, during which you can't use RCT until your healing pool recovers. At the beginning of every two rounds, your healing pool regains 10 hit points. Your healing pool automatically refills at the end of a long rest.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="breakthrough:points" value="1" />
+		</rules>
+	</element>
+
+	<element name="Breakthrough 8" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_BREAKTHROUGH8">
+		<description>
+			<p>You have obtained your 8TH Breakthrough. Events reached either during extreme focus or moments near death, you manage to glimpse the core of cursed energy. Breakthroughs take one of two forms.</p>
+			<p class="indent"><strong>Black Flash.</strong> Channeling cursed energy into an attack within 0.000001, you cause a spatial distortion where cursed energy sparks black. This event is called a black flash.</p>
+			<p class="indent">In order to land a black flash, you must land a critical hit. After landing a critical hit, you roll a second d20, on a natural 20 you activate a black flash. This causes the melee attack to deal triple critical damage, rolling 3x the dice instead of 2x and ignore damage resistances.</p>
+			<p class="indent"><strong>Reverse Curse Technique.</strong>Wish whoosh, reverse cursed technique processes negative energy into positive energy by taking two sources of cursed energy and multiplying them by one other.</p>
+			<p class="indent">After almost dying, be it being reduced to 0 in one hit while at max hp, or failing two death saves and then rolling a nat 20. Those are moments where the GM can choose to bestow reverse cursed technique. Alternatively roll a d100, on a 90+ you get Reverse Cursed Technique.</p>
+			<p class="indent">You learn to use your cursed energy in a completely opposite way, channeling positive energy instead of negative. You have a pool of healing you can use with your reverse cursed energy that's equal to 5 x your level x your Cursed Energy modifier. As a bonus action for cursed energy up to your CE Modifier, you can remove healing from that pool to regain hit points. You can also remove healing from the pool as a reaction to receiving damage once per round. For every 1 cursed energy spent, you regain 10 hit points, removing an equal amount from the pool. If you are suffering from a physical condition or injury such as a concussion or something else, one of these effects can be healed for every 10 hit points recovered with the reverse cursed technique. Limbs can be regenerated for 20 hit points.</p>
+			<p class="indent">You can use your Reverse Cursed Technique until your healing pool ends before getting burned out, during which you can't use RCT until your healing pool recovers. At the beginning of every two rounds, your healing pool regains 10 hit points. Your healing pool automatically refills at the end of a long rest.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<stat name="breakthrough:points" value="1" />
+		</rules>
 	</element>
 </elements>
