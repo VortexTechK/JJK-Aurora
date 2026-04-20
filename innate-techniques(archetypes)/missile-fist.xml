@@ -99,9 +99,12 @@
 		<description>
 			<p>At 18th level you have learned to expand your domain. At initiative 20, all creatures take 8d8 necrotic damage and are knocked prone by giant Missile Fists. As an action, you can target any creature of your choice within your domain with a single Missile Fist without spending cursed energy.</p>
 		</description>
-        <sheet action="Action + Bonus Action + Movement" usage="CE">
-			<description>For 20 cursed energy, at initiative 20, all creatures take 8d8 necrotic damage and are knocked prone. As an action, you can target any creature of your choice within your domain with a single Missile Fist without spending cursed energy.</description>
+        <sheet>
+			<description>At initiative 20, all creatures take 8d8 necrotic damage and are knocked prone. As an action, you can target any creature of your choice within your domain with a single Missile Fist without spending cursed energy.</description>
 		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION">
+		</rules>
 	</element>
 
 	<!--Feature Replacement Grants-->
