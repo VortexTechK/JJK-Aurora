@@ -4,7 +4,7 @@
 		<name>Extra Features</name>
 		<description>The Extra Features from JJK</description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
-		<update version="6.0.5">
+		<update version="6.0.6">
 			<file name="extra-features.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/extra-features.xml" />
 		</update>
 	</info>
@@ -171,6 +171,29 @@
       		<stat name="rct:heal" value="30" requirements="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_REVERSE_TECHNIQUE_UNDERSTANDING" bonus="rct" />
       		<stat name="rct:heal" value="35" requirements="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_MASTERED_REVERSE_TECHNIQUE" bonus="rct" />
     	</rules>
+	</element>
+
+	<!-- Breakthroughs -->
+	<element name="Domain Expansion Rules" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION">
+		<description>
+			<p>All domains require a specific hand sign for their expansion to be activated, taking a Full Turn Action (Action + Bonus Action + Movement) to activate. All domains cost 20 Cursed Energy unless specified, and trap all creatures of your choice in a 175-foot circle centered on you, creating a barrier for 1 minute. The insides of a domain expansion vary from user to user, since it's like showing your soul to your opponents. Outside of your domain, its appearance is of a giant black sphere floating in the air.</p>
+			<p class="indent">All creatures outside your domain will receive Xd6 bludgeoning damage(X = CE modifier) and be pushed to the edge of the barrier. They received an additional 1d4 bludgeoning damage per object they collided with as the domain pushed them. In case the domain forces them against a wall, they must start holding their breath until the domain is closed or shrunk. Your barrier has domain hit points equal to 10 times your CE modifier and is vulnerable to damage from the outside and resistant to damage from the inside. Work with your GM to determine the environment and terrain of your domain.</p>
+			<p class="indent"><strong>Technique Burnout.</strong> Even if the barrier or the environment isn't fully formed, casting domain expansion will cause the user's innate technique to become unstable for a short time afterward. Right after ending your domain expansion, you cannot use any innate technique features and gain 2 levels of exhaustion for 1 minute or until you land a black flash.</p>
+		</description>
+		<sheet action="Action + Bonus Action + Movement" usage="CE">
+			<description>For 20 cursed energy, trap all creatures of your choice in a 175-foot circle centered on you, creating a barrier for 1 minute. All creatures outside your domain take {{ce:modifier}}d6 bludgeoning damage and are pushed to the edge of the barrier. They received an additional 1d4 bludgeoning damage per object they collide with as the domain pushes them. If they are against a wall, they must start holding their breath until the domain is closed or shrunk. Your barrier has {{domain:expansion:hp}} hit points and is vulnerable to damage from the outside and resistant to damage from the inside.</description>
+		</sheet>
+		<rules>
+			<stat name="domain:expansion:hp" value="ce:modifier">
+			<stat name="domain:expansion:hp" value="ce:modifier">
+			<stat name="domain:expansion:hp" value="ce:modifier">
+			<stat name="domain:expansion:hp" value="ce:modifier">
+			<stat name="domain:expansion:hp" value="ce:modifier">
+			<stat name="domain:expansion:hp" value="ce:modifier">
+			<stat name="domain:expansion:hp" value="ce:modifier">
+			<stat name="domain:expansion:hp" value="ce:modifier">
+			<stat name="domain:expansion:hp" value="ce:modifier">
+			<stat name="domain:expansion:hp" value="ce:modifier">
 	</element>
 	
 	<!-- Breakthroughs -->
