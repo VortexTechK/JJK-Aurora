@@ -83,9 +83,9 @@
 		<description>
 			<p>Finally at 18th level you have learned to expand your domain. Any melee weapon you are holding is treated as having the maximum cursed energy used for Ignition and is imbued with your domain's guaranteed hit. At initiative 20, all creatures of your choice within your domain suffer the damage of your Mantle of Courage.</p>
 		</description>
-		<sheet action="Action + Bonus Action + Movement" usage="CE">
+		<sheet>
 			<description>
-				<p>For 20 cursed energy, any melee weapon you are holding is treated as having the maximum cursed energy used for Ignition and is imbued with your domain's guaranteed hit. At initiative 20, all creatures of your choice within your domain suffer the damage of your Mantle of Courage.</p>
+				<p>Any melee weapon you are holding is treated as having the maximum cursed energy used for Ignition and is imbued with your domain's guaranteed hit. At initiative 20, all creatures of your choice within your domain suffer the damage of your Mantle of Courage.</p>
 			</description>
 		</sheet>
 	</element>
