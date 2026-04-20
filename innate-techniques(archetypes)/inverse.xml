@@ -80,9 +80,12 @@
 		<description>
 			<p>At 18th level, you have mastered your technique allowing you to open your domain. Within your domain, you can activate Inverse as a free action an infinite number of times for no cost. At initiative 20, creatures of your choice have their senses inverted. Each creature rolls a d4 (1: taste, 2: smell, 3: touch, 4: sight) having a sense inverted and unable to be used. A creature can make a Cursed Energy check at the end of their turn to regain their lost sense.</p>
 		</description>
-        <sheet action="Action + Bonus Action + Movement" usage="CE">
-			<description>For 20 cursed energy, you can activate Inverse as a free action an infinite number of times for no cost. At initiative 20, creatures of your choice have their senses inverted. Each creature rolls a d4 (1: taste, 2: smell, 3: touch, 4: sight) having a sense inverted and unable to be used. A creature can make a Cursed Energy check at the end of their turn to regain their lost sense.</description>
+        <sheet>
+			<description>You can activate Inverse as a free action an infinite number of times for no cost. At initiative 20, creatures of your choice have their senses inverted. Each creature rolls a d4 (1: taste, 2: smell, 3: touch, 4: sight) having a sense inverted and unable to be used. A creature can make a Cursed Energy check at the end of their turn to regain their lost sense.</description>
 		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION">
+		</rules>
 	</element>
 
 	<!--Feature Replacement Grants-->
