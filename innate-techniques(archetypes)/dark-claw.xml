@@ -288,9 +288,12 @@
 		<description>
 			<p>Finally at 18th level, you have learned to expand your domain. At initiative 20, you stab your claws through space targeting a creature within your domain with a guaranteed hit with your claws while ignoring distance and dealing critical damage (cannot roll for Black Flash). All of your Claw attacks are guaranteed hits within your domain and you can swap any number of your Claw options at the beginning of your turn.</p>
 		</description>
-        <sheet action="Action + Bonus Action + Movement" usage="CE">
-			<description>For 20 cursed energy, at initiative 20, target a creature within your domain with a guaranteed hit with your claws while ignoring distance and dealing critical damage (cannot roll for Black Flash). All of your Claw attacks are guaranteed hits within your domain and you can swap any number of your Claw options at the beginning of your turn.</description>
+        <sheet>
+			<description>At initiative 20, target a creature within your domain with a guaranteed hit with your claws while ignoring distance and dealing critical damage (cannot roll for Black Flash). All of your Claw attacks are guaranteed hits within your domain and you can swap any number of your Claw options at the beginning of your turn.</description>
 		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION">
+		</rules>
 	</element>
 
 	<!--Feature Replacement Grants-->
