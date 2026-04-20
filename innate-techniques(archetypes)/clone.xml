@@ -27,6 +27,7 @@
       		<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_CLONE_DOMAIN_EXPANSION_DIVIDE_AND_CONQUER" level="18" />
 		</rules>
 	</element>
+	
 	<element name="One Man Army" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CLONE_ONE_MAN_ARMY">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLONE_ONE_MAN_ARMY</requirements>
 		<description>
@@ -38,9 +39,9 @@
 			<description level="3">Spend 3 cursed energy to create a clone within 5 feet of yourself for 8 hours. They are completely indistinguishable from you in every way. A clone a hit point maximum of {{hp}}/4 (rounded up) as well as your AC and access to all your class features and cursed techniques, but not innate technique features. Any cursed energy it spends is treated as if you spent it. Your Clones act on your turn, but can only make one attack on their turn even if you have Extra Attack or bonus action attacks. You can replace any of your attacks on your turn with an attack from the Clone's space. Your Clones do not have any of your items. You can have {{proficiency}} clones at once and when a clone dies, the number of clones you can have is reduced by 1 for 1 minute. You can create multiple clones by spending 3 CE for each clone.</description>
             <description level="6">Spend 3 cursed energy to create a clone within 5 feet of yourself for 8 hours. They are completely indistinguishable from you in every way. A clone a hit point maximum of {{hp}}/2 (rounded up) as well as your AC and access to all your class features and cursed techniques, but not innate technique features. Any cursed energy it spends is treated as if you spent it. Your Clones act on your turn and can make as many attacks as you can. You can replace any of your attacks on your turn with an attack from the Clone's space. Your Clones do not have any of your items. You can have {{proficiency}} clones at once and when a clone dies, the number of clones you can have is reduced by 1 for 1 minute. You can create multiple clones by spending 3 CE for each clone.</description>
             <description level="11">Spend 3 cursed energy to create a clone within 5 feet of yourself for 8 hours. They are completely indistinguishable from you in every way. A clone a hit point maximum of {{hp}} as well as your AC and access to all your class features and cursed techniques, but not innate technique features. Any cursed energy it spends is treated as if you spent it. Your Clones act on your turn and can make as many attacks as you can. You can replace any of your attacks on your turn with an attack from the Clone's space. Your Clones do not have any of your items. You can have {{proficiency}} clones at once and when a clone dies, the number of clones you can have is reduced by 1 for 1 minute. You can create multiple clones by spending 3 CE for each clone. Your Clones can now create one Clone by spending your Cursed Energy with each Clone counting against your limit.</description>
-
         </sheet>
 	</element>
+	
 	<element name="Twice the Fun" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CLONE_TWICE_THE_FUN">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLONE_TWICE_THE_FUN</requirements>
 		<description>
@@ -50,6 +51,7 @@
       		<description>When you make a melee attack against a creature while a Clone is within 5 feet of the target, you gain advantage on the attack roll.</description>
 		</sheet>
 	</element>
+	
 	<element name="Three is a Crowd" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CLONE_THREE_IS_A_CROWD">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLONE_THREE_IS_A_CROWD</requirements>
 		<description>
@@ -59,6 +61,7 @@
 			<description>When one of your Clones is reduced to 0 hit points, you regain 1 cursed energy.</description>
 		</sheet>
 	</element>
+	
 	<element name="Four is a Party" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CLONE_FOUR_IS_A_PARTY">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLONE_FOUR_IS_A_PARTY</requirements>
 		<description>
@@ -69,18 +72,23 @@
 			<description>You can swap bodies with one of your clones for 1 cursed energy, trading hit points and causing that Clone to become your new body. When you are reduced to 0 hit points or killed outright while you have a Clone active, you can instead transfer yourself into one of your clones, gaining the Clone's current hit points.</description>
 		</sheet>
 	</element>
+	
 	<element name="Domain Expansion: Divide and Conquer" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CLONE_DOMAIN_EXPANSION_DIVIDE_AND_CONQUER">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLONE_DOMAIN_EXPANSION_DIVIDE_AND_CONQUER</requirements>
 		<description>
 			<p>Finally at 18th level you have perfected your technique, allowing you to expand your domain. You can now create one Clone as a bonus action without spending cursed energy once per turn (Your Clones do not gain this benefit). Within your domain, you can have an unlimited number of Clones. Your Clone's attacks are guaranteed hits within your domain. </p>
             <p class="indent">At initiative 20, an additional clone appears. All Clones created with your domain disappear when the domain ends.</p>
         </description>
-		<sheet action="Action + Bonus Action + Movement" usage="CE">
+		<sheet>
 			<description>
-				<p>For 20 cursed energy, you can now create one Clone as a bonus action without spending cursed energy once per turn (Your Clones do not gain this benefit). Within your domain, you can have an unlimited number of Clones. Your Clone's attacks are guaranteed hits within your domain. At initiative 20, an additional clone appears. All Clones created with your domain disappear when the domain ends.</p>
+				<p>You can create one Clone as a bonus action without spending cursed energy once per turn (Your Clones do not gain this benefit). Within your domain, you can have an unlimited number of Clones. Your Clone's attacks are guaranteed hits within your domain. At initiative 20, an additional clone appears. All Clones created with your domain disappear when the domain ends.</p>
 			</description>
 		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION">
+		</rules>
 	</element>
+	
 	<!--Feature Replacement Grants-->
 	<element name="One Man Army Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CLONE_ONE_MAN_ARMY" />
 	<element name="Twice the Fun Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_CLONE_TWICE_THE_FUN" />
