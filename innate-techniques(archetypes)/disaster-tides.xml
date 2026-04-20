@@ -76,9 +76,12 @@
 				<div element="ID_JJK_INFORMATION_SPERM_WHALE" />
 			</div>
         </description>
-		<sheet action="Action + Bonus Action + Movement" usage="2/Long Rest or CE">
-			<description>For 20 cursed energy, as an action you can summon up to {{ce:modifier}} sea shikigami within sight range, paying for their costs. These shikigami also count for the sure-hit effect, making one attack as they are summoned and can use swimming speed as a flying speed. You can have up to {{cu:stat}} active at once. If you don't catch hostile creatures in your domain, it lasts indefinitely.</description>
+		<sheet usage="2 Free/Long Rest">
+			<description>As an action you can summon up to {{ce:modifier}} sea shikigami within sight range, paying for their costs. These shikigami also count for the sure-hit effect, making one attack as they are summoned and can use swimming speed as a flying speed. You can have up to {{cu:stat}} active at once. If you don't catch hostile creatures in your domain, it lasts indefinitely.</description>
 		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION">
+		</rules>
 	</element>
 
 	<element name="Water Defensive Ring" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DISASTER_TIDES_WATER_DEFENSIVE_RING">
