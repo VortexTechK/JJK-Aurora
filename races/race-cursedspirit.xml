@@ -3,8 +3,8 @@
 	<info>
 		<name>Cursed Spirit</name>
 		<description></description>
-		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0#heading=h.ctlbc6irsjfj">JJK</author>
-		<update version="6.0.0">
+		<author url="https://docs.google.com/document/d/1eC8tEMHnupOuaX6At1X8JORz5iarNe6I-A7j2QzScrE/edit?tab=t.0">JJK</author>
+		<update version="6.0.1">
 			<file name="race-cursedspirit.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/races/race-cursedspirit.xml" />
 		</update>
 	</info>
