@@ -3,7 +3,7 @@
 	<info>
 		<name>JJK</name>
 		<description>JJK Homebrew.</description>
-		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
+		<author url="https://docs.google.com/document/d/1eC8tEMHnupOuaX6At1X8JORz5iarNe6I-A7j2QzScrE/edit?tab=t.0">JJK</author>
 		<update version="6.0.1">
 			<file name="jjk.index" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/jjk.index" />
 		</update>
@@ -11,7 +11,7 @@
 	<files>	
 		<file name="source.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/source.xml" />
 		<file name="extra-features.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/extra-features.xml" />
-		<file name="feats.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/feats.xml" />
+		<file name="cursedenergy-feats.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/cursedenergy-feats.xml" />
 
 		<!-- classes -->
 		<file name="class-juggernaut.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/classes/class-juggernaut.xml" />
