@@ -89,9 +89,12 @@
 		<description>
 			<p>At 18th level, you have learned how to expand your domain to create a massive magma dimension. Your domain is a huge volcano-like dimension, which irradiates extreme heat. At initiative 20, all creatures other than you within your domain take 10d8 fire damage.</p>
 		</description>
-        <sheet action="Action + Bonus Action + Movement" usage="CE">
-			<description>For 20 cursed energy, At initiative 20, all creatures other than you within your domain take 10d8 fire damage.</description>
+        <sheet>
+			<description>At initiative 20, all creatures other than you within your domain take 10d8 fire damage.</description>
 		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION">
+		</rules>
 	</element>
 
     <!-- Companion Reference -->
