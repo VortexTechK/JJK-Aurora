@@ -27,6 +27,7 @@
       		<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_BOOGIE_WOOGIE_DOMAIN_EXPANSION_STANDING_OVATION" level="18" />
 		</rules>
 	</element>
+	
 	<element name="Boogie" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BOOGIE_WOOGIE_BOOGIE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BOOGIE_WOOGIE_BOOGIE</requirements>
 		<description>
@@ -39,6 +40,7 @@
             <description level="11">For 1 cursed energy, you can switch the places of up to 4 creatures or magical object including yourself within 60 feet of you by clapping. You can also swap as a reaction for 1 additional cursed energy. Enemies teleported are disorientated and lose their reaction. You can use Boogie once per turn as a free action. When you switch places with an ally who was previously in melee range of an enemy right before the switch, your next attack roll has advantage. The same goes if you teleport an enemy into range or an ally into range.</description>
         </sheet>
 	</element>
+	
 	<element name="Woogie" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BOOGIE_WOOGIE_WOOGIE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BOOGIE_WOOGIE_WOOGIE</requirements>
 		<description>
@@ -51,6 +53,7 @@
         </description>
 		<sheet display="false"/>
 	</element>
+	
 	<element name="Clap Back" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BOOGIE_WOOGIE_CLAP_BACK">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BOOGIE_WOOGIE_CLAP_BACK</requirements>
 		<description>
@@ -63,6 +66,7 @@
         </description>
 		<sheet display="false"/>
 	</element>
+	
 	<element name="Round of Applause" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BOOGIE_WOOGIE_ROUND_OF_APPLAUSE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BOOGIE_WOOGIE_ROUND_OF_APPLAUSE</requirements>
 		<description>
@@ -75,6 +79,7 @@
         </description>
 		<sheet display="false"/>
 	</element>
+	
 	<element name="Domain Expansion: Standing Ovation" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BOOGIE_WOOGIE_DOMAIN_EXPANSION_STANDING_OVATION">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BOOGIE_WOOGIE_DOMAIN_EXPANSION_STANDING_OVATION</requirements>
 		<description>
@@ -82,10 +87,14 @@
 		</description>
 		<sheet action="Action + Bonus Action + Movement" usage="CE">
 			<description>
-				<p>For 20 cursed energy, you can use Boogie as a free action an unlimited number of times.</p>
+				<p>You can use Boogie as a free action an unlimited number of times.</p>
 			</description>
 		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION">
+		</rules>
 	</element>
+	
 	<!--Feature Replacement Grants-->
 	<element name="Boogie Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BOOGIE_WOOGIE_BOOGIE" />
 	<element name="Woogie Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_BOOGIE_WOOGIE_WOOGIE" />
