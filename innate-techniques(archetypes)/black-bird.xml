@@ -68,9 +68,9 @@
 		<description>
 			<p>If you reach 18th level, you gain your domain expansion. At Initiative 20, you can choose up to three targets to suffer the full effects of Bird Strike.</p>
 		</description>
-		<sheet action="Action + Bonus Action + Movement" usage="CE">
+		<sheet>
 			<description>
-				<p>For 20 cursed energy, at Initiative 20, you can choose up to three targets to suffer the full effects of Bird Strike.</p>
+				<p>At Initiative 20, you can choose up to three targets to suffer the full effects of Bird Strike.</p>
 			</description>
 		</sheet>
 	</element>
