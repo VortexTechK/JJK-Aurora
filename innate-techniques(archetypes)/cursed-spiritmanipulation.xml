@@ -137,9 +137,12 @@
 		<description>
 			<p>Finally at 18th level, you have learned how to expand your domain. A tree of souls surrounded by four seated Buddhas at the cardinal points emerges behind you, as your barrier starts opening. The area targeted by this feature counts as difficult terrain for all creatures. You can use any of your cursed spirits without any cost. Cursed spirits within your domain must make a Charisma saving throw at the beginning of their turns or be instantly absorbed by you.</p>
 		</description>
-        <sheet action="Action + Bonus Action + Movement" usage="CE">
-			<description>For 20 cursed energy, the area targeted by this feature counts as difficult terrain for all creatures. You can use any of your cursed spirits without any cost. Cursed spirits within your domain must make a Charisma saving throw at the beginning of their turns or be instantly absorbed by you.</description>
+        <sheet>
+			<description>Your domain counts as difficult terrain for all creatures. You can use any of your cursed spirits without any cost. Cursed spirits within your domain must make a Charisma saving throw at the beginning of their turns or be instantly absorbed by you.</description>
 		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION">
+		</rules>
 	</element>
 
 	<!--Feature Replacement Grants-->
