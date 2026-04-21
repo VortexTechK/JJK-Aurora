@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.16">
+		<update version="6.0.17">
 			<file name="puppet-manipulation.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/puppet-manipulation.xml" />
 		</update>
 	</info>
@@ -10,7 +10,7 @@
 		<supports>Innate Technique</supports>
 		<description>
 			<p>You gain the ability to control puppets with your Cursed Energy</p>
-			<div element="ID_JJK_ARCHETYPE_FEATURE_PUPPET_MANIPULATION_ULTIMATE_MECHAMARU" />
+			<!--<div element="ID_JJK_ARCHETYPE_FEATURE_PUPPET_MANIPULATION_ULTIMATE_MECHAMARU" />-->
             <div class="reference">
 				<div element="ID_JJK_INFORMATION_PUPPET"/>
 			</div>
@@ -23,14 +23,14 @@
 			<description>You gain the ability to control puppets with your Cursed Energy.</description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_PUPPET_MANIPULATION_ULTIMATE_MECHAMARU" level="1" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_PUPPET_MANIPULATION_ULTIMATE_MECHAMARU" level="20" />
 			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_PUPPET_MANIPULATION_LESSER_PUPPET" level="3" />
 			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_PUPPET_MANIPULATION_ADVANCED_PUPPET" level="6" />
 			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_PUPPET_MANIPULATION_ABSOLUTE_PUPPET" level="11" />
 			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_PUPPET_MANIPULATION_DOMAIN_EXPANSION_PUPPET_SHOW" level="18" />
 		</rules>
 	</element>
-
+<!--
 	<element name="Ultimate Mechamaru" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_PUPPET_MANIPULATION_ULTIMATE_MECHAMARU">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PUPPET_MANIPULATION_ULTIMATE_MECHAMARU</requirements>
 		<description>
@@ -81,6 +81,7 @@
 			<select type="Companion" name="Puppet" supports="Puppet" />
         </rules>
 	</element>
+	-->
 
 	<element name="Lesser Puppet" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_PUPPET_MANIPULATION_LESSER_PUPPET">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PUPPET_MANIPULATION_LESSER_PUPPET</requirements>
