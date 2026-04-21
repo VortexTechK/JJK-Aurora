@@ -126,7 +126,7 @@
 			<description>At initiative 20, creatures within your domain fall under the effect of Flower Field and take 2d4 Necrotic damage. You gain half of the damage as temporary Cursed Energy that disappears once your domain ends.</description>
 		</sheet>
 		<rules>
-			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION">
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION"/>
 		</rules>
 	</element>
 
