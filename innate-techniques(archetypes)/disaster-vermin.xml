@@ -103,7 +103,7 @@
 			<description>At initiative 20, up to 3 creatures of your choice within your domain take 6d10 necrotic damage. A creature that dies within your domain is devoured and becomes an Insect Swarm. This Insect Swarm does not count against your maximum number of controlled swarms until the domain ends.</description>
 		</sheet>
 		<rules>
-			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION">
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION"/>
 		</rules>
 	</element>
 
