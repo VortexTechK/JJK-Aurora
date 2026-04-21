@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Barrier Feats</name>
+		<description>Barrier Feats from JJK.</description>
+		<author url="https://docs.google.com/document/d/1eC8tEMHnupOuaX6At1X8JORz5iarNe6I-A7j2QzScrE/edit?tab=t.0">JJK</author>
+		<update version="6.0.0">
+			<file name="barrier-feats.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/barrier-feats.xml" />
+		</update>
+	</info>
+
+	<element name="Basic Curtain" type="Feat" source="JJK" id="ID_JJK_FEAT_BASIC_CURTAIN">
+    	<prerequisite>14+ Cursed Energy Score</prerequisite>
+		<requirements>[cu:stat:14]</requirements>
+		<supports>Barrier Feats</supports>
+      	<description>
+        	<p><em>Prerequisite: 14+ Cursed Energy Score</em></p>
+			<p>"Emerge from the darkness, blacker than darkness. Purify that which is impure."" As an action for 5 Cursed Energy, you cover the sky and the ground within a 2165-foot radius dome of darkness for 10 minutes. Upon activation, a dark, almost liquid-like matter drips down from the sky to form the outer barrier wall in the shape of a half-sphere. The curtain changes and the sky becomes dark despite the time of day, provoking any cursed spirits out of hiding. For each extra 1 Cursed Energy spent, you can add 1 additional minute to the curtain's duration and +10 hit points. Your curtain has a number of hit points equal to your Cursed Energy modifier times your level. This barrier has an AC equal to the caster's Cursed Energy DC and automatically fails saving throws. It is also immune to Poison and Psychic damage.</p>
+	  	</description>
+		<sheet action="Action" usage="CE">
+			<description>For 5 cursed energy, you cover the area around you within a 2165-foot radius with a black dome for 10 minutes. The curtain changes the sky into night, provoking cursed spirits out of hiding. For each 1 extra Cursed Energy you spend, you add +1 minute to the curtain's duration. Those without cursed energy, or magic cannot see anything inside the barrier, merely seeing as if nothing but the vegetation was there. Creatures who can see into the ethereal plane or have levels in a sorcerer class can see the black half-sphere. Your curtain has {{curtain:hp}} hit points, an AC of {{ce:dc:total}}, automatically fails saving throws, and is immune to Poison and Psychic damage.</description>
+		</sheet>
+		<rules>
+			<stat name="curtain:hp" value="ce:modifier" level="1"/>
+			<stat name="curtain:hp" value="ce:modifier" level="2"/>
+			<stat name="curtain:hp" value="ce:modifier" level="3"/>
+			<stat name="curtain:hp" value="ce:modifier" level="4"/>
+			<stat name="curtain:hp" value="ce:modifier" level="5"/>
+			<stat name="curtain:hp" value="ce:modifier" level="6"/>
+			<stat name="curtain:hp" value="ce:modifier" level="7" requirements="!ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN"/>
+			<stat name="curtain:hp" value="ce:modifier" level="8" requirements="!ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN"/>
+			<stat name="curtain:hp" value="ce:modifier" level="9" requirements="!ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN"/>
+			<stat name="curtain:hp" value="ce:modifier" level="10" requirements="!ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN"/>
+			<stat name="curtain:hp" value="ce:modifier" level="11" requirements="!ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN"/>
+			<stat name="curtain:hp" value="ce:modifier" level="12" requirements="!ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN"/>
+			<stat name="curtain:hp" value="ce:modifier" level="13" requirements="!ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN"/>
+			<stat name="curtain:hp" value="ce:modifier" level="14" requirements="!ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN"/>
+			<stat name="curtain:hp" value="ce:modifier" level="15" requirements="!ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN"/>
+			<stat name="curtain:hp" value="ce:modifier" level="16" requirements="!ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN"/>
+			<stat name="curtain:hp" value="ce:modifier" level="17" requirements="!ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN"/>
+			<stat name="curtain:hp" value="ce:modifier" level="18" requirements="!ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN"/>
+			<stat name="curtain:hp" value="ce:modifier" level="19" requirements="!ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN"/>
+			<stat name="curtain:hp" value="ce:modifier" level="20" requirements="!ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN"/>
+			<stat name="curtain:hp" value="ce:modifier" level="7" requirements="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN"/>
+			<stat name="curtain:hp" value="ce:modifier" level="7" requirements="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN"/>
+			<stat name="curtain:hp" value="ce:modifier" level="7" requirements="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN"/>
+			<stat name="curtain:hp" value="ce:modifier" level="7" requirements="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN"/>
+			<stat name="curtain:hp" value="ce:modifier" level="7" requirements="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN"/>
+			<stat name="curtain:hp" value="ce:modifier" level="7" requirements="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN"/>
+			<stat name="curtain:hp" value="ce:modifier" level="7" requirements="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN"/>
+			<stat name="curtain:hp" value="ce:modifier" level="7" requirements="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN"/>
+			<stat name="curtain:hp" value="ce:modifier" level="7" requirements="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN"/>
+			<stat name="curtain:hp" value="ce:modifier" level="7" requirements="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN"/>
+			<stat name="curtain:hp" value="ce:modifier" level="7" requirements="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN"/>
+			<stat name="curtain:hp" value="ce:modifier" level="7" requirements="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN"/>
+			<stat name="curtain:hp" value="ce:modifier" level="7" requirements="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN"/>
+			<stat name="curtain:hp" value="ce:modifier" level="7" requirements="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN"/>
+			<stat name="curtain:hp" value="ce:modifier" level="7" requirements="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN"/>
+			<stat name="curtain:hp" value="ce:modifier" level="7" requirements="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN"/>
+			<stat name="curtain:hp" value="ce:modifier" level="7" requirements="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN"/>
+			<stat name="curtain:hp" value="ce:modifier" level="7" requirements="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN"/>
+			<stat name="curtain:hp" value="ce:modifier" level="7" requirements="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN"/>
+			<stat name="curtain:hp" value="ce:modifier" level="13" requirements="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN"/>
+			<stat name="curtain:hp" value="ce:modifier" level="13" requirements="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN"/>
+			<stat name="curtain:hp" value="ce:modifier" level="13" requirements="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN"/>
+			<stat name="curtain:hp" value="ce:modifier" level="13" requirements="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN"/>
+			<stat name="curtain:hp" value="ce:modifier" level="13" requirements="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN"/>
+			<stat name="curtain:hp" value="ce:modifier" level="13" requirements="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN"/>
+			<stat name="curtain:hp" value="ce:modifier" level="13" requirements="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN"/>
+			<stat name="curtain:hp" value="ce:modifier" level="13" requirements="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN"/>
+			<stat name="curtain:hp" value="ce:modifier" level="13" requirements="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN"/>
+			<stat name="curtain:hp" value="ce:modifier" level="13" requirements="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN"/>
+			<stat name="curtain:hp" value="ce:modifier" level="13" requirements="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN"/>
+			<stat name="curtain:hp" value="ce:modifier" level="13" requirements="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN"/>
+			<stat name="curtain:hp" value="ce:modifier" level="13" requirements="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN"/>
+			<stat name="curtain:hp" value="ce:modifier" level="13" requirements="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN"/>
+			<stat name="curtain:hp" value="ce:modifier" level="13" requirements="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN"/>
+			<stat name="curtain:hp" value="ce:modifier" level="13" requirements="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN"/>
+			<stat name="curtain:hp" value="ce:modifier" level="13" requirements="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN"/>
+			<stat name="curtain:hp" value="ce:modifier" level="13" requirements="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN"/>
+			<stat name="curtain:hp" value="ce:modifier" level="13" requirements="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN"/>
+			<stat name="curtain:hp" value="ce:modifier" level="13" requirements="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN"/>
+			<stat name="curtain:hp" value="ce:modifier" level="13" requirements="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN"/>
+			<stat name="curtain:hp" value="ce:modifier" level="13" requirements="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN"/>
+			<stat name="curtain:hp" value="ce:modifier" level="13" requirements="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN"/>
+			<stat name="curtain:hp" value="ce:modifier" level="13" requirements="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN"/>
+			<stat name="curtain:hp" value="ce:modifier" level="13" requirements="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN"/>
+		</rules>
+	</element>
+
+	<element name="Barrier Intruder" type="Feat" source="JJK" id="ID_JJK_FEAT_BARRIER_INTRUDER">
+    	<prerequisite>18+ Cursed Energy Score</prerequisite>
+		<requirements>[cu:stat:18]</requirements>
+		<supports>Barrier Feats</supports>
+      	<description>
+        	<p><em>Prerequisite: 18+ Cursed Energy Score</em></p>
+			<p>You have learned how to invade the barriers of others without breaking them. You gain the following benefits:</p>
+			<ul>
+				<li>While outside a barrier, you can make a Cursed Energy check as an action against the CE save DC of the sorcerer who created the barrier to invade it. On a success, you can enter the barrier although the creator will know a creature has entered.</li>
+				<li>While inside a barrier, as an action you can make a Cursed Energy check against the CE save DC of the sorcerer to alter its properties. On a success, you can change the creatures allowed to enter or leave or any other properties of the barrier.</li>
+			</ul>
+	  	</description>
+		<sheet>
+			<description>You can enter a barrier if you suceed on a Cursed Energy check as an action against the creator's CE save DC, although the creator will known a creature has entered. While inside a barrier, as an action you can make a Cursed Energy check against the CE save DC of the sorcerer to alter its properties. On a success, you can change the creatures allowed to enter or leave or any other properties of the barrier.</description>
+		</sheet>
+	</element>
+
+	<element name="Falling Blossom Emotion" type="Feat" source="JJK" id="ID_JJK_FEAT_FALLING_BLOSSOM_EMOTION">
+    	<prerequisite>Must have the Clan Sorcerer Background</prerequisite>
+		<requirements>ID_BACKGROUND_CLAN_SORCERER</requirements>
+		<supports>Barrier Feats</supports>
+      	<description>
+        	<p><em>Prerequisite: Must have the Clan Sorcerer Background</em></p>
+			<p>Unlike Simple Domain, which manifests its own domain to protect against a guaranteed hit, Falling Blossom Emotion shrouds the user in cursed energy to counterattack the moment a domain's guaranteed hit makes contact. As an action or reaction for 5 Cursed Energy, you surround yourself in cursed energy to make any attack or effect with a guaranteed hit nullified and deal no damage. This technique lasts for 1 minute, but does not affect attacks without a guaranteed hit.</p>
+			<p class="indent">You can also use this technique offensively while wielding a melee weapon. As an action for 4 Cursed Energy, you can surround yourself in cursed energy to prepare for an attack for 1 minute. As a reaction to an attack, you can make a melee weapon attack at advantage against the attacker before the attack happens. On a hit, the attack counts as a critical hit and deals necrotic damage. Once you make this attack, you must reactivate the technique to use it again. If your cursed energy or technique alters damage type, it can also alter this damage</p>
+	  	</description>
+		<sheet action="Action/Reaction" usage="CE">
+			<description>For 5 cursed energy, make any attack or effect with a guaranteed hit nullified and deal no damage. This technique lasts for 1 minute. While wielding a melee weapon. as an action for 4 cursed energy, you can prepare for an attack for 1 minute. As a reaction to an attack, you can make a melee weapon attack at advantage against the attacker before the attack happens. On a hit, the attack counts as a critical hit and deals necrotic damage. Once you make this attack, you must reactivate the technique to use it again. If your cursed energy or technique alters damage type, it can also alter this damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Hollow Wicker Basket" type="Feat" source="JJK" id="ID_JJK_FEAT_HOLLOW_WICKER_BASKET">
+    	<prerequisite>N/A</prerequisite>
+		<supports>Barrier Feats</supports>
+      	<description>
+        	<p><em>Prerequisite: N/A</em></p>
+			<p>As an action, bonus action, or reaction against being affected by a sure hit effect of a Domain, or seeing a Domain Expansion open, for 4 Cursed Energy you surround yourself with a 15 ft barrier for 1 minute. Within that radius, the sure hit effect of a domain is negated and deals no damage. Anyone of your choice inside the barrier is unaffected. The barrier has no effect on normal cursed techniques or others entering the barrier. It only negates sure hit effects.</p>
+	  	</description>
+		<sheet action="Action/Bonus Action/Reaction" usage="CE">
+			<description>Against being affected by a sure hit effect of a Domain, or seeing a Domain Expansion open, for 4 Cursed Energy you surround yourself with a 15 ft barrier for 1 minute where the sure hit effect of a domain is negated and deals no damage. Anyone of your choice inside the barrier is unaffected.</description>
+		</sheet>
+	</element>
+
+	<element name="Incomplete Domain" type="Feat" source="JJK" id="ID_JJK_FEAT_INCOMPLETE_DOMAIN">
+    	<prerequisite>1 Breakthrough</prerequisite>
+		<requirements>[breakthrough:points:1]</requirements>
+		<supports>Barrier Feats</supports>
+      	<description>
+        	<p><em>Prerequisite: 1 Breakthrough</em></p>
+			<p>You learn to prematurely create an incomplete Domain Expansion. As an action for 10 cursed energy, you create an unrefined incomplete domain 100 feet around yourself for 1 minute. This structureless domain does not follow you, has a refinement of 0, and has no barrier. The domain lacks a guaranteed hit, but you gain advantage on technique attack rolls and creatures inside your domain have disadvantage on saving throws against your Innate Technique. Any effects of your domain are halved until you gain your complete Domain Expansion, upon which you can choose a different feat. When the domain ends, you experience Technique Burnout for 5 rounds.</p>
+	  	</description>
+		<sheet action="Action" usage="CE">
+			<description>For 10 cursed energy, create an incomplete domain 100 feet around yourself for 1 minute. This structureless domain does not follow you, has a refinement of 0, and no barrier. The domain lacks a guaranteed hit, but you gain advantage on technique attack rolls and creatures inside your domain have disadvantage on saving throws against your Innate Technique. Any effects of your domain are halved. When the domain ends, you experience Technique Burnout for 5 rounds.</description>
+		</sheet>
+	</element>
+
+	<element name="Simple Domain" type="Feat" source="JJK" id="ID_JJK_FEAT_SIMPLE_DOMAIN">
+    	<prerequisite>16+ Cursed Energy Score</prerequisite>
+		<requirements>[cu:stat:16]</requirements>
+		<supports>Barrier Feats</supports>
+      	<description>
+        	<p><em>Prerequisite: 16+ Cursed Energy Score</em></p>
+			<p>As an action or reaction against an attack roll or saving throw effect, spell or domain expansion opening for 4 Cursed Energy, you surround yourself with a 10 ft barrier for 1 minute. The circle has an amount of hit points equal to your proficiency bonus times twice your Cursed Energy modifier. Any damaging cursed techniques, spells, or attacks that target you or targets an area that overlaps with your simple domain, will now damage the barrier instead, reducing its hit points by the damage it would cause. Your Simple Domain ends if you move.</p>
+	  	</description>
+		<sheet action="Action/Reaction" usage="CE">
+			<description>For 4 cursed energy, you surround yourself with a 10 ft barrier for 1 minute. The circle has {{proficiency}}x{{simple:domain:hp}} hit points. Any damaging cursed techniques, spells, or attacks that target you or targets an area that overlaps with your simple domain, will now damage the barrier instead, reducing its hit points by the damage it would cause. Your Simple Domain ends if you move.</description>
+		</sheet>
+		<rules>
+			<stat name="simple:domain:hp" value="ce:modifier" />
+            <stat name="simple:domain:hp" value="ce:modifier" />
+		</rules>
+	</element>
+
+	<element name="Refined Domain" type="Feat" source="JJK" id="ID_JJK_FEAT_REFINED_DOMAIN">
+    	<prerequisite>Must have Domain Expansion, 400 Refinement points</prerequisite>
+		<requirements>ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION</requirements>
+		<supports>Barrier Feats</supports>
+      	<description>
+        	<p><em>Prerequisite: Must have Domain Expansion, 400 Refinement points</em></p>
+			<p>Your refinement allows you to further empower your domain expansion. You can choose one of the following benefits:</p>
+			<ul>
+				<li><strong>Severe Danification.</strong> If your domain has a passive effect that causes damage at Initiative 20, the number of damage dice are increased by your CE modifier.</li>
+				<li><strong>Non-Lethality.</strong> If your domain is Non-Lethal or has a restriction, you can add an additional condition or restriction to your technique.</li>
+				<li><strong>Cost Reduction.</strong> Your domain refinement enhances the technique imbued into the barrier. While within your domain, the CE cost of your innate technique features are halved(rounded up).</li>
+				<li><strong>Lightning Speed Release.</strong> Your domain refinement has made your techniques faster. Your innate technique features action costs are reduced by one while your domain is active (Action - Bonus Action - Reaction - Free Action).</li>
+				<li><strong>Multiplication.</strong> Your domain has multiplied the output of the imbued innate technique. When a feature lets you spend up to a certain amount of cursed energy, that maximum amount is doubled.</li>
+				<li><strong>Improved Technique</strong> Your imbued technique has been refined. While within your domain, you can choose one of your Innate Technique features. The damage dice of that technique increases by your CE modifier.</li>
+			</ul>
+	  	</description>
+		<sheet display="false"/>
+		<rules>
+			<select type="Class Feature" name="Refined Domain" supports="Refined Domain" />
+		</rules>
+	</element>
+
+	<element name="Severe Danification" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SEVERE_DANIFICATION">
+		<supports>Refined Domain</supports>
+		<description>
+			<p>If your domain has a passive effect that causes damage at Initiative 20, the number of damage dice are increased by your CE modifier.</p>
+		</description>
+		<sheet>
+			<description>If your domain has a passive effect that causes damage at Initiative 20, the number of damage dice are increased by {{ce:modifier}}.</description>
+		</sheet>
+	</element>
+
+	<element name="Non-Lethality" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_NON_LETHALITY">
+		<supports>Refined Domain</supports>
+		<description>
+			<p>If your domain is Non-Lethal or has a restriction, you can add an additional condition or restriction to your technique.</p>
+		</description>
+		<sheet>
+			<description>If your domain is Non-Lethal or has a restriction, you can add an additional condition or restriction to your technique.</description>
+		</sheet>
+	</element>
+
+	<element name="Cost Reduction" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_COST_REDUCTION">
+		<supports>Refined Domain</supports>
+		<description>
+			<p>Your domain refinement enhances the technique imbued into the barrier. While within your domain, the CE cost of your innate technique features are halved(rounded up). </p>
+		</description>
+		<sheet>
+			<description>While within your domain, the CE cost of your innate technique features are halved(rounded up).</description>
+		</sheet>
+	</element>
+
+	<element name="Lightning Speed Release" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_LIGHTNING_SPEED_RELEASE">
+		<supports>Refined Domain</supports>
+		<description>
+			<p>Your domain refinement has made your techniques faster. Your innate technique features action costs are reduced by one while your domain is active (Action - Bonus Action - Reaction - Free Action).</p>
+		</description>
+		<sheet>
+			<description>Your innate technique features action costs are reduced by one while your domain is active.</description>
+		</sheet>
+	</element>
+
+	<element name="Multiplication" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_MULTIPLICATION">
+		<supports>Refined Domain</supports>
+		<description>
+			<p>Your domain has multiplied the output of the imbued innate technique. When a feature lets you spend up to a certain amount of cursed energy, that maximum amount is doubled.</p>
+		</description>
+		<sheet>
+			<description>When a feature lets you spend up to a certain amount of cursed energy, that maximum amount is doubled.</description>
+		</sheet>
+	</element>
+
+	<element name="Improved Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_IMPROVED_TECHNIQUE">
+		<supports>Refined Domain</supports>
+		<description>
+			<p>Your imbued technique has been refined. While within your domain, you can choose one of your Innate Technique features. The damage dice of that technique increases by your CE modifier.</p>
+		</description>
+		<sheet>
+			<description>While within your domain, choose one of your Innate Technique features. The damage dice of that technique increases by {{ce:modifier}}.</description>
+		</sheet>
+	</element>
+</elements>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Item Features</name>
+		<description>The Item Features from JJK</description>
+		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
+		<update version="6.0.0">
+			<file name="jjk-itemfeatures.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/jjk-itemfeatures.xml" />
+		</update>
+	</info>
+
+	<element name="Breakthrough 1" type="Item" source="JJK" id="ID_JJK_ITEM_IF_BREAKTHROUGH1">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_JJK_CLASS_FEATURE_BREAKTHROUGH1" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">JJK Extra Features</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_BREAKTHROUGH1" requirements="[level:1]"/>
+		</rules>
+	</element>
+
+	<element name="Breakthrough 2" type="Item" source="JJK" id="ID_JJK_ITEM_IF_BREAKTHROUGH2">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_JJK_CLASS_FEATURE_BREAKTHROUGH2" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">JJK Extra Features</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_BREAKTHROUGH2" requirements="[level:1]"/>
+		</rules>
+	</element>
+
+	<element name="Breakthrough 3" type="Item" source="JJK" id="ID_JJK_ITEM_IF_BREAKTHROUGH3">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_JJK_CLASS_FEATURE_BREAKTHROUGH3" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">JJK Extra Features</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_BREAKTHROUGH3" requirements="[level:1]"/>
+		</rules>
+	</element>
+
+	<element name="Breakthrough 4" type="Item" source="JJK" id="ID_JJK_ITEM_IF_BREAKTHROUGH4">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_JJK_CLASS_FEATURE_BREAKTHROUGH4" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">JJK Extra Features</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_BREAKTHROUGH4" requirements="[level:1]"/>
+		</rules>
+	</element>
+
+	<element name="Breakthrough 5" type="Item" source="JJK" id="ID_JJK_ITEM_IF_BREAKTHROUGH5">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_JJK_CLASS_FEATURE_BREAKTHROUGH5" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">JJK Extra Features</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_BREAKTHROUGH5" requirements="[level:1]"/>
+		</rules>
+	</element>
+
+	<element name="Breakthrough 6" type="Item" source="JJK" id="ID_JJK_ITEM_IF_BREAKTHROUGH6">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_JJK_CLASS_FEATURE_BREAKTHROUGH6" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">JJK Extra Features</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_BREAKTHROUGH6" requirements="[level:1]"/>
+		</rules>
+	</element>
+
+	<element name="Breakthrough 7" type="Item" source="JJK" id="ID_JJK_ITEM_IF_BREAKTHROUGH7">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_JJK_CLASS_FEATURE_BREAKTHROUGH7" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">JJK Extra Features</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_BREAKTHROUGH7" requirements="[level:1]"/>
+		</rules>
+	</element>
+
+	<element name="Breakthrough 8" type="Item" source="JJK" id="ID_JJK_ITEM_IF_BREAKTHROUGH8">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_JJK_CLASS_FEATURE_BREAKTHROUGH8" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">JJK Extra Features</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_BREAKTHROUGH8" requirements="[level:1]"/>
+		</rules>
+	</element>
+
+	<element name="Reverse Curse Technique" type="Item" source="JJK" id="ID_JJK_ITEM_IF_REVERSE_CURSE_TECHNIQUE">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_JJK_CLASS_FEATURE_REVERSE_CURSE_TECHNIQUE" />
+			</div>
+		</description>
+		<setters>set
+			<set name="category">JJK Extra Features</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_REVERSE_CURSE_TECHNIQUE" requirements="[level:1]"/>
+		</rules>
+	</element>
+</elements>
