@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.0">
+		<update version="6.0.1">
 			<file name="mythical-beastamber.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/mythical-beastamber.xml" />
 		</update>
 	</info>
@@ -13,8 +13,8 @@
 			<div element="ID_JJK_ARCHETYPE_FEATURE_MYTHICAL_BEAST_AMBER_ELECTRIC_ENERGY" />
 			<div element="ID_JJK_ARCHETYPE_FEATURE_MYTHICAL_BEAST_AMBER_LIGHTNING_BODY" />
 			<div element="ID_JJK_ARCHETYPE_FEATURE_MYTHICAL_BEAST_AMBER_LIGHTNING_DISCHARGE" />
-			<div element="ID_JJK_ARCHETYPE_FEATURE_MYTHICAL_BEAST_AMBER_LIGHTNING_GODS_REALM" />
-			<div element="ID_JJK_ARCHETYPE_FEATURE_MYTHICAL_BEAST_AMBER_DOMAIN_EXPANSION_FEATURE5" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_MYTHICAL_BEAST_AMBER_RELEASE" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_MYTHICAL_BEAST_AMBER_DOMAIN_EXPANSION_LIGHTNING_GODS_REALM" />
 		</description>
 		<sheet display="false">
 			<description>You hold a technique that changes the very essence of your energy to electricity. However, its true power is unknown even to you.</description>
@@ -23,8 +23,8 @@
 			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_MYTHICAL_BEAST_AMBER_ELECTRIC_ENERGY" level="1" />
 			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_MYTHICAL_BEAST_AMBER_LIGHTNING_BODY" level="3" />
 			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_MYTHICAL_BEAST_AMBER_LIGHTNING_DISCHARGE" level="6" />
-			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_MYTHICAL_BEAST_AMBER_LIGHTNING_GODS_REALM" level="11" />
-			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_MYTHICAL_BEAST_AMBER_DOMAIN_EXPANSION_FEATURE5" level="18" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_MYTHICAL_BEAST_AMBER_RELEASE" level="11" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_MYTHICAL_BEAST_AMBER_DOMAIN_EXPANSION_LIGHTNING_GODS_REALM" level="18" />
 		</rules>
 	</element>
 
