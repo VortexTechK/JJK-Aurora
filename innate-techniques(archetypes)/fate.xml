@@ -127,7 +127,7 @@
 			<description>At initiative 20, you select a creature within your domain as your Destined Foe. While your Destined Foe is within your domain, all your attacks against them are imbued with your guaranteed hit. You can switch your Destined Foe to another creature within your domain at initiative 20. Your innate technique features count the entirety of your domain as being within range and you can ignore the Touch Requirement of Fates.</description>
 		</sheet>
 		<rules>
-			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION">
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION"/>
 		</rules>
 	</element>
 
