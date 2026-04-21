@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.17">
+		<update version="6.0.18">
 			<file name="puppet-manipulation.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/puppet-manipulation.xml" />
 		</update>
 	</info>
@@ -10,7 +10,7 @@
 		<supports>Innate Technique</supports>
 		<description>
 			<p>You gain the ability to control puppets with your Cursed Energy</p>
-			<!--<div element="ID_JJK_ARCHETYPE_FEATURE_PUPPET_MANIPULATION_ULTIMATE_MECHAMARU" />-->
+			<div element="ID_JJK_ARCHETYPE_FEATURE_PUPPET_MANIPULATION_ULTIMATE_MECHAMARU" />
             <div class="reference">
 				<div element="ID_JJK_INFORMATION_PUPPET"/>
 			</div>
@@ -23,14 +23,14 @@
 			<description>You gain the ability to control puppets with your Cursed Energy.</description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_PUPPET_MANIPULATION_ULTIMATE_MECHAMARU" level="20" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_PUPPET_MANIPULATION_ULTIMATE_MECHAMARU" level="1" />
 			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_PUPPET_MANIPULATION_LESSER_PUPPET" level="3" />
 			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_PUPPET_MANIPULATION_ADVANCED_PUPPET" level="6" />
 			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_PUPPET_MANIPULATION_ABSOLUTE_PUPPET" level="11" />
 			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_PUPPET_MANIPULATION_DOMAIN_EXPANSION_PUPPET_SHOW" level="18" />
 		</rules>
 	</element>
-<!--
+
 	<element name="Ultimate Mechamaru" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_PUPPET_MANIPULATION_ULTIMATE_MECHAMARU">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PUPPET_MANIPULATION_ULTIMATE_MECHAMARU</requirements>
 		<description>
@@ -45,7 +45,7 @@
                 <li>Your Puppet gains proficiency in Strength, Constitution, and Dexterity saving throws.</li>
                 <li>Your Puppet deals 1d6 + Strength modifier in bludgeoning with unarmed strikes.</li>
             </ul>
-            <h5 class="caption">PUPPET TRAITS</h5>
+            <!--<h5 class="caption">PUPPET TRAITS</h5>
                 <table>
                     <thead>
                         <tr><td>Trait Level</td><td>Traits</td></tr>
@@ -68,10 +68,7 @@
                     <tr><td>Absolute</td><td><strong>Mech.</strong> Your puppet's body increases in size in all dimensions, changing its size to Gargantuan. However, to control this puppet you must be inside it, but you are under full cover, and the puppet's Hit dice is a d12.</td></tr>
                     <tr><td> </td><td><strong>Energy Cannon.</strong> As an action, you generate a large amount of cursed energy in the palm of one hand, blasting it at a target for 6 CE. Make a ranged attack with Dex + Proficiency + 3, This attack deals 20d6 Necrotic damage and recharges on a 5-6 d6.</td></tr>
                     <tr><td> </td><td><strong>Energy Volley.</strong> As an action, you create 5 orbs made of cursed energy and blast them. Choose targets for each orb and make a ranged Cursed Energy attack with a +3 for 4 CE. On a hit, this attack Deals 6d6 Necrotic damage. Recharges on a 5-6 d6.</td></tr>
-                </table>
-            <div class="reference">
-				<div element="ID_JJK_INFORMATION_PUPPET"/>
-			</div>
+                </table>-->
 		</description>
 		<sheet>
 			<description>Over a long rest, you can create a puppet. As an action for 1 CE, you can give a Puppet with up to 2 Minor Traits. You can summon as many puppets as you want which can take an action if you use your bonus action to command it. It cannot use its reaction unless you use your reaction to command it to. The puppet can use bonus actions on its own. You can speak, hear, and see through any of your Puppets. In case you have more than one puppet at once, you need to control them at the same time.</description>
