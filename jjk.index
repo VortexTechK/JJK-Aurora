@@ -4,14 +4,21 @@
 		<name>JJK</name>
 		<description>JJK Homebrew.</description>
 		<author url="https://docs.google.com/document/d/1eC8tEMHnupOuaX6At1X8JORz5iarNe6I-A7j2QzScrE/edit?tab=t.0">JJK</author>
-		<update version="6.0.1">
+		<update version="6.0.2">
 			<file name="jjk.index" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/jjk.index" />
 		</update>
 	</info>
 	<files>	
 		<file name="source.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/source.xml" />
 		<file name="extra-features.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/extra-features.xml" />
+		<file name="jjk-itemfeatures.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/jjk-itemfeatures.xml" />
+
+		<!-- feats -->
 		<file name="cursedenergy-feats.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/cursedenergy-feats.xml" />
+		<file name="barrier-feats.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/barrier-feats.xml" />
+
+		<!-- backgrounds -->
+		<file name="background-clansorcerer.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/backgrounds/background-clansorcerer.xml" />
 
 		<!-- classes -->
 		<file name="class-juggernaut.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/classes/class-juggernaut.xml" />
@@ -58,6 +65,11 @@
 		<file name="love-rendezvous.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/love-rendezvous.xml" />
 		<file name="miracle.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/miracle.xml" />		
 		<file name="missile-fist.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/missile-fist.xml" />		
+		<file name="moon-dregs.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/moon-dregs.xml" />		
+		<file name="mythical-beastamber.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/mythical-beastamber.xml" />		
+		<file name="new-shadowstyle.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/new-shadowstyle.xml" />		
+		<file name="pachinko-fever.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/pachinko-fever.xml" />		
+		<file name="pain-killer.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/pain-killer.xml" />				
 		<file name="ten-shadows.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/ten-shadows.xml" />
 
 		<!-- races -->
