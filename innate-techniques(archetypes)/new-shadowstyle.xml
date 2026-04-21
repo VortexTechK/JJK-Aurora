@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="6.0.0">
+			<file name="new-shadowstyle.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/new-shadowstyle.xml" />
+		</update>
+	</info>
+
+	<element name="New Shadow Style" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_NEW_SHADOW_STYLE">
+		<supports>Innate Technique</supports>
+		<description>
+			<p>You are born with no innate technique, but in order to make up you learn a special secret. A domain for the weak. </p>
+			<div element="ID_JJK_ARCHETYPE_FEATURE_NEW_SHADOW_STYLE_SIMPLE_DOMAIN" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_NEW_SHADOW_STYLE_BATTO_SWORD_DRAW" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_NEW_SHADOW_STYLE_EVENING_MOON_SWORD_DRAWING" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_NEW_SHADOW_STYLE_MOONLIGHT_VEIL" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_NEW_SHADOW_STYLE_PERFECT_SHADOW_STYLE" />
+		</description>
+		<sheet display="false">
+			<description>You are born with no innate technique, but in order to make up you learn a special secret. A domain for the weak. </description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_NEW_SHADOW_STYLE_SIMPLE_DOMAIN" level="1" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_NEW_SHADOW_STYLE_BATTO_SWORD_DRAW" level="3" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_NEW_SHADOW_STYLE_EVENING_MOON_SWORD_DRAWING" level="6" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_NEW_SHADOW_STYLE_MOONLIGHT_VEIL" level="11" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_NEW_SHADOW_STYLE_PERFECT_SHADOW_STYLE" level="18" />
+		</rules>
+	</element>
+
+	<element name="New Shadow Style: Simple Domain" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_NEW_SHADOW_STYLE_SIMPLE_DOMAIN">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_NEW_SHADOW_STYLE_SIMPLE_DOMAIN</requirements>
+		<description>
+			<p>Beginning at 1st level, you gain the Simple Domain feat with the following benefits:</p>
+            <ul>
+                <li>You can activate Simple Domain for free a number of times equal to your proficiency bonus each long rest</li>
+                <li>You can activate Simple Domain as a bonus action</li>
+                <li>The area of Simple Domain can be up to 15 feet instead of 10</li>
+            </ul>
+		</description>
+		<sheet>
+			<description>You can activate Simple Domain {{proficiency}} times per long rest and as a bonus action. Its area can be up to 15 ft.</description>
+		</sheet>
+		<rules>
+			<grant type="Feat" id="ID_JJK_FEAT_SIMPLE_DOMAIN" />
+		</rules>
+	</element>
+
+	<element name="Batto Sword Draw" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_NEW_SHADOW_STYLE_BATTO_SWORD_DRAW">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_NEW_SHADOW_STYLE_BATTO_SWORD_DRAW</requirements>
+		<description>
+			<p>At 3rd level, you have learned the fastest technique of the New Shadow Style. As an action for 3 CE while wielding a melee weapon, you can make one attack roll with advantage against a number of targets equal to your Dexterity modifier within half of your movement speed and reach. You end your turn behind the farthest target without provoking opportunity attacks.</p>
+		</description>
+		<sheet action="Action" usage="CE">
+			<description>For 3 CE while wielding a melee weapon, make one attack roll with advantage against {{dexterity:modifier}} targets within half of your movement speed and reach. You end your turn behind the farthest target without provoking opportunity attacks.</description>
+		</sheet>
+	</element>
+
+	<element name="Evening Moon Sword Drawing" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_NEW_SHADOW_STYLE_EVENING_MOON_SWORD_DRAWING">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_NEW_SHADOW_STYLE_EVENING_MOON_SWORD_DRAWING</requirements>
+		<description>
+			<p>Once you reach 6th level, you enter a crouched stance. When a creature willingly moves in or out of your Simple Domain you can make a weapon attack against them. On a hit, you can choose to either spend CE up to your cursed energy modifier to deal an additional damage die for each CE spent, or you can gain a bonus to your AC and saving throws equal to the CE spent until the beginning of your next turn. You can only make this attack once per round per creature, meaning you can use it once against each creature.</p>
+		</description>
+        <sheet>
+            <description>When a creature willingly moves in or out of your Simple Domain you can make a weapon attack against them. On a hit, you can choose to either spend up to {{ce:modifier}} CE to deal additional damage dice or gain a bonus to your AC and saving throws equal until the beginning of your next turn for each CE spent. You can only make this attack once per round per creature.</description>
+        </sheet>
+	</element>
+
+	<element name="Moonlight Veil" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_NEW_SHADOW_STYLE_MOONLIGHT_VEIL">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_NEW_SHADOW_STYLE_MOONLIGHT_VEIL</requirements>
+		<description>
+			<p>Starting at 11th level, you can spend 1 cursed energy as a bonus action to imbue your weapon with your simple domain for 1 minute. You can add your Cursed Energy modifier to attack and damage rolls of melee weapon attacks or unarmed strikes. When you use this technique, you ignore any penalties for using a broken weapon.</p>
+		</description>
+        <sheet action="Bonus Action" usage="CE">
+			<description>For 1 cursed energy imbue your weapon for 1 minute, adding +{{ce:modifier}} to attack and damage rolls of melee weapon attacks or unarmed attacks. When you use this technique, you ignore any penalties for using a broken weapon.</description>
+		</sheet>
+	</element>
+
+	<element name="Perfect Shadow Style" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_NEW_SHADOW_STYLE_PERFECT_SHADOW_STYLE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_NEW_SHADOW_STYLE_PERFECT_SHADOW_STYLE</requirements>
+		<description>
+			<p>Finally, at 18th level, you manage to reach the peak of New Shadow Style. Your Simple Domain gains the following benefits:</p>
+			<ul>
+				<li>Simple Domain costs no cursed energy.</li>
+				<li>You can freely move and maintain Simple Domain.</li>
+				<li>The range of any of New Shadow Style techniques can be increased to up to 60 feet as a bonus action until the end of your turn</li>
+			</ul>
+			<p class="indent">When you expand the range of your Simple Domain over a creature, you can make two weapon attacks against a single creature as a free action (regardless of range). You can do this a number of times equal to your proficiency bonus each long rest.</p>
+		</description>
+        <sheet>
+			<description>Your Simple Domain costs no cursed energy, you can freely move with it, and the range of New Shadow Style techniques can be increased to up to 60 feet as a bonus action until the end of your turn. When you expand the range of your Simple Domain over a creature, you can make two weapon attacks against a single creature as a free action (regardless of range) {{proficiency}} times per long rest.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="New Shadow Style: Simple Domain Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_NEW_SHADOW_STYLE_SIMPLE_DOMAIN" />
+	<element name="Batto Sword Draw Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_NEW_SHADOW_STYLE_BATTO_SWORD_DRAW" />
+	<element name="Evening Moon Sword Drawing Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_NEW_SHADOW_STYLE_EVENING_MOON_SWORD_DRAWING" />
+	<element name="Moonlight Veil Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_NEW_SHADOW_STYLE_MOONLIGHT_VEIL" />
+	<element name="Perfect Shadow Style Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_NEW_SHADOW_STYLE_PERFECT_SHADOW_STYLE" />
+</elements>

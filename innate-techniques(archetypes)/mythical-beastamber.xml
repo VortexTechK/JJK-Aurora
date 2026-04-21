@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="6.0.0">
+			<file name="mythical-beastamber.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/mythical-beastamber.xml" />
+		</update>
+	</info>
+
+	<element name="Mythical Beast Amber" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_MYTHICAL_BEAST_AMBER">
+		<supports>Innate Technique</supports>
+		<description>
+			<p>#1 Rice Farmer</p>
+			<div element="ID_JJK_ARCHETYPE_FEATURE_MYTHICAL_BEAST_AMBER_ELECTRIC_ENERGY" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_MYTHICAL_BEAST_AMBER_LIGHTNING_BODY" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_MYTHICAL_BEAST_AMBER_LIGHTNING_DISCHARGE" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_MYTHICAL_BEAST_AMBER_LIGHTNING_GODS_REALM" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_MYTHICAL_BEAST_AMBER_DOMAIN_EXPANSION_FEATURE5" />
+		</description>
+		<sheet display="false">
+			<description>You hold a technique that changes the very essence of your energy to electricity. However, its true power is unknown even to you.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_MYTHICAL_BEAST_AMBER_ELECTRIC_ENERGY" level="1" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_MYTHICAL_BEAST_AMBER_LIGHTNING_BODY" level="3" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_MYTHICAL_BEAST_AMBER_LIGHTNING_DISCHARGE" level="6" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_MYTHICAL_BEAST_AMBER_LIGHTNING_GODS_REALM" level="11" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_MYTHICAL_BEAST_AMBER_DOMAIN_EXPANSION_FEATURE5" level="18" />
+		</rules>
+	</element>
+
+	<element name="Electric Energy" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_MYTHICAL_BEAST_AMBER_ELECTRIC_ENERGY">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_MYTHICAL_BEAST_AMBER_ELECTRIC_ENERGY</requirements>
+		<description>
+			<p>Starting at 1st level, you may not know your cursed technique yet, but you have gained insane mastery over your energy. Once per turn when you deal damage with a melee attack, you can spend 1 cursed energy to add 1d10 lightning damage to the total amount. This increases to 2d10 at 3rd level, 3d10 at 6th level, 4d10 at 11th level, to 5d10 at 14th level, and to 6d10 at 18th level.</p>
+		</description>
+		<sheet usage="CE">
+			<description>Once per turn when you deal damage with a melee attack, you can spend 1 cursed energy to add {{mythical:beast:amber:energy:damage}}d10 lightning damage.</description>
+            <description level="3">Twice per turn when you deal damage with a melee attack, you can spend 1 cursed energy to add {{mythical:beast:amber:energy:damage}}d10 lightning damage.</description>
+		</sheet>
+        <rules>
+            <stat name="mythical:beast:amber:energy:damage" value="1" bonus="electric energy" />
+            <stat name="mythical:beast:amber:energy:damage" value="2" bonus="electric energy" level="3" />
+            <stat name="mythical:beast:amber:energy:damage" value="3" bonus="electric energy" level="6" />
+            <stat name="mythical:beast:amber:energy:damage" value="4" bonus="electric energy" level="11" />
+            <stat name="mythical:beast:amber:energy:damage" value="5" bonus="electric energy" level="14" />
+            <stat name="mythical:beast:amber:energy:damage" value="6" bonus="electric energy" level="18" />
+        </rules>
+	</element>
+
+	<element name="Lightning Body" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_MYTHICAL_BEAST_AMBER_LIGHTNING_BODY">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_MYTHICAL_BEAST_AMBER_LIGHTNING_BODY</requirements>
+		<description>
+			<p>At 3rd level, your cursed energy is always electrifying your whole body, making your reactions instant. Your eyes gain marks of lightning around them, as a sign of your energy always refilling you. You can add your Cursed Energy modifier to your initiative rolls, and can now use the Electric Energy feature twice per turn.</p>
+		</description>
+		<sheet display="false" />
+        <rules>
+            <stat name="initiative:misc" value="ce:modifier" />
+        </rules>
+	</element>
+
+	<element name="Lightning Discharge" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_MYTHICAL_BEAST_AMBER_LIGHTNING_DISCHARGE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_MYTHICAL_BEAST_AMBER_LIGHTNING_DISCHARGE</requirements>
+		<description>
+			<p>When you reach 6th level, your control over your technique has improved to the point where you are able to separate the charges of electricity. After hitting a creature with Electric Energy you can mark the creature with a positive charge for 1 minute. You can have a number of charges on a target equal to twice your Cursed Energy Modifier. As an action you can expend charges to release a lightning bolt at one creature within 60 ft which heads straight for the accumulated charges dealing a number of d12s equal to the number of charges. </p>
+            <p class="indent">Starting at 11th level, this gains the limb-removing effect of the Limb Damage Table.</p>
+		</description>
+        <sheet>
+            <description>After hitting a creature with Electric Energy you can mark the creature with a positive charge for 1 minute. You can have {{mythical:beast:amber:discharge:num}} charges on a target. As an action you can expend charges to release a lightning bolt at one creature within 60 ft dealing d12s equal to their number of charges.</description>
+        </sheet>
+        <rules>
+            <stat name="mythical:beast:amber:discharge:num" value="ce:modifier" />
+            <stat name="mythical:beast:amber:discharge:num" value="ce:modifier" />
+        </rules>
+	</element>
+
+	<element name="Mythical Beast Amber Release" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_MYTHICAL_BEAST_AMBER_RELEASE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_MYTHICAL_BEAST_AMBER_RELEASE</requirements>
+		<description>
+			<p>Once you reach 11th level, you have finally learned your innate technique and its terrible cost. Once activated, this technique reconstructs the user's flesh in order to manifest phenomena that can be created by electricity, which is converted from the user's cursed energy. However, since the technique causes the user's body to surpass the limits of a human, it can only be used once before their body collapses following the technique's conclusion. As an action for 8 cursed energy, your body will start getting filled with electric cursed energy, making you constantly grow in power for a short period of time. You start at Stage 1 and every 5 rounds, you gain the next stage. As a bonus action, you can spend CE to expedite your transformation by 1 round per 2 CE. You can deactivate your form at any moment as a bonus action, however, depending on what stage you reached, your deactivation causes more backlash. After your fifth round in Stage 5, it instantly ends, making you die instantly:</p>
+            <h5 class="caption">RELEASE EFFECTS</h5>
+                <table>
+                    <thead>
+                        <tr><td>Stage</td><td>Benefits</td><td>Deactivation Side Effects</td></tr>
+                    </thead>
+                    <tr><td>Stage 1</td><td>+2 to Str, Dex, and Con ignoring limits. Immunity to lightning. +20 feet of movement. </td><td>You must make a DC:10 Constitution saving throw, on a failure you will gain 1 level of exhaustion. On a success, you suffer nothing.</td></tr>
+                    <tr><td>Stage 2</td><td>+3 to Str, Dex, and Con ignoring limits. Immunity to lightning. +40 feet of movement. +1 Attack.</td><td>You must make a DC:15 Constitution saving throw, on a failure you will gain 2 levels of exhaustion. On a success, you suffer only 1.</td></tr>
+                    <tr><td>Stage 3</td><td>+4 to Str, Dex, and Con ignoring limits. Immunity to lightning. +60 feet of movement. +1 Attack, +1 BA.</td><td>You must make a DC:20 Constitution saving throw, on a failure you will gain 3 levels of exhaustion. On a success, you suffer only 2.</td></tr>
+                    <tr><td>Stage 4</td><td>+5 to Str, Dex, and Con ignoring limits. Immunity to lightning. +80 feet of movement. +1 Action, +1 BA.</td><td>You must make a DC:25 Constitution saving throw, on a failure you will gain 4 levels of exhaustion. On a success, you suffer only 3.</td></tr>
+                    <tr><td>Stage 5</td><td>+6 to Str, Dex, and Con ignoring limits. Immunity to lightning. +100 feet of movement. +2 Action, +1 BA.</td><td>You must make a DC:30 Constitution saving throw, on a failure you will gain 6 levels of exhaustion. On a success, you suffer only 5.</td></tr>
+                </table>
+                <p class="indent">Your body will slowly alter itself while in this form, gaining the following as it progresses:</p>
+                <p class="indent"><strong>Cursed Claw(Stage 1).</strong> When you activate this form, your cursed energy will surround your hands and increase your overall attack power. Your unarmed strikes now deal one of the following damage types: Thunder, Lightning, Fire, Force, or Cold, and will deal one additional damage dice + 1d10 Lightning damage.</p>
+                <p class="indent"><strong>Loud Blast(Stage 2).</strong> When you reach Stage 2 in this form, your mouth will start to get covered with cursed energy, allowing you to emit loud energy blasts from your mouth. Make a cursed energy attack roll against a creature within 30 feet of you, on a hit it will deal 6d10 lightning damage. Hit or miss, all creatures within 15 feet of the target must make a Constitution saving throw. On a failure, they take 6d6 thunder damage and are deafened until the beginning of your next turn. On a success, they take half as much damage.</p>
+                <p class="indent"><strong>Lightning Armor(Stage 3).</strong> When you reach Stage 3 in this form, your torso and legs will start to get filled with cursed energy. You will gain damage reduction equal to your Cursed Energy modifier.</p>
+                <p class="indent"><strong>X-Ray Vision(Stage 4).</strong> When you reach Stage 4 in this form, your head is completely filled with cursed energy, even granting you new eyes. You will gain 120 feet of truesight, and will also be able to see all the features one creature of your choice has as a bonus action.</p>
+                <p class="indent"><strong>Cursed Beam(Stage 5).</strong> When you reach Stage 5 in this form, your very cursed energy has been improved. As an action for 10 cursed energy, you launch a huge cursed energy beam in a 30-foot line, forcing every creature in that line to make a Dexterity saving throw. On a failure, they take 10d10 force damage and are blinded until the beginning of your next turn. On a success, they take half as much damage and are not blinded. You can spend additional cursed energy into this technique, with each one adding 1d10 force damage and a +1 to its DC.</p>
+		</description>
+        <sheet action="Action" usage="CE">
+			<description>You can only use this technique once. For 8 cursed energy, you start at Stage 1 and every 5 rounds, you gain the next stage. As a bonus action, you can spend CE to expedite your transformation by 1 round per 2 CE.  After your fifth round in Stage 5, you die instantly. At Stage 1 you gain a +2 bonus to Str, Dex, and Con ignoring limits, immunity to lightning, and +20 ft. movement. For every additional stage the bonus increases by 1 and the speed increase by 20 ft. At Stage 2, you gain a extra attack. At Stage 3, you gain a extra bonus action. At Stage 4, your extra attack becomes a action. At Stage 5, you gain a extra action. You can deactivate as a bonus action, but must make a Constitution saving throw. At Stage 1 the DC is 10, on a failure you gain 1 level of exhaustion, and on a success you suffer nothing. For each additional stage the DC increases by 5 and the levels of exhaustion increase by 1 for both a success and failure. Your body gains Cursed Claw, Loud Blast, Lightning Armor, X-Ray Vision, and Cursed Beam as your stages increase.</description>
+		</sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_MYTHICAL_BEAST_AMBER_CURSED_CLAW" />
+            <grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_MYTHICAL_BEAST_AMBER_LOUD_BLAST" />
+            <grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_MYTHICAL_BEAST_AMBER_LIGHTNING_ARMOR" />
+            <grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_MYTHICAL_BEAST_AMBER_X_RAY" />
+            <grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_MYTHICAL_BEAST_AMBER_CURSED_BEAM" />
+        </rules>
+	</element>
+
+    <element name="Cursed Claw(Stage 1)" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_MYTHICAL_BEAST_AMBER_CURSED_CLAW">
+        <description>
+            <p>When you activate this form, your cursed energy will surround your hands and increase your overall attack power. Your unarmed strikes now deal one of the following damage types: Thunder, Lightning, Fire, Force, or Cold, and will deal one additional damage dice + 1d10 Lightning damage.</p>
+        </description>
+        <sheet>
+            <description>Your unarmed strikes deal Thunder, Lightning, Fire, Force, or Cold, and one additional damage dice + 1d10 Lightning damage.</description>
+        </sheet>
+    </element>
+
+    <element name="Loud Blast(Stage 2)" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_MYTHICAL_BEAST_AMBER_LOUD_BLAST">
+        <description>
+            <p>When you reach Stage 2 in this form, your mouth will start to get covered with cursed energy, allowing you to emit loud energy blasts from your mouth. Make a cursed energy attack roll against a creature within 30 feet of you, on a hit it will deal 6d10 lightning damage. Hit or miss, all creatures within 15 feet of the target must make a Constitution saving throw. On a failure, they take 6d6 thunder damage and are deafened until the beginning of your next turn. On a success, they take half as much damage.</p>
+        </description>
+        <sheet>
+            <description>Make a cursed energy attack roll against a creature within 30 feet of you, on a hit it will deal 6d10 lightning damage. Hit or miss, all creatures within 15 feet of the target must make a Constitution saving throw. On a failure, they take 6d6 thunder damage and are deafened until the beginning of your next turn. On a success, they take half as much damage.</description>
+        </sheet>
+    </element>
+
+    <element name="Lightning Armor(Stage 3)" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_MYTHICAL_BEAST_AMBER_LIGHTNING_ARMOR">
+        <description>
+            <p>When you reach Stage 3 in this form, your torso and legs will start to get filled with cursed energy. You will gain damage reduction equal to your Cursed Energy modifier.</p>
+        </description>
+        <sheet>
+            <description>Reduce damage by {{ce:modifier}}</description>
+        </sheet>
+    </element>
+
+    <element name="X-Ray Vision(Stage 4)" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_MYTHICAL_BEAST_AMBER_X_RAY">
+        <description>
+            <p>When you reach Stage 4 in this form, your head is completely filled with cursed energy, even granting you new eyes. You will gain 120 feet of truesight, and will also be able to see all the features one creature of your choice has as a bonus action.</p>
+        </description>
+        <sheet>
+            <description>You gain 120 feet of truesight and can see all features of one creature as a bonus action.</description>
+        </sheet>
+    </element>
+
+    <element name="Cursed Beam(Stage 5)" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_MYTHICAL_BEAST_AMBER_CURSED_BEAM">
+        <description>
+            <p>When you reach Stage 5 in this form, your very cursed energy has been improved. As an action for 10 cursed energy, you launch a huge cursed energy beam in a 30-foot line, forcing every creature in that line to make a Dexterity saving throw. On a failure, they take 10d10 force damage and are blinded until the beginning of your next turn. On a success, they take half as much damage and are not blinded. You can spend additional cursed energy into this technique, with each one adding 1d10 force damage and a +1 to its DC.</p>
+        </description>
+        <sheet action="Action" usage="CE">
+            <description>For 10 cursed energy, forcing every creature in a 30-foot line to make a Dexterity saving throw. On a failure, they take 10d10 force damage and are blinded until the beginning of your next turn. On a success, they take half as much damage and are not blinded. For every additional cursed energy spent, add 1d10 force damage and +1 to the DC.</description>
+        </sheet>
+    </element>
+
+	<element name="Domain Expansion: Lightning God's Realm" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_MYTHICAL_BEAST_AMBER_DOMAIN_EXPANSION_LIGHTNING_GODS_REALM">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_MYTHICAL_BEAST_AMBER_DOMAIN_EXPANSION_LIGHTNING_GODS_REALM</requirements>
+		<description>
+			<p>Finally, at 18th level, you have honed your control over your energy into a domain expansion. Starting at initiative 20, all creatures in your domain gains 3 positive charges without a charge limit.</p>
+		</description>
+        <sheet>
+			<description>At initiative 20, all creatures gain 3 positive charges without a charge limit.</description>
+		</sheet>
+        <rules>
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION" />
+		</rules>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Electric Energy Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MYTHICAL_BEAST_AMBER_ELECTRIC_ENERGY" />
+	<element name="Lightning Body Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MYTHICAL_BEAST_AMBER_LIGHTNING_BODY" />
+	<element name="Lightning Discharge Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MYTHICAL_BEAST_AMBER_LIGHTNING_DISCHARGE" />
+	<element name="Mythical Beast Amber Release Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MYTHICAL_BEAST_AMBER_RELEASE" />
+	<element name="Domain Expansion: Lightning God's Realm Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MYTHICAL_BEAST_AMBER_DOMAIN_EXPANSION_LIGHTNING_GODS_REALM" />
+</elements>

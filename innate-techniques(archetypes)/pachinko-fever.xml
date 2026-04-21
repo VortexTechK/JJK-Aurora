@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="6.0.0">
+			<file name="pachinko-fever.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/pachinko-fever.xml" />
+		</update>
+	</info>
+
+	<element name="ARCHETYPE NAME" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_PACHINKO_FEVER">
+		<supports>Innate Technique</supports>
+		<description>
+			<p>LETS GO GAMBLING!</p>
+			<div element="ID_JJK_ARCHETYPE_FEATURE_PACHINKO_FEVER_GREAT_LUCK" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_PACHINKO_FEVER_DOMAIN_EXPANSION_IDLE_DEATH_GAMBLE" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_PACHINKO_FEVER_ON_A_ROLL" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_PACHINKO_FEVER_THE_FEVER" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_PACHINKO_FEVER_LUCKIEST_SORCERER_ALIVE" />
+		</description>
+		<sheet display="false">
+			<description>Did you know most gamblers stop before their big hit? Let's hope you don't, as failing may mean death, but your luck has got you.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_PACHINKO_FEVER_GREAT_LUCK" level="1" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_PACHINKO_FEVER_DOMAIN_EXPANSION_IDLE_DEATH_GAMBLE" level="3" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_PACHINKO_FEVER_ON_A_ROLL" level="6" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_PACHINKO_FEVER_THE_FEVER" level="11" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_PACHINKO_FEVER_LUCKIEST_SORCERER_ALIVE" level="18" />
+		</rules>
+	</element>
+
+	<element name="Great Luck" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_PACHINKO_FEVER_GREAT_LUCK">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PACHINKO_FEVER_GREAT_LUCK</requirements>
+		<description>
+			<p>Beginning at 1st level, luck has sided with you, and you can use it against your foes. Once per long rest you can force one of your rolls to be critical (cannot roll for black flash).</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>Force one of your rolls to be critical (cannot black flash).</description>
+		</sheet>
+	</element>
+
+	<element name="Domain Expansion: Idle Death Gamble" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_PACHINKO_FEVER_DOMAIN_EXPANSION_IDLE_DEATH_GAMBLE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PACHINKO_FEVER_DOMAIN_EXPANSION_IDLE_DEATH_GAMBLE</requirements>
+		<description>
+			<p>At 3rd level, you gain access to your domain expansion.  Once per long rest you can expand your domain for free bringing you and all creatures of your choice within 175 feet to a demiplane that resembles a subway station as music starts playing. This domain is Non-Lethal with Anti-Domain Clash as listed in Non-Lethal Domains and cannot be reacted to unless the opposing user has a domain with at least 400 refinement points and has higher refinement than you.</p>
+            <p class="indent">You gain three types of Pachinko attacks that can be used as a bonus action, each attack increases the "expectation" by a percentage.</p>
+            <ul>
+                <li><strong>Green Balls.</strong> As a bonus action for 1 cursed energy, make a ranged cursed energy attack roll against a target within 30ft. It deals 1d4 bludgeoning damage on a hit and raises expectations by 10%.</li>
+                <li><strong>Red Rod.</strong> As a bonus action for 3 cursed energy, make a melee cursed energy attack roll against a target. It deals 1d8 bludgeoning damage on a hit and raises expectations by 25%.</li>
+                <li><strong>Golden Train Door Attack.</strong> As a bonus action for 4 cursed energy, make a melee or ranged cursed energy attack roll against a target within 30ft. On a hit, the target takes 1d12 bludgeoning damage and must make a Strength saving throw or be restrained until the end of your turn. This attack increases expectations by 50%.</li>
+            </ul>
+            <p class="indent">You can consume the expectation at any time by using your bonus action to place your bet and causing an event to take place.</p>
+            <p class="indent">There are 4 possible types of events. To know which event will happen, you must roll a d20 + your expectation bonus. You get a +1 bonus for every 10% Expectation, to a maximum of +19 at 190%.</p>
+            <h5 class="caption">EVENT TYPES</h5>
+                <table>
+                    <thead>
+                        <tr><td>Number</td><td>Event Type</td><td>Description</td><td>Jackpot Dice</td></tr>
+                    </thead>
+                    <tr><td>1-9</td><td>Transport Gate</td><td>Will they make it in?</td><td>d12</td></tr>
+                    <tr><td>10-14</td><td>Seat Argument</td><td>Can she get the seat?</td><td>d10</td></tr>
+                    <tr><td>15-18</td><td>Tight Squeeze</td><td>Can they get to the bathroom?</td><td>d8</td></tr>
+                    <tr><td>19-20</td><td>Last Train</td><td>Can they catch the train?</td><td>d6</td></tr>
+                </table>
+            <p class="indent">Once an event starts, roll a d10 to see how many rounds the event lasts. If your domain ends, you immediately roll.</p>
+            <p class="indent">At the end of the event, you must roll a d20 (also adding expectation to this roll, +1 per 10%) to find out if you win the multiplier bonus or the rare "Rainbow" bonus. You can reroll all jackpot dice an amount of times equal to your multiplier, if "Rainbow" lands you have an automatic jackpot in that event. At the end of the event you will roll 3dX, with the value of the dice defined by the event. If 3 of the same numbers land, you win a jackpot. When you hit a jackpot the domain expansion is undone without the effects of Technique Burnout, your cursed energy becomes infinite, and you become immortal.</p>
+            <h5 class="caption">MULTIPLIER</h5>
+                <table>
+                    <thead>
+                        <tr><td>Numbers Rolled</td><td>column2</td></tr>
+                    </thead>
+                    <tr><td>1-12</td><td>3</td></tr>
+                    <tr><td>13-15</td><td>4</td></tr>
+                    <tr><td>16-17</td><td>5</td></tr>
+                    <tr><td>18-19</td><td>10</td></tr>
+                    <tr><td>20</td><td>Rainbow</td></tr>
+                </table>
+            <p class="indent"> You gain the following benefits for 4 Rounds:</p>
+            <ul>
+                <li>Your cursed energy completely refuels at the beginning of your turn.</li>
+                <li>You will receive the effects of Reverse Cursed Technique as if you have spent cursed energy up to your Cursed Energy modifier at the beginning of your turns. In addition, you cannot go below 1 hit point and heal all injuries.</li>
+                <li>You regain one free use of Idle Death Gamble. After spending all of your uses, you can use your domain again for 20 Cursed Energy.</li>
+            </ul>
+		</description>
+		<sheet usage="1 Free/Long Rest">
+			<description>I am not writing this onto a sheet chat.</description>
+		</sheet>
+        <rules>
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION" />
+		</rules>
+	</element>
+
+	<element name="On a Roll" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_PACHINKO_FEVER_ON_A_ROLL">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PACHINKO_FEVER_ON_A_ROLL</requirements>
+		<description>
+			<p>Once you reach 6th level, after activating Idle Death Gamble and getting a Jackpot, you gain advantage when making your Event roll or Multiplier roll within your next domain.</p>
+		</description>
+        <sheet>
+            <description>After activating Idle Death Gamble and getting a Jackpot, you gain advantage when making your Event roll or Multiplier roll within your next domain.</description>
+        </sheet>
+	</element>
+
+	<element name="The Fever" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_PACHINKO_FEVER_THE_FEVER">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PACHINKO_FEVER_THE_FEVER</requirements>
+		<description>
+			<p>When you achieve the 11th level, after entering your jackpot, you start gathering fever points. Once per round when you are lowered to one hit point, you gain a fever point. You can have a number of them up to your proficiency bonus and unused fever points disappear at the end of combat. You can use one of your fever points to gain one of the following effects:</p>
+            <ul>
+                <li>You can choose to land a critical hit (cannot black flash)</li>
+                <li>You gain an additional action</li>
+                <li>Add a +10 to a saving throw or ability check</li>
+            </ul>
+		</description>
+        <sheet>
+			<description>Once per round when you are lowered to one hit point, you gain a fever point. You can have up to {{proficiency}} and unused fever points disappear at the end of combat. You can use one to choose to land a critical hit (cannot black flash), gain an additional action, or add +10 to a saving throw or abiltiy check.</description>
+		</sheet>
+	</element>
+
+	<element name="Luckiest Sorcerer Alive" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_PACHINKO_FEVER_LUCKIEST_SORCERER_ALIVE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PACHINKO_FEVER_LUCKIEST_SORCERER_ALIVE</requirements>
+		<description>
+			<p>At 18th level , you now roll 3d20 when deciding your multiplier, and can choose which roll you want. Your reverse cursed technique makes you regain hit points as if you had spent a number of cursed energy equal to twice your Cursed Energy modifier, and you can use Reverse Cursed Technique as a free action while you have the jackpot bonus.</p>
+            <p class="indent">In addition, your jackpot duration is now a number of minutes equal to your Cursed Energy modifier (min of 1).</p>
+		</description>
+        <sheet>
+			<description>Roll 3d20 when deciding your multiplier and choose which roll you want. Your reverse cursed technique makes you regain hit points as if you had spent a number of cursed energy equal to twice your Cursed Energy modifier, and you can use Reverse Cursed Technique as a free action while you have the jackpot bonus.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Great Luck Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PACHINKO_FEVER_GREAT_LUCK" />
+	<element name="Domain Expansion: Idle Death Gamble Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PACHINKO_FEVER_DOMAIN_EXPANSION_IDLE_DEATH_GAMBLE" />
+	<element name="On a Roll Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PACHINKO_FEVER_ON_A_ROLL" />
+	<element name="The Fever Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PACHINKO_FEVER_THE_FEVER" />
+	<element name="Luckiest Sorcerer Alive Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PACHINKO_FEVER_LUCKIEST_SORCERER_ALIVE" />
+</elements>

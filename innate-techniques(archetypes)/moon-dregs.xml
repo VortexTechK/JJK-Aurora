@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="6.0.0">
+			<file name="moon-dregs.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/moon-dregs.xml" />
+		</update>
+	</info>
+
+	<element name="Moon Dregs" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_MOON_DREGS">
+		<supports>Innate Technique</supports>
+		<description>
+			<p>Your technique forms a poison unique to you and comes with your own shikigami to help manifest it.</p>
+			<div element="ID_JJK_ARCHETYPE_FEATURE_MOON_DREGS_LUNAR_JELLYFISH" />
+            <div class="reference">
+				<div element="ID_JJK_INFORMATION_MOON_DREGS"/>
+			</div>
+			<div element="ID_JJK_ARCHETYPE_FEATURE_MOON_DREGS_POISONOUS_CURSED_ENERGY" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_MOON_DREGS_NOXIOUS_POISON" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_MOON_DREGS_CLEANSING_OF_PURITY" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_MOON_DREGS_DOMAIN_EXPANSION_LIBERATION_RITE_OF_WATER_AND_LAND" />
+		</description>
+		<sheet display="false">
+			<description>Your technique forms a poison unique to you and comes with your own shikigami to help manifest it.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_MOON_DREGS_LUNAR_JELLYFISH" level="1" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_MOON_DREGS_POISONOUS_CURSED_ENERGY" level="3" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_MOON_DREGS_NOXIOUS_POISON" level="6" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_MOON_DREGS_CLEANSING_OF_PURITY" level="11" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_MOON_DREGS_DOMAIN_EXPANSION_LIBERATION_RITE_OF_WATER_AND_LAND" level="18" />
+		</rules>
+	</element>
+
+	<element name="Lunar Jellyfish" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_MOON_DREGS_LUNAR_JELLYFISH">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_MOON_DREGS_LUNAR_JELLYFISH</requirements>
+		<description>
+			<p>Starting at 1st level, you can use your action to summon a Jellyfish shikigami, which lasts for 8 hours and uses your proficiency bonus. You can spend 1 additional cursed energy to change the shikigami's size between tiny and large as an action. Moon Dregs only takes the dodge action unless you command Moon Dregs using your bonus action each turn. You can summon Moon Dregs for free once per long rest and again for 5 cursed energy. When Moon Dregs is destroyed, it cannot be summoned again for 1 minute.</p>
+            <div class="reference">
+				<div element="ID_JJK_INFORMATION_MOON_DREGS"/>
+			</div>
+		</description>
+		<sheet action="Action" usage="1/Long Rest or CE">
+			<description>For 5 cursed energy, summon Moon Dregs which lasts for 8 hours and uses your proficiency. You can spend 1 additional cursed energy to change the shikigami's size between tiny and large as an action. Moon Dregs only takes the dodge action unless you command Moon Dregs using your bonus action each turn. When Moon Dregs is destroyed, it cannot be summoned again for 1 minute.</description>
+		</sheet>
+        <rules>
+            <select type="Companion" name="Moon Dregs" supports="Moon Dregs" />
+        </rules>
+    </element>
+
+	<element name="Poisonous Cursed Energy" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_MOON_DREGS_POISONOUS_CURSED_ENERGY">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_MOON_DREGS_POISONOUS_CURSED_ENERGY</requirements>
+		<description>
+			<p>At 3rd level, your cursed energy has toxic properties which seep into Moon Dregs and empower it. Once per turn, when you or Moon Dregs hit a creature with a melee attack on your turn, you can spend 1 cursed energy to cause the attack to deal an extra 2d6 poison damage. This increases to 4d6 at 6th level, 6d8 at 11th level and 6d10 at 18th level. This damage is not amplified by a critical hit.</p>
+            <p class="indent">You can replace any of your attacks on your turn with an attack from Moon Dregs.</p>
+		</description>
+		<sheet usage="CE">
+			<description>Once per turn, when you or Moon Dregs hit a creature with a melee attack on your turn, you can spend 1 cursed energy to cause the attack to deal an extra {{moon:dregs:poisonous:ce:damage}}d{{moon:dregs:poisonous:ce:dice}} poison damage. This damage is not amplified by a critical hit. You can replace any of your attacks on your turn with an attack from Moon Dregs.</description>
+		</sheet>
+        <rules>
+            <stat name="moon:dregs:poisonous:ce:damage" value="2" bonus="poisonous ce" />
+            <stat name="moon:dregs:poisonous:ce:damage" value="4" bonus="poisonous ce" level="6" />
+            <stat name="moon:dregs:poisonous:ce:damage" value="6" bonus="poisonous ce" level="11" />
+            <stat name="moon:dregs:poisonous:ce:dice" value="6" bonus="poisonous ce" />
+            <stat name="moon:dregs:poisonous:ce:dice" value="8" bonus="poisonous ce" level="11" />
+            <stat name="moon:dregs:poisonous:ce:dice" value="10" bonus="poisonous ce" level="18" />
+        </rules>
+	</element>
+
+	<element name="Noxious Poison" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_MOON_DREGS_NOXIOUS_POISON">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_MOON_DREGS_NOXIOUS_POISON</requirements>
+		<description>
+			<p>At 6th level, your cursed energy has become more corrosive and noxious, further seeping into Moon Dregs. When you use Poisonous Cursed Energy, a creature must make a Constitution saving throw or be poisoned for 1 minute. They can repeat the saving throw at the end of their turns, ending the effect on a success. While poisoned in this way, the target has a temporary level of exhaustion.</p>
+            <p class="indent"> Moon Dregs can now make two attacks when it takes the attack action and can grant a creature three quarters cover while occupying a creature's space, and full cover at 11th level.</p>
+		</description>
+        <sheet>
+            <description>When you use Poisonous Cursed Energy, a creature must make a Constitution saving throw or be poisoned for 1 minute. They can repeat the saving throw at the end of their turns, ending the effect on a success. While poisoned in this way, the target has a temporary level of exhaustion. Moon Dregs can now make two attacks when it takes the attack action and can grant a creature three quarters cover while occupying a creature's space.</description>
+            <description level="11">When you use Poisonous Cursed Energy, a creature must make a Constitution saving throw or be poisoned for 1 minute. They can repeat the saving throw at the end of their turns, ending the effect on a success. While poisoned in this way, the target has a temporary level of exhaustion. Moon Dregs can now make three attacks when it takes the attack action and can grant a creature full cover while occupying a creature's space.</description>
+        </sheet>
+	</element>
+
+	<element name="Cleansing of Purity" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_MOON_DREGS_CLEANSING_OF_PURITY">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_MOON_DREGS_CLEANSING_OF_PURITY</requirements>
+		<description>
+			<p>At 11th level, you can add your Cursed Energy modifier to Moon Dregs' AC as well as its Strength, Dexterity, and Constitution scores. Moon Dregs now makes three attacks when it takes the Attack action.</p>
+		</description>
+        <sheet>
+			<description>You can add {{ce:modifier}} to Moon Dregs' AC as well as its Strength, Dexterity, and Constitution scores. </description>
+		</sheet>
+	</element>
+
+	<element name="Domain Expansion: Liberation Rite of Water and Land" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_MOON_DREGS_DOMAIN_EXPANSION_LIBERATION_RITE_OF_WATER_AND_LAND">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_MOON_DREGS_DOMAIN_EXPANSION_LIBERATION_RITE_OF_WATER_AND_LAND</requirements>
+		<description>
+			<p>Finally at 18th level, you have created a domain embedded with your technique. The air is filled with toxins and appears as if you are underwater, counting as difficult terrain unless you have a swim speed. Creatures are still able to breathe normally.</p>
+            <p class="indent">At initiative 20, all creatures in your domain take 8d6 poison or acid damage. Moon Dregs attacks are imbued with your guaranteed hit and there are a number of tiny jellyfish shikigami swimming around equal to your cursed energy modifier that are also imbued with your guaranteed hit. You can command them as an action. They count as Moon Dregs, can only make 1 attack, and have 30 hitpoints.</p>
+		</description>
+        <sheet>
+			<description>Your domain's terrain is difficult unless a creature has a swim speed. At initiative 20, all creatures in your domain take 8d6 poison or acid damage. Moon Dregs attacks and {{ce:modifier}} summoned tiny jellyfish shikigami are imbued with your guaranteed hit. You can command the jellyfish as an action, they count as Moon Dregs, can only make 1 attack, and have 30 hitpoints.</description>
+		</sheet>
+        <rules>
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION" />
+		</rules>
+	</element>
+
+    <!-- Companion Reference -->
+    <element name="Moon Dregs" type="Information" source="JJK" id="ID_JJK_INFORMATION_MOON_DREGS">
+        <description>
+            <p style="margin-bottom:-5px"><em>Tiny shikigami, unaligned</em></p>
+            <h4 style="margin-top:5px"></h4>
+
+            <ul class="unstyled">
+                <li><strong>Armor Class</strong> 11 + your proficiency bonus</li>
+                <li><strong>Hit Points</strong> 10 x your level</li>
+                <li><strong>Speed</strong> 5 ft., fly 40 ft. (hover), swim 40 ft.</li>
+            </ul>
+            <table style="text-align:center;margin-top:10px;margin-bottom:10px">
+                <thead>
+                    <tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr>
+                </thead>
+                <tr>
+                    <td>16 (+3)</td><td>14 (+2)</td><td>18 (+4)</td><td>4 (-3)</td><td>13 (+1)</td><td>5 (-3)</td>
+                </tr>
+            </table>
+            <ul class="unstyled">
+                <li><strong>Skills</strong> Athletics +5</li>
+                <li><strong>Damage Resistances</strong> acid, cold</li>
+                <li><strong>Damage Immunities</strong> bludgeoning, poison</li>
+                <li><strong>Condition Immunities</strong> blinded</li>
+                <li><strong>Senses</strong> blindsight 10 ft., passive Perception 11</li>
+                <li><strong>Languages</strong> —</li>
+                <li style="margin-bottom:-1em"><strong>Challenge</strong> N/A</li>
+            </ul>
+			<h4 style="margin-top:5px; margin-bottom:10px" />
+            <ul class="unstyled">
+                <li><strong><em>Defensive Shikigami.</em></strong> Moon Dregs can occupy the space of a willing or grappled creature, granting it half cover and allowing Moon Dregs to take attacks in place of the creature.</li>
+                <li><strong><em>Toxic Body.</em></strong> When a creature hits Moon Dregs with a melee attack within 5 feet, they take 1d4 poison damage as it splashes out when injured. This increases to 1d8 at 11th level.</li>
+            </ul>
+            <h4 style="margin-top:10px">Actions</h4>
+            <ul class="unstyled">
+                <li><em><strong>Sting.</strong> Melee Weapon Attack:</em> +3 + your proficiency to hit, reach 10 ft., one target. Hit: 10 (2d6 + 3) piercing damage.</li>
+                <li><em><strong>Tendrils.</strong> Melee Weapon Attack:</em> +3 + your proficiency to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage, and the creature is grappled (escape DC 15). Until the grapple ends, the creature is restrained and Moon Dregs cannot restrain another target.</li>
+            </ul>
+        </description>
+    </element>
+
+    <!-- Companion -->
+    <element name="Moon Dregs" type="Companion" source="JJK" id="ID_JJK_COMPANION_MOON_DREGS">
+        <supports>Moon Dregs</supports>
+        <setters>
+            <set name="strength">16</set>
+            <set name="dexterity">14</set>
+            <set name="constitution">18</set>
+            <set name="intelligence">4</set>
+            <set name="wisdom">13</set>
+            <set name="charisma">5</set>
+            <set name="ac">11 + your proficiency bonus</set>
+            <set name="hp">10 x level</set>
+            <set name="speed">5 ft., fly 40 ft. (hover), swim 40 ft.</set>
+            <set name="skills">Athletics +5</set>
+            <set name="senses">blindsight 10 ft., passive Perception 11</set>
+            <set name="languages"></set>
+            <set name="resistances">acid, cold</set>
+            <set name="immunities">bludgeoning, poison</set>
+            <set name="conditionImmunities">blinded</set>
+            <set name="type">Shikigami</set>
+            <set name="size">Tiny</set>
+            <set name="alignment">unaligned</set>
+            <set name="challenge">—</set>
+            <set name="traits">ID_JJK_COMPANION_ACTION_MOON_DREGS_DEFENSIVE_SHIKIGAMI,ID_JJK_COMPANION_ACTION_MOON_DREGS_TOXIC_BODY</set>
+            <set name="actions">ID_JJK_COMPANION_ACTION_MOON_DREGS_STING,ID_JJK_COMPANION_ACTION_MOON_DREGS_TENDRILS</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="11" bonus="base" />
+            <stat name="companion:ac" value="proficiency" />
+            <stat name="companion:hp:max" value="level" />
+            <stat name="companion:hp:max" value="level" />
+            <stat name="companion:hp:max" value="level" />
+            <stat name="companion:hp:max" value="level" />
+            <stat name="companion:hp:max" value="level" />
+            <stat name="companion:hp:max" value="level" />
+            <stat name="companion:hp:max" value="level" />
+            <stat name="companion:hp:max" value="level" />
+            <stat name="companion:hp:max" value="level" />
+            <stat name="companion:hp:max" value="level" />
+            <stat name="companion:speed" value="5" bonus="base" />
+            <stat name="companion:speed:fly" value="40" bonus="base" />
+            <stat name="companion:speed:swim" value="40" bonus="base" />
+            <stat name="companion:proficiency" value="proficiency" bonus="base" />
+            <stat name="companion:proficiency" value="-2" bonus="base companion PB removal"/>
+            <stat name="companion:athletics:proficiency" value="companion:proficiency" bonus="proficiency" />
+        </rules>
+    </element>
+
+    <element name="Defensive Shikigami" type="Companion Action" source="JJK" id="ID_JJK_COMPANION_ACTION_MOON_DREGS_DEFENSIVE_SHIKIGAMI">
+        <description>
+            <p>Moon Dregs can occupy the space of a willing or grappled creature, granting it half cover and allowing Moon Dregs to take attacks in place of the creature.</p>
+        </description>
+        <sheet>
+            <description>Moon Dregs can occupy the space of a willing or grappled creature, granting it half cover and allowing Moon Dregs to take attacks in place of the creature.</description>
+        </sheet>
+    </element>
+
+    <element name="Toxic Body" type="Companion Action" source="JJK" id="ID_JJK_COMPANION_ACTION_MOON_DREGS_TOXIC_BODY">
+        <description>
+            <p>When a creature hits Moon Dregs with a melee attack within 5 feet, they take 1d4 poison damage as it splashes out when injured. This increases to 1d8 at 11th level.</p>
+        </description>
+        <sheet>
+            <description>When a creature hits Moon Dregs with a melee attack within 5 feet, they take 1d4 poison damage as it splashes out when injured. This increases to 1d8 at 11th level.</description>
+        </sheet>
+    </element>
+
+    <element name="Sting" type="Companion Action" source="JJK" id="ID_JJK_COMPANION_ACTION_MOON_DREGS_STING">
+        <description>
+            <p>Melee Weapon Attack: +3 + your proficiency to hit, reach 10 ft., one target. Hit: 10 (2d6 + 3) piercing damage.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +3 + your proficiency to hit, reach 10 ft., one target. Hit: 10 (2d6 + 3) piercing damage.</description>
+        </sheet>
+    </element>
+
+    <element name="Tendrils" type="Companion Action" source="JJK" id="ID_JJK_COMPANION_ACTION_MOON_DREGS_TENDRILS">
+        <description>
+            <p>Melee Weapon Attack: +3 + your proficiency to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage, and the target is grappled (escape DC 15). While grappled, the target is restrained. Moon Dregs cannot restrain another target.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +3 + your proficiency to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage, and the target is grappled (escape DC 15). While grappled, the target is restrained. Moon Dregs cannot restrain another target.</description>
+        </sheet>
+    </element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Lunar Jellyfish Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MOON_DREGS_LUNAR_JELLYFISH" />
+	<element name="Poisonous Cursed Energy Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MOON_DREGS_POISONOUS_CURSED_ENERGY" />
+	<element name="Noxious Poison Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MOON_DREGS_NOXIOUS_POISON" />
+	<element name="Cleansing of Purity Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MOON_DREGS_CLEANSING_OF_PURITY" />
+	<element name="Domain Expansion: Liberation Rite of Water and Land Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MOON_DREGS_DOMAIN_EXPANSION_LIBERATION_RITE_OF_WATER_AND_LAND" />
+</elements>

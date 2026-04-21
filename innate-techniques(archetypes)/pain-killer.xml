@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="6.0.0">
+			<file name="pain-killer.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/pain-killer.xml" />
+		</update>
+	</info>
+
+	<element name="Pain Killer" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_PAIN_KILLER">
+		<supports>Innate Technique</supports>
+		<description>
+			<p>While you cannot heal, you can stop injuries from getting worse.</p>
+			<div element="ID_JJK_ARCHETYPE_FEATURE_PAIN_KILLER_PAIN_KILLER" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_PAIN_KILLER_PRACTICED_HANDS" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_PAIN_KILLER_PAIN_BREAKER" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_PAIN_KILLER_ANALGESIC" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_PAIN_KILLER_DOMAIN_EXPANSION_MEDICAL_CLINIC" />
+		</description>
+		<sheet display="false">
+			<description>While you cannot heal, you can stop injuries from getting worse.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_PAIN_KILLER_PAIN_KILLER" level="1" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_PAIN_KILLER_PRACTICED_HANDS" level="3" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_PAIN_KILLER_PAIN_BREAKER" level="6" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_PAIN_KILLER_ANALGESIC" level="11" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_PAIN_KILLER_DOMAIN_EXPANSION_MEDICAL_CLINIC" level="18" />
+		</rules>
+	</element>
+
+	<element name="Pain Killer" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_PAIN_KILLER_PAIN_KILLER">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PAIN_KILLER_PAIN_KILLER</requirements>
+		<description>
+			<p>Starting at 1st level, you can use your technique to stop injuries from getting worse. As a bonus action for 1 CE, you can make a symbol with your hand and touch a creature within 5 feet. If a creature is taking damage over time, you cause that damage to stop and the creature gains temporary hit points equal to your CE modifier + your level for 1 hour. This does not stop new effects from affecting the target. You also gain proficiency in Medicine.</p>
+		</description>
+		<sheet action="Bonus Action" usage="CE">
+			<description>For 1 CE, touch a creature within 5 feet. If it is taking damage over time, that damage stops and the creature gains {{pain:killer:temp:hp}} temporary hit points 1 hour. This does not stop new effects from affecting the target.</description>
+		</sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_MEDICINE" />
+            <stat name="pain:killer:temp:hp" value="level" />
+            <stat name="pain:killer:temp:hp" value="ce:modifier" />
+        </rules>
+	</element>
+
+	<element name="Practiced Hands" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_PAIN_KILLER_PRACTICED_HANDS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PAIN_KILLER_PRACTICED_HANDS</requirements>
+		<description>
+			<p>At 3rd level, you can use Pain Killer on all willing creatures within 5 feet as a free action on your turn, spending 1 CE for each creature. This increases to 10 feet at 6th level and 15 feet at 11th level.</p>
+		</description>
+		<sheet usage="CE">
+			<description>You can use Pain Killer on all willing creatures within {{pain:killer:practiced:hands:range}} feet as a free action on your turn, spending 1 CE for each creature. </description>
+		</sheet>
+        <rules>
+            <stat name="pain:killer:practiced:hands:range" value="5" bonus="practiced hands" />
+            <stat name="pain:killer:practiced:hands:range" value="10" bonus="practiced hands" level="6" />
+            <stat name="pain:killer:practiced:hands:range" value="15" bonus="practiced hands" level="11" />
+        </rules>
+	</element>
+
+	<element name="Pain Breaker" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_PAIN_KILLER_PAIN_BREAKER">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PAIN_KILLER_PAIN_BREAKER</requirements>
+		<description>
+			<p>At 6th level, when you use Pain Killer on a creature, they also lose one condition of your choice and if they are making death saves they are immediately stabilized. You now gain Expertise in Medicine.</p>
+		</description>
+        <sheet>
+            <description>When you use Pain Killer on a creature, they lose one condition of your choice and if they are making death saves they are immediately stabilized.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_MEDICINE_DOUBLE" />
+        </rules>
+	</element>
+
+	<element name="Analgesic" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_PAIN_KILLER_ANALGESIC">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PAIN_KILLER_ANALGESIC</requirements>
+		<description>
+			<p>At 11th level, when a creature that you can see within 10 feet would take damage, as a reaction for 4 CE you can halve the damage.</p>
+		</description>
+        <sheet action="Reaction" usage="CE">
+			<description>When a creature that you can see within 10 feet would take damage, for 4 CE you can halve the damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Domain Expansion: Medical Clinic" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_PAIN_KILLER_DOMAIN_EXPANSION_MEDICAL_CLINIC">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PAIN_KILLER_DOMAIN_EXPANSION_MEDICAL_CLINIC</requirements>
+		<description>
+			<p>Finally at 18th level you have learned to expand your domain. At initiative 20, you and all creatures of your choice fall under the effects of Pain Killer. You can use Analgesic as a free action for no cursed energy without a reaction, but only once per damage instance.</p>
+		</description>
+        <sheet>
+			<description>At initiative 20, you and all creatures of your choice fall under the effects of Pain Killer. You can use Analgesic as a free action for no cursed energy without a reaction, but only once per damage instance.</description>
+		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION" />
+		</rules>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Pain Killer Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PAIN_KILLER_PAIN_KILLER" />
+	<element name="Practiced Hands Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PAIN_KILLER_PRACTICED_HANDS" />
+	<element name="Pain Breaker Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PAIN_KILLER_PAIN_BREAKER" />
+	<element name="Analgesic Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PAIN_KILLER_ANALGESIC" />
+	<element name="Domain Expansion: Medical Clinic Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PAIN_KILLER_DOMAIN_EXPANSION_MEDICAL_CLINIC" />
+</elements>
