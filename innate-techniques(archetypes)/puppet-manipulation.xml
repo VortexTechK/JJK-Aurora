@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.13">
+		<update version="6.0.14">
 			<file name="puppet-manipulation.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/puppet-manipulation.xml" />
 		</update>
 	</info>
@@ -145,7 +145,7 @@
                 </tr>
             </table>
             <ul class="unstyled">
-                <li><strong>Saving Throws</strong> Strength, Dexterity, Constitution</li>
+                <li><strong>Saving Throws</strong> Str +4, Dex +3, Con +3</li>
                 <li><strong>Condition Immunities</strong> charmed, poisoned</li>
             </ul>
 			<h4 style="margin-top:5px; margin-bottom:10px" />
