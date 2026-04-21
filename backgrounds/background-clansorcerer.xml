@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Clan Sorcerer</name>
+		<description>Clan Sorcerer Background</description>
+		<author url="https://docs.google.com/document/d/1eC8tEMHnupOuaX6At1X8JORz5iarNe6I-A7j2QzScrE/edit?tab=t.0">JJK</author>
+		<update version="6.0.0">
+			<file name="background-clansorcerer.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/backgrounds/background-clansorcerer.xml" />
+		</update>
+	</info>
+
+	<element name="Clan Sorcerer" type="Background" source="JJK" id="ID_BACKGROUND_CLAN_SORCERER">
+		<description>
+			<p>You have spent your life as a sorcerer being part of a clan. You are well-versed in manipulating Cursed Energy, and you also possess great mastery over your innate technique. You are not necessarily well-treated or even particularly well-liked within your clan.</p>
+			<ul class="unstyled">
+                <li><strong>Feat:</strong> Pick one Innate Technique feat</li>
+				<li><strong>Skill Proficiencies:</strong> Insight, History</li>
+				<li><strong>Equipment:</strong> A clan symbol (a gift to you as part of your clan), a technique manual, formal clothing, a set of common clothes, and a wallet containing $1,500.</li>
+			</ul>
+			<div element="ID_BACKGROUND_FEATURE_SHELTER_OF_THE_FAITHFUL" />
+			<h5>SUGGESTED CHARACTERISTICS</h5>
+			<p>Acolytes are shaped by their experience in temples or other religious communities. Their study of the history and tenets of their faith and their relationships to temples, shrines, or hierarchies affect their mannerisms and ideals. Their flaws might be some hidden hypocrisy or heretical idea, or an ideal or bond taken to an extreme.</p>
+		</description>
+		<setters>
+			<set name="short">Insight, History</set>
+		</setters>
+		<rules>
+            <select type="Feat" name="Clan Sorcerer Feat" supports="Innate Technique Feats" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
+			<grant type="Background Feature" id="ID_BACKGROUND_FEATURE_FAMILY_TIES" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+		</rules>
+    </element>
+	
+	<element name="Feature: Family Ties" type="Background Feature" source="JJK" id="ID_BACKGROUND_FEATURE_FAMILY_TIES">
+		<supports>Background Feature</supports>
+		<description>
+			<p>As a Clan Sorcerer, you command the respect of those in Sorcery, and you are an effective sorcerer. You and your companions can expect to receive help from people who like your family.</p>
+		</description>
+		<sheet alt="Family Ties" />
+	</element>
+</elements>
