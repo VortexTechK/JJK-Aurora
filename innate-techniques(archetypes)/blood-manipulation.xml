@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.0">
+		<update version="6.0.1">
 			<file name="blood-manipulation.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/blood-manipulation.xml" />
 		</update>
 	</info>
@@ -37,8 +37,7 @@
             <p class="indent">Once as part of a long rest, you can spend $100/1 Gold and hit points up to your proficiency bonus to fill a Blood Bag with your own blood. This Blood Bag counts as a source of hit points for your Blood Manipulation features. A Blood Bag lasts 5 days outside of refrigeration before it goes bad. You can have a number of Blood Bags equal to your Constitution modifier at once.</p>
         </description>
 		<sheet action="Action" usage="CE">
-			<description>For 1 cursed energy and 1 HP, you can create a small construct smaller than a 5ft by 5ft space. For every 5 ft the price increases by 1 CE and HP. You can ignore the HP cost if you have an alternate source of blood. These constructs have HP equal to your level times CE spent.</description>
-            <description>Once as part of a long rest, you can spend $100/1 Gold and up to {{proficiency}} hit points to fill a Blood Bag with your own blood. This Blood Bag counts as a source of hit points for your Blood Manipulation features. A Blood Bag lasts 5 days outside of refrigeration before it goes bad. You can have {{constitution:modifier}} Blood Bags at once.</description>
+			<description>For 1 CE and 1 HP, you can create a small construct smaller than a 5ft by 5ft space. For every 5 ft the price increases by 1 CE and HP. You can ignore the HP cost if you have an alternate source of blood. These constructs have HP equal to your level times CE spent. Once as part of a long rest, you can spend $100/1 Gold and up to {{proficiency}} hit points to fill a Blood Bag with your own blood. This Blood Bag counts as a source of hit points for your Blood Manipulation features. A Blood Bag lasts 5 days outside of refrigeration before it goes bad. You can have {{constitution:modifier}} Blood Bags at once.</description>
         </sheet>
 	</element>
 	
@@ -78,7 +77,7 @@
             </ul>
         </description>
 		<sheet action="Bonus Action" usage="CE">
-      		<description>For 3 cursed energy, for the following minute your speed is doubled, you gain a +2 bonus to your AC, you have advantage on Dexterity saving throws and Strength checks, and you gain an additional action on each of your turns. That action can be used only to take the Attack (one weapon attack only), Dash, Disengage, Hide, or Use an Object action.</description>
+      		<description>For 3 CE, for the following minute your speed is doubled, you gain a +2 bonus to your AC, you have advantage on Dexterity saving throws and Strength checks, and you gain an additional action on each of your turns. That action can be used only to take the Attack (one weapon attack only), Dash, Disengage, Hide, or Use an Object action.</description>
 		</sheet>
 	</element>
 	
@@ -106,7 +105,7 @@
             <p class="indent">If used with Convergence, you can continue shooting the beam for an additional round. Any creature that enters the lingering Piercing Blood must make the saving throw. As an action you can swing the line, making it into a 130 feet cone forcing an additional Dexterity save and the technique ends.</p>
         </description>
 		<sheet action="Action" usage="CE">
-			<description>For 8 cursed energy and 5 hit points, you unleash a 100ft line of blood. Creatures in range must make a Dexterity save taking 10d8 piercing on a failure. If used with Convergence, you can continue shooting the beam for an additional round. Any creature that enters the lingering Piercing Blood must make the saving throw. As an action you can swing the line, making it into a 130 feet cone forcing an additional Dexterity save and the technique ends.</description>
+			<description>For 8 CE and 5 hit points, you unleash a 100ft line of blood. Creatures in range must make a Dexterity save taking 10d8 piercing on a failure. If used with Convergence, you can continue shooting the beam for an additional round. Any creature that enters the lingering Piercing Blood must make the saving throw. As an action you can swing the line, making it into a 130 feet cone forcing an additional Dexterity save and the technique ends.</description>
 		</sheet>
 	</element>
 	
@@ -116,9 +115,7 @@
 			<p>When you reach 18th level, you gain your domain expansion.  At Initiative 20, all creatures take 4d12 necrotic damage as their blood attacks them from the inside. While in the domain your blood manipulation techniques use hit points from other creatures within the domain.</p>
 		</description>
 		<sheet>
-			<description>
-				<p>At Initiative 20, all creatures take 4d12 necrotic damage. While in the domain your blood manipulation techniques use hit points from other creatures within the domain.</p>
-			</description>
+			<description>At Initiative 20, all creatures take 4d12 necrotic damage. While in the domain your blood manipulation techniques use hit points from other creatures within the domain.</description>
 		</sheet>
 		<rules>
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION" />
@@ -132,7 +129,7 @@
 			<p>As an action for 1 CE and 1 HP, you unleash a red blood net, forcing a target Large or smaller within 30ft to make a Strength saving throw or be restrained. They can repeat the save at the start of their turn.</p>
 		</description>
 		<sheet action="Action" usage="CE">
-			<description>For 1 cursed energy and 1 HP, you unleash a red blood net, forcing a target Large or smaller within 30ft to make a Strength saving throw or be restrained. They can repeat the save at the start of their turn.</description>
+			<description>For 1 CE and 1 HP, you unleash a red blood net, forcing a target Large or smaller within 30ft to make a Strength saving throw or be restrained. They can repeat the save at the start of their turn.</description>
 		</sheet>
 	</element>
 	
@@ -142,7 +139,7 @@
 			<p>As an action for 1 CE and 1 HP you spin a ring of blood and unleash it as a projectile. Make a ranged CE attack against a target within 60 ft, on a hit you deal 1d10 + CE modifier necrotic Damage. If used with Convergence, the attack still deals your CE modifier on a miss of 5 or less.</p>
 		</description>
 		<sheet action="Action" usage="CE">
-			<description>For 1 cursed energy and 1 HP, you spin a ring of blood and unleash it as a projectile. Make a ranged CE attack against a target within 60 ft, on a hit you deal 1d10 + {{ce:modifier}} necrotic Damage. If used with Convergence, the attack still deals your {{ce:modifier}} on a miss of 5 or less.</description>
+			<description>For 1 CE and 1 HP, you spin a ring of blood and unleash it as a projectile. Make a ranged CE attack against a target within 60 ft, on a hit you deal 1d10 + {{ce:modifier}} necrotic Damage. If used with Convergence, the attack still deals your {{ce:modifier}} on a miss of 5 or less.</description>
 		</sheet>
 	</element>
 	
@@ -152,7 +149,7 @@
 			<p>You can spend CE up to your Cursed Energy modifier to create a melee weapon as a free action which counts as magical for overcoming resistances. For every two Cursed Energy used the weapon gains an additional damage tier(d10-d12-2d8) and lasts 1 minute. If used with Convergence, the damage tier increases by one again.</p>
 		</description>
 		<sheet usage="CE">
-			<description>Spend up to {{ce:modifier}} cursed energy to create a melee weapon as a free action which counts as magical for overcoming resistances. For every two cursed energy used the weapon gains an additional damage tier and lasts 1 minute. If used with Convergence, the damage tier increases by one again.</description>
+			<description>Spend up to {{ce:modifier}} CE to create a melee weapon as a free action which counts as magical for overcoming resistances. For every two CE used the weapon gains an additional damage tier and lasts 1 minute. If used with Convergence, the damage tier increases by one again.</description>
 		</sheet>
 	</element>
 	
@@ -162,7 +159,7 @@
             <p>As an action for 3 CE and 2 HP, you pick an area within 60 ft, that spot becomes the center of a 15 ft radius of a rain of blood spikes. All creatures in that radius must make a Dexterity Saving throw taking 3d10 piercing damage on failure or half as much on a success. If used with Convergence, a target is also knocked prone on a failed save.</p>
         </description>
         <sheet action="Action" usage="CE">
-            <description>For 3 cursed energy and 2 HP, you pick an area within 60 ft. That spot becomes the center of a 15 ft radius of a rain of blood spikes. All creatures in that radius must make a Dexterity Saving throw taking 3d10 piercing damage on failure or half as much on a success. If used with Convergence, a target is also knocked prone on a failed save.</description>
+            <description>For 3 CE and 2 HP, you pick an area within 60 ft. That spot becomes the center of a 15 ft radius of a rain of blood spikes. All creatures in that radius must make a Dexterity Saving throw taking 3d10 piercing damage on failure or half as much on a success. If used with Convergence, a target is also knocked prone on a failed save.</description>
         </sheet>
     </element>
 	
@@ -172,7 +169,7 @@
             <p>For 1 CE and 1 HP upon hitting with a weapon attack once per turn, you cover your strike with blood, causing it to explode on impact. The creature must make a Dexterity saving throw. On a failure they take 4d6 necrotic damage.</p>
         </description>
         <sheet usage="CE">
-            <description>For 1 cursed energy and 1 HP, upon hitting with a weapon attack once per turn, you cover your strike with blood, causing it to explode on impact. The creature must make a Dexterity saving throw. On a failure they take 4d6 necrotic damage.</description>
+            <description>For 1 CE and 1 HP, upon hitting with a weapon attack once per turn, you cover your strike with blood, causing it to explode on impact. The creature must make a Dexterity saving throw. On a failure they take 4d6 necrotic damage.</description>
         </sheet>
     </element>
 	
@@ -182,7 +179,7 @@
             <p>As an action for 1 CE and 3 HP you create a solid crystal of blood launched like an asteroid. You can make a ranged CE attack against a target in 30 ft. On a hit, this attack deals 4d4 + CE modifier in bludgeoning damage.</p>
         </description>
         <sheet action="Action" usage="CE">
-            <description>For 1 cursed energy and 3 HP, you create a solid crystal of blood launched like an asteroid. You can make a ranged CE attack against a target in 30 ft. On a hit, this attack deals 4d4 + {{ce:modifier}} in bludgeoning damage.</description>
+            <description>For 1 CE and 3 HP, make a ranged CE attack against a target in 30 ft. On a hit, this attack deals 4d4 + {{ce:modifier}} in bludgeoning damage.</description>
         </sheet>
     </element>
 	
@@ -192,7 +189,7 @@
             <p>As an action for 3 CE and 3 HP, you can choose a 5 feet space within 10 ft of yourself and saturate it with blood. When a creature starts their turn there or enters that area, all creatures within 5 feet must make a Dexterity saving throw or take 5d10 bludgeoning damage and get launched 30ft in the air or half as much on a success.</p>
         </description>
         <sheet action="Action" usage="CE">
-            <description>For 3 cursed energy and 3 HP, you can choose a 5 feet space within 10 ft of yourself and saturate it with blood. When a creature starts their turn there or enters that area, all creatures within 5 feet must make a Dexterity saving throw or take 5d10 bludgeoning damage and get launched 30ft in the air or half as much on a success.</description>
+            <description>For 3 CE and 3 HP, you can choose a 5 feet space within 10 ft of yourself and saturate it with blood. When a creature starts their turn there or enters that area, all creatures within 5 feet must make a Dexterity saving throw or take 5d10 bludgeoning damage and get launched 30ft in the air or half as much on a success.</description>
         </sheet>
     </element>
 	
