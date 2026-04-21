@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.6">
+		<update version="6.0.7">
 			<file name="puppet-manipulation.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/puppet-manipulation.xml" />
 		</update>
 	</info>
@@ -126,7 +126,7 @@
 		</rules>-->
 	</element>
 
-    <!-- Companion Reference
+    <!-- Companion Reference -->
     <element name="Puppet" type="Information" source="JJK" id="ID_JJK_INFORMATION_PUPPET">
         <description>
             <p style="margin-bottom:-5px"><em>Medium construct</em></p>
@@ -157,7 +157,7 @@
                 <li><em><strong>Unarmed Strike.</strong> Melee Weapon Attack:</em> your proficiency bonus + Strength modifier to hit, reach 5 ft., one target. Hit: 1d6 + Strength modifier bludgeoning damage.</li>
             </ul>
         </description>
-    </element> -->
+    </element>
 
     <!-- Companion
     <element name="Puppet" type="Companion" source="JJK" id="ID_JJK_COMPANION_PUPPET">
