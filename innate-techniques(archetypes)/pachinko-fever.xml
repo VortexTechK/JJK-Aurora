@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.0">
+		<update version="6.0.1">
 			<file name="pachinko-fever.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/pachinko-fever.xml" />
 		</update>
 	</info>
 
-	<element name="ARCHETYPE NAME" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_PACHINKO_FEVER">
+	<element name="Pachinko Fever" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_PACHINKO_FEVER">
 		<supports>Innate Technique</supports>
 		<description>
 			<p>LETS GO GAMBLING!</p>
