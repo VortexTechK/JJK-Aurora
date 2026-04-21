@@ -173,7 +173,7 @@
 			<description>At initiative 20, creatures within your domain suffer twice your Transfiguration touch damage.</description>
 		</sheet>
 		<rules>
-			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION">
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION"/>
 		</rules>
 	</element>
 
