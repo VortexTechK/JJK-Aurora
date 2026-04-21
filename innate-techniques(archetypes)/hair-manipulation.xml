@@ -134,7 +134,7 @@
 			<description>Creatures other than you take 2d10 slashing damage for every 5 ft they move. Your domain counts as difficult terrain for creatures other than you.</description>
 		</sheet>
 		<rules>
-			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION">
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION"/>
 		</rules>
 	</element>
 
