@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.11">
+		<update version="6.0.12">
 			<file name="puppet-manipulation.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/puppet-manipulation.xml" />
 		</update>
 	</info>
@@ -175,28 +175,27 @@
             <set name="type">Construct</set>
             <set name="size">Medium</set>
             <set name="challenge">0</set>
+			<set name="actions">ID_JJK_COMPANION_ACTION_PUPPET_STRIKE</set>
         </setters>
         <rules>
             <stat name="companion:ac" value="10" bonus="base" />
-            <stat name="companion:ac" value="companion:dexterity:modifier" />
             <stat name="companion:hp:max" value="10" bonus="base" />
-            <stat name="companion:hp:max" value="level" />
             <stat name="companion:speed" value="30" bonus="base" />
             <stat name="companion:proficiency" value="proficiency" bonus="base" />
-            <stat name="companion:strength:save:proficiency" value="companion:proficiency" />
-            <stat name="companion:dexterity:save:proficiency" value="companion:proficiency" />
-            <stat name="companion:constitution:save:proficiency" value="companion:proficiency" />
+            <stat name="companion:strength:save:proficiency" value="companion:proficiency" bonus="base" />
+            <stat name="companion:dexterity:save:proficiency" value="companion:proficiency" bonus="base" />
+            <stat name="companion:constitution:save:proficiency" value="companion:proficiency" bonus="base" />
         </rules>
     </element>
 
-    <!--<element name="Unarmed Strike" type="Companion Action" source="JJK" id="ID_JJK_COMPANION_ACTION_PUPPET_STRIKE">
+    <element name="Unarmed Strike" type="Companion Action" source="JJK" id="ID_JJK_COMPANION_ACTION_PUPPET_STRIKE">
         <description>
             <p>Melee Weapon Attack: your proficiency bonus + Strength modifier to hit, reach 5 ft., one target. Hit: 1d6 + Strength modifier bludgeoning damage.</p>
         </description>
         <sheet>
             <description>Melee Weapon Attack: your proficiency bonus + Strength modifier to hit, reach 5 ft., one target. Hit: 1d6 + Strength modifier bludgeoning damage.</description>
         </sheet>
-    </element>-->
+    </element>
 
 	<!--Feature Replacement Grants-->
 	<element name="Ultimate Mechamaru Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PUPPET_MANIPULATION_ULTIMATE_MECHAMARU" />
