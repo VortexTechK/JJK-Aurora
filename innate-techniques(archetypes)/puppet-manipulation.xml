@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.1">
+		<update version="6.0.2">
 			<file name="puppet-manipulation.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/puppet-manipulation.xml" />
 		</update>
 	</info>
@@ -166,12 +166,12 @@
             <set name="strength">15</set>
             <set name="dexterity">13</set>
             <set name="constitution">14</set>
-            <set name="intelligence">intelligence</set>
-            <set name="wisdom">wisdom</set>
-            <set name="charisma">charisma</set>
+            <set name="intelligence">10</set>
+            <set name="wisdom">10</set>
+            <set name="charisma">10</set>
             <set name="ac">10 + Dex</set>
-            <set name="hp">Material die x level</set>
-            <set name="speed">30 ft.</set>
+            <set name="hp">Die x level</set> 
+			<set name="speed">30 ft.</set>
             <set name="conditionImmunities">charmed, poisoned</set>
             <set name="type">Construct</set>
             <set name="size">Medium</set>
@@ -180,9 +180,9 @@
         </setters>
         <rules>
             <stat name="companion:ac" value="10" bonus="base" />
-            <stat name="companion:ac" value="dexterity:modifier" />
-            <stat name="companion:hp" value="1" />
-            <stat name="companion:speed" value="30" bonus="base" />
+            <stat name="companion:ac" value="companion:dexterity:modifier" />
+            <stat name="companion:hp:max" value="level" /> 
+			<stat name="companion:speed" value="30" bonus="base" />
             <stat name="companion:proficiency" value="proficiency" bonus="base" />
             <stat name="companion:strength:save:proficiency" value="companion:proficiency" />
             <stat name="companion:dexterity:save:proficiency" value="companion:proficiency" />
