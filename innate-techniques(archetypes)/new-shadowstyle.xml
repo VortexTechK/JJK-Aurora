@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.0">
+		<update version="6.0.1">
 			<file name="new-shadowstyle.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/new-shadowstyle.xml" />
 		</update>
 	</info>
@@ -39,7 +39,7 @@
             </ul>
 		</description>
 		<sheet>
-			<description>You can activate Simple Domain {{proficiency}} times per long rest and as a bonus action. Its area can be up to 15 ft.</description>
+			<description>You can activate Simple Domain {{proficiency}} times per long rest for free and as a bonus action. Its area can be up to 15 ft.</description>
 		</sheet>
 		<rules>
 			<grant type="Feat" id="ID_JJK_FEAT_SIMPLE_DOMAIN" />
