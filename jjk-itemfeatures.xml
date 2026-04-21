@@ -4,7 +4,7 @@
 		<name>Item Features</name>
 		<description>The Item Features from JJK</description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
-		<update version="6.0.0">
+		<update version="6.0.1">
 			<file name="jjk-itemfeatures.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/jjk-itemfeatures.xml" />
 		</update>
 	</info>
@@ -161,7 +161,7 @@
 				<div element="ID_JJK_CLASS_FEATURE_REVERSE_CURSE_TECHNIQUE" />
 			</div>
 		</description>
-		<setters>set
+		<setters>
 			<set name="category">JJK Extra Features</set>
 			<set name="slot">misc</set>
 			<set name="inventory-hidden">true</set>
