@@ -4,7 +4,7 @@
 		<name>JJK</name>
 		<description>JJK Homebrew.</description>
 		<author url="https://docs.google.com/document/d/1eC8tEMHnupOuaX6At1X8JORz5iarNe6I-A7j2QzScrE/edit?tab=t.0">JJK</author>
-		<update version="6.0.4">
+		<update version="6.0.5">
 			<file name="jjk.index" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/jjk.index" />
 		</update>
 	</info>
@@ -73,7 +73,6 @@
 		<file name="paralyzing-gaze.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/paralyzing-gaze.xml" />				
 		<file name="prayer-song.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/prayer-song.xml" />				
 		<file name="projection-sorcery.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/projection-sorcery.xml" />				
-		<file name="puppet-manipulation.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/puppet-manipulation.xml" />				
 		<file name="ratio.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/ratio.xml" />				
 		<file name="rockstar.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/rockstar.xml" />				
 		<file name="rot.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/rot.xml" />						
