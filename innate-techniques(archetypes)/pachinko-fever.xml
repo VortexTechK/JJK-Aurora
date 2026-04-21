@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.1">
+		<update version="6.0.2">
 			<file name="pachinko-fever.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/pachinko-fever.xml" />
 		</update>
 	</info>
@@ -65,7 +65,7 @@
             <h5 class="caption">MULTIPLIER</h5>
                 <table>
                     <thead>
-                        <tr><td>Numbers Rolled</td><td>column2</td></tr>
+                        <tr><td>Numbers Rolled</td><td>Multiplier</td></tr>
                     </thead>
                     <tr><td>1-12</td><td>3</td></tr>
                     <tr><td>13-15</td><td>4</td></tr>
