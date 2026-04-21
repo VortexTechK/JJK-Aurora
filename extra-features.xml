@@ -4,7 +4,7 @@
 		<name>Extra Features</name>
 		<description>The Extra Features from JJK</description>
 		<author url="https://docs.google.com/document/d/1eC8tEMHnupOuaX6At1X8JORz5iarNe6I-A7j2QzScrE/edit?tab=t.0">JJK</author>
-		<update version="6.0.6">
+		<update version="6.0.7">
 			<file name="extra-features.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/extra-features.xml" />
 		</update>
 	</info>
@@ -184,16 +184,16 @@
 			<description>For 20 cursed energy, trap all creatures of your choice in a 175-foot circle centered on you, creating a barrier for 1 minute. All creatures outside your domain take {{ce:modifier}}d6 bludgeoning damage and are pushed to the edge of the barrier. They received an additional 1d4 bludgeoning damage per object they collide with as the domain pushes them. If they are against a wall, they must start holding their breath until the domain is closed or shrunk. Your barrier has {{domain:expansion:hp}} hit points and is vulnerable to damage from the outside and resistant to damage from the inside.</description>
 		</sheet>
 		<rules>
-			<stat name="domain:expansion:hp" value="ce:modifier">
-			<stat name="domain:expansion:hp" value="ce:modifier">
-			<stat name="domain:expansion:hp" value="ce:modifier">
-			<stat name="domain:expansion:hp" value="ce:modifier">
-			<stat name="domain:expansion:hp" value="ce:modifier">
-			<stat name="domain:expansion:hp" value="ce:modifier">
-			<stat name="domain:expansion:hp" value="ce:modifier">
-			<stat name="domain:expansion:hp" value="ce:modifier">
-			<stat name="domain:expansion:hp" value="ce:modifier">
-			<stat name="domain:expansion:hp" value="ce:modifier">
+			<stat name="domain:expansion:hp" value="ce:modifier" />
+			<stat name="domain:expansion:hp" value="ce:modifier" />
+			<stat name="domain:expansion:hp" value="ce:modifier" />
+			<stat name="domain:expansion:hp" value="ce:modifier" />
+			<stat name="domain:expansion:hp" value="ce:modifier" />
+			<stat name="domain:expansion:hp" value="ce:modifier" />
+			<stat name="domain:expansion:hp" value="ce:modifier" />
+			<stat name="domain:expansion:hp" value="ce:modifier" />
+			<stat name="domain:expansion:hp" value="ce:modifier" />
+			<stat name="domain:expansion:hp" value="ce:modifier" />
 		</rules>
 	</element>
 	
