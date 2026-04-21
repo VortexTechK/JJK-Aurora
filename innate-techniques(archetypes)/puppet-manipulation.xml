@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.14">
+		<update version="6.0.15">
 			<file name="puppet-manipulation.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/puppet-manipulation.xml" />
 		</update>
 	</info>
@@ -78,7 +78,7 @@
 		</sheet>
         <rules>
             <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" />
-			<select type="Companion" name="Puppet" supports="ID_JJK_COMPANION_PUPPET" />
+			<select type="Companion" name="Puppet" supports="Puppet" />
         </rules>
 	</element>
 
@@ -161,6 +161,7 @@
 
     <!-- Companion -->
    	<element name="Puppet" type="Companion" source="JJK" id="ID_JJK_COMPANION_PUPPET">
+		<supports>Puppet</supports>
         <setters>
             <set name="strength">15</set>
             <set name="dexterity">13</set>
