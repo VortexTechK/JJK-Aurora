@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.7">
+		<update version="6.0.8">
 			<file name="puppet-manipulation.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/puppet-manipulation.xml" />
 		</update>
 	</info>
@@ -121,9 +121,9 @@
         <sheet>
 			<description>At initiative 20, all creatures take an action of your choice that does not cost cursed energy.</description>
 		</sheet>
-		<!--<rules>
+		<rules>
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION" />
-		</rules>-->
+		</rules>
 	</element>
 
     <!-- Companion Reference -->
