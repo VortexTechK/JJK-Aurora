@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.12">
+		<update version="6.0.13">
 			<file name="puppet-manipulation.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/puppet-manipulation.xml" />
 		</update>
 	</info>
@@ -165,15 +165,18 @@
             <set name="strength">15</set>
             <set name="dexterity">13</set>
             <set name="constitution">14</set>
-            <set name="intelligence">Yours</set>
-            <set name="wisdom">Yours</set>
-            <set name="charisma">Yours</set>
-            <set name="ac">10 + DEX</set>
-            <set name="hp">Dice x Level</set>
+            <set name="intelligence">1</set>
+            <set name="wisdom">1</set>
+            <set name="charisma">1</set>
+            <set name="ac">10 + dexterity modifier</set>
+            <set name="hp">dice x level</set>
             <set name="speed">30 ft.</set>
+			<set name="saves">Str +4, Dex +3, Con +3</set>
+			<set name="languages">-</set>
             <set name="conditionImmunities">charmed, poisoned</set>
             <set name="type">Construct</set>
             <set name="size">Medium</set>
+			<set name="alignment">unaligned</set>
             <set name="challenge">0</set>
 			<set name="actions">ID_JJK_COMPANION_ACTION_PUPPET_STRIKE</set>
         </setters>
