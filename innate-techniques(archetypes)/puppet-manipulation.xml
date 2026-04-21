@@ -165,11 +165,11 @@
             <set name="strength">15</set>
             <set name="dexterity">13</set>
             <set name="constitution">14</set>
-            <set name="intelligence">10</set>
-            <set name="wisdom">10</set>
-            <set name="charisma">10</set>
-            <set name="ac">10</set>
-            <set name="hp">10</set>
+            <set name="intelligence">Yours</set>
+            <set name="wisdom">Yours</set>
+            <set name="charisma">Yours</set>
+            <set name="ac">10 + DEX</set>
+            <set name="hp">Dice x Level</set>
             <set name="speed">30 ft.</set>
             <set name="conditionImmunities">charmed, poisoned</set>
             <set name="type">Construct</set>
@@ -178,8 +178,8 @@
 			<set name="actions">ID_JJK_COMPANION_ACTION_PUPPET_STRIKE</set>
         </setters>
         <rules>
-            <stat name="companion:ac" value="10" bonus="base" />
-            <stat name="companion:hp:max" value="10" bonus="base" />
+            <stat name="companion:ac" value="11" bonus="base" />
+            <stat name="companion:hp:max" value="1" bonus="base" />
             <stat name="companion:speed" value="30" bonus="base" />
             <stat name="companion:proficiency" value="proficiency" bonus="base" />
             <stat name="companion:strength:save:proficiency" value="companion:proficiency" bonus="base" />
