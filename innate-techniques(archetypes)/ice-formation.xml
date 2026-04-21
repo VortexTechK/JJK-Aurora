@@ -91,7 +91,7 @@
 			<description>Every creature except you takes 10d8 cold damage and is restrained at the end of their turn. A creature can make a Strength (Athletics) check at the beginning of their turn to break out.</description>
 		</sheet>
 		<rules>
-			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION">
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION"/>
 		</rules>
 	</element>
 
