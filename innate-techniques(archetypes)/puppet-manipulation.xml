@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.8">
+		<update version="6.0.9">
 			<file name="puppet-manipulation.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/puppet-manipulation.xml" />
 		</update>
 	</info>
@@ -78,7 +78,7 @@
 		</sheet>
         <rules>
             <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" />
-            <select type="Companion" name="Puppet" supports="Puppet" />
+            <select type="Companion" name="Puppet" supports="ID_JJK_COMPANION_PUPPET" />
         </rules>
 	</element>
 
@@ -159,9 +159,8 @@
         </description>
     </element>
 
-    <!-- Companion
-    <element name="Puppet" type="Companion" source="JJK" id="ID_JJK_COMPANION_PUPPET">
-        <supports>Puppet</supports>
+    <!-- Companion -->
+   	<element name="Puppet" type="Companion" source="JJK" id="ID_JJK_COMPANION_PUPPET">
         <setters>
             <set name="strength">15</set>
             <set name="dexterity">13</set>
@@ -170,8 +169,8 @@
             <set name="wisdom">10</set>
             <set name="charisma">10</set>
             <set name="ac">10</set>
-            <set name="hp">1</set> 
-			<set name="speed">30 ft.</set>
+            <set name="hp">10</set>
+            <set name="speed">30 ft.</set>
             <set name="conditionImmunities">charmed, poisoned</set>
             <set name="type">Construct</set>
             <set name="size">Medium</set>
@@ -181,8 +180,9 @@
         <rules>
             <stat name="companion:ac" value="10" bonus="base" />
             <stat name="companion:ac" value="companion:dexterity:modifier" />
-            <stat name="companion:hp:max" value="level" /> 
-			<stat name="companion:speed" value="30" bonus="base" />
+            <stat name="companion:hp:max" value="10" bonus="base" />
+            <stat name="companion:hp:max" value="level" />
+            <stat name="companion:speed" value="30" bonus="base" />
             <stat name="companion:proficiency" value="proficiency" bonus="base" />
             <stat name="companion:strength:save:proficiency" value="companion:proficiency" />
             <stat name="companion:dexterity:save:proficiency" value="companion:proficiency" />
@@ -197,7 +197,7 @@
         <sheet>
             <description>Melee Weapon Attack: your proficiency bonus + Strength modifier to hit, reach 5 ft., one target. Hit: 1d6 + Strength modifier bludgeoning damage.</description>
         </sheet>
-    </element> -->
+    </element>
 
 	<!--Feature Replacement Grants-->
 	<element name="Ultimate Mechamaru Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PUPPET_MANIPULATION_ULTIMATE_MECHAMARU" />
