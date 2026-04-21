@@ -132,7 +132,7 @@
 			<description>At initiative 20, you can force all creatures to fall under an illusion of your choice. Additionally, you can use your reaction to trick a creature that attacks you to target a random creature within range. They must roll a dice to see who is targeted with the dice depending on the number of creatures within range. On a 1, you are still targeted. On a higher roll, a different creature is targeted. If there are no other creatures in range, roll a d2. On a 2, the attack targets a random direction, missing you completely.</description>
 		</sheet>
 		<rules>
-			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION">
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION"/>
 		</rules>
 	</element>
 
