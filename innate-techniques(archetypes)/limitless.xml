@@ -88,7 +88,7 @@
 			<description>At initiative 20, every creature within your domain that is not touching you must make an Intelligence saving throw. On a failure, they take 12d8 psychic damage, their Intelligence, Wisdom, and Charisma scores become 1 and they are unable to cast spells, attack, use magic items, understand language, or communicate in any intelligible way, and fall unconscious for 1 minute. At the end of every minute, the creature can repeat this saving throw, ending these effects on a success. This effect can also be ended by Greater Restoration or Wish.</description>
 		</sheet>
 		<rules>
-			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION">
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION"/>
 		</rules>
 	</element>
 
