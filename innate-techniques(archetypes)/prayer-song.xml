@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="6.0.0">
+			<file name="prayer-song.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/prayer-song.xml" />
+		</update>
+	</info>
+
+	<element name="Prayer Song" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_PRAYER_SONG">
+		<supports>Innate Technique</supports>
+		<description>
+			<p>Through dance and the beat engraved in your body, you gain the ability to buff yourself and debuff your opponent even without a domain.</p>
+			<div element="ID_JJK_ARCHETYPE_FEATURE_PRAYER_SONG_PRAYER" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_PRAYER_SONG_MARCADO" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_PRAYER_SONG_CAESURA" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_PRAYER_SONG_CRESCENDO" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_PRAYER_SONG_DOMAIN_EXPANSION_DANCE_DANCE_REVOLUTION" />
+		</description>
+		<sheet display="false">
+			<description>Through dance and the beat engraved in your body, you gain the ability to buff yourself and debuff your opponent even without a domain.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_PRAYER_SONG_PRAYER" level="1" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_PRAYER_SONG_MARCADO" level="3" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_PRAYER_SONG_CAESURA" level="6" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_PRAYER_SONG_CRESCENDO" level="11" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_PRAYER_SONG_DOMAIN_EXPANSION_DANCE_DANCE_REVOLUTION" level="18" />
+		</rules>
+	</element>
+
+	<element name="Prayer" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_PRAYER_SONG_PRAYER">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PRAYER_SONG_PRAYER</requirements>
+		<description>
+			<p>Starting at 1st level, as a bonus action for 1 Cursed Energy you can start catching the beat of a fight. The effects depend on how long it has been active and end if you are stunned, paralyzed, grappled, restrained, or knocked prone.</p>
+            <h5 class="caption">PRAYER BENEFITS</h5>
+                <table>
+                    <thead>
+                        <tr><td>Turns Active</td><td>Effect</td></tr>
+                    </thead>
+                    <tr><td>1</td><td>Your AC and Dex Saves increase by +2</td></tr>
+                    <tr><td>2</td><td>Your Enemies AC decreases by -2</td></tr>
+                    <tr><td>3</td><td>You can add your Cursed Energy modifier to your attack rolls</td></tr>
+                    <tr><td>4</td><td>Your opponent has disadvantage on attacks and you have advantage on saving throws</td></tr>
+                    <tr><td>5</td><td>Your attacks deal additional damage equal to your proficiency</td></tr>
+                </table>
+		</description>
+		<sheet action="Bonus Action" usage="CE">
+			<description>For 1 CE gain effects based on turns this has been active. Prayer ends if you are stunned, paralyzed, grappled, restrained, or knocked prone. After 1 turn, gain +2 to AC and Dex Saves. After 2 turns, your enemies' AC decrease by 2. After 3 turns, add +{{ce:modifier}} to attack rolls. After 4 turns, opponents have disadvantage on attacks and you have advantage on saving throws. After 5 turns, your attacks do +{{proficiency}} damage.</description>
+            <description level="11" alt="Prayer(Crescendo)">For 1 CE gain effects based on turns this has been active. Prayer ends if you are stunned, paralyzed, grappled, restrained, or knocked prone. After 1 turn, gain +3 to AC and Dex Saves. After 2 turns, your enemies' AC decrease by 3. After 3 turns, add +{{ce:modifier}} to attack and damage rolls. After 4 turns, opponents have disadvantage on attacks and you have advantage on saving throws. After 5 turns, your attacks do +{{proficiency}} damage. After 6 turns, opponents do {{proficiency}} less damage. After 7 turns, you gain an extra attack when you take the attack action. After 8 turns, your enemies' AC decrease further by 2 and have -5 to saves. After 9 turns, critical range increase by 2. After 10 turns, opponents can only take an action, bonus action, or movement on their turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Marcado" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_PRAYER_SONG_MARCADO">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PRAYER_SONG_MARCADO</requirements>
+		<description>
+			<p>At 3rd level, you give certain blows more of a kick. Once per turn for 1 CE, you deal 2 additional damage dice on an attack.</p>
+		</description>
+		<sheet usage="CE">
+			<description>Once per turn for 1 CE, deal 2 additional damage dice on an attack.</description>
+		</sheet>
+	</element>
+
+	<element name="Caesura" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_PRAYER_SONG_CAESURA">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PRAYER_SONG_CAESURA</requirements>
+		<description>
+			<p>Beginning at 6th level, you learn to make openings and stop your enemy's tempo. As a reaction while dancing, you force a creature you see to reroll an attack roll, damage roll, or saving throw.</p>
+		</description>
+        <sheet action="Reaction">
+            <description>While Prayer is active, force a creature you see to reroll an attack roll, damage roll, or saving throw.</description>
+        </sheet>
+	</element>
+
+	<element name="Crescendo" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_PRAYER_SONG_CRESCENDO">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PRAYER_SONG_CRESCENDO</requirements>
+		<description>
+			<p>Starting at 11th level, your abilities improve and find new heights. Only you gain these benefits against a creature you are fighting.</p>
+             <h5 class="caption">CRESCENDO IMPROVED BENEFITS</h5>
+                <table>
+                    <thead>
+                        <tr><td>Turns Active</td><td>Effect</td></tr>
+                    </thead>
+                    <tr><td>1</td><td>Your AC and Dex Saves increase by +3</td></tr>
+                    <tr><td>2</td><td>Your Enemies AC decreases by -3</td></tr>
+                    <tr><td>3</td><td>You can add your Cursed Energy modifier to your attack and damage rolls</td></tr>
+                    <tr><td>4</td><td>Your opponent has disadvantage on attacks and you have advantage on saving throws</td></tr>
+                    <tr><td>5</td><td>Your attacks deal additional damage equal to your proficiency</td></tr>
+                    <tr><td>6</td><td>Your opponent has their damage decreased by your proficiency</td></tr>
+                    <tr><td>7</td><td>You gain an extra attack when you take the attack action</td></tr>
+                    <tr><td>8</td><td>Your opponent's AC drops by a total of 5, and gains a -5 to saves.</td></tr>
+                    <tr><td>9</td><td>Your critical range increases by 2.</td></tr>
+                    <tr><td>10</td><td>Your opponent can only take an action, bonus action, or movement on their turn.</td></tr>
+                </table>
+		</description>
+        <sheet display="false"/>
+	</element>
+
+	<element name="Domain Expansion: Dance Dance Revolution" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_PRAYER_SONG_DOMAIN_EXPANSION_DANCE_DANCE_REVOLUTION">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PRAYER_SONG_DOMAIN_EXPANSION_DANCE_DANCE_REVOLUTION</requirements>
+		<description>
+			<p>At 18th level, you gain the pinnacle of your technique. When inside your domain, you always count as if ten turns passed with Prayer activated.</p>
+		</description>
+        <sheet>
+			<description>You always count as if ten turns passed with Prayer activated.</description>
+		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION" />
+		</rules>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Prayer Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PRAYER_SONG_PRAYER" />
+	<element name="Marcado Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PRAYER_SONG_MARCADO" />
+	<element name="Caesura Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PRAYER_SONG_CAESURA" />
+	<element name="Crescendo Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PRAYER_SONG_CRESCENDO" />
+	<element name="Domain Expansion: Dance Dance Revolution Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PRAYER_SONG_DOMAIN_EXPANSION_DANCE_DANCE_REVOLUTION" />
+</elements>

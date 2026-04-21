@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="6.0.0">
+			<file name="rockstar.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/rockstar.xml" />
+		</update>
+	</info>
+
+	<element name="Rockstar" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_ROCKSTAR">
+		<supports>Innate Technique</supports>
+		<description>
+			<p>Something something GTA.</p>
+			<div element="ID_JJK_ARCHETYPE_FEATURE_ROCKSTAR_SOUND_AMPLIFICATION" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_ROCKSTAR_JACKED_AUDIO" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_ROCKSTAR_RESONATING_MUSIC" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_ROCKSTAR_MAXIMUM_EPIC_SOLO" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_ROCKSTAR_DOMAIN_EXPANSION_HALL_OF_FAME" />
+		</description>
+		<sheet display="false">
+			<description>You can amplify sound and launch it as a blast of energy.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_ROCKSTAR_SOUND_AMPLIFICATION" level="1" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_ROCKSTAR_JACKED_AUDIO" level="3" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_ROCKSTAR_RESONATING_MUSIC" level="6" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_ROCKSTAR_MAXIMUM_EPIC_SOLO" level="11" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_ROCKSTAR_DOMAIN_EXPANSION_HALL_OF_FAME" level="18" />
+		</rules>
+	</element>
+
+	<element name="Sound Amplification" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_ROCKSTAR_SOUND_AMPLIFICATION">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROCKSTAR_SOUND_AMPLIFICATION</requirements>
+		<description>
+			<p>Starting at 1st level, you gain proficiency in Performance and one instrument of your choice. While holding an instrument you are proficient in, you can spend 1 CE as an action to play it and launch a Sound Blast at a target within 30 feet. Make a ranged Cursed Energy attack roll, on a hit you deal 2d10 thunder damage and if the target is a creature, it must succeed on a Strength saving throw or be pushed back 10 feet. This technique's damage increases to 3d10 at 6th level, 4d10 at 11th level, and 6d10 at 18th level.</p>
+		</description>
+		<sheet action="Action" usage="CE">
+			<description>While holding an instrument you are proficient in, you can spend 1 CE to make a ranged Cursed Energy attack roll at a target within {{rockstar:sound:amplification:range}} feet. On a hit do {{rockstar:sound:amplification:damage}}d10 thunder damage and if the target is a creature, it must succeed on a Strength saving throw or be pushed back 10 feet.</description>
+		</sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" />
+            <select type="Proficiency" name="Musical Instrument (Rockstar)" supports="Musical Instrument" />
+            <stat name="rockstar:sound:amplification:damage" value="2" bonus="sound amplification" />
+            <stat name="rockstar:sound:amplification:damage" value="3" bonus="sound amplification" level="6" />
+            <stat name="rockstar:sound:amplification:damage" value="4" bonus="sound amplification" level="11" />
+            <stat name="rockstar:sound:amplification:damage" value="6" bonus="sound amplification" level="18" />
+            <stat name="rockstar:sound:amplification:range" value="30" bonus="sound amplification" />
+            <stat name="rockstar:sound:amplification:range" value="60" bonus="sound amplification" level="6" />
+        </rules>
+	</element>
+
+	<element name="Jacked Audio" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_ROCKSTAR_JACKED_AUDIO">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROCKSTAR_JACKED_AUDIO</requirements>
+		<description>
+			<p>At 3rd level, when you use your action to launch a Sound Blast, you can launch up to two Sound Blasts, spending 1 Cursed Energy for each. At 11th level you can make up to three Sound Blast attacks as part of your action.</p>
+		</description>
+		<sheet>
+			<description>When you use Sound Amplification, you can launch up to two Sound Blasts, spending 1 CE for each.</description>
+            <description level="11">When you use Sound Amplification, you can launch up to three Sound Blasts, spending 1 CE for each.</description>
+		</sheet>
+	</element>
+
+	<element name="Resonating Music" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_ROCKSTAR_RESONATING_MUSIC">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROCKSTAR_RESONATING_MUSIC</requirements>
+		<description>
+			<p>At 6th level, you have learned to apply your Sound Blast to an area. As an action for 5 cursed energy, you can launch a Sound Wave in a 15 feet cone. All creatures within range must make a Constitution saving throw or take your Sound Blast damage + additional d10s equal to your proficiency bonus and be pushed back 20 feet and deafened until the end of their next turn on a failed save or half as much damage on a successful save.</p>
+            <p class="indent">The range of your Sound Blast now increases to 60 feet. The range of your Sound Wave increases to 30 feet at 11th level.</p>
+		</description>
+        <sheet action="Action" usage="CE">
+            <description>For 5 CE, all creatures in a {{rockstar:resonating:music:range}} feet cone must make a Constitution saving throw or take {{rockstar:sound:amplification:damage}} + {{proficiency}}d10 thunder damage and be pushed back 20 feet and deafened until the end of their next turn on a failed save or half as much damage on a successful save.</description>
+        </sheet>
+        <rules>
+            <stat name="rockstar:resonating:music:range" value="15" bonus="resonating music" />
+            <stat name="rockstar:resonating:music:range" value="30" bonus="resonating music" level="11" />
+        </rules>
+	</element>
+
+	<element name="Maximum: Epic Solo" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_ROCKSTAR_MAXIMUM_EPIC_SOLO">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROCKSTAR_MAXIMUM_EPIC_SOLO</requirements>
+		<description>
+			<p>At 11th level, you can spend 8 cursed energy to start a solo. For the next minute, your attacks deal an additional 2d10 thunder damage and if a creature fails its saving throw against your technique it gains disadvantage on its next attack roll or ability check.</p>
+            <p class="indent">You can also spend additional cursed energy up to half your proficiency bonus to deal an additional 2d10 thunder per CE spent. A hostile creature that ends its turn within 15 feet of you during your solo takes thunder damage equal to your CE modifier + your proficiency bonus.</p>
+		</description>
+        <sheet usage="CE">
+			<description>For 8 CE, for the next minute your attacks deal an additional 2d10 thunder damage and if a creature fails its saving throw against your technique it gains disadvantage on its next attack roll or ability check. You can also spend up to {{proficiency:half}} additional CE deal an additional 2d10 thunder per CE spent. A hostile creature that ends its turn within 15 feet of you during your solo takes {{rockstar:epic:solo:damage}} thunder damage.</description>
+		</sheet>
+        <rules>
+            <stat name="rockstar:epic:solo:damage" value="ce:modifier" />
+            <stat name="rockstar:epic:solo:damage" value="proficiency" />
+        </rules>
+	</element>
+
+	<element name="Domain Expansion: Hall of Fame" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_ROCKSTAR_DOMAIN_EXPANSION_HALL_OF_FAME">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROCKSTAR_DOMAIN_EXPANSION_HALL_OF_FAME</requirements>
+		<description>
+			<p>At 18th level, you mastered your technique allowing you to expand your domain. At initiative 20, all creatures of your choice within your domain take your Sound Amplification damage and are deafened for 1 minute.</p>
+		</description>
+        <sheet>
+			<description>At initiative 20, all creatures of your choice within your domain take {{rockstar:sound:amplification:damage}}d8 thunder damage and are deafened for 1 minute.</description>
+		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION" />
+		</rules>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Sound Amplification Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_ROCKSTAR_SOUND_AMPLIFICATION" />
+	<element name="Jacked Audio Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_ROCKSTAR_JACKED_AUDIO" />
+	<element name="Resonating Music Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_ROCKSTAR_RESONATING_MUSIC" />
+	<element name="Maximum: Epic Solo Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_ROCKSTAR_MAXIMUM_EPIC_SOLO" />
+	<element name="Domain Expansion: Hall of Fame Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_ROCKSTAR_DOMAIN_EXPANSION_HALL_OF_FAME" />
+</elements>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="6.0.0">
+			<file name="paralyzing-gaze.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/paralyzing-gaze.xml" />
+		</update>
+	</info>
+
+	<element name="Paralyzing Gaze" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_PARALYZING_GAZE">
+		<supports>Innate Technique</supports>
+		<description>
+			<p>You use your wealth to manage various orphanages and shelters for the homeless.</p>
+			<div element="ID_JJK_ARCHETYPE_FEATURE_PARALYZING_GAZE_IMMOBILIZING_EYES" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_PARALYZING_GAZE_PERIPHERAL_VISION" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_PARALYZING_GAZE_REACTIVE_EYE_MOVEMENT" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_PARALYZING_GAZE_MAXIMUM_PARALYZING_GAZE" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_PARALYZING_GAZE_DOMAIN_EXPANSION_CHAMBER_OF_FRACTURED_REFLECTIONS" />
+		</description>
+		<sheet display="false">
+			<description>Your technique allows you to paralyze others with a mere gaze.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_PARALYZING_GAZE_IMMOBILIZING_EYES" level="1" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_PARALYZING_GAZE_PERIPHERAL_VISION" level="3" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_PARALYZING_GAZE_REACTIVE_EYE_MOVEMENT" level="6" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_PARALYZING_GAZE_MAXIMUM_PARALYZING_GAZE" level="11" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_PARALYZING_GAZE_DOMAIN_EXPANSION_CHAMBER_OF_FRACTURED_REFLECTIONS" level="18" />
+		</rules>
+	</element>
+
+	<element name="Immobilizing Eyes" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_PARALYZING_GAZE_IMMOBILIZING_EYES">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PARALYZING_GAZE_IMMOBILIZING_EYES</requirements>
+		<description>
+			<p>Starting at 1st level, you gain the ability to slow anyone you have within line of sight. As an action for 2 CE, you force a creature within 60 ft to make a Dexterity saving throw. On a failure, their movement speed is halved and their attack rolls and AC are reduced by your Cursed Energy modifier until the beginning of your next turn. At the beginning of your next turn, you can spend 1 CE as a bonus action to maintain the technique. If you lose line of sight, the technique automatically ends.</p>
+            <p class="indent">Using your technique places extreme strain on your eyes. Your eyes have a number of hit points equal to 1/3rd of your maximum hit points(rounded up). Your eyes take 1 damage for every 1 a creature rolls above your save DC to resist your technique. Your eyes regain 1 hit point at the beginning of your turn, unless at 0 hit points. Any HP you regain affects your eyes as well.  If your eyes reach 0 hit points, you are blinded and they can't regain hit points unless by Reverse Cursed Technique or long rest.</p>
+		</description>
+		<sheet action="Action" usage="CE">
+			<description>For 2 CE, force a creature within 60 ft to make a Dexterity saving throw. On a failure, their movement speed is halved and their attack rolls and AC are reduced by {{ce:modifier}} until the beginning of your next turn. At the beginning of your next turn, you can spend 1 CE as a bonus action to maintain the technique. If you lose line of sight, the technique automatically ends. Your eyes have a {{level}}/3(rounded up) hit points. Your eyes take 1 damage for every 1 a creature rolls above your save DC to resist your technique. Your eyes regain 1 hit point at the beginning of your turn, unless at 0 hit points. Any HP you regain affects your eyes as well.  If your eyes reach 0 hit points, you are blinded and they can't regain hit points unless by Reverse Cursed Technique or long rest.</description>
+            <description>For 2 CE, force a creature within 60 ft to make a Dexterity saving throw. On a failure, their movement speed is halved and their attack rolls and AC are reduced by {{ce:modifier}} until the beginning of your next turn. At the beginning of your next turn, you can spend 1 CE as a bonus action to maintain the technique. If you lose line of sight, the technique automatically ends. Your eyes have a {{level}}/2(rounded up) hit points. Your eyes take 1 damage for every 1 a creature rolls above your save DC to resist your technique. Your eyes regain 1 hit point at the beginning of your turn, unless at 0 hit points. Any HP you regain affects your eyes as well.  If your eyes reach 0 hit points, you are blinded and they can't regain hit points unless by Reverse Cursed Technique or long rest.</description>
+		</sheet>
+	</element>
+
+	<element name="Peripheral Vision" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_PARALYZING_GAZE_PERIPHERAL_VISION">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PARALYZING_GAZE_PERIPHERAL_VISION</requirements>
+		<description>
+			<p>At 3rd level, you have trained your peripheral vision to lock down multiple targets at once. When you use Immobilizing Eyes, you can instead spend a Full-Turn Action (Action + Bonus Action + Movement) to affect a number of creatures up to your Cursed Energy modifier, spending 1 CE for every creature beyond the first. You must spend 1 CE for each targeted creature to maintain your technique against them.</p>
+		</description>
+		<sheet action="Action + Bonus Action + Movement" usage="CE">
+			<description>Affect up to {{ce:modifier}} creatures with Immobilizing eyes,spending 1 CE for every creature beyond the first. You must spend 1 CE for each targeted creature to maintain your technique against them.</description>
+		</sheet>
+	</element>
+
+	<element name="Reactive Eye Movement" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_PARALYZING_GAZE_REACTIVE_EYE_MOVEMENT">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PARALYZING_GAZE_REACTIVE_EYE_MOVEMENT</requirements>
+		<description>
+			<p>At 6th level, whenever a target you can see makes an attack roll while within 60 ft or the attack is against you, you can spend 2 CE to force that creature to make a Dexterity saving throw. On a failure, they have disadvantage on the attack roll. A creature under the effects of Immobilizing Eyes automatically fails this saving throw.</p>
+		</description>
+        <sheet>
+            <description>Whenever a target you can see makes an attack roll while within 60 ft or the attack is against you, you can spend 2 CE to force that creature to make a Dexterity saving throw. On a failure, they have disadvantage on the attack roll. A creature under the effects of Immobilizing Eyes automatically fails this saving throw.</description>
+        </sheet>
+	</element>
+
+	<element name="Maximum: Paralyzing Gaze" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_PARALYZING_GAZE_MAXIMUM_PARALYZING_GAZE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PARALYZING_GAZE_MAXIMUM_PARALYZING_GAZE</requirements>
+		<description>
+			<p>At 11th level, you have learned to completely paralyze targets with your technique. Your eyes' hit points increase to 1/2 of your maximum hit points (rounded up). As an action for 6 cursed energy, you force a creature you can see within 120 ft to make a Dexterity saving throw. On a failed save, they are paralyzed and have their AC reduced by your Cursed Energy modifier. You must maintain concentration on the technique as if concentrating on a spell and at the beginning of your turn by spending 2 CE as a bonus action. However, focusing your power to this extent leaves you vulnerable. The target can make an Strength (Athletics) check at the end of their turn. On a success, your eyes take 2 damage for every 1 they rolled above your Cursed Energy save DC (damage to your eyes does not force a concentration check). A creature paralyzed by this technique cannot be physically moved, even remaining suspended in the air.</p>
+		</description>
+        <sheet action="Action" usage="CE">
+			<description>For 6 CE, force a creature you can see within 120 ft to make a Dexterity saving throw. On a failed save, they are paralyzed and have their AC reduced by {{ce:modifier}}. You must maintain concentration on the technique as if concentrating on a spell and at the beginning of your turn by spending 2 CE as a bonus action. The target can make an Strength (Athletics) check at the end of their turn. On a success, your eyes take 2 damage for every 1 they rolled above your Cursed Energy save DC which does not force a concentration check. A creature paralyzed by this technique cannot be moved.</description>
+		</sheet>
+	</element>
+
+	<element name="Domain Expansion: Chamber of Fractured Reflections" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_PARALYZING_GAZE_DOMAIN_EXPANSION_CHAMBER_OF_FRACTURED_REFLECTIONS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PARALYZING_GAZE_DOMAIN_EXPANSION_CHAMBER_OF_FRACTURED_REFLECTIONS</requirements>
+		<description>
+			<p>At 18th level, you have learned to expand your domain. At initiative 20, three creatures of your choice within the domain suffer the effects of Immobilizing Eyes. At each initiative 20, you can change the target for your domain's guaranteed hit effect. The domain takes the appearance of several mirrors that reflect your gaze from every angle, making line of sight impossible to break within the domain.</p>
+		</description>
+        <sheet>
+			<description>At initiative 20, three creatures of your choice within the domain suffer the effects of Immobilizing Eyes. At each initiative 20, you can change the target for your domain's guaranteed hit effect. Line of sight can not break.</description>
+		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION" />
+		</rules>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Immobilizing Eyes Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PARALYZING_GAZE_IMMOBILIZING_EYES" />
+	<element name="Peripheral Vision Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PARALYZING_GAZE_PERIPHERAL_VISION" />
+	<element name="Reactive Eye Movement Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PARALYZING_GAZE_REACTIVE_EYE_MOVEMENT" />
+	<element name="Maximum: Paralyzing Gaze Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PARALYZING_GAZE_MAXIMUM_PARALYZING_GAZE" />
+	<element name="Domain Expansion: Chamber of Fractured Reflections Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PARALYZING_GAZE_DOMAIN_EXPANSION_CHAMBER_OF_FRACTURED_REFLECTIONS" />
+</elements>

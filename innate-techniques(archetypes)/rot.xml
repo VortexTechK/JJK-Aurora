@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="6.0.0">
+			<file name="rot.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/rot.xml" />
+		</update>
+	</info>
+
+	<element name="Rot" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_ROT">
+		<supports>Innate Technique</supports>
+		<description>
+			<p>Utilize your toxic dark blood to devastating effectiveness.</p>
+			<div element="ID_JJK_ARCHETYPE_FEATURE_ROT_ROTTEN_BLOOD" />
+            <div element="ID_JJK_ARCHETYPE_FEATURE_ROT_ROT_TECHNIQUES" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_ROT_DECAY" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_ROT_SCARLET_ROT" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_ROT_MAXIMUM_WING_KING" />
+      		<div element="ID_JJK_ARCHETYPE_FEATURE_ROT_DOMAIN_EXPANSION_MIND_PALACE_OF_CORRUPTED_EGO" />
+		</description>
+		<sheet display="false">
+			<description>Utilize your toxic dark blood to devastating effectiveness.</description>
+		</sheet>
+		<rules>
+        	<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_ROT_ROTTEN_BLOOD" level="1" />
+        	<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_ROT_ROT_TECHNIQUES" level="1" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_ROT_DECAY" level="3" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_ROT_SCARLET_ROT" level="6" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_ROT_MAXIMUM_WING_KING" level="11" />
+      		<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_ROT_DOMAIN_EXPANSION_MIND_PALACE_OF_CORRUPTED_EGO" level="18" />
+		</rules>
+	</element>
+	
+	<element name="Rotten Blood" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_ROT_ROTTEN_BLOOD">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROT_ROTTEN_BLOOD</requirements>
+		<description>
+			<p>Starting at 1st level, you possess toxic blood. You gain resistance to poison and acid damage and have advantage on saving throws against the poisoned condition. When you have less than your hit point maximum, you can cause your unarmed strikes or melee weapon attacks to deal an additional 1d8 acid damage once per turn. This increases to 2d8 at 3rd level, 3d8 at 6th level, and 4d8 at 11th level.</p>
+            <p class="indent">Once as part of a long rest, you can spend $100 and hit points up to your proficiency bonus to fill a Blood Bag with your own blood. This Blood Bag counts as a source of hit points for your Rot features. A Blood Bag lasts 5 days outside of refrigeration before it goes bad. You can have a number of Blood Bags equal to your Constitution modifier at once.</p>
+        </description>
+		<sheet>
+			<description>You have advantage on saving throws against the poisoned condition. When you have less than your hit point maximum, you can cause your unarmed strikes or melee weapon attacks to deal an additional {{rot:blood:damage}}d8 acid damage once per turn. Once as part of a long rest, you can spend $100/1 Gold and up to {{proficiency}} hit points to fill a Blood Bag with your own blood. This Blood Bag counts as a source of hit points for your Rot features. A Blood Bag lasts 5 days outside of refrigeration before it goes bad. You can have {{constitution:modifier}} Blood Bags at once.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
+            <stat name="rot:blood:damage" value="1" bonus="rotten blood" />
+            <stat name="rot:blood:damage" value="2" bonus="rotten blood" level="3" />
+            <stat name="rot:blood:damage" value="3" bonus="rotten blood" level="6" />
+            <stat name="rot:blood:damage" value="4" bonus="rotten blood" level="11" />
+        </rules>
+	</element>
+	
+    <element name="Rot Techniques" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_ROT_ROT_TECHNIQUES">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROT_ROT_TECHNIQUES</requirements>
+		<description>
+			<p>Starting at 1st level, you can harness your blood in a manner fit for battle. When you use a Rot technique or feature, you can ignore the HP cost if you have an alternate source of blood. You gain four techniques and two additional techniques at 6th and 11th level: </p>
+        	<ul>
+				<li><strong>Blood Spit:</strong> As an action for 1 CE and 2 HP, you force a creature within 15 feet to make a Constitution save or take 2d6 acid damage and be blinded until the end of their turn on a fail.</li>
+				<li><strong>Rot Burst:</strong> Once per turn on a hit with a melee attack, you can spend 1 CE and 1 HP to deal an additional 2d8 acid damage.</li>
+				<li><strong>Rotten Blood Beam:</strong> As an action for 3 CE and 4 HP, you can make a ranged cursed energy attack against a target within 30 feet. On a hit, the target takes 2d8 piercing and 2d10 acid damage and must make a Constitution saving throw or have their movement reduced by 10 feet until the end of their next turn.</li>
+				<li><strong>Corrosive Wave:</strong> As an action for 3 CE and 5 HP, you launch waves of your rotten blood in a 15 feet cone. Creatures in range must make a Constitution saving throw or take 5d8 acid damage or half as much damage on a success.</li>
+				<li><strong>Blood Shield:</strong> As a reaction, you spend CE up to your modifier and twice that amount in HP. For each CE spent, the Blood Shield gains 10 hit points, which absorbs the damage and you take remaining damage. If this reduces a melee attack to 0, the attacker must make a Constitution save or take 2d8 acid damage.</li>
+				<li><strong>Homing Blood Missile:</strong> As an action for 4 CE and 5 HP you can shoot a seeking blood missile at a target within 60 feet. On a hit, the target takes 5d10 + your CE modifier in acid damage. You can reroll the attack roll using your bonus action or reaction.</li>
+				<li><strong>Blood Soak:</strong> As a bonus action for 3 CE and 3 HP, you can coat your limbs in your blood. For the next minute, your walking speed increases by 10 ft and your unarmed strikes deal 2d6 + CE modifier acid damage on a hit.</li>
+                <li><strong>Crimson Spear:</strong> As an action for 2 CE and 3 HP, you form your blood into a spear. Make a ranged cursed energy attack roll with a range of 30/90 feet. On a hit the target takes 1d6 piercing and 2d10 + CE modifier acid damage.</li>
+                <li><strong>Crimson Rain:</strong> As an action for 2 CE and 3 HP, you pick a point within 60 ft. Creatures within 15 feet must make a Dexterity Saving throw taking 1d10 piercing and 2d10 acid damage on failed save or half as much on a success.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When you use a Rot technique or feature, you can ignore the HP cost if you have an alternate source of blood.</description>
+		</sheet>
+        <rules>
+			<select type="Class Feature" name="Rot Techniques" supports="Rot Techniques" level="1" number="4"/>
+			<select type="Class Feature" name="Rot Techniques" supports="Rot Techniques" level="6" number="2"/>
+			<select type="Class Feature" name="Rot Techniques" supports="Rot Techniques" level="11" number="2"/>
+		</rules>
+	</element>
+
+	<element name="Decay" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_ROT_DECAY">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROT_DECAY</requirements>
+		<description>
+			<p>At 3rd level you have learned to use your blood infectiously. As a bonus action for 3 Cursed Energy, you can cause all creatures that have taken damage from your technique in the last minute to form black floral patterns on their body as they have been infected with your blood. </p>
+            <p class="indent">At the beginning of your turn, they take your Rotten Blood damage. This lasts for 1 minute unless you spend 3 cursed energy to continue the effect or end it as a free action.</p>
+            <p class="indent">At 6th level, creatures also gain the poisoned condition for the duration and Decay also reduces a creature's hit point maximum. A creature's maximum hit points return to normal after a long rest.</p>
+        </description>
+		<sheet action="Bonus Action" usage="CE">
+      		<description>For 3 CE, all creatures that have taken damage from your technique in the last minute are infected with your blood. At the beginning of your turn, they take {{rot:blood:damage}}d8 acid damage. This lasts for 1 minute unless you spend 3 CE to continue the effect or end it as a free action.</description>
+            <description level="6">For 3 CE, all creatures that have taken damage from your technique in the last minute are infected with your blood. They are poisoned and t the beginning of your turn, they take {{rot:blood:damage}}d8 acid damage which decrease their HP maximum. A creature's maximum hit points return to normal after a long rest. This lasts for 1 minute unless you spend 3 CE to continue the effect or end it as a free action.</description>
+		</sheet>
+	</element>
+	
+	<element name="Scarlet Rot" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_ROT_SCARLET_ROT">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROT_SCARLET_ROT</requirements>
+		<description>
+			<p>At 6th level, you have proved your mastery over your technique. Your technique now ignores resistance to acid damage and a creature that fails a saving throw against your technique is poisoned for 1 minute and can make a Constitution save at the end of their turn to end the effect on themselves.</p>
+            <p class="indent">You gain immunity to poison and acid damage as well as the poisoned condition. At 18th level, your technique treats immunity to acid damage as resistance.</p>
+        </description>
+		<sheet>
+			<description>Your technique ignores resistance to acid damage and a creature that fails a saving throw against your technique is poisoned for 1 minute and can make a Constitution save at the end of their turn to end the effect on themselves. You have immunity to the poisoned condition.</description>
+            <description level="18">Your technique ignores resistance to acid damage and treats immunity to acid damage as resistance and a creature that fails a saving throw against your technique is poisoned for 1 minute and can make a Constitution save at the end of their turn to end the effect on themselves. You have immunity to the poisoned condition.</description>
+		</sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISON" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_ACID" />
+        </rules>
+	</element>
+	
+	<element name="Maximum: Wing King" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_ROT_MAXIMUM_WING_KING">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROT_MAXIMUM_WING_KING</requirements>
+		<description>
+			<p>At 11th level, you learn to condense your blood into wings resembling veins as a bonus action for 8 CE, gaining the following benefits for 1 minute:</p>
+            <ul>
+                <li>Your movement is quadrupled</li>
+                <li>You gain a flying speed equal to half your movement</li>
+                <li>You gain advantage on Dexterity saving throws</li>
+                <li>You can replace an attack on your turn with a Rot Technique or one line of blood attack.</li>
+                <li>As a free action on your turn, you can unleash lines of blood. </li>
+            </ul>
+            <p class="indent">These lines of blood take the shape of three ranged Cursed Energy attacks against a target within 60 feet. Each attack deals 4d10 + your CE modifier acid or necrotic damage. You can also replace an attack on your turn with a line of blood attack. While using Wing King, you cannot use Decay.</p>
+        </description>
+		<sheet action="Bonus Action" usage="CE">
+			<description>For 8 CE, for 1 minute your speed is {{rot:wing:king:movement}}, you gain a flying speed of {{rot:wing:king:fly}} ft, you have advantage on Dexterity saving throws, you can replace an attack on your turn with a Rot Technique or one line blood attack, and as a free action on your turn you can unleash lines of blood. The lines of blood are three ranged CE attacks against a target within 60 feet. Each attack deals 4d10 + {{ce:modifier}} acid or necrotic damage. You can also replace an attack on your turn with a line of blood attack. While using Wing King, you cannot use Decay.</description>
+		</sheet>
+        <rules>
+            <stat name="rot:wing:king:fly" value="speed" />
+            <stat name="rot:wing:king:fly" value="speed" />
+            <stat name="rot:wing:king:movement" value="rot:wing:king:fly" />
+            <stat name="rot:wing:king:movement" value="rot:wing:king:fly" />
+        </rules>
+	</element>
+	
+	<element name="Domain Expansion: Mind Palace of Corrupted Ego" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_ROT_DOMAIN_EXPANSION_MIND_PALACE_OF_CORRUPTED_EGO">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROT_DOMAIN_EXPANSION_MIND_PALACE_OF_CORRUPTED_EGO</requirements>
+		<description>
+			<p>At 18th level you have mastered your technique, allowing you to expand your domain. All creatures within your domain are under the effects of Decay and take additional Decay damage at initiative 20. Additionally, your Rot Techniques use hit points from other creatures within your domain.</p>
+		</description>
+		<sheet>
+			<description>All creatures within your domain are under the effects of Decay and take additional Decay damage at initiative 20. Additionally, your Rot Techniques use hit points from other creatures within your domain.</description>
+		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION" />
+		</rules>
+	</element>
+	
+    <!--Rot Techniques-->
+    <element name="Blood Spit" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_ROT_BLOOD_SPIT">
+		<supports>Rot Techniques</supports>
+		<description>
+			<p>As an action for 1 CE and 2 HP, you force a creature within 15 feet to make a Constitution save or take 2d6 acid damage and be blinded until the end of their turn on a fail.</p>
+		</description>
+		<sheet action="Action" usage="CE">
+			<description>For 1 CE and 2 HP, you force a creature within 15 feet to make a Constitution save or take 2d6 acid damage and be blinded until the end of their turn on a fail.</description>
+		</sheet>
+	</element>
+	
+    <element name="Rot Burst" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_ROT_ROT_BURST">
+		<supports>Rot Techniques</supports>
+		<description>
+			<p>Once per turn on a hit with a melee attack, you can spend 1 CE and 1 HP to deal an additional 2d8 acid damage.</p>
+		</description>
+		<sheet usage="CE">
+			<description>Once per turn on a hit with a melee attack, you can spend 1 CE and 1 HP to deal an additional 2d8 acid damage.</description>
+		</sheet>
+	</element>
+	
+    <element name="Rotten Blood Beam" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_ROT_ROTTEN_BLOOD_BEAM">
+		<supports>Rot Techniques</supports>
+		<description>
+			<p>As an action for 3 CE and 4 HP, you can make a ranged cursed energy attack against a target within 30 feet. On a hit, the target takes 2d8 piercing and 2d10 acid damage and must make a Constitution saving throw or have their movement reduced by 10 feet until the end of their next turn.</p>
+		</description>
+		<sheet action="Action" usage="CE">
+			<description>For 3 CE and 4 HP, you can make a ranged CE attack against a target within 30 feet. On a hit, the target takes 2d8 piercing and 2d10 acid damage and must make a Constitution saving throw or have their movement reduced by 10 feet until the end of their next turn.</description>
+		</sheet>
+	</element>
+	
+    <element name="Corrosive Wave" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_ROT_CORROSIVE_WAVE">
+        <supports>Rot Techniques</supports>
+        <description>
+            <p>As an action for 3 CE and 5 HP, you launch waves of your rotten blood in a 15 feet cone. Creatures in range must make a Constitution saving throw or take 5d8 acid damage or half as much damage on a success.</p>
+        </description>
+        <sheet action="Action" usage="CE">
+            <description>For 3 CE and 5 HP, in a 15 feet cone creatures must make a Constitution saving throw or take 5d8 acid damage or half as much damage on a success.</description>
+        </sheet>
+    </element>
+	
+    <element name="Blood Shield" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_ROT_BLOOD_SHIELD">
+        <supports>Rot Techniques</supports>
+        <description>
+            <p>As a reaction, you spend CE up to your modifier and twice that amount in HP. For each CE spent, the Blood Shield gains 10 hit points, which absorbs the damage and you take remaining damage. If this reduces a melee attack to 0, the attacker must make a Constitution save or take 2d8 acid damage.</p>
+        </description>
+        <sheet action="Reaction" usage="CE">
+            <description>Spend up to {{ce:modifier}} CE and twice that amount in HP. For each CE spent, the Blood Shield gains 10 hit points, which absorbs the damage and you take remaining damage. If this reduces a melee attack to 0, the attacker must make a Constitution save or take 2d8 acid damage.</description>
+        </sheet>
+    </element>
+	
+    <element name="Homing Blood Missile" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_ROT_HOMING_BLOOD_MISSILE">
+        <supports>Rot Techniques</supports>
+        <description>
+            <p>As an action for 4 CE and 5 HP you can shoot a seeking blood missile at a target within 60 feet. On a hit, the target takes 5d10 + your CE modifier in acid damage. You can reroll the attack roll using your bonus action or reaction.</p>
+        </description>
+        <sheet action="Action" usage="CE">
+            <description>For 4 CE and 5 HP, make a ranged CE attack at a target within 60 feet. On a hit, The target takes 5d10 + {{ce:modifier}} in acid damage. You can reroll the attack roll using your bonus action or reaction.</description>
+        </sheet>
+    </element>
+	
+    <element name="Blood Soak" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_ROT_BLOOD_SOAK">
+        <supports>Rot Techniques</supports>
+        <description>
+            <p>As a bonus action for 3 CE and 3 HP, you can coat your limbs in your blood. For the next minute, your walking speed increases by 10 ft and your unarmed strikes deal 2d6 + CE modifier acid damage on a hit.</p>
+        </description>
+        <sheet action="Bonus Action" usage="CE">
+            <description>For 3 CE and 3 HP, for the next minute your speed increases by 10 ft and your unarmed strikes deal 2d6 + {{ce:modifier}} acid damage on a hit.</description>
+        </sheet>
+    </element>
+	
+    <element name="Crimson Spear" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_ROT_CRIMSON_SPEAR">
+        <supports>Rot Techniques</supports>
+        <description>
+            <p>As an action for 2 CE and 3 HP, you form your blood into a spear. Make a ranged cursed energy attack roll with a range of 30/90 feet. On a hit the target takes 1d6 piercing and 2d10 + CE modifier acid damage.</p>
+        </description>
+        <sheet action="Action" usage="CE">
+            <description>For 2 CE and 3 HP, make a ranged CE attack roll with a range of 30/90 feet. On a hit the target takes 1d6 piercing and 2d10 + {{ce:modifier}} acid damage.</description>
+        </sheet>
+    </element>
+
+    <element name="Crimson Rain" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_ROT_CRIMSON_RAIN">
+        <supports>Rot Techniques</supports>
+        <description>
+            <p>As an action for 2 CE and 3 HP, you pick a point within 60 ft. Creatures within 15 feet must make a Dexterity Saving throw taking 1d10 piercing and 2d10 acid damage on failed save or half as much on a success.</p>
+        </description>
+        <sheet action="Action" usage="CE">
+            <description>For 2 CE and 3 HP, pick a point within 60 ft. Creatures within 15 feet must make a Dexterity Saving throw taking 1d10 piercing and 2d10 acid damage on failed save or half as much on a success.</description>
+        </sheet>
+    </element>
+
+    <!--Feature Replacement Grants-->
+	<element name="Rotten Blood Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_ROT_ROTTEN_BLOOD" />
+    <element name="Rot Techniques Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_ROT_ROT_TECHNIQUES" />
+	<element name="Decay Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_ROT_DECAY" />
+	<element name="Scarlet Rot Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_ROT_SCARLET_ROT" />
+	<element name="Maximum: Wing King Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_ROT_MAXIMUM_WING_KING" />
+	<element name="Domain Expansion: Mind Palace of Corrupted Ego Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_ROT_DOMAIN_EXPANSION_MIND_PALACE_OF_CORRUPTED_EGO" />
+</elements>

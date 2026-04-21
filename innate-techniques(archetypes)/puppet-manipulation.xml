@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="6.0.0">
+			<file name="puppet-manipulation.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/puppet-manipulation.xml" />
+		</update>
+	</info>
+
+	<element name="Puppet Manipulation" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_PUPPET_MANIPULATION">
+		<supports>Innate Technique</supports>
+		<description>
+			<p>You gain the ability to control puppets with your Cursed Energy</p>
+			<div element="ID_JJK_ARCHETYPE_FEATURE_PUPPET_MANIPULATION_ULTIMATE_MECHAMARU" />
+            <div class="reference">
+				<div element="ID_JJK_INFORMATION_PUPPET"/>
+			</div>
+			<div element="ID_JJK_ARCHETYPE_FEATURE_PUPPET_MANIPULATION_LESSER_PUPPET" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_PUPPET_MANIPULATION_ADVANCED_PUPPET" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_PUPPET_MANIPULATION_ABSOLUTE_PUPPET" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_PUPPET_MANIPULATION_DOMAIN_EXPANSION_PUPPET_SHOW" />
+		</description>
+		<sheet display="false">
+			<description>You gain the ability to control puppets with your Cursed Energy.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_PUPPET_MANIPULATION_ULTIMATE_MECHAMARU" level="1" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_PUPPET_MANIPULATION_LESSER_PUPPET" level="3" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_PUPPET_MANIPULATION_ADVANCED_PUPPET" level="6" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_PUPPET_MANIPULATION_ABSOLUTE_PUPPET" level="11" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_PUPPET_MANIPULATION_DOMAIN_EXPANSION_PUPPET_SHOW" level="18" />
+		</rules>
+	</element>
+
+	<element name="Ultimate Mechamaru" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_PUPPET_MANIPULATION_ULTIMATE_MECHAMARU">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PUPPET_MANIPULATION_ULTIMATE_MECHAMARU</requirements>
+		<description>
+			<p>Beginning at 1st level, you gain mastery over puppets. You gain proficiency in Tinkerer's Tools, and over a long rest, you can create a puppet. As an action for 1 Cursed Energy, you can imbue a Puppet, this puppet can only have 2 Minor Traits. You can summon as many puppets as you want. Any Puppets can only take an action if you use your bonus action to command it. It cannot use its reaction unless you use your reaction to command it to. The puppet can use bonus actions on its own. You can speak, hear, and see through any of your Puppets. In case you have more than one puppet at once, you need to control them at the same time. Whenever you gain a puppet, use the following for its sheet:</p>
+            <ul>
+                <li>Your Puppet's starting Strength, Constitution, and Dexterity scores are 15, 14, and 13 + bonus points to distribute between them equal to your Cursed Energy modifier. The Puppet's mental scores equal to your own.</li>
+                <li>Your Puppet is a Medium Construct.</li>
+                <li>Your Puppet has its hit dice based on what material they are made from, if the case is wood is a d4, stone is a d6, iron is a d8, and modern metal hit die is a d10. Your puppet has the same amount of hit die as you.</li>
+                <li>Your Puppet has a 30 feet walking speed.</li>
+                <li>You control your Puppet from afar, watching its every move and controlling it to dodge attacks. Your Puppet's AC is equal to 10 + its Dexterity modifier.</li>
+                <li>Your Puppet uses your proficiency bonus and is immune to the charmed and poisoned condition.</li>
+                <li>Your Puppet gains proficiency in Strength, Constitution, and Dexterity saving throws.</li>
+                <li>Your Puppet deals 1d6 + Strength modifier in bludgeoning with unarmed strikes.</li>
+            </ul>
+            <h5 class="caption">PUPPET TRAITS</h5>
+                <table>
+                    <thead>
+                        <tr><td>Trait Level</td><td>Traits</td></tr>
+                    </thead>
+                    <tr><td>Minor</td><td><strong>Enhanced Defense.</strong> Your Puppet's defenses were increased so that it could fare better against attacks. Its armor class is increased to 10 + its Dexterity modifier + your Cursed Energy modifier.</td></tr>
+                    <tr><td></td><td><strong>Basic Weapon Training.</strong> Your puppet gains proficiency in simple weapons and shields.</td></tr>
+                    <tr><td></td><td><strong>Faster Movement.</strong> Your puppet is fast and cannot be caught so easily. Your puppet gains a +10 ft. bonus to its walking speed.</td></tr>
+                    <tr><td></td><td><strong>Stronger Strikes.</strong> Your puppet gains better natural weapons, changing its unarmed strikes to deal 1d8 piercing, slashing, or bludgeoning damage, based on the new weapons. Your puppet's unarmed strikes will now overcome resistance. Your puppet can use dexterity or strength for these attacks.</td></tr>
+                    <tr><td></td><td><strong>Heightened Senses.</strong> Your puppet is always sharp and is a perfect detection machine. He will gain 60 ft. of Darkvision and will gain advantage in perception checks against living things.</td></tr>
+                    <tr><td>Lesser</td><td><strong>Improved Reach.</strong> Your puppet's arms elongate, its agility heightens, or it grows tentacles, and your puppet's melee reach increases by 5 feet.</td></tr>
+                    <tr><td></td><td><strong>Advanced Weapon Training.</strong> Your puppet gains proficiency in martial weapons.</td></tr>
+                    <tr><td></td><td><strong>Hardened Shell.</strong> Your puppet's shell is thicker, scalier, or harder than normal. Your Puppet will gain resistance against non-magical Bludgeoning, Slashing, or Piercing damage.</td></tr>
+                    <tr><td></td><td><strong>Deflect Missiles.</strong> Your puppet has developed quick reaction skills, and can now defend itself from high-speed ranged projectiles. Using its reaction, your puppet can reduce an incoming projectile damage by 1d12 + your level.</td></tr>
+                    <tr><td></td><td><strong>Minor Magic.</strong> Your puppet learns to cast one cantrip, and one 1st level spell, both from the wizard spell list(no healing). It uses its Cursed Energy modifier for the spellcasting ability and must take a long rest before casting the 1st-level spell again.</td></tr>
+                    <tr><td>Advanced</td><td><strong>Colossus.</strong> Your puppet's body increases in size in all dimensions, changing its size to Large. This functions like the enlarge/reduce spell.</td></tr>
+                    <tr><td></td><td><strong>Flying Behemoth.</strong> Your puppet gains wings, jets, or some other way of flight, giving it flight speed equal to its movement speed.</td></tr>
+                    <tr><td></td><td><strong>Major Magic.</strong> Your puppet learns one cantrip and one each of 1st-, 2nd-, and 3rd-level spells from the wizard spell list (no healing). It uses your Cursed Energy modifier, casts them at 3rd level, and each can be used once per long rest.</td></tr>
+                    <tr><td></td><td><strong>Armor Training.</strong> Your puppet gains proficiency in all armor.</td></tr>
+                    <tr><td></td><td><strong>High Caliber Striker.</strong> Your puppet's natural weapons improve further, growing stronger, harder, or sharper. Your puppet's unarmed strikes now deal 2d8 piercing, slashing, or bludgeoning damage. Your puppet can use dexterity or strength for these attacks.</td></tr>
+                    <tr><td>Absolute</td><td><strong>Mech.</strong> Your puppet's body increases in size in all dimensions, changing its size to Gargantuan. However, to control this puppet you must be inside it, but you are under full cover, and the puppet's Hit dice is a d12.</td></tr>
+                    <tr><td></td><td><strong>Energy Cannon.</strong> As an action, you generate a large amount of cursed energy in the palm of one hand, blasting it at a target for 6 CE. Make a ranged attack with Dex + Proficiency + 3, This attack deals 20d6 Necrotic damage and recharges on a 5-6 d6.</td></tr>
+                    <tr><td></td><td><strong>Energy Volley.</strong> As an action, you create 5 orbs made of cursed energy and blast them. Choose targets for each orb and make a ranged Cursed Energy attack with a +3 for 4 CE. On a hit, this attack Deals 6d6 Necrotic damage. Recharges on a 5-6 d6.</td></tr>
+                </table>
+            <div class="reference">
+				<div element="ID_JJK_INFORMATION_PUPPET"/>
+			</div>
+		</description>
+		<sheet>
+			<description>Over a long rest, you can create a puppet. As an action for 1 CE, you can give a Puppet with up to 2 Minor Traits. You can summon as many puppets as you want which can take an action if you use your bonus action to command it. It cannot use its reaction unless you use your reaction to command it to. The puppet can use bonus actions on its own. You can speak, hear, and see through any of your Puppets. In case you have more than one puppet at once, you need to control them at the same time.</description>
+		</sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" />
+            <select type="Companion" name="Puppet" supports="Puppet" />
+        </rules>
+	</element>
+
+	<element name="Lesser Puppet" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_PUPPET_MANIPULATION_LESSER_PUPPET">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PUPPET_MANIPULATION_LESSER_PUPPET</requirements>
+		<description>
+			<p>At 3rd level, you have begun to slowly improve your puppet. You will gain a Lesser Puppet and can summon it as an action for 3 Cursed Energy, though this Puppet can only have 2 Minor Traits and 2 Lesser Traits.</p>
+		</description>
+		<sheet action="Action" usage="CE">
+			<description>For 3 CE, summon a puppet with 2 Minor and 2 Lesser Traits.</description>
+		</sheet>
+	</element>
+
+	<element name="Advanced Puppet" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_PUPPET_MANIPULATION_ADVANCED_PUPPET">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PUPPET_MANIPULATION_ADVANCED_PUPPET</requirements>
+		<description>
+			<p>Once you reach 6th level, through the constant use of your puppet, you have begun to fix some of its downfalls. You will gain an Advanced Puppet and can summon it as an action for 6 Cursed Energy, though this Puppet can only have 2 Minor Traits, 2 Lesser Traits, and 2 Advanced Traits.</p>
+		</description>
+        <sheet action="Action" usage="CE">
+            <description>For 6 CE, summon a puppet with 2 Minor, 2 Lesser, and 2 Advanced Traits.</description>
+        </sheet>
+	</element>
+
+	<element name="Absolute Puppet" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_PUPPET_MANIPULATION_ABSOLUTE_PUPPET">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PUPPET_MANIPULATION_ABSOLUTE_PUPPET</requirements>
+		<description>
+			<p>When you reach 11th level, you have perfected your puppet for its desired uses. You will gain a Master Puppet and can summon it as an action for 10 Cursed Energy, though this Puppet can only have 2 Minor Traits, 2 Lesser Traits, 2 Advanced Traits, and 2 Absolute Traits.</p>
+		</description>
+        <sheet action="Action" usage="CE">
+			<description>For 10 CE, summon a puppet with 2 Minor, 2 Lesser, 2 Advanced, and 2 Absolute Traits.</description>
+		</sheet>
+	</element>
+
+	<element name="Domain Expansion: Puppet Show" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_PUPPET_MANIPULATION_DOMAIN_EXPANSION_PUPPET_SHOW">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PUPPET_MANIPULATION_DOMAIN_EXPANSION_PUPPET_SHOW</requirements>
+		<description>
+			<p>Finally, at 18th level, you reach the peak of your technique. Your manipulation is now no longer limited to puppets. You can now manipulate the creatures in your domain like puppets in a puppet show.</p>
+            <p class="indent">At initiative 20, all creatures take an action of your choice that does not cost cursed energy.</p>
+		</description>
+        <sheet>
+			<description>At initiative 20, all creatures take an action of your choice that does not cost cursed energy.</description>
+		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION" />
+		</rules>
+	</element>
+
+    <!-- Companion Reference -->
+    <element name="Puppet" type="Information" source="JJK" id="ID_JJK_INFORMATION_PUPPET">
+        <description>
+            <p style="margin-bottom:-5px"><em>Medium construct</em></p>
+            <h4 style="margin-top:5px"></h4>
+            <ul class="unstyled">
+                <li><strong>Armor Class</strong> 10 + Dexterity modifier</li>
+                <li><strong>Hit Points</strong> Hit dice based on material (d4/d6/d8/d10) x your level</li>
+                <li><strong>Speed</strong> 30 ft.</li>
+            </ul>
+            <table style="text-align:center;margin-top:10px;margin-bottom:10px">
+                <thead>
+                    <tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr>
+                </thead>
+                <tr>
+                    <td>15 + CE bonus</td><td>13 + CE bonus</td><td>14 + CE bonus</td><td>Your INT</td><td>Your WIS</td><td>Your CHA</td>
+                </tr>
+            </table>
+            <ul class="unstyled">
+                <li><strong>Saving Throws</strong> Strength, Dexterity, Constitution</li>
+                <li><strong>Condition Immunities</strong> charmed, poisoned</li>
+            </ul>
+			<h4 style="margin-top:5px; margin-bottom:10px" />
+            <ul class="unstyled">
+                <li><strong><em>Construct Body.</em></strong> The puppet's hit die depends on its material: wood (d4), stone (d6), iron (d8), or modern metal (d10). It has a number of hit dice equal to your level.</li>
+            </ul>
+            <h4 style="margin-top:10px">Actions</h4>
+            <ul class="unstyled">
+                <li><em><strong>Unarmed Strike.</strong> Melee Weapon Attack:</em> your proficiency bonus + Strength modifier to hit, reach 5 ft., one target. Hit: 1d6 + Strength modifier bludgeoning damage.</li>
+            </ul>
+        </description>
+    </element>
+
+    <!-- Companion -->
+    <element name="Puppet" type="Companion" source="JJK" id="ID_JJK_COMPANION_PUPPET">
+        <supports>Puppet</supports>
+        <setters>
+            <set name="strength">15</set>
+            <set name="dexterity">13</set>
+            <set name="constitution">14</set>
+            <set name="intelligence">intelligence</set>
+            <set name="wisdom">wisdom</set>
+            <set name="charisma">charisma</set>
+            <set name="ac">10 + Dex</set>
+            <set name="hp">Material die x level</set>
+            <set name="speed">30 ft.</set>
+            <set name="conditionImmunities">charmed, poisoned</set>
+            <set name="type">Construct</set>
+            <set name="size">Medium</set>
+            <set name="challenge">—</set>
+            <set name="actions">ID_JJK_COMPANION_ACTION_PUPPET_STRIKE</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="10" bonus="base" />
+            <stat name="companion:ac" value="dexterity:modifier" />
+            <stat name="companion:speed" value="30" bonus="base" />
+            <stat name="companion:proficiency" value="proficiency" bonus="base" />
+            <stat name="companion:strength:save:proficiency" value="companion:proficiency" />
+            <stat name="companion:dexterity:save:proficiency" value="companion:proficiency" />
+            <stat name="companion:constitution:save:proficiency" value="companion:proficiency" />
+        </rules>
+    </element>
+
+    <element name="Unarmed Strike" type="Companion Action" source="JJK" id="ID_JJK_COMPANION_ACTION_PUPPET_STRIKE">
+        <description>
+            <p>Melee Weapon Attack: your proficiency bonus + Strength modifier to hit, reach 5 ft., one target. Hit: 1d6 + Strength modifier bludgeoning damage.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: your proficiency bonus + Strength modifier to hit, reach 5 ft., one target. Hit: 1d6 + Strength modifier bludgeoning damage.</description>
+        </sheet>
+    </element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Ultimate Mechamaru Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PUPPET_MANIPULATION_ULTIMATE_MECHAMARU" />
+	<element name="Lesser Puppet Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PUPPET_MANIPULATION_LESSER_PUPPET" />
+	<element name="Advanced Puppet Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PUPPET_MANIPULATION_ADVANCED_PUPPET" />
+	<element name="Absolute Puppet Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PUPPET_MANIPULATION_ABSOLUTE_PUPPET" />
+	<element name="Domain Expansion: Puppet Show Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PUPPET_MANIPULATION_DOMAIN_EXPANSION_PUPPET_SHOW" />
+</elements>

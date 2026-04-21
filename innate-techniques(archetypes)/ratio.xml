@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="6.0.0">
+			<file name="ratio.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/ratio.xml" />
+		</update>
+	</info>
+
+	<element name="Ratio" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_RATIO">
+		<supports>Innate Technique</supports>
+		<description>
+			<p>You were born with a powerful technique that creates a weak spot on a 7:3 ratio.</p>
+			<div element="ID_JJK_ARCHETYPE_FEATURE_RATIO_CRITICAL_FOCUS" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_RATIO_RATIO" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_RATIO_COLLAPSE" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_RATIO_IMPROVED_RATIO" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_RATIO_DOMAIN_EXPANSION_GOLDEN_RATIO" />
+		</description>
+		<sheet display="false">
+			<description>You were born with a powerful technique that creates a weak spot on a 7:3 ratio</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_RATIO_CRITICAL_FOCUS" level="1" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_RATIO_RATIO" level="3" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_RATIO_COLLAPSE" level="6" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_RATIO_IMPROVED_RATIO" level="11" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_RATIO_DOMAIN_EXPANSION_GOLDEN_RATIO" level="18" />
+		</rules>
+	</element>
+
+	<element name="Critical Focus" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_RATIO_CRITICAL_FOCUS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_RATIO_CRITICAL_FOCUS</requirements>
+		<description>
+			<p>Beginning at 1st level, you gain a +1 to critical range. Additionally, you roll an additional damage dice on a critical hit (Later upgrades to critical damage are not cummalative, they replace this feature).</p>
+		</description>
+		<sheet>
+			<description>You gain a +1 to critical range and roll an additional damage dice on a critical hit.</description>
+            <description level="3">You gain a +1 to critical range and roll 2 additional damage dice on a critical hit.</description>
+            <description level="6">You gain a +1 to critical range and roll 3 additional damage dice on a critical hit.</description>
+            <description level="11">You gain a +1 to critical range and roll 4 additional damage dice on a critical hit.</description>
+		</sheet>
+	</element>
+
+	<element name="Ratio" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_RATIO_RATIO">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_RATIO_RATIO</requirements>
+		<description>
+			<p>Once you reach 3rd level, you have learned your technique that creates weak spots in enemies. Whenever you make an attack roll, you can spend 1 cursed energy to roll a d10. If you roll a 3 or 7 the attack becomes a critical hit.</p>
+            <p class="indent">In addition, you roll 2 additional damage dice on a critical hit.</p>
+		</description>
+		<sheet usage="CE">
+			<description>Whenever you make an attack roll, you can spend 1 CE to roll a d10. If you roll a 3 or 7 the attack becomes a critical hit.</description>
+            <description level="11">Whenever you make an attack roll, you can spend 1 CE to roll 2d10. You can spend up to {{ce:modifier}} CE to roll additional 1d10 per CE spent. If you roll a 3 or 7 the attack becomes a critical hit.</description>
+		</sheet>
+	</element>
+
+	<element name="Collapse" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_RATIO_COLLAPSE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_RATIO_COLLAPSE</requirements>
+		<description>
+			<p>When you reach 6th level, as an action for 4 Cursed Energy, you make an attack to destroy the ground around you in a 30 ft circle, applying your critical hit to the rubble. The area becomes difficult terrain and every creature in the area must make a Dexterity saving throw. On a failure, they take your attack's damage + 3d10 bludgeoning damage. On a success, they take half as much damage. </p>
+            <p class="indent">If you roll a critical hit, you now deal an extra 3 damage dice.</p>
+		</description>
+        <sheet action="Action" usage="CE">
+            <description>For 4 CE,  make an attack in a 30 ft circle, applying your critical hit to the rubble. The area becomes difficult terrain and every creature in the area must make a Dexterity saving throw. On a failure, they take your attack's damage + 3d10 bludgeoning damage. On a success, they take half as much damage.</description>
+        </sheet>
+	</element>
+
+	<element name="Improved Ratio" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_RATIO_IMPROVED_RATIO">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_RATIO_IMPROVED_RATIO</requirements>
+		<description>
+			<p>At 11th level, you have become more lethal and precise with your Ratio. When you use Ratio, you now roll 2d10 instead of one and you can spend additional CE up to your Cursed Energy modifier to roll an additional d10 per CE spent. You roll 4 additional damage dice on a critical hit.</p>
+		</description>
+        <sheet display="false"/>
+	</element>
+
+	<element name="Domain Expansion: Golden Ratio" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_RATIO_DOMAIN_EXPANSION_GOLDEN_RATIO">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_RATIO_DOMAIN_EXPANSION_GOLDEN_RATIO</requirements>
+		<description>
+			<p>Finally, at 18th level, you have honed your skill with your technique to a fine edge. In your domain, all of your attacks count as critical hits and you deal an additional 5 damage dice on a critical hit.</p>
+		</description>
+        <sheet>
+			<description>All of your attacks count as critical hits and you deal 5 extra damage dice on a critical hit.</description>
+		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION" />
+		</rules>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Critical Focus Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_RATIO_CRITICAL_FOCUS" />
+	<element name="Ratio Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_RATIO_RATIO" />
+	<element name="Collapse Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_RATIO_COLLAPSE" />
+	<element name="Improved Ratio Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_RATIO_IMPROVED_RATIO" />
+	<element name="Domain Expansion: Golden Ratio Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_RATIO_DOMAIN_EXPANSION_GOLDEN_RATIO" />
+</elements>
