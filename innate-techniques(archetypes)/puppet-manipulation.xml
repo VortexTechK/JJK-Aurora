@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.21">
+		<update version="6.0.22">
 			<file name="puppet-manipulation.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/puppet-manipulation.xml" />
 		</update>
 	</info>
@@ -51,23 +51,23 @@
                         <tr><td>Trait Level</td><td>Traits</td></tr>
                     </thead>
                     <tr><td>Minor</td><td><strong>Enhanced Defense.</strong> Your Puppet's defenses were increased so that it could fare better against attacks. Its armor class is increased to 10 + its Dexterity modifier + your Cursed Energy modifier.</td></tr>
-                    <!--<tr><td> </td><td><strong>Basic Weapon Training.</strong> Your puppet gains proficiency in simple weapons and shields.</td></tr>
-                    <tr><td> </td><td><strong>Faster Movement.</strong> Your puppet is fast and cannot be caught so easily. Your puppet gains a +10 ft. bonus to its walking speed.</td></tr>
-                    <tr><td> </td><td><strong>Stronger Strikes.</strong> Your puppet gains better natural weapons, changing its unarmed strikes to deal 1d8 piercing, slashing, or bludgeoning damage, based on the new weapons. Your puppet's unarmed strikes will now overcome resistance. Your puppet can use dexterity or strength for these attacks.</td></tr>
-                    <tr><td> </td><td><strong>Heightened Senses.</strong> Your puppet is always sharp and is a perfect detection machine. He will gain 60 ft. of Darkvision and will gain advantage in perception checks against living things.</td></tr>
+                    <tr><td>|</td><td><strong>Basic Weapon Training.</strong> Your puppet gains proficiency in simple weapons and shields.</td></tr>
+                    <tr><td>|</td><td><strong>Faster Movement.</strong> Your puppet is fast and cannot be caught so easily. Your puppet gains a +10 ft. bonus to its walking speed.</td></tr>
+                    <tr><td>|</td><td><strong>Stronger Strikes.</strong> Your puppet gains better natural weapons, changing its unarmed strikes to deal 1d8 piercing, slashing, or bludgeoning damage, based on the new weapons. Your puppet's unarmed strikes will now overcome resistance. Your puppet can use dexterity or strength for these attacks.</td></tr>
+                    <tr><td>|</td><td><strong>Heightened Senses.</strong> Your puppet is always sharp and is a perfect detection machine. He will gain 60 ft. of Darkvision and will gain advantage in perception checks against living things.</td></tr>
                     <tr><td>Lesser</td><td><strong>Improved Reach.</strong> Your puppet's arms elongate, its agility heightens, or it grows tentacles, and your puppet's melee reach increases by 5 feet.</td></tr>
-                    <tr><td> </td><td><strong>Advanced Weapon Training.</strong> Your puppet gains proficiency in martial weapons.</td></tr>
-                    <tr><td> </td><td><strong>Hardened Shell.</strong> Your puppet's shell is thicker, scalier, or harder than normal. Your Puppet will gain resistance against non-magical Bludgeoning, Slashing, or Piercing damage.</td></tr>
-                    <tr><td> </td><td><strong>Deflect Missiles.</strong> Your puppet has developed quick reaction skills, and can now defend itself from high-speed ranged projectiles. Using its reaction, your puppet can reduce an incoming projectile damage by 1d12 + your level.</td></tr>
-                    <tr><td> </td><td><strong>Minor Magic.</strong> Your puppet learns to cast one cantrip, and one 1st level spell, both from the wizard spell list(no healing). It uses its Cursed Energy modifier for the spellcasting ability and must take a long rest before casting the 1st-level spell again.</td></tr>
+                    <tr><td>|</td><td><strong>Advanced Weapon Training.</strong> Your puppet gains proficiency in martial weapons.</td></tr>
+                    <tr><td>|</td><td><strong>Hardened Shell.</strong> Your puppet's shell is thicker, scalier, or harder than normal. Your Puppet will gain resistance against non-magical Bludgeoning, Slashing, or Piercing damage.</td></tr>
+                    <tr><td>|</td><td><strong>Deflect Missiles.</strong> Your puppet has developed quick reaction skills, and can now defend itself from high-speed ranged projectiles. Using its reaction, your puppet can reduce an incoming projectile damage by 1d12 + your level.</td></tr>
+                    <tr><td>|</td><td><strong>Minor Magic.</strong> Your puppet learns to cast one cantrip, and one 1st level spell, both from the wizard spell list(no healing). It uses its Cursed Energy modifier for the spellcasting ability and must take a long rest before casting the 1st-level spell again.</td></tr>
                     <tr><td>Advanced</td><td><strong>Colossus.</strong> Your puppet's body increases in size in all dimensions, changing its size to Large. This functions like the enlarge/reduce spell.</td></tr>
-                    <tr><td> </td><td><strong>Flying Behemoth.</strong> Your puppet gains wings, jets, or some other way of flight, giving it flight speed equal to its movement speed.</td></tr>
-                    <tr><td> </td><td><strong>Major Magic.</strong> Your puppet learns one cantrip and one each of 1st-, 2nd-, and 3rd-level spells from the wizard spell list (no healing). It uses your Cursed Energy modifier, casts them at 3rd level, and each can be used once per long rest.</td></tr>
-                    <tr><td> </td><td><strong>Armor Training.</strong> Your puppet gains proficiency in all armor.</td></tr>
-                    <tr><td> </td><td><strong>High Caliber Striker.</strong> Your puppet's natural weapons improve further, growing stronger, harder, or sharper. Your puppet's unarmed strikes now deal 2d8 piercing, slashing, or bludgeoning damage. Your puppet can use dexterity or strength for these attacks.</td></tr>
+                    <tr><td>|</td><td><strong>Flying Behemoth.</strong> Your puppet gains wings, jets, or some other way of flight, giving it flight speed equal to its movement speed.</td></tr>
+                    <tr><td>|</td><td><strong>Major Magic.</strong> Your puppet learns one cantrip and one each of 1st-, 2nd-, and 3rd-level spells from the wizard spell list (no healing). It uses your Cursed Energy modifier, casts them at 3rd level, and each can be used once per long rest.</td></tr>
+                    <tr><td>|</td><td><strong>Armor Training.</strong> Your puppet gains proficiency in all armor.</td></tr>
+                    <tr><td>|</td><td><strong>High Caliber Striker.</strong> Your puppet's natural weapons improve further, growing stronger, harder, or sharper. Your puppet's unarmed strikes now deal 2d8 piercing, slashing, or bludgeoning damage. Your puppet can use dexterity or strength for these attacks.</td></tr>
                     <tr><td>Absolute</td><td><strong>Mech.</strong> Your puppet's body increases in size in all dimensions, changing its size to Gargantuan. However, to control this puppet you must be inside it, but you are under full cover, and the puppet's Hit dice is a d12.</td></tr>
-                    <tr><td> </td><td><strong>Energy Cannon.</strong> As an action, you generate a large amount of cursed energy in the palm of one hand, blasting it at a target for 6 CE. Make a ranged attack with Dex + Proficiency + 3, This attack deals 20d6 Necrotic damage and recharges on a 5-6 d6.</td></tr>
-                    <tr><td> </td><td><strong>Energy Volley.</strong> As an action, you create 5 orbs made of cursed energy and blast them. Choose targets for each orb and make a ranged Cursed Energy attack with a +3 for 4 CE. On a hit, this attack Deals 6d6 Necrotic damage. Recharges on a 5-6 d6.</td></tr>-->
+                    <tr><td>|</td><td><strong>Energy Cannon.</strong> As an action, you generate a large amount of cursed energy in the palm of one hand, blasting it at a target for 6 CE. Make a ranged attack with Dex + Proficiency + 3, This attack deals 20d6 Necrotic damage and recharges on a 5-6 d6.</td></tr>
+                    <tr><td>|</td><td><strong>Energy Volley.</strong> As an action, you create 5 orbs made of cursed energy and blast them. Choose targets for each orb and make a ranged Cursed Energy attack with a +3 for 4 CE. On a hit, this attack Deals 6d6 Necrotic damage. Recharges on a 5-6 d6.</td></tr>-->
                 </table>
 		</description>
 		<sheet>
