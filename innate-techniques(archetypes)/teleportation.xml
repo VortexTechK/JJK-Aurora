@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="6.0.0">
+			<file name="teleportation.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/teleportation.xml" />
+		</update>
+	</info>
+
+	<element name="Teleportation" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_TELEPORTATION">
+		<supports>Innate Technique</supports>
+		<description>
+			<p>You can teleport yourself and others to marked locations while not being viewed.</p>
+			<div element="ID_JJK_ARCHETYPE_FEATURE_TELEPORTATION_TELEPORT" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_TELEPORTATION_IMPROVED_TELEPORT" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_TELEPORTATION_MASTERED_TELEPORT" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_TELEPORTATION_IMPROVED_MARKING" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_TELEPORTATION_DOMAIN_EXPANSION_CROSSROADS_OF_INSTANCE" />
+		</description>
+		<sheet display="false">
+			<description>You can teleport yourself and others to marked locations while not being viewed.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_TELEPORTATION_TELEPORT" level="1" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_TELEPORTATION_IMPROVED_TELEPORT" level="3" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_TELEPORTATION_MASTERED_TELEPORT" level="6" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_TELEPORTATION_IMPROVED_MARKING" level="11" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_TELEPORTATION_DOMAIN_EXPANSION_CROSSROADS_OF_INSTANCE" level="18" />
+		</rules>
+	</element>
+
+	<element name="Teleport" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_TELEPORTATION_TELEPORT">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_TELEPORTATION_TELEPORT</requirements>
+		<description>
+			<p>Beginning at 1st level, your technique allows you to teleport to destinations you have marked. As a bonus action for 1 cursed energy, you can mark a person, location, or object which you can touch. You can have up to twice your CE modifier in marks at once and your marks remain for up to 12 hours. You can remove any of your marks at will.</p>
+            <p class="indent">As an action for 2 cursed energy, while not being viewed, you and any willing creatures within 5ft of you that are also not being viewed teleport up to 500 feet to a mark of your choice.</p>
+		</description>
+		<sheet action="Bonus Action" usage="CE">
+			<description>For 1 CE, you can mark a person, location, or object which you can touch. You can have up to {{teleportation:marks:max}} marks at once and your marks remain for up to 12 hours. You can remove any of your marks at will. As an action for 2 CE, while not being viewed, you and any willing creatures within 5ft of you that are also not being viewed teleport up to {{teleportation:range}} feet to a mark of your choice.</description>
+            <description level="3">For 1 CE, you can mark a person, location, or object which you can touch. You can have up to {{teleportation:marks:max}} marks at once and your marks remain for up to 12 hours. You can remove any of your marks at will. As an action or reaction to an attack or saving throw as long as you have a way to cause yourself to disappear from view for 2 CE, while not being viewed, you and any willing creatures within 5ft of you that are also not being viewed teleport up to {{teleportation:range}} feet to a mark of your choice.</description>
+            <description level="6">For 1 CE, you can mark a person, location, or object which you can touch. You can have up to {{teleportation:marks:max}} marks at once and your marks remain for up a week. You can remove any of your marks at will. As an action or reaction to an attack or saving throw as long as you have a way to cause yourself to disappear from view for 2 CE, while not being viewed, you and any willing creatures within 5ft of you that are also not being viewed teleport up to {{teleportation:range}} feet to a mark of your choice.</description>
+            <description level="6" action="Free Action">For 1 CE, you can mark a person, location, or object which you can touch. You can have up to {{teleportation:marks:max}} marks at once and your marks remain for up a week. You can remove any of your marks at will. As an action or reaction to an attack or saving throw as long as you have a way to cause yourself to disappear from view for 2 CE, while not being viewed, you and any willing creatures within 5ft of you that are also not being viewed teleport up to {{teleportation:range}} feet to a mark of your choice.</description>
+		</sheet>
+        <rules>
+            <stat name="teleportation:marks:max" value="ce:modifier" />
+            <stat name="teleportation:marks:max" value="ce:modifier" />
+            <stat name="teleportation:marks:max" value="ce:modifier" level="11" />
+            <stat name="teleportation:range" value="500" bonus="teleportation" />
+            <stat name="teleportation:range:calculation" value="ce:modifier" />
+            <stat name="teleportation:range:calculation" value="proficiency" />
+            <stat name="teleportation:range:calculation" value="level" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
+            <stat name="teleportation:range" value="teleportation:range:multiply" bonus="teleportation" level="3" />
+        </rules>
+	</element>
+
+	<element name="Improved Teleport" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_TELEPORTATION_IMPROVED_TELEPORT">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_TELEPORTATION_IMPROVED_TELEPORT</requirements>
+		<description>
+			<p>At 3rd level, you have improved your technique. The range of your teleport now increases to (your CE modifier + your proficiency bonus + your level) x 100 feet, and you can now teleport as a reaction to an attack or saving throw as long as you have a way to cause yourself to disappear from view (such as covering yourself with a sheet).</p>
+		</description>
+		<sheet display="false"/>
+	</element>
+
+	<element name="Mastered Teleport" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_TELEPORTATION_MASTERED_TELEPORT">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_TELEPORTATION_MASTERED_TELEPORT</requirements>
+		<description>
+			<p>At 6th level, with great training, you have reached the pinnacle of your teleport. As an action for 8 cursed energy you cast Teleport. You can only go to marks and you always go to the exact mark you want to go to, regardless of how far away from you they are. You are now able to teleport others while you do not leave. You can now choose to only teleport other creatures when using any teleport feature.</p>
+            <p class="indent">Additionally, you can attempt to teleport an unwilling creature within 5 ft. They must make a Cursed Energy saving throw. If they fail, they are teleported to one of your marks.</p>
+            <p class="indent">Additionally, your markings now last for a week instead of 12 hours.</p>
+		</description>
+        <sheet action="Action" usage="CE">
+            <description>For 8 CE, you cast Teleport. You can only go to marks and always go to the exact mark you want to go to, regardless of how far away from you they are. You can choose to only teleport other creatures when using any teleport feature. Additionally, you can attempt to teleport an unwilling creature within 5 ft. They must make a Cursed Energy saving throw. If they fail, they are teleported to one of your marks.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_TELEPORT" />
+        </rules>
+	</element>
+
+	<element name="Improved Marking" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_TELEPORTATION_IMPROVED_MARKING">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_TELEPORTATION_IMPROVED_MARKING</requirements>
+		<description>
+			<p> At 11th level, you have learned to mark things more efficiently. You can now mark as a free action instead of a bonus action and your amount of markings is increased to 3 times your CE modifier.</p>
+		</description>
+        <sheet display="false"/>
+	</element>
+
+	<element name="Domain Expansion: Crossroads of Instance" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_TELEPORTATION_DOMAIN_EXPANSION_CROSSROADS_OF_INSTANCE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_TELEPORTATION_DOMAIN_EXPANSION_CROSSROADS_OF_INSTANCE</requirements>
+		<description>
+			<p>At 18th level, you have mastered your technique allowing you to expand your domain. All space within your domain is treated as being marked by you. At initiative 20, you can change the locations of a number of creatures up to twice your CE modifier, teleporting them anywhere within your domain, regardless of whether they can be seen. Additionally, you can teleport a creature as a reaction.</p>
+		</description>
+        <sheet>
+			<description>All space within your domain is treated as being marked by you. At initiative 20, you can change the locations of up to {{teleportation:domain:max}} creatures, teleporting them anywhere within your domain, regardless of whether they can be seen. Additionally, you can teleport a creature as a reaction.</description>
+		</sheet>
+		<rules>
+            <stat name="telportation:domain:max" value="ce:modifier" />
+            <stat name="telportation:domain:max" value="ce:modifier" />
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION" />
+		</rules>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Teleport Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_TELEPORTATION_TELEPORT" />
+	<element name="Improved Teleport Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_TELEPORTATION_IMPROVED_TELEPORT" />
+	<element name="Mastered Teleport Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_TELEPORTATION_MASTERED_TELEPORT" />
+	<element name="Improved Marking Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_TELEPORTATION_IMPROVED_MARKING" />
+	<element name="Domain Expansion: Crossroads of Instance Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_TELEPORTATION_DOMAIN_EXPANSION_CROSSROADS_OF_INSTANCE" />
+</elements>

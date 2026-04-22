@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="6.0.0">
+			<file name="straw-doll.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/straw-doll.xml" />
+		</update>
+	</info>
+
+	<element name="Straw Doll Technique" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_STRAW_DOLL">
+		<supports>Innate Technique</supports>
+		<description>
+			<p>IS THAT A NOBARA REFERENCE.</p>
+			<div element="ID_JJK_ARCHETYPE_FEATURE_STRAW_DOLL_NAIL_PROJECTILE" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_STRAW_DOLL_RESONANCE" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_STRAW_DOLL_HAIR_PIN" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_STRAW_DOLL_IMPROVED_RESONANCE" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_STRAW_DOLL_DOMAIN_EXPANSION_WARA_NINGYO" />
+		</description>
+		<sheet display="false">
+			<description>Harm enemies through straw dolls.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_STRAW_DOLL_NAIL_PROJECTILE" level="1" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_STRAW_DOLL_RESONANCE" level="3" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_STRAW_DOLL_HAIR_PIN" level="6" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_STRAW_DOLL_IMPROVED_RESONANCE" level="11" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_STRAW_DOLL_DOMAIN_EXPANSION_WARA_NINGYO" level="18" />
+		</rules>
+	</element>
+
+	<element name="Nail Projectile" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_STRAW_DOLL_NAIL_PROJECTILE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_STRAW_DOLL_NAIL_PROJECTILE</requirements>
+		<description>
+			<p>Beginning at 1st level, due to your experience with your technique, you will start with 1 Hammer, 24 nails, and 1 straw doll. As an action for 1 Cursed Energy, you strike 2 nails by hitting them with your hammer. Make two melee or ranged cursed energy attack rolls with a range of 20/60 feet. On a hit, each nail deals 1d6 + your CE modifier piercing damage. You can also spend 2 additional Cursed Energy to make 2 additional attacks in this way.</p>
+            <p class="indent">At 6th level, you have become rather cheap with your nails, making sure to always recover as many as possible from the battlefield. As a bonus action while touching a creature that has taken damage from Nail Projectile, you can make a DC 10 Dexterity check. On a success, you regain the nail.</p>
+		</description>
+		<sheet action="Action" usage="CE">
+			<description>For 1 CE, make two melee or ranged CE attack rolls with a range of 20/60 feet. On a hit, each nail deals 1d6 + {{ce:modifier}} piercing damage. You can also spend 2 additional CE to make 2 additional attacks in this way.</description>
+            <description level="6">For 1 CE, make two melee or ranged CE attack rolls with a range of 20/60 feet. On a hit, each nail deals 1d6 + {{ce:modifier}} piercing damage. You can also spend 2 additional CE to make 2 additional attacks in this way. As a bonus action while touching a creature that has taken damage from Nail Projectile, you can make a DC 10 Dexterity check. On a success, you regain the nail.</description>
+		</sheet>
+	</element>
+
+	<element name="Resonance" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_STRAW_DOLL_RESONANCE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_STRAW_DOLL_RESONANCE</requirements>
+		<description>
+			<p>At 3rd level, you have learned the true use of your technique. As a reaction while within 5 feet of a target that just took slashing or piercing damage, you make a Sleight of Hand check against the target's AC. The damage dealt  determines the size of the piece. You can mix a body part from a creature into the straw doll for three cursed energy. While within 200 feet, you can use your action to damage the original creature through your straw doll, depending on the body part. At 18th level, your attacks using Resonance lowers the target's maximum health.</p>
+            <h5 class="caption">RESONANCE EFFECTS</h5>
+            <table>
+                <thead>
+                    <tr><td>Damage Required</td><td>Effect</td><td>Damage Dice</td></tr>
+                </thead>
+                <tr><td>Less than 10% of Enemy HP - Blood or Hairs</td><td>Minor Body Part: Target gains disadvantage on attack rolls until the end of their next turn.</td><td>(Proficiency bonus)d6</td></tr>
+                <tr><td>More than 25% of Enemy HP - Teeth, Skin, Bones</td><td>Medium Body Part: The Target loses their reactions until the end of their next turn.</td><td>(CE modifier + proficiency bonus)d8</td></tr>
+                <tr><td>More than 50% of Enemy HP - Limbs</td><td>The creature has to make a Constitution saving throw; on failure, black spikes erupt from the creature's body stunning them for 1 minute. They can repeat the save at the end of their turn, ending the effect on success.</td><td>(2 * CE modifier + proficiency bonus)d10</td></tr>
+            </table>
+		</description>
+		<sheet action="Reaction">
+			<description>While within 5 feet of a target that just took slashing or piercing damage, make a Sleight of Hand check against the target's AC. On a success, take a body part off of them which you can mix into a straw doll for three cursed energy. While within 200 feet, you can use your action to damage the original creature through your straw doll, dealing {{proficiency}}d6 and giving disadvantage on attack rolls until the end of their next turn if its minor, {{straw:doll:resonance:medium:damage}}d8 and preventing reactions until the end of their next turn if its medium, and {{straw:doll:resonance:major:damage}}d10 and forcing a Constitution saving throw, stunning them for 1 minute on a failure. The target can repeat the save at the end of their turn, ending stun on success. If the slashing or piercing damage did less than 10%, more than 25%, or more than 50% of the target's maximum HP it is a minor, medium, or major body part respectively.</description>
+		</sheet>
+        <rules>
+            <stat name="straw:doll:resonance:medium:damage" value="ce:modifier" />
+            <stat name="straw:doll:resonance:medium:damage" value="proficiency" />
+            <stat name="straw:doll:resonance:major:damage" value="straw:doll:resonance:medium:damage" />
+            <stat name="straw:doll:resonance:major:damage" value="ce:modifier" />
+        </rules>
+	</element>
+
+	<element name="Hair Pin" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_STRAW_DOLL_HAIR_PIN">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_STRAW_DOLL_HAIR_PIN</requirements>
+		<description>
+			<p>Once you reach 6th level, you learn a new way to damage your enemies. When you launch a Nail Projectile and hit a creature or as a bonus action for 1 Cursed Energy, you can stick a nail into an object. If hitting a creature, the initial attack deals no damage. As a bonus action or as a reaction to a creature coming within 5 feet of the nail, you can create cursed explosions. Creatures within 10 feet of the nails must make a Dexterity saving throw. On a failure, they take 1d8 necrotic damage for each nail, taking half as much damage on a success. You can spend additional Cursed Energy when you drive the nail, increasing the damage by 1d8 for every additional Cursed Energy spent.</p>
+		</description>
+        <sheet usage="CE">
+            <description>When you use Nail Projectile and hit or as a bonus action for 1 CE, you can stick a nail into an object or creature, dealing no damage. As a bonus action or as a reaction to a creature coming within 5 feet of the nail, you can force creatures within 10 feet of nails to make a Dexterity saving throw, taking 1d8 necrotic damage for each nail and half as much damage on a success. You can spend additional CE when you drive the nail, increasing the damage by 1d8 for every additional CE spent.</description>
+        </sheet>
+	</element>
+
+	<element name="Improved Resonance" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_STRAW_DOLL_IMPROVED_RESONANCE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_STRAW_DOLL_IMPROVED_RESONANCE</requirements>
+		<description>
+			<p>When you reach 11th level, you've discovered a way to utilize Resonance. Instead of using the straw doll to target the creature, you can instead use the creature's very body in place of it to dramatically increase its effectiveness. As an action for 6 cursed energy, you make an attack roll against a creature under one of the following conditions: incapacitated, restrained, stunned, petrified, or paralyzed. On a hit, the creature is knocked prone and struck by resonance with its body being used in place of the straw doll with the following effect:</p>
+            <table>
+                <thead>
+                    <tr><td>Effect</td><td>Damage Dice</td></tr>
+                </thead>
+                <tr><td>For 1 minute, every time they try to use a feature that costs CE, they must make a Charisma saving throw at disadvantage. On a failure, the technique fails to activate and the cursed energy is wasted. The creature can repeat the saving throw at the end of its turns, still at disadvantage, ending the effect on a success.</td><td>(2*CE modifier + your proficiency bonus)d12</td></tr>
+            </table>
+		</description>
+        <sheet action="Action" usage="CE">
+			<description>For 6 CE, make an attack roll against a creature that is incapacitated, restrained, stunned, petrified, or paralyzed, dealing {{straw:doll:resonance:major:damage}}d12 on a hit, knocking them prone, and for 1 minute, every time they try to use a feature that costs CE, they must make a Charisma saving throw at disadvantage. On a failure, the technique fails to activate and the cursed energy is wasted. The creature can repeat the saving throw at the end of its turns, still at disadvantage, ending the effect on a success.</description>
+		</sheet>
+	</element>
+
+	<element name="Domain Expansion: Wara Ningyo" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_STRAW_DOLL_DOMAIN_EXPANSION_WARA_NINGYO">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_STRAW_DOLL_DOMAIN_EXPANSION_WARA_NINGYO</requirements>
+		<description>
+			<p>Finally, at 18th level, you have honed your technique. At initiative 20, you unleash a full-power Improved Resonance, on all creatures inside the domain.</p>
+		</description>
+        <sheet>
+			<description>At initiative 20, you all creatures take Improved Resonance.</description>
+		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION" />
+		</rules>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Nail Projectile Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_STRAW_DOLL_NAIL_PROJECTILE" />
+	<element name="Resonance Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_STRAW_DOLL_RESONANCE" />
+	<element name="Hair Pin Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_STRAW_DOLL_HAIR_PIN" />
+	<element name="Improved Resonance Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_STRAW_DOLL_IMPROVED_RESONANCE" />
+	<element name="Domain Expansion: Wara Ningyo Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_STRAW_DOLL_DOMAIN_EXPANSION_WARA_NINGYO" />
+</elements>

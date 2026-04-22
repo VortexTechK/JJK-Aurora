@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="6.0.0">
+			<file name="sky-manipulation.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/sky-manipulation.xml" />
+		</update>
+	</info>
+
+	<element name="Sky Manipulation" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_SKY_MANIPULATION">
+		<supports>Innate Technique</supports>
+		<description>
+			<p>Pink Aizo.</p>
+			<div element="ID_JJK_ARCHETYPE_FEATURE_SKY_MANIPULATION_SKY_SHAPE" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_SKY_MANIPULATION_SKY_ARMOR" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_SKY_MANIPULATION_SKY_SHAPE_IMPROVEMENT" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_SKY_MANIPULATION_THIN_ICE_BREAKER" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_SKY_MANIPULATION_DOMAIN_EXPANSION_HEAVENS_GATE" />
+		</description>
+		<sheet display="false">
+			<description>A great technique allowing you to grab space and wield it to your command.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_SKY_MANIPULATION_SKY_SHAPE" level="1" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_SKY_MANIPULATION_SKY_ARMOR" level="3" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_SKY_MANIPULATION_SKY_SHAPE_IMPROVEMENT" level="6" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_SKY_MANIPULATION_THIN_ICE_BREAKER" level="11" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_SKY_MANIPULATION_DOMAIN_EXPANSION_HEAVENS_GATE" level="18" />
+		</rules>
+	</element>
+
+	<element name="Sky Shape" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_SKY_MANIPULATION_SKY_SHAPE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SKY_MANIPULATION_SKY_SHAPE</requirements>
+		<description>
+			<p> Beginning at 1st level, your innate technique manifests, making you able to manipulate the sky around you. As a reaction to an attack roll, you can spend 1 Cursed Energy to add +4 to your AC by distorting the sky until the start of your next turn. If it makes a ranged attack miss, you can make a cursed energy attack roll against the attacker, redirecting the attack and dealing the attack's damage and effects on a hit. If it makes a melee weapon attack miss, it will render the limb used in the attack stuck and unusable until the beginning of the creature's next turn. If you have taken the dodge action, you can use this reaction on allies within 5 feet.</p>
+		</description>
+		<sheet action="Reaction" usage="CE">
+			<description>For 1 CE against a attack roll, add +4 to your AC until the start of your next turn. If it makes a ranged attack miss, you can make a CE attack roll against the attacker, redirecting the attack and dealing the attack's damage and effects on a hit. If it makes a melee weapon attack miss, it will render the limb used in the attack unusable until the beginning of the creature's next turn. If you have taken the dodge action, you can use this reaction on allies within 5 feet.</description>
+            <description level="6">For 1 CE against a attack or cursed energy attack roll, add +4 to your AC until the start of your next turn. If it makes a ranged attack miss, you can make a CE attack roll against the attacker, redirecting the attack and dealing the attack's damage and effects on a hit. If it makes a melee weapon attack miss, it will render the limb used in the attack unusable until the beginning of the creature's next turn. If you have taken the dodge action, you can use this reaction on allies within 5 feet Alternatively, for 3 CE against a cone or line saving throw that you succeed on, redirect it.</description>		
+        </sheet>
+	</element>
+
+	<element name="Sky Armor" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_SKY_MANIPULATION_SKY_ARMOR">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SKY_MANIPULATION_SKY_ARMOR</requirements>
+		<description>
+			<p>Once you reach 3rd level, you have become better at manipulating the space around you. As a bonus action for 1 Cursed Energy, you can cover part of your body with a part of the sky, making those parts covered invisible for 1 hour. While you have this armor equipped, your AC is 11 + Your Cursed Energy modifier + your proficiency bonus. You also gain a flying speed equal to your walking speed while under the effects of Sky Armor.</p>
+		</description>
+		<sheet action="Bonus Action" usage="CE">
+			<description>For 1 CE, make part of your body invisible for 1 hour. While this is active, your AC is {{sky:manipulation:sky:armor}} and have a {{speed}} ft. flying speed.</description>
+		</sheet>
+        <rules>
+            <stat name="sky:manipulation:sky:armor" value="11" />
+            <stat name="sky:manipulation:sky:armor" value="ce:modifier" />
+            <stat name="sky:manipulation:sky:armor" value="proficiency" />
+        </rules>
+	</element>
+
+	<element name="Sky Shape Improvement" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_SKY_MANIPULATION_SKY_SHAPE_IMPROVEMENT">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SKY_MANIPULATION_SKY_SHAPE_IMPROVEMENT</requirements>
+		<description>
+			<p>When you reach 6th level, your manipulation has become so refined even techniques pass through you. You can now use your reaction against cursed energy attack rolls, and you can use this reaction for 3 Cursed Energy to redirect a cone or line saving throw, redirecting the attack if you pass the saving throw, making it not affect you or other creatures in the area.</p>
+		</description>
+        <sheet display="false"/>
+	</element>
+
+	<element name="Thin Ice Breaker" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_SKY_MANIPULATION_THIN_ICE_BREAKER">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SKY_MANIPULATION_THIN_ICE_BREAKER</requirements>
+		<description>
+			<p>At 11th level, you have created an extension technique to your sky manipulation, literally breaking the sky as if it were ice. As an action for 5 Cursed Energy, you can force every creature in a 30 feet line to make a Dexterity saving throw. On a failure, they will take a number of d10s equal to twice your Cursed Energy modifier in force damage and be knocked prone, on a success they take half as much damage and are not prone. While you are flying, all creatures make their save at disadvantage.</p>
+		</description>
+        <sheet action="Action" usage="CE">
+			<description>For 5 CE, every creature in a 30 feet line must make a Dexterity saving throw. On a failure, they take {{sky:manipulation:thin:ice:breaker:damage}}d10 force damage and are knocked prone, on a success they take half as much damage and are not prone. While you are flying, all creatures make their save at disadvantage.</description>
+		</sheet>
+        <rules>
+            <stat name="sky:manipulation:thin:ice:breaker:damage" value="value" />
+        </rules>
+	</element>
+
+	<element name="Domain Expansion: Heaven's Gate" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_SKY_MANIPULATION_DOMAIN_EXPANSION_HEAVENS_GATE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SKY_MANIPULATION_DOMAIN_EXPANSION_HEAVENS_GATE</requirements>
+		<description>
+			<p>Finally, at 18th level, you have learned the most powerful technique of your arsenal. Your domain is a beautiful blue sky full of clouds, with a shining sun illuminating everything. All hostile creatures inside the domain are considered falling unless they have flying speed. Once the domain is over, they take the maximum amount of falling damage.</p>
+		</description>
+        <sheet>
+			<description>All hostile creatures are considered falling unless they have flying speed. Once the domain is over, they take the maximum amount of falling damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION" />
+		</rules>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Sky Shape Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SKY_MANIPULATION_SKY_SHAPE" />
+	<element name="Sky Armor Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SKY_MANIPULATION_SKY_ARMOR" />
+	<element name="Sky Shape Improvement Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SKY_MANIPULATION_SKY_SHAPE_IMPROVEMENT" />
+	<element name="Thin Ice Breaker Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SKY_MANIPULATION_THIN_ICE_BREAKER" />
+	<element name="Domain Expansion: Heaven's Gate Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SKY_MANIPULATION_DOMAIN_EXPANSION_HEAVENS_GATE" />
+</elements>

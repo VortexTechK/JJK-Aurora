@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="6.0.0">
+			<file name="star-dictator.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/star-dictator.xml" />
+		</update>
+	</info>
+
+	<element name="Star Dictator" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_STAR_DICTATOR">
+		<supports>Innate Technique</supports>
+		<description>
+			<p>The path of your shikigami constitutes the domain.</p>
+			<div element="ID_JJK_ARCHETYPE_FEATURE_STAR_DICTATOR_MINOR_STAR_SHIKIGAMI" />
+            <div class="reference">
+				<div element="ID_JJK_INFORMATION_MINOR_STAR_SHIKIGAMI"/>
+			</div>
+			<div element="ID_JJK_ARCHETYPE_FEATURE_STAR_DICTATOR_PSEUDO_DOMAIN_CONSTITUTION" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_STAR_DICTATOR_MAJOR_STAR_SHIKIGAMI" />
+            <div class="reference">
+				<div element="ID_JJK_INFORMATION_MAJOR_STAR_SHIKIGAMI"/>
+			</div>
+			<div element="ID_JJK_ARCHETYPE_FEATURE_STAR_DICTATOR_ARMY_OF_THE_DICTATOR" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_STAR_DICTATOR_DOMAIN_EXPANSION_DIVINE_MANDATE" />
+		</description>
+		<sheet display="false">
+			<description>The path of your shikigami constitutes the domain.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_STAR_DICTATOR_MINOR_STAR_SHIKIGAMI" level="1" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_STAR_DICTATOR_PSEUDO_DOMAIN_CONSTITUTION" level="3" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_STAR_DICTATOR_MAJOR_STAR_SHIKIGAMI" level="6" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_STAR_DICTATOR_ARMY_OF_THE_DICTATOR" level="11" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_STAR_DICTATOR_DOMAIN_EXPANSION_DIVINE_MANDATE" level="18" />
+		</rules>
+	</element>
+
+	<element name="Minor Star Shikigami" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_STAR_DICTATOR_MINOR_STAR_SHIKIGAMI">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_STAR_DICTATOR_MINOR_STAR_SHIKIGAMI</requirements>
+		<description>
+			<p>Starting at 1st level, you can spend cursed energy up to your proficiency bonus as an action. For every cursed energy, you summon a minor shikigami in an unoccupied space within 5 ft of you. As a bonus action, you can command any shikigami created with your technique, otherwise they take the dodge action. As an action, you can share senses with one of your minor shikigami. While sharing senses with your shikigami, you are blinded and deafened. You can only have up to your proficiency bonus in shikigami at a time.</p>
+            <div class="reference">
+				<div element="ID_JJK_INFORMATION_MINOR_STAR_SHIKIGAMI"/>
+			</div>
+		</description>
+		<sheet action="Action" usage="CE">
+			<description>For up to {{proficiency}} CE, summon that amount of minor shikigami in an unoccupied space within 5 ft of you. As a bonus action, you can command any shikigami created with your technique, otherwise they take the dodge action. As an action, you can share senses with one of your minor shikigami. While sharing senses with your shikigami, you are blinded and deafened. You can have up to {{star:dictator:minor:shikigami:max}} in shikigami at a time.</description>
+		</sheet>
+        <rules>
+            <select type="Companion" name="Minor Star Shikigami" supports="Minor Star Shikigami" />
+            <stat name="star:dictator:minor:shikigami:max" value="proficiency" />
+            <stat name="star:dictator:minor:shikigami:max" value="proficiency" level="11" />
+            <stat name="star:dictator:minor:shikigami:max" value="proficiency" level="11" />
+        </rules>
+	</element>
+
+	<element name="Pseudo-Domain Constitution" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_STAR_DICTATOR_PSEUDO_DOMAIN_CONSTITUTION">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_STAR_DICTATOR_PSEUDO_DOMAIN_CONSTITUTION</requirements>
+		<description>
+			<p>Starting at 3rd level, you have learned to form a pseudo-domain that follows the path of your shikigami. As a bonus action, you command any number of your minor shikigami to create your domain. They spend their action taking the dash action to orbit around a point, forming a circle within 5 ft of the center. On each of your turns, you can use your bonus action to increase the radius of the domain by 5 ft or command more shikigami to join the domain orbit. </p>
+            <p class="indent"> The maximum range and damage of the domain depends on the number of shikigami making up the domain. A creature within the domain other than you must make a Dexterity saving throw at the end of your turn. On a failed save, a creature takes 1d6 slashing damage per orbiting shikigami or half as much on a success. The maximum radius of the domain is 5 ft x the number of orbiting shikigami. If one of the orbiting shikigami is killed, the range and damage decreases. If all of your shikigami stop orbiting the domain path, the pseudo-domain ends.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>Command any number of your minor shikigami to create your domain. They spend their action taking the dash action to orbit around a point, forming a circle within 5 ft of the center. On each of your turns, you can use your bonus action to increase the radius of the domain by 5 ft or command more shikigami to join the domain orbit. A creature within the domain other than you must make a Dexterity saving throw at the end of your turn. On a failed save, a creature takes 1d{{star:dictator:pseudo:domain:damage}} slashing damage per orbiting shikigami or half as much on a success. The maximum radius of the domain is {{star:dictator:pseudo:domain:range}} ft x the number of orbiting shikigami. If all of your shikigami stop orbiting the domain path, the pseudo-domain ends.</description>
+            <description level="11">Command any number of your minor shikigami to create your domain. They spend their action taking the dash action to orbit around a point, forming a circle within 5 ft of the center. On each of your turns, you can use your bonus action to increase the radius of the domain by 5 ft or command more shikigami to join the domain orbit. A creature within the domain other than you must make a Dexterity saving throw at the end of your turn. On a failed save, a creature takes 1d{{star:dictator:pseudo:domain:damage}} slashing damage per orbiting shikigami ignoring immunity and resistance or half as much on a success. The maximum radius of the domain is {{star:dictator:pseudo:domain:range}} ft x the number of orbiting shikigami. If all of your shikigami stop orbiting the domain path, the pseudo-domain ends.</description>
+		</sheet>
+        <rules>
+            <stat name="star:dictator:pseudo:domain:damage" value="6" bonus="pseudo domain" />
+            <stat name="star:dictator:pseudo:domain:damage" value="8" bonus="pseudo domain" level="6" />
+            <stat name="star:dictator:pseudo:domain:damage" value="10" bonus="pseudo domain" level="11" />
+            <stat name="star:dictator:pseudo:domain:range" value="5" bonus="pseudo domain" />
+            <stat name="star:dictator:pseudo:domain:range" value="10" bonus="pseudo domain" level="11" />
+        </rules>
+	</element>
+
+	<element name="Major Star Shikigami" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_STAR_DICTATOR_MAJOR_STAR_SHIKIGAMI">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_STAR_DICTATOR_MAJOR_STAR_SHIKIGAMI</requirements>
+		<description>
+			<p>Starting at 6th level, you have learned how to keep your pseudo-domain active without sacrificing offensive power. Your pseudo-domain now deals 1d8 slashing damage per shikigami creating the domain. You gain the ability to summon your major star shikigami. You can summon your major star shikigami as an action for 6 CE and can command it as a bonus action, otherwise it takes the dodge action. You can only have one major star shikigami active at a time. Once your major star shikigami is killed, you cannot summon it again for 1 hour. </p>
+            <p class="indent">As a Full-Turn Action (Action + Bonus Action + Movement), you can command the major star shikigami to begin forming a special pseudo-domain. Once it has completed a full orbit, the special domain allows your Minor Star Shikigami to move freely within the domain while still maintaining the range and damage of your pseudo-domain. This special domain still follows the same maximum for range and damage, now scaling with the number of Minor Star Shikigami within the domain.</p>
+            <div class="reference">
+				<div element="ID_JJK_INFORMATION_MAJOR_STAR_SHIKIGAMI"/>
+			</div>
+		</description>
+        <sheet action="Action" usage="CE">
+            <description>For 6 CE, summon a major star shikigami which can be commanded as a bonus action, otherwise it takes the dodge action. You can have {{star:dictator:major:shikigami:max}} major star shikigami active at a time. Once your major star shikigami is killed, you cannot summon it again for 1 hour. As a Full-Turn Action, you can command the major star shikigami to begin a orbit, creating a special domain once it finishes allowing your Minor Star Shikigami to move freely within the domain while still maintaining the range and damage of your pseudo-domain. This special domain still follows the same maximum for range and damage, now scaling with the number of Minor Star Shikigami within the domain.</description>
+        </sheet>
+        <rules>
+            <select type="Companion" name="Major Star Shikigami" supports="Major Star Shikigami" />
+            <stat name="star:dictator:major:shikigami:max" value="1" bonus="major shikigami" />
+            <stat name="star:dictator:major:shikigami:max" value="2" bonus="major shikigami" level="11" />
+        </rules>
+	</element>
+
+	<element name="Army of the Dictator" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_STAR_DICTATOR_ARMY_OF_THE_DICTATOR">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_STAR_DICTATOR_ARMY_OF_THE_DICTATOR</requirements>
+		<description>
+			<p>At 11th level, you have learned mass summoning. You can now maintain a number of Minor Star Shikigami equal to three times your proficiency bonus and can have two Major Star Shikigami active at once.</p>
+            <p class="indent"> Additionally, the damage of your pseudo-domain increases to 1d10 slashing damage per shikigami orbiting and ignores immunity and resistance to slashing damage. The radius of your pseudo-domain increases to 10 ft x the number of orbiting shikigami.</p>
+		</description>
+        <sheet display="false"/>
+	</element>
+
+	<element name="Domain Expansion: Divine Mandate" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_STAR_DICTATOR_DOMAIN_EXPANSION_DIVINE_MANDATE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_STAR_DICTATOR_DOMAIN_EXPANSION_DIVINE_MANDATE</requirements>
+		<description>
+			<p>Finally at 18th level, you have learned to expand your domain. At initiative 20, all creatures of your choice within your domain take 1d12 slashing damage for every star shikigami you have summoned within your domain. </p>
+		</description>
+        <sheet>
+			<description> At initiative 20, all creatures of your choice within your domain take 1d12 slashing damage for every star shikigami you have summoned within your domain.</description>
+		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION" />
+		</rules>
+	</element>
+
+    <!-- Companion Reference -->
+    <element name="Minor Star Shikigami" type="Information" source="JJK" id="ID_JJK_INFORMATION_MINOR_STAR_SHIKIGAMI">
+        <description>
+            <p style="margin-bottom:-5px"><em>Small shikigami, unaligned</em></p>
+            <h4 style="margin-top:5px"></h4>
+            <ul class="unstyled">
+                <li><strong>Armor Class</strong> 10 + your proficiency bonus</li>
+                <li><strong>Hit Points</strong> 3 x your level</li>
+                <li><strong>Speed</strong> 10 ft., fly 60 ft.</li>
+            </ul>
+            <table style="text-align:center;margin-top:10px;margin-bottom:10px">
+                <thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+                <tr><td>6 (-2)</td><td>14 (+2)</td><td>14 (+2)</td><td>3 (-4)</td><td>8 (-1)</td><td>10 (+0)</td></tr>
+            </table>
+            <ul class="unstyled">
+                <li><strong>Senses</strong> passive Perception 9</li>
+                <li><strong>Languages</strong> understands Common</li>
+                <li style="margin-bottom:-1em"><strong>Challenge</strong> 1/8 (25 XP)</li>
+            </ul>
+
+			<h4 style="margin-top:5px; margin-bottom:10px" />
+            <ul class="unstyled">
+                <li><strong><em>Orbiter of Authority.</em></strong> While orbiting, the shikigami has advantage on saving throws against area effects, and attacks against them are made with disadvantage.</li>
+            </ul>
+
+            <h4 style="margin-top:10px">Actions</h4>
+            <ul class="unstyled">
+                <li><em><strong>Bite.</strong> Melee Weapon Attack:</em> Dexterity modifier + your proficiency to hit, reach 5 ft., one target. <em>Hit:</em> (1d4 + Dexterity modifier piercing damage).</li>
+            </ul>
+        </description>
+    </element>
+
+    <element name="Major Star Shikigami" type="Information" source="JJK" id="ID_JJK_INFORMATION_MAJOR_STAR_SHIKIGAMI">
+        <description>
+            <p style="margin-bottom:-5px"><em>Medium shikigami, unaligned</em></p>
+            <h4 style="margin-top:5px"></h4>
+            <ul class="unstyled">
+                <li><strong>Armor Class</strong> 13 + your proficiency bonus</li>
+                <li><strong>Hit Points</strong> 30 + (5 x your level)</li>
+                <li><strong>Speed</strong> 30 ft.</li>
+            </ul>
+            <table style="text-align:center;margin-top:10px;margin-bottom:10px">
+                <thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+                <tr><td>16 (+3)</td><td>14 (+2)</td><td>18 (+4)</td><td>5 (-3)</td><td>10 (+0)</td><td>12 (+1)</td></tr>
+            </table>
+            <ul class="unstyled">
+                <li><strong>Saving Throws</strong> Str +6</li>
+                <li><strong>Skills</strong> Athletics +6</li>
+                <li><strong>Senses</strong> blindsight 10 ft., passive Perception 10</li>
+                <li><strong>Languages</strong> understands Common</li>
+                <li style="margin-bottom:-1em"><strong>Challenge</strong> 6 (2,300 XP)</li>
+            </ul>
+			<h4 style="margin-top:5px; margin-bottom:10px" />
+            <ul class="unstyled">
+                <li><strong><em>Controlled Path.</em></strong> While orbiting, the shikigami has advantage on saving throws against effects that would move or teleport it.</li>
+                <li><strong><em>Siege Monster.</em></strong> The shikigami deals double damage to objects and structures.</li>
+            </ul>
+            <h4 style="margin-top:10px">Actions</h4>
+            <ul class="unstyled">
+                <li><em><strong>Bite.</strong> Melee Weapon Attack:</em> Strength modifier + your proficiency to hit, reach 5 ft., one target. <em>Hit:</em> (2d8 + Strength modifier piercing damage).</li>
+            </ul>
+        </description>
+    </element>
+
+    <!-- Companion -->
+    <element name="Minor Star Shikigami" type="Companion" source="JJK" id="ID_JJK_COMPANION_MINOR_STAR_SHIKIGAMI">
+        <supports>Minor Star Shikigami</supports>
+        <setters>
+            <set name="strength">6</set>
+            <set name="dexterity">14</set>
+            <set name="constitution">14</set>
+            <set name="intelligence">3</set>
+            <set name="wisdom">8</set>
+            <set name="charisma">10</set>
+            <set name="ac">10 + PB</set>
+            <set name="hp">3 x level</set>
+            <set name="speed">10 ft., fly 60 ft.</set>
+            <set name="senses">passive Perception 9</set>
+            <set name="languages">understands Common</set>
+            <set name="type">Shikigami</set>
+            <set name="size">Small</set>
+            <set name="alignment">unaligned</set>
+            <set name="challenge">1/8 (25 XP)</set>
+            <set name="traits">ID_JJK_COMPANION_TRAIT_ORBITER_OF_AUTHORITY</set>
+            <set name="actions">ID_JJK_COMPANION_ACTION_MINOR_STAR_BITE</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="10" bonus="base" />
+            <stat name="companion:ac" value="proficiency" />
+            <stat name="companion:hp:max" value="level" />
+            <stat name="companion:hp:max" value="level" />
+            <stat name="companion:hp:max" value="level" />
+            <stat name="companion:speed" value="10" bonus="base" />
+            <stat name="companion:speed:fly" value="60" bonus="base" />
+        </rules>
+    </element>
+
+    <element name="Orbiter of Authority" type="Companion Trait" source="JJK" id="ID_JJK_COMPANION_TRAIT_ORBITER_OF_AUTHORITY">
+        <description>
+            <p>While orbiting, the shikigami has advantage on saving throws against area effects, and attacks against them are made with disadvantage.</p>
+        </description>
+        <sheet>
+            <description>While orbiting, the shikigami has advantage on saving throws against area effects, and attacks against them are made with disadvantage.</description>
+        </sheet>
+    </element>
+
+    <element name="Bite" type="Companion Action" source="JJK" id="ID_JJK_COMPANION_ACTION_MINOR_STAR_BITE">
+        <description>
+            <p>Melee Weapon Attack: Dexterity modifier + your proficiency to hit, reach 5 ft., one target. Hit: (1d4 + Dexterity modifier piercing damage).</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: Dexterity modifier + your proficiency to hit, reach 5 ft., one target. Hit: (1d4 + Dexterity modifier piercing damage).</description>
+        </sheet>
+    </element>
+
+
+    <element name="Major Star Shikigami" type="Companion" source="JJK" id="ID_JJK_COMPANION_MAJOR_STAR_SHIKIGAMI">
+	    <supports>Major Star Shikigami</supports>
+        <setters>
+            <set name="strength">16</set>
+            <set name="dexterity">14</set>
+            <set name="constitution">18</set>
+            <set name="intelligence">5</set>
+            <set name="wisdom">10</set>
+            <set name="charisma">12</set>
+            <set name="ac">13 + PB</set>
+            <set name="hp">30 + (5 x level)</set>
+            <set name="speed">30 ft.</set>
+            <set name="saves">Str +6</set>
+            <set name="skills">Athletics +6</set>
+            <set name="senses">blindsight 10 ft., passive Perception 10</set>
+            <set name="languages">understands Common</set>
+            <set name="type">Shikigami</set>
+            <set name="size">Medium</set>
+            <set name="alignment">unaligned</set>
+            <set name="challenge">6 (2,300 XP)</set>
+            <set name="traits">ID_JJK_COMPANION_TRAIT_CONTROLLED_PATH,ID_JJK_COMPANION_TRAIT_SIEGE_MONSTER</set>
+            <set name="actions">ID_JJK_COMPANION_ACTION_MAJOR_STAR_BITE</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="13" bonus="base" />
+            <stat name="companion:ac" value="proficiency" />
+            <stat name="companion:hp:max" value="30" bonus="base" />
+            <stat name="companion:hp:max" value="level" />
+            <stat name="companion:hp:max" value="level" />
+            <stat name="companion:hp:max" value="level" />
+            <stat name="companion:hp:max" value="level" />
+            <stat name="companion:hp:max" value="level" />
+            <stat name="companion:speed" value="30" bonus="base" />
+        </rules>
+    </element>
+
+    <element name="Controlled Path" type="Companion Trait" source="JJK" id="ID_JJK_COMPANION_TRAIT_CONTROLLED_PATH">
+        <description>
+            <p>While orbiting, the shikigami has advantage on saving throws against that would move or teleport it.</p>
+        </description>
+        <sheet>
+            <description>While orbiting, the shikigami has advantage on saving throws against that would move or teleport it.</description>
+        </sheet>
+    </element>
+
+    <element name="Siege Monster" type="Companion Trait" source="JJK" id="ID_JJK_COMPANION_TRAIT_SIEGE_MONSTER">
+        <description>
+            <p>The shikigami deals double damage to objects and structures.</p>
+        </description>
+        <sheet>
+            <description>The shikigami deals double damage to objects and structures.</description>
+        </sheet>
+    </element>
+
+    <element name="Bite" type="Companion Action" source="JJK" id="ID_JJK_COMPANION_ACTION_MAJOR_STAR_BITE">
+        <description>
+            <p>Melee Weapon Attack: Strength modifier + your proficiency to hit, reach 5 ft., one target. Hit: 2d8 + Strength modifier piercing damage.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: Strength modifier + your proficiency to hit, reach 5 ft., one target. Hit: 2d8 + Strength modifier piercing damage.</description>
+        </sheet>
+    </element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Minor Star Shikigami Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_STAR_DICTATOR_MINOR_STAR_SHIKIGAMI" />
+	<element name="Pseudo-Domain Constitution Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_STAR_DICTATOR_PSEUDO_DOMAIN_CONSTITUTION" />
+	<element name="Major Star Shikigami Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_STAR_DICTATOR_MAJOR_STAR_SHIKIGAMI" />
+	<element name="Army of the Dictator Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_STAR_DICTATOR_ARMY_OF_THE_DICTATOR" />
+	<element name="Domain Expansion: Divine Mandate Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_STAR_DICTATOR_DOMAIN_EXPANSION_DIVINE_MANDATE" />
+</elements>

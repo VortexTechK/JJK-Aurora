@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="6.0.0">
+			<file name="technique-extermination.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/technique-extermination.xml" />
+		</update>
+	</info>
+
+	<element name="Technique Extermination" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_TECHNIQUE_EXTERMINATION">
+		<supports>Innate Technique</supports>
+		<description>
+			<p>This Innate Technique bestows its user with the gift of angelic power, capable of smiting those villains and hampering enemy's cursed techniques.</p>
+			<div element="ID_JJK_ARCHETYPE_FEATURE_TECHNIQUE_EXTERMINATION_EXTINGUISHMENT" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_TECHNIQUE_EXTERMINATION_ANGELS_BLESSING" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_TECHNIQUE_EXTERMINATION_IMPROVED_EXTINGUISHMENT" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_TECHNIQUE_EXTERMINATION_MAXIMUM_JACOBS_LADDER" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_TECHNIQUE_EXTERMINATION_DOMAIN_EXPANSION_GARDEN_OF_EDEN" />
+		</description>
+		<sheet display="false">
+			<description>This Innate Technique bestows its user with the gift of angelic power, capable of smiting those villains and hampering enemy's cursed techniques.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_TECHNIQUE_EXTERMINATION_EXTINGUISHMENT" level="1" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_TECHNIQUE_EXTERMINATION_ANGELS_BLESSING" level="3" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_TECHNIQUE_EXTERMINATION_IMPROVED_EXTINGUISHMENT" level="6" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_TECHNIQUE_EXTERMINATION_MAXIMUM_JACOBS_LADDER" level="11" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_TECHNIQUE_EXTERMINATION_DOMAIN_EXPANSION_GARDEN_OF_EDEN" level="18" />
+		</rules>
+	</element>
+
+	<element name="Extinguishment" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_TECHNIQUE_EXTERMINATION_EXTINGUISHMENT">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_TECHNIQUE_EXTERMINATION_EXTINGUISHMENT</requirements>
+		<description>
+			<p>Beginning at 1st level, you have gained use of the essentials of your technique. As an action for 2 cursed energy, you can target a creature as a trumpet of light appears and a beam of light falls from the sky. The target must succeed a Charisma save, if the creature fails it takes 2d12 radiant damage and loses the ability to use Cursed Energy for 1 minute. On a success, they take half as much damage and don't have their cursed energy features negated. They can repeat the saving throw at the beginning of their turns, ending the effect on a success.</p>
+		</description>
+		<sheet action="Action" usage="CE">
+			<description>For 2 CE, target creature must succeed a Charisma save, taking 2d12 radiant damage and losing the ability to use CE for 1 minute on a failure. On a success, they take half as much damage and don't have their CE features negated. They can repeat the saving throw at the beginning of their turns, ending the effect on a success.</description>
+            <description level="6">For 2 CE, target creature must succeed a Charisma save, taking 5d12 radiant damage, losing the ability to use CE, and having cursed tools suppressed for 1 minute on a failure. On a success, they take half as much damage and don't have their CE features negated. They can repeat the saving throw at the beginning of their turns, ending the effect on a success.</description>
+		</sheet>
+	</element>
+
+	<element name="Angel's Blessing" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_TECHNIQUE_EXTERMINATION_ANGELS_BLESSING">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_TECHNIQUE_EXTERMINATION_ANGELS_BLESSING</requirements>
+		<description>
+			<p>At 3rd level, your technique makes you feel like a divine being made to help others, you are a true angel. As a bonus action for 1 cursed energy, you can gain flying speed equal to half your walking speed for 1 minute, as wings of light emerge from your back and a halo stands on top of your head. While you have the wings active, you can freely move through barriers such as curtains without breaking them. You can also pass through walls and barriers that were cast with CE equal to or lower than your proficiency bonus. When said minute ends, you can spend another 1 more cursed energy to keep your fly speed for another minute.</p>
+            <p class="indent">In addition, due to your holy nature you gain resistance to radiant damage.</p>
+		</description>
+		<sheet action="Bonus Action" usage="CE">
+			<description>For 1 CE, you can gain a {{speed}}/2 ft. flying speed for 1 minute. While the wings are active, you can freely move through barriers such as curtains without breaking them. You can also pass through walls and barriers that were cast with CE equal to or lower than {{proficiency}}. You can spend 1 CE to keep your fly speed for another minute.</description>
+		</sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
+        </rules>
+	</element>
+
+	<element name="Improved Extinguishment" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_TECHNIQUE_EXTERMINATION_IMPROVED_EXTINGUISHMENT">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_TECHNIQUE_EXTERMINATION_IMPROVED_EXTINGUISHMENT</requirements>
+		<description>
+			<p>Once you reach 6th level, your Extinguishment increases to 5d12 radiant damage and cursed tools of the targeted creature are also suppressed for the duration.</p>
+		</description>
+        <sheet display="false"/>
+	</element>
+
+	<element name="Maximum: Jacob's Ladder" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_TECHNIQUE_EXTERMINATION_MAXIMUM_JACOBS_LADDER">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_TECHNIQUE_EXTERMINATION_MAXIMUM_JACOBS_LADDER</requirements>
+		<description>
+			<p>When you reach the 11th level, you have created an extension to your technique, one so powerful that you can burn your opponents as a radiant light falls upon them. As an action for 10 cursed energy, you summon a trumpet of light in your hands, blowing into it as you choose a point within 200 feet of you. A beam of light strikes down in a 10-foot radius circle centered on the point you choose, every creature in said area other than you has to make a Charisma saving throw. On a failure, they take 10d12 radiant damage and suffer the effects of Extinguishment for 2 minutes. On a success, they take half as much damage. Undead, cursed spirits and creatures of evil alignment make this saving throw at disadvantage.</p>
+            <p class="indent">You can also use this technique to destroy barriers and cursed objects. As an action for 6 cursed energy, you can summon a trumpet of light and blow into it, making a beam of light targeting a cursed object, cursed item, cursed tool, magic item, or any kind of barrier created by cursed energy or magic within 30 feet. Make a cursed energy attack roll against the cursed energy or spell save DC. On a hit you destroy the target, neutralizing barriers and power of cursed objects.</p>
+            <p class="indent">If you use this technique with Maximum Output, its beam of light increases to a 30-foot circle and ignores features that reduce damage.</p>
+		</description>
+        <sheet action="Action" usage="CE">
+			<description>For 10 CE, each creature in a 10-foot radius centered on a point within 200 feet of you must make a Charisma saving throw. On a failure, they take 10d12 radiant damage and suffer the effects of Extinguishment for 2 minutes. On a success, they take half as much damage. Undead, cursed spirits and creatures of evil alignment make this saving throw at disadvantage. Alternatively, for 6 CE, you can make a CE attack roll against the cursed energy or spell save DC of a cursed object, cursed item, cursed tool, magic item, or any kind of barrier created by cursed energy or magic within 30 feet. On a hit you destroy the target, neutralizing barriers and power of cursed objects. If you use this technique with Maximum Output, the radius increases to 30-foot circle and ignores features that reduce damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Domain Expansion: Garden of Eden" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_TECHNIQUE_EXTERMINATION_DOMAIN_EXPANSION_GARDEN_OF_EDEN">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_TECHNIQUE_EXTERMINATION_DOMAIN_EXPANSION_GARDEN_OF_EDEN</requirements>
+		<description>
+			<p>Finally, 18th level, your technique is honed to the finest of edges. At Initiative 20 all creatures suffer the full effects of Jacob's Ladder.</p>
+		</description>
+        <sheet>
+			<description>At Initiative 20 all creatures suffer the full effects of Jacob's Ladder.</description>
+		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION" />
+		</rules>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Extinguishment Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_TECHNIQUE_EXTERMINATION_EXTINGUISHMENT" />
+	<element name="Angel's Blessing Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_TECHNIQUE_EXTERMINATION_ANGELS_BLESSING" />
+	<element name="Improved Extinguishment Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_TECHNIQUE_EXTERMINATION_IMPROVED_EXTINGUISHMENT" />
+	<element name="Maximum: Jacob's Ladder Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_TECHNIQUE_EXTERMINATION_MAXIMUM_JACOBS_LADDER" />
+	<element name="Domain Expansion: Garden of Eden Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_TECHNIQUE_EXTERMINATION_DOMAIN_EXPANSION_GARDEN_OF_EDEN" />
+</elements>

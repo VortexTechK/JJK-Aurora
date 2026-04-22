@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="6.0.0">
+			<file name="solo-forbiddenzone.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/solo-forbiddenzone.xml" />
+		</update>
+	</info>
+
+	<element name="Solo Forbidden Zone" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_SOLO_FORBIDDEN_ZONE">
+		<supports>Innate Technique</supports>
+		<description>
+			<p>Boost your allies with dance.</p>
+			<div element="ID_JJK_ARCHETYPE_FEATURE_SOLO_FORBIDDEN_ZONE_FORBIDDEN_ZONE" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_SOLO_FORBIDDEN_ZONE_BLESS" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_SOLO_FORBIDDEN_ZONE_RITUAL_DANCE" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_SOLO_FORBIDDEN_ZONE_MAXIMIZE_OUTPUT" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_SOLO_FORBIDDEN_ZONE_DOMAIN_EXPANSION_HALLOWED_ZONE" />
+		</description>
+		<sheet display="false">
+			<description>Boost your allies with dance.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_SOLO_FORBIDDEN_ZONE_FORBIDDEN_ZONE" level="1" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_SOLO_FORBIDDEN_ZONE_BLESS" level="3" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_SOLO_FORBIDDEN_ZONE_RITUAL_DANCE" level="6" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_SOLO_FORBIDDEN_ZONE_MAXIMIZE_OUTPUT" level="11" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_SOLO_FORBIDDEN_ZONE_DOMAIN_EXPANSION_HALLOWED_ZONE" level="18" />
+		</rules>
+	</element>
+
+	<element name="Forbidden Zone" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_SOLO_FORBIDDEN_ZONE_FORBIDDEN_ZONE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SOLO_FORBIDDEN_ZONE_FORBIDDEN_ZONE</requirements>
+		<description>
+			<p>Starting at 1st level, through chanting, and dancing you bring out the maximum potential of those around you. As an action for 1 CE, you create a 30 ft sphere for up to 1 minute. Allies within the zone gain advantage on all rolls. You must use your bonus action on your turn to maintain the Zone.</p>
+		</description>
+		<sheet action="Action" usage="CE">
+			<description>For 1 CE, create a 30 ft sphere for up to 1 minute. Allies within the zone gain advantage on all rolls. You must use your bonus action on your turn to maintain the Zone.</description>
+		</sheet>
+	</element>
+
+	<element name="Bless" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_SOLO_FORBIDDEN_ZONE_BLESS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SOLO_FORBIDDEN_ZONE_BLESS</requirements>
+		<description>
+			<p>At 3rd level, you gain better control over your Zone, allowing you to focus it on a single person. As an action for 3 CE you target a willing creature within 60 feet. That creature is under the effects of your Forbidden Zone for 1 minute or until you lose concentration.</p>
+		</description>
+		<sheet action="Action" usage="CE">
+			<description>For 3 CE, target a willing creature within 60 feet. That creature is under the effects of your Forbidden Zone for 1 minute or until you lose concentration.</description>
+		</sheet>
+	</element>
+
+	<element name="Ritual Dance" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_SOLO_FORBIDDEN_ZONE_RITUAL_DANCE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SOLO_FORBIDDEN_ZONE_RITUAL_DANCE</requirements>
+		<description>
+			<p>Beginning at 6th level, you can spend CE up to your CE modifier + your proficiency as a Full Turn Action (Action + Bonus Action + Movement) to make a 50 ft sphere centered on yourself into a Ritual Zone for 1 minute while concentrating. You must maintain your Zone using your bonus action on your turn and cannot move more than 10 feet. You can choose to not allow hostile creatures to enter or leave your Zone, forcing them to make a Wisdom save, becoming unable to enter or leave for 1 minute on a failure. Allies gain your Zone's normal effects and benefits depending on how much CE you spent to activate this technique:</p>
+            <ul>
+                <li>Allies deal an additional 5 damage with techniques for each CE spent.</li>
+                <li>Allies gain temporary cursed energy equal to CE spent (doesn't affect yourself).</li>
+                <li>If allies can spend additional cursed energy on a feature, they can spend additional cursed energy up to your CE modifier (min of 1).</li>
+            </ul>
+		</description>
+        <sheet action="Action + Bonus Action + Movement" usage="CE">
+            <description>For up to {{solo:forbidden:zone:ritual:dance:ce}} CE, make a 50 ft sphere centered on yourself into a Ritual Zone for 1 minute while concentrating. You must maintain your Zone using your bonus action on your turn and cannot move more than 10 feet. You can choose to force hostile creatures to make a Wisdom save, becoming unable to enter or leave for 1 minute on a failure. Allies gain your Zone's normal effects in addition to 5 extra damage with techniques, temporary CE (dosen't affect you), and an increase to the maximum CE they can spend on techniques up to {{ce:modifier}} for each CE spent.</description>
+        </sheet>
+        <rules>
+            <stat name="solo:forbidden:zone:ritual:dance:ce" value="ce:modifier" />
+            <stat name="solo:forbidden:zone:ritual:dance:ce" value="proficiency" />
+        </rules>
+	</element>
+
+	<element name="Maximize Output" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_SOLO_FORBIDDEN_ZONE_MAXIMIZE_OUTPUT">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SOLO_FORBIDDEN_ZONE_MAXIMIZE_OUTPUT</requirements>
+		<description>
+			<p>Starting at 11th level, after setting up your Zone, you can maximize an ally's output. Once per turn when a creature uses a cursed technique that deals damage while within your zone, you can spend 5 CE to cause them to deal maximum damage instead of rolling.</p>
+		</description>
+        <sheet usage="CE">
+			<description>Once per turn when a creature uses a cursed technique that deals damage while within your zone, you can spend 5 CE to cause them to deal maximum damage instead of rolling.</description>
+		</sheet>
+	</element>
+
+	<element name="Domain Expansion: Hallowed Zone" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_SOLO_FORBIDDEN_ZONE_DOMAIN_EXPANSION_HALLOWED_ZONE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SOLO_FORBIDDEN_ZONE_DOMAIN_EXPANSION_HALLOWED_ZONE</requirements>
+		<description>
+			<p>At 18th level, you reach the peak of your technique, allowing you to open your domain. All allies in your domain are under your Ritual Zone and their techniques become sure hits, as if they were the ones who cast the domain.</p>
+		</description>
+        <sheet>
+			<description>All allies in your domain are under your Ritual Zone and their techniques become sure hits, as if they were the ones who cast the domain.</description>
+		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION" />
+		</rules>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Forbidden Zone Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SOLO_FORBIDDEN_ZONE_FORBIDDEN_ZONE" />
+	<element name="Bless Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SOLO_FORBIDDEN_ZONE_BLESS" />
+	<element name="Ritual Dance Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SOLO_FORBIDDEN_ZONE_RITUAL_DANCE" />
+	<element name="Maximize Output Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SOLO_FORBIDDEN_ZONE_MAXIMIZE_OUTPUT" />
+	<element name="Domain Expansion: Hallowed Zone Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SOLO_FORBIDDEN_ZONE_DOMAIN_EXPANSION_HALLOWED_ZONE" />
+</elements>

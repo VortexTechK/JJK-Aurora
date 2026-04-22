@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="6.0.0">
+			<file name="STAR-RAGE.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/STAR-RAGE.xml" />
+		</update>
+	</info>
+
+	<element name="Star Rage" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_STAR_RAGE">
+		<supports>Innate Technique</supports>
+		<description>
+			<p>Stronger punch kick merchant.</p>
+			<div element="ID_JJK_ARCHETYPE_FEATURE_STAR_RAGE_VIRTUAL_MASS_INCREASE" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_STAR_RAGE_IMPROVED_DURATION" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_STAR_RAGE_VIRTUAL_MASS_IMPROVEMENT" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_STAR_RAGE_VIRTUAL_MASS_MASTERY" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_STAR_RAGE_DOMAIN_EXPANSION_EVENT_HORIZON" />
+		</description>
+		<sheet display="false">
+			<description>Use virtual mass to empower your strikes.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_STAR_RAGE_VIRTUAL_MASS_INCREASE" level="1" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_STAR_RAGE_IMPROVED_DURATION" level="3" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_STAR_RAGE_VIRTUAL_MASS_IMPROVEMENT" level="6" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_STAR_RAGE_VIRTUAL_MASS_MASTERY" level="11" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_STAR_RAGE_DOMAIN_EXPANSION_EVENT_HORIZON" level="18" />
+		</rules>
+	</element>
+
+	<element name="Virtual Mass Increase" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_STAR_RAGE_VIRTUAL_MASS_INCREASE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_STAR_RAGE_VIRTUAL_MASS_INCREASE</requirements>
+		<description>
+			<p>Beginning at 1st level, you have learned the most fundamental technique for a star rage user, the virtual mass increase. As a bonus action for an amount of Cursed Energy up to twice your Cursed Energy modifier, you gain a mass increase for each CE spent for a number of rounds equal to your Cursed Energy modifier. You gain the following benefits depending on your added mass:</p>
+            <ul>
+                <li><strong>Stronger Martial Arts.</strong> Your Unarmed Strike die increases by one tier per two mass increases. (1-d4-d6-d8-d10-d12-2d8)</li>
+                <li><strong>Mass Impact.</strong> At one mass increase, whenever you roll a critical with an unarmed strike the target must make a Constitution saving throw or be knocked prone. At two mass increases, a creature within 5 ft of the target must make a Constitution save or take half of the same damage. At three mass increases, if the target fails the Constitution saving throw upon a critical, it will also have its speed halved until the beginning of your next turn. At four mass increases their speed will be reduced to 0 if they fail.</li>
+                <li><strong>Increased Damage.</strong> You gain a +1 to unarmed strikes damage rolls per mass increase.</li>
+                <li><strong>Grappler.</strong> At one mass increase, you count as one size larger. You count as one size larger per 2 mass increases up to Gargantuan.</li>
+            </ul>
+            <p class="indent">You can only activate this technique again after the full duration has passed.</p>
+		</description>
+		<sheet action="Bonus Action" usage="CE">
+			<description>For up to {{star:rage:virtual:mass:ce}} CE, gain a mass increase equal to the CE spent for {{ce:modifier}} rounds. Per two mass, your unarmed strike die increase. Per mass, you gain a +1 to unarmed strikes damage rolls. You size increases by 1 at one mass and then per 2 mass afterwards. At one mass, whenever you roll a critical with an unarmed strike the target must make a Constitution saving throw or be knocked prone. At two mass, a creature within 5 ft of the target must make a Constitution save or take half of the same damage. At three mass, if the target fails the Constitution saving throw upon a critical, it will also have its speed halved until the beginning of your next turn. At four mass, their speed will be reduced to 0 if they fail. You can only activate this technique again after the full duration has passed.</description>
+		</sheet>
+        <rules>
+            <stat name="star:rage:virtual:mass:ce" value="ce:modifier" />
+            <stat name="star:rage:virtual:mass:ce" value="ce:modifier" />
+            <stat name="star:rage:virtual:mass:ce" value="ce:modifier" level="6" />
+            <stat name="star:rage:virtual:mass:ce" value="ce:modifier" level="11" />
+            <stat name="star:rage:virtual:mass:duration" value="ce:modifier" />
+            <stat name="star:rage:virtual:mass:duration" value="ce:modifier" level="3" />
+            <stat name="star:rage:virtual:mass:duration" value="ce:modifier" level="11" />
+            <stat name="star:rage:virtual:mass:duration" value="ce:modifier" level="18" />
+        </rules>
+	</element>
+
+	<element name="Improved Duration" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_STAR_RAGE_IMPROVED_DURATION">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_STAR_RAGE_IMPROVED_DURATION</requirements>
+		<description>
+			<p> When you reach 3rd level, you have honed your skills with your technique, learning how to make it last longer. Virtual Mass Increase now lasts for a number of rounds equal to twice your Cursed Energy modifier. This becomes three times at 11th level and four at 18th.</p>
+		</description>
+		<sheet display="false"/>
+	</element>
+
+	<element name="Virtual Mass Improvement" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_STAR_RAGE_VIRTUAL_MASS_IMPROVEMENT">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_STAR_RAGE_VIRTUAL_MASS_IMPROVEMENT</requirements>
+		<description>
+			<p> Once you reach 6th level, you have gained experience in refining your technique and can now add three times your Cursed Energy modifier.</p>
+            <p class="indent"><strong>Increased Strength.</strong> When you spend at least 5 CE on virtual mass, you gain advantage on Strength and Constitution checks and saving throws and +1 to the rolls for each further mass improvement.</p>
+		</description>
+        <sheet>
+            <description>When you spend at least 5 CE on virtual mass, you gain advantage on Strength and Constitution checks and saving throws and +1 to the rolls for each further mass improvement.</description>
+        </sheet>
+	</element>
+
+	<element name="Virtual Mass Mastery" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_STAR_RAGE_VIRTUAL_MASS_MASTERY">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_STAR_RAGE_VIRTUAL_MASS_MASTERY</requirements>
+		<description>
+			<p> At 11th level, you have refined and optimized your technique. You can now add up to four times your Cursed Energy modifier to your virtual mass and use your technique with melee weapon attacks.</p>
+            <p class="indent"><strong>Critical Power.</strong> Your critical range increases by 1 for every four mass increases and you deal maximum damage to objects and structures.</p>
+            <p class="indent"><strong>Quick Activation.</strong> You have learned how to instantly activate your technique. You can now activate Star Rage as a free action. </p>
+		</description>
+        <sheet>
+			<description>You can use Virtual Mass with melee weapon attacks and as a free action. Per four mass, your critical range increase by 1 and you deal maximum damage to objects and structures.</description>
+		</sheet>
+	</element>
+
+	<element name="Domain Expansion: Event Horizon" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_STAR_RAGE_DOMAIN_EXPANSION_EVENT_HORIZON">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_STAR_RAGE_DOMAIN_EXPANSION_EVENT_HORIZON</requirements>
+		<description>
+			<p> Finally, 18th at level, you have learned to expand your domain. All in your domain are crushed by ground-shaking mass as every 1 ft cost 4 ft of movement. At initiative 20, all hostile creatures in your domain are knocked prone and take 8d8 force damage as they experience crushing mass. A creature must make a Strength (Athletics) check against your Cursed Energy save DC at the beginning of their turn to stand up and again at the end of their turn to remain standing.</p>
+		</description>
+        <sheet>
+			<description>Movement costs 4 ft for every 1 ft moved for all creatures. At initiative 20, all hostile creatures in your domain are knocked prone and take 8d8 force damage as they experience crushing mass. A creature must make a Strength (Athletics) check against your Cursed Energy save DC at the beginning of their turn to stand up and again at the end of their turn to remain standing</description>
+		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION" />
+		</rules>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Virtual Mass Increase Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_STAR_RAGE_VIRTUAL_MASS_INCREASE" />
+	<element name="Improved Duration Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_STAR_RAGE_IMPROVED_DURATION" />
+	<element name="Virtual Mass Improvement Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_STAR_RAGE_VIRTUAL_MASS_IMPROVEMENT" />
+	<element name="Virtual Mass Mastery Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_STAR_RAGE_VIRTUAL_MASS_MASTERY" />
+	<element name="Domain Expansion: Event Horizon Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_STAR_RAGE_DOMAIN_EXPANSION_EVENT_HORIZON" />
+</elements>

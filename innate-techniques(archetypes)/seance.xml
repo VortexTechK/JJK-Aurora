@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="6.0.0">
+			<file name="seance.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/seance.xml" />
+		</update>
+	</info>
+
+	<element name="Seance" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_SEANCE">
+		<supports>Innate Technique</supports>
+		<description>
+			<p>You summon the dead into yourself or a willing vessel.</p>
+			<div element="ID_JJK_ARCHETYPE_FEATURE_SEANCE_SEANCE" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_SEANCE_BLESSING_OF_THE_GRATEFUL_DEAD" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_SEANCE_RITUAL_OF_RESURRECTION" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_SEANCE_MAXIMUM_BLACK_SEANCE" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_SEANCE_DOMAIN_EXPANSION_SEANCE_PARLOR" />
+		</description>
+		<sheet display="false">
+			<description>You summon the dead into yourself or a willing vessel.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_SEANCE_SEANCE" level="1" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_SEANCE_BLESSING_OF_THE_GRATEFUL_DEAD" level="3" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_SEANCE_RITUAL_OF_RESURRECTION" level="6" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_SEANCE_MAXIMUM_BLACK_SEANCE" level="11" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_SEANCE_DOMAIN_EXPANSION_SEANCE_PARLOR" level="18" />
+		</rules>
+	</element>
+
+	<element name="Seance" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_SEANCE_SEANCE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SEANCE_SEANCE</requirements>
+		<description>
+			<p>Starting at 1st level, you have a very powerful and dangerous technique, and you begin to learn its basics. As a full turn action you can spend 2 CE per information you Seance. You can target yourself or another willing creature within 15 ft for the seance of a dead humanoid with a CR or level no more than 1 higher than your level. You must have a small body part such as a finger of the deceased humanoid that you or the willing participant must consume. </p>
+			<p class="indent">You or the target of the seance must spend 1 cursed energy at the beginning of the target's turns while the technique is active to maintain its form, with the technique ending once the cursed energy runs out. You cannot use an alternate source of cursed energy, even with a binding vow. You lose access to your Innate Technique features while affected by this technique.</p>
+			<p class="indent"><strong>Physical Information.</strong> The target of the seance gains the appearance, racial traits, features, proficiencies, and Strength, Dexterity, and Constitution scores of the deceased humanoid and temporary hit points equal to your proficiency.</p>
+			<p class="indent"><strong>Soul Information.</strong> The target gains access to the full information the body has including all memories and one of their Cursed Technique or Innate Technique features. While it is useful, this is also a dangerous method of utilizing this technique. At the beginning of their turns, the target must make a Charisma saving throw against the deceased person (DC 8 + their proficiency bonus + Charisma modifier). On a failure, the dead humanoid takes control until the target's cursed energy runs out.</p>
+		</description>
+		<sheet action="Action + Bonus Action + Movement" usage="CE">
+			<description>For 2 CE per Information you Seance, target yourself or another willing creature within 15 ft for the seance of a dead humanoid with a CR or level no more {{seance:cr:level}}. Whoever accepts the Seance must consume a small body part of the dead humanoid. You or the target of the seance must spend 1 cursed energy at the beginning of the target's turns while the technique is active to maintain its form. You cannot use an alternate source of cursed energy  and lose access to your Innate Technique features while affected by this technique.</description>
+		</sheet>
+		<rules>
+			<stat name="seance:cr:level" value="level" />
+			<stat name="seance:cr:level" value="1" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_SEANCE_PHYSICAL_INFORMATION" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_SEANCE_SOUL_INFORMATION" />
+		</rules>
+	</element>
+
+	<element name="Physical Information" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_SEANCE_PHYSICAL_INFORMATION">
+		<description>
+			<p>The target of the seance gains the appearance, racial traits, features, proficiencies, and Strength, Dexterity, and Constitution scores of the deceased humanoid and temporary hit points equal to your proficiency.</p>
+		</description>
+		<sheet>
+			<description>The target of the seance gains the appearance, racial traits, features, proficiencies, and Strength, Dexterity, and Constitution scores of the humanoid and {{seance:physical:temp:hp}} temporary hit points.</description>
+		</sheet>
+		<rules>
+			<stat name="seance:physical:temp:hp" value="proficiency" />
+			<stat name="seance:physical:temp:hp" value="level" level="3" />
+		</rules>
+	</element>
+
+	<element name="Soul Information" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_SEANCE_SOUL_INFORMATION">
+		<description>
+			<p>The target gains access to the full information the body has including all memories and one of their Cursed Technique or Innate Technique features. While it is useful, this is also a dangerous method of utilizing this technique. At the beginning of their turns, the target must make a Charisma saving throw against the deceased person (DC 8 + their proficiency bonus + Charisma modifier). On a failure, the dead humanoid takes control until the target's cursed energy runs out.</p>
+		</description>
+		<sheet>
+			<description>The target gains access to all memories and one of the humanoid's Cursed Technique or Innate Technique features. At the beginning of their turns, the target must make a Charisma saving throw against the deceased person (DC 8 + PB + Cha mod). On a failure, the dead humanoid takes control until the target's cursed energy runs out.</description>
+			<description level="3">The target gains access to all memories and two of the humanoid's Cursed Technique or Innate Technique features and does not lose access to their own Innate Technique features. At the beginning of their turns, the target must make a Charisma saving throw against the deceased person (DC 8 + PB + Cha mod). On a failure, the dead humanoid takes control until the target's cursed energy runs out.</description>
+		</sheet>
+	</element>
+
+	<element name="Blessing of the Grateful Dead" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_SEANCE_BLESSING_OF_THE_GRATEFUL_DEAD">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SEANCE_BLESSING_OF_THE_GRATEFUL_DEAD</requirements>
+		<description>
+			<p>At 3rd level, you have increased the potency of your seance. When channeling Physical Information, the target gains temporary hit points equal to your level + your proficiency. When channeling Soul Information, the target gains access to two Cursed Technique or Innate Technique features of your choice and does not lose access to their own Innate Technique features. The target cannot use Innate Technique features from different techniques at the same time.</p>
+		</description>
+		<sheet display="false"/>
+	</element>
+
+	<element name="Ritual of Resurrection" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_SEANCE_RITUAL_OF_RESURRECTION">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SEANCE_RITUAL_OF_RESURRECTION</requirements>
+		<description>
+			<p>At 6th level, you have learned how to create a prolonged ritual to make your technique more powerful. When you use your technique, you can start a ritual instead of immediately shapeshifting. You must make a full turn action (Action + Bonus Action + Movement) every turn for 1 minute to perform this ritual while maintaining concentration. If you lose concentration, the ritual stops and you must start over. After you have finished the ritual, you or a willing creature within 30 ft can transform into the dead humanoid if the CR or level is equal to or lower than your level + your proficiency bonus.</p>
+		</description>
+        <sheet action="Action + Bonus Action + Movement">
+            <description>When you use Seance, you can instead maintain concentration on the ritual for 1 minute making a full turn action every turn. After you have finished the ritual, you or a willing creature within 30 ft can transform into the dead humanoid if its CR or level is equal to or lower than {{seance:ritual:resurrection:level}}.</description>
+        </sheet>
+		<rules>
+			<stat name="seance:ritual:resurrection:level" value="level" />
+			<stat name="seance:ritual:resurrection:level" value="proficiency" />
+		</rules>
+	</element>
+
+	<element name="Maximum: Black Seance" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_SEANCE_MAXIMUM_BLACK_SEANCE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SEANCE_MAXIMUM_BLACK_SEANCE</requirements>
+		<description>
+			<p>At 11th level, when you complete Ritual of Resurrection you can spend an additional 5 cursed energy to cause the target of the Seance to gain one of the following benefits.</p>
+			<p class="indent"><strong>Physical Information Overload</strong> The target gains the hit points of the dead humanoid as temporary hit points if channeling Physical Information.</p>
+			<p class="indent"><strong>Soul Information Overload</strong> The target gains access to all the dead humanoid's Cursed Technique and Innate Technique features if channeling Soul Information. You cannot use Domain Expansion this way and can only use the minimum required cursed energy for innate technique features. The target also cannot use the dead humanoid's innate technique and its own at the same time.</p>
+		</description>
+        <sheet usage="CE">
+			<description>When completing Ritual of Resurrection you can spend an additional 5 CE to give the target either temporary hit points equal to the humanoid's hit points or access to all the dead humanoid's Cursed Technique and Innate Technique features. You cannot use Domain Expansion this way and can only use the minimum required CE for innate technique features. The target also cannot use the dead humanoid's innate technique and its own at the same time.</description>
+		</sheet>
+	</element>
+
+	<element name="Domain Expansion: Seance Parlor" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_SEANCE_DOMAIN_EXPANSION_SEANCE_PARLOR">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SEANCE_DOMAIN_EXPANSION_SEANCE_PARLOR</requirements>
+		<description>
+			<p>At 18th level you have mastered your technique allowing you to expand your domain. At initiative 20 you can choose a willing creature to gain the benefits of Seance.</p>
+			<p class="indent"> Although you must have the body part of the dead humanoid being called, you don't need to consume it as long as you are holding it. Within your domain, you no longer have to spend cursed energy to maintain the seance and automatically succeed against a creature's soul information. All innate technique features gained through Seance in your domain are imbued with your domain's guaranteed hit. Seances caused by your domain end when your domain disappears.</p>
+		</description>
+        <sheet>
+			<description>At initiative 20 you can choose a willing creature to gain the benefits of Seance. You must have the body part of the dead humanoid being called but don't need to consume it as long as you are holding it. You no longer have to spend cursed energy to maintain the seance and automatically succeed against a creature's soul information. All innate technique features gained through Seance in your domain are imbued with your domain's guaranteed hit. Seances caused by your domain end when your domain disappears.</description>
+		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION" />
+		</rules>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Seance Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SEANCE_SEANCE" />
+	<element name="Blessing of the Grateful Dead Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SEANCE_BLESSING_OF_THE_GRATEFUL_DEAD" />
+	<element name="Ritual of Resurrection Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SEANCE_RITUAL_OF_RESURRECTION" />
+	<element name="Maximum: Black Seance Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SEANCE_MAXIMUM_BLACK_SEANCE" />
+	<element name="Domain Expansion: Seance Parlor Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SEANCE_DOMAIN_EXPANSION_SEANCE_PARLOR" />
+</elements>

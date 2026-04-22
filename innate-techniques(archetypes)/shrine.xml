@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="6.0.0">
+			<file name="shrine.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/shrine.xml" />
+		</update>
+	</info>
+
+	<element name="Shrine" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_SHRINE">
+		<supports>Innate Technique</supports>
+		<description>
+			<p>Dissect and fillet, preparing your oven. Simple things like that are your cursed technique.</p>
+			<div element="ID_JJK_ARCHETYPE_FEATURE_SHRINE_DISMANTLE" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_SHRINE_CLEAVE" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_SHRINE_DIVINE_FLAME_OPEN" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_SHRINE_SLICING_AND_SEVERING" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_SHRINE_DOMAIN_EXPANSION_MALEVOLENT_SHRINE" />
+		</description>
+		<sheet display="false">
+			<description>Dissect and fillet, preparing your oven. Simple things like that are your cursed technique. </description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_SHRINE_DISMANTLE" level="1" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_SHRINE_CLEAVE" level="3" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_SHRINE_DIVINE_FLAME_OPEN" level="6" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_SHRINE_SLICING_AND_SEVERING" level="11" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_SHRINE_DOMAIN_EXPANSION_MALEVOLENT_SHRINE" level="18" />
+		</rules>
+	</element>
+
+	<element name="Dismantle" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_SHRINE_DISMANTLE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SHRINE_DISMANTLE</requirements>
+		<description>
+			<p>Starting at 1st level, you learn the basics of your technique, which is cutting. When you take the attack action, you can spend Cursed Energy up to your proficiency bonus to replace your attack with Dismantle. Make a melee or ranged CE attack with a range of 150/300 ft. On a hit you deal 1d8 slashing damage per CE spent. This becomes 1d10 at 6th level and d12 at 11th.</p>
+            <p class="indent">If you gain the Extra Attack feature, you can replace multiple attacks with Dismantle, but must spend Cursed Energy for each attack. If your target can't see this attack, being within 5 feet of a hostile creature doesn't impose disadvantage on this attack roll (creatures with passive Perception lower than your CE save DC cannot see your attacks).</p>
+		</description>
+		<sheet usage="CE">
+			<description>You can replace attacks by spending up to {{proficiency}} CE to make a melee or ranged CE attack with a range of 150/300 ft for each attack. On a hit you deal 1d{{shrine:dismantle:damage}} slashing damage per CE spent. Creatures with passive Perception less than {{ce:dc:total}} can't see your technique and do not impose disadvantage on this attack for being within 5 feet of you.</description>
+		</sheet>
+		<rules>
+			<stat name="shrine:dismantle:damage" value="8" bonus="dismantle" />
+			<stat name="shrine:dismantle:damage" value="10" bonus="dismantle" level="6" />
+			<stat name="shrine:dismantle:damage" value="12" bonus="dismantle" level="11" />
+		</rules>
+	</element>
+
+	<element name="Cleave" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_SHRINE_CLEAVE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SHRINE_CLEAVE</requirements>
+		<description>
+			<p>At 3rd level, you learn how to cleave living targets in one fell swoop. As an action for up to 10 Cursed Energy, you choose a target within 80 feet. Make a ranged Cursed Energy attack. On a hit, the target takes a number of d10s equal to your proficiency bonus + Cursed Energy spent in slashing damage and must make a Constitution save. </p>
+			<p class="indent">On a failure, further uses against the same creature ignores resistances as Cleave adjusts to the target's toughness. Being within melee range of a creature who can't see your technique doesn't impose disadvantage on this attack.</p>
+		</description>
+		<sheet action="Action" usage="CE">
+			<description>For up to 10 CE, make a ranged CE attack at a target within 80 feet. On a hit, the target takes ({{proficiency}} + CE spent)d10 slashing damage and must make a Constitution save. On a failure, further uses against the same creature ignores resistances. Being within melee range of a creature who can't see your technique doesn't impose disadvantage on this attack.</description>
+		</sheet>
+	</element>
+
+	<element name="Divine Flame Open" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_SHRINE_DIVINE_FLAME_OPEN">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SHRINE_DIVINE_FLAME_OPEN</requirements>
+		<description>
+			<p>At 6th level, you can utter an incantation to create an arrow of fire. As an action, you can spend Cursed Energy up to twice your proficiency bonus, choosing a point within 150/600 feet of you. Each creature within 15 ft of that point must make a Dexterity saving throw, which is made at advantage if the creature is more than 150 feet away. On a failed save, they take a d12 of fire damage for each cursed energy spent. On a successful save, they take half as much damage.</p>
+		</description>
+        <sheet action="Action" usage="CE">
+            <description>For up to {{shrine:divine:flame:open:ce}} CE, each creature within 15 ft of a point within 150/600 feet of you must make a Dexterity saving throw, which is made at advantage if the creature is more than 150 feet away. On a failed save, they take a d12 of fire damage for each CE spent. On a successful save, they take half as much damage.</description>
+        </sheet>
+		<rules>
+			<stat name="shrine:divine:flame:open:ce" value="proficiency" />
+			<stat name="shrine:divine:flame:open:ce" value="proficiency" />
+		</rules>
+	</element>
+
+	<element name="Slicing and Severing" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_SHRINE_SLICING_AND_SEVERING">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SHRINE_SLICING_AND_SEVERING</requirements>
+		<description>
+			<p>Beginning at 11th level, your body has adjusted to better handle your cursed technique. You can now use Dismantle as a bonus action or reaction (one attack each). Additionally, when using Cleave against a creature that has failed its save, it treats immunity as resistance. If using the maximum of 10 cursed energy on Cleave, you can target a limb from the limb damage table.</p>
+		</description>
+        <sheet>
+			<description>You can use Dismantle as a bonus action or reaction (one attack each). When using Cleave against a creature that has failed its save, it treats immunity as resistance. If using the maximum of 10 CE on Cleave, you can target a limb from the limb damage table.</description>
+		</sheet>
+	</element>
+
+	<element name="Domain Expansion: Malevolent Shrine" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_SHRINE_DOMAIN_EXPANSION_MALEVOLENT_SHRINE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SHRINE_DOMAIN_EXPANSION_MALEVOLENT_SHRINE</requirements>
+		<description>
+			<p>At last at 18th level, you have reached the pinnacle of your innate technique, letting you finally expand your domain. At initiative 20, the domain cuts everything, causing targets to suffer the effects of Cleave and Dismantle. Cleave targets creatures within cursed energy and Dismantle targets anything in the domain including objects. Cleave and Dismantle are treated as if the maximum amount of Cursed Energy was used.</p>
+		</description>
+        <sheet>
+			<description>At initiative 20, targets with cursed energy suffer Cleave and all targets including objects suffer Dismantle. Cleave and Dismantle are treated as if the maximum amount of Cursed Energy was used.</description>
+		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION" />
+		</rules>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Dismantle Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SHRINE_DISMANTLE" />
+	<element name="Cleave Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SHRINE_CLEAVE" />
+	<element name="Divine Flame Open Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SHRINE_DIVINE_FLAME_OPEN" />
+	<element name="Slicing and Severing Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SHRINE_SLICING_AND_SEVERING" />
+	<element name="Domain Expansion: Malevolent Shrine Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SHRINE_DOMAIN_EXPANSION_MALEVOLENT_SHRINE" />
+</elements>
