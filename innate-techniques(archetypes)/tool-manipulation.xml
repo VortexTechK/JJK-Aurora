@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="6.0.0">
+			<file name="tool-manipulation.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/tool-manipulation.xml" />
+		</update>
+	</info>
+
+	<element name="Tool Manipulation" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_TOOL_MANIPULATION">
+		<supports>Innate Technique</supports>
+		<description>
+			<p>You can control tools you imbue with cursed energy.</p>
+			<div element="ID_JJK_ARCHETYPE_FEATURE_TOOL_MANIPULATION_GUIDED_CONTROL" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_TOOL_MANIPULATION_FLOATING_TOOL" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_TOOL_MANIPULATION_WIND_SCYTHE" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_TOOL_MANIPULATION_TOOL_MASTERY" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_TOOL_MANIPULATION_DOMAIN_EXPANSION_TSUKUMOGAMI_SPIRIT_WORLD" />
+		</description>
+		<sheet display="false">
+			<description>You can control tools you imbue with cursed energy.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_TOOL_MANIPULATION_GUIDED_CONTROL" level="1" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_TOOL_MANIPULATION_FLOATING_TOOL" level="3" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_TOOL_MANIPULATION_WIND_SCYTHE" level="6" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_TOOL_MANIPULATION_TOOL_MASTERY" level="11" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_TOOL_MANIPULATION_DOMAIN_EXPANSION_TSUKUMOGAMI_SPIRIT_WORLD" level="18" />
+		</rules>
+	</element>
+
+	<element name="Guided Control" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_TOOL_MANIPULATION_GUIDED_CONTROL">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_TOOL_MANIPULATION_GUIDED_CONTROL</requirements>
+		<description>
+			<p>Beginning at 1st level, you can spend CE up to your CE modifier as a bonus action to imbue a tool you are holding with cursed energy. This imbuement lasts an hour for each cursed energy spent and gains the following benefits:</p>
+            <ul>
+                <li>You gain a +2 bonus to attack rolls using this tool or a +1 bonus to AC if the tool is armor or used defensively</li>
+                <li>The damage die increases by 1 tier and again at 6th and 11th level (D4-D6-D8-D10-2d6-2d8)</li>
+            </ul>
+		</description>
+		<sheet action="Bonus Action" usage="CE">
+			<description>For up to {{ce:modifier}} CE, imbue a tool for an hour for each cursed energy spent, giving you a +2 to attack rolls or a +1 to AC if used defensively and increasing its damage die by 1.</description>
+			<description level="6">For up to {{ce:modifier}} CE, imbue a tool for an hour for each cursed energy spent, giving you a +2 to attack rolls or a +1 to AC if used defensively and increasing its damage die by 2. You gain a +1 to attack and damage rolls for each CE spent.</description>
+			<description level="11">For up to {{ce:modifier}} CE, imbue a tool for an hour for each cursed energy spent, giving you a +2 to attack rolls or a +1 to AC if used defensively and increasing its damage die by 3. You gain a +1 to attack and damage rolls for each CE spent. When you or a creature you can see makes an attack using your imbued tool, you can use your reaction to grant that attack roll advantage.</description>
+		</sheet>
+	</element>
+
+	<element name="Floating Tool" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_TOOL_MANIPULATION_FLOATING_TOOL">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_TOOL_MANIPULATION_FLOATING_TOOL</requirements>
+		<description>
+			<p>At 3rd level, when you imbue a tool, you can spend an additional 2 CE to create a Floating Tool. You can command a Floating Tool as an action to hover up to 35 feet in any direction and make a melee attack using your CE modifier. The Floating Tool deals its normal weapon damage or 1d4 bludgeoning, slashing, or piercing if it is an improvised weapon. You can only have one floating tool at a time and it falls to the ground if it is more than 120 ft from you.</p>
+            <p class="indent">A Floating Tool has AC equal to your CE save DC and hit points equal to 5 x your proficiency bonus + 10 for each grade above 4th if it is a cursed tool. A Floating Tool reduced to 0 HP is destroyed unless it is a cursed tool, in which case it loses the benefits of Floating Tool. You can spend 2 CE as a bonus action to return the effect of Floating Tool to the cursed tool by touching it.</p>
+		</description>
+		<sheet usage="CE">
+			<description>When you imbue a tool, you can spend an additional 2 CE to create a Floating Tool. You can command a Floating Tool as an action to hover up to 35 feet in any direction and make a melee attack using your CE modifier. The Floating Tool deals its normal weapon damage or 1d4 bludgeoning, slashing, or piercing if it is an improvised weapon. You can only have one floating tool at a time and it falls to the ground if it is more than 120 ft from you. A Floating Tool has a AC of {{ce:dc:total}} and {{tool:manipulation:floating:tool:hp}} hit points for each grade above 4th if it is a cursed tool. A Floating Tool reduced to 0 HP is destroyed unless it is a cursed tool, in which case it loses the benefits of Floating Tool. You can spend 2 CE as a bonus action to return the effect of Floating Tool to the cursed tool by touching it.</description>
+			<description level="6">When you imbue a tool, you can spend an additional 1 CE to create a Floating Tool. You can command 2 Floating Tools as an action to hover up to 40 feet in any direction and make a melee attack using your CE modifier. The Floating Tool deals its normal weapon damage or 1d4 bludgeoning, slashing, or piercing if it is an improvised weapon. You can have two floating tools at a time and it falls to the ground if it is more than 120 ft from you. A Floating Tool has a AC of {{ce:dc:total}} and {{tool:manipulation:floating:tool:hp}} hit points for each grade above 4th if it is a cursed tool. You gain a flying speed of 60 feet by mounting a Floating Tool. A Floating Tool reduced to 0 HP is destroyed unless it is a cursed tool, in which case it loses the benefits of Floating Tool. You can spend 2 CE as a bonus action to return the effect of Floating Tool to the cursed tool by touching it.</description>
+			<description level="11">When you imbue a tool, you can spend an additional 1 CE to create a Floating Tool. You can command 2 Floating Tools as an bonus action or 1 as a free action to hover up to 40 feet in any direction and make a melee attack using your CE modifier. The Floating Tool deals its normal weapon damage or 1d4 bludgeoning, slashing, or piercing if it is an improvised weapon. You can have two floating tools at a time and it falls to the ground if it is more than 120 ft from you. A Floating Tool has a AC of {{ce:dc:total}} and {{tool:manipulation:floating:tool:hp}} hit points for each grade above 4th if it is a cursed tool. You gain a flying speed of 60 feet by mounting a Floating Tool and creatures on Floating Tools gain advantage on Dexterity saves. A Floating Tool reduced to 0 HP is destroyed unless it is a cursed tool, in which case it loses the benefits of Floating Tool. You can spend 2 CE as a bonus action to return the effect of Floating Tool to the cursed tool by touching it.</description>
+		</sheet>
+        <rules>
+            <stat name="tool:manipulation:floating:tool:hp" value="proficiency" />
+            <stat name="tool:manipulation:floating:tool:hp" value="proficiency" />
+            <stat name="tool:manipulation:floating:tool:hp" value="proficiency" />
+            <stat name="tool:manipulation:floating:tool:hp" value="proficiency" />
+            <stat name="tool:manipulation:floating:tool:hp" value="proficiency" />
+            <stat name="tool:manipulation:floating:tool:hp" value="10" />
+        </rules>
+	</element>
+
+	<element name="Wind Scythe" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_TOOL_MANIPULATION_WIND_SCYTHE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_TOOL_MANIPULATION_WIND_SCYTHE</requirements>
+		<description>
+			<p>At 6th level you have learned to use tools offensively. As an action for 3 CE, you can create a blast of wind from an imbued tool you are holding. Or from a Floating Tool within 60 ft for 1 additional CE.</p>
+            <p class="indent">This creates a 10 feet wide, 60 feet long line. Creatures within range must make a Strength saving throw, taking 3d10 bludgeoning damage and pushed back 10 feet on a failed save or half as much on a success.</p>
+            <p class="indent">At 11th level, your Wind Scythe now deals 6d10 bludgeoning damage and a creature that fails their save is pushed back 20 feet and knocked prone.</p>
+			<p class="indent"><strong>Tool Improvement</strong></p>
+			<p class="indent">Additionally, your specialty grants you the following Tool Improvements. </p>
+			<p class="indent"><strong>Floating Tool Improvement</strong></p>
+			<ul>
+				<li>The cost to create a Floating Tool becomes 1 CE</li>
+				<li>When you command a Floating Tool, they can move up to 40 feet</li>
+				<li>You gain a flying speed of 60 feet by mounting a Floating Tool</li>
+				<li>You can have 2 Floating Tools active at the same time, commanding both as part of the same action.</li>
+			</ul>
+			<p class="indent"><strong>Combat Tool Improvement</strong></p>
+			<p class="indent"> You gain a +1 bonus to attack and damage rolls when using an imbued tool for each CE spent.</p>
+			<p class="indent"> As a reaction, you can cause one of your imbued tools to protect you. It grants you a bonus to AC or reduces damage depending on its size. If the tool has a bonus to AC or damage rolls, it is included in the AC and reduction respectively.</p>
+			<h5 class="caption">COMBAT TOOL IMPROVEMENTS</h5>
+				<table>
+					<thead>
+						<tr><td>Size</td><td>AC</td><td>Reduction</td></tr>
+					</thead>
+					<tr><td>Tiny</td><td>+1</td><td>1d4</td></tr>
+					<tr><td>Small</td><td>+2</td><td>2d4</td></tr>
+					<tr><td>Medium</td><td>+3</td><td>2d6</td></tr>
+					<tr><td>Large</td><td>+4</td><td>2d8</td></tr>
+					<tr><td>Huge</td><td>+5</td><td>2d10</td></tr>
+				</table>
+		</description>
+        <sheet action="Action" usage="CE">
+            <description>For 3 CE, create a 10 feet wide, 60 feet long line from an imbued tool you are holding or a Floating Tool within 60 ft for 1 additional CE. Creatures within range must make a Strength saving throw, taking 3d10 bludgeoning damage and being pushed back 10 feet on a failed save or half as much on a success.</description>
+            <description level="11">For 3 CE, create a 10 feet wide, 60 feet long line from an imbued tool you are holding or a Floating Tool within 60 ft for 1 additional CE. Creatures within range must make a Strength saving throw, taking 6d10 bludgeoning damage and being pushed back 20 feet and knocked prone on a failed save or half as much on a success.</description>
+        </sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_TOOL_MANIPULATION_COMBAT_TOOL_IMPROVEMENT" />
+		</rules>
+	</element>
+
+	<element name="Combat Tool Improvement" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_TOOL_MANIPULATION_COMBAT_TOOL_IMPROVEMENT">
+		<description>
+			<p>You gain a +1 bonus to attack and damage rolls when using an imbued tool for each CE spent.</p>
+			<p class="indent"> As a reaction, you can cause one of your imbued tools to protect you. It grants you a bonus to AC or reduces damage depending on its size. If the tool has a bonus to AC or damage rolls, it is included in the AC and reduction respectively.</p>
+			<h5 class="caption">COMBAT TOOL IMPROVEMENTS</h5>
+				<table>
+					<thead>
+						<tr><td>Size</td><td>AC</td><td>Reduction</td></tr>
+					</thead>
+					<tr><td>Tiny</td><td>+1</td><td>1d4</td></tr>
+					<tr><td>Small</td><td>+2</td><td>2d4</td></tr>
+					<tr><td>Medium</td><td>+3</td><td>2d6</td></tr>
+					<tr><td>Large</td><td>+4</td><td>2d8</td></tr>
+					<tr><td>Huge</td><td>+5</td><td>2d10</td></tr>
+				</table>
+		</description>
+		<sheet action="Reaction">
+			<description>Cause one of your tools to give you a +1, +2, +3, +4, or +5 to AC and a 1d4, 2d4, 2d6, 2d8, or 2d10 damage reduction to incoming damage for sizes tiny, small, medium, large, or huge sizes respectively. Bonuses to AC or damage rolls are included in the AC and reduction respectively.</description>
+			<description level="11">Cause one of your tools to give you a +2, +3, +4, +5, or +6 to AC and a 2d4, 3d4, 3d6, 3d8, or 3d10 damage reduction to incoming damage for sizes tiny, small, medium, large, or huge sizes respectively. Bonuses to AC or damage rolls are included in the AC and reduction respectively. You have one extra reaction each round that can only be used for this technique.</description>
+		</sheet>
+	</element>
+
+	<element name="Tool Mastery" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_TOOL_MANIPULATION_TOOL_MASTERY">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_TOOL_MANIPULATION_TOOL_MASTERY</requirements>
+		<description>
+			<p>At 11th level, you have mastered your respective style, granting you the following:</p>
+			<p class="indent"><strong>Floating Tool Mastery.</strong> You can command two Floating Tools using your bonus action or one Floating Tool as a free action on your turn. You and other creatures also gain advantage on Dexterity saves while riding a Floating Tool.</p>
+			<p class="indent"><strong>Combat Tool Mastery.</strong> Your mastery over imbued tools allows you to manipulate the flow of combat with exceptional precision. When you use Combat Tool Improvement, the AC bonus it grants increases by 1, and the damage reduction provided increases by one additional die. In addition, you gain one extra reaction each round that can only be used to activate Combat Tool Improvement.</p>
+			<p class="indent">When you or a creature you can see makes an attack using your imbued tool, you can use your reaction to grant that attack roll advantage.</p>
+		</description>
+        <sheet display="false"/>
+	</element>
+
+	<element name="Domain Expansion: Tsukumogami Spirit World" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_TOOL_MANIPULATION_DOMAIN_EXPANSION_TSUKUMOGAMI_SPIRIT_WORLD">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_TOOL_MANIPULATION_DOMAIN_EXPANSION_TSUKUMOGAMI_SPIRIT_WORLD</requirements>
+		<description>
+			<p>Finally at 18th level you have learned to manifest your domain. All weapon attacks made by creatures other than you become a guaranteed miss as you can manipulate all tools within your domain, causing them to come to life and obey your commands.</p>
+			<p class="indent">At initiative 20, you choose one of your imbued tools to gain the benefits of Floating Tool and have all Floating Tools move 60 ft and attack a creature within range or have all creatures suffer the effects of Wind Scythe. You can control a number of Floating Tools equal to your CE modifier (min of 2) within your domain.</p>
+		</description>
+        <sheet>
+			<description>All weapon attacks made by creatures other than you become a guaranteed miss. At initiative 20, you choose one of your imbued tools to gain the benefits of Floating Tool and have all Floating Tools move 60 ft and attack a creature within range or have all creatures suffer the effects of Wind Scythe. You can control {{tool:manipulation:domain:tool:max}} Floating Tools within your domain.</description>
+		</sheet>
+		<rules>
+			<stat name="tool:manipulation:domain:tool:max" value="2" bonus="domain expansion" />
+			<stat name="tool:manipulation:domain:tool:max" value="ce:modifier" bonus="domain expansion" />
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION" />
+		</rules>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Feature1 Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_TOOL_MANIPULATION_GUIDED_CONTROL" />
+	<element name="Feature2 Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_TOOL_MANIPULATION_FLOATING_TOOL" />
+	<element name="Feature3 Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_TOOL_MANIPULATION_WIND_SCYTHE" />
+	<element name="Feature4 Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_TOOL_MANIPULATION_TOOL_MASTERY" />
+	<element name="Feature5 Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_TOOL_MANIPULATION_DOMAIN_EXPANSION_TSUKUMOGAMI_SPIRIT_WORLD" />
+</elements>

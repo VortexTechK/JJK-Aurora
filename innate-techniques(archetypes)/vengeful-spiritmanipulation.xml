@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="6.0.0">
+			<file name="vengeful-spiritmanipulation.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/vengeful-spiritmanipulation.xml" />
+		</update>
+	</info>
+
+	<element name="Vengeful Spirit Manipulation" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_VENGEFUL_SPIRIT_MANIPULATION">
+		<supports>Innate Technique</supports>
+		<description>
+			<p>The Vengeful Cursed Spirit technique involves the use of the spirit of one you care about.</p>
+			<div element="ID_JJK_ARCHETYPE_FEATURE_VENGEFUL_SPIRIT_MANIPULATION_PARTIAL_MANIFESTATION" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_VENGEFUL_SPIRIT_MANIPULATION_VENGEFUL_SPIRIT_MANIFESTATION" />
+            <div class="reference">
+				<div element="ID_JJK_INFORMATION_VENGEFUL_SPIRIT"/>
+			</div>
+			<div element="ID_JJK_ARCHETYPE_FEATURE_VENGEFUL_SPIRIT_MANIPULATION_MIMICRY" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_VENGEFUL_SPIRIT_MANIPULATION_STRONGER_BOND" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_VENGEFUL_SPIRIT_MANIPULATION_DOMAIN_EXPANSION_TRUE_MUTUAL_LOVE" />
+		</description>
+		<sheet display="false">
+			<description>The Vengeful Cursed Spirit technique involves the use of the spirit of one you care about.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_VENGEFUL_SPIRIT_MANIPULATION_PARTIAL_MANIFESTATION" level="1" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_VENGEFUL_SPIRIT_MANIPULATION_VENGEFUL_SPIRIT_MANIFESTATION" level="3" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_VENGEFUL_SPIRIT_MANIPULATION_MIMICRY" level="6" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_VENGEFUL_SPIRIT_MANIPULATION_STRONGER_BOND" level="11" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_VENGEFUL_SPIRIT_MANIPULATION_DOMAIN_EXPANSION_TRUE_MUTUAL_LOVE" level="18" />
+		</rules>
+	</element>
+
+	<element name="Partial Manifestation" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_VENGEFUL_SPIRIT_MANIPULATION_PARTIAL_MANIFESTATION">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_VENGEFUL_SPIRIT_MANIPULATION_PARTIAL_MANIFESTATION</requirements>
+		<description>
+			<p>Beginning at 1st level, at some point in time, someone you cared about died. Unable to accept their death, you unconsciously cursed them and created a vengeful spirit of great power. Once per turn, you can call a part of the spirit to your aid. By spending 1 Cursed Energy, you manifest the spirit's claw to make an additional melee attack as part of your Attack action. This claw attack deals 1d12 slashing damage. At 6th level, the number of attacks increases to two, and three 11th level. You cannot use this attack during manifestation.</p>
+		</description>
+		<sheet usage="CE">
+			<description>For 1 CE, make an additional melee attack as part of your Attack action. This claw attack deals 1d12 slashing damage. You cannot use this attack during manifestation.</description>
+            <description level="6">For 1 CE, make 2 additional melee attacks as part of your Attack action. This claw attack deals 1d12 slashing damage. You cannot use this attack during manifestation.</description>
+            <description level="11">For 1 CE, make 3 additional melee attacks as part of your Attack action. This claw attack deals 1d12 slashing damage. You cannot use this attack during manifestation.</description>
+		</sheet>
+	</element>
+
+	<element name="Vengeful Spirit Manifestation" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_VENGEFUL_SPIRIT_MANIPULATION_VENGEFUL_SPIRIT_MANIFESTATION">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_VENGEFUL_SPIRIT_MANIPULATION_VENGEFUL_SPIRIT_MANIFESTATION</requirements>
+		<description>
+			<p>At 3rd level, your life is very stressful, being a sorcerer is filled with danger and trouble. When times of danger come, your Vengeful Spirit may forcefully manifest. When you take damage above your level + your Cursed Energy modifier, you must make a DC 20 Wisdom saving throw. On a success, you can handle yourself in the fight and don't let your spirit get out. On a failure, your Vengeful Spirit manifests itself into the world to protect you, going berserk (attacking the nearest creature to you). It acts on your turn, is charmed by you and cannot move more than 200 feet from you. Once per round, as a free action you can make a DC 20 Persuasion check. On a success it will stop attacking and unmanifest. On a failure, it will keep attacking until there are no creatures within 200 feet. They will always focus on the last thing to damage you and then the closest creature to you. If killed, it respawns after finishing a long rest.</p>
+            <p class="indent">At 6th level, the DC for the Persuasion check becomes 15 and your Vengeful Spirit stays manifested for a number of rounds equal to your Cursed Energy modifier under your control before going berserk.</p>
+            <p class="indent">At 11th level, you have gained more control over your vengeful cursed spirit. You can now manifest your spirit as a bonus action for 1 minute, now obeying your verbal orders. You can summon the spirit a number of times equal to half your Cursed Energy modifier (rounded up), regaining expended uses on a long rest.</p>
+            <div class="reference">
+				<div element="ID_JJK_INFORMATION_VENGEFUL_SPIRIT"/>
+			</div>
+		</description>
+		<sheet>
+			<description>When you take damage above {{vengeful:spirit:manifestation:threshold}}, you must make a DC 20 Wisdom saving throw. On a failure, your Vengeful Spirit manifests itself not under your control. It acts on your turn, is charmed by you and cannot move more than 200 feet from you. Once per round, as a free action you can make a DC 20 Persuasion check. On a success it will stop attacking and unmanifest. On a failure, it will keep attacking until there are no creatures within 200 feet. They will always focus on the last thing to damage you and then the closest creature to you. If killed, it respawns after finishing a long rest.</description>
+            <description level="6">When you take damage above {{vengeful:spirit:manifestation:threshold}}, you must make a DC 20 Wisdom saving throw. On a failure, your Vengeful Spirit manifests itself under your control for {{ce:modifier}} rounds before going berserk. It acts on your turn, is charmed by you and cannot move more than 200 feet from you. Once per round, as a free action you can make a DC 15 Persuasion check. On a success it will stop attacking and unmanifest. On a failure while berserk, it will keep attacking until there are no creatures within 200 feet. They will always focus on the last thing to damage you and then the closest creature to you. If killed, it respawns after finishing a long rest.</description>
+            <description level="11">When you take damage above {{vengeful:spirit:manifestation:threshold}}, you must make a DC 20 Wisdom saving throw. On a failure, your Vengeful Spirit manifests itself under your control for {{ce:modifier}} rounds before going berserk. It acts on your turn, is charmed by you and cannot move more than 200 feet from you. Once per round, as a free action you can make a DC 15 Persuasion check. On a success it will stop attacking and unmanifest. On a failure while berserk, it will keep attacking until there are no creatures within 200 feet. They will always focus on the last thing to damage you and then the closest creature to you. If killed, it respawns after finishing a long rest. You may also manifest it as a bonus action for 1 minute now obeying your verbal orders up to {{ce:modifier}}/2 (rounded up) times per long rest.</description>
+		</sheet>
+        <rules>
+            <stat name="vengeful:spirit:manifestation:threshold" value="level" />
+            <stat name="vengeful:spirit:manifestation:threshold" value="ce:modifier" />
+            <select type="Companion" name="Vengeful Spirit" supports="Vengeful Spirit" />
+        </rules>
+	</element>
+
+	<element name="Mimicry" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_VENGEFUL_SPIRIT_MANIPULATION_MIMICRY">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_VENGEFUL_SPIRIT_MANIPULATION_MIMICRY</requirements>
+		<description>
+			<p>When you reach 6th level, you begin to learn about your innate technique. As a bonus action, while your Vengeful Spirit is in the world, you can command it to make a claw attack against a creature within range. On a hit it can extract the creature's DNA with a claw attack. You can attempt to replicate it by spending 3 CE as an action to make an ability check using your Cursed Energy score against the target's CE save DC + 2. On a success you can copy one feature of the Cursed Technique you have seen that is of a level that you qualify for and fill prerequisites such as RCT</p>
+            <p class="indent"> You cannot copy Domain Expansions or CR 5+ Summons with Mimicry.</p>
+            <p class="indent"> When you copy a cursed technique, you can only spend the base cost the technique requires. No matter what you copy, you can only use the technique in its base form. For example, a maximum output hollow purple would only come as a hollow purple.</p>
+            <p class="indent"> You can have a number of copied techniques features equal to your Cursed Energy Modifier and can use them a number of times equal to your proficiency bonus before they disappear and you must copy them again. If you have a limb or body part of the user, the number of times you can use the technique is doubled. When you copy more than your limit, you remove a copied feature to make space for another.</p>
+            <p class="indent"> In addition, you automatically pass the Cursed Energy check if you have already copied the cursed technique before.</p>
+		</description>
+        <sheet action="Bonus Action">
+            <description>While your Vengeful Spirit is in the world, you can command it to make a claw attack against a creature within range. On a hit you may spend 3 CE as an action to make an ability check using your Cursed Energy score against the target's CE save DC + 2. On a success you can copy one feature of the target's Cursed Technique you have seen that is of a level that you qualify for and fill prerequisites and is not a Domain Expansion or CR 5+ Summon. When using a copy, you can only spend the base cost the technique requires only in its base form. You can have up to {{ce:modifier}} copied features and can use them {{proficiency}} times before they disappear. If you have a limb or body part of the user, the number of times you can use the technique is doubled. When you copy more than your limit, you remove a copied feature to make space for another. You automatically pass the Cursed Energy check if you have already copied the cursed technique before.</description>
+        </sheet>
+	</element>
+
+	<element name="Stronger Bond" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_VENGEFUL_SPIRIT_MANIPULATION_STRONGER_BOND">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_VENGEFUL_SPIRIT_MANIPULATION_STRONGER_BOND</requirements>
+		<description>
+			<p>Once you reach 11th level, the bond between the binding object and the Vengeful Spirit becomes stronger. Your Vengeful Spirit gains the following benefits:</p>
+            <ul>
+                <li>Two of its ability scores will be increased by 2, and so will their maximum.</li>
+                <li>You will gain +2 to your CE score, including its maximum while your spirit is summoned.</li>
+                <li>Whenever it is summoned the Vengeful Spirit will gain temporary hit points equal to half your current hit points.</li>
+            </ul>
+		</description>
+        <sheet>
+			<description>Your Vengeful Spirit has 2 of its ability scores increased by 2, and so will their maximum. You gain +2 to your CE score and its maximum while your spirit is summoned and whenever it is summoned it gains temporary hit points equal to half your current hit points.</description>
+		</sheet>
+	</element>
+
+	<element name="Domain Expansion: True Mutual Love" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_VENGEFUL_SPIRIT_MANIPULATION_DOMAIN_EXPANSION_TRUE_MUTUAL_LOVE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_VENGEFUL_SPIRIT_MANIPULATION_DOMAIN_EXPANSION_TRUE_MUTUAL_LOVE</requirements>
+		<description>
+			<p>Finally at 18th level, through many battles and copies, you have learned how to expand your domain. Inside this barrier, you are allowed to use all of the cursed techniques you currently have for no Cursed Energy. At initiative 20, you will also gain one additional action, which can only be used to activate a copied cursed technique, which affects all hostile creatures inside the barrier.</p>
+		</description>
+        <sheet>
+			<description>You are allowed to use all of the cursed techniques you currently have for no Cursed Energy. At initiative 20, you will also gain one additional action, which can only be used to activate a copied cursed technique, which affects all hostile creatures inside the barrier.</description>
+		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION" />
+		</rules>
+	</element>
+
+    <!-- Companion Reference -->
+    <element name="Vengeful Spirit" type="Information" source="JJK" id="ID_JJK_INFORMATION_VENGEFUL_SPIRIT">
+        <description>
+            <p style="margin-bottom:-5px"><em>Large undead, chaotic evil</em></p>
+            <h4 style="margin-top:5px"></h4>
+            <ul class="unstyled">
+                <li><strong>Armor Class</strong> 13 + your proficiency bonus</li>
+                <li><strong>Hit Points</strong> 80 + (10 x your proficiency bonus)</li>
+                <li><strong>Speed</strong> 90 ft., fly 90 ft.</li>
+            </ul>
+            <table style="text-align:center;margin-top:10px;margin-bottom:10px">
+                <thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+                <tr><td>30 (+10)</td><td>22 (+6)</td><td>25 (+7)</td><td>8 (-1)</td><td>8 (-1)</td><td>30 (+10)</td></tr>
+            </table>
+            <ul class="unstyled">
+                <li><strong>Saving Throws</strong> Str +12, Dex +8, Cha +12</li>
+                <li><strong>Condition Immunities</strong> charmed, exhaustion, frightened</li>
+                <li><strong>Senses</strong> passive Perception 9</li>
+                <li><strong>Languages</strong> —</li>
+                <li style="margin-bottom:-1em"><strong>Challenge</strong> 1 (200 XP)</li>
+            </ul>
+			<h4 style="margin-top:5px; margin-bottom:10px" />
+            <ul class="unstyled">
+                <li><strong><em>Cursed Energy.</em></strong> The Vengeful Spirit has cursed energy equal to 10 x your proficiency bonus and regains it on a long rest. At 6th level, it gains Basic Cursed Energy Manipulation which increases with your Awakened Understanding. The user can transfer cursed energy to the Vengeful Spirit cursed energy up to their CE modifier as a bonus action.</li>
+                <li><strong><em>Magic Weapons.</em></strong> The Vengeful Spirit's attacks are magical.</li>
+                <li><strong><em>Lingering Hatred.</em></strong> When the Vengeful Spirit is reduced to 0 hit points, it can choose to stay at 1 hit point once per long rest.</li>
+                <li><strong><em>Cursed Storage (6th Level).</em></strong> The Vengeful Spirit functions as a bag of holding.</li>
+            </ul>
+            <h4 style="margin-top:10px">Actions</h4>
+            <ul class="unstyled">
+                <li><strong><em>Multiattack.</em></strong> The Vengeful Spirit makes three claw attacks.</li>
+                <li><em><strong>Claw.</strong> Melee Weapon Attack:</em> +10 + PB to hit, reach 5 ft. Hit: 23 (2d12 + 10) slashing damage.</li>
+                <li><strong><em>Cursed Energy Beam (Recharge 5-6).</em></strong> The Vengeful Spirit releases cursed energy in a 10 ft. wide, 100 ft. long line. Each creature in the area must make a Dexterity saving throw (DC 8 + your proficiency + your CE modifier). On a failed save, a creature takes (your proficiency + your CE modifier)d6 necrotic damage or half as much on a succesful save. The Vengeful Spirit can spend up to 10 CE to deal an additional d6 per cursed energy spent.</li>
+            </ul>
+        </description>
+    </element>
+
+    <!-- Companion -->
+    <element name="Vengeful Spirit" type="Companion" source="JJK" id="ID_JJK_COMPANION_VENGEFUL_SPIRIT">
+        <supports>Vengeful Spirit</supports>
+        <setters>
+            <set name="strength">30</set>
+            <set name="dexterity">22</set>
+            <set name="constitution">25</set>
+            <set name="intelligence">8</set>
+            <set name="wisdom">8</set>
+            <set name="charisma">30</set>
+            <set name="ac">13 + PB</set>
+            <set name="hp">80 + (10 x PB)</set>
+            <set name="speed">90 ft., fly 90 ft.</set>
+            <set name="saves">Str +12, Dex +8, Cha +12</set>
+            <set name="senses">passive Perception 9</set>
+            <set name="languages">-</set>
+            <set name="conditionImmunities">charmed, exhaustion, frightened</set>
+            <set name="type">Undead</set>
+            <set name="size">Large</set>
+            <set name="alignment">chaotic evil</set>
+            <set name="challenge">1 (200 XP)</set>
+            <set name="traits">
+                ID_JJK_COMPANION_TRAIT_VENGEFUL_SPIRIT_CE,
+                ID_JJK_COMPANION_TRAIT_VENGEFUL_SPIRIT_MAGIC_WEAPONS,
+                ID_JJK_COMPANION_TRAIT_VENGEFUL_SPIRIT_HATRED,
+                ID_JJK_COMPANION_TRAIT_VENGEFUL_SPIRIT_STORAGE
+            </set>
+            <set name="actions">
+                ID_JJK_COMPANION_ACTION_VENGEFUL_MULTIATTACK,
+                ID_JJK_COMPANION_ACTION_VENGEFUL_CLAW,
+                ID_JJK_COMPANION_ACTION_VENGEFUL_BEAM
+            </set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="13" bonus="base"/>
+            <stat name="companion:ac" value="proficiency"/>
+            <stat name="companion:hp:max" value="80" bonus="base"/>
+            <stat name="companion:hp:max" value="proficiency"/>
+            <stat name="companion:hp:max" value="proficiency"/>
+            <stat name="companion:hp:max" value="proficiency"/>
+            <stat name="companion:hp:max" value="proficiency"/>
+            <stat name="companion:hp:max" value="proficiency"/>
+            <stat name="companion:hp:max" value="proficiency"/>
+            <stat name="companion:hp:max" value="proficiency"/>
+            <stat name="companion:hp:max" value="proficiency"/>
+            <stat name="companion:hp:max" value="proficiency"/>
+            <stat name="companion:hp:max" value="proficiency"/>
+            <stat name="companion:speed" value="90" bonus="base"/>
+            <stat name="companion:speed:fly" value="90" bonus="base"/>
+            <stat name="companion:strength:save:proficiency" value="companion:proficiency"/>
+            <stat name="companion:dexterity:save:proficiency" value="companion:proficiency"/>
+            <stat name="companion:charisma:save:proficiency" value="companion:proficiency"/>
+        </rules>
+    </element>
+
+    <element name="Cursed Energy" type="Companion Trait" source="JJK" id="ID_JJK_COMPANION_TRAIT_VENGEFUL_SPIRIT_CE">
+        <description>
+            <p>The Vengeful Spirit has cursed energy equal to 10 x your proficiency bonus and regains it on a long rest. At 6th level, it gains Basic Cursed Energy Manipulation which increases with your Awakened Understanding. The user can transfer cursed energy to the Vengeful Spirit cursed energy up to their CE modifier as a bonus action.</p>
+        </description>
+        <sheet>
+            <description>The Vengeful Spirit has cursed energy equal to 10 x your proficiency bonus and regains it on a long rest. At 6th level, it gains Basic Cursed Energy Manipulation which increases with your Awakened Understanding. The user can transfer cursed energy to the Vengeful Spirit cursed energy up to their CE modifier as a bonus action.</description>
+        </sheet>
+    </element>
+
+    <element name="Magic Weapons" type="Companion Trait" source="JJK" id="ID_JJK_COMPANION_TRAIT_VENGEFUL_SPIRIT_MAGIC_WEAPONS">
+        <description>
+            <p>The Vengeful Spirit's attacks are magical.</p>
+        </description>
+        <sheet>
+            <description>The Vengeful Spirit's attacks are magical.</description>
+        </sheet>
+    </element>
+
+    <element name="Lingering Hatred" type="Companion Trait" source="JJK" id="ID_JJK_COMPANION_TRAIT_VENGEFUL_SPIRIT_HATRED">
+        <description>
+            <p>When the Vengeful Spirit is reduced to 0 hit points, it can choose to stay at 1 hit point once per long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>When the Vengeful Spirit is reduced to 0 hit points, it can choose to stay at 1 hit point.</description>
+        </sheet>
+    </element>
+
+    <element name="Cursed Storage" type="Companion Trait" source="JJK" id="ID_JJK_COMPANION_TRAIT_VENGEFUL_SPIRIT_STORAGE">
+        <description>
+            <p>The Vengeful Spirit functions as a bag of holding.</p>
+        </description>
+        <sheet>
+            <description>The Vengeful Spirit functions as a bag of holding.</description>
+        </sheet>
+    </element>
+
+    <element name="Multiattack" type="Companion Action" source="JJK" id="ID_JJK_COMPANION_ACTION_VENGEFUL_MULTIATTACK">
+        <description>
+            <p>The Vengeful Spirit makes three claw attacks.</p>
+        </description>
+        <sheet>
+            <description>The Vengeful Spirit makes three claw attacks.</description>
+        </sheet>
+    </element>
+
+    <element name="Claw" type="Companion Action" source="JJK" id="ID_JJK_COMPANION_ACTION_VENGEFUL_CLAW">
+        <description>
+            <p>Melee Weapon Attack: +10 + PB to hit, reach 5 ft. Hit: 23 (2d12 + 10) slashing damage.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +10 + PB to hit, reach 5 ft. Hit: 23 (2d12 + 10) slashing damage.</description>
+        </sheet>
+    </element>
+
+    <element name="Cursed Energy Beam" type="Companion Action" source="JJK" id="ID_JJK_COMPANION_ACTION_VENGEFUL_BEAM">
+        <description>
+            <p>The Vengeful Spirit releases cursed energy in a 10 ft. wide, 100 ft. long line. Each creature in the area must make a Dexterity saving throw (DC 8 + your proficiency + your CE modifier). On a failed save, a creature takes (your proficiency + your CE modifier)d6 necrotic damage or half as much on a succesful save. The Vengeful Spirit can spend up to 10 CE to deal an additional d6 per cursed energy spent.</p>
+        </description>
+        <sheet usage="Recharge 5-6">
+            <description>The Vengeful Spirit releases cursed energy in a 10 ft. wide, 100 ft. long line. Each creature in the area must make a Dexterity saving throw (DC 8 + your proficiency + your CE modifier). On a failed save, a creature takes (your proficiency + your CE modifier)d6 necrotic damage or half as much on a succesful save. The Vengeful Spirit can spend up to 10 CE to deal an additional d6 per cursed energy spent.</description>
+        </sheet>
+    </element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Partial Manifestation Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_VENGEFUL_SPIRIT_MANIPULATION_PARTIAL_MANIFESTATION" />
+	<element name="Vengeful Spirit Manifestation Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_VENGEFUL_SPIRIT_MANIPULATION_VENGEFUL_SPIRIT_MANIFESTATION" />
+	<element name="Mimicry Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_VENGEFUL_SPIRIT_MANIPULATION_MIMICRY" />
+	<element name="Stronger Bond Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_VENGEFUL_SPIRIT_MANIPULATION_STRONGER_BOND" />
+	<element name="Domain Expansion: True Mutual Love Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_VENGEFUL_SPIRIT_MANIPULATION_DOMAIN_EXPANSION_TRUE_MUTUAL_LOVE" />
+</elements>
