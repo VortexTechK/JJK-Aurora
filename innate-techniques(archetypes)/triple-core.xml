@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.0">
+		<update version="6.0.1">
 			<file name="triple-core.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/triple-core.xml" />
 		</update>
 	</info>
@@ -119,6 +119,7 @@
 	</element>
 
     <element name="Unblockable Blows" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_TRIPLE_CORE_UUNBLOCKABLE_BLOWS">
+		<requirements>ID_JJK_ARCHETYPE_FEATURE_TRIPLE_CORE_UNBLOCKABLE_BLOWS</requirements>
         <supports>Upgraded Option</supports>
         <description>
             <p>Your strikes are imbued with unblockable power. Once per turn when you miss with a melee attack, you still deal damage equal to your Strength or Dexterity modifier.</p>
@@ -133,6 +134,7 @@
     </element>
 
     <element name="Energy Blast" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_TRIPLE_CORE_UENERGY_BLAST">
+		<requirements>ID_JJK_ARCHETYPE_FEATURE_TRIPLE_CORE_ENERGY_BLAST</requirements>
         <supports>Upgraded Option</supports>
         <description>
             <p>Your cursed energy has become far more destructive. Once per turn when you deal damage with a ranged cursed energy attack, you add your Cursed Energy modifier to the damage roll. If you already add your modifier to the roll, you add it a second time.</p>
@@ -142,7 +144,8 @@
         </sheet>
     </element>
 
-    <element name="Defensive Form" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_TRIPLE_CORE_UDEFENSIVE_FORM">
+    <element name="Defensive Form" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_TRIPLE_CORE_UDEFENSIVE_FORM">		
+		<requirements>ID_JJK_ARCHETYPE_FEATURE_TRIPLE_CORE_DEFENSIVE_FORM</requirements>
         <supports>Upgraded Option</supports>
         <description>
             <p>Your body passively reinforces itself with cursed energy. When you take damage, you can use your reaction to reduce the damage by your Cursed Energy modifier + your proficiency bonus.</p>
@@ -157,6 +160,7 @@
     </element>
 
     <element name="Divebomb" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_TRIPLE_CORE_UDIVEBOMB">
+		<requirements>ID_JJK_ARCHETYPE_FEATURE_TRIPLE_CORE_DIVEBOMB</requirements>
         <supports>Upgraded Option</supports>
         <description>
             <p>Your body has adapted to improve its swiftness. You can spend 1 ce to take the dash, disengage, or dodge action as a bonus action.</p>
