@@ -4,7 +4,7 @@
 		<name>Heavenly Restriction</name>
 		<description>The Heavenly Restriction class from JJK.</description>
 		<author url="https://docs.google.com/document/d/1eC8tEMHnupOuaX6At1X8JORz5iarNe6I-A7j2QzScrE/edit?tab=t.0">JJK</author>
-		<update version="6.0.2">
+		<update version="6.0.3">
 			<file name="class-heavenlyrestriction.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/heavenlyrestriction/class-heavenlyrestriction.xml" />
 		</update>
 	</info>
@@ -702,7 +702,7 @@
     </element>
 
     <element name="Dueling" type="Class Feature" source="JJK" id="ID_JJK_FIGHTING_STYLE_DUELING">
-        <supports>Fighting Style</supports>
+        <supports>Fighting Style JJK</supports>
         <description>
             <p>When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.</p>
         </description>
@@ -717,7 +717,7 @@
     </element>
 
     <element name="Great Weapon Fighting" type="Class Feature" source="JJK" id="ID_JJK_FIGHTING_STYLE_GWF">
-        <supports>Fighting Style</supports>
+        <supports>Fighting Style JJK</supports>
         <description>
             <p>When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.</p>
         </description>
@@ -731,7 +731,7 @@
     </element>
 
     <element name="Grappler" type="Class Feature" source="JJK" id="ID_JJK_FIGHTING_STYLE_GRAPPLER">
-        <supports>Fighting Style</supports>
+        <supports>Fighting Style JJK</supports>
         <description>
             <p>At the start of each of your turns, you can deal 1d4 bludgeoning damage to one creature grappled by you.</p>
         </description>
@@ -745,7 +745,7 @@
     </element>
 
     <element name="Interception" type="Class Feature" source="JJK" id="ID_JJK_FIGHTING_STYLE_INTERCEPTION">
-        <supports>Fighting Style</supports>
+        <supports>Fighting Style JJK</supports>
         <description>
             <p>When a creature you can see hits a target, other than you, within 5 feet of you with an attack, you can use your reaction to reduce the damage the target takes by 1d10 + your proficiency bonus (to a minimum of 0 damage). You must be wielding a shield or a simple or martial weapon to use this reaction.</p>
         </description>
@@ -759,7 +759,7 @@
     </element>
 
     <element name="Protection" type="Class Feature" source="JJK" id="ID_JJK_FIGHTING_STYLE_PROTECTION">
-        <supports>Fighting Style</supports>
+        <supports>Fighting Style JJK</supports>
         <description>
             <p>When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. </p>
         </description>
@@ -773,7 +773,7 @@
     </element>
 
     <element name="Two-Weapon Fighting" type="Class Feature" source="JJK" id="ID_JJK_FIGHTING_STYLE_TWO">
-        <supports>Fighting Style</supports>
+        <supports>Fighting Style JJK</supports>
         <description>
             <p>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.</p>
         </description>
@@ -787,7 +787,7 @@
     </element>
 
     <element name="Tunnel Fighter" type="Class Feature" source="JJK" id="ID_JJK_FIGHTING_STYLE_TUNNEL_FIGHTER">
-        <supports>Fighting Style</supports>
+        <supports>Fighting Style JJK</supports>
         <description>
             <p> As a bonus action, you can enter a defensive stance that lasts until the start of your next turn. While in your defensive stance, you can make opportunity attacks without using your reaction, and you can use your reaction to make a melee attack against a creature that moves more than 5 feet while within your reach.</p>
         </description>
