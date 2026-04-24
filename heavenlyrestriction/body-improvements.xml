@@ -4,7 +4,7 @@
 		<name>Body Improvements</name>
 		<description>The Body Improvements from JJK</description>
 		<author url="https://docs.google.com/document/d/1eC8tEMHnupOuaX6At1X8JORz5iarNe6I-A7j2QzScrE/edit?tab=t.0">JJK</author>
-		<update version="6.0.4">
+		<update version="6.0.5">
 			<file name="body-improvements.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/heavenlyrestriction/body-improvements.xml" />
 		</update>
 	</info>
@@ -330,7 +330,7 @@
         </sheet>
         <rules>
             <stat name="heavenly:restriction:body:improvement:track" value="-2" />
-            <stat name="heavenly:restriction:body:improvement:constitution" value="-1" /            
+            <stat name="heavenly:restriction:body:improvement:constitution" value="-1" />            
 			<stat name="heavenly:restriction:body:improvement:points" value="-1" />
             <stat name="adamantine:skin:hp" value="constitution:modifier" level="1" />
             <stat name="adamantine:skin:hp" value="constitution:modifier" level="2" />
