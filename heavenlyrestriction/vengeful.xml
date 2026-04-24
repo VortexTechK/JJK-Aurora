@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="6.0.0">
+			<file name="vengeful.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/vengeful.xml" />
+		</update>
+	</info>
+
+	<element name="Vengeful" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_VENGEFUL">
+		<supports>Ideal</supports>
+		<description>
+			<p>People have wronged you in the past, and despite your body healing from the damage caused, the scars in your heart will never heal.</p>
+			<div element="ID_JJK_ARCHETYPE_FEATURE_VENGEFUL_VENGEFUL_FURY" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_VENGEFUL_BLOODLUST" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_VENGEFUL_IMMENSE_ANGER" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_VENGEFUL_FOLLOW_YOUR_WRATH" />
+		</description>
+		<sheet display="false">
+			<description>People have wronged you in the past, and despite your body healing from the damage caused, the scars in your heart will never heal.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_VENGEFUL_VENGEFUL_FURY" level="3" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_VENGEFUL_BLOODLUST" level="9" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_VENGEFUL_IMMENSE_ANGER" level="13" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_VENGEFUL_FOLLOW_YOUR_WRATH" level="17" />
+		</rules>
+	</element>
+
+	<element name="Vengeful Fury" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_VENGEFUL_VENGEFUL_FURY">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_VENGEFUL_VENGEFUL_FURY</requirements>
+		<description>
+			<p>At 3rd level, you are filled with a deep hatred filled by vengeance, making you ignore everything and let anger consume you. As a bonus action you can enter your fury state if you're not wearing heavy armor, gaining the following benefits:</p>
+            <ul>
+                <li>When you take bludgeoning, piercing, or slashing damage, you reduce the damage by your proficiency bonus.</li>
+                <li>You deal one additional dice of damage whenever you score a critical hit with a melee weapon.</li>
+                <li>Your fury lasts for 1 minute. It ends early if you are knocked unconscious or if your turn ends and you haven't attacked a hostile creature since your last turn or taken damage since then. You can also end your rage state on your turn as a bonus action.</li>
+                <li>You can enter your fury a number of times up to your proficiency bonus, and recover all uses upon a short or long rest.</li>
+            </ul>
+		</description>
+		<sheet action="Bonus Action" usage="{{proficiency}}/Short Rest">
+			<description>You can enter your fury state for 1 minute if you're not wearing heavy armor, reducing bludgeoning, piercing, or slashing damage by {{vengeful:fury:dr}} and dealing one additional dice of damage whenever you score a critical hit with a melee weapon. It ends early if you are knocked unconscious or if your turn ends and you haven't attacked a hostile creature since your last turn or taken damage since then. You can also end your rage state on your turn as a bonus action.</description>
+            <description level="13">You can enter your fury state for 1 minute if you're not wearing heavy armor, reducing bludgeoning, piercing, or slashing damage by {{vengeful:fury:dr}} and dealing two additional dice of damage whenever you score a critical hit with a melee weapon. It ends early if you are knocked unconscious or if your turn ends and you haven't attacked a hostile creature since your last turn or taken damage since then. You can also end your rage state on your turn as a bonus action.</description>
+            <description level="17">You can enter your fury state for 1 minute if you're not wearing heavy armor, reducing bludgeoning, piercing, or slashing damage by {{vengeful:fury:dr}} and all other damage types by {{level:half:up}} and dealing three additional dice of damage whenever you score a critical hit with a melee weapon. It ends early if you are knocked unconscious or if your turn ends and you haven't attacked a hostile creature since your last turn or taken damage since then. You can also end your rage state on your turn as a bonus action.</description>
+		</sheet>
+        <rules>
+            <stat name="vengeful:fury:dr" value="proficiency" />
+            <stat name="vengeful:fury:dr" value="proficiency" level="13" />
+            <stat name="vengeful:fury:dr" value="level:half:up" level="17" />
+        </rules>
+    </element>
+
+	<element name="Bloodlust" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_VENGEFUL_BLOODLUST">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_VENGEFUL_BLOODLUST</requirements>
+		<description>
+			<p>At 9th level, you have immense bloodlust for those who have wronged you, even making it your personal task to hunt them down. You can choose one creature that you can see that has damaged you or an ally. For 1 minute, your weapon attacks against that creature gain a +1 to Critical Range, deal one additional dice of damage, and whenever you score a critical hit you can knock them prone.</p>
+            <p class="indent">You can use this feature a number of times equal to your proficiency bonus, and you recover all uses upon taking a long rest.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>You can choose one creature that you can see that has damaged you or an ally. For 1 minute, your weapon attacks against that creature gain a +1 to Critical Range, deal one additional dice of damage, and whenever you score a critical hit you can knock them prone.</description>
+		</sheet>
+	</element>
+
+	<element name="Immense Anger" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_VENGEFUL_IMMENSE_ANGER">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_VENGEFUL_IMMENSE_ANGER</requirements>
+		<description>
+			<p>At 13th level, your rage is growing deeper, making you feel almost invincible. When you enter your fury, you gain the following benefits:</p>
+            <ul>
+                <li>When you take bludgeoning, piercing or slashing damage, the damage is decreased by twice your proficiency bonus.</li>
+                <li>You deal two additional damage dice when you score a critical hit with a melee weapon.</li>
+            </ul>
+		</description>
+        <sheet display="false"/>
+	</element>
+
+	<element name="Follow Your Wrath" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_VENGEFUL_FOLLOW_YOUR_WRATH">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_VENGEFUL_FOLLOW_YOUR_WRATH</requirements>
+		<description>
+			<p>At 17th level, you learned that nothing but your hatred against those that wronged you matters, and no one will stop you from going after them. When you enter your fury, you gain the following benefits:</p>
+            <ul>
+                <li>You gain further damage reduction equal to half your level(rounded up) that applies to all damage types.</li>
+                <li>You deal three additional dice of damage whenever you score a critical hit with a melee weapon.</li>
+            </ul>
+    	</description>
+        <sheet display="false"/>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Vengeful Fury Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_VENGEFUL_VENGEFUL_FURY" />
+	<element name="Bloodlust Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_VENGEFUL_BLOODLUST" />
+	<element name="Immense Anger Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_VENGEFUL_IMMENSE_ANGER" />
+	<element name="Follow Your Wrath Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_VENGEFUL_FOLLOW_YOUR_WRATH" />
+</elements>

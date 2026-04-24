@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="6.0.0">
+			<file name="prideful.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/prideful.xml" />
+		</update>
+	</info>
+
+	<element name="Prideful" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_PRIDEFUL">
+		<supports>Ideal</supports>
+		<description>
+			<p>Those who Ideals are to show their superiority, are the Prideful.</p>
+			<div element="ID_JJK_ARCHETYPE_FEATURE_PRIDEFUL_SORCERER_HUNTER" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_PRIDEFUL_FIGHTERS_DRIVE" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_PRIDEFUL_ALL_THINGS_I_CAN_HANDLE" />
+			<div element="ID_JJK_ARCHETYPE_FEATURE_PRIDEFUL_YOU_LOST_TO_A_MONKEY" />
+		</description>
+		<sheet display="false">
+			<description>Those who Ideals are to show their superiority, are the Prideful.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_PRIDEFUL_SORCERER_HUNTER" level="3" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_PRIDEFUL_FIGHTERS_DRIVE" level="9" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_PRIDEFUL_ALL_THINGS_I_CAN_HANDLE" level="13" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_PRIDEFUL_YOU_LOST_TO_A_MONKEY" level="17" />
+		</rules>
+	</element>
+
+	<element name="Sorcerer Hunter" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_PRIDEFUL_SORCERER_HUNTER">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PRIDEFUL_SORCERER_HUNTER</requirements>
+		<description>
+			<p>At 3rd level, you have grown a prideful stance against sorcerers, mocking them by saying things like they lost against a primate. You have become a sorcerer hunter, making you gain the following benefits:</p>
+            <ul>
+                <li>When a creature within 5 feet of you uses a Cursed technique, you can use your reaction to make a melee weapon attack against that creature.</li>
+                <li>When you damage a creature that is concentrating on a spell or a Cursed technique, that creature has disadvantage on the saving throw it makes to maintain its concentration.</li>
+                <li>You have advantage on saving throws against spells or Cursed techniques cast by creatures within 10 feet of you.</li>
+            </ul>
+		</description>
+		<sheet>
+			<description>When a creature within 5 feet of you uses a Cursed Technique, you can use your reaction to make a melee weapon attack against that creature. When you damage a creature that is concentrating on a spell or a Cursed Technique, that creature has disadvantage on the saving throw it makes to maintain its concentration. You have advantage on saving throws against spells or Cursed Techniques cast by creatures within 10 feet of you.</description>
+		</sheet>
+	</element>
+
+	<element name="Fighter's Drive" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_PRIDEFUL_FIGHTERS_DRIVE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PRIDEFUL_FIGHTERS_DRIVE</requirements>
+		<description>
+			<p>At 9th level, you have a will to fight that drives you beyond your limits, making you go further than what you could normally do for a moment. On your turn, you can take an additional action.</p>
+            <p class="indent">This can only be used once per long rest. You can use this two times per long rest but only once per turn at 18th level.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>On your turn, you can take an additional action.</description>
+            <description level="18" usage="2/Long Rest">On your turn, you can take an additional action.</description>
+		</sheet>
+	</element>
+
+	<element name="All Things I Can Handle" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_PRIDEFUL_ALL_THINGS_I_CAN_HANDLE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PRIDEFUL_ALL_THINGS_I_CAN_HANDLE</requirements>
+		<description>
+			<p>At 13th level, due to being experienced with killing sorcerers, dealing with their techniques has become an easy task for you. Whenever you are targeted by a spell or technique attack roll or saving throw, you learn how it works and adapt to it. After adapting to it, you can use your reaction to gain advantage on the saving throw or force the attack roll to be made at disadvantage.</p>
+		</description>
+        <sheet>
+            <description>Whenever you are targeted by a spell or technique attack roll or saving throw, you adapt to it. After adapting to it, you can use your reaction to gain advantage on the saving throw or force the attack roll to be made at disadvantage.</description>
+        </sheet>
+	</element>
+
+	<element name="You Lost to a Monkey" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_PRIDEFUL_YOU_LOST_TO_A_MONKEY">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PRIDEFUL_YOU_LOST_TO_A_MONKEY</requirements>
+		<description>
+			<p>At 17th level, no matter who they are, no matter their tricks, you can be assured of victory. Once per round, you can choose to deal critical damage on a hit.</p>
+            <p class="indent">In addition, whenever you reduce a creature to 0 hit points you gain temporary hit points equal to your level.</p>
+		</description>
+        <sheet>
+			<description>Once per round, you can choose to deal critical damage on a hit. Whenever you reduce a creature to 0 hit points you gain {{level}} temporary hit points.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Sorcerer Hunter Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PRIDEFUL_SORCERER_HUNTER" />
+	<element name="Fighter's Drive Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PRIDEFUL_FIGHTERS_DRIVE" />
+	<element name="All Things I Can Handle Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PRIDEFUL_ALL_THINGS_I_CAN_HANDLE" />
+	<element name="You Lost to a Monkey Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_PRIDEFUL_YOU_LOST_TO_A_MONKEY" />
+</elements>

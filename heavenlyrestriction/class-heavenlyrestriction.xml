@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Heavenly Restriction</name>
+		<description>The Heavenly Restriction class from JJK.</description>
+		<author url="https://docs.google.com/document/d/1eC8tEMHnupOuaX6At1X8JORz5iarNe6I-A7j2QzScrE/edit?tab=t.0">JJK</author>
+		<update version="6.0.0">
+			<file name="class-heavenlyrestriction.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/classes/class-heavenlyrestriction.xml" />
+		</update>
+	</info>
+
+	<element name="Heavenly Restriction" type="Class" source="JJK" id="ID_JJK_CLASS_HEAVENLY_RESTRICTION">
+		<description>
+			<p>You abandoned cursed energy.</p>
+			<h3>CLASS FEATURES</h3>
+			<p>As a heavenly restriction, you gain the following class features.</p>
+            <h5 class="caption">HIT POINTS</h5>
+            <ul class="unstyled">
+                <li><strong>Hit Dice:</strong> 1d12 per Heavenly Restriction level</li>
+                <li><strong>Hit Points at 1st Level:</strong> 12 + your Constitution modifier</li>
+                <li><strong>Hit Points at Higher Levels:</strong> 1d12 (or 7) + your Constitution modifier per Heavenly Restriction level after 1st</li>
+            </ul>
+            <h5 class="caption">PROFICIENCIES</h5>
+            <ul class="unstyled mb">
+                <li><strong>Armor:</strong> None</li>
+                <li><strong>Weapons:</strong> All weapons</li>
+                <li><strong>Tools:</strong> None</li>
+            </ul>
+            <ul class="unstyled">
+                <li><strong>Saving Throws:</strong> Strength, Constitution</li>
+                <li><strong>Skills:</strong> Choose two from Acrobatics, Athletics, Insight, Intimidation, Perception, Stealth, Survival</li>
+            </ul>
+			<h5 class="caption">EQUIPMENT</h5>
+			<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+			<ul>
+				<li>(a) 2 Simple Weapons or (b) any martial melee weapon</li>
+				<li>(a) one Dagger or (b) a handgun</li>
+				<li>An explorer's pack and four javelins</li>
+			</ul>
+			<h5 class="caption">THE HEAVENLY RESTRICTION</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-10">Level</td><td class="col-10">Dmg Dice</td><td class="col-10">Unarmored Movement</td><td class="col-60 left">Features</td></tr>
+				</thead>
+				<tr><td>1st</td><td>d6</td><td>20</td><td class="left">Restrained Body, Unarmored Movement, Martial Arts</td></tr>
+				<tr><td>2nd</td><td>d6</td><td>20</td><td class="left">Body Improvements, Fighting Style</td></tr>
+				<tr><td>3rd</td><td>d6</td><td>20</td><td class="left">Ideal</td></tr>
+				<tr><td>4th</td><td>d6</td><td>30</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>5th</td><td>d8</td><td>30</td><td class="left">Extra Attack(x1)</td></tr>
+				<tr><td>6th</td><td>d8</td><td>30</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>7th</td><td>d8</td><td>40</td><td class="left">Improved Body, Resistant</td></tr>
+				<tr><td>8th</td><td>d8</td><td>40</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>9th</td><td>d8</td><td>40</td><td class="left">Weapon Specialist, Ideal Feature</td></tr>
+				<tr><td>10th</td><td>d8</td><td>50</td><td class="left">Celestial Body</td></tr>
+				<tr><td>11th</td><td>d10</td><td>50</td><td class="left">Extra Attack(x2)</td></tr>
+				<tr><td>12th</td><td>d10</td><td>50</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>13th</td><td>d10</td><td>60</td><td class="left">Ideal Feature</td></tr>
+				<tr><td>14th</td><td>d10</td><td>60</td><td class="left">Improved Fighting Style</td></tr>
+				<tr><td>15th</td><td>d10</td><td>60</td><td class="left">Demigod's Figure</td></tr>
+				<tr><td>16th</td><td>d10</td><td>70</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>17th</td><td>d12</td><td>70</td><td class="left">Ideal Feature</td></tr>
+				<tr><td>18th</td><td>d12</td><td>70</td><td class="left">Extra Attack(x3)</td></tr>
+				<tr><td>19th</td><td>d12</td><td>80</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>20th</td><td>d12</td><td>80</td><td class="left">God of War, Extra Attack(x4)</td></tr>
+			</table>	
+			<div element="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_RESTRAINED_BODY" />
+			<div element="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_UNARMORED_MOVEMENT" />
+			<div element="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_MARTIAL_ARTS" />
+			<div element="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_BODY_IMPROVEMENTS" />
+            <div element="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_FIGHTING_STYLE" />
+			<div element="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_IDEAL" />
+			<div element="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_ABILITYSCOREIMPROVEMENT_HEAVENLY_RESTRICTION" />
+			<div element="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_EXTRA_ATTACK" />
+			<div element="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_IMPROVED_BODY" />
+			<div element="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_RESISTANT" />
+			<div element="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_WEAPON_SPECIALIST" />
+			<div element="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_CELESTIAL_BODY" />
+            <div element="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_IMPROVED_FIGHTING_STYLE" />
+            <div element="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_DEMIGODS_FIGURE" />
+            <div element="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_GOD_OF_WAR" />
+		</description>
+		<sheet display="false">
+			<description>The one who left it all behind.</description>
+		</sheet>
+		<setters>
+			<set name="short">The one who left it all behind.</set>
+			<set name="hd">d12</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_JJK_MULTICLASS_HEAVENLY_RESTRICTION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" requirements="!ID_JJK_MULTICLASS_HEAVENLY_RESTRICTION" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_RANGED_WEAPONS" requirements="!ID_JJK_MULTICLASS_HEAVENLY_RESTRICTION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" requirements="!ID_JJK_MULTICLASS_HEAVENLY_RESTRICTION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_JJK_MULTICLASS_HEAVENLY_RESTRICTION" />
+			<select type="Proficiency" name="Skill Proficiency (Heavenly Restriction)" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_SURVIVAL|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INTIMIDATION" number="2" requirements="!ID_JJK_MULTICLASS_HEAVENLY_RESTRICTION" />
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_RESTRAINED_BODY" level="1" />
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_UNARMORED_MOVEMENT" level="1" />
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_MARTIAL_ARTS" level="1" />
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_BODY_IMPROVEMENTS" level="2" />
+            <grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_FIGHTING_STYLE" level="2" />
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_IDEAL" level="3" />
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_ABILITYSCOREIMPROVEMENT_HEAVENLY_RESTRICTION" level="4" />
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_EXTRA_ATTACK" level="5" />
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_IMPROVED_BODY" level="7" />
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_RESISTANT" level="7" />
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_WEAPON_SPECIALIST" level="9" />
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_CELESTIAL_BODY" level="10" />
+            <grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_IMPROVED_FIGHTING_STYLE" level="14" />
+            <grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_DEMIGODS_FIGURE" level="15" />
+            <grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_GOD_OF_WAR" level="20" />
+		</rules>
+		<multiclass id="ID_JJK_MULTICLASS_HEAVENLY_RESTRICTION">
+			<prerequisite>Can not Multiclass</prerequisite>
+			<requirements>([str:100])</requirements>
+		</multiclass>
+	</element>
+
+	<element name="Restrained Body" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_RESTRAINED_BODY">
+		<description>
+			<p>Starting at 1st level, your body is simply built differently than others. You have supernatural strength, speed and durability. You gain the following traits:</p>
+			<ul>
+                <li><strong>Supernatural Body.</strong> You gain a +2 in your Strength, Dexterity and Constitution scores. These same scores increase by +1 at 5th, 9th, 13th and 17th level. In addition, your ability score limit is increased to 25. At every level you gain after 1st, your ability score maximum increases by 1, up to 40.</li>
+                <li><strong>Supernatural Resilience.</strong> Your unarmored AC equals 10 + your Constitution modifier + your Dexterity modifier.</li>
+                <li><strong>Perfect Health.</strong> You have advantage on saving throws against disease and the poisoned condition. </li>
+                <li><strong>Supernatural Vision.</strong> You gain proficiency in the Perception skill, or expertise if already proficient.</li>
+                <li><strong>Pure Body.</strong> Your body has no traces of any kinds of mystical energy, meaning you can't multiclass or learn about magic or cursed energy, and if you somehow have abilities which use magic or cursed energy, you lose them. You cannot land black flashes or utilize RCT.</li>
+            </ul>
+		</description>
+        <sheet>
+            <description>Your unarmored AC is {{ac:unarmored:defense:heavenly:restriction}}. You have advantage on saving throws against disease and the poisoned condition. You can't multiclass or learn about magic or cursed energy, and if you somehow have abilities which use magic or cursed energy, you lose them. You cannot land black flashes or utilize RCT.</description>
+            <description level="7">Your unarmored AC is {{ac:unarmored:defense:heavenly:restriction}}. You have immunity to the disease and the poisoned condition. You can't multiclass or learn about magic or cursed energy, and if you somehow have abilities which use magic or cursed energy, you lose them. You cannot land black flashes or utilize RCT.</description>
+        </sheet>
+        <rules>
+            <stat name="strength:max" value="5" />
+            <stat name="strength:max" value="1" level="2" />
+            <stat name="strength:max" value="1" level="3" />
+            <stat name="strength:max" value="1" level="4" />
+            <stat name="strength:max" value="1" level="5" />
+            <stat name="strength:max" value="1" level="6" />
+            <stat name="strength:max" value="1" level="7" />
+            <stat name="strength:max" value="1" level="8" />
+            <stat name="strength:max" value="1" level="9" />
+            <stat name="strength:max" value="1" level="10" />
+            <stat name="strength:max" value="1" level="11" />
+            <stat name="strength:max" value="1" level="12" />
+            <stat name="strength:max" value="1" level="13" />
+            <stat name="strength:max" value="1" level="14" />
+            <stat name="strength:max" value="1" level="15" />
+            <stat name="strength:max" value="1" level="16" />
+            <stat name="dexterity:max" value="5" />
+            <stat name="dexterity:max" value="1" level="2" />
+            <stat name="dexterity:max" value="1" level="3" />
+            <stat name="dexterity:max" value="1" level="4" />
+            <stat name="dexterity:max" value="1" level="5" />
+            <stat name="dexterity:max" value="1" level="6" />
+            <stat name="dexterity:max" value="1" level="7" />
+            <stat name="dexterity:max" value="1" level="8" />
+            <stat name="dexterity:max" value="1" level="9" />
+            <stat name="dexterity:max" value="1" level="10" />
+            <stat name="dexterity:max" value="1" level="11" />
+            <stat name="dexterity:max" value="1" level="12" />
+            <stat name="dexterity:max" value="1" level="13" />
+            <stat name="dexterity:max" value="1" level="14" />
+            <stat name="dexterity:max" value="1" level="15" />
+            <stat name="dexterity:max" value="1" level="16" />
+            <stat name="constitution:max" value="5" />
+            <stat name="constitution:max" value="1" level="2" />
+            <stat name="constitution:max" value="1" level="3" />
+            <stat name="constitution:max" value="1" level="4" />
+            <stat name="constitution:max" value="1" level="5" />
+            <stat name="constitution:max" value="1" level="6" />
+            <stat name="constitution:max" value="1" level="7" />
+            <stat name="constitution:max" value="1" level="8" />
+            <stat name="constitution:max" value="1" level="9" />
+            <stat name="constitution:max" value="1" level="10" />
+            <stat name="constitution:max" value="1" level="11" />
+            <stat name="constitution:max" value="1" level="12" />
+            <stat name="constitution:max" value="1" level="13" />
+            <stat name="constitution:max" value="1" level="14" />
+            <stat name="constitution:max" value="1" level="15" />
+            <stat name="constitution:max" value="1" level="16" />
+            <stat name="strength" value="2" />
+            <stat name="strength" value="1" level="5" />
+            <stat name="strength" value="1" level="9" />
+            <stat name="strength" value="1" level="13" />
+            <stat name="strength" value="1" level="17" />
+            <stat name="dexterity" value="2" />
+            <stat name="dexterity" value="1" level="5" />
+            <stat name="dexterity" value="1" level="9" />
+            <stat name="dexterity" value="1" level="13" />
+            <stat name="dexterity" value="1" level="17" />
+            <stat name="constitution" value="2" />
+            <stat name="constitution" value="1" level="5" />
+            <stat name="constitution" value="1" level="9" />
+            <stat name="constitution" value="1" level="13" />
+            <stat name="constitution" value="1" level="17" />
+			<stat name="ac:unarmored:defense:heavenly:restriction" value="10" />
+            <stat name="ac:unarmored:defense:heavenly:restriction" value="constitution:modifier" />
+			<stat name="ac:unarmored:defense:heavenly:restriction" value="dexterity:modifier" />
+			<stat name="ac:calculation" value="ac:unarmored:defense:heavenly:restriction" bonus="calculation" equipped="[armor:none],[shield:none]" alt="Unarmored Defense (Heavenly Restriction)" />
+            <grant type="Proficiency" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_PERCEPTION" />
+        </rules>
+	</element>
+
+	<element name="Unarmored Movement" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_UNARMORED_MOVEMENT">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_HEAVENLY_RESTRICTION_UNARMORED_MOVEMENT</requirements>
+		<description>
+			<p>Also at 1st level, your speed increases by 20 feet while you are not wearing armor or wielding a shield. This bonus increases when you reach certain Heavenly Restriction levels, as shown in the Heavenly Restriction table.</p>
+            <p class="indent">In addition, you gain the ability to move and run along vertical surfaces and across liquids on your turn without falling during the move.</p>
+		</description>
+		<sheet>
+			<description>Your speed increase by {{heavenly:restriction:speed}} while you are not wearing armor or wielding a shield. You gain the ability to move along vertical surfaces and across liquids on your turn without falling during the move.</description>
+		</sheet>
+		<rules>
+			<stat name="heavenly:restriction:unarmored movement" value="20" bonus="unarmored movement" />
+			<stat name="heavenly:restriction:unarmored movement" value="30" bonus="unarmored movement" level="4" />
+			<stat name="heavenly:restriction:unarmored movement" value="40" bonus="unarmored movement" level="7" />
+			<stat name="heavenly:restriction:unarmored movement" value="50" bonus="unarmored movement" level="10" />
+			<stat name="heavenly:restriction:unarmored movement" value="60" bonus="unarmored movement" level="13" />
+            <stat name="heavenly:restriction:unarmored movement" value="70" bonus="unarmored movement" level="16" />
+			<stat name="heavenly:restriction:unarmored movement" value="80" bonus="unarmored movement" level="19" />
+
+			<stat name="innate speed:misc" value="heavenly:restriction:unarmored movement" bonus="unarmored movement" equipped="[armor:none],[shield:none]" requirements="[innate speed:1]" />
+			<stat name="innate speed:climb:misc" value="heavenly:restriction:unarmored movement" bonus="unarmored movement" equipped="[armor:none],[shield:none]" requirements="[innate speed:climb:1]" />
+			<stat name="innate speed:fly:misc" value="heavenly:restriction:unarmored movement" bonus="unarmored movement" equipped="[armor:none],[shield:none]" requirements="[innate speed:fly:1]" />
+			<stat name="innate speed:swim:misc" value="heavenly:restriction:unarmored movement" bonus="unarmored movement" equipped="[armor:none],[shield:none]" requirements="[innate speed:swim:1]" />
+			<stat name="innate speed:burrow:misc" value="heavenly:restriction:unarmored movement" bonus="unarmored movement" equipped="[armor:none],[shield:none]" requirements="[innate speed:burrow:1]" />
+		</rules>
+	</element>
+
+	<element name="Martial Arts" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_MARTIAL_ARTS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_HEAVENLY_RESTRICTION_MARTIAL_ARTS</requirements>
+		<description>
+			<p>Also at 1st level, your practice of martial arts gives you mastery of combat styles that use unarmed strikes and martial weapons.</p>
+			<p class="indent">You can use Dexterity instead of Strength for the attack and damage rolls of your unarmed strikes and martial weapons.</p>
+            <p class="indent">You can roll a d6 in place of the normal damage of your unarmed strike or martial weapon. This die changes as you gain Heavenly Restriction levels, as shown in the Martial Arts column of the Heavenly Restriction table.</p>
+			<p class="indent">When you use the Attack action with an unarmed strike or a martial weapon on your turn, you can make one unarmed strike or weapon attack as a bonus action (For example, if you take the Attack action and attack with a quarterstaff, you can also make an unarmed strike as a bonus action, assuming you haven't already taken a bonus action this turn.).</p>
+		</description>
+		<sheet>
+			<description>Your unarmed strikes and martial weapons do 1d{{martial arts:dice}}+{{martial arts:damage}} damage. You can use Strength or Dexterity for these attacks. When you use the Attack action with an unarmed strike or a martial weapon on your turn, you can make one unarmed strike or weapon attack as a bonus action.</description>
+		</sheet>
+		<rules>
+			<stat name="martial arts:damage" value="strength:modifier" bonus="martial arts" />
+			<stat name="martial arts:damage" value="dexterity:modifier" bonus="martial arts" />
+			<stat name="martial arts:dice" value="6" bonus="martial arts" />
+			<stat name="martial arts:dice" value="8" bonus="martial arts" level="5" />
+			<stat name="martial arts:dice" value="10" bonus="martial arts" level="11" />
+			<stat name="martial arts:dice" value="12" bonus="martial arts" level="17" />
+		</rules>
+	</element>
+
+	<element name="Body Improvements" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_BODY_IMPROVEMENTS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_HEAVENLY_RESTRICTION_BODY_IMPROVEMENTS</requirements>
+		<description>
+			<p>At 2nd level, your body is constantly growing and improving, becoming better by the day. You have a number of body points equal to your Heavenly Restriction level. These points can be used to obtain body improvements, all listed down at the Body Improvements List section. You cannot change an improvement once chosen.</p>
+		</description>
+		<sheet>
+			<description>You have {{level:heavenly restriction}} body improvement points.</description>
+		</sheet>
+        <rules>
+            <stat name="heavenly:restriction:body:improvement:points" value="level:heavenly restriction" />
+            <stat name="heavenly:restriction:body:improvement:strength" value="strength:modifier" />
+            <stat name="heavenly:restriction:body:improvement:dexterity" value="dexterity:modifier" />
+            <stat name="heavenly:restriction:body:improvement:constitution" value="constitution:modifier" />
+            <stat name="heavenly:restriction:body:improvement:wisdom" value="wisdom:modifier" />
+            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="[heavenly:restriction:body:improvement:points:1]" />
+            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="[heavenly:restriction:body:improvement:points:1]" level="2" />
+            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="[heavenly:restriction:body:improvement:points:1]" level="3" />
+            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="[heavenly:restriction:body:improvement:points:1]" level="4" />
+            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="[heavenly:restriction:body:improvement:points:1]" level="5" />
+            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="[heavenly:restriction:body:improvement:points:1]" level="6" />
+            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="[heavenly:restriction:body:improvement:points:1]" level="7" />
+            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="[heavenly:restriction:body:improvement:points:1]" level="8" />
+            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="[heavenly:restriction:body:improvement:points:1]" level="9" />
+            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="[heavenly:restriction:body:improvement:points:1]" level="10" />
+            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="[heavenly:restriction:body:improvement:points:1]" level="11" />
+            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="[heavenly:restriction:body:improvement:points:1]" level="12" />
+            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="[heavenly:restriction:body:improvement:points:1]" level="13" />
+            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="[heavenly:restriction:body:improvement:points:1]" level="14" />
+            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="[heavenly:restriction:body:improvement:points:1]" level="15" />
+            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="[heavenly:restriction:body:improvement:points:1]" level="16" />
+            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="[heavenly:restriction:body:improvement:points:1]" level="17" />
+            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="[heavenly:restriction:body:improvement:points:1]" level="18" />
+            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="[heavenly:restriction:body:improvement:points:1]" level="19" />
+            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="[heavenly:restriction:body:improvement:points:1]" level="20" />
+        </rules>
+	</element>
+
+    <element name="Fighting Style" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_FIGHTING_STYLE">
+        <description>
+            <p>At 2nd level, due to your training and constant improving body, you have a newfound ability when wielding weapons. You can choose one of the fighting styles bellow:</p>
+            <ul>
+                <li><strong>Archery (PHB).</strong> You gain a +2 bonus to attack rolls you make with ranged weapons.</li>
+                <li><strong>Blind Fighting (TCE).</strong> You have blindsight with a range of 10 feet. Within that range, you can effectively see anything that isn't behind total cover, even if you're blinded or in darkness. Moreover, you can see an invisible creature within that range, unless the creature successfully hides from you.</li>
+                <li><strong>Dueling (PHB).</strong> When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.</li>
+                <li><strong>Great Weapon Fighting (PHB).</strong> When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.</li>
+                <li><strong>Grappler (PHB).</strong> At the start of each of your turns, you can deal 1d4 bludgeoning damage to one creature grappled by you.</li>
+                <li><strong>Interception (TCE).</strong> When a creature you can see hits a target, other than you, within 5 feet of you with an attack, you can use your reaction to reduce the damage the target takes by 1d10 + your proficiency bonus (to a minimum of 0 damage). You must be wielding a shield or a simple or martial weapon to use this reaction.</li>
+                <li><strong>Protection (PHB).</strong> When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll.</li>
+                <li><strong>Two-Weapon Fighting (PHB).</strong> When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.</li>
+                <li><strong>Tunnel Fighter (UA).</strong> As a bonus action, you can enter a defensive stance that lasts until the start of your next turn. While in your defensive stance, you can make opportunity attacks without using your reaction, and you can use your reaction to make a melee attack against a creature that moves more than 5 feet while within your reach.</li>
+            </ul>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Class Feature" name="Fighting Style" supports="Fighting Style JJK" />
+        </rules>
+    </element>
+
+    <element name="Ideal" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_IDEAL">
+        <description>
+            <p>At 3rd level, due to bad life experiences, you have acquired an ideal. Choose between Prideful or Vengeful, both detailed at the end of the class description. Your choice grants you features at 3rd and again at 9th, 13th and 17th level.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Archetype" name="Ideal" supports="Ideal" />
+        </rules>
+    </element>
+
+	<element name="Ability Score Improvement" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_ABILITYSCOREIMPROVEMENT_HEAVENLY_RESTRICTION">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_HEAVENLY_RESTRICTION_ABILITYSCOREIMPROVEMENT_HEAVENLY_RESTRICTION</requirements>
+		<compendium display="false" />
+		<description>
+			<p>When you reach 4th level, and again at 6th, 8th, 12th, 16th and 19th level, you can increase one ability score of your choice by 3, or you can increase three ability scores of your choice by 1. You can't increase an ability score above your ability score limit using this feature. You can also ignore this increase to instead gain a Feat.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Heavenly Restriction 4)" supports="ID_WOTC_ASI_ABILITY_SCORE_IMPROVEMENT_OPTION_2, Feat" level="4" />
+            <select type="Class Feature" name="Improvement Option (Heavenly Restriction 6)" supports="ID_WOTC_ASI_ABILITY_SCORE_IMPROVEMENT_OPTION_2,Feat" level="6" />
+			<select type="Class Feature" name="Improvement Option (Heavenly Restriction 8)" supports="ID_WOTC_ASI_ABILITY_SCORE_IMPROVEMENT_OPTION_2,Feat" level="8" />
+			<select type="Class Feature" name="Improvement Option (Heavenly Restriction 12)" supports="ID_WOTC_ASI_ABILITY_SCORE_IMPROVEMENT_OPTION_2,Feat" level="12" />
+			<select type="Class Feature" name="Improvement Option (Heavenly Restriction 16)" supports="ID_WOTC_ASI_ABILITY_SCORE_IMPROVEMENT_OPTION_2,Feat" level="16" />
+			<select type="Class Feature" name="Improvement Option (Heavenly Restriction 19)" supports="ID_WOTC_ASI_ABILITY_SCORE_IMPROVEMENT_OPTION_2,Feat" level="19" />
+		</rules>
+	</element>
+
+	<element name="Extra Attack" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_EXTRA_ATTACK">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_HEAVENLY_RESTRICTION_EXTRA_ATTACK</requirements>
+		<description>
+			<p>At 5th level, you can now attack twice instead of once when you take the attack action. This increases to three times instead of twice at 11th level. It increases to four times at 18th level, and to five times at 20th level.</p>
+		</description>
+		<sheet>
+			<description level="5">You can attack twice, instead of once, whenever you take the Attack action on your turn</description>
+			<description level="11">You can attack three times, instead of once, whenever you take the Attack action on your turn</description>		
+			<description level="17">You can attack four times, instead of once, whenever you take the Attack action on your turn</description>
+			<description level="20">You can attack five times, instead of once, whenever you take the Attack action on your turn</description>
+		</sheet>
+		<rules>
+			<stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
+			<stat name="extra attack:count" value="3" level="11" bonus="extra attack" />
+			<stat name="extra attack:count" value="4" level="17" bonus="extra attack" />
+			<stat name="extra attack:count" value="5" level="20" bonus="extra attack" />		
+		</rules>
+	</element>
+
+	<element name="Improved Body" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_IMPROVED_BODY">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_HEAVENLY_RESTRICTION_IMPROVED_BODY</requirements>
+		<description>
+			<p>At 7th level, the longer you live the more you'll realize your body has no limits. You gain +4 to your Strength, Dexterity and Constitution scores. You gain proficiency in Dexterity saving throws.</p>
+            <p class="indent">In addition, you gain immunity to disease and the poisoned condition and resistance to poison damage.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+            <stat name="strength" value="4" />
+            <stat name="dexterity" value="4" />
+            <stat name="constitution" value="4" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+        </rules>
+	</element>
+
+	<element name="Resistant" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_RESISTANT">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_HEAVENLY_RESTRICTION_RESISTANT</requirements>
+		<description>
+			<p>At 7th level, your newfound abilities and body has allowed you to resist certain area effects, such as a blue dragon's lightning breath or a fireball spell. Choose one of the following ability scores:</p>
+			<p class="indent">Strength, Dexterity, Constitution, Intelligence, Wisdom, Charisma</p>
+            <p class="indent">When you are subjected to an effect that allows you to make a saving throw of the chosen ability to only take half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail. At 14th and 20th level, you choose one additional saving throw.</p>
+		</description>
+		<sheet>
+			<description>When you are subjected to an effect that allows you to make a saving throw of the chosen ability to only take half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</description>
+		</sheet>
+        <rules>
+            <select type="Class Feature" name="Resistant" supports="Resistant" />
+            <select type="Class Feature" name="Resistant" supports="Resistant" level="14" />
+            <select type="Class Feature" name="Resistant" supports="Resistant" level="20" />
+        </rules>
+	</element>
+
+    <element name="Strength" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_STRENGTH">
+        <supports>Resistant</supports>
+        <description>
+            <p>Strength</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+
+    <element name="Dexterity" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_DEXTERITY">
+        <supports>Resistant</supports>
+        <description>
+            <p>Dexterity</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+
+    <element name="Constitution" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_CONSTITUTION">
+        <supports>Resistant</supports>
+        <description>
+            <p>Constitution</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+
+    <element name="Intelligence" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_INTELLIGENCE">
+        <supports>Resistant</supports>
+        <description>
+            <p>Intelligence</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+
+    <element name="Wisdom" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_WISDOM">
+        <supports>Resistant</supports>
+        <description>
+            <p>Wisdom</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+
+    <element name="Charisma" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_CHARISMA">
+        <supports>Resistant</supports>
+        <description>
+            <p>Charisma</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+
+	<element name="Weapon Specialist" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_WEAPON_SPECIALIST">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_HEAVENLY_RESTRICTION_WEAPON_SPECIALIST</requirements>
+		<description>
+			<p>At 9th level, as the time passes you have learned how to use the maximum potential of your weapons. You can roll one additional weapon damage die when determining the extra damage for a critical hit with a melee attack.</p>
+            <p class="indent">This increases to two additional dice at 13th level and three additional dice at 17th level.</p>
+		</description>
+		<sheet>
+            <description>You can roll one additional weapon damage die when determining the extra damage for a critical hit with a melee attack.</description>
+            <description level="13">You can roll two additional weapon damage dice when determining the extra damage for a critical hit with a melee attack.</description>
+            <description level="17">You can roll three additional weapon damage dice when determining the extra damage for a critical hit with a melee attack.</description>
+		</sheet>
+		<rules>
+		</rules>
+	</element>
+
+	<element name="Celestial Body" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_CELESTIAL_BODY">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_HEAVENLY_RESTRICTION_CELESTIAL_BODY</requirements>
+		<description>
+			<p>At 10th level, your body is like a divine object none shall harm, not even god itself. You cannot be targeted by the sure hit effect of a Domain Expansion, and cannot be detected by one while inside one. </p>
+            <p class="indent">(Ex: If you are trapped inside a domain that forces you to make a Constitution saving throw as its sure hit, you won't have to make the saving throw.)</p>
+            <p class="indent">You can also freely pass through magical barriers of any kind, suffering no ill effects for doing so.</p>
+            <p class="indent">This, however, doesn't work on sure-hit effects which target objects, or creatures without cursed energy, such as Malevolent Shrine.</p>
+		</description>
+		<sheet>
+			<description>You cannot be targeted by the sure hit effect of a Domain Expansion, and cannot be detected by one while inside one. This does not work on sure-hit effects which target objects or creatures without cursed energy. You can also freely pass through magical barriers of any kind, suffering no ill effects for doing so.</description>
+		</sheet>
+	</element>
+
+    <element name="Improved Fighting Style" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_IMPROVED_FIGHTING_STYLE">
+        <description>
+            <p>At 14th level, with years of training you have developed improved versions of your fighting style. Whenever you use any of your fighting styles, they instead give the benefits down below:</p>
+            <ul>
+                <li><strong>Improved Archery (PHB).</strong> You gain a +3 bonus to attack rolls you make with ranged weapons.</li>
+                <li><strong>Improved Blind Fighting (TCE).</strong> You have blindsight with a range of 30 feet. Within that range, you can effectively see anything that isn't behind total cover, even if you're blinded or in darkness. Moreover, you can see an invisible creature within that range, unless the creature successfully hides from you.</li>
+                <li><strong>Improved Dueling (PHB).</strong> When you are wielding a melee weapon in one hand and no other weapons, you gain a +3 bonus to damage rolls with that weapon.</li>
+                <li><strong>Improved Great Weapon Fighting (PHB).</strong> When you roll a 1, 2, or 3 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1, 2, or 3. The weapon must have the two-handed or versatile property for you to gain this benefit.</li>
+                <li><strong>Improved Grappler (PHB).</strong> At the start of each of your turns, you can deal 1d8 bludgeoning damage to one creature grappled by you.</li>
+                <li><strong>Improved Interception (TCE).</strong> When a creature you can see hits a target, other than you, within 5 feet of you with an attack, you can use your reaction to reduce the damage the target takes by 1d12 + your proficiency bonus (to a minimum of 0 damage). You must be wielding a shield or a simple or martial weapon to use this reaction.</li>
+                <li><strong>Improved Protection (PHB).</strong> When a creature you can see attacks a target other than you that is within 10 feet of you, you can use your reaction to impose disadvantage on the attack roll.</li>
+                <li><strong>Improved Two-Weapon Fighting (PHB).</strong> When you engage in two-weapon fighting, you can add your ability modifier + 1 to the damage of the second attack.</li>
+                <li><strong>Improved Tunnel Fighter (UA).</strong> As a bonus action, you can enter a defensive stance that lasts until the start of your next turn. While in your defensive stance, you can make opportunity attacks without using your reaction, and you can use your reaction to make a melee attack against a creature that moves more than 5 feet while within your reach. You gain a +1 bonus to attacks and damage rolls made this way.</li>
+            </ul>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Class Feature" id="ID_JJK_IMPROVED_FIGHTING_STYLE_ARCHERY" requirements="ID_JJK_FIGHTING_STYLE_ARCHERY" />
+            <grant type="Class Feature" id="ID_JJK_IMPROVED_FIGHTING_STYLE_BLIND" requirements="ID_JJK_FIGHTING_STYLE_BLIND" />
+            <grant type="Class Feature" id="ID_JJK_IMPROVED_FIGHTING_STYLE_DUELING" requirements="ID_JJK_FIGHTING_STYLE_DUELING" />
+            <grant type="Class Feature" id="ID_JJK_IMPROVED_FIGHTING_STYLE_GWF" requirements="ID_JJK_FIGHTING_STYLE_GWF" />
+            <grant type="Class Feature" id="ID_JJK_IMPROVED_FIGHTING_STYLE_GRAPPLER" requirements="ID_JJK_FIGHTING_STYLE_GRAPPLER" />
+            <grant type="Class Feature" id="ID_JJK_IMPROVED_FIGHTING_STYLE_INTERCEPTION" requirements="ID_JJK_FIGHTING_STYLE_INTERCEPTION" />
+            <grant type="Class Feature" id="ID_JJK_IMPROVED_FIGHTING_STYLE_PROTECTION" requirements="ID_JJK_FIGHTING_STYLE_PROTECTION" />  
+            <grant type="Class Feature" id="ID_JJK_IMPROVED_FIGHTING_STYLE_TWO_WEAPON" requirements="ID_JJK_FIGHTING_STYLE_TWO" />
+            <grant type="Class Feature" id="ID_JJK_IMPROVED_FIGHTING_STYLE_TUNNEL_FIGHTER" requirements="ID_JJK_FIGHTING_STYLE_TUNNEL_FIGHTER" />
+        </rules>
+    </element>
+
+    <element name="Demigod's Figure" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_DEMIGODS_FIGURE">
+        <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_HEAVENLY_RESTRICTION_DEMIGODS_FIGURE</requirements>
+        <description>
+            <p>At 15th level, your body is almost reaching its peak, however now it will take a long time until you get there. You can hold your breath for twice as long, suffocate for twice as long without dropping to 0 hit points, you can go twice as long without food and water, and exhaustion from food and water deprivation takes twice as long to occur. In addition, you require twice as many levels of exhaustion before suffering the penalties (for example, if you have one level of exhaustion, you do not suffer the normal penalty until you have 2 levels).</p>
+            <p class="indent">You can also perceive the souls of objects when effects or features call for such.</p>
+        </description>
+        <sheet>
+            <description>You can hold your breath, suffocate without dropping to 0 hit points, go without food and water, and take exhaustion from food and water deprivation for twice as long or it will take twice as long to occur. You require twice as many levels of exhaustion before suffering the penalties. You can also perceive the souls of objects when effects or features call for such.</description>
+        </sheet>
+    </element>
+
+
+    <element name="God of War" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_GOD_OF_WAR">
+        <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_HEAVENLY_RESTRICTION_GOD_OF_WAR</requirements>
+        <description>
+            <p>Finally at 20th level, your supernatural body reaches its pinnacle. Your Strength, Dexterity, and Constitution scores increase by +4 each. You also gain the following benefits:</p>
+            <ul>
+                <li><strong>Inevitable Triumph.</strong> Once per long rest when reduced to 0 hit points, you can choose to remain at 1 hit point. Additionally, you gain resistance to all non-magical damage and immunity to non-magical bludgeoning, slashing and piercing damage.</li>
+                <li><strong>Ultimate Mastery.</strong> You have mastered every aspect of combat. You gain proficiency in all saving throws and have advantage on all ability checks related to Strength, Dexterity, and Constitution.</li>
+                <li><strong>Eternal Vigor.</strong> You ignore the detriments of age and stay in your physical prime. You become immune to any effects that age you magically.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Once per long rest when reduced to 0 hit points, you can choose to remain at 1 hit point. You gain resistance to all non-magical damage and immunity to non-magical bludgeoning, slashing and piercing damage. You have advantage on all ability checks related to Strength, Dexterity, and Constitution. You are immune to any effects that age you magically. </description>
+        </sheet>
+        <rules>
+            <stat name="strength" value="4" />
+            <stat name="dexterity" value="4" />
+            <stat name="constitution" value="4" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" />
+        </rules>
+    </element>
+
+    <!-- Fighting Styles -->
+    <element name="Archery" type="Class Feature" source="JJK" id="ID_JJK_FIGHTING_STYLE_ARCHERY">
+        <supports>Fighting Style JJK</supports>
+        <description>
+            <p>You gain a +2 bonus to attack rolls you make with ranged weapons.</p>
+        </description>
+        <sheet>
+            <description>You gain a +{{heavenly:restriction:archery}} bonus to attack rolls you make with ranged weapons.</description>
+        </sheet>
+        <rules>
+			<stat name="heavenly:restriction:archery" value="2" bonus="archery" />
+            <stat name="heavenly:restriction:archery" value="3" bonus="archery" requirements="ID_JJK_IMPROVED_FIGHTING_STYLE_ARCHERY" />
+            <stat name="ranged:attack" value="heavenly:restriction:archery" />
+        </rules>
+    </element>
+
+    <element name="Blind Fighting" type="Class Feature" source="JJK" id="ID_JJK_FIGHTING_STYLE_BLIND">
+        <supports>Fighting Style JJK</supports>
+        <description>
+            <p>You have blindsight with a range of 10 feet. Within that range, you can effectively see anything that isn't behind total cover, even if you're blinded or in darkness. Moreover, you can see an invisible creature within that range, unless the creature successfully hides from you.</p>
+        </description>
+        <sheet>
+            <description>You have blindsight with a range of {{blindsight:range}} feet. Within that range, you can effectively see anything that isn't behind total cover, even if you're blinded or in darkness. Moreover, you can see an invisible creature within that range, unless the creature successfully hides from you.</description>
+        </sheet>
+        <rules>
+            <grant type="Vision" id="ID_VISION_BLINDSIGHT" />
+            <stat name="blindsight:range" value="10" bonus="base" /> 
+            <stat name="blindsight:range" value="30" bonus="base" requirements="ID_JJK_IMPROVED_FIGHTING_STYLE_BLIND" /> 
+        </rules>
+    </element>
+
+    <element name="Dueling" type="Class Feature" source="JJK" id="ID_JJK_FIGHTING_STYLE_DUELING">
+        <supports>Fighting Style</supports>
+        <description>
+            <p>When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.</p>
+        </description>
+        <sheet>
+            <description>When you are wielding a melee weapon in one hand and no other weapons, you gain a +{{heavenly:restriction:dueling}} bonus to damage rolls with that weapon.</description>
+        </sheet>
+        <rules> 
+            <stat name="heavenly:restriction:dueling" value="2" bonus="dueling" />
+            <stat name="heavenly:restriction:dueling" value="3" bonus="dueling" requirements="ID_JJK_IMPROVED_FIGHTING_STYLE_DUELING" />
+            <stat name="melee:attack" value="heavenly:restriction:dueling" equipped="[primary:any],([secondary:none]||[shield:any])" />        
+        </rules>
+    </element>
+
+    <element name="Great Weapon Fighting" type="Class Feature" source="JJK" id="ID_JJK_FIGHTING_STYLE_GWF">
+        <supports>Fighting Style</supports>
+        <description>
+            <p>When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.</p>
+        </description>
+        <sheet>
+            <description>When you roll a {{heavenly:restriction:gwf}} on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll.</description>
+        </sheet>
+        <rules>
+            <stat name="heavenly:restriction:gwf" value="1 or a 2" inline="true" />
+            <stat name="heavenly:restriction:gwf" value="1, 2, or a 3" inline="true" requirements="ID_JJK_IMPROVED_FIGHTING_STYLE_GWF" />
+        </rules>
+    </element>
+
+    <element name="Grappler" type="Class Feature" source="JJK" id="ID_JJK_FIGHTING_STYLE_GRAPPLER">
+        <supports>Fighting Style</supports>
+        <description>
+            <p>At the start of each of your turns, you can deal 1d4 bludgeoning damage to one creature grappled by you.</p>
+        </description>
+        <sheet>
+            <description>At the start of each turn, deal 1d{{heavenly:restriction:grappler:damage}} damage to a grappled creature.</description>
+        </sheet>
+        <rules>
+            <stat name="heavenly:restriction:grappler:damage" value="4" bonus="grappler" />
+            <stat name="heavenly:restriction:grappler:damage" value="8" bonus="grappler" requirements="ID_JJK_IMPROVED_FIGHTING_STYLE_GRAPPLER" />
+        </rules>
+    </element>
+
+    <element name="Interception" type="Class Feature" source="JJK" id="ID_JJK_FIGHTING_STYLE_INTERCEPTION">
+        <supports>Fighting Style</supports>
+        <description>
+            <p>When a creature you can see hits a target, other than you, within 5 feet of you with an attack, you can use your reaction to reduce the damage the target takes by 1d10 + your proficiency bonus (to a minimum of 0 damage). You must be wielding a shield or a simple or martial weapon to use this reaction.</p>
+        </description>
+        <sheet action="Reaction">
+            <description>When a creature you can see hits a target other than you within 5 feet of you, you can reduce the damage the target takes by 1d{{heavenly:restriction:interception:reduction}} + {{proficiency}}. You must be wielding a shield or a simple or martial weapon.</description>
+        </sheet>
+        <rules>
+            <stat name="heavenly:restriction:interception:reduction" value="10" bonus="interception" />
+            <stat name="heavenly:restriction:interception:reduction" value="12" bonus="interception" requirements="ID_JJK_IMPROVED_FIGHTING_STYLE_INTERCEPTION" />
+        </rules>
+    </element>
+
+    <element name="Protection" type="Class Feature" source="JJK" id="ID_JJK_FIGHTING_STYLE_PROTECTION">
+        <supports>Fighting Style</supports>
+        <description>
+            <p>When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. </p>
+        </description>
+        <sheet action="Reaction">
+            <description>When a creature you can see attacks a target other than you that is within {{heavenly:restriction:protection:range}} feet of you, impose disadvantage on the attack roll.</description>
+        </sheet>
+        <rules>
+            <stat name="heavenly:restriction:protection:range" value="5" bonus="base" />
+            <stat name="heavenly:restriction:protection:range" value="10" bonus="base" requirements="ID_JJK_IMPROVED_FIGHTING_STYLE_PROTECTION" />
+        </rules>
+    </element>
+
+    <element name="Two-Weapon Fighting" type="Class Feature" source="JJK" id="ID_JJK_FIGHTING_STYLE_TWO">
+        <supports>Fighting Style</supports>
+        <description>
+            <p>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.</p>
+        </description>
+        <sheet>
+            <description>When you engage in two-weapon fighting, you can add your {{heavenly:restriction:twf}} to the damage of the second attack.</description>
+        </sheet>
+        <rules>
+            <stat name="heavenly:restriction:two" value="ability modifier" inline="true" />
+            <stat name="heavenly:restriction:two" value="ability modifier + 1" inline="true" requirements="ID_JJK_IMPROVED_FIGHTING_STYLE_TWO" />
+        </rules>
+    </element>
+
+    <element name="Tunnel Fighter" type="Class Feature" source="JJK" id="ID_JJK_FIGHTING_STYLE_TUNNEL_FIGHTER">
+        <supports>Fighting Style</supports>
+        <description>
+            <p> As a bonus action, you can enter a defensive stance that lasts until the start of your next turn. While in your defensive stance, you can make opportunity attacks without using your reaction, and you can use your reaction to make a melee attack against a creature that moves more than 5 feet while within your reach.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>Until the start of your next turn, you can make opportunity attacks without using your reaction, and you can use your reaction to make a melee attack against a creature that moves more than 5 feet while within your {{heavenly:restriction:tunnel}}</description>
+        </sheet>
+        <rules>
+            <stat name="heavenly:restriction:tunnel" value="reach." inline="true" />
+            <stat name="heavenly:restriction:tunnel" value="reach. You gain a +1 bonus to attacks and damage rolls made this way." inline="true" requirements="ID_JJK_IMPROVED_FIGHTING_STYLE_TUNNEL_FIGHTER" />
+        </rules>
+    </element>
+    
+    <element name="Improved Archery" type="Class Feature" source="JJK" id="ID_JJK_IMPROVED_FIGHTING_STYLE_ARCHERY">
+        <sheet display="false"/>
+    </element>
+
+    <element name="Improved Blind Fighting" type="Class Feature" source="JJK" id="ID_JJK_IMPROVED_FIGHTING_STYLE_BLIND">
+        <sheet display="false"/>
+    </element>
+
+    <element name="Improved Dueling" type="Class Feature" source="JJK" id="ID_JJK_IMPROVED_FIGHTING_STYLE_DUELING">
+        <sheet display="false"/>
+    </element>
+
+    <element name="Improved Great Weapon Fighting" type="Class Feature" source="JJK" id="ID_JJK_IMPROVED_FIGHTING_STYLE_GWF">
+        <sheet display="false"/>
+    </element>
+
+    <element name="Improved Grappler" type="Class Feature" source="JJK" id="ID_JJK_IMPROVED_FIGHTING_STYLE_GRAPPLER">
+        <sheet display="false"/>
+    </element>
+
+    <element name="Improved Interception" type="Class Feature" source="JJK" id="ID_JJK_IMPROVED_FIGHTING_STYLE_INTERCEPTION">
+        <sheet display="false"/>
+    </element>
+
+    <element name="Improved Protection" type="Class Feature" source="JJK" id="ID_JJK_IMPROVED_FIGHTING_STYLE_PROTECTION">
+        <sheet display="false"/>
+    </element>
+
+    <element name="Improved Two-Weapon Fighting" type="Class Feature" source="JJK" id="ID_JJK_IMPROVED_FIGHTING_STYLE_TWO">
+        <sheet display="false"/>
+    </element>
+
+    <element name="Improved Tunnel Fighter" type="Class Feature" source="JJK" id="ID_JJK_IMPROVED_FIGHTING_STYLE_TUNNEL_FIGHTER">
+        <sheet display="false"/>
+    </element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Restrained Body Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_HEAVENLY_RESTRICTION_RESTRAINED_BODY" />
+	<element name="Unarmored Movement Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_HEAVENLY_RESTRICTION_UNARMORED_MOVEMENT" />
+	<element name="Martial Arts Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_HEAVENLY_RESTRICTION_MARTIAL_ARTS" />
+	<element name="Body Improvements Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_HEAVENLY_RESTRICTION_BODY_IMPROVEMENTS" />
+	<element name="Fighting Style Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_HEAVENLY_RESTRICTION_FIGHTING_STYLE" />
+	<element name="Ideal Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_HEAVENLY_RESTRICTION_IDEAL" />
+	<element name="Ability Score Improvement Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_HEAVENLY_RESTRICTION_ABILITYSCOREIMPROVEMENT_HEAVENLY_RESTRICTION" />
+	<element name="Extra Attack Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_HEAVENLY_RESTRICTION_EXTRA_ATTACK" />
+	<element name="Improved Body Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_HEAVENLY_RESTRICTION_IMPROVED_BODY" />
+	<element name="Resistant Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_HEAVENLY_RESTRICTION_RESISTANT" />
+	<element name="Weapon Specialist Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_HEAVENLY_RESTRICTION_WEAPON_SPECIALIST" />
+	<element name="Celestial Body Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_HEAVENLY_RESTRICTION_CELESTIAL_BODY" />
+    <element name="Improved Fighting Style Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_HEAVENLY_RESTRICTION_IMPROVED_FIGHTING_STYLE" />
+	<element name="Demigod's Figure Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_HEAVENLY_RESTRICTION_DEMIGODS_FIGURE" />
+	<element name="God of War Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_HEAVENLY_RESTRICTION_GOD_OF_WAR" />
+</elements>
