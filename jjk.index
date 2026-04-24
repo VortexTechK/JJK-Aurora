@@ -4,7 +4,7 @@
 		<name>JJK</name>
 		<description>JJK Homebrew.</description>
 		<author url="https://docs.google.com/document/d/1eC8tEMHnupOuaX6At1X8JORz5iarNe6I-A7j2QzScrE/edit?tab=t.0">JJK</author>
-		<update version="6.0.8">
+		<update version="6.0.9">
 			<file name="jjk.index" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/jjk.index" />
 		</update>
 	</info>
@@ -27,6 +27,12 @@
 		<file name="class-strategist.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/classes/class-strategist.xml" />
 		<file name="class-supportspecialist.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/classes/class-supportspecialist.xml" />
 		<file name="class-warrior.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/classes/class-warrior.xml" />
+		
+		<!-- heavenly restriction -->
+		<file name="body-improvements.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/heavenlyrestriction/body-improvements.xml" />
+		<file name="class-heavenlyrestriction.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/heavenlyrestriction/class-heavenlyrestriction.xml" />
+		<file name="prideful.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/heavenlyrestriction/prideful.xml" />
+		<file name="vengeful.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/heavenlyrestriction/vengeful.xml" />
 
 		<!-- innate-techniques -->
 		<file name="antigravity-system.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/antigravity-system.xml" />
