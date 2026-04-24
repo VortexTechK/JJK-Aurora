@@ -4,7 +4,7 @@
 		<name>Heavenly Restriction</name>
 		<description>The Heavenly Restriction class from JJK.</description>
 		<author url="https://docs.google.com/document/d/1eC8tEMHnupOuaX6At1X8JORz5iarNe6I-A7j2QzScrE/edit?tab=t.0">JJK</author>
-		<update version="6.0.3">
+		<update version="6.0.4">
 			<file name="class-heavenlyrestriction.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/heavenlyrestriction/class-heavenlyrestriction.xml" />
 		</update>
 	</info>
@@ -263,26 +263,26 @@
             <stat name="heavenly:restriction:body:improvement:dexterity" value="dexterity:modifier" />
             <stat name="heavenly:restriction:body:improvement:constitution" value="constitution:modifier" />
             <stat name="heavenly:restriction:body:improvement:wisdom" value="wisdom:modifier" />
-            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="!(![heavenly:restriction:body:improvement:points:0]||([heavenly:restriction:body:improvement:points:0],![heavenly:restriction:body:improvement:points:0])),!([heavenly:restriction:body:improvement:strength:0],![heavenly:restriction:body:improvement:strength:1]),!([heavenly:restriction:body:improvement:dexterity:0],![heavenly:restriction:body:improvement:dexterity:1]),!([heavenly:restriction:body:improvement:constitution:0],![heavenly:restriction:body:improvement:constitution:1]),!([heavenly:restriction:body:improvement:wisdom:0],![heavenly:restriction:body:improvement:wisdom:1])" />
-            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="!(![heavenly:restriction:body:improvement:points:0]||([heavenly:restriction:body:improvement:points:0],![heavenly:restriction:body:improvement:points:0])),!([heavenly:restriction:body:improvement:strength:0],![heavenly:restriction:body:improvement:strength:1]),!([heavenly:restriction:body:improvement:dexterity:0],![heavenly:restriction:body:improvement:dexterity:1]),!([heavenly:restriction:body:improvement:constitution:0],![heavenly:restriction:body:improvement:constitution:1]),!([heavenly:restriction:body:improvement:wisdom:0],![heavenly:restriction:body:improvement:wisdom:1])" level="2" />
-            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="!(![heavenly:restriction:body:improvement:points:0]||([heavenly:restriction:body:improvement:points:0],![heavenly:restriction:body:improvement:points:0])),!([heavenly:restriction:body:improvement:strength:0],![heavenly:restriction:body:improvement:strength:1]),!([heavenly:restriction:body:improvement:dexterity:0],![heavenly:restriction:body:improvement:dexterity:1]),!([heavenly:restriction:body:improvement:constitution:0],![heavenly:restriction:body:improvement:constitution:1]),!([heavenly:restriction:body:improvement:wisdom:0],![heavenly:restriction:body:improvement:wisdom:1])" level="3" />
-            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="!(![heavenly:restriction:body:improvement:points:0]||([heavenly:restriction:body:improvement:points:0],![heavenly:restriction:body:improvement:points:0])),!([heavenly:restriction:body:improvement:strength:0],![heavenly:restriction:body:improvement:strength:1]),!([heavenly:restriction:body:improvement:dexterity:0],![heavenly:restriction:body:improvement:dexterity:1]),!([heavenly:restriction:body:improvement:constitution:0],![heavenly:restriction:body:improvement:constitution:1]),!([heavenly:restriction:body:improvement:wisdom:0],![heavenly:restriction:body:improvement:wisdom:1])" level="4" />
-            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="!(![heavenly:restriction:body:improvement:points:0]||([heavenly:restriction:body:improvement:points:0],![heavenly:restriction:body:improvement:points:0])),!([heavenly:restriction:body:improvement:strength:0],![heavenly:restriction:body:improvement:strength:1]),!([heavenly:restriction:body:improvement:dexterity:0],![heavenly:restriction:body:improvement:dexterity:1]),!([heavenly:restriction:body:improvement:constitution:0],![heavenly:restriction:body:improvement:constitution:1]),!([heavenly:restriction:body:improvement:wisdom:0],![heavenly:restriction:body:improvement:wisdom:1])" level="5" />
-            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="!(![heavenly:restriction:body:improvement:points:0]||([heavenly:restriction:body:improvement:points:0],![heavenly:restriction:body:improvement:points:0])),!([heavenly:restriction:body:improvement:strength:0],![heavenly:restriction:body:improvement:strength:1]),!([heavenly:restriction:body:improvement:dexterity:0],![heavenly:restriction:body:improvement:dexterity:1]),!([heavenly:restriction:body:improvement:constitution:0],![heavenly:restriction:body:improvement:constitution:1]),!([heavenly:restriction:body:improvement:wisdom:0],![heavenly:restriction:body:improvement:wisdom:1])" level="6" />
-            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="!(![heavenly:restriction:body:improvement:points:0]||([heavenly:restriction:body:improvement:points:0],![heavenly:restriction:body:improvement:points:0])),!([heavenly:restriction:body:improvement:strength:0],![heavenly:restriction:body:improvement:strength:1]),!([heavenly:restriction:body:improvement:dexterity:0],![heavenly:restriction:body:improvement:dexterity:1]),!([heavenly:restriction:body:improvement:constitution:0],![heavenly:restriction:body:improvement:constitution:1]),!([heavenly:restriction:body:improvement:wisdom:0],![heavenly:restriction:body:improvement:wisdom:1])" level="7" />
-            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="!(![heavenly:restriction:body:improvement:points:0]||([heavenly:restriction:body:improvement:points:0],![heavenly:restriction:body:improvement:points:0])),!([heavenly:restriction:body:improvement:strength:0],![heavenly:restriction:body:improvement:strength:1]),!([heavenly:restriction:body:improvement:dexterity:0],![heavenly:restriction:body:improvement:dexterity:1]),!([heavenly:restriction:body:improvement:constitution:0],![heavenly:restriction:body:improvement:constitution:1]),!([heavenly:restriction:body:improvement:wisdom:0],![heavenly:restriction:body:improvement:wisdom:1])" level="8" />
-            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="!(![heavenly:restriction:body:improvement:points:0]||([heavenly:restriction:body:improvement:points:0],![heavenly:restriction:body:improvement:points:0])),!([heavenly:restriction:body:improvement:strength:0],![heavenly:restriction:body:improvement:strength:1]),!([heavenly:restriction:body:improvement:dexterity:0],![heavenly:restriction:body:improvement:dexterity:1]),!([heavenly:restriction:body:improvement:constitution:0],![heavenly:restriction:body:improvement:constitution:1]),!([heavenly:restriction:body:improvement:wisdom:0],![heavenly:restriction:body:improvement:wisdom:1])" level="9" />
-            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="!(![heavenly:restriction:body:improvement:points:0]||([heavenly:restriction:body:improvement:points:0],![heavenly:restriction:body:improvement:points:0])),!([heavenly:restriction:body:improvement:strength:0],![heavenly:restriction:body:improvement:strength:1]),!([heavenly:restriction:body:improvement:dexterity:0],![heavenly:restriction:body:improvement:dexterity:1]),!([heavenly:restriction:body:improvement:constitution:0],![heavenly:restriction:body:improvement:constitution:1]),!([heavenly:restriction:body:improvement:wisdom:0],![heavenly:restriction:body:improvement:wisdom:1])" level="10" />
-            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="!(![heavenly:restriction:body:improvement:points:0]||([heavenly:restriction:body:improvement:points:0],![heavenly:restriction:body:improvement:points:0])),!([heavenly:restriction:body:improvement:strength:0],![heavenly:restriction:body:improvement:strength:1]),!([heavenly:restriction:body:improvement:dexterity:0],![heavenly:restriction:body:improvement:dexterity:1]),!([heavenly:restriction:body:improvement:constitution:0],![heavenly:restriction:body:improvement:constitution:1]),!([heavenly:restriction:body:improvement:wisdom:0],![heavenly:restriction:body:improvement:wisdom:1])" level="11" />
-            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="!(![heavenly:restriction:body:improvement:points:0]||([heavenly:restriction:body:improvement:points:0],![heavenly:restriction:body:improvement:points:0])),!([heavenly:restriction:body:improvement:strength:0],![heavenly:restriction:body:improvement:strength:1]),!([heavenly:restriction:body:improvement:dexterity:0],![heavenly:restriction:body:improvement:dexterity:1]),!([heavenly:restriction:body:improvement:constitution:0],![heavenly:restriction:body:improvement:constitution:1]),!([heavenly:restriction:body:improvement:wisdom:0],![heavenly:restriction:body:improvement:wisdom:1])" level="12" />
-            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="!(![heavenly:restriction:body:improvement:points:0]||([heavenly:restriction:body:improvement:points:0],![heavenly:restriction:body:improvement:points:0])),!([heavenly:restriction:body:improvement:strength:0],![heavenly:restriction:body:improvement:strength:1]),!([heavenly:restriction:body:improvement:dexterity:0],![heavenly:restriction:body:improvement:dexterity:1]),!([heavenly:restriction:body:improvement:constitution:0],![heavenly:restriction:body:improvement:constitution:1]),!([heavenly:restriction:body:improvement:wisdom:0],![heavenly:restriction:body:improvement:wisdom:1])" level="13" />
-            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="!(![heavenly:restriction:body:improvement:points:0]||([heavenly:restriction:body:improvement:points:0],![heavenly:restriction:body:improvement:points:0])),!([heavenly:restriction:body:improvement:strength:0],![heavenly:restriction:body:improvement:strength:1]),!([heavenly:restriction:body:improvement:dexterity:0],![heavenly:restriction:body:improvement:dexterity:1]),!([heavenly:restriction:body:improvement:constitution:0],![heavenly:restriction:body:improvement:constitution:1]),!([heavenly:restriction:body:improvement:wisdom:0],![heavenly:restriction:body:improvement:wisdom:1])" level="14" />
-            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="!(![heavenly:restriction:body:improvement:points:0]||([heavenly:restriction:body:improvement:points:0],![heavenly:restriction:body:improvement:points:0])),!([heavenly:restriction:body:improvement:strength:0],![heavenly:restriction:body:improvement:strength:1]),!([heavenly:restriction:body:improvement:dexterity:0],![heavenly:restriction:body:improvement:dexterity:1]),!([heavenly:restriction:body:improvement:constitution:0],![heavenly:restriction:body:improvement:constitution:1]),!([heavenly:restriction:body:improvement:wisdom:0],![heavenly:restriction:body:improvement:wisdom:1])" level="15" />
-            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="!(![heavenly:restriction:body:improvement:points:0]||([heavenly:restriction:body:improvement:points:0],![heavenly:restriction:body:improvement:points:0])),!([heavenly:restriction:body:improvement:strength:0],![heavenly:restriction:body:improvement:strength:1]),!([heavenly:restriction:body:improvement:dexterity:0],![heavenly:restriction:body:improvement:dexterity:1]),!([heavenly:restriction:body:improvement:constitution:0],![heavenly:restriction:body:improvement:constitution:1]),!([heavenly:restriction:body:improvement:wisdom:0],![heavenly:restriction:body:improvement:wisdom:1])" level="16" />
-            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="!(![heavenly:restriction:body:improvement:points:0]||([heavenly:restriction:body:improvement:points:0],![heavenly:restriction:body:improvement:points:0])),!([heavenly:restriction:body:improvement:strength:0],![heavenly:restriction:body:improvement:strength:1]),!([heavenly:restriction:body:improvement:dexterity:0],![heavenly:restriction:body:improvement:dexterity:1]),!([heavenly:restriction:body:improvement:constitution:0],![heavenly:restriction:body:improvement:constitution:1]),!([heavenly:restriction:body:improvement:wisdom:0],![heavenly:restriction:body:improvement:wisdom:1])" level="17" />
-            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="!(![heavenly:restriction:body:improvement:points:0]||([heavenly:restriction:body:improvement:points:0],![heavenly:restriction:body:improvement:points:0])),!([heavenly:restriction:body:improvement:strength:0],![heavenly:restriction:body:improvement:strength:1]),!([heavenly:restriction:body:improvement:dexterity:0],![heavenly:restriction:body:improvement:dexterity:1]),!([heavenly:restriction:body:improvement:constitution:0],![heavenly:restriction:body:improvement:constitution:1]),!([heavenly:restriction:body:improvement:wisdom:0],![heavenly:restriction:body:improvement:wisdom:1])" level="18" />
-            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="!(![heavenly:restriction:body:improvement:points:0]||([heavenly:restriction:body:improvement:points:0],![heavenly:restriction:body:improvement:points:0])),!([heavenly:restriction:body:improvement:strength:0],![heavenly:restriction:body:improvement:strength:1]),!([heavenly:restriction:body:improvement:dexterity:0],![heavenly:restriction:body:improvement:dexterity:1]),!([heavenly:restriction:body:improvement:constitution:0],![heavenly:restriction:body:improvement:constitution:1]),!([heavenly:restriction:body:improvement:wisdom:0],![heavenly:restriction:body:improvement:wisdom:1])" level="19" />
-            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="!(![heavenly:restriction:body:improvement:points:0]||([heavenly:restriction:body:improvement:points:0],![heavenly:restriction:body:improvement:points:0])),!([heavenly:restriction:body:improvement:strength:0],![heavenly:restriction:body:improvement:strength:1]),!([heavenly:restriction:body:improvement:dexterity:0],![heavenly:restriction:body:improvement:dexterity:1]),!([heavenly:restriction:body:improvement:constitution:0],![heavenly:restriction:body:improvement:constitution:1]),!([heavenly:restriction:body:improvement:wisdom:0],![heavenly:restriction:body:improvement:wisdom:1])" level="20" />
+            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="[heavenly:restriction:body:improvement:points:0],[heavenly:restriction:body:improvement:strength:0],[heavenly:restriction:body:improvement:dexterity:0],[heavenly:restriction:body:improvement:constitution:0],[heavenly:restriction:body:improvement:wisdom:0]" />
+            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="[heavenly:restriction:body:improvement:points:0],[heavenly:restriction:body:improvement:strength:0],[heavenly:restriction:body:improvement:dexterity:0],[heavenly:restriction:body:improvement:constitution:0],[heavenly:restriction:body:improvement:wisdom:0]" level="2" />
+            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="[heavenly:restriction:body:improvement:points:0],[heavenly:restriction:body:improvement:strength:0],[heavenly:restriction:body:improvement:dexterity:0],[heavenly:restriction:body:improvement:constitution:0],[heavenly:restriction:body:improvement:wisdom:0]" level="3" />
+            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="[heavenly:restriction:body:improvement:points:0],[heavenly:restriction:body:improvement:strength:0],[heavenly:restriction:body:improvement:dexterity:0],[heavenly:restriction:body:improvement:constitution:0],[heavenly:restriction:body:improvement:wisdom:0]" level="4" />
+            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="[heavenly:restriction:body:improvement:points:0],[heavenly:restriction:body:improvement:strength:0],[heavenly:restriction:body:improvement:dexterity:0],[heavenly:restriction:body:improvement:constitution:0],[heavenly:restriction:body:improvement:wisdom:0]" level="5" />
+            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="[heavenly:restriction:body:improvement:points:0],[heavenly:restriction:body:improvement:strength:0],[heavenly:restriction:body:improvement:dexterity:0],[heavenly:restriction:body:improvement:constitution:0],[heavenly:restriction:body:improvement:wisdom:0]" level="6" />
+            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="[heavenly:restriction:body:improvement:points:0],[heavenly:restriction:body:improvement:strength:0],[heavenly:restriction:body:improvement:dexterity:0],[heavenly:restriction:body:improvement:constitution:0],[heavenly:restriction:body:improvement:wisdom:0]" level="7" />
+            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="[heavenly:restriction:body:improvement:points:0],[heavenly:restriction:body:improvement:strength:0],[heavenly:restriction:body:improvement:dexterity:0],[heavenly:restriction:body:improvement:constitution:0],[heavenly:restriction:body:improvement:wisdom:0]" level="8" />
+            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="[heavenly:restriction:body:improvement:points:0],[heavenly:restriction:body:improvement:strength:0],[heavenly:restriction:body:improvement:dexterity:0],[heavenly:restriction:body:improvement:constitution:0],[heavenly:restriction:body:improvement:wisdom:0]" level="9" />
+            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="[heavenly:restriction:body:improvement:points:0],[heavenly:restriction:body:improvement:strength:0],[heavenly:restriction:body:improvement:dexterity:0],[heavenly:restriction:body:improvement:constitution:0],[heavenly:restriction:body:improvement:wisdom:0]" level="10" />
+            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="[heavenly:restriction:body:improvement:points:0],[heavenly:restriction:body:improvement:strength:0],[heavenly:restriction:body:improvement:dexterity:0],[heavenly:restriction:body:improvement:constitution:0],[heavenly:restriction:body:improvement:wisdom:0]" level="11" />
+            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="[heavenly:restriction:body:improvement:points:0],[heavenly:restriction:body:improvement:strength:0],[heavenly:restriction:body:improvement:dexterity:0],[heavenly:restriction:body:improvement:constitution:0],[heavenly:restriction:body:improvement:wisdom:0]" level="12" />
+            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="[heavenly:restriction:body:improvement:points:0],[heavenly:restriction:body:improvement:strength:0],[heavenly:restriction:body:improvement:dexterity:0],[heavenly:restriction:body:improvement:constitution:0],[heavenly:restriction:body:improvement:wisdom:0]" level="13" />
+            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="[heavenly:restriction:body:improvement:points:0],[heavenly:restriction:body:improvement:strength:0],[heavenly:restriction:body:improvement:dexterity:0],[heavenly:restriction:body:improvement:constitution:0],[heavenly:restriction:body:improvement:wisdom:0]" level="14" />
+            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="[heavenly:restriction:body:improvement:points:0],[heavenly:restriction:body:improvement:strength:0],[heavenly:restriction:body:improvement:dexterity:0],[heavenly:restriction:body:improvement:constitution:0],[heavenly:restriction:body:improvement:wisdom:0]" level="15" />
+            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="[heavenly:restriction:body:improvement:points:0],[heavenly:restriction:body:improvement:strength:0],[heavenly:restriction:body:improvement:dexterity:0],[heavenly:restriction:body:improvement:constitution:0],[heavenly:restriction:body:improvement:wisdom:0]" level="16" />
+            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="[heavenly:restriction:body:improvement:points:0],[heavenly:restriction:body:improvement:strength:0],[heavenly:restriction:body:improvement:dexterity:0],[heavenly:restriction:body:improvement:constitution:0],[heavenly:restriction:body:improvement:wisdom:0]" level="17" />
+            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="[heavenly:restriction:body:improvement:points:0],[heavenly:restriction:body:improvement:strength:0],[heavenly:restriction:body:improvement:dexterity:0],[heavenly:restriction:body:improvement:constitution:0],[heavenly:restriction:body:improvement:wisdom:0]" level="18" />
+            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="[heavenly:restriction:body:improvement:points:0],[heavenly:restriction:body:improvement:strength:0],[heavenly:restriction:body:improvement:dexterity:0],[heavenly:restriction:body:improvement:constitution:0],[heavenly:restriction:body:improvement:wisdom:0]" level="19" />
+            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" requirements="[heavenly:restriction:body:improvement:points:0],[heavenly:restriction:body:improvement:strength:0],[heavenly:restriction:body:improvement:dexterity:0],[heavenly:restriction:body:improvement:constitution:0],[heavenly:restriction:body:improvement:wisdom:0]" level="20" />
         </rules>
 	</element>
 
@@ -325,16 +325,17 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Class Feature" name="Improvement Option (Heavenly Restriction 4)" supports="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_ASI4,ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_FEAT4" level="4" />
-            <select type="Class Feature" name="Improvement Option (Heavenly Restriction 6)" supports="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_ASI6,ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_FEAT6" level="6" />
-			<select type="Class Feature" name="Improvement Option (Heavenly Restriction 8)" supports="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_ASI8,ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_FEAT8" level="8" />
-			<select type="Class Feature" name="Improvement Option (Heavenly Restriction 12)" supports="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_ASI12,ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_FEAT12" level="12" />
-			<select type="Class Feature" name="Improvement Option (Heavenly Restriction 16)" supports="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_ASI16,ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_FEAT16" level="16" />
-			<select type="Class Feature" name="Improvement Option (Heavenly Restriction 19)" supports="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_ASI19,ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_FEAT19" level="19" />
+			<select type="Class Feature" name="Improvement Option (Heavenly Restriction 4)" supports="Heavenly Restriction Improvement 4" level="4" />
+            <select type="Class Feature" name="Improvement Option (Heavenly Restriction 6)" supports="Heavenly Restriction Improvement 6" level="6" />
+			<select type="Class Feature" name="Improvement Option (Heavenly Restriction 8)" supports="Heavenly Restriction Improvement 8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Heavenly Restriction 12)" supports="Heavenly Restriction Improvement 12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Heavenly Restriction 16)" supports="Heavenly Restriction Improvement 16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Heavenly Restriction 19)" supports="Heavenly Restriction Improvement 19" level="19" />
 		</rules>
 	</element>
 
 	<element name="Ability Score Improvement (4)" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_ASI4">
+		<supports>Heavenly Restriction Improvement 4</supports>
 		<compendium display="false" />
 		<description>
 			<p>You can increase one ability score of your choice by 3, or you can increase three ability scores of your choice by 1. You can't increase an ability score above your ability score limit using this feature.</p>
@@ -346,6 +347,7 @@
 	</element>
 
 	<element name="Feat (4)" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_FEAT4">
+		<supports>Heavenly Restriction Improvement 4</supports>
 		<compendium display="false" />
 		<description>
 			<p>Select a feat of your choice.</p>
@@ -357,6 +359,7 @@
 	</element>
 
 	<element name="Ability Score Improvement (6)" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_ASI6">
+		<supports>Heavenly Restriction Improvement 6</supports>
 		<compendium display="false" />
 		<description>
 			<p>You can increase one ability score of your choice by 3, or you can increase three ability scores of your choice by 1. You can't increase an ability score above your ability score limit using this feature.</p>
@@ -368,6 +371,7 @@
 	</element>
 
 	<element name="Feat (6)" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_FEAT6">
+		<supports>Heavenly Restriction Improvement 6</supports>
 		<compendium display="false" />
 		<description>
 			<p>Select a feat of your choice.</p>
@@ -379,6 +383,7 @@
 	</element>
 
 	<element name="Ability Score Improvement (8)" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_ASI8">
+		<supports>Heavenly Restriction Improvement 8</supports>
 		<compendium display="false" />
 		<description>
 			<p>You can increase one ability score of your choice by 3, or you can increase three ability scores of your choice by 1. You can't increase an ability score above your ability score limit using this feature.</p>
@@ -390,6 +395,7 @@
 	</element>
 
 	<element name="Feat (8)" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_FEAT8">
+		<supports>Heavenly Restriction Improvement 8</supports>
 		<compendium display="false" />
 		<description>
 			<p>Select a feat of your choice.</p>
@@ -401,6 +407,7 @@
 	</element>
 
 	<element name="Ability Score Improvement (12)" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_ASI12">
+		<supports>Heavenly Restriction Improvement 12</supports>
 		<compendium display="false" />
 		<description>
 			<p>You can increase one ability score of your choice by 3, or you can increase three ability scores of your choice by 1. You can't increase an ability score above your ability score limit using this feature.</p>
@@ -412,6 +419,7 @@
 	</element>
 
 	<element name="Feat (12)" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_FEAT12">
+		<supports>Heavenly Restriction Improvement 12</supports>
 		<compendium display="false" />
 		<description>
 			<p>Select a feat of your choice.</p>
@@ -423,6 +431,7 @@
 	</element>
 
 	<element name="Ability Score Improvement (16)" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_ASI16">
+		<supports>Heavenly Restriction Improvement 16</supports>
 		<compendium display="false" />
 		<description>
 			<p>You can increase one ability score of your choice by 3, or you can increase three ability scores of your choice by 1. You can't increase an ability score above your ability score limit using this feature.</p>
@@ -434,6 +443,7 @@
 	</element>
 
 	<element name="Feat (16)" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_FEAT16">
+		<supports>Heavenly Restriction Improvement 16</supports>
 		<compendium display="false" />
 		<description>
 			<p>Select a feat of your choice.</p>
@@ -445,6 +455,7 @@
 	</element>
 
 	<element name="Ability Score Improvement (19)" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_ASI19">
+		<supports>Heavenly Restriction Improvement 19</supports>
 		<compendium display="false" />
 		<description>
 			<p>You can increase one ability score of your choice by 3, or you can increase three ability scores of your choice by 1. You can't increase an ability score above your ability score limit using this feature.</p>
@@ -456,6 +467,7 @@
 	</element>
 
 	<element name="Feat (19)" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_HEAVENLY_RESTRICTION_FEAT19">
+		<supports>Heavenly Restriction Improvement 19</supports>
 		<compendium display="false" />
 		<description>
 			<p>Select a feat of your choice.</p>
