@@ -4,13 +4,13 @@
 		<name>Body Improvements</name>
 		<description>The Body Improvements from JJK</description>
 		<author url="https://docs.google.com/document/d/1eC8tEMHnupOuaX6At1X8JORz5iarNe6I-A7j2QzScrE/edit?tab=t.0">JJK</author>
-		<update version="6.0.2">
+		<update version="6.0.4">
 			<file name="body-improvements.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/heavenlyrestriction/body-improvements.xml" />
 		</update>
 	</info>
 	
 	<!-- Strength Improvements -->
-    <element name="Superhuman Might" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SUPERHUMAN_MIGHT">
+    <element name="Superhuman Might (Strength)" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SUPERHUMAN_MIGHT">
         <prerequisite>1 Body Point, 15 Strength</prerequisite>
         <requirements>[strength:score:15]</requirements>
         <supports>Body Improvement</supports>
@@ -21,7 +21,7 @@
             <description>You count as {{heavenly:restriction:superhuman:might:size}} size larger for the purposes of grappling, shoving, disarming, and the weight you can carry, push, drag or lift.</description>
         </sheet>
         <rules>
-            <stat name="heavenly:restriction:body:improvement:points" value="-1" />
+            <stat name="heavenly:restriction:body:improvement:track" value="-1" />
             <stat name="heavenly:restriction:body:improvement:strength" value="-1" />
             <stat name="heavenly:restriction:superhuman:might:size" value="1" bonus="superhuman might" />
             <stat name="heavenly:restriction:superhuman:might:size" value="2" bonus="superhuman might" requirements="ID_JJK_CLASS_FEATURE_MONSTROUS_MIGHT" />
@@ -29,7 +29,7 @@
         </rules>
     </element>
 
-    <element name="Monstrous Might" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_MONSTROUS_MIGHT">
+    <element name="Monstrous Might (Strength)" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_MONSTROUS_MIGHT">
         <prerequisite>Superhuman Might, 1 Body Point, 9th level, 24 Strength</prerequisite>
         <requirements>ID_JJK_CLASS_FEATURE_SUPERHUMAN_MIGHT,[strength:score:24],[level:9]</requirements>
         <supports>Body Improvement</supports>
@@ -40,12 +40,12 @@
             <description>Your martial arts die increases by 1 dice, applying after die tier increases.</description>
         </sheet>
         <rules>
-            <stat name="heavenly:restriction:body:improvement:points" value="-1" />
+            <stat name="heavenly:restriction:body:improvement:track" value="-1" />
             <stat name="heavenly:restriction:body:improvement:strength" value="-1" />
         </rules>
     </element>
 
-    <element name="Godly Might" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_GODLY_MIGHT">
+    <element name="Godly Might (Strength)" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_GODLY_MIGHT">
         <prerequisite>Monstrous Might, 1 Body Point, 17th level, 30 Strength</prerequisite>
         <requirements>ID_JJK_CLASS_FEATURE_MONSTROUS_MIGHT,[strength:score:30],[level:17]</requirements>
         <supports>Body Improvement</supports>
@@ -56,14 +56,14 @@
             <description>Your martial arts die increases by 1 dice again, applying after die tier increases. You deal twice as much damage to structures and objects.</description>
         </sheet>
         <rules>
-            <stat name="heavenly:restriction:body:improvement:points" value="-1" />
+            <stat name="heavenly:restriction:body:improvement:track" value="-1" />
             <stat name="heavenly:restriction:body:improvement:strength" value="-1" />
         </rules>
     </element>
 
-    <element name="Destructive Force" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_DESTRUCTIVE_FORCE">
+    <element name="Destructive Force (Strength)" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_DESTRUCTIVE_FORCE">
         <prerequisite>Godly Might, 2 Body Points, 20th level, 40 Strength</prerequisite>
-        <requirements>ID_JJK_CLASS_FEATURE_GODLY_MIGHT,[strength:score:40],[level:20]</requirements>
+        <requirements>ID_JJK_CLASS_FEATURE_GODLY_MIGHT,[strength:score:40],[level:20],[heavenly:restriction:body:improvement:track:1]</requirements>
         <supports>Body Improvement</supports>
         <description>
             <p>You learn to better apply your godlike strength into your strikes, creating thunderous shockwaves. When you hit a creature with a weapon attack using strength, compare the attack roll result to the AC of every creature of your choice within 20 feet of the target other than the target. If the attack roll would hit, you deal half the damage of the attack(rounded down) to the creatures that were hit.</p>
@@ -72,12 +72,13 @@
             <description>When you hit a creature with a weapon attack using strength, compare the attack roll result to the AC of every creature of your choice within 20 feet of the target other than the target. If the attack roll would hit, you deal half the damage of the attack(rounded down) to the creatures that were hit.</description>
         </sheet>
         <rules>
-            <stat name="heavenly:restriction:body:improvement:points" value="-2" />
+            <stat name="heavenly:restriction:body:improvement:track" value="-2" />
             <stat name="heavenly:restriction:body:improvement:strength" value="-1" />
+			<stat name="heavenly:restriction:body:improvement:points" value="-1" />
         </rules>
     </element>
 
-    <element name="Strong Leap" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_STRONG_LEAP">
+    <element name="Strong Leap (Strength)" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_STRONG_LEAP">
         <prerequisite>1 Body Point, 15 Strength</prerequisite>
         <requirements>[strength:score:15]</requirements>
         <supports>Body Improvement</supports>
@@ -88,14 +89,14 @@
             <description>You can triple your jump height or distance.</description>
         </sheet>
         <rules>
-            <stat name="heavenly:restriction:body:improvement:points" value="-1" />
+            <stat name="heavenly:restriction:body:improvement:track" value="-1" />
             <stat name="heavenly:restriction:body:improvement:strength" value="-1" />
         </rules>
     </element>
 
-    <element name="Strength Technique (5)" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_STRENGTH_TECHNIQUE1">
-        <prerequisite>2 Body Points, 20 Strength, 5th level</prerequisite>
-        <requirements>[strength:score:15],[level:5]</requirements>
+	<element name="Strength Technique (Strength, 1)" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_STRENGTH_TECHNIQUE1">
+        <prerequisite>2 Body Points, 20 Strength, 1st level</prerequisite>
+        <requirements>[strength:score:20],[level:1],[heavenly:restriction:body:improvement:track:1]</requirements>
         <supports>Body Improvement</supports>
         <description>
             <p>Upon selecting this body improvement, you gain 1 Physical Feat of your choice with prerequisites you meet.</p>
@@ -103,15 +104,16 @@
         </description>
         <sheet display="false"/>
         <rules>
-            <stat name="heavenly:restriction:body:improvement:points" value="-2" />
-            <stat name="heavenly:restriction:body:improvement:strength" value="-1" />
+            <stat name="heavenly:restriction:body:improvement:track" value="-2" />
+            <stat name="heavenly:restriction:body:improvement:strength" value="-1" />			
+			<stat name="heavenly:restriction:body:improvement:points" value="-1" />
             <select type="Feat" name="Strength Technique Feat" supports="Physical Feats" />
         </rules>
     </element>
 
-    <element name="Strength Technique (11)" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_STRENGTH_TECHNIQUE2">
+    <element name="Strength Technique (Strength, 5)" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_STRENGTH_TECHNIQUE2">
         <prerequisite>2 Body Points, 20 Strength, 5th level</prerequisite>
-        <requirements>[strength:score:15],[level:11]</requirements>
+        <requirements>[strength:score:20],[level:5],[heavenly:restriction:body:improvement:track:1]</requirements>
         <supports>Body Improvement</supports>
         <description>
             <p>Upon selecting this body improvement, you gain 1 Physical Feat of your choice with prerequisites you meet.</p>
@@ -119,15 +121,16 @@
         </description>
         <sheet display="false"/>
         <rules>
-            <stat name="heavenly:restriction:body:improvement:points" value="-2" />
-            <stat name="heavenly:restriction:body:improvement:strength" value="-1" />
+            <stat name="heavenly:restriction:body:improvement:track" value="-2" />
+            <stat name="heavenly:restriction:body:improvement:strength" value="-1" />			
+			<stat name="heavenly:restriction:body:improvement:points" value="-1" />
             <select type="Feat" name="Strength Technique Feat" supports="Physical Feats" />
         </rules>
     </element>
 
-    <element name="Strength Technique (17)" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_STRENGTH_TECHNIQUE3">
+    <element name="Strength Technique (Strength, 11)" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_STRENGTH_TECHNIQUE3">
         <prerequisite>2 Body Points, 20 Strength, 5th level</prerequisite>
-        <requirements>[strength:score:15],[level:17]</requirements>
+        <requirements>[strength:score:20],[level:11],[heavenly:restriction:body:improvement:track:1]</requirements>
         <supports>Body Improvement</supports>
         <description>
             <p>Upon selecting this body improvement, you gain 1 Physical Feat of your choice with prerequisites you meet.</p>
@@ -135,14 +138,32 @@
         </description>
         <sheet display="false"/>
         <rules>
-            <stat name="heavenly:restriction:body:improvement:points" value="-2" />
+            <stat name="heavenly:restriction:body:improvement:track" value="-2" />
             <stat name="heavenly:restriction:body:improvement:strength" value="-1" />
+			<stat name="heavenly:restriction:body:improvement:points" value="-1" />
+            <select type="Feat" name="Strength Technique Feat" supports="Physical Feats" />
+        </rules>
+    </element>
+
+    <element name="Strength Technique (Strength, 17)" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_STRENGTH_TECHNIQUE4">
+        <prerequisite>2 Body Points, 20 Strength, 5th level</prerequisite>
+        <requirements>[strength:score:20],[level:17],[heavenly:restriction:body:improvement:track:1]</requirements>
+        <supports>Body Improvement</supports>
+        <description>
+            <p>Upon selecting this body improvement, you gain 1 Physical Feat of your choice with prerequisites you meet.</p>
+            <p class="indent">You can take this body improvement multiple times however you can only select at certain levels in this class. These levels are 1st, 5th, 11th, and 17th level.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <stat name="heavenly:restriction:body:improvement:track" value="-2" />
+            <stat name="heavenly:restriction:body:improvement:strength" value="-1" />
+			<stat name="heavenly:restriction:body:improvement:points" value="-1" />
             <select type="Feat" name="Strength Technique Feat" supports="Physical Feats" />
         </rules>
     </element>
 	
     <!-- Speed Improvements -->
-    <element name="Sonic Speed" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SONIC_SPEED">
+    <element name="Sonic Speed (Speed)" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SONIC_SPEED">
         <prerequisite>1 Body Point, 15 Dexterity</prerequisite>
         <requirements>[dexterity:score:15]</requirements>
         <supports>Body Improvement</supports>
@@ -153,13 +174,13 @@
             <description>Take the Dash action.</description>
         </sheet>
         <rules>
-            <stat name="heavenly:restriction:body:improvement:points" value="-1" />
+            <stat name="heavenly:restriction:body:improvement:track" value="-1" />
             <stat name="heavenly:restriction:body:improvement:dexterity" value="-1" />
             <stat name="speed" value="speed" />
         </rules>
     </element>
 
-    <element name="Sight Speed" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SIGHT_SPEED">
+    <element name="Sight Speed (Speed)" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SIGHT_SPEED">
         <prerequisite>Sonic Speed, 1 Body Point, 9th level, 24 Dexterity</prerequisite>
         <requirements>ID_JJK_CLASS_FEATURE_SONIC_SPEED,[dexterity:score:24],[level:9]</requirements>
         <supports>Body Improvement</supports>
@@ -170,13 +191,13 @@
             <description>Opportunity attacks against you are made with disadvantage due to your speed.</description>
         </sheet>
         <rules>
-            <stat name="heavenly:restriction:body:improvement:points" value="-1" />
+            <stat name="heavenly:restriction:body:improvement:track" value="-1" />
             <stat name="heavenly:restriction:body:improvement:dexterity" value="-1" />
             <stat name="speed" value="speed" />
         </rules>
     </element>
 
-    <element name="Light Speed" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_LIGHT_SPEED">
+    <element name="Light Speed (Speed)" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_LIGHT_SPEED">
         <prerequisite>Sight Speed, 1 Body Point, 17th level, 30 Dexterity</prerequisite>
         <requirements>ID_JJK_CLASS_FEATURE_SIGHT_SPEED,[dexterity:score:30],[level:17]</requirements>
         <supports>Body Improvement</supports>
@@ -187,13 +208,13 @@
             <description>Creatures can't take reactions in response to your movement unless they have blindsight.</description>
         </sheet>
         <rules>
-            <stat name="heavenly:restriction:body:improvement:points" value="-1" />
+            <stat name="heavenly:restriction:body:improvement:track" value="-1" />
             <stat name="heavenly:restriction:body:improvement:dexterity" value="-1" />
             <stat name="speed" value="speed" />
         </rules>
     </element>
 
-    <element name="Supersonic Reflexes" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SUPERSONIC_REFLEXES">
+    <element name="Supersonic Reflexes (Speed)" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SUPERSONIC_REFLEXES">
         <prerequisite>1 Body Point, 15 Dexterity</prerequisite>
         <requirements>[dexterity:score:15]</requirements>
         <supports>Body Improvement</supports>
@@ -204,14 +225,14 @@
             <description>You gain an additional reaction per round. You can use your reaction to grant yourself advantage on a Dexterity check you make.</description>
         </sheet>
         <rules>
-            <stat name="heavenly:restriction:body:improvement:points" value="-1" />
+            <stat name="heavenly:restriction:body:improvement:track" value="-1" />
             <stat name="heavenly:restriction:body:improvement:dexterity" value="-1" />
         </rules>
     </element>
 
-    <element name="Lightning Reflexes" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_LIGHTNING_REFLEXES">
+    <element name="Lightning Reflexes (Speed)" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_LIGHTNING_REFLEXES">
         <prerequisite>Supersonic Reflexes, 2 Body Points, 9th level, 24 Dexterity</prerequisite>
-        <requirements>ID_JJK_CLASS_FEATURE_SUPERSONIC_REFLEXES,[dexterity:score:24],[level:9]</requirements>
+        <requirements>ID_JJK_CLASS_FEATURE_SUPERSONIC_REFLEXES,[dexterity:score:24],[level:9],[heavenly:restriction:body:improvement:track:1]</requirements>
         <supports>Body Improvement</supports>
         <description>
             <p>You gain one more reaction per round. You can also use your reaction to gain advantage on checks based on an ability score you choose from the following; Intelligence, Wisdom, and Charisma when you gain this body improvement. This choice cannot be changed later on.</p>
@@ -220,8 +241,9 @@
             <description>You gain one more reaction per round. You can also use your reaction to gain advantage on checks of the chosen ability score.</description>
         </sheet>
         <rules>
-            <stat name="heavenly:restriction:body:improvement:points" value="-2" />
+            <stat name="heavenly:restriction:body:improvement:track" value="-2" />
             <stat name="heavenly:restriction:body:improvement:dexterity" value="-1" />
+			<stat name="heavenly:restriction:body:improvement:points" value="-1" />
             <select name="Lightning Reflexes Ability" type="Class Feature" supports="Lightning Reflexes" />
         </rules>
     </element>
@@ -257,7 +279,7 @@
     </element>
 
     <!-- Durability Improvements -->
-    <element name="Hardened Skin" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_HARDENED_SKIN">
+    <element name="Hardened Skin (Durability)" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_HARDENED_SKIN">
         <prerequisite>1 Body Point, 15 Constitution</prerequisite>
         <requirements>[constitution:score:15]</requirements>
         <supports>Body Improvement</supports>
@@ -268,7 +290,7 @@
             <description>Your hit point maximum increases by {{hardened:skin:hp}}</description>
         </sheet>
         <rules>
-            <stat name="heavenly:restriction:body:improvement:points" value="-1" />
+            <stat name="heavenly:restriction:body:improvement:track" value="-1" />
             <stat name="heavenly:restriction:body:improvement:constitution" value="-1" />
             <stat name="hardened:skin:hp" value="level" />
 			<stat name="hardened:skin:hp" value="level" />
@@ -280,7 +302,7 @@
         </rules>
     </element>
 
-    <element name="Iron Skin" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_IRON_SKIN">
+    <element name="Iron Skin (Durability)" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_IRON_SKIN">
         <prerequisite>Hardened Skin, 1 Body Point, 9th level, 24 Constitution</prerequisite>
         <requirements>ID_JJK_CLASS_FEATURE_HARDENED_SKIN,[constitution:score:24],[level:9]</requirements>
         <supports>Body Improvement</supports>
@@ -291,14 +313,14 @@
             <description>Your hit point maximum increase by {{iron:skin:hp}} and you take 3 less damage from non-magical bludgeoning, piercing, and slashing.</description>
         </sheet>
         <rules>
-            <stat name="heavenly:restriction:body:improvement:points" value="-1" />
+            <stat name="heavenly:restriction:body:improvement:track" value="-1" />
             <stat name="heavenly:restriction:body:improvement:dexterity" value="-1" />
         </rules>
     </element>
 
-    <element name="Adamantine Skin" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_ADAMANTINE_SKIN">
+    <element name="Adamantine Skin (Durability)" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_ADAMANTINE_SKIN">
         <prerequisite>Iron Skin, 2 Body Points, 17th level, 30 Constitution</prerequisite>
-        <requirements>ID_JJK_CLASS_FEATURE_IRON_SKIN,[constitution:score:30],[level:17]</requirements>
+        <requirements>ID_JJK_CLASS_FEATURE_IRON_SKIN,[constitution:score:30],[level:17],[heavenly:restriction:body:improvement:track:1]</requirements>
         <supports>Body Improvement</supports>
         <description>
             <p>Your skin has even further hardened, becoming more like adamantine. You add your constitution modifier an additional time when calculating your maximum hit points per level, and the damage reduction you gained from Iron Skin now applies to all bludgeoning, piercing, and slashing damage.</p>
@@ -307,8 +329,9 @@
             <description>Your hit point maximum increase by {{adamantine:skin:hp}} and the damage reduction you gained from Iron Skin now applies to all bludgeoning, piercing, and slashing damage.</description>
         </sheet>
         <rules>
-            <stat name="heavenly:restriction:body:improvement:points" value="-2" />
-            <stat name="heavenly:restriction:body:improvement:constitution" value="-1" />
+            <stat name="heavenly:restriction:body:improvement:track" value="-2" />
+            <stat name="heavenly:restriction:body:improvement:constitution" value="-1" /            
+			<stat name="heavenly:restriction:body:improvement:points" value="-1" />
             <stat name="adamantine:skin:hp" value="constitution:modifier" level="1" />
             <stat name="adamantine:skin:hp" value="constitution:modifier" level="2" />
             <stat name="adamantine:skin:hp" value="constitution:modifier" level="3" />
@@ -334,7 +357,7 @@
     </element>
 
     <!-- Mind Improvements -->
-    <element name="Minor Precognition" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_MINOR_PRECOGNITION">
+    <element name="Minor Precognition (Mind)" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_MINOR_PRECOGNITION">
         <prerequisite>1 Body Point</prerequisite>
         <supports>Body Improvement</supports>
         <description>
@@ -344,13 +367,13 @@
             <description>Unseen attacks are not rolled with advantage against you.</description>
         </sheet>
         <rules>
-            <stat name="heavenly:restriction:body:improvement:points" value="-1" />
+            <stat name="heavenly:restriction:body:improvement:track" value="-1" />
             <stat name="heavenly:restriction:body:improvement:wisdom" value="-1" />
             <stat name="perception:passive" value="5" />
         </rules>
     </element>
 
-    <element name="Precognition" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_PRECOGNITION">
+    <element name="Precognition (Mind)" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_PRECOGNITION">
         <prerequisite>Minor Precognition, 1 Body Point, 9th level</prerequisite>
         <requirements>ID_JJK_CLASS_FEATURE_MINOR_PRECOGNITION,[level:9]</requirements>
         <supports>Body Improvement</supports>
@@ -361,12 +384,12 @@
             <description>You cannot be surprised while conscious, and have advantage on Dexterity saving throws against an effect you can see. You can't receive this benefit if you're blinded, deafened or incapacitated.</description>
         </sheet>
         <rules>
-            <stat name="heavenly:restriction:body:improvement:points" value="-1" />
+            <stat name="heavenly:restriction:body:improvement:track" value="-1" />
             <stat name="heavenly:restriction:body:improvement:wisdom" value="-1" />
         </rules>
     </element>
 
-    <element name="Major Precognition" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_MAJOR_PRECOGNITION">
+    <element name="Major Precognition (Mind)" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_MAJOR_PRECOGNITION">
         <prerequisite>Precognition, 1 Body Point, 17th level</prerequisite>
         <requirements>ID_JJK_CLASS_FEATURE_PRECOGNITION,[level:17]</requirements>
         <supports>Body Improvement</supports>
@@ -377,12 +400,12 @@
             <description>Once per round, when a creature targets you for an attack, you can use your reaction to force their attack rolls against you to be made at disadvantage until the beginning of your next turn. Additionally, once per round you can give yourself advantage against one saving throw.</description>
         </sheet>
         <rules>
-            <stat name="heavenly:restriction:body:improvement:points" value="-1" />
+            <stat name="heavenly:restriction:body:improvement:track" value="-1" />
             <stat name="heavenly:restriction:body:improvement:wisdom" value="-1" />
         </rules>
     </element>
 
-    <element name="Minor Enhanced Senses" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_MINOR_ENHANCED_SENSES">
+    <element name="Minor Enhanced Senses (Mind)" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_MINOR_ENHANCED_SENSES">
         <prerequisite>1 Body Point</prerequisite>
         <supports>Body Improvement</supports>
         <description>
@@ -392,14 +415,14 @@
             <description>You gain blindsight to a range of 10ft. Within that range, you can effectively see anything that isn't behind total cover, even if you're blinded or in darkness. Moreover, you can see an invisible creature within that range, unless the creature successfully hides from you.</description>
         </sheet>
         <rules>
-            <stat name="heavenly:restriction:body:improvement:points" value="-1" />
+            <stat name="heavenly:restriction:body:improvement:track" value="-1" />
             <stat name="heavenly:restriction:body:improvement:wisdom" value="-1" />
             <grant type="Vision" id="ID_VISION_BLINDSIGHT" />
             <stat name="blindsight:range" value="10" /> 
         </rules>
     </element>
 
-    <element name="Medium Enhanced Senses" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_MEDIUM_ENHANCED_SENSES">
+    <element name="Medium Enhanced Senses (Mind)" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_MEDIUM_ENHANCED_SENSES">
         <prerequisite>Minor Enhanced Senses, 1 Body point, 9th level</prerequisite>
         <requirements>ID_JJK_CLASS_FEATURE_MINOR_ENHANCED_SENSES,[level:9]</requirements>
         <supports>Body Improvement</supports>
@@ -410,13 +433,13 @@
             <description>Your blindsight increases by 20ft and you gain 30ft of tremorsense.</description>
         </sheet>
         <rules>
-            <stat name="heavenly:restriction:body:improvement:points" value="-1" />
+            <stat name="heavenly:restriction:body:improvement:track" value="-1" />
             <stat name="heavenly:restriction:body:improvement:wisdom" value="-1" />
             <stat name="blindsight:range" value="20" /> 
         </rules>
     </element>
 
-    <element name="Major Enhanced Senses" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_MAJOR_ENHANCED_SENSES">
+    <element name="Major Enhanced Senses (Mind)" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_MAJOR_ENHANCED_SENSES">
         <prerequisite>Medium Enhanced Senses, 1 Body point, 17th level</prerequisite>
         <requirements>ID_JJK_CLASS_FEATURE_MEDIUM_ENHANCED_SENSES,[level:17]</requirements>
         <supports>Body Improvement</supports>
@@ -427,7 +450,7 @@
             <description>Your blindsight increases by 60ft and your tremorsense range increases to 60ft. You gain advantage in Wisdom (Perception) checks involving hearing.</description>
         </sheet>
         <rules>
-            <stat name="heavenly:restriction:body:improvement:points" value="-1" />
+            <stat name="heavenly:restriction:body:improvement:track" value="-1" />
             <stat name="heavenly:restriction:body:improvement:wisdom" value="-1" />
             <stat name="blindsight:range" value="60" /> 
         </rules>
