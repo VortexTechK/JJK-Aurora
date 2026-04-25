@@ -4,7 +4,7 @@
 		<name>Heavenly Restriction</name>
 		<description>The Heavenly Restriction class from JJK.</description>
 		<author url="https://docs.google.com/document/d/1eC8tEMHnupOuaX6At1X8JORz5iarNe6I-A7j2QzScrE/edit?tab=t.0">JJK</author>
-		<update version="6.0.7">
+		<update version="6.0.8">
 			<file name="class-heavenlyrestriction.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/heavenlyrestriction/class-heavenlyrestriction.xml" />
 		</update>
 	</info>
@@ -209,7 +209,7 @@
             <p class="indent">In addition, you gain the ability to move and run along vertical surfaces and across liquids on your turn without falling during the move.</p>
 		</description>
 		<sheet>
-			<description>Your speed increase by {{heavenly:restriction:speed}} while you are not wearing armor or wielding a shield. You gain the ability to move along vertical surfaces and across liquids on your turn without falling during the move.</description>
+			<description>Your speed increases by {{heavenly:restriction:unarmored movement}} while you are not wearing armor or wielding a shield. You gain the ability to move along vertical surfaces and across liquids on your turn without falling during the move.</description>
 		</sheet>
 		<rules>
 			<stat name="heavenly:restriction:unarmored movement" value="20" bonus="unarmored movement" />
