@@ -20,7 +20,7 @@
 			<div element="ID_BACKGROUND_FEATURE_FAMILY_TIES" />
 		</description>
 		<setters>
-			<set name="short">Insight, History</set>
+			<set name="short">Insight, History, Innate Technique Feat</set>
 		</setters>
 		<rules>
             <select type="Feat" name="Clan Sorcerer Feat" supports="Innate Technique Feats" />
