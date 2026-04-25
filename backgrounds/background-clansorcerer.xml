@@ -4,7 +4,7 @@
 		<name>Clan Sorcerer</name>
 		<description>Clan Sorcerer Background</description>
 		<author url="https://docs.google.com/document/d/1eC8tEMHnupOuaX6At1X8JORz5iarNe6I-A7j2QzScrE/edit?tab=t.0">JJK</author>
-		<update version="6.0.0">
+		<update version="6.0.1">
 			<file name="background-clansorcerer.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/backgrounds/background-clansorcerer.xml" />
 		</update>
 	</info>
@@ -17,9 +17,7 @@
 				<li><strong>Skill Proficiencies:</strong> Insight, History</li>
 				<li><strong>Equipment:</strong> A clan symbol (a gift to you as part of your clan), a technique manual, formal clothing, a set of common clothes, and a wallet containing $1,500.</li>
 			</ul>
-			<div element="ID_BACKGROUND_FEATURE_SHELTER_OF_THE_FAITHFUL" />
-			<h5>SUGGESTED CHARACTERISTICS</h5>
-			<p>Acolytes are shaped by their experience in temples or other religious communities. Their study of the history and tenets of their faith and their relationships to temples, shrines, or hierarchies affect their mannerisms and ideals. Their flaws might be some hidden hypocrisy or heretical idea, or an ideal or bond taken to an extreme.</p>
+			<div element="ID_BACKGROUND_FEATURE_FAMILY_TIES" />
 		</description>
 		<setters>
 			<set name="short">Insight, History</set>
