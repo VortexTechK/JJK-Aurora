@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Hard Worker</name>
+		<description>Hard Worker Background</description>
+		<author url="https://docs.google.com/document/d/1eC8tEMHnupOuaX6At1X8JORz5iarNe6I-A7j2QzScrE/edit?tab=t.0">JJK</author>
+		<update version="6.0.0">
+			<file name="background-hardworker.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/backgrounds/background-hardworker.xml" />
+		</update>
+	</info>
+
+	<element name="Hard Worker" type="Background" source="JJK" id="ID_BACKGROUND_HARD_WORKER">
+		<description>
+			<p>You were someone who always had to prove to themselves and others that you are worth your weight and space. You always had to work twice as hard and twice as long to see results, but the results are beginning to show. You never had the natural talent of your peers, no, you had peerless determination and persistence to push through all of the challenges you were faced with to make it to this point, while also looking forward to the next day to get better. You have reached a level of discipline that your peers can't imagine, so you can keep up your training on your own time while not lagging when you do decide to take a break.</p>
+			<ul class="unstyled">
+                <li><strong>Feat:</strong> Pick one Physical Feat</li>
+				<li><strong>Skill Proficiencies:</strong> Athletics, Acrobatics</li>
+				<li><strong>Equipment:</strong> Set of Body weights that weigh 50+ pounds. For each part of your body, 3 Books containing training strategies, Training Gi, and a Wallet containing $1,000.</li>
+			</ul>
+			<div element="ID_BACKGROUND_FEATURE_FOCUS_AND_GRIT" />
+		</description>
+		<setters>
+			<set name="short">Athletics, Acrobatics, Physical Feat</set>
+		</setters>
+		<rules>
+            <select type="Feat" name="Hard Worker Feat" supports="Physical Feats" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ACROBATICS" />
+			<grant type="Background Feature" id="ID_BACKGROUND_FEATURE_FOCUS_AND_GRIT" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+		</rules>
+    </element>
+	
+	<element name="Feature: Focus and Grit" type="Background Feature" source="JJK" id="ID_BACKGROUND_FEATURE_FOCUS_AND_GRIT">
+		<supports>Background Feature</supports>
+		<description>
+			<p>You have trained yourself in such a way that you have absorbed multiple tomes of knowledge in whatever you worked your butt off to excel in. You are able to quickly bond with people who have the same drive and determination as you and even garner immediate audiences and conversations with those people. You are also able to reference and call out different books, strategies, and texts to catch the attention of those who have read those texts or follow those strategies.</p>
+		</description>
+		<sheet alt="Focus and Grit" />
+	</element>
+</elements>

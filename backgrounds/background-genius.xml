@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Genius</name>
+		<description>Genius Background</description>
+		<author url="https://docs.google.com/document/d/1eC8tEMHnupOuaX6At1X8JORz5iarNe6I-A7j2QzScrE/edit?tab=t.0">JJK</author>
+		<update version="6.0.0">
+			<file name="background-genius.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/backgrounds/background-genius.xml" />
+		</update>
+	</info>
+
+	<element name="Genius" type="Background" source="JJK" id="ID_BACKGROUND_GENIUS">
+		<description>
+			<p>You are someone who was raised with a notion of greatness about you. Always placed on a pedestal above your peers for your intelligence, skills, or natural-born ability. Before coming to Jujutsu Tech, you had such an aptitude for success that strangers, parents, and teachers alike all placed you in a league of your own. You have proven that to be the case up until now and will likely continue to prove it moving forward. Whether you choose to continue the path assumed you would, or shift focus is your own choice. You have both good and bad experiences with this assumption of genius about you. Memories like these are something you may cherish or despise, but you are a Genius through and through.</p>
+			<ul class="unstyled">
+                <li><strong>Feat:</strong> Pick one Skill Feat</li>
+				<li><strong>Skill Proficiencies:</strong> Arcana, Athletics</li>
+				<li><strong>Equipment:</strong> One letter of recommendation passed down to you from someone of importance, 1 Blank Scroll, A Wallet Containing $1,000.</li>
+			</ul>
+			<div element="ID_BACKGROUND_FEATURE_MEETING_EXPECTATIONS" />
+		</description>
+		<setters>
+			<set name="short">Arcana, Athletics, Skill Feat</set>
+		</setters>
+		<rules>
+            <select type="Feat" name="Genius Feat" supports="Skill Feats" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+			<grant type="Background Feature" id="ID_BACKGROUND_FEATURE_MEETING_EXPECTATIONS" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+		</rules>
+    </element>
+	
+	<element name="Feature: Meeting Expectations" type="Background Feature" source="JJK" id="ID_BACKGROUND_FEATURE_MEETING_EXPECTATIONS">
+		<supports>Background Feature</supports>
+		<description>
+			<p>You always seem to rise to the expectations of others during a challenge. When confronted with a difficult situation, you seem to gain insight after just one attempt, passing or failing it. This insight is a hint at how this particular challenge does or doesn't work, that others around you may not understand.</p>
+		</description>
+		<sheet alt="Meeting Expectations" />
+	</element>
+</elements>

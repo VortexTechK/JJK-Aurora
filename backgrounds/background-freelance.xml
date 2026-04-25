@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Freelance</name>
+		<description>Freelance Background</description>
+		<author url="https://docs.google.com/document/d/1eC8tEMHnupOuaX6At1X8JORz5iarNe6I-A7j2QzScrE/edit?tab=t.0">JJK</author>
+		<update version="6.0.0">
+			<file name="background-freelance.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/backgrounds/background-freelance.xml" />
+		</update>
+	</info>
+
+	<element name="Freelance" type="Background" source="JJK" id="ID_BACKGROUND_FREELANCE">
+		<description>
+			<p>Whether you are a first generation sorcerer born to a normal family or someone who split away from the jujutsu world to become an illegal curse user, you have learned to survive without the backing of a clan or the approval of the higher-ups. The world is vast beyond the walls of the schools and great, and not every sorcerer chooses—or is allowed—to live under their watchful eyes. Some Freelancers are wanderers, exorcising curses in forgotten villages or protecting those too poor to afford official aid. Others drift into the underbelly of the jujutsu world, selling techniques, cursed tools, or information to whoever can pay.Without the structure of the clans or the bureaucracy of the schools, you rely on your own wit and adaptability. You make connections where you can, trust few, and keep your head down when the higher-ups come sniffing around.</p>
+			<ul class="unstyled">
+                <li><strong>Feat:</strong> Pick one Cursed Energy Feat</li>
+				<li><strong>Skill Proficiencies:</strong> Perception, Deception</li>
+                <li><strong>Tool Proficiencies:</strong> Thieves Tools or Disguise Kit</li>
+				<li><strong>Equipment:</strong> Set of travelers clothes for streetwear, a notebook of jobs, a burner cellphone, forgery kit or thieves tools, a wallet containing $2,000.</li>
+			</ul>
+			<div element="ID_BACKGROUND_FEATURE_INDEPENDENT_NETWORK" />
+		</description>
+		<setters>
+			<set name="short">Perception, Deception, Thieves Tools or Disguise Kit, Cursed Energy Feat</set>
+		</setters>
+		<rules>
+            <select type="Feat" name="Freelance Feat" supports="Cursed Energy Feats" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+            <select type="Proficiency" name="Freelance Tool Proficiency" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT" />
+			<grant type="Background Feature" id="ID_BACKGROUND_FEATURE_INDEPENDENT_NETWORK" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+		</rules>
+    </element>
+	
+	<element name="Feature: Independent Network" type="Background Feature" source="JJK" id="ID_BACKGROUND_FEATURE_INDEPENDENT_NETWORK">
+		<supports>Background Feature</supports>
+		<description>
+			<p>Years spent working outside official channels have given you access to an informal web of contacts; smugglers, minor sorcerers, black-market exorcists, and ordinary citizens who owe you a favor. You can usually find information, shelter, or supplies through this network when operating in a city or settlement, even if it's unofficial or risky. You can also identify whether a community is under the influence of jujutsu authorities or illegal curse activity within a few hours of arriving, letting you decide which side to approach or avoid first.</p>
+		</description>
+		<sheet alt="Independent Network" />
+	</element>
+</elements>

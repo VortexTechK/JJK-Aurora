@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Window</name>
+		<description>Window Background</description>
+		<author url="https://docs.google.com/document/d/1eC8tEMHnupOuaX6At1X8JORz5iarNe6I-A7j2QzScrE/edit?tab=t.0">JJK</author>
+		<update version="6.0.0">
+			<file name="background-window.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/backgrounds/background-window.xml" />
+		</update>
+	</info>
+
+	<element name="Window" type="Background" source="JJK" id="ID_BACKGROUND_WINDOW">
+		<description>
+			<p>Windows are the eyes and ears of the jujutsu society, monitoring spiritual activity, identifying incidents, and supporting exorcists in the field. Most Windows are civilians with just enough cursed energy to see curses, while others may be failed sorcerers who could not handle field assignments and now handle deploying veils. Though you may initially lack the power to destroy curses yourself, your vigilance and courage allow others to act before it's too late.</p>
+			<ul class="unstyled">
+                <li><strong>Feat:</strong> Pick one Barrier Feat</li>
+				<li><strong>Skill Proficiencies:</strong> Persuasion, Investigation</li>
+                <li><strong>Tool Proficiencies:</strong> Calligrapher's Tools</li>
+				<li><strong>Equipment:</strong> Set of fine clothes for work, a pair of cursed glasses that let you see curses, calligrapher's tools, a wallet with $1,000 dollars.</li>
+			</ul>
+			<div element="ID_BACKGROUND_FEATURE_IN_THE_SYSTEM" />
+		</description>
+		<setters>
+			<set name="short">Persuasion, Investigation, Calligrapher's Tools, Barrier Feat</set>
+		</setters>
+		<rules>
+            <select type="Feat" name="Window Feat" supports="Barrier Feats" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES" />
+			<grant type="Background Feature" id="ID_BACKGROUND_FEATURE_IN_THE_SYSTEM" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+		</rules>
+    </element>
+	
+	<element name="Feature: In the System" type="Background Feature" source="JJK" id="ID_BACKGROUND_FEATURE_IN_THE_SYSTEM">
+		<supports>Background Feature</supports>
+		<description>
+			<p>You are recognized by the jujutsu community as a trained observer. You know how to file reports, contact field agents, and navigate the bureaucratic maze between exorcists, schools, and local authorities. You can usually gain an audience with a jujutsu operative or access to minor restricted areas where supernatural activity is being investigated. When you're in a new area, you can quickly locate the nearest contact point, safe zone, or local informant tied to curse management. Those in the know may not trust you, but they'll usually hear you out before turning you away.</p>
+		</description>
+		<sheet alt="In the System" />
+	</element>
+</elements>
