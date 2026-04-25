@@ -4,7 +4,7 @@
 		<name>Heavenly Restriction</name>
 		<description>The Heavenly Restriction class from JJK.</description>
 		<author url="https://docs.google.com/document/d/1eC8tEMHnupOuaX6At1X8JORz5iarNe6I-A7j2QzScrE/edit?tab=t.0">JJK</author>
-		<update version="6.0.14">
+		<update version="6.0.15">
 			<file name="class-heavenlyrestriction.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/heavenlyrestriction/class-heavenlyrestriction.xml" />
 		</update>
 	</info>
@@ -734,12 +734,9 @@
             <p>When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.</p>
         </description>
         <sheet>
-            <description>When you roll a {{heavenly:restriction:gwf}} on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll.</description>
-        </sheet>
-        <rules>
-            <stat name="heavenly:restriction:gwf" value="1 or a 2" inline="true" />
-            <stat name="heavenly:restriction:gwf" value="1, 2, or a 3" inline="true" requirements="ID_JJK_IMPROVED_FIGHTING_STYLE_GWF" />
-        </rules>
+            <description>When you roll a 1 or a 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll.</description>
+        	<description level="14">When you roll a 1, 2, or a 3 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll.</description>
+		</sheet>
     </element>
 
     <element name="Grappler" type="Class Feature" source="JJK" id="ID_JJK_FIGHTING_STYLE_GRAPPLER">
@@ -790,12 +787,9 @@
             <p>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.</p>
         </description>
         <sheet>
-            <description>When you engage in two-weapon fighting, you can add your {{heavenly:restriction:two}} to the damage of the second attack.</description>
+            <description>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.</description>
+			<description level="14">When you engage in two-weapon fighting, you can add your ability modifier + 1 to the damage of the second attack.</description>
         </sheet>
-        <rules>
-            <stat name="heavenly:restriction:two" value="ability modifier" inline="true" />
-            <stat name="heavenly:restriction:two" value="ability modifier + 1" inline="true" requirements="ID_JJK_IMPROVED_FIGHTING_STYLE_TWO" />
-        </rules>
     </element>
 
     <element name="Tunnel Fighter" type="Class Feature" source="JJK" id="ID_JJK_FIGHTING_STYLE_TUNNEL_FIGHTER">
@@ -804,12 +798,9 @@
             <p> As a bonus action, you can enter a defensive stance that lasts until the start of your next turn. While in your defensive stance, you can make opportunity attacks without using your reaction, and you can use your reaction to make a melee attack against a creature that moves more than 5 feet while within your reach.</p>
         </description>
         <sheet action="Bonus Action">
-            <description>Until the start of your next turn, you can make opportunity attacks without using your reaction, and you can use your reaction to make a melee attack against a creature that moves more than 5 feet while within your {{heavenly:restriction:tunnel}}</description>
+            <description>Until the start of your next turn, you can make opportunity attacks without using your reaction, and you can use your reaction to make a melee attack against a creature that moves more than 5 feet while within your reach.</description>
+			<description level="14">Until the start of your next turn, you can make opportunity attacks without using your reaction, and you can use your reaction to make a melee attack against a creature that moves more than 5 feet while within your reach. You gain a +1 bonus to attacks and damage rolls made this way.</description>
         </sheet>
-        <rules>
-            <stat name="heavenly:restriction:tunnel" value="reach." inline="true" />
-            <stat name="heavenly:restriction:tunnel" value="reach. You gain a +1 bonus to attacks and damage rolls made this way." inline="true" requirements="ID_JJK_IMPROVED_FIGHTING_STYLE_TUNNEL_FIGHTER" />
-        </rules>
     </element>
     
     <element name="Improved Archery" type="Class Feature" source="JJK" id="ID_JJK_IMPROVED_FIGHTING_STYLE_ARCHERY">
