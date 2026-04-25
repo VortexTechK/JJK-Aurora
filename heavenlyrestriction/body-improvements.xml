@@ -4,7 +4,7 @@
 		<name>Body Improvements</name>
 		<description>The Body Improvements from JJK</description>
 		<author url="https://docs.google.com/document/d/1eC8tEMHnupOuaX6At1X8JORz5iarNe6I-A7j2QzScrE/edit?tab=t.0">JJK</author>
-		<update version="6.0.8">
+		<update version="6.0.9">
 			<file name="body-improvements.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/heavenlyrestriction/body-improvements.xml" />
 		</update>
 	</info>
@@ -21,7 +21,6 @@
             <description>You count as {{heavenly:restriction:superhuman:might:size}} size larger for the purposes of grappling, shoving, disarming, and the weight you can carry, push, drag or lift.</description>
         </sheet>
         <rules>
-            <stat name="heavenly:restriction:body:improvement:points" value="-1" />
             <stat name="heavenly:restriction:body:improvement:strength" value="-1" />
             <stat name="heavenly:restriction:superhuman:might:size" value="1" bonus="superhuman might" />
             <stat name="heavenly:restriction:superhuman:might:size" value="2" bonus="superhuman might" requirements="ID_JJK_CLASS_FEATURE_MONSTROUS_MIGHT" />
@@ -40,7 +39,6 @@
             <description>Your martial arts die increases by 1 dice, applying after die tier increases.</description>
         </sheet>
         <rules>
-            <stat name="heavenly:restriction:body:improvement:points" value="-1" />
             <stat name="heavenly:restriction:body:improvement:strength" value="-1" />
         </rules>
     </element>
@@ -56,7 +54,6 @@
             <description>Your martial arts die increases by 1 dice again, applying after die tier increases. You deal twice as much damage to structures and objects.</description>
         </sheet>
         <rules>
-            <stat name="heavenly:restriction:body:improvement:points" value="-1" />
             <stat name="heavenly:restriction:body:improvement:strength" value="-1" />
         </rules>
     </element>
@@ -72,7 +69,7 @@
             <description>When you hit a creature with a weapon attack using strength, compare the attack roll result to the AC of every creature of your choice within 20 feet of the target other than the target. If the attack roll would hit, you deal half the damage of the attack(rounded down) to the creatures that were hit.</description>
         </sheet>
         <rules>
-            <stat name="heavenly:restriction:body:improvement:points" value="-2" />
+            <stat name="heavenly:restriction:body:improvement:points" value="-1" />
             <stat name="heavenly:restriction:body:improvement:strength" value="-1" />
         </rules>
     </element>
@@ -88,7 +85,6 @@
             <description>You can triple your jump height or distance.</description>
         </sheet>
         <rules>
-            <stat name="heavenly:restriction:body:improvement:points" value="-1" />
             <stat name="heavenly:restriction:body:improvement:strength" value="-1" />
         </rules>
     </element>
@@ -103,7 +99,7 @@
         </description>
         <sheet display="false"/>
         <rules>
-            <stat name="heavenly:restriction:body:improvement:points" value="-2" />
+            <stat name="heavenly:restriction:body:improvement:points" value="-1" />
             <stat name="heavenly:restriction:body:improvement:strength" value="-1" />			
             <select type="Feat" name="Strength Technique Feat" supports="Physical Feats" />
         </rules>
@@ -119,7 +115,7 @@
         </description>
         <sheet display="false"/>
         <rules>
-            <stat name="heavenly:restriction:body:improvement:points" value="-2" />
+            <stat name="heavenly:restriction:body:improvement:points" value="-1" />
             <stat name="heavenly:restriction:body:improvement:strength" value="-1" />			
             <select type="Feat" name="Strength Technique Feat" supports="Physical Feats" />
         </rules>
@@ -135,7 +131,7 @@
         </description>
         <sheet display="false"/>
         <rules>
-            <stat name="heavenly:restriction:body:improvement:points" value="-2" />
+            <stat name="heavenly:restriction:body:improvement:points" value="-1" />
             <stat name="heavenly:restriction:body:improvement:strength" value="-1" />
             <select type="Feat" name="Strength Technique Feat" supports="Physical Feats" />
         </rules>
@@ -151,7 +147,7 @@
         </description>
         <sheet display="false"/>
         <rules>
-            <stat name="heavenly:restriction:body:improvement:points" value="-2" />
+            <stat name="heavenly:restriction:body:improvement:points" value="-1" />
             <stat name="heavenly:restriction:body:improvement:strength" value="-1" />
             <select type="Feat" name="Strength Technique Feat" supports="Physical Feats" />
         </rules>
@@ -169,7 +165,6 @@
             <description>Take the Dash action.</description>
         </sheet>
         <rules>
-            <stat name="heavenly:restriction:body:improvement:points" value="-1" />
             <stat name="heavenly:restriction:body:improvement:dexterity" value="-1" />
             <stat name="speed" value="speed" />
         </rules>
@@ -186,7 +181,6 @@
             <description>Opportunity attacks against you are made with disadvantage due to your speed.</description>
         </sheet>
         <rules>
-            <stat name="heavenly:restriction:body:improvement:points" value="-1" />
             <stat name="heavenly:restriction:body:improvement:dexterity" value="-1" />
             <stat name="speed" value="speed" />
         </rules>
@@ -203,7 +197,6 @@
             <description>Creatures can't take reactions in response to your movement unless they have blindsight.</description>
         </sheet>
         <rules>
-            <stat name="heavenly:restriction:body:improvement:points" value="-1" />
             <stat name="heavenly:restriction:body:improvement:dexterity" value="-1" />
             <stat name="speed" value="speed" />
         </rules>
@@ -220,7 +213,6 @@
             <description>You gain an additional reaction per round. You can use your reaction to grant yourself advantage on a Dexterity check you make.</description>
         </sheet>
         <rules>
-            <stat name="heavenly:restriction:body:improvement:points" value="-1" />
             <stat name="heavenly:restriction:body:improvement:dexterity" value="-1" />
         </rules>
     </element>
@@ -236,7 +228,7 @@
             <description>You gain one more reaction per round. You can also use your reaction to gain advantage on checks of the chosen ability score.</description>
         </sheet>
         <rules>
-            <stat name="heavenly:restriction:body:improvement:points" value="-2" />
+            <stat name="heavenly:restriction:body:improvement:points" value="-1" />
             <stat name="heavenly:restriction:body:improvement:dexterity" value="-1" />
             <select name="Lightning Reflexes Ability" type="Class Feature" supports="Lightning Reflexes" />
         </rules>
@@ -284,7 +276,6 @@
             <description>Your hit point maximum increases by {{hardened:skin:hp}}</description>
         </sheet>
         <rules>
-            <stat name="heavenly:restriction:body:improvement:points" value="-1" />
             <stat name="heavenly:restriction:body:improvement:constitution" value="-1" />
             <stat name="hardened:skin:hp" value="level" />
 			<stat name="hardened:skin:hp" value="level" />
@@ -307,8 +298,7 @@
             <description>Your hit point maximum increase by {{iron:skin:hp}} and you take 3 less damage from non-magical bludgeoning, piercing, and slashing.</description>
         </sheet>
         <rules>
-            <stat name="heavenly:restriction:body:improvement:points" value="-1" />
-            <stat name="heavenly:restriction:body:improvement:dexterity" value="-1" />
+            <stat name="heavenly:restriction:body:improvement:constitution" value="-1" />
         </rules>
     </element>
 
@@ -323,7 +313,7 @@
             <description>Your hit point maximum increase by {{adamantine:skin:hp}} and the damage reduction you gained from Iron Skin now applies to all bludgeoning, piercing, and slashing damage.</description>
         </sheet>
         <rules>
-            <stat name="heavenly:restriction:body:improvement:points" value="-2" />
+            <stat name="heavenly:restriction:body:improvement:points" value="-1" />
             <stat name="heavenly:restriction:body:improvement:constitution" value="-1" />            
             <stat name="adamantine:skin:hp" value="constitution:modifier" level="1" />
             <stat name="adamantine:skin:hp" value="constitution:modifier" level="2" />
@@ -360,7 +350,6 @@
             <description>Unseen attacks are not rolled with advantage against you.</description>
         </sheet>
         <rules>
-            <stat name="heavenly:restriction:body:improvement:points" value="-1" />
             <stat name="heavenly:restriction:body:improvement:wisdom" value="-1" />
             <stat name="perception:passive" value="5" />
         </rules>
@@ -377,7 +366,6 @@
             <description>You cannot be surprised while conscious, and have advantage on Dexterity saving throws against an effect you can see. You can't receive this benefit if you're blinded, deafened or incapacitated.</description>
         </sheet>
         <rules>
-            <stat name="heavenly:restriction:body:improvement:points" value="-1" />
             <stat name="heavenly:restriction:body:improvement:wisdom" value="-1" />
         </rules>
     </element>
@@ -393,7 +381,6 @@
             <description>Once per round, when a creature targets you for an attack, you can use your reaction to force their attack rolls against you to be made at disadvantage until the beginning of your next turn. Additionally, once per round you can give yourself advantage against one saving throw.</description>
         </sheet>
         <rules>
-            <stat name="heavenly:restriction:body:improvement:points" value="-1" />
             <stat name="heavenly:restriction:body:improvement:wisdom" value="-1" />
         </rules>
     </element>
@@ -408,7 +395,6 @@
             <description>You gain blindsight to a range of 10ft. Within that range, you can effectively see anything that isn't behind total cover, even if you're blinded or in darkness. Moreover, you can see an invisible creature within that range, unless the creature successfully hides from you.</description>
         </sheet>
         <rules>
-            <stat name="heavenly:restriction:body:improvement:points" value="-1" />
             <stat name="heavenly:restriction:body:improvement:wisdom" value="-1" />
             <grant type="Vision" id="ID_VISION_BLINDSIGHT" />
             <stat name="blindsight:range" value="10" /> 
@@ -426,7 +412,6 @@
             <description>Your blindsight increases by 20ft and you gain 30ft of tremorsense.</description>
         </sheet>
         <rules>
-            <stat name="heavenly:restriction:body:improvement:points" value="-1" />
             <stat name="heavenly:restriction:body:improvement:wisdom" value="-1" />
             <stat name="blindsight:range" value="20" /> 
         </rules>
@@ -443,7 +428,6 @@
             <description>Your blindsight increases by 60ft and your tremorsense range increases to 60ft. You gain advantage in Wisdom (Perception) checks involving hearing.</description>
         </sheet>
         <rules>
-            <stat name="heavenly:restriction:body:improvement:points" value="-1" />
             <stat name="heavenly:restriction:body:improvement:wisdom" value="-1" />
             <stat name="blindsight:range" value="60" /> 
         </rules>
