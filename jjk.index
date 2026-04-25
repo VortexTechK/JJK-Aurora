@@ -4,7 +4,7 @@
 		<name>JJK</name>
 		<description>JJK Homebrew.</description>
 		<author url="https://docs.google.com/document/d/1eC8tEMHnupOuaX6At1X8JORz5iarNe6I-A7j2QzScrE/edit?tab=t.0">JJK</author>
-		<update version="6.0.9">
+		<update version="6.0.10">
 			<file name="jjk.index" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/jjk.index" />
 		</update>
 	</info>
@@ -19,6 +19,10 @@
 
 		<!-- backgrounds -->
 		<file name="background-clansorcerer.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/backgrounds/background-clansorcerer.xml" />
+		<file name="background-freelance.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/backgrounds/background-freelance.xml" />
+		<file name="background-genius.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/backgrounds/background-genius.xml" />
+		<file name="background-hardworker.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/backgrounds/background-hardworker.xml" />
+		<file name="background-window.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/backgrounds/background-window.xml" />
 
 		<!-- classes -->
 		<file name="class-juggernaut.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/classes/class-juggernaut.xml" />
