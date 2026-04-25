@@ -4,7 +4,7 @@
 		<name>Heavenly Restriction</name>
 		<description>The Heavenly Restriction class from JJK.</description>
 		<author url="https://docs.google.com/document/d/1eC8tEMHnupOuaX6At1X8JORz5iarNe6I-A7j2QzScrE/edit?tab=t.0">JJK</author>
-		<update version="6.0.13">
+		<update version="6.0.14">
 			<file name="class-heavenlyrestriction.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/heavenlyrestriction/class-heavenlyrestriction.xml" />
 		</update>
 	</info>
@@ -642,7 +642,7 @@
             <grant type="Class Feature" id="ID_JJK_IMPROVED_FIGHTING_STYLE_GRAPPLER" requirements="ID_JJK_FIGHTING_STYLE_GRAPPLER" />
             <grant type="Class Feature" id="ID_JJK_IMPROVED_FIGHTING_STYLE_INTERCEPTION" requirements="ID_JJK_FIGHTING_STYLE_INTERCEPTION" />
             <grant type="Class Feature" id="ID_JJK_IMPROVED_FIGHTING_STYLE_PROTECTION" requirements="ID_JJK_FIGHTING_STYLE_PROTECTION" />  
-            <grant type="Class Feature" id="ID_JJK_IMPROVED_FIGHTING_STYLE_TWO_WEAPON" requirements="ID_JJK_FIGHTING_STYLE_TWO" />
+            <grant type="Class Feature" id="ID_JJK_IMPROVED_FIGHTING_STYLE_TWO" requirements="ID_JJK_FIGHTING_STYLE_TWO" />
             <grant type="Class Feature" id="ID_JJK_IMPROVED_FIGHTING_STYLE_TUNNEL_FIGHTER" requirements="ID_JJK_FIGHTING_STYLE_TUNNEL_FIGHTER" />
         </rules>
     </element>
