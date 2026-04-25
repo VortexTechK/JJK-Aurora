@@ -4,7 +4,7 @@
 		<name>Heavenly Restriction</name>
 		<description>The Heavenly Restriction class from JJK.</description>
 		<author url="https://docs.google.com/document/d/1eC8tEMHnupOuaX6At1X8JORz5iarNe6I-A7j2QzScrE/edit?tab=t.0">JJK</author>
-		<update version="6.0.10">
+		<update version="6.0.11">
 			<file name="class-heavenlyrestriction.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/heavenlyrestriction/class-heavenlyrestriction.xml" />
 		</update>
 	</info>
@@ -263,26 +263,26 @@
             <stat name="heavenly:restriction:body:improvement:dexterity" value="dexterity:modifier" />
             <stat name="heavenly:restriction:body:improvement:constitution" value="constitution:modifier" />
             <stat name="heavenly:restriction:body:improvement:wisdom" value="wisdom:modifier" />
-            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" optional="true" requirements="[heavenly:restriction:body:improvement:points:1]" />
-			<select type="Class Feature" name="Body Improvement" supports="Body Improvement" optional="true" requirements="[heavenly:restriction:body:improvement:points:2]" />
-            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" optional="true" requirements="[heavenly:restriction:body:improvement:points:3]" />
-            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" optional="true" requirements="[heavenly:restriction:body:improvement:points:4]" />
-            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" optional="true" requirements="[heavenly:restriction:body:improvement:points:5]" />
-            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" optional="true" requirements="[heavenly:restriction:body:improvement:points:6]" />
-            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" optional="true" requirements="[heavenly:restriction:body:improvement:points:7]" />
-            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" optional="true" requirements="[heavenly:restriction:body:improvement:points:8]" />
-            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" optional="true" requirements="[heavenly:restriction:body:improvement:points:9]" />
-            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" optional="true" requirements="[heavenly:restriction:body:improvement:points:10]" />
-            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" optional="true" requirements="[heavenly:restriction:body:improvement:points:11]" />
-            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" optional="true" requirements="[heavenly:restriction:body:improvement:points:12]" />
-            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" optional="true" requirements="[heavenly:restriction:body:improvement:points:13]" />
-            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" optional="true" requirements="[heavenly:restriction:body:improvement:points:14]" />
-            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" optional="true" requirements="[heavenly:restriction:body:improvement:points:15]" />
-            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" optional="true" requirements="[heavenly:restriction:body:improvement:points:16]" />
-            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" optional="true" requirements="[heavenly:restriction:body:improvement:points:17]" />
-            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" optional="true" requirements="[heavenly:restriction:body:improvement:points:18]" />
-            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" optional="true" requirements="[heavenly:restriction:body:improvement:points:19]" />
-            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" optional="true" requirements="[heavenly:restriction:body:improvement:points:20]" />
+            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" optional="true" level="1" />
+			<select type="Class Feature" name="Body Improvement" supports="Body Improvement" optional="true" level="2" />
+            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" optional="true" level="3" />
+            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" optional="true" level="4" />
+            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" optional="true" level="5" />
+            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" optional="true" level="6" />
+            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" optional="true" level="7" />
+            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" optional="true" level="8" />
+            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" optional="true" level="9" />
+            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" optional="true" level="10" />
+            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" optional="true" level="11" />
+            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" optional="true" level="12" />
+            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" optional="true" level="13" />
+            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" optional="true" level="14" />
+            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" optional="true" level="15" />
+            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" optional="true" level="16" />
+            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" optional="true" level="17" />
+            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" optional="true" level="18" />
+            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" optional="true" level="19" />
+            <select type="Class Feature" name="Body Improvement" supports="Body Improvement" optional="true" level="20" />
         </rules>
 	</element>
 
