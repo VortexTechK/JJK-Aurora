@@ -4,7 +4,7 @@
 		<name>Heavenly Restriction</name>
 		<description>The Heavenly Restriction class from JJK.</description>
 		<author url="https://docs.google.com/document/d/1eC8tEMHnupOuaX6At1X8JORz5iarNe6I-A7j2QzScrE/edit?tab=t.0">JJK</author>
-		<update version="6.0.12">
+		<update version="6.0.13">
 			<file name="class-heavenlyrestriction.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/heavenlyrestriction/class-heavenlyrestriction.xml" />
 		</update>
 	</info>
@@ -790,7 +790,7 @@
             <p>When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.</p>
         </description>
         <sheet>
-            <description>When you engage in two-weapon fighting, you can add your {{heavenly:restriction:twf}} to the damage of the second attack.</description>
+            <description>When you engage in two-weapon fighting, you can add your {{heavenly:restriction:two}} to the damage of the second attack.</description>
         </sheet>
         <rules>
             <stat name="heavenly:restriction:two" value="ability modifier" inline="true" />
