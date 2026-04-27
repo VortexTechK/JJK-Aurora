@@ -4,7 +4,7 @@
 		<name>JJK</name>
 		<description>JJK Homebrew.</description>
 		<author url="https://docs.google.com/document/d/1eC8tEMHnupOuaX6At1X8JORz5iarNe6I-A7j2QzScrE/edit?tab=t.0">JJK</author>
-		<update version="6.0.10">
+		<update version="6.0.11">
 			<file name="jjk.index" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/jjk.index" />
 		</update>
 	</info>
@@ -14,8 +14,11 @@
 		<file name="jjk-itemfeatures.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/jjk-itemfeatures.xml" />
 
 		<!-- feats -->
-		<file name="cursedenergy-feats.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/cursedenergy-feats.xml" />
 		<file name="barrier-feats.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/barrier-feats.xml" />
+		<file name="cursedenergy-feats.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/cursedenergy-feats.xml" />
+		<file name="physical-feats.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/physical-feats.xml" />
+		<file name="rct-feats.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/rct-feats.xml" />
+		<file name="feats-feats.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/skill-feats.xml" />
 
 		<!-- backgrounds -->
 		<file name="background-clansorcerer.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/backgrounds/background-clansorcerer.xml" />
