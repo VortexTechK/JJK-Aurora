@@ -4,28 +4,26 @@
 		<name>Cursed Energy Feats</name>
 		<description>Cursed Energy Feats from JJK.</description>
 		<author url="https://docs.google.com/document/d/1eC8tEMHnupOuaX6At1X8JORz5iarNe6I-A7j2QzScrE/edit?tab=t.0">JJK</author>
-		<update version="6.0.2">
+		<update version="6.0.3">
 			<file name="cursedenergy-feats.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/cursedenergy-feats.xml" />
 		</update>
 	</info>
-	<element name="Curse Enhanced Body" type="Feat" source="JJK" id="ID_JJK_FEAT_CURSE_ENHANCED_BODY">
-    	<prerequisite>18+ Cursed Energy Score</prerequisite>
-		<requirements>[cu:stat:18]</requirements>
+
+    <element name="Bottomless Cursed Energy" type="Feat" source="JJK" id="ID_JJK_FEAT_BOTTOMLESS_CURSED_ENERGY">
+    	<prerequisite>20+ Cursed Energy Score and a Breakthrough</prerequisite>
+		<requirements>[cu:stat:20],[breakthrough:points:1]</requirements>
 		<supports>Cursed Energy Feats</supports>
       	<description>
-        	<p><em>Prerequisite: 18+ Cursed Energy Score</em></p>
-			<p>You can enhance your body with Cursed energy. While not wearing armor, you add your Cursed Energy modifier to your AC. This becomes half your modifier (rounded up) if you have a feature such as Unarmored Defense. Additionally, you can use your Cursed Energy modifier for unarmed strikes in place of Strength or Dexterity. As a reaction you can spend cursed energy up to your Cursed Energy modifier and gain a bonus to a physical saving throw equal to the cursed energy spent. If you have Reverse Cursed Technique, you can also use this feature for mental saving throws.</p>
-	  	</description>
+        	<p><em>Prerequisite: 20+ Cursed Energy Score and a Breakthrough</em></p>
+			<p>You have touched both the core of Cursed Energy and the hidden Cursed Energy within you. Your Cursed Energy maximum increases by an amount equal to twice your level when you gain this feat. Whenever you gain a level, your Cursed Energy maximum increases by 2 Cursed Energy.</p>
+		</description>
 		<sheet>
-			<description>While not wearing armor, your AC increases by {{f:ceb}}. This becomes {{f:cebh}} if you have a feature such as Unarmored Defense. Additionally, you can use your Cursed Energy modifier for unarmed strikes in place of Strength or Dexterity. As a reaction you can spend up to {{f:ceb}} CE and gain a bonus to a physical saving throw equal to the cursed energy spent. If you have Reverse Cursed Technique, you can also use this feature for mental saving throws</description>
+            <description>Your CE maximum increases by {{bottomless:ce}}.</description>
 		</sheet>
 		<rules>
-			<stat name="f:cebh" value="charisma:modifier:half:up" bonus="base"/>
-			<stat name="f:cebh" value="wisdom:modifier:half:up" bonus="base"/>
-			<stat name="f:ceb" value="charisma:modifier" bonus="base"/>
-			<stat name="f:ceb" value="wisdom:modifier" bonus="base"/>
-			<stat name="ac:misc" value="f:cebh" equipped="[armor:none]" requirements="ID_JJK_CLASS_FEATURE_JUGGERNAUT_UNARMORED_DEFENSE||ID_JJK_CLASS_FEATURE_WARRIOR_UNARMORED_DEFENSE"/>
-			<stat name="ac:misc" value="f:ceb" equipped="[armor:none]" requirements="!(ID_JJK_CLASS_FEATURE_JUGGERNAUT_UNARMORED_DEFENSE||ID_JJK_CLASS_FEATURE_WARRIOR_UNARMORED_DEFENSE)"/>
+			<stat name="bottomless:ce" value="level" />
+			<stat name="bottomless:ce" value="level" />
+            <stat name="ce:points:total" value="bottomless:ce" />
 		</rules>
 	</element>
 	
@@ -41,11 +39,514 @@
 				<li>Your CE maximum increases by your Cursed Energy modifier.</li>
 			</ul>
 		</description>
-		<sheet display="false">
-		</sheet>
+		<sheet display="false"/>
 		<rules>
 			<stat name="cu:stat" value="1" />
       		<stat name="ce:points:total" value="ce:modifier" />
 		</rules>
+	</element>
+
+    <element name="Malevolent Cursed Energy" type="Feat" source="JJK" id="ID_JJK_FEAT_MALEVOLENT_CURSED_ENERGY">
+    	<prerequisite>20+ Cursed Energy Score</prerequisite>
+		<requirements>[cu:stat:20]</requirements>
+		<supports>Cursed Energy Feats</supports>
+      	<description>
+        	<p><em>Prerequisite: 20+ Cursed Energy Score</em></p>
+			<p>Your soul is rotten, and your cursed energy shows that. As an action, you release your cursed energy and creatures within 100 ft must make a Wisdom saving throw against your cursed energy DC. On a success, they can feel your cruelty but are not shaken by it. On failure, they are frightened and receive one of the following detriments for 1 minute:</p>
+			<ul>
+				<li>They hesitate to act due to your suffocating presence, their ability checks, saving throws, and attack rolls are reduced by your Cursed Energy modifier.</li>
+				<li>Your power makes them become paralyzed in fear, they have disadvantage on your saving throws.</li>
+                <li>If the creature's CR or level is equal to or higher than your level, they make this saving throw with advantage. If the creature's CR or level is 3 or more below your level, they make this saving throw with disadvantage.</li>
+			</ul>
+            <p class="indent">A creature can repeat this saving throw at the end of their turn. Once a creature passes this saving throw, it becomes immune to this effect for 24 hours.</p>
+		</description>
+		<sheet action="Action">
+            <description>Creatures within 100 ft must make a Wisdom saving throw against your cursed energy DC. On failure, they are frightened and are given one debuff for 1 minute. 1: Their ability checks, saving throws, and attack rolls are reduced by {{ce:modifier}}. 2: They have disadvantage on your saving throws. 3: If the creature's CR or level is equal to or higher than {{level}}, they make this saving throw with advantage. If the creature's CR or level is 3 or more below {{level}}, they make this saving throw with disadvantage. A creature can repeat this saving throw at the end of their turn. Once a creature passes this saving throw, it becomes immune to this effect for 24 hours.</description>
+		</sheet>
+	</element>
+
+    <element name="Cursed Energy Perception" type="Feat" source="JJK" id="ID_JJK_FEAT_CURSED_ENERGY_PERCEPTION">
+    	<prerequisite>Must have proficiency in Perception</prerequisite>
+		<requirements>ID_PROFICIENCY_SKILL_PERCEPTION</requirements>
+		<supports>Cursed Energy Feats</supports>
+      	<description>
+        	<p><em>Prerequisite: Must have proficiency in Perception</em></p>
+			<p>You have learned how to track down remains of cursed energy. You gain Expertise in Perception if you don't already. You also gain a +5 bonus to checks relating to sensing Cursed Energy and can sense cursed energy from 90 ft away.</p>
+		</description>
+		<sheet>
+            <description>You gain a +5 bonus to checks relating to sensing Cursed Energy and can sense cursed energy from 90 ft away.</description>
+		</sheet>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_PERCEPTION_DOUBLE" />
+        </rules>
+	</element>
+
+    <element name="Cursed Enhancement" type="Feat" source="JJK" id="ID_JJK_FEAT_CURSED_ENHANCEMENT">
+    	<prerequisite>N/A</prerequisite>
+		<supports>Cursed Energy Feats</supports>
+      	<description>
+        	<p><em>Prerequisite: N/A</em></p>
+			<p>As a bonus action while touching a weapon, you can spend cursed energy up to half your proficiency bonus (rounded down) to enhance that weapon. The weapon gains a +1 bonus to attack and damage rolls for every cursed energy spent (to a maximum of +3) for 1 hour. This does not stack with a weapon's bonus if it already has a bonus to attack and damage rolls.</p>
+		</description>
+		<sheet action="Bonus Action">
+            <description>While touching a weapon, you can spend up to {{proficiency:half}} CE to give it a +1 bonus to attack and damage rolls for every cursed energy spent (to a maximum of +3) for 1 hour. This does not stack with a weapon's bonus if it already has a bonus to attack and damage rolls.</description>
+		</sheet>
+	</element>
+
+    <element name="Cursed Imbuement" type="Feat" source="JJK" id="ID_JJK_FEAT_CURSED_IMBUEMENT">
+    	<prerequisite>N/A</prerequisite>
+		<supports>Cursed Energy Feats</supports>
+      	<description>
+        	<p><em>Prerequisite: N/A</em></p>
+			<p>When attacking with unarmed strikes or a weapon you are proficient with, you can use your Cursed Energy modifier instead of Strength or Dexterity for your attack and damage rolls. However, on a roll of natural one for an attack roll, you must make a Cursed Energy check against your Cursed Energy DC, or shatter the weapon as you overcharge it or take 1 necrotic damage if using unarmed strikes.</p>
+            <p class="indent">Additionally, you can spend 1 cursed energy to imbue it into an object for 1 minute, causing it to deal necrotic damage for the duration.</p>
+		</description>
+		<sheet>
+            <description>When attacking with unarmed strikes or a weapon you are proficient with, you can use your CE modifier instead of Strength or Dexterity for your attack and damage rolls. However, on a roll of natural one for an attack roll, you must make a Cursed Energy check against your Cursed Energy DC, or shatter the weapon or take 1 necrotic damage if using unarmed strikes. You can spend 1 CE to deal necrotic damage with a weapon for 1 minute.</description>
+		</sheet>
+	</element>
+
+    <element name="Curse Enhanced Body" type="Feat" source="JJK" id="ID_JJK_FEAT_CURSE_ENHANCED_BODY">
+    	<prerequisite>18+ Cursed Energy Score</prerequisite>
+		<requirements>[cu:stat:18]</requirements>
+		<supports>Cursed Energy Feats</supports>
+      	<description>
+        	<p><em>Prerequisite: 18+ Cursed Energy Score</em></p>
+			<p>You can enhance your body with Cursed energy. While not wearing armor, you add your Cursed Energy modifier to your AC. This becomes half your modifier (rounded up) if you have a feature such as Unarmored Defense. Additionally, you can use your Cursed Energy modifier for unarmed strikes in place of Strength or Dexterity. As a reaction you can spend cursed energy up to your Cursed Energy modifier and gain a bonus to a physical saving throw equal to the cursed energy spent. If you have Reverse Cursed Technique, you can also use this feature for mental saving throws.</p>
+	  	</description>
+		<sheet>
+			<description>While not wearing armor, your AC increases by {{f:ceb}}. This becomes {{f:cebh}} if you have a feature such as Unarmored Defense. Additionally, you can use your Cursed Energy modifier for unarmed strikes in place of Strength or Dexterity. As a reaction you can spend up to {{f:ceb}} CE and gain a bonus to a physical saving throw equal to the cursed energy spent. If you have Reverse Cursed Technique, you can also use this feature for mental saving throws.</description>
+		</sheet>
+		<rules>
+			<stat name="f:cebh" value="charisma:modifier:half:up" bonus="base"/>
+			<stat name="f:cebh" value="wisdom:modifier:half:up" bonus="base"/>
+			<stat name="f:ceb" value="charisma:modifier" bonus="base"/>
+			<stat name="f:ceb" value="wisdom:modifier" bonus="base"/>
+			<stat name="ac:misc" value="f:cebh" equipped="[armor:none]" requirements="ID_JJK_CLASS_FEATURE_JUGGERNAUT_UNARMORED_DEFENSE||ID_JJK_CLASS_FEATURE_WARRIOR_UNARMORED_DEFENSE"/>
+			<stat name="ac:misc" value="f:ceb" equipped="[armor:none]" requirements="!(ID_JJK_CLASS_FEATURE_JUGGERNAUT_UNARMORED_DEFENSE||ID_JJK_CLASS_FEATURE_WARRIOR_UNARMORED_DEFENSE)"/>
+		</rules>
+	</element>
+
+    <element name="Cursed Energy Slash" type="Feat" source="JJK" id="ID_JJK_FEAT_CURSED_ENERGY_SLASH">
+    	<prerequisite>Cursed Imbuement or Cursed Enhancement</prerequisite>
+		<requirements>ID_JJK_FEAT_CURSED_ENHANCEMENT||ID_JJK_FEAT_CURSED_IMBUEMENT</requirements>
+		<supports>Cursed Energy Feats</supports>
+      	<description>
+        	<p><em>Prerequisite: Cursed Imbuement or Cursed Enhancement</em></p>
+			<p>As an action while holding a weapon that deals slashing damage, you can spend 5 Cursed Energy to make a huge cursed energy slash. You make all creatures in a 15 ft cone or a 30 ft line make a Dexterity saving throw. On a failed save, a creature takes the weapon's normal damage + additional damage dice equal to a single die of the weapon times your Cursed Energy modifier in necrotic damage. On a success, they take half as much (Eg. Greatsword with a +3 CE modifier would be 2d6 + 3d6 necrotic damage).</p>
+	  	</description>
+		<sheet action="Action" usage="CE">
+			<description>While holding a weapon that deals slashing damage, for spend 5 CE make all creatures in a 15 ft cone or a 30 ft line make a Dexterity saving throw. On a failed save, a creature takes the weapon's normal damage + additional damage dice equal to a single die of the weapon times {{ce:modifier}} in necrotic damage. On a success, they take half as much.</description>
+		</sheet>
+	</element>
+
+    <element name="Improved Cursed Energy Output" type="Feat" source="JJK" id="ID_JJK_FEAT_IMPROVED_CURSED_ENERGY_OUTPUT">
+    	<prerequisite>18+ Cursed Energy Score</prerequisite>
+		<requirements>[cu:stat:18]</requirements>
+		<supports>Cursed Energy Feats</supports>
+      	<description>
+        	<p><em>Prerequisite: 18+ Cursed Energy Score</em></p>
+			<p>As opposed to simply forcing cursed energy into use for your abilities, you have become far more efficient in their output resulting in a dramatic boost in power.</p>
+            <ul>
+                <li>When a feature allows you to spend additional cursed energy, you can spend even more additional cursed energy up to your CE modifier.</li>
+                <li>Once per turn, you can increase the damage of an attack by your cursed energy modifier.</li>
+                <li>You can choose to shield yourself as a reaction, you can reduce damage by three times your Cursed Energy modifier.</li>
+            </ul>
+	  	</description>
+		<sheet>
+			<description>When a feature allows you to spend additional cursed energy, you can spend {{ce:modifier}} more. Once per turn, you can increase the damage of an attack by {{ce:modifier}}. As a reaction, you can reduce damage by {{improved:ce:output:dr}}.</description>
+		</sheet>
+        <rules>
+            <stat name="improved:ce:output:dr" value="ce:modifier" />
+            <stat name="improved:ce:output:dr" value="ce:modifier" />
+            <stat name="improved:ce:output:dr" value="ce:modifier" />
+        </rules>
+	</element>
+
+	<element name="Cursed Energy Trait" type="Feat" source="JJK" id="ID_JJK_FEAT_CURSED_ENERGY_TRAIT">
+    	<prerequisite>1st level</prerequisite>
+		<requirements>[level:1]</requirements>
+		<supports>Cursed Energy Feats</supports>
+      	<description>
+        	<p><em>Prerequisite: 1st level</em></p>
+			<p>Your cursed energy has taken an individual form affecting people differently. </p>
+            <p class="indent"><strong>Rough.</strong> You gain a +1 bonus to your attack rolls and +2 bonus to damage rolls when using your cursed energy (such as cursed strike).</p>
+            <p class="indent"><strong>Smooth.</strong> You gain a +1 bonus to AC and your walking speed increases by 5 ft. As a reaction to an attack, you can spend 1 CE to gain a bonus to your AC equal to your Cursed Energy modifier, potentially causing the attack to miss.</p>
+            <p class="indent"><strong>Elemental.</strong> Pick a damage type other than radiant or necrotic, when a feature uses your raw cursed energy to deal damage, you can choose to deal that damage type instead, dealing additional damage of that type equal to your proficiency bonus.</p>
+	  	</description>
+		<sheet display="false"/>
+        <rules>
+            <select type="Feat" name="Cursed Energy Trait" supports="Cursed Energy Trait" />
+        </rules>
+	</element>
+
+	<element name="Rough" type="Feat" source="JJK" id="ID_JJK_FEAT_CE_TRAIT_ROUGH">
+		<supports>Cursed Energy Trait</supports>
+		<description>
+			<p>You gain a +1 bonus to your attack rolls and +2 bonus to damage rolls when using your cursed energy (such as cursed strike).</p>
+		</description>
+		<sheet>
+			<description>You gain a +1 bonus to your attack rolls and +2 bonus to damage rolls when using your CE.</description>
+		</sheet>
+	</element>
+
+	<element name="Smooth" type="Feat" source="JJK" id="ID_JJK_FEAT_CE_TRAIT_SMOOTH">
+		<supports>Cursed Energy Trait</supports>
+		<description>
+			<p>You gain a +1 bonus to AC and your walking speed increases by 5 ft. As a reaction to an attack, you can spend 1 CE to gain a bonus to your AC equal to your Cursed Energy modifier, potentially causing the attack to miss.</p>
+		</description>
+		<sheet action="Reaction" usage="CE">
+			<description>As a reaction to an attack for 1 CE gain +{{ce:modifier}} to your AC.</description>
+		</sheet>
+		<rules>
+			<stat name="ac:misc" value="1" />
+			<stat name="speed" value="5" />
+		</rules>
+	</element>
+
+	<element name="Elemental" type="Feat" source="JJK" id="ID_JJK_FEAT_CE_TRAIT_ELEMENTAL">
+		<supports>Cursed Energy Trait</supports>
+		<description>
+			<p>Pick a damage type other than radiant or necrotic, when a feature uses your raw cursed energy to deal damage, you can choose to deal that damage type instead, dealing additional damage of that type equal to your proficiency bonus.</p>
+		</description>
+		<sheet>
+			<description>When a feature uses your raw cursed energy to deal damage, you can choose to deal your chosen damage type instead plus {{proficiency}} additional damage.</description>
+		</sheet>
+		<rules>
+			<select type="Feat" name="Elemental Cursed Energy" supports="Elemental Cursed Energy" />
+		</rules>
+	</element>
+
+	<element name="Acid" type="Feat" source="JJK" id="ID_JJK_FEAT_ELEMENTAL_ACID">
+		<supports>Elemental Cursed Energy</supports>
+	</element>
+
+	<element name="Bludgeoning" type="Feat" source="JJK" id="ID_JJK_FEAT_ELEMENTAL_BLUDGEONING">
+		<supports>Elemental Cursed Energy</supports>
+	</element>
+
+	<element name="Cold" type="Feat" source="JJK" id="ID_JJK_FEAT_ELEMENTAL_COLD">
+		<supports>Elemental Cursed Energy</supports>
+	</element>
+
+	<element name="Fire" type="Feat" source="JJK" id="ID_JJK_FEAT_ELEMENTAL_FIRE">
+		<supports>Elemental Cursed Energy</supports>
+	</element>
+
+	<element name="Force" type="Feat" source="JJK" id="ID_JJK_FEAT_ELEMENTAL_FORCE">
+		<supports>Elemental Cursed Energy</supports>
+	</element>
+
+	<element name="Lightning" type="Feat" source="JJK" id="ID_JJK_FEAT_ELEMENTAL_LIGHTNING">
+		<supports>Elemental Cursed Energy</supports>
+	</element>
+
+	<element name="Piercing" type="Feat" source="JJK" id="ID_JJK_FEAT_ELEMENTAL_PIERCING">
+		<supports>Elemental Cursed Energy</supports>
+	</element>
+
+	<element name="Poison" type="Feat" source="JJK" id="ID_JJK_FEAT_ELEMENTAL_POISON">
+		<supports>Elemental Cursed Energy</supports>
+	</element>
+
+	<element name="Psychic" type="Feat" source="JJK" id="ID_JJK_FEAT_ELEMENTAL_PSYCHIC">
+		<supports>Elemental Cursed Energy</supports>
+	</element>
+
+	<element name="Slashing" type="Feat" source="JJK" id="ID_JJK_FEAT_ELEMENTAL_SLASHING">
+		<supports>Elemental Cursed Energy</supports>
+	</element>
+
+	<element name="Thunder" type="Feat" source="JJK" id="ID_JJK_FEAT_ELEMENTAL_THUNDER">
+		<supports>Elemental Cursed Energy</supports>
+	</element>
+
+	<element name="Cursed Energy Trait Mastery" type="Feat" source="JJK" id="ID_JJK_FEAT_CURSED_ENERGY_TRAIT_MASTERY">
+    	<prerequisite>Cursed Energy Trait</prerequisite>
+		<requirements>ID_JJK_FEAT_CURSED_ENERGY_TRAIT</requirements>
+		<supports>Cursed Energy Feats</supports>
+      	<description>
+        	<p><em>Prerequisite: Cursed Energy Trait</em></p>
+			<p>You have mastered the trait peculiar to your energy.</p>
+            <p class="indent"><strong>Rough.</strong> You gain a bonus to damage rolls using raw cursed energy equal to 2 + your CE modifier (such as cursed strike).</p>
+            <p class="indent"><strong>Smooth.</strong> You reduce bludgeoning, slashing, and piercing damage taken by your CE modifier and your walking speed increases by 10 ft. As a reaction to an attack for 1 CE, you gain a bonus to AC equal to twice your CE modifier, potentially causing the attack to miss.</p>
+            <p class="indent"><strong>Elemental.</strong> Once per turn on a hit imbued with raw cursed energy (eg. Cursed Strike) or a creature failing a save against your raw cursed energy (eg. Cursed Energy Slash), they suffer an additional effect of your trait. These effects stack up to your proficiency bonus and last a number of turns equal to your CE modifier: </p>
+			<ul>
+				<li>Acid, reduces the target's AC by 1</li>
+				<li>Bludgeoning, ignores resistance to bludgeoning</li>
+				<li>Cold, reduces movement by 10 ft</li>
+				<li>Fire, target takes an extra 2 fire damage from your cursed energy</li>
+				<li>Force, the target is knocked back 10 ft</li>
+				<li>Lightning, the target cannot take reactions</li>
+				<li>Piercing, ignores resistance to piercing</li>
+				<li>Poison, the target gains the Poisoned condition</li>
+				<li>Psychic, the target gains the frightened condition</li>
+				<li>Slashing, ignores resistance to slashing</li>
+				<li>Thunder, the target is knocked Prone and Deafened </li>
+			</ul>
+	  	</description>
+		<sheet display="false"/>
+        <rules>
+            <grant type="Feat" id="ID_JJK_FEAT_CE_TRAIT_MASTERY_ROUGH" requiremens="ID_JJK_FEAT_CE_TRAIT_ROUGH" />
+			<grant type="Feat" id="ID_JJK_FEAT_CE_TRAIT_MASTERY_SMOOTH" requiremens="ID_JJK_FEAT_CE_TRAIT_SMOOTH" />
+            <grant type="Feat" id="ID_JJK_FEAT_CE_TRAIT_MASTERY_ELEMENTAL" requiremens="ID_JJK_FEAT_CE_TRAIT_ELEMENTAL" />
+        </rules>
+	</element>
+
+	<element name="Rough" type="Feat" source="JJK" id="ID_JJK_FEAT_CE_TRAIT_MASTERY_ROUGH">
+		<description>
+			<p>You gain a bonus to damage rolls using raw cursed energy equal to 2 + your CE modifier (such as cursed strike).</p>
+		</description>
+		<sheet alt="">
+			<description>You gain a +{{ce:trait:mastery:bonus}} to damage rolls using raw cursed energy.</description>
+		</sheet>
+		<rules>
+			<stat name="ce:trait:mastery:rough:bonus" value="2" />
+			<stat name="ce:trait:mastery:rough:bonus" value="ce:modifier" />
+		</rules>
+	</element>
+
+	<element name="Smooth" type="Feat" source="JJK" id="ID_JJK_FEAT_CE_TRAIT_MASTERY_SMOOTH">
+		<description>
+			<p>You reduce bludgeoning, slashing, and piercing damage taken by your CE modifier and your walking speed increases by 10 ft. As a reaction to an attack for 1 CE, you gain a bonus to AC equal to twice your CE modifier, potentially causing the attack to miss.</p>
+		</description>
+		<sheet alt="">
+			<description>You reduce bludgeoning, slashing, and piercing damage taken by {{ce:modifier}}. As a reaction to an attack for 1 CE, you gain a +{{ce:trait:mastery:smooth:bonus}} to AC.</description>
+		</sheet>
+		<rules>
+			<stat name="ce:trait:mastery:smooth:bonus" value="ce:modifier" />
+			<stat name="ce:trait:mastery:smooth:bonus" value="ce:modifier" />
+			<stat name="speed" value="10" />
+		</rules>
+	</element>
+
+	<element name="Elemental" type="Feat" source="JJK" id="ID_JJK_FEAT_CE_TRAIT_MASTERY_ELEMENTAL">
+		<description>
+			<p>Once per turn on a hit imbued with raw cursed energy (eg. Cursed Strike) or a creature failing a save against your raw cursed energy (eg. Cursed Energy Slash), they suffer an additional effect of your trait. These effects stack up to your proficiency bonus and last a number of turns equal to your CE modifier: </p>
+			<ul>
+				<li>Acid, reduces the target's AC by 1</li>
+				<li>Bludgeoning, ignores resistance to bludgeoning</li>
+				<li>Cold, reduces movement by 10 ft</li>
+				<li>Fire, target takes an extra 2 fire damage from your cursed energy</li>
+				<li>Force, the target is knocked back 10 ft</li>
+				<li>Lightning, the target cannot take reactions</li>
+				<li>Piercing, ignores resistance to piercing</li>
+				<li>Poison, the target gains the Poisoned condition</li>
+				<li>Psychic, the target gains the frightened condition</li>
+				<li>Slashing, ignores resistance to slashing</li>
+				<li>Thunder, the target is knocked Prone and Deafened </li>
+			</ul>
+		</description>
+		<sheet alt="">
+			<description>Once per turn on a hit imbued with raw cursed energy or a creature failing a save against your raw cursed energy, they suffer an additional effect stacking up {{proficiency}} times that lasts {{ce:modifier}} turns.</description>
+		</sheet>
+		<rules>
+			<grant type="Feat" id="ID_JJK_FEAT_CE_TRAIT_MASTERY_ELEMENTAL_ACID" requirements="ID_JJK_FEAT_ELEMENTAL_ACID" />
+			<grant type="Feat" id="ID_JJK_FEAT_CE_TRAIT_MASTERY_ELEMENTAL_BLUDGEONING" requirements="ID_JJK_FEAT_ELEMENTAL_BLUDGEONING" />
+			<grant type="Feat" id="ID_JJK_FEAT_CE_TRAIT_MASTERY_ELEMENTAL_COLD" requirements="ID_JJK_FEAT_ELEMENTAL_COLD" />
+			<grant type="Feat" id="ID_JJK_FEAT_CE_TRAIT_MASTERY_ELEMENTAL_FIRE" requirements="ID_JJK_FEAT_ELEMENTAL_FIRE" />
+			<grant type="Feat" id="ID_JJK_FEAT_CE_TRAIT_MASTERY_ELEMENTAL_FORCE" requirements="ID_JJK_FEAT_ELEMENTAL_FORCE" />
+			<grant type="Feat" id="ID_JJK_FEAT_CE_TRAIT_MASTERY_ELEMENTAL_LIGHTNING" requirements="ID_JJK_FEAT_ELEMENTAL_LIGHTNING" />
+			<grant type="Feat" id="ID_JJK_FEAT_CE_TRAIT_MASTERY_ELEMENTAL_PIERCING" requirements="ID_JJK_FEAT_ELEMENTAL_PIERCING" />
+			<grant type="Feat" id="ID_JJK_FEAT_CE_TRAIT_MASTERY_ELEMENTAL_POISON" requirements="ID_JJK_FEAT_ELEMENTAL_POISON" />
+			<grant type="Feat" id="ID_JJK_FEAT_CE_TRAIT_MASTERY_ELEMENTAL_PSYCHIC" requirements="ID_JJK_FEAT_ELEMENTAL_PSYCHIC" />
+			<grant type="Feat" id="ID_JJK_FEAT_CE_TRAIT_MASTERY_ELEMENTAL_SLASHING" requirements="ID_JJK_FEAT_ELEMENTAL_SLASHING" />
+			<grant type="Feat" id="ID_JJK_FEAT_CE_TRAIT_MASTERY_ELEMENTAL_THUNDER" requirements="ID_JJK_FEAT_ELEMENTAL_THUNDER" />
+		</rules>
+	</element>
+
+	<element name="Acid" type="Feat" source="JJK" id="ID_JJK_FEAT_CE_TRAIT_MASTERY_ELEMENTAL_ACID">
+		<description>
+			<p>Reduces the target's AC by 1</p>
+		</description>
+		<sheet alt="">
+			<description>Reduces the target's AC by 1.</description>
+		</sheet>
+	</element>
+
+	<element name="Bludgeoning" type="Feat" source="JJK" id="ID_JJK_FEAT_CE_TRAIT_MASTERY_ELEMENTAL_BLUDGEONING">
+		<description>
+			<p>Ignores resistance to bludgeoning</p>
+		</description>
+		<sheet alt="">
+			<description>Ignores resistance to bludgeoning.</description>
+		</sheet>
+	</element>
+
+	<element name="Cold" type="Feat" source="JJK" id="ID_JJK_FEAT_CE_TRAIT_MASTERY_ELEMENTAL_COLD">
+		<description>
+			<p>Reduces movement by 10 ft</p>
+		</description>
+		<sheet alt="">
+			<description>Reduces movement by 10 ft.</description>
+		</sheet>
+	</element>
+
+	<element name="Fire" type="Feat" source="JJK" id="ID_JJK_FEAT_CE_TRAIT_MASTERY_ELEMENTAL_FIRE">
+		<description>
+			<p>Target takes an extra 2 fire damage from your cursed energy</p>
+		</description>
+		<sheet alt="">
+			<description>Target takes an extra 2 fire damage from your cursed energy.</description>
+		</sheet>
+	</element>
+
+	<element name="Force" type="Feat" source="JJK" id="ID_JJK_FEAT_CE_TRAIT_MASTERY_ELEMENTAL_FORCE">
+		<description>
+			<p>The target is knocked back 10 ft</p>
+		</description>
+		<sheet alt="">
+			<description>The target is knocked back 10 ft.</description>
+		</sheet>
+	</element>
+
+	<element name="Lightning" type="Feat" source="JJK" id="ID_JJK_FEAT_CE_TRAIT_MASTERY_ELEMENTAL_LIGHTNING">
+		<description>
+			<p>The target cannot take reactions</p>
+		</description>
+		<sheet alt="">
+			<description>The target cannot take reactions.</description>
+		</sheet>
+	</element>
+
+	<element name="Piercing" type="Feat" source="JJK" id="ID_JJK_FEAT_CE_TRAIT_MASTERY_ELEMENTAL_PIERCING">
+		<description>
+			<p>Ignores resistance to piercing</p>
+		</description>
+		<sheet alt="">
+			<description>Ignores resistance to piercing.</description>
+		</sheet>
+	</element>
+
+	<element name="Poison" type="Feat" source="JJK" id="ID_JJK_FEAT_CE_TRAIT_MASTERY_ELEMENTAL_POISON">
+		<description>
+			<p>The target gains the Poisoned condition</p>
+		</description>
+		<sheet alt="">
+			<description>The target gains the Poisoned condition.</description>
+		</sheet>
+	</element>
+
+	<element name="Psychic" type="Feat" source="JJK" id="ID_JJK_FEAT_CE_TRAIT_MASTERY_ELEMENTAL_PSYCHIC">
+		<description>
+			<p>The target gains the frightened condition</p>
+		</description>
+		<sheet alt="">
+			<description>The target gains the frightened condition.</description>
+		</sheet>
+	</element>
+
+	<element name="Slashing" type="Feat" source="JJK" id="ID_JJK_FEAT_CE_TRAIT_MASTERY_ELEMENTAL_SLASHING">
+		<description>
+			<p>Ignores resistance to slashing</p>
+		</description>
+		<sheet alt="">
+			<description>Ignores resistance to slashing.</description>
+		</sheet>
+	</element>
+
+	<element name="Thunder" type="Feat" source="JJK" id="ID_JJK_FEAT_CE_TRAIT_MASTERY_ELEMENTAL_THUNDER">
+		<description>
+			<p>The target is knocked Prone and Deafened </p>
+		</description>
+		<sheet alt="">
+			<description>The target is knocked Prone and Deafened.</description>
+		</sheet>
+	</element>
+
+	<element name="Cursed Projectiles" type="Feat" source="JJK" id="ID_JJK_FEAT_CURSED_PROJECTILES">
+    	<prerequisite>Proficiency in a Ranged or Thrown weapon</prerequisite>
+		<requirements>ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_RANGED_WEAPONS||ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_RANGED_WEAPONS</requirements>
+		<supports>Cursed Energy Feats</supports>
+      	<description>
+        	<p><em>Prerequisite: Proficiency in a Ranged or Thrown weapon</em></p>
+			<p>You have learned to imbue your cursed energy into projectiles such as arrows, bolts or any other type of ammunition or weapon with the thrown property. As an action, you can imbue a number of projectiles up to your Cursed Energy modifier, turning them into Cursed Projectiles until you finish a long rest. When using Cursed Projectiles, you make ranged Cursed Energy attacks instead of what you would normally use to attack with them, and you control their trajectory while in the air, making it so that attacks with them ignore half and three quarters cover.</p>
+            <p class="indent">Additionally, on a miss they will stay in the air floating for a number of rounds equal to your Cursed Energy modifier, allowing you to keep making attacks with them even after being shot or thrown until they hit a solid object or target. You can use a bonus action to cause each active Cursed Projectile to make another ranged Cursed Energy attack against a creature within 60 feet. You can control a number of Cursed Projectiles equal to your Cursed Energy modifier. A creature can attack your Cursed Projectiles to destroy them; they have 1 hit point and an AC equal to your Cursed Technique DC.</p>
+	  	</description>
+		<sheet action="Action">
+			<description>Turn up to {{ce:modifier}} projectiles into Cursed Projectiles. When using Cursed Projectiles, you make ranged Cursed Energy attacks instead of what you would normally use to attack with them, and you ignore half and three quarters cover. On a miss they will stay in the air floating for {{ce:modifier}} rounds, allowing you to keep making attacks with them until they hit a solid object or target. You can use a bonus action to cause each active Cursed Projectile to make another ranged Cursed Energy attack against a creature within 60 feet. You can control up to {{ce:modifier}} Cursed Projectiles. A creature can attack your Cursed Projectiles to destroy them; they have 1 hit point and an AC of {{ce:dc:total}}.</description>
+		</sheet>
+	</element>
+
+	<element name="One In A Billion" type="Feat" source="JJK" id="ID_JJK_FEAT_ONE_IN_A_BILLION">
+    	<prerequisite>20+ Cursed Energy Score, 15th level, Breakthrough</prerequisite>
+		<requirements>[cu:stat:20],[level:15],[breakthrough:points:1]</requirements>
+		<supports>Cursed Energy Feats</supports>
+      	<description>
+        	<p><em>Prerequisite: 20+ Cursed Energy Score, 15th level, Breakthrough</em></p>
+			<p>Your cursed energy manipulation is some of the best that the world has ever seen, it must take at least a couple of centuries for another person such as yourself to be born once again. You gain the following benefits:</p>
+			<ul>
+				<li>If a feature deals damage you can reroll all 1s and 2s on damage dice, and once per long rest you can deal maximum damage.</li>
+				<li>Once per long rest, you can choose one feature that requires Cursed Energy. The cost of that feature is lowered to 0, if a feature depends on how much Cursed Energy you spend, it counts as if you used the maximum required. For example, reverse cursed technique would heal 50 with a modifier of +5.</li>
+			</ul>
+		</description>
+		<sheet>
+            <description>If a feature deals damage you can reroll all 1s and 2s on damage dice, and once per long rest you can deal maximum damage. Once per long rest, you can choose one feature that requires Cursed Energy. The cost of that feature is lowered to 0, if a feature depends on how much Cursed Energy you spend, it counts as if you used the maximum required.</description>
+		</sheet>
+	</element>
+
+	<element name="Pact Maker" type="Feat" source="JJK" id="ID_JJK_FEAT_PACT_MAKER">
+    	<prerequisite>N/A</prerequisite>
+		<supports>Cursed Energy Feats</supports>
+      	<description>
+        	<p><em>Prerequisite: N/A</em></p>
+			<p>You have specialized in the intricacies of binding vows, causing you to understand their innate workings. You can now make a number of binding vows equal to twice your proficiency bonus.</p>
+		</description>
+		<sheet>
+            <description>You can make up to {{pact:maker:vows}} binding vows.</description>
+		</sheet>
+		<rules>
+			<stat name="pact:maker:vows" value="proficiency" />
+			<stat name="pact:maker:vows" value="proficiency" />
+		</rules>
+	</element>
+
+	<element name="Chanting" type="Feat" source="JJK" id="ID_JJK_FEAT_CHANTING">
+    	<prerequisite>12th level</prerequisite>
+		<requirements>[level:12]</requirements>
+		<supports>Cursed Energy Feats</supports>
+      	<description>
+        	<p><em>Prerequisite: 12th level</em></p>
+			<p>You can set a recitation of chanting for one of your innate technique features. You recite your chant as a full turn action and must concentrate until the technique is released. If you lose concentration, the cursed energy spent on the technique is wasted. When you use the technique on your next turn after reciting your chant, it will be given the following boost:</p>
+			<ul>
+				<li>Your technique will ignore resistances and treat immunities as resistance.</li>
+				<li>If your Innate Technique feature is an attack, it gains advantage on the attack roll. If it instead requires a saving throw, the target(s) make their saves at disadvantage.</li>
+				<li>Your Technique feature deals double the damage dice.</li>
+			</ul>
+			<p class="indent">If your Innate Technique does not directly deal damage, you can choose the following options:</p>
+			<ul>
+				<li>The technique's range doubles.</li>
+				<li>The technique can target an additional number of creatures equal to your Cursed Energy modifier.</li>
+				<li>You can double the duration of the Innate Technique feature.</li>
+			</ul>
+			<p class="indent">If your Innate Technique feature that benefits from Chanting requires more than one attack roll or save to be made, only the first gains the benefits of Chanting. You cannot use Maximum Output or Domain Expansion while Chanting.</p>
+		</description>
+		<sheet action="Action + Bonus Action + Movement">
+            <description>You can recite a chant for a innate technique feature and must concentrate until its release. If you lose concentration, the CE spent on the technique is wasted. On the next turn the technique ignores resistances and treats immunities as resistance, gains advantage on an attack roll or forces targets to have disadvantage on saving throws, and deals double the damage dice. If it does not directly deal damage, you can choose for its range to be doubled, target {{ce:modifier}} additional creatures, or have its duration doubled. If the technique requires more than one attack roll or save to be made, only the first gains the benefits of Chanting. You cannot use Maximum Output or Domain Expansion while Chanting.</description>
+		</sheet>
+	</element>
+
+	<element name="Blessed by Black Sparks" type="Feat" source="JJK" id="ID_JJK_FEAT_BLESSED_BY_BLACK_SPARKS">
+    	<prerequisite>N/A</prerequisite>
+		<supports>Cursed Energy Feats</supports>
+      	<description>
+        	<p><em>Prerequisite: N/A</em></p>
+			<p>The sparks of black have chosen you to receive their blessings. You gain a +3 bonus to your Black Flash range.</p>
+		</description>
+		<sheet>
+            <description>You gain a +3 bonus to your Black Flash range.</description>
+		</sheet>
+	</element>
+
+	<element name="Shikigami Specialist" type="Feat" source="JJK" id="ID_JJK_FEAT_SHIKIGAMI_SPECIALIST">
+    	<prerequisite>Must be able to summon shikigami</prerequisite>
+		<supports>Cursed Energy Feats</supports>
+      	<description>
+        	<p><em>Prerequisite: Must be able to summon shikigami</em></p>
+			<p>You have specialized in shikigami and made it your life. Choose one type of shikigami you can summon to be your special. You have a number of Ability points equal to twice your proficiency bonus that you can use to increase the ability score of that shikigami (up to a max of 20). Additionally, you can command any of your shikigami as a free action on your turn. If you have multiple shikigami, you can swap your special shikigami as part of a long rest.</p>
+		</description>
+		<sheet>
+            <description>Your special shikigami gains {{proficiency}} ability points and can be commanded as a free action. If you have multiple shikigami, you can swap your special shikigami as part of a long rest.</description>
+		</sheet>
 	</element>
 </elements>
