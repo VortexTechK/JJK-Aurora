@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Reverse Cursed Technique Feats</name>
+		<description>Reverse Cursed Technique Feats from JJK.</description>
+		<author url="https://docs.google.com/document/d/1eC8tEMHnupOuaX6At1X8JORz5iarNe6I-A7j2QzScrE/edit?tab=t.0">JJK</author>
+		<update version="6.0.0">
+			<file name="rct-feats.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/rct-feats.xml" />
+		</update>
+	</info>
+
+    <!-- Do Reversals Later --> 
+    <element name="Cursed Technique Reversal" type="Feat" source="JJK" id="ID_JJK_FEAT_CURSED_TECHNIQUE_REVERSAL">
+    	<prerequisite>Must have Reverse Cursed Technique</prerequisite>
+		<requirements>ID_JJK_CLASS_FEATURE_REVERSE_CURSE_TECHNIQUE</requirements>
+		<supports>Reverse Cursed Technique Feats</supports>
+      	<description>
+        	<p><em>Prerequisite: Must have Reverse Cursed Technique</em></p>
+			<p>You have learned to feed your cursed techniques with reverse cursed energy instead of normal. This leads your technique to have the opposite of its normal effect. Turning debuffing into buffing and inverting damage types, resulting in a Reversal.</p>
+		</description>
+		<sheet display="false"/>
+	</element>
+
+    <element name="Reverse Cursed Technique Output" type="Feat" source="JJK" id="ID_JJK_FEAT_REVERSE_CURSED_TECHNIQUE_OUTPUT">
+    	<prerequisite>Must have Reverse Cursed Technique</prerequisite>
+		<requirements>ID_JJK_CLASS_FEATURE_REVERSE_CURSE_TECHNIQUE</requirements>
+		<supports>Reverse Cursed Technique Feats</supports>
+      	<description>
+        	<p><em>Prerequisite: Must have Reverse Cursed Technique</em></p>
+			<p>You have learned to offensively use reverse curse technique, whenever you deal damage to a Monstrosity, Undead, or Cursed Spirit with an unarmed strike or melee weapon, you can spend cursed energy to remove hit points from your healing pool adding them as radiant damage.</p>
+		</description>
+		<sheet>
+            <description>When you deal damage to a Monstrosity, Undead, or Cursed Spirit with an unarmed strike or melee weapon, you can spend CE to remove hit points from your healing pool adding them as radiant damage.</description>
+        </sheet>
+	</element>
+
+    <element name="Reverse Technique Prodigy" type="Feat" source="JJK" id="ID_JJK_FEAT_REVERSE_TECHNIQUE_PRODIGY">
+    	<prerequisite>Must have Reverse Cursed Technique</prerequisite>
+		<requirements>ID_JJK_CLASS_FEATURE_REVERSE_CURSE_TECHNIQUE</requirements>
+		<supports>Reverse Cursed Technique Feats</supports>
+      	<description>
+        	<p><em>Prerequisite: Must have Reverse Cursed Technique</em></p>
+			<p>You have reached new heights with this new type of energy, becoming an unheard prodigy. You can cause a creature you touch to gain the benefits of reverse cursed technique instead of you and can use reverse cursed technique once per turn as a free action.</p>
+		</description>
+		<sheet>
+            <description>You can cause a creature you touch to gain the benefits of reverse cursed technique instead of you and can use reverse cursed technique once per turn as a free action.</description>
+        </sheet>
+	</element>
+</elements>

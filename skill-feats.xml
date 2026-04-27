@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Skill Feats</name>
+		<description>Skill Feats from JJK.</description>
+		<author url="https://docs.google.com/document/d/1eC8tEMHnupOuaX6At1X8JORz5iarNe6I-A7j2QzScrE/edit?tab=t.0">JJK</author>
+		<update version="6.0.0">
+			<file name="skill-feats.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/skill-feats.xml" />
+		</update>
+	</info>
+
+    <element name="2000 IQ" type="Feat" source="JJK" id="ID_JJK_FEAT_2000_IQ">
+    	<prerequisite>Proficiency in Arcana</prerequisite>
+		<requirements>ID_PROFICIENCY_SKILL_ARCANA</requirements>
+		<supports>Skill Feats</supports>
+      	<description>
+        	<p><em>Prerequisite: Proficiency in Arcana</em></p>
+			<p>You can make an Intelligence (Arcana) check as a bonus action while viewing a technique in play to understand how it works. The DC is equal to the user's Cursed Energy save DC. </p>
+            <p class="indent">When making this check, treat your Intelligence score as a 22. If you instead spend a full turn action (Action + Bonus Action + Movement) attempting to understand a technique, you have advantage on the check.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>Make an Arcana check to understand how a technique works. The DC is equal to the user's Cursed Energy save DC. When making this check, treat your Intelligence score as a 22. If you instead spend a full turn action you have advantage on the check. </description>
+		</sheet>
+	</element>
+
+    <append id="ID_PHB_FEAT_ACTOR">
+        <supports>Skill Feats</supports>
+    </append>
+
+    <append id="ID_PHB_FEAT_ALERT">
+        <supports>Skill Feats</supports>
+    </append>
+
+    <append id="ID_WOTC_TCOE_FEAT_CHEF">
+        <supports>Skill Feats</supports>
+    </append>
+
+    <append id="ID_PHB_FEAT_ELEMENTAL_ADEPT">
+        <supports>Skill Feats</supports>
+    </append>
+
+    <append id="ID_WOTC_TCOE_FEAT_GUNNER">
+        <supports>Skill Feats</supports>
+    </append>
+
+    <append id="ID_PHB_FEAT_HEALER">
+        <supports>Skill Feats</supports>
+    </append>
+
+    <append id="ID_PHB_FEAT_INSPIRINGLEADER">
+        <supports>Skill Feats</supports>
+    </append>
+
+    <append id="ID_PHB_FEAT_KEENMIND">
+        <supports>Skill Feats</supports>
+    </append>
+
+    <append id="ID_PHB_FEAT_LINGUIST">
+        <supports>Skill Feats</supports>
+    </append>
+
+    <append id="ID_PHB_FEAT_MOUNTEDCOMBATANT">
+        <supports>Skill Feats</supports>
+    </append>
+
+    <append id="ID_PHB_FEAT_OBSERVANT">
+        <supports>Skill Feats</supports>
+    </append>
+
+    <append id="ID_WOTC_TCOE_FEAT_POISONER">
+        <supports>Skill Feats</supports>
+    </append>
+
+    <append id="ID_PHB_FEAT_SHARPSHOOTER">
+        <supports>Skill Feats</supports>
+    </append>
+
+    <element name="Sorcerer Killer" type="Feat" source="JJK" id="ID_JJK_FEAT_SORCERER_KILLER">
+    	<prerequisite>N/A</prerequisite>
+		<supports>Skill Feats</supports>
+      	<description>
+        	<p><em>Prerequisite: N/A</em></p>
+			<p>You have practiced techniques in melee combat against sorcerers, gaining the following benefits:</p>
+            <ul>
+                <li>When a creature within 10 feet of you uses Cursed Energy, you can use your reaction to make a melee weapon attack against that creature if they are within range.</li>
+                <li>You have advantage on saving throws against cursed techniques made by creatures within 15 feet of you.</li>
+            </ul>
+		</description>
+		<sheet>
+			<description>When a creature within 10 feet of you uses CE, you can use your reaction to make a melee weapon attack against that creature if they are within range. You have advantage on saving throws against cursed techniques made by creatures within 15 feet of you.</description>
+		</sheet>
+	</element>
+
+    <append id="ID_PHB_FEAT_SENTINEL">
+        <supports>Skill Feats</supports>
+    </append>
+
+    <append id="ID_WOTC_TCOE_FEAT_SKILL_EXPERT">
+        <supports>Skill Feats</supports>
+    </append>
+
+    <append id="ID_PHB_FEAT_SKILLED">
+        <supports>Skill Feats</supports>
+    </append>
+
+    <append id="ID_PHB_FEAT_SKULKER">
+        <supports>Skill Feats</supports>
+    </append>
+
+    <append id="ID_PHB_FEAT_TAVERNBRAWLER">
+        <supports>Skill Feats</supports>
+    </append>
+
+    <element name="Tool Maker" type="Feat" source="JJK" id="ID_JJK_FEAT_TOOL_MAKER">
+    	<prerequisite>16+ Cursed Energy score, Proficiency in Arcana</prerequisite>
+		<requirements>[cu:stat:16],ID_PROFICIENCY_SKILL_ARCANA</requirements>
+		<supports>Skill Feats</supports>
+      	<description>
+        	<p><em>Prerequisite: 16+ Cursed Energy score, Proficiency in Arcana</em></p>
+			<p>You have the unique ability to create cursed tools. The time it takes to make a cursed tool depends on the rarity of the item, and the rarity of item you can make is dependent on your level and you can spend 8 hours per day working on a cursed tool. After creating a cursed tool, you must wait an amount of time equal to its crafting time before working on another cursed tool. The GM decides the cost of any materials.</p>
+            <p class="indent"><strong>Level 1-4:</strong> Fourth Grade (Common), Time: 72 hours</p>
+            <p class="indent"><strong>Level 5-8:</strong> Third Grade (Uncommon), Time: 216 hours</p>
+            <p class="indent"><strong>Level 9-12:</strong> Second Grade (Rare), Time: 648 hours</p>
+            <p class="indent"><strong>Level 13-16:</strong> First Grade (Very Rare), Time: 1944 hours</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can make Fourth Grade cursed tools, spending up to 8 hours per day working on it.</description>
+            <description level="5">You can make Third Grade cursed tools, spending up to 8 hours per day working on it.</description>
+			<description level="9">You can make Second Grade cursed tools, spending up to 8 hours per day working on it.</description>
+			<description level="13">You can make First Grade cursed tools, spending up to 8 hours per day working on it.</description>
+		</sheet>
+	</element>
+
+    <append id="ID_PHB_FEAT_WEAPONMASTER">
+        <supports>Skill Feats</supports>
+    </append>
+
+</elements>

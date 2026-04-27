@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Physical Feats</name>
+		<description>Physical Feats from JJK.</description>
+		<author url="https://docs.google.com/document/d/1eC8tEMHnupOuaX6At1X8JORz5iarNe6I-A7j2QzScrE/edit?tab=t.0">JJK</author>
+		<update version="6.0.0">
+			<file name="physical-feats.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/physical-feats.xml" />
+		</update>
+	</info>
+
+    <append id="ID_PHB_FEAT_ATHLETE">
+        <supports>Physical Feats</supports>
+    </append>
+
+    <append id="ID_PHB_FEAT_CHARGER">
+        <supports>Physical Feats</supports>
+    </append>
+
+    <append id="ID_PHB_FEAT_DEFENSIVE_DUELIST">
+        <supports>Physical Feats</supports>
+    </append>
+
+    <append id="ID_PHB_FEAT_DUALWIELDER">
+        <supports>Physical Feats</supports>
+    </append>
+
+    <append id="ID_PHB_FEAT_DURABLE">
+        <supports>Physical Feats</supports>
+    </append>
+
+    <append id="ID_WOTC_TCOE_FEAT_CRUSHER">
+        <supports>Physical Feats</supports>
+    </append>
+
+    <append id="ID_WOTC_TCOE_FEAT_FIGHTING_INITIATE">
+        <supports>Physical Feats</supports>
+    </append>
+
+    <append id="ID_PHB_FEAT_GRAPPLER">
+        <supports>Physical Feats</supports>
+    </append>
+
+    <append id="ID_PHB_FEAT_GREATWEAPONMASTER">
+        <supports>Physical Feats</supports>
+    </append>
+
+    <append id="ID_PHB_FEAT_HEAVYARMORMASTER">
+        <supports>Physical Feats</supports>
+    </append>
+
+    <append id="ID_PHB_FEAT_LIGHTLYARMORED">
+        <supports>Physical Feats</supports>
+    </append>
+
+    <append id="ID_PHB_FEAT_MARTIALADEPT">
+        <supports>Physical Feats</supports>
+    </append>
+
+    <append id="ID_PHB_FEAT_MEDIUMARMORMASTER">
+        <supports>Physical Feats</supports>
+    </append>
+
+    <append id="ID_PHB_FEAT_MOBILE">
+        <supports>Physical Feats</supports>
+    </append>
+
+    <append id="ID_WOTC_TCOE_FEAT_PIERCER">
+        <supports>Physical Feats</supports>
+    </append>
+
+    <append id="ID_PHB_FEAT_POLEARMMASTER">
+        <supports>Physical Feats</supports>
+    </append>
+
+    <append id="ID_PHB_FEAT_RESILIENT">
+        <supports>Physical Feats</supports>
+    </append>
+
+    <append id="ID_PHB_FEAT_SAVAGEATTACKER">
+        <supports>Physical Feats</supports>
+    </append>
+
+    <append id="ID_PHB_FEAT_SHIELDMASTER">
+        <supports>Physical Feats</supports>
+    </append>
+
+    <append id="ID_WOTC_TCOE_FEAT_SLASHER">
+        <supports>Physical Feats</supports>
+    </append>
+
+    <append id="ID_PHB_FEAT_TAVERNBRAWLER">
+        <supports>Physical Feats</supports>
+    </append>
+
+    <append id="ID_PHB_FEAT_TOUGH">
+        <supports>Physical Feats</supports>
+    </append>
+</elements>
