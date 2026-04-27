@@ -3,6 +3,9 @@ Main Index: [https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads
 
 Link to OG Doc: [https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0]
 
+Discord Username: floccinaucinihilipilification_ex
+(No spam plz, yes I am in the server)
+
 ## Before You Say ANYTHING
 _**READ**_ the google doc before making pull requests; there are a lot of nuances. I don't got infinite time. <br>
 
