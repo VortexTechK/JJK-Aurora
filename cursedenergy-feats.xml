@@ -4,7 +4,7 @@
 		<name>Cursed Energy Feats</name>
 		<description>Cursed Energy Feats from JJK.</description>
 		<author url="https://docs.google.com/document/d/1eC8tEMHnupOuaX6At1X8JORz5iarNe6I-A7j2QzScrE/edit?tab=t.0">JJK</author>
-		<update version="6.0.5">
+		<update version="6.0.6">
 			<file name="cursedenergy-feats.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/cursedenergy-feats.xml" />
 		</update>
 	</info>
@@ -27,7 +27,7 @@
 		</rules>
 	</element>
 	
-	<element name="Immense Cursed Energy" type="Feat" source="JJK" id="ID_JJK_FEAT_IMMENSE_CURSED_ENERGY">
+	<element name="Immense Cursed Energy" type="Feat" source="JJK" id="ID_JJK_FEAT_FEATURE_IMMENSE_CURSED_ENERGY">
     	<prerequisite>15+ Cursed Energy Score</prerequisite>
 		<requirements>[cu:stat:15]</requirements>
 		<supports>Cursed Energy Feats</supports>
@@ -46,7 +46,7 @@
 		</rules>
 	</element>
 
-    <element name="Malevolent Cursed Energy" type="Feat" source="JJK" id="ID_JJK_FEAT_MALEVOLENT_CURSED_ENERGY">
+    <element name="Malevolent Cursed Energy" type="Feat" source="JJK" id="ID_JJK_FEAT_FEATURE_MALEVOLENT_CURSED_ENERGY">
     	<prerequisite>20+ Cursed Energy Score</prerequisite>
 		<requirements>[cu:stat:20]</requirements>
 		<supports>Cursed Energy Feats</supports>
@@ -65,7 +65,7 @@
 		</sheet>
 	</element>
 
-    <element name="Cursed Energy Perception" type="Feat" source="JJK" id="ID_JJK_FEAT_CURSED_ENERGY_PERCEPTION">
+    <element name="Cursed Energy Perception" type="Feat" source="JJK" id="ID_JJK_FEAT_FEATURE_CURSED_ENERGY_PERCEPTION">
     	<prerequisite>Must have proficiency in Perception</prerequisite>
 		<requirements>ID_PROFICIENCY_SKILL_PERCEPTION</requirements>
 		<supports>Cursed Energy Feats</supports>
@@ -81,7 +81,7 @@
         </rules>
 	</element>
 
-    <element name="Cursed Enhancement" type="Feat" source="JJK" id="ID_JJK_FEAT_CURSED_ENHANCEMENT">
+    <element name="Cursed Enhancement" type="Feat" source="JJK" id="ID_JJK_FEAT_FEATURE_CURSED_ENHANCEMENT">
     	<prerequisite>N/A</prerequisite>
 		<supports>Cursed Energy Feats</supports>
       	<description>
@@ -93,7 +93,7 @@
 		</sheet>
 	</element>
 
-    <element name="Cursed Imbuement" type="Feat" source="JJK" id="ID_JJK_FEAT_CURSED_IMBUEMENT">
+    <element name="Cursed Imbuement" type="Feat" source="JJK" id="ID_JJK_FEAT_FEATURE_CURSED_IMBUEMENT">
     	<prerequisite>N/A</prerequisite>
 		<supports>Cursed Energy Feats</supports>
       	<description>
@@ -106,7 +106,7 @@
 		</sheet>
 	</element>
 
-    <element name="Curse Enhanced Body" type="Feat" source="JJK" id="ID_JJK_FEAT_CURSE_ENHANCED_BODY">
+    <element name="Curse Enhanced Body" type="Feat" source="JJK" id="ID_JJK_FEAT_FEATURE_CURSE_ENHANCED_BODY">
     	<prerequisite>18+ Cursed Energy Score</prerequisite>
 		<requirements>[cu:stat:18]</requirements>
 		<supports>Cursed Energy Feats</supports>
@@ -180,7 +180,7 @@
         </rules>
 	</element>
 
-	<element name="Rough" type="Feat Feature" source="JJK" id="ID_JJK_FEAT_CE_TRAIT_ROUGH">
+	<element name="Rough" type="Feat Feature" source="JJK" id="ID_JJK_FEAT_FEATURE_CE_TRAIT_ROUGH">
 		<supports>Cursed Energy Trait</supports>
 		<description>
 			<p>You gain a +1 bonus to your attack rolls and +2 bonus to damage rolls when using your cursed energy (such as cursed strike).</p>
@@ -190,7 +190,7 @@
 		</sheet>
 	</element>
 
-	<element name="Smooth" type="Feat Feature" source="JJK" id="ID_JJK_FEAT_CE_TRAIT_SMOOTH">
+	<element name="Smooth" type="Feat Feature" source="JJK" id="ID_JJK_FEAT_FEATURE_CE_TRAIT_SMOOTH">
 		<supports>Cursed Energy Trait</supports>
 		<description>
 			<p>You gain a +1 bonus to AC and your walking speed increases by 5 ft. As a reaction to an attack, you can spend 1 CE to gain a bonus to your AC equal to your Cursed Energy modifier, potentially causing the attack to miss.</p>
@@ -204,7 +204,7 @@
 		</rules>
 	</element>
 
-	<element name="Elemental" type="Feat Feature" source="JJK" id="ID_JJK_FEAT_CE_TRAIT_ELEMENTAL">
+	<element name="Elemental" type="Feat Feature" source="JJK" id="ID_JJK_FEAT_FEATURE_CE_TRAIT_ELEMENTAL">
 		<supports>Cursed Energy Trait</supports>
 		<description>
 			<p>Pick a damage type other than radiant or necrotic, when a feature uses your raw cursed energy to deal damage, you can choose to deal that damage type instead, dealing additional damage of that type equal to your proficiency bonus.</p>
@@ -217,47 +217,47 @@
 		</rules>
 	</element>
 
-	<element name="Acid" type="Feat Feature" source="JJK" id="ID_JJK_FEAT_ELEMENTAL_ACID">
+	<element name="Acid" type="Feat Feature" source="JJK" id="ID_JJK_FEAT_FEATURE_ELEMENTAL_ACID">
 		<supports>Elemental Cursed Energy</supports>
 	</element>
 
-	<element name="Bludgeoning" type="Feat Feature" source="JJK" id="ID_JJK_FEAT_ELEMENTAL_BLUDGEONING">
+	<element name="Bludgeoning" type="Feat Feature" source="JJK" id="ID_JJK_FEAT_FEATURE_ELEMENTAL_BLUDGEONING">
 		<supports>Elemental Cursed Energy</supports>
 	</element>
 
-	<element name="Cold" type="Feat Feature" source="JJK" id="ID_JJK_FEAT_ELEMENTAL_COLD">
+	<element name="Cold" type="Feat Feature" source="JJK" id="ID_JJK_FEAT_FEATURE_ELEMENTAL_COLD">
 		<supports>Elemental Cursed Energy</supports>
 	</element>
 
-	<element name="Fire" type="Feat Feature" source="JJK" id="ID_JJK_FEAT_ELEMENTAL_FIRE">
+	<element name="Fire" type="Feat Feature" source="JJK" id="ID_JJK_FEAT_FEATURE_ELEMENTAL_FIRE">
 		<supports>Elemental Cursed Energy</supports>
 	</element>
 
-	<element name="Force" type="Feat Feature" source="JJK" id="ID_JJK_FEAT_ELEMENTAL_FORCE">
+	<element name="Force" type="Feat Feature" source="JJK" id="ID_JJK_FEAT_FEATURE_ELEMENTAL_FORCE">
 		<supports>Elemental Cursed Energy</supports>
 	</element>
 
-	<element name="Lightning" type="Feat Feature" source="JJK" id="ID_JJK_FEAT_ELEMENTAL_LIGHTNING">
+	<element name="Lightning" type="Feat Feature" source="JJK" id="ID_JJK_FEAT_FEATURE_ELEMENTAL_LIGHTNING">
 		<supports>Elemental Cursed Energy</supports>
 	</element>
 
-	<element name="Piercing" type="Feat Feature" source="JJK" id="ID_JJK_FEAT_ELEMENTAL_PIERCING">
+	<element name="Piercing" type="Feat Feature" source="JJK" id="ID_JJK_FEAT_FEATURE_ELEMENTAL_PIERCING">
 		<supports>Elemental Cursed Energy</supports>
 	</element>
 
-	<element name="Poison" type="Feat Feature" source="JJK" id="ID_JJK_FEAT_ELEMENTAL_POISON">
+	<element name="Poison" type="Feat Feature" source="JJK" id="ID_JJK_FEAT_FEATURE_ELEMENTAL_POISON">
 		<supports>Elemental Cursed Energy</supports>
 	</element>
 
-	<element name="Psychic" type="Feat Feature" source="JJK" id="ID_JJK_FEAT_ELEMENTAL_PSYCHIC">
+	<element name="Psychic" type="Feat Feature" source="JJK" id="ID_JJK_FEAT_FEATURE_ELEMENTAL_PSYCHIC">
 		<supports>Elemental Cursed Energy</supports>
 	</element>
 
-	<element name="Slashing" type="Feat Feature" source="JJK" id="ID_JJK_FEAT_ELEMENTAL_SLASHING">
+	<element name="Slashing" type="Feat Feature" source="JJK" id="ID_JJK_FEAT_FEATURE_ELEMENTAL_SLASHING">
 		<supports>Elemental Cursed Energy</supports>
 	</element>
 
-	<element name="Thunder" type="Feat Feature" source="JJK" id="ID_JJK_FEAT_ELEMENTAL_THUNDER">
+	<element name="Thunder" type="Feat Feature" source="JJK" id="ID_JJK_FEAT_FEATURE_ELEMENTAL_THUNDER">
 		<supports>Elemental Cursed Energy</supports>
 	</element>
 
@@ -287,13 +287,13 @@
 	  	</description>
 		<sheet display="false"/>
         <rules>
-            <grant type="Feat Feature" id="ID_JJK_FEAT_CE_TRAIT_MASTERY_ROUGH" requiremens="ID_JJK_FEAT_CE_TRAIT_ROUGH" />
-			<grant type="Feat Feature" id="ID_JJK_FEAT_CE_TRAIT_MASTERY_SMOOTH" requiremens="ID_JJK_FEAT_CE_TRAIT_SMOOTH" />
-            <grant type="Feat Feature" id="ID_JJK_FEAT_CE_TRAIT_MASTERY_ELEMENTAL" requiremens="ID_JJK_FEAT_CE_TRAIT_ELEMENTAL" />
+            <grant type="Feat Feature" id="ID_JJK_FEAT_FEATURE_CE_TRAIT_MASTERY_ROUGH" requiremens="ID_JJK_FEAT_FEATURE_CE_TRAIT_ROUGH" />
+			<grant type="Feat Feature" id="ID_JJK_FEAT_FEATURE_CE_TRAIT_MASTERY_SMOOTH" requiremens="ID_JJK_FEAT_FEATURE_CE_TRAIT_SMOOTH" />
+            <grant type="Feat Feature" id="ID_JJK_FEAT_FEATURE_CE_TRAIT_MASTERY_ELEMENTAL" requiremens="ID_JJK_FEAT_FEATURE_CE_TRAIT_ELEMENTAL" />
         </rules>
 	</element>
 
-	<element name="Rough" type="Feat Feature" source="JJK" id="ID_JJK_FEAT_CE_TRAIT_MASTERY_ROUGH">
+	<element name="Rough" type="Feat Feature" source="JJK" id="ID_JJK_FEAT_FEATURE_CE_TRAIT_MASTERY_ROUGH">
 		<description>
 			<p>You gain a bonus to damage rolls using raw cursed energy equal to 2 + your CE modifier (such as cursed strike).</p>
 		</description>
@@ -306,7 +306,7 @@
 		</rules>
 	</element>
 
-	<element name="Smooth" type="Feat Feature" source="JJK" id="ID_JJK_FEAT_CE_TRAIT_MASTERY_SMOOTH">
+	<element name="Smooth" type="Feat Feature" source="JJK" id="ID_JJK_FEAT_FEATURE_CE_TRAIT_MASTERY_SMOOTH">
 		<description>
 			<p>You reduce bludgeoning, slashing, and piercing damage taken by your CE modifier and your walking speed increases by 10 ft. As a reaction to an attack for 1 CE, you gain a bonus to AC equal to twice your CE modifier, potentially causing the attack to miss.</p>
 		</description>
@@ -320,7 +320,7 @@
 		</rules>
 	</element>
 
-	<element name="Elemental" type="Feat Feature" source="JJK" id="ID_JJK_FEAT_CE_TRAIT_MASTERY_ELEMENTAL">
+	<element name="Elemental" type="Feat Feature" source="JJK" id="ID_JJK_FEAT_FEATURE_CE_TRAIT_MASTERY_ELEMENTAL">
 		<description>
 			<p>Once per turn on a hit imbued with raw cursed energy (eg. Cursed Strike) or a creature failing a save against your raw cursed energy (eg. Cursed Energy Slash), they suffer an additional effect of your trait. These effects stack up to your proficiency bonus and last a number of turns equal to your CE modifier: </p>
 			<ul>
@@ -341,21 +341,21 @@
 			<description>Once per turn on a hit imbued with raw cursed energy or a creature failing a save against your raw cursed energy, they suffer an additional effect stacking up {{proficiency}} times that lasts {{ce:modifier}} turns.</description>
 		</sheet>
 		<rules>
-			<grant type="Feat Feature" id="ID_JJK_FEAT_CE_TRAIT_MASTERY_ELEMENTAL_ACID" requirements="ID_JJK_FEAT_ELEMENTAL_ACID" />
-			<grant type="Feat Feature" id="ID_JJK_FEAT_CE_TRAIT_MASTERY_ELEMENTAL_BLUDGEONING" requirements="ID_JJK_FEAT_ELEMENTAL_BLUDGEONING" />
-			<grant type="Feat Feature" id="ID_JJK_FEAT_CE_TRAIT_MASTERY_ELEMENTAL_COLD" requirements="ID_JJK_FEAT_ELEMENTAL_COLD" />
-			<grant type="Feat Feature" id="ID_JJK_FEAT_CE_TRAIT_MASTERY_ELEMENTAL_FIRE" requirements="ID_JJK_FEAT_ELEMENTAL_FIRE" />
-			<grant type="Feat Feature" id="ID_JJK_FEAT_CE_TRAIT_MASTERY_ELEMENTAL_FORCE" requirements="ID_JJK_FEAT_ELEMENTAL_FORCE" />
-			<grant type="Feat Feature" id="ID_JJK_FEAT_CE_TRAIT_MASTERY_ELEMENTAL_LIGHTNING" requirements="ID_JJK_FEAT_ELEMENTAL_LIGHTNING" />
-			<grant type="Feat Feature" id="ID_JJK_FEAT_CE_TRAIT_MASTERY_ELEMENTAL_PIERCING" requirements="ID_JJK_FEAT_ELEMENTAL_PIERCING" />
-			<grant type="Feat Feature" id="ID_JJK_FEAT_CE_TRAIT_MASTERY_ELEMENTAL_POISON" requirements="ID_JJK_FEAT_ELEMENTAL_POISON" />
-			<grant type="Feat Feature" id="ID_JJK_FEAT_CE_TRAIT_MASTERY_ELEMENTAL_PSYCHIC" requirements="ID_JJK_FEAT_ELEMENTAL_PSYCHIC" />
-			<grant type="Feat Feature" id="ID_JJK_FEAT_CE_TRAIT_MASTERY_ELEMENTAL_SLASHING" requirements="ID_JJK_FEAT_ELEMENTAL_SLASHING" />
-			<grant type="Feat Feature" id="ID_JJK_FEAT_CE_TRAIT_MASTERY_ELEMENTAL_THUNDER" requirements="ID_JJK_FEAT_ELEMENTAL_THUNDER" />
+			<grant type="Feat Feature" id="ID_JJK_FEAT_FEATURE_CE_TRAIT_MASTERY_ELEMENTAL_ACID" requirements="ID_JJK_FEAT_FEATURE_ELEMENTAL_ACID" />
+			<grant type="Feat Feature" id="ID_JJK_FEAT_FEATURE_CE_TRAIT_MASTERY_ELEMENTAL_BLUDGEONING" requirements="ID_JJK_FEAT_FEATURE_ELEMENTAL_BLUDGEONING" />
+			<grant type="Feat Feature" id="ID_JJK_FEAT_FEATURE_CE_TRAIT_MASTERY_ELEMENTAL_COLD" requirements="ID_JJK_FEAT_FEATURE_ELEMENTAL_COLD" />
+			<grant type="Feat Feature" id="ID_JJK_FEAT_FEATURE_CE_TRAIT_MASTERY_ELEMENTAL_FIRE" requirements="ID_JJK_FEAT_FEATURE_ELEMENTAL_FIRE" />
+			<grant type="Feat Feature" id="ID_JJK_FEAT_FEATURE_CE_TRAIT_MASTERY_ELEMENTAL_FORCE" requirements="ID_JJK_FEAT_FEATURE_ELEMENTAL_FORCE" />
+			<grant type="Feat Feature" id="ID_JJK_FEAT_FEATURE_CE_TRAIT_MASTERY_ELEMENTAL_LIGHTNING" requirements="ID_JJK_FEAT_FEATURE_ELEMENTAL_LIGHTNING" />
+			<grant type="Feat Feature" id="ID_JJK_FEAT_FEATURE_CE_TRAIT_MASTERY_ELEMENTAL_PIERCING" requirements="ID_JJK_FEAT_FEATURE_ELEMENTAL_PIERCING" />
+			<grant type="Feat Feature" id="ID_JJK_FEAT_FEATURE_CE_TRAIT_MASTERY_ELEMENTAL_POISON" requirements="ID_JJK_FEAT_FEATURE_ELEMENTAL_POISON" />
+			<grant type="Feat Feature" id="ID_JJK_FEAT_FEATURE_CE_TRAIT_MASTERY_ELEMENTAL_PSYCHIC" requirements="ID_JJK_FEAT_FEATURE_ELEMENTAL_PSYCHIC" />
+			<grant type="Feat Feature" id="ID_JJK_FEAT_FEATURE_CE_TRAIT_MASTERY_ELEMENTAL_SLASHING" requirements="ID_JJK_FEAT_FEATURE_ELEMENTAL_SLASHING" />
+			<grant type="Feat Feature" id="ID_JJK_FEAT_FEATURE_CE_TRAIT_MASTERY_ELEMENTAL_THUNDER" requirements="ID_JJK_FEAT_FEATURE_ELEMENTAL_THUNDER" />
 		</rules>
 	</element>
 
-	<element name="Acid" type="Feat Feature" source="JJK" id="ID_JJK_FEAT_CE_TRAIT_MASTERY_ELEMENTAL_ACID">
+	<element name="Acid" type="Feat Feature" source="JJK" id="ID_JJK_FEAT_FEATURE_CE_TRAIT_MASTERY_ELEMENTAL_ACID">
 		<description>
 			<p>Reduces the target's AC by 1</p>
 		</description>
@@ -364,7 +364,7 @@
 		</sheet>
 	</element>
 
-	<element name="Bludgeoning" type="Feat Feature" source="JJK" id="ID_JJK_FEAT_CE_TRAIT_MASTERY_ELEMENTAL_BLUDGEONING">
+	<element name="Bludgeoning" type="Feat Feature" source="JJK" id="ID_JJK_FEAT_FEATURE_CE_TRAIT_MASTERY_ELEMENTAL_BLUDGEONING">
 		<description>
 			<p>Ignores resistance to bludgeoning</p>
 		</description>
@@ -373,7 +373,7 @@
 		</sheet>
 	</element>
 
-	<element name="Cold" type="Feat Feature" source="JJK" id="ID_JJK_FEAT_CE_TRAIT_MASTERY_ELEMENTAL_COLD">
+	<element name="Cold" type="Feat Feature" source="JJK" id="ID_JJK_FEAT_FEATURE_CE_TRAIT_MASTERY_ELEMENTAL_COLD">
 		<description>
 			<p>Reduces movement by 10 ft</p>
 		</description>
@@ -382,7 +382,7 @@
 		</sheet>
 	</element>
 
-	<element name="Fire" type="Feat Feature" source="JJK" id="ID_JJK_FEAT_CE_TRAIT_MASTERY_ELEMENTAL_FIRE">
+	<element name="Fire" type="Feat Feature" source="JJK" id="ID_JJK_FEAT_FEATURE_CE_TRAIT_MASTERY_ELEMENTAL_FIRE">
 		<description>
 			<p>Target takes an extra 2 fire damage from your cursed energy</p>
 		</description>
@@ -391,7 +391,7 @@
 		</sheet>
 	</element>
 
-	<element name="Force" type="Feat Feature" source="JJK" id="ID_JJK_FEAT_CE_TRAIT_MASTERY_ELEMENTAL_FORCE">
+	<element name="Force" type="Feat Feature" source="JJK" id="ID_JJK_FEAT_FEATURE_CE_TRAIT_MASTERY_ELEMENTAL_FORCE">
 		<description>
 			<p>The target is knocked back 10 ft</p>
 		</description>
@@ -400,7 +400,7 @@
 		</sheet>
 	</element>
 
-	<element name="Lightning" type="Feat Feature" source="JJK" id="ID_JJK_FEAT_CE_TRAIT_MASTERY_ELEMENTAL_LIGHTNING">
+	<element name="Lightning" type="Feat Feature" source="JJK" id="ID_JJK_FEAT_FEATURE_CE_TRAIT_MASTERY_ELEMENTAL_LIGHTNING">
 		<description>
 			<p>The target cannot take reactions</p>
 		</description>
@@ -409,7 +409,7 @@
 		</sheet>
 	</element>
 
-	<element name="Piercing" type="Feat Feature" source="JJK" id="ID_JJK_FEAT_CE_TRAIT_MASTERY_ELEMENTAL_PIERCING">
+	<element name="Piercing" type="Feat Feature" source="JJK" id="ID_JJK_FEAT_FEATURE_CE_TRAIT_MASTERY_ELEMENTAL_PIERCING">
 		<description>
 			<p>Ignores resistance to piercing</p>
 		</description>
@@ -418,7 +418,7 @@
 		</sheet>
 	</element>
 
-	<element name="Poison" type="Feat Feature" source="JJK" id="ID_JJK_FEAT_CE_TRAIT_MASTERY_ELEMENTAL_POISON">
+	<element name="Poison" type="Feat Feature" source="JJK" id="ID_JJK_FEAT_FEATURE_CE_TRAIT_MASTERY_ELEMENTAL_POISON">
 		<description>
 			<p>The target gains the Poisoned condition</p>
 		</description>
@@ -427,7 +427,7 @@
 		</sheet>
 	</element>
 
-	<element name="Psychic" type="Feat Feature" source="JJK" id="ID_JJK_FEAT_CE_TRAIT_MASTERY_ELEMENTAL_PSYCHIC">
+	<element name="Psychic" type="Feat Feature" source="JJK" id="ID_JJK_FEAT_FEATURE_CE_TRAIT_MASTERY_ELEMENTAL_PSYCHIC">
 		<description>
 			<p>The target gains the frightened condition</p>
 		</description>
@@ -436,7 +436,7 @@
 		</sheet>
 	</element>
 
-	<element name="Slashing" type="Feat Feature" source="JJK" id="ID_JJK_FEAT_CE_TRAIT_MASTERY_ELEMENTAL_SLASHING">
+	<element name="Slashing" type="Feat Feature" source="JJK" id="ID_JJK_FEAT_FEATURE_CE_TRAIT_MASTERY_ELEMENTAL_SLASHING">
 		<description>
 			<p>Ignores resistance to slashing</p>
 		</description>
@@ -445,7 +445,7 @@
 		</sheet>
 	</element>
 
-	<element name="Thunder" type="Feat Feature" source="JJK" id="ID_JJK_FEAT_CE_TRAIT_MASTERY_ELEMENTAL_THUNDER">
+	<element name="Thunder" type="Feat Feature" source="JJK" id="ID_JJK_FEAT_FEATURE_CE_TRAIT_MASTERY_ELEMENTAL_THUNDER">
 		<description>
 			<p>The target is knocked Prone and Deafened </p>
 		</description>
