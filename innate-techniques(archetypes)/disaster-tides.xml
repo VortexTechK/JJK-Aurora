@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.1">
+		<update version="6.0.2">
 			<file name="disaster-tides.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/disaster-tides.xml" />
 		</update>
 	</info>
@@ -88,7 +88,7 @@
 	<element name="Death Swarm" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DISASTER_TIDES_DEATH_SWARM">
 		<description>
 			<p>While in your domain expansion, you can use your Death Swarm technique. Their attacks also count for the sure-hit effect, making one attack as they are summoned. As an action for X Cursed Energy, you can summon a number of sea Shikigami up to your Cursed Energy modifier within sight range. These shikigami can use swimming speed as a flying speed and can have a number equal to your Cursed Energy score active at once.</p>
-		<description>
+		</description>
 		<sheet action="Action" usage="CE">
 			<description>For up to {{ce:modifier}} CE, summon sea shikigami within sight range. Their attacks count as a sure-hit, making one attack as they are summoned. These shikigami can use swimming speed as a flying speed and can have a {{cu:stat}} active at once. The Giant Sea Eel, Swarm of Piranhas, River Serpent, Killer Whale, and Sperm Whale cost 1, 2, 4, 6, and 12 CE respectively.</description>
 		</sheet>
