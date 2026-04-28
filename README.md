@@ -20,6 +20,8 @@ _**READ**_ the google doc before making pull requests; there are a lot of nuance
 
 A lot of features are in equipment (ex. reverse curse technique or breakthrough) under their own tab and many others are unimplemented for obvious reasons. <br>
 
+The techniques included are ones that are "canon" in JJK or come from known characters. This is mostly because of JJK purists. I will later make a extension with extra content with stuff from Creeps and Curses as well.<br>
+
 A lot of rules are only in the google doc that wouldn't make sense to put in Aurora, so _**READ**_ it. At the end of the day Aurora is just a character builder, not a campaign maker.<br>
 
 If you have any suggestions or fixes please tell me. I learned a lot of stuff throughout making this and there is a clear point where I understood what I was doing. Also ngl I rushed some of the techniques because of brain damage so there is likely a lot of grammar mistakes carried over from the document/unclear abilites/wrong usages.<br>
