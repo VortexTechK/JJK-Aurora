@@ -4,7 +4,7 @@
 		<name>Cursed Energy Feats</name>
 		<description>Cursed Energy Feats from JJK.</description>
 		<author url="https://docs.google.com/document/d/1eC8tEMHnupOuaX6At1X8JORz5iarNe6I-A7j2QzScrE/edit?tab=t.0">JJK</author>
-		<update version="6.0.6">
+		<update version="6.0.7">
 			<file name="cursedenergy-feats.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/cursedenergy-feats.xml" />
 		</update>
 	</info>
@@ -164,11 +164,11 @@
 	</element>
 
 	<element name="Cursed Energy Trait" type="Feat" source="JJK" id="ID_JJK_FEAT_CURSED_ENERGY_TRAIT">
-    	<prerequisite>1st level</prerequisite>
-		<requirements>[level:1]</requirements>
+    	<prerequisite>1st level ONLY</prerequisite>
+		<requirements>[level:1],![level:2]</requirements>
 		<supports>Cursed Energy Feats</supports>
       	<description>
-        	<p><em>Prerequisite: 1st level</em></p>
+        	<p><em>Prerequisite: 1st level ONLY</em></p>
 			<p>Your cursed energy has taken an individual form affecting people differently. </p>
             <p class="indent"><strong>Rough.</strong> You gain a +1 bonus to your attack rolls and +2 bonus to damage rolls when using your cursed energy (such as cursed strike).</p>
             <p class="indent"><strong>Smooth.</strong> You gain a +1 bonus to AC and your walking speed increases by 5 ft. As a reaction to an attack, you can spend 1 CE to gain a bonus to your AC equal to your Cursed Energy modifier, potentially causing the attack to miss.</p>
