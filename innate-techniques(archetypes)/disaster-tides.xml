@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.0">
+		<update version="6.0.1">
 			<file name="disaster-tides.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/disaster-tides.xml" />
 		</update>
 	</info>
@@ -56,7 +56,7 @@
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DISASTER_TIDES_DOMAIN_EXPANSION_HORIZON_OF_CAPTIVATING_SKHANDA</requirements>
 		<description>
 			<p>At 3rd level, due to being a prodigy, you have already learned to expand your domain as a calm beach. Your domain can be opened for free twice per long rest, otherwise it costs you 20 Cursed Energy. If you don't catch hostile creatures in your domain, it lasts indefinitely.</p>
-            <p class="indent"><strong>Death Swarm.</strong> While on your domain expansion, you can use your Death Swarm technique. Making their attacks also count for the sure-hit effect, making one attack as they are summoned. As an action for X Cursed Energy, you can summon a number of sea Shikigami up to your Cursed Energy modifier within sight range. These shikigami can use swimming speed as a flying speed and can have a number equal to your Cursed Energy score active at once.</p>
+            <p class="indent"><strong>Death Swarm.</strong> While in your domain expansion, you can use your Death Swarm technique. Their attacks also count for the sure-hit effect, making one attack as they are summoned. As an action for X Cursed Energy, you can summon a number of sea Shikigami up to your Cursed Energy modifier within sight range. These shikigami can use swimming speed as a flying speed and can have a number equal to your Cursed Energy score active at once.</p>
             <h5 class="caption">SHIKIGAMI COSTS</h5>
 			<table>
 				<thead>
@@ -77,14 +77,24 @@
 			</div>
         </description>
 		<sheet usage="2 Free/Long Rest">
-			<description>As an action you can summon up to {{ce:modifier}} sea shikigami within sight range, paying for their costs. These shikigami also count for the sure-hit effect, making one attack as they are summoned and can use swimming speed as a flying speed. You can have up to {{cu:stat}} active at once. If you don't catch hostile creatures in your domain, it lasts indefinitely.</description>
+			<description>While in your domain, you can use Death Swarm.If you don't catch hostile creatures in your domain, it lasts indefinitely.</description>
 		</sheet>
 		<rules>
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_DISASTER_TIDES_DEATH_SWARM" />
 		</rules>
 	</element>
 
-	<element name="Water Defensive Ring" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DISASTER_TIDES_WATER_DEFENSIVE_RING">
+	<element name="Death Swarm" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DISASTER_TIDES_DEATH_SWARM">
+		<description>
+			<p>While in your domain expansion, you can use your Death Swarm technique. Their attacks also count for the sure-hit effect, making one attack as they are summoned. As an action for X Cursed Energy, you can summon a number of sea Shikigami up to your Cursed Energy modifier within sight range. These shikigami can use swimming speed as a flying speed and can have a number equal to your Cursed Energy score active at once.</p>
+		<description>
+		<sheet action="Action" usage="CE">
+			<description>For up to {{ce:modifier}} CE, summon sea shikigami within sight range. Their attacks count as a sure-hit, making one attack as they are summoned. These shikigami can use swimming speed as a flying speed and can have a {{cu:stat}} active at once. The Giant Sea Eel, Swarm of Piranhas, River Serpent, Killer Whale, and Sperm Whale cost 1, 2, 4, 6, and 12 CE respectively.</description>
+		</sheet>
+	</element>
+
+	<element name="Water Defensive Ring" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DISASTER_TIDES_WATER_DEFENSIVE_RING">			
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DISASTER_TIDES_WATER_DEFENSIVE_RING</requirements>
 		<description>
 			<p>Beginning at 6th level, you can make a ring of water that protects you from any incoming attack. As an action for 6 Cursed Energy, you can create a ring of water around you, granting you temporary hit points equal to your Cursed Energy modifier times 15. This can also be used as a reaction to incoming damage for 8 Cursed Energy. While the ring is active, you gain immunity to cold damage and resistance to bludgeoning, slashing, and piercing damage. You can only use this cursed technique again after the current ring is over.</p>
