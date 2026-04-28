@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.1">
+		<update version="6.0.2">
 			<file name="earth-manipulation.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/earth-manipulation.xml" />
 		</update>
 	</info>
@@ -131,6 +131,7 @@
 		</sheet>
 		<rules>
 			<stat name="earth:manipulation:stonearms:hp" value="hp" />
+		</rules>
 	</element>
 
 	<element name="Domain Expansion: Trichiliocosm" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_EARTH_MANIPULATION_DOMAIN_EXPANSION_TRICHILIOCOSM">
