@@ -3,9 +3,18 @@ Main Index: [https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads
 
 Link to OG Doc: [https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0]
 
+Link to Aurora Legacy: [https://github.com/AuroraLegacy/elements]
+
 Discord Username: floccinaucinihilipilification_ex
 (No spam plz, yes I am in the server)
 
+## Need to be Enabled (In Aurora Legacy):
+ • Player's Handbook
+ • Tasha's Cauldron of Everything
+ • Xanathar's Guide to Everything
+ • Aurora Legacy Essentials (Can't be disabled)
+I'm not sure if this works with regular Aurora but go ahead and try. Feel free to enable other content for other features you may want. There may be significant lag due to large amounts of content. Later I'll try to remake everything into this or another addon so you do not have to see non-JJK stuff. 
+ 
 ## Before You Say ANYTHING
 _**READ**_ the google doc before making pull requests; there are a lot of nuances. I don't got infinite time. <br>
 
