@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.1">
+		<update version="6.0.2">
 			<file name="miracle.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/miracle.xml" />
 		</update>
 	</info>
@@ -45,13 +45,14 @@
             <p><strong>Blind Luck: </strong></p> Once per round when you take damage, you can spend a Miracle to reduce the incoming damage by Xd4 equal to your CE modifier. You add your proficiency bonus to the rolled amount and reduce the damage by that much. You can also do this as a reaction for a Miracle and 1 CE. When used this way, the d4 increases to a d6 and you add your proficiency bonus twice.
 		</description>
 		<sheet>
-			<description>When you witness a miracle, you gain {{miracle:gain}} Miracle. You can have up to six Miracles at once, which are stored as marks somewhere on your body. A miracle occurs when you or an ally you can see rolls the maximum amount on a roll, rolls two equal numbers one after the other, finds an item worth $1,000 or more, or succeeds on a roll they had disadvantage on.</description>
+			<description>When you witness a miracle, you gain {{miracle:gain}} Miracle. You can have up to {{miracle:max}} Miracles at once, which are stored as marks somewhere on your body. A miracle occurs when you or an ally you can see rolls the maximum amount on a roll, rolls two equal numbers one after the other, finds an item worth $1,000 or more, or succeeds on a roll they had disadvantage on.</description>
 		</sheet>
         <rules>
             <grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_MIRACLE_BLIND_LUCK" />
             <stat name="miracle:gain" value="1" level="1" bonus="miracle" />
             <stat name="miracle:gain" value="2" level="11" bonus="miracle" />
             <stat name="miracle:gain" value="3" level="18" bonus="miracle" />
+			<stat name="miracle:max" value="6" />
         </rules>
 	</element>
 
