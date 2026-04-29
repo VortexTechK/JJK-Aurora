@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.2">
+		<update version="6.0.3">
 			<file name="pachinko-fever.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/pachinko-fever.xml" />
 		</update>
 	</info>
@@ -81,12 +81,42 @@
             </ul>
 		</description>
 		<sheet usage="1 Free/Long Rest">
-			<description>I am not writing this onto a sheet chat.</description>
+			<description>Your domain is Non-Lethal with Anti-Domain Clash and cannot be reacted to unless the opposing user has a domain with at least 400 refinement points and has higher refinement than you. You can expend expectation made by pachinko attacks at any time to roll a d20 + 1 for every 10% expectation (max of 190%). For rolls of 1-9, 10-14, 15-18, or 19-20 your event die is a d12, d10, d8, or d6 respectively. You then start a event that lasts for 1d10 rounds. At the end of a event, roll 3dX, with the value of the dice defined by the event. If 3 of the same numbers land, you win a jackpot. You may reroll all dice 3, 4, 5, or 10 times by rolling a 1-12, 13-15, 16-17, or 18-19 respectively on another d20 roll also adding your expectation bonus. On a 20 on this roll you automatically jackpot. When you hit a jackpot the domain expansion is undone without the effects of Technique Burnout and for 4 rounds your CE completely refuels and you receive RCT as if you had spent {{ce:modifier}} CE on it at the beginning of your turns, cannot go below 1 hit points and heal all injuries, and gain 1 free use of your domain expansion.</description>
 		</sheet>
         <rules>
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION" />
+            <grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_PACHINKO_FEVER_GREEN_BALLS" />
+            <grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_PACHINKO_FEVER_RED_ROD" />
+            <grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_PACHINKO_FEVER_GOLDEN_TRAIN_DOOR_ATTACK" />
 		</rules>
 	</element>
+
+    <element name="Green Balls (Pachinko)" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_PACHINKO_FEVER_GREEN_BALLS">
+        <description>
+            <p>As a bonus action for 1 cursed energy, make a ranged cursed energy attack roll against a target within 30ft. It deals 1d4 bludgeoning damage on a hit and raises expectations by 10%.</p>
+        </description>
+        <sheet action="Bonus Action" usage="CE">
+            <description>For 1 CE, make a ranged CE attack against a target within 30ft. On a hit deal 1d4 bludgeoning damage and raise expectation by 10%.</description>
+        </sheet>
+    </element>
+
+    <element name="Red Rod (Pachinko)" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_PACHINKO_FEVER_RED_ROD">
+        <description>
+            <p>As a bonus action for 3 cursed energy, make a melee cursed energy attack roll against a target. It deals 1d8 bludgeoning damage on a hit and raises expectations by 25%.</p>
+        </description>
+        <sheet action="Bonus Action" usage="CE">
+            <description>For 3 CE, make a melee CE attack against a target. On a hit deal 1d8 bludgeoning damage and raise expectation by 25%.</description>
+        </sheet>
+    </element>
+
+    <element name="Golden Train Door Attack (Pachinko)" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_PACHINKO_FEVER_GOLDEN_TRAIN_DOOR_ATTACK">
+        <description>
+            <p>As a bonus action for 4 cursed energy, make a melee or ranged cursed energy attack roll against a target within 30ft. On a hit, the target takes 1d12 bludgeoning damage and must make a Strength saving throw or be restrained until the end of your turn. This attack increases expectations by 50%.</p>
+        </description>
+        <sheet action="Bonus Action" usage="CE">
+            <description>For 4 CE, make a melee or ranged CE attack against a target within 30ft. On a hit, the target takes 1d12 bludgeoning damage and must make a Strength saving throw or be restrained until the end of your turn. Raise expectation by 50%.</description>
+         </sheet>
+    </element>
 
 	<element name="On a Roll" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_PACHINKO_FEVER_ON_A_ROLL">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_PACHINKO_FEVER_ON_A_ROLL</requirements>
