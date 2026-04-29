@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.0">
+		<update version="6.0.1">
 			<file name="rockstar.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/rockstar.xml" />
 		</update>
 	</info>
@@ -34,7 +34,9 @@
 			<p>Starting at 1st level, you gain proficiency in Performance and one instrument of your choice. While holding an instrument you are proficient in, you can spend 1 CE as an action to play it and launch a Sound Blast at a target within 30 feet. Make a ranged Cursed Energy attack roll, on a hit you deal 2d10 thunder damage and if the target is a creature, it must succeed on a Strength saving throw or be pushed back 10 feet. This technique's damage increases to 3d10 at 6th level, 4d10 at 11th level, and 6d10 at 18th level.</p>
 		</description>
 		<sheet action="Action" usage="CE">
-			<description>While holding an instrument you are proficient in, you can spend 1 CE to make a ranged Cursed Energy attack roll at a target within {{rockstar:sound:amplification:range}} feet. On a hit do {{rockstar:sound:amplification:damage}}d10 thunder damage and if the target is a creature, it must succeed on a Strength saving throw or be pushed back 10 feet.</description>
+			<description>While holding an instrument you are proficient in, you can spend 1 CE to make a Sound Blast ranged CE attack roll at a target within {{rockstar:sound:amplification:range}} feet. On a hit do {{rockstar:sound:amplification:damage}}d10 thunder damage and if the target is a creature, it must succeed on a Strength saving throw or be pushed back 10 feet.</description>
+			<description level="3">While holding an instrument you are proficient in, you can spend up to 2 CE to make a Sound Blast ranged CE attack roll at a target within {{rockstar:sound:amplification:range}} feet for each CE spent. On a hit do {{rockstar:sound:amplification:damage}}d10 thunder damage and if the target is a creature, it must succeed on a Strength saving throw or be pushed back 10 feet.</description>
+			<description level="11">While holding an instrument you are proficient in, you can spend up to 3 CE to make a Sound Blast ranged CE attack roll at a target within {{rockstar:sound:amplification:range}} feet for each CE spent. On a hit do {{rockstar:sound:amplification:damage}}d10 thunder damage and if the target is a creature, it must succeed on a Strength saving throw or be pushed back 10 feet.</description>
 		</sheet>
         <rules>
             <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" />
@@ -53,10 +55,7 @@
 		<description>
 			<p>At 3rd level, when you use your action to launch a Sound Blast, you can launch up to two Sound Blasts, spending 1 Cursed Energy for each. At 11th level you can make up to three Sound Blast attacks as part of your action.</p>
 		</description>
-		<sheet>
-			<description>When you use Sound Amplification, you can launch up to two Sound Blasts, spending 1 CE for each.</description>
-            <description level="11">When you use Sound Amplification, you can launch up to three Sound Blasts, spending 1 CE for each.</description>
-		</sheet>
+		<sheet display="false"/>
 	</element>
 
 	<element name="Resonating Music" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_ROCKSTAR_RESONATING_MUSIC">
@@ -66,7 +65,7 @@
             <p class="indent">The range of your Sound Blast now increases to 60 feet. The range of your Sound Wave increases to 30 feet at 11th level.</p>
 		</description>
         <sheet action="Action" usage="CE">
-            <description>For 5 CE, all creatures in a {{rockstar:resonating:music:range}} feet cone must make a Constitution saving throw or take {{rockstar:sound:amplification:damage}} + {{proficiency}}d10 thunder damage and be pushed back 20 feet and deafened until the end of their next turn on a failed save or half as much damage on a successful save.</description>
+            <description>For 5 CE, launch a Sound Wave forcing all creatures in a {{rockstar:resonating:music:range}} feet cone to make a Constitution saving throw or take {{rockstar:sound:amplification:damage}} + {{proficiency}}d10 thunder damage and be pushed back 20 feet and be deafened until the end of their next turn on a failed save or half as much damage on a successful save.</description>
         </sheet>
         <rules>
             <stat name="rockstar:resonating:music:range" value="15" bonus="resonating music" />
