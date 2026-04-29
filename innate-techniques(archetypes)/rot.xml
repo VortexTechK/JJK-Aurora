@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.0">
+		<update version="6.0.1">
 			<file name="rot.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/rot.xml" />
 		</update>
 	</info>
@@ -118,13 +118,15 @@
             <p class="indent">These lines of blood take the shape of three ranged Cursed Energy attacks against a target within 60 feet. Each attack deals 4d10 + your CE modifier acid or necrotic damage. You can also replace an attack on your turn with a line of blood attack. While using Wing King, you cannot use Decay.</p>
         </description>
 		<sheet action="Bonus Action" usage="CE">
-			<description>For 8 CE, for 1 minute your speed is {{rot:wing:king:movement}}, you gain a flying speed of {{rot:wing:king:fly}} ft, you have advantage on Dexterity saving throws, you can replace an attack on your turn with a Rot Technique or one line blood attack, and as a free action on your turn you can unleash lines of blood. The lines of blood are three ranged CE attacks against a target within 60 feet. Each attack deals 4d10 + {{ce:modifier}} acid or necrotic damage. You can also replace an attack on your turn with a line of blood attack. While using Wing King, you cannot use Decay.</description>
+			<description>For 8 CE, for 1 minute your speed is {{rot:wing:king:movement}}, you gain a flying speed of {{rot:wing:king:fly}} ft, you have advantage on Dexterity saving throws, you can replace an attack on your turn with a Rot Technique or one line blood attack, and as a free action on your turn you can unleash {{rot:wing:king:lines}} lines of blood. A line of blood is a ranged CE attack against a target within 60 feet dealing 4d10 + {{ce:modifier}} acid or necrotic damage on a hit. You can also replace an attack on your turn with a line of blood attack. While using Wing King, you cannot use Decay.</description>
 		</sheet>
         <rules>
             <stat name="rot:wing:king:fly" value="speed" />
             <stat name="rot:wing:king:fly" value="speed" />
             <stat name="rot:wing:king:movement" value="rot:wing:king:fly" />
             <stat name="rot:wing:king:movement" value="rot:wing:king:fly" />
+			<stat name="rot:wing:king:lines" value="3" />
+			<stat name="rot:wing:king:lines" value="1" id="ID_JJK_FEAT_WING_KING_IMPROVEMENT" />
         </rules>
 	</element>
 	
