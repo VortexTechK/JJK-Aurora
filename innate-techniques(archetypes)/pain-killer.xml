@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.0">
+		<update version="6.0.1">
 			<file name="pain-killer.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/pain-killer.xml" />
 		</update>
 	</info>
@@ -34,12 +34,14 @@
 			<p>Starting at 1st level, you can use your technique to stop injuries from getting worse. As a bonus action for 1 CE, you can make a symbol with your hand and touch a creature within 5 feet. If a creature is taking damage over time, you cause that damage to stop and the creature gains temporary hit points equal to your CE modifier + your level for 1 hour. This does not stop new effects from affecting the target. You also gain proficiency in Medicine.</p>
 		</description>
 		<sheet action="Bonus Action" usage="CE">
-			<description>For 1 CE, touch a creature within 5 feet. If it is taking damage over time, that damage stops and the creature gains {{pain:killer:temp:hp}} temporary hit points 1 hour. This does not stop new effects from affecting the target.</description>
+			<description>For 1 CE, touch a creature within 5 feet. If it is taking damage over time, that damage stops and the creature gains {{pain:killer:temp:hp}} temporary hit points for {{pain:killer:length}} hour. This does not stop new effects from affecting the target.</description>
 		</sheet>
         <rules>
             <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_MEDICINE" />
             <stat name="pain:killer:temp:hp" value="level" />
             <stat name="pain:killer:temp:hp" value="ce:modifier" />
+			<stat name="pain:killer:length" value="1" bonus="pain killer" />
+			<stat name="pain:killer:length" value="24" bonus="pain killer" requirements="ID_JJK_FEAT_LONG_LASTING_MEDICINE" />
         </rules>
 	</element>
 
