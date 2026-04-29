@@ -6,7 +6,7 @@ Link to OG Doc: [https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obY
 Link to Aurora Legacy: [https://github.com/AuroraLegacy/elements]
 
 Discord Username: floccinaucinihilipilification_ex
-(No spam plz, yes I am in the server)
+(No spam plz, yes I am in the JJK server)
 
 ## Need to be Enabled (In Aurora Legacy):
  • Player's Handbook<br>
