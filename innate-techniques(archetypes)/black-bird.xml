@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.0">
+		<update version="6.0.1">
 			<file name="black-bird.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/black-bird.xml" />
 		</update>
 	</info>
@@ -27,24 +27,27 @@
       		<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_DOMAIN_EXPANSION_BLACK_MAHAKALA" level="18" />
 		</rules>
 	</element>
+	
 	<element name="Cursed Crows" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_CURSED_CROWS">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BLACK_BIRD_CURSED_CROWS</requirements>
 		<description>
 			<p> At 1st level, you have learned how to imbue crows with cursed energy to use them as part of your technique. As an action for 1 Cursed Energy, you can imbue a raven with cursed energy if it's restrained, grappled, or incapacitated. It then becomes one of your cursed ravens, it will become charmed by you and will follow your orders no matter what. As an action, you can close your eyes giving you the blinded condition unless you have blindsight, in exchange for being able to see through one of your crows. While seeing through your crows, you can use your passive perception instead of the crows. You can only see one crow at a time and can switch between them as an action or stop as a bonus action. You can start with 3 cursed crows.</p>
         </description>
 		<sheet action="Action" usage="CE">
-			<description>For 1 cursed energy, you can imbue a raven with cursed energy if it's restrained, grappled, or incapacitated. It then becomes one of your cursed ravens, it will become charmed by you and will follow your orders no matter what. As an action, you can close your eyes giving you the blinded condition unless you have blindsight, in exchange for being able to see through one of your crows. While seeing through your crows, you can use your passive perception instead of the crows. You can only see one crow at a time and can switch between them as an action or stop as a bonus action.</description>
+			<description>For 1 CE, you can imbue a crow if it's restrained, grappled, or incapacitated. It becomes charmed by you and will follow your orders no matter what. As an action, you can close your eyes giving you the blinded condition unless you have blindsight, in exchange for being able to see through one of your crows. While seeing through your crows, you can use your passive perception instead of the crows. You can only see one crow at a time and can switch between them as an action or stop as a bonus action.</description>
 		</sheet>
 	</element>
+	
 	<element name="Omen of Death" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_OMEN_OF_DEATH">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BLACK_BIRD_OMEN_OF_DEATH</requirements>
 		<description>
 			<p> When you reach 3rd level, you are constantly followed by an omen of death, giving you an aura of terror. As a bonus action, you force each creature of your choice that you can see within 30 feet of you to make a Wisdom saving throw. On a failed save, a creature becomes frightened of you for 1 minute. The frightened creature can repeat this saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
         </description>
 		<sheet action="Bonus Action">
-      		<description>Force each creature of your choice that you can see within 30 feet of you to make a Wisdom saving throw. On a failed save, a creature becomes frightened of you for 1 minute. The frightened creature can repeat this saving throw at the end of each of its turns, ending the effect on itself on a success.</description>
+      		<description>Force each creature of your choice that you can see within 30 feet of you to make a Wisdom save. On a failed save, a creature becomes frightened of you for 1 minute. The frightened creature can repeat this saving throw at the end of each of its turns, ending the effect on itself on a success.</description>
 		</sheet>
 	</element>
+	
 	<element name="Raven's Eye" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_RAVENS_EYE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_BLACK_BIRD_RAVENS_EYE</requirements>
 		<description>
