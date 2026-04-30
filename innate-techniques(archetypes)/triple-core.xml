@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.1">
+		<update version="6.0.2">
 			<file name="triple-core.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/triple-core.xml" />
 		</update>
 	</info>
@@ -84,8 +84,14 @@
             <p>As part of the bonus action you take to enter this form, you spend CE up to your CE modifier. For the duration of this form, your speed increases by 10 ft per CE spent and you gain a +2 bonus to AC. You deal an additional 1d4 damage for every 15 ft you move in a straight line before hitting a target with a melee attack.</p>
         </description>
         <sheet usage="CE">
-            <description>As part of the bonus action you take to enter this form, spent up to {{ce:modifier}} CE. For the duration of this form, your speed increases by 10 ft per CE spent and you gain a +2 bonus to AC. You deal an additional 1d4 damage for every 15 ft you move in a straight line before hitting a target with a melee attack.</description>
+            <description>As part of the bonus action you take to enter this form, spent up to {{ce:modifier}} CE. For the duration of this form, your speed increases by {{triple:core:divebomb:speed}} ft per CE spent and you gain a +{{triple:core:divebomb:ac}} bonus to AC. You deal an additional 1d{{triple:core:divebomb:damage}} damage for every {{triple:core:divebomb:distance}} ft you move in a straight line before hitting a target with a melee attack.</description>
         </sheet>
+		<rules>
+			<stat name="triple:core:divebomb:speed" value="10" />
+			<stat name="triple:core:divebomb:ac" value="2" />
+			<stat name="triple:core:divebomb:damage" value="4" />
+			<stat name="triple:core:divebomb:distance" value="15" />
+		</rules>
     </element>
 
 	<element name="Triple Threat" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_TRIPLE_CORE_TRIPLE_THREAT">
