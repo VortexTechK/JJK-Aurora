@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.0">
+		<update version="6.0.1">
 			<file name="ten-shadows.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/ten-shadows.xml" />
 		</update>
 	</info>
@@ -148,7 +148,7 @@
 			</table>
 		</description>
 		<sheet action="Action" usage="CE">
-			<description>Combine two of your living shikigami. Spend half the CE cost of the base shikigami to summon up to {{proficiency}} in altered shikigami at once, spending CE for each. An altered shikigami has half the hit points of the base shikigami and you can reduce its size category by 1 to reduce the CE cost by 1. When reduced to 0 hit points, it does not affect the shikigami used in its creation and is not eligible for Totality. You cannot summon any unaltered shikigami while altered shikigami are summoned. If the base shikigami or alteration shikigami’s CR is 4 or higher, you can only create up to two altered shikigami with them.</description>
+			<description>Combine living shikigamis by spending half the CE cost of a base shikigami to summon up to {{proficiency}} in altered shikigami at once, spending CE for each. An altered shikigami has half the hit points of the base shikigami and gains an alteration feature from the other, and you can reduce its size category by 1 to reduce the CE cost by 1. When reduced to 0 hit points, it does not affect the shikigami used in its creation and is not eligible for Totality. You cannot summon any unaltered shikigami while altered shikigami are summoned. If the base shikigami or alteration shikigami’s CR is 4 or higher, you can only create up to two altered shikigami with them.</description>
 		</sheet>
 	</element>
 	
