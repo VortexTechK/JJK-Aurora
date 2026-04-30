@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.0">
+		<update version="6.0.1">
 			<file name="antigravity-system.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/antigravity-system.xml" />
 		</update>
 	</info>
@@ -27,6 +27,7 @@
       		<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_ANTIGRAVITY_SYSTEM_DOMAIN_EXPANSION_ZERO_GRAVITY" level="18" />
 		</rules>
 	</element>
+	
 	<element name="Antigravity" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_ANTIGRAVITY_SYSTEM_ANTIGRAVITY">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ANTIGRAVITY_SYSTEM_ANTIGRAVITY</requirements>
 		<description>
@@ -35,7 +36,7 @@
             <p class="indent">The height of the cylinder increases to 50 feet at 3rd level, 100 feet at 11th level and 200 feet at 18th level. Fall damage from this technique ignores any type of fall damage reduction or immunity. Fall damage die becomes d8 at 3rd level and d10 at 6th level.</p>
         </description>
 		<sheet action="Action" usage="CE">
-			<description>For 3 cursed energy, you can reverse gravity in a 10 foot-radius {{antigravity:height}} foot-high cylinder centered on you for all creatures but yourself until the beginning of your next turn. All creatures and objects that aren’t anchored to the ground in the area fall upward. A creature can make a Dexterity saving throw to grab onto a fixed object it can reach, thus avoiding the fall. If a solid object (such as a ceiling) is encountered in this fall, falling objects and creatures strike it and take the remaining height as fall damage. If an object or creature reaches the top of the area without striking anything, it remains there, oscillating slightly, for the duration. At the end of the duration, affected objects and creatures fall back down, taking fall damage ignoring resistance or immunity. This damage is d{{antigravity:falldamage}}s with a max of 20d{{antigravity:falldamage}}.</description>
+			<description>For 3 CE, reverse gravity in a 10 foot-radius {{antigravity:height}} foot-high cylinder centered on you for all creatures but yourself until the beginning of your next turn. All creatures and objects that aren’t anchored to the ground in the area fall upward. A creature can make a Dexterity saving throw to grab onto a fixed object it can reach. If a solid object is encountered in this fall, falling objects and creatures strike it and take the remaining height as fall damage. If an object or creature reaches the top of the area without striking anything, it remains there for the duration. At the end of the duration, affected objects and creatures fall back down, taking fall damage ignoring resistance or immunity. This damage is d{{antigravity:falldamage}}s with a max of 20d{{antigravity:falldamage}}.</description>
 		</sheet>
         <rules>
       	    <stat name="antigravity:height" value="30" level="1" bonus="antigravity" />
@@ -48,6 +49,7 @@
             <stat name="antigravity:falldamage" value="12" level="11" bonus="antigravity" />
         </rules>
 	</element>
+	
 	<element name="Gravity Field" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_ANTIGRAVITY_SYSTEM_GRAVITY_FIELD">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ANTIGRAVITY_SYSTEM_GRAVITY_FIELD</requirements>
 		<description>
@@ -57,7 +59,8 @@
             <p class="indent"><strong>Disorienting Gravity.</strong> Any creature that is lifted upwards by your Antigravity must make a Constitution saving throw. On a failure, they make any attacks at disadvantage and cannot maintain concentration while within your field. </p>
         </description>
 		<sheet>
-      		<description>When you use your innate technique, you can choose {{gravity:field:focused}} creatures to be unaffected by your technique. Any creature that is lifted upwards by your Antigravity must make a Constitution saving throw. On a failure, they make any attacks at disadvantage and cannot maintain concentration while within your field.</description>
+      		<description>When you use Antigravity, you can choose {{gravity:field:focused}} creatures to be unaffected by your technique. Any creature that is lifted upwards by your Antigravity must make a Constitution saving throw. On a failure, they make any attacks at disadvantage and cannot maintain concentration while within your field.</description>
+			<description level="11">When you use Antigravity, you can choose {{gravity:field:focused}} creatures to be unaffected by your technique. Any creature that is lifted upwards by your Antigravity must make a Constitution saving throw. On a failure, they make any attacks at disadvantage, cannot maintain concentration while within your field, and are stunned until the end of their next turn.</description>
 		</sheet>
 		<rules>
                 <stat name="gravity:field:focused" value="ce:modifier" />
@@ -65,27 +68,30 @@
                 <grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_ANTIGRAVITY_SYSTEM_LIGHT_FALL" level="3" />
 		</rules>
 	</element>
+	
     <element name="Light Fall" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_ANTIGRAVITY_SYSTEM_LIGHT_FALL">
         <description>
             <p> As a reaction for 1 CE to falling, you and creatures equal to your proficiency bonus within 120 feet have their rate of descent slowed to 60 feet per round and take no fall damage when you land. </p>
         </description>
         <sheet action="Reaction" usage="CE">
-            <description>For 1 cursed energy, you and {{proficiency}} creatures within 120 feet have their rate of descent slowed to 60 feet per round and take no fall damage when you land.</description>
+            <description>For 1 CE, you and {{proficiency}} creatures within 120 feet have their rate of descent slowed to 60 feet per round and take no fall damage when you land.</description>
         </sheet>
     </element>
+	
 	<element name="Antigravity Shield" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_ANTIGRAVITY_SYSTEM_ANTIGRAVITY_SHIELD">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ANTIGRAVITY_SYSTEM_ANTIGRAVITY_SHIELD</requirements>
 		<description>
 			<p>At 6th level, you have learned to defend yourself from attacks using your antigravity. As a reaction for 2 CE, you can encase yourself in a field of antigravity, causing attack rolls against you to be made at disadvantage and any damage other than psychic is reduced by your CE modifier + your level until the beginning of your next turn. If you are taking the Dodge action, you can use this reaction on another creature within 5 feet.</p>
 		</description>
 		<sheet action="Reaction" usage="CE">
-			<description>For 2 cursed energy, attack rolls against you are made at disadvantage and any damage other than psychic is reduced by {{antigravityshield:reduction}} until the beginning of your next turn. If you are taking the Dodge action, you can use this on another creature within 5 feet.</description>
+			<description>For 2 CE, attacks against you are made at disadvantage and any damage other than psychic is reduced by {{antigravityshield:reduction}} until the beginning of your next turn. If you are taking the Dodge action, you can use this on another creature within 5 feet.</description>
 		</sheet>
         <rules>
             <stat name="antigravityshield:reduction" value="ce:modifier" />
             <stat name="antigravityshield:reduction" value="level" /> 
         </rules>
 	</element>
+	
 	<element name="Boosted System" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_ANTIGRAVITY_SYSTEM_BOOSTED_SYSTEM">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ANTIGRAVITY_SYSTEM_BOOSTED_SYSTEM</requirements>
 		<description>
@@ -96,9 +102,10 @@
             <p class="indent"><strong>Hard Fall.</strong> Fall damage from your field becomes d12 bludgeoning.</p>
         </description>
 		<sheet>
-			<description>You can spend up {{ce:modifier}} CE to increase the range by 10 feet and the duration by 1 round per CE. Creatures with a Dexterity score below {{ce:dc:total}} cannot make a Dexterity saving throw against your technique. If a creature fails a saving throw against your Disorienting Gravity, they are also stunned until the end of their next turn.</description>
+			<description>You can spend up to {{ce:modifier}} CE to increase the range of Antigravity by 10 feet and the duration by 1 round per CE. Creatures with a Dexterity score below {{ce:dc:total}} cannot make a Dexterity saving throw against your technique.</description>
 		</sheet>
 	</element>
+	
 	<element name="Domain Expansion: Zero Gravity" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_ANTIGRAVITY_SYSTEM_DOMAIN_EXPANSION_ZERO_GRAVITY">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ANTIGRAVITY_SYSTEM_DOMAIN_EXPANSION_ZERO_GRAVITY</requirements>
 		<description>
@@ -106,13 +113,14 @@
 		</description>
 		<sheet>
 			<description>
-				<p>At initiative 20, all creatures of your choice are affected by and fail all saving throws against Antigravity, which can be released by you at will.</p>
+				<p>At Initiative 20, all creatures of your choice are affected by and fail all saving throws against Antigravity, which can be released by you at will.</p>
 			</description>
 		</sheet>
 		<rules>
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION" />
 		</rules>
 	</element>
+	
 	<!--Feature Replacement Grants-->
 	<element name="Antigravity Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_ANTIGRAVITY_SYSTEM_ANTIGRAVITY" />
 	<element name="Gravity Field Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_ANTIGRAVITY_SYSTEM_GRAVITY_FIELD" />
