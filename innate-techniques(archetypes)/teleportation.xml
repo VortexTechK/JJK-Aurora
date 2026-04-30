@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.0">
+		<update version="6.0.1">
 			<file name="teleportation.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/teleportation.xml" />
 		</update>
 	</info>
@@ -35,10 +35,9 @@
             <p class="indent">As an action for 2 cursed energy, while not being viewed, you and any willing creatures within 5ft of you that are also not being viewed teleport up to 500 feet to a mark of your choice.</p>
 		</description>
 		<sheet action="Bonus Action" usage="CE">
-			<description>For 1 CE, you can mark a person, location, or object which you can touch. You can have up to {{teleportation:marks:max}} marks at once and your marks remain for up to 12 hours. You can remove any of your marks at will. As an action for 2 CE, while not being viewed, you and any willing creatures within 5ft of you that are also not being viewed teleport up to {{teleportation:range}} feet to a mark of your choice.</description>
-            <description level="3">For 1 CE, you can mark a person, location, or object which you can touch. You can have up to {{teleportation:marks:max}} marks at once and your marks remain for up to 12 hours. You can remove any of your marks at will. As an action or reaction to an attack or saving throw as long as you have a way to cause yourself to disappear from view for 2 CE, while not being viewed, you and any willing creatures within 5ft of you that are also not being viewed teleport up to {{teleportation:range}} feet to a mark of your choice.</description>
-            <description level="6">For 1 CE, you can mark a person, location, or object which you can touch. You can have up to {{teleportation:marks:max}} marks at once and your marks remain for up a week. You can remove any of your marks at will. As an action or reaction to an attack or saving throw as long as you have a way to cause yourself to disappear from view for 2 CE, while not being viewed, you and any willing creatures within 5ft of you that are also not being viewed teleport up to {{teleportation:range}} feet to a mark of your choice.</description>
-            <description level="6" action="Free Action">For 1 CE, you can mark a person, location, or object which you can touch. You can have up to {{teleportation:marks:max}} marks at once and your marks remain for up a week. You can remove any of your marks at will. As an action or reaction to an attack or saving throw as long as you have a way to cause yourself to disappear from view for 2 CE, while not being viewed, you and any willing creatures within 5ft of you that are also not being viewed teleport up to {{teleportation:range}} feet to a mark of your choice.</description>
+			<description>For 1 CE, you can mark a person, location, or object which you can touch. You can have up to {{teleportation:marks:max}} marks at once and your marks remain for up to 12 hours. You can remove any of your marks at will. As an action for {{teleportation:cost}} CE, while not being viewed, you and any willing creatures within 5ft of you that are also not being viewed teleport up to {{teleportation:range}} feet to a mark of your choice.</description>
+            <description level="3">For 1 CE, you can mark a person, location, or object which you can touch. You can have up to {{teleportation:marks:max}} marks at once and your marks remain for up to 12 hours. You can remove any of your marks at will. As an action or reaction to an attack or saving throw as long as you have a way to cause yourself to disappear from view for {{teleportation:cost}} CE, while not being viewed, you and any willing creatures within 5ft of you that are also not being viewed teleport up to {{teleportation:range}} feet to a mark of your choice.</description>
+            <description level="6" action="Free Action">For 1 CE, you can mark a person, location, or object which you can touch. You can have up to {{teleportation:marks:max}} marks at once and your marks remain for up a week. You can remove any of your marks at will. As an action or reaction to an attack or saving throw as long as you have a way to cause yourself to disappear from view for {{teleportation:cost}} CE, while not being viewed, you and any willing creatures within 5ft of you that are also not being viewed teleport up to {{teleportation:range}} feet to a mark of your choice.</description>
 		</sheet>
         <rules>
             <stat name="teleportation:marks:max" value="ce:modifier" />
@@ -149,6 +148,8 @@
             <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
             <stat name="teleportation:range:multiply" value="teleportation:range:calculation" />
             <stat name="teleportation:range" value="teleportation:range:multiply" bonus="teleportation" level="3" />
+			<stat name="teleportation:cost" value="2" />
+			<stat name="teleportation:cost" value="-1" requirements="ID_JJK_FEAT_PERFECTED_TELEPORT" />
         </rules>
 	</element>
 
@@ -172,7 +173,9 @@
         </sheet>
         <rules>
             <grant type="Spell" id="ID_PHB_SPELL_TELEPORT" />
-        </rules>
+			<stat name="teleportation:mastered:cost" value="8" />
+			<stat name="teleportation:mastered:cost" value="-ce:modifier" requirements="ID_JJK_FEAT_PERFECTED_TELEPORT" />
+		</rules>
 	</element>
 
 	<element name="Improved Marking" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_TELEPORTATION_IMPROVED_MARKING">
