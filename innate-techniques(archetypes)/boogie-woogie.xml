@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.0">
+		<update version="6.0.1">
 			<file name="boogie-woogie.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/boogie-woogie.xml" />
 		</update>
 	</info>
@@ -34,10 +34,10 @@
 			<p> At 1st level, you have created a unique technique to switch places with your others, extremely simple yet effective. You can switch places with a willing creature or magical object within 30 feet of you by clapping for 1 Cursed Energy. You can use this technique as an action or bonus action, or you can also swap as a reaction for 2 additional Cursed Energy.</p>
         </description>
 		<sheet action="Action/Bonus Action" usage="CE">
-			<description level="1">For 1 cursed energy, you can switch places with a willing creature or magical object within 30 feet of you by clapping. You can also swap as a reaction for 2 additional cursed energy.</description>
-            <description level="3">For 1 cursed energy, you can switch places with a creature or magical object or make two other creature swap places within 30 feet of you by clapping. You can also swap as a reaction for 2 additional cursed energy. Enemies teleported are disorientated and lose their reaction.</description>
-            <description level="6">For 1 cursed energy, you can switch places with a creature or magical object or make two other creature swap places within 45 feet of you by clapping. You can also swap as a reaction for 1 additional cursed energy. Enemies teleported are disorientated and lose their reaction. You can use Boogie once per turn as a free action.</description>
-            <description level="11">For 1 cursed energy, you can switch the places of up to 4 creatures or magical object including yourself within 60 feet of you by clapping. You can also swap as a reaction for 1 additional cursed energy. Enemies teleported are disorientated and lose their reaction. You can use Boogie once per turn as a free action. When you switch places with an ally who was previously in melee range of an enemy right before the switch, your next attack roll has advantage. The same goes if you teleport an enemy into range or an ally into range.</description>
+			<description level="1">For 1 CE, switch places with a willing creature or magical object within 30 feet of you by clapping. You can also swap as a reaction for 2 additional CE.</description>
+            <description level="3">For 1 CE, switch places with a creature or magical object or make two other creature swap places within 30 feet of you by clapping. You can also swap as a reaction for 2 additional CE. Enemies teleported lose their reaction.</description>
+            <description level="6">For 1 CE or as a free action once per turn, switch places with a creature or magical object or make two other creature swap places within 45 feet of you by clapping. You can also swap as a reaction for 1 additional CE. Enemies teleported lose their reaction.</description>
+            <description level="11">For 1 CE or as a free action once per turn, switch the places of up to 4 creatures or magical object including yourself within 60 feet of you by clapping. You can also swap as a reaction for 1 additional CE. Enemies teleported lose their reaction. When you switch places with an ally who was previously in melee range of an enemy right before the switch, your next attack roll has advantage. The same goes if you teleport an enemy into range or an ally into range.</description>
         </sheet>
 	</element>
 	
