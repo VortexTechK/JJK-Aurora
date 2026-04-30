@@ -4,7 +4,7 @@
 		<name>Innate Technique Feats</name>
 		<description>Innate Technique Feats from JJK.</description>
 		<author url="https://docs.google.com/document/d/1eC8tEMHnupOuaX6At1X8JORz5iarNe6I-A7j2QzScrE/edit?tab=t.0">JJK</author>
-		<update version="6.0.0">
+		<update version="6.0.1">
 			<file name="innatetechnique-feats.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innatetechnique-feats.xml" />
 		</update>
 	</info>
@@ -93,7 +93,7 @@
 	</element>
 
     <!-- Black Bird Manipulation -->
-    <element name="All Seeing" type="Feat" source="JJK" id="ID_JJK_FEAT_ALL_SEING">
+    <element name="All Seeing" type="Feat" source="JJK" id="ID_JJK_FEAT_ALL_SEEING">
     	<prerequisite>Must have Cursed Crow</prerequisite>
 		<requirements>ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_CURSED_CROWS</requirements>
 		<supports>Innate Technique Feats</supports>
