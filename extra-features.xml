@@ -4,7 +4,7 @@
 		<name>Extra Features</name>
 		<description>The Extra Features from JJK</description>
 		<author url="https://docs.google.com/document/d/1eC8tEMHnupOuaX6At1X8JORz5iarNe6I-A7j2QzScrE/edit?tab=t.0">JJK</author>
-		<update version="6.0.7">
+		<update version="6.0.8">
 			<file name="extra-features.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/extra-features.xml" />
 		</update>
 	</info>
@@ -120,6 +120,12 @@
 			<stat name="ce:dc:total" value="ce:dc" bonus="cursed energy"/>
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_MAXIMUM_OUTPUT" requirements="[cu:stat:20]" />
         	<stat name="breakthrough:points" value="0" />
+			<stat name="ce:modifier:double" value="ce:modifier" />
+			<stat name="ce:modifier:double" value="ce:modifier" />
+			<stat name="cu:stat:double" value="cu:stat" />
+			<stat name="cu:stat:double" value="cu:stat" />
+			<stat name="ce:dc:total:double" value="ce:dc:total" />
+			<stat name="ce:dc:total:double" value="ce:dc:total" />
 		</rules>
 	</element>
 	
