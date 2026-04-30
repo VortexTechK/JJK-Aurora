@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.3">
+		<update version="6.0.4">
 			<file name="body-manipulation.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/body-manipulation.xml" />
 		</update>
 	</info>
@@ -60,6 +60,98 @@
             <select type="Archetype Feature" name="Skill Theft (18)" supports="Skill Theft 18" number="2" level="18" optional="true" />
     	</rules>
 	</element>
+
+	<element name="Proficiency" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_PROFICIENCY_3_1">
+        <supports>Skill Theft 3</supports>
+        <description>
+            <p>Proficiency</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Proficiency" name="Proficiency" supports="Skill||Simple||Martial||Tool||Armor" />
+        </rules>
+    </element>
+
+    <element name="Proficiency" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_PROFICIENCY_3_2">
+        <requirements>ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_PROFICIENCY_3_1</requirements>
+        <supports>Skill Theft 3</supports>
+        <description>
+            <p>Skill</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Proficiency" name="Proficiency" supports="Skill||Simple||Martial||Tool||Armor" />
+        </rules>
+    </element>
+
+    <element name="Proficiency" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_PROFICIENCY_6_1">
+        <supports>Skill Theft 6</supports>
+        <description>
+            <p>Skill</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Proficiency" name="Proficiency" supports="Skill||Simple||Martial||Tool||Armor" />
+        </rules>
+    </element>
+
+    <element name="Proficiency" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_PROFICIENCY_6_2">
+        <requirements>ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_PROFICIENCY_6_1</requirements>
+        <supports>Skill Theft 6</supports>
+        <description>
+            <p>Skill</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Proficiency" name="Proficiency" supports="Skill||Simple||Martial||Tool||Armor" />
+        </rules>
+    </element>
+
+    <element name="Proficiency" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_PROFICIENCY_11_1">
+        <supports>Skill Theft 11</supports>
+        <description>
+            <p>Skill</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Proficiency" name="Proficiency" supports="Skill||Simple||Martial||Tool||Armor" />
+        </rules>
+    </element>
+
+    <element name="Proficiency" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_PROFICIENCY_11_2">
+        <requirements>ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_PROFICIENCY_11_1</requirements>
+        <supports>Skill Theft 11</supports>
+        <description>
+            <p>Skill</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Proficiency" name="Proficiency" supports="Skill||Simple||Martial||Tool||Armor" />
+        </rules>
+    </element>
+
+    <element name="Proficiency" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_PROFICIENCY_18_1">
+        <supports>Skill Theft 18</supports>
+        <description>
+            <p>Skill</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Proficiency" name="Proficiency" supports="Skill||Simple||Martial||Tool||Armor" />
+        </rules>
+    </element>
+
+    <element name="Proficiency" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_PROFICIENCY_18_2">
+        <requirements>ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_PROFICIENCY_18_1</requirements>
+        <supports>Skill Theft 18</supports>
+        <description>
+            <p>Skill</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Proficiency" name="Proficiency" supports="Skill||Simple||Martial||Tool||Armor" />
+        </rules>
+    </element>
 
     <element name="Antigravity System" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_ANTIGRAVITY_SYSTEM_3_1">
         <supports>Skill Theft 3</supports>
