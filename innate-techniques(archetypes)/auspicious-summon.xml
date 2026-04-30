@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.0">
+		<update version="6.0.1">
 			<file name="auspicious-summon.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/auspicious-summon.xml" />
 		</update>
 	</info>
@@ -37,8 +37,8 @@
 			<p> Beginning at 1st level, as an action using 1 Cursed Energy, you summon a yellow drill horn for 1 minute. This horn can be used to make an additional melee Cursed Energy attack against a creature within 30 ft as part of your turn, dealing 1d6 piercing damage on a hit. The damage increases to 1d8 at 3rd level, 1d10 at 6th level, 1d12 at 11th level, and 3d6 at 18th level. You can only have one Kaichi at a time.</p>
         </description>
 		<sheet action="Action" usage="CE">
-			<description level="1">For 1 cursed energy, summon a yellow drill horn for 1 minute. This horn can be used to make an additional melee Cursed Energy attack against a creature within 30 ft as part of your turn, dealing 1d{{kaichi:damage}} piercing damage on a hit.</description>
-			<description level="18">For 1 cursed energy, summon a yellow drill horn for 1 minute. This horn can be used to make an additional melee Cursed Energy attack against a creature within 30 ft as part of your turn, dealing 3d6 piercing damage on a hit.</description>
+			<description level="1">For 1 CE, summon Kaichi for 1 minute which makes an additional melee CE attack against a creature within 30 ft as part of your turn, dealing 1d{{kaichi:damage}} piercing damage on a hit.</description>
+			<description level="18">For 1 CE, summon Kaichi for 1 minute which makes an additional melee CE attack against a creature within 30 ft as part of your turn, dealing 3d6 piercing damage on a hit.</description>
 		</sheet>
         <rules>
             <stat name="kaichi:damage" value="6" level="1" bonus="kaichi" />
@@ -54,7 +54,7 @@
 			<p> At 3rd level, you summon dark water to assist yourself. You can use a bonus action to spend 1 Cursed Energy and double your movement until the end of your next turn. Additionally, as a reaction for 2 Cursed Energy, you gain a +5 bonus to AC until the beginning of your next turn.</p>
         </description>
 		<sheet action="Bonus Action" usage="CE">
-      		<description>For 1 cursed energy, double your movement until the end of your next turn. As a reaction for 2 cursed energy, you gain a +5 bonus to AC until the beginning of your next turn.</description>
+      		<description>For 1 CE, double your movement until the end of your next turn. As a reaction for 2 CE, you gain a +5 bonus to AC until the beginning of your next turn.</description>
 		</sheet>
 	</element>
 	
@@ -64,7 +64,7 @@
 			<p>Once you reach 6th level, you gain a power to help you last longer in battles. As a bonus action, for every 1 Cursed Energy you spend you gain 5 temporary hit points. While you have these temporary hit points, you ignore exhaustion. However, after activating, your movement is 0 until the start of your next turn.</p>
 		</description>
 		<sheet action="Bonus Action" usage="CE">
-			<description>For every 1 cursed energy spent, gain 5 temporary hit points. While you have these points, you ignore exhaustion. Your movement is 0 until the start of your next turn.</description>
+			<description>For every 1 CE spent, gain 5 temporary hit points. While you have these points, you ignore exhaustion. Your movement is 0 until the start of your next turn.</description>
 		</sheet>
 	</element>
 	
@@ -77,7 +77,7 @@
 			</div>
 		</description>
 		<sheet action="Action" usage="CE">
-			<description>For 10 cursed energy, summon Ryu. You can command Ryu as a bonus action. Otherwise, Ryu takes the dodge action.</description>
+			<description>For 10 CE, summon Ryu. You can command Ryu as a bonus action. Otherwise, Ryu takes the dodge action.</description>
 		</sheet>
 		<rules>
 			<select type="Companion" name="Ryu" supports="Ryu" />
@@ -90,9 +90,7 @@
 			<p>Finally, at 18th level, you have honed your Cursed Technique to an extreme. While in this domain, all of your Auspicious Beasts are constantly active without any side effects. Attacks made by Kaichi and Ryu always hit.</p>
 		</description>
 		<sheet>
-			<description>
-				<p>All of your Auspicious Beasts are constantly active without any side effects. Attacks made by Kaichi and Ryu always hit.</p>
-			</description>
+			<description>All of your Auspicious Beasts are constantly active without any side effects. Attacks made by Kaichi and Ryu always hit.</description>
 		</sheet>
 		<rules>
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION" />
