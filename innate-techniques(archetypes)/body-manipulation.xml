@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.2">
+		<update version="6.0.3">
 			<file name="body-manipulation.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/body-manipulation.xml" />
 		</update>
 	</info>
@@ -54,7 +54,7 @@
       		<description>You cannot use Innate Technique features from different techniques at the same time. If you do, one of them deactivates until you are only using one innate technique.</description>
 		</sheet>
     	<rules>
-      		<select type="Archetype Feature" name="Skill Theft (3)" supports="Skill Theft 3" number="2" />
+      		<select type="Archetype Feature" name="Skill Theft (3)" supports="Skill Theft 3" number="2" optional="true" />
             <select type="Archetype Feature" name="Skill Theft (6)" supports="Skill Theft 6" number="2" level="6" optional="true" />
             <select type="Archetype Feature" name="Skill Theft (11)" supports="Skill Theft 11" number="2" level="11" optional="true" />
             <select type="Archetype Feature" name="Skill Theft (18)" supports="Skill Theft 18" number="2" level="18" optional="true" />
