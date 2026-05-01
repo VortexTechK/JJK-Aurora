@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.1">
+		<update version="6.0.2">
 			<file name="new-shadowstyle.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/new-shadowstyle.xml" />
 		</update>
 	</info>
@@ -72,7 +72,7 @@
 			<p>Starting at 11th level, you can spend 1 cursed energy as a bonus action to imbue your weapon with your simple domain for 1 minute. You can add your Cursed Energy modifier to attack and damage rolls of melee weapon attacks or unarmed strikes. When you use this technique, you ignore any penalties for using a broken weapon.</p>
 		</description>
         <sheet action="Bonus Action" usage="CE">
-			<description>For 1 cursed energy imbue your weapon for 1 minute, adding +{{ce:modifier}} to attack and damage rolls of melee weapon attacks or unarmed attacks. When you use this technique, you ignore any penalties for using a broken weapon.</description>
+			<description>For 1 CE imbue your weapon for 1 minute, adding +{{ce:modifier}} to attack and damage rolls of melee weapon attacks or unarmed attacks. When you use this technique, you ignore any penalties for using a broken weapon.</description>
 		</sheet>
 	</element>
 
@@ -88,7 +88,7 @@
 			<p class="indent">When you expand the range of your Simple Domain over a creature, you can make two weapon attacks against a single creature as a free action (regardless of range). You can do this a number of times equal to your proficiency bonus each long rest.</p>
 		</description>
         <sheet>
-			<description>Your Simple Domain costs no cursed energy, you can freely move with it, and the range of New Shadow Style techniques can be increased to up to 60 feet as a bonus action until the end of your turn. When you expand the range of your Simple Domain over a creature, you can make two weapon attacks against a single creature as a free action (regardless of range) {{proficiency}} times per long rest.</description>
+			<description>Your Simple Domain costs no CE, you can freely move with it, and the range of New Shadow Style techniques can be increased to up to 60 feet as a bonus action until the end of your turn. When you expand the range of your Simple Domain over a creature, you can make two weapon attacks against a single creature as a free action (regardless of range) {{proficiency}} times per long rest.</description>
 		</sheet>
 	</element>
 
