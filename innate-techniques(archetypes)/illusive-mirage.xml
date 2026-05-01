@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.0">
+		<update version="6.0.1">
 			<file name="illusive-mirage.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/illusive-mirage.xml" />
 		</update>
 	</info>
@@ -36,8 +36,8 @@
             <p class="indent">At 6th level, you can target a number of creatures up to your Cursed Energy modifier as an action, spending 2 CE for each. Additionally, a creature that fails its save also has disadvantage on Intelligence, Wisdom, and Charisma saves and loses concentration on any technique or feature it was concentrating on.</p>
 		</description>
 		<sheet action="Action" usage="CE">
-			<description level="1">For 2 cursed energy, you can curse a creature within 60 feet. The target must make a Charisma saving throw. On a failure, you can track them up to 400 feet away and the next time they see a person, the creature must make an Intelligence saving throw. On a failure, the creature is confused and has disadvantage on attack rolls and Intelligence, Wisdom, and Charisma checks until the end of their next turn. A sorcerer can repeat the Charisma save at the end of their turns or leave the tracking range to end the curse.</description>
-            <description level="6">For 2 cursed energy, you can curse up to {{ce:modifier}} creatures within 60 feet. The targets must make a Charisma saving throw. On a failure, you can track them up to 400 feet away, they have disadvantage on Intelligence, Wisdom, and Charisma saves, they lose concentration on any technique or feature it was concentrating on, and the next time they see a person, the creature must make an Intelligence saving throw. On a failure, the creature is confused and has disadvantage on attack rolls and Intelligence, Wisdom, and Charisma checks until the end of their next turn. A sorcerer can repeat the Charisma save at the end of their turns or leave the tracking range to end the curse.</description>
+			<description level="1">For 2 CE, curse a creature within 60 ft. The target must make a Charisma saving throw. On a failure, you can track them up to 400 feet away and the next time they see a person, the creature must make an Intelligence saving throw. On a failure, the creature is confused and has disadvantage on attack rolls and Intelligence, Wisdom, and Charisma checks until the end of their next turn. A sorcerer can repeat the Charisma save at the end of their turns or leave the tracking range to end the curse.</description>
+            <description level="6">For 2 CE, curse up to {{ce:modifier}} creatures within 60 ft. The targets must make a Charisma saving throw. On a failure, you can track them up to 400 feet away, they have disadvantage on Intelligence, Wisdom, and Charisma saves, they lose concentration on any technique or feature it was concentrating on, and the next time they see a person, the creature must make an Intelligence saving throw. On a failure, the creature is confused and has disadvantage on attack rolls and Intelligence, Wisdom, and Charisma checks until the end of their next turn. A sorcerer can repeat the Charisma save at the end of their turns or leave the tracking range to end the curse.</description>
         </sheet>
 	</element>
 
@@ -49,9 +49,7 @@
             <p class="indent"><strong>Blurring.</strong> As an action for 3 cursed energy, your body becomes blurred, shifting and wavering to all who can see you. For a number of rounds equal to your Cursed Energy modifier, a creature that can see you has disadvantage on attack rolls against you. An attacker is immune to this effect if it doesn't rely on sight like blindsight or can see through illusions like with true sight.</p> 
             <p class="indent"><strong>Distorting Disguise.</strong> For 3 cursed energy, you make yourself (including your clothing, armor, weapons, and other belongings) look different for a number of hours equal to your Cursed Energy modifier. The changes of this feature fail to hold up to physical inspection. For example, if you use this technique to add a hat to your outfit, objects pass through the hat, and anyone who touches it would feel nothing or would feel your head and hair. If you use this spell to appear thinner than you are, the hand of someone who reaches out to touch you would bump into you while it was seemingly still in midair. To discern that you are disguised, a creature can use its action to inspect your appearance and must succeed on an Intelligence (Investigation) check against your cursed energy save DC.</p>
 		</description>
-		<sheet>
-			<description>You can use 3 cursed energy to use Phase Fist, Blurring, or Distorting Disguise.</description>
-		</sheet>
+		<sheet display="false"/>
         <rules>
             <grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_ILLUSIVE_MIRAGE_PHASE_FIST" />
             <grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_ILLUSIVE_MIRAGE_BLURRING" />
@@ -64,7 +62,7 @@
             <p>As part of making a melee attack, you can spend 3 cursed energy to create a duplicate of your weapon. Make a melee cursed attack roll at disadvantage, afterwards you make your normal attack against the same target. If the phase attack misses the actual attack will deal double the damage dice on a hit and if the phase attack hits the main attack will instead be made at advantage.</p>
         </description>
         <sheet>
-            <description>As part of making a melee attack, you may make a melee cursed attack roll at disadvantage, afterwards you make your normal attack against the same target. If the first attack misses, the main attack will deal double the damage dice on a hit and if the first attack hits, the main attack will instead be made at advantage.</description>
+            <description>As part of making a melee attack, spend 3 CE to make a melee CE attack roll at disadvantage, afterwards you make your normal attack against the same target. If the first attack misses, the main attack will deal double the damage dice on a hit and if the first attack hits, the main attack will instead be made at advantage.</description>
         </sheet>
     </element>
 
@@ -73,7 +71,7 @@
             <p>As an action for 3 cursed energy, your body becomes blurred, shifting and wavering to all who can see you. For a number of rounds equal to your Cursed Energy modifier, a creature that can see you has disadvantage on attack rolls against you. An attacker is immune to this effect if it doesn't rely on sight like blindsight or can see through illusions like with true sight.</p>
         </description>
         <sheet action="Action">
-            <description>For 3 cursed energy, for {{ce:modifier}} rounds a creature that can see you has disadvantage on attack rolls against you. An attacker is immune to this effect if it doesn't rely on sight to see or can see through illusions.</description>
+            <description>For 3 CE, for {{ce:modifier}} rounds a creature that can see you has disadvantage on attack rolls against you. An attacker is immune to this effect if it doesn't rely on sight to see or can see through illusions.</description>
         </sheet>
     </element>
 
@@ -82,7 +80,7 @@
             <p>For 3 cursed energy, you make yourself (including your clothing, armor, weapons, and other belongings) look different for a number of hours equal to your Cursed Energy modifier. The changes of this feature fail to hold up to physical inspection. For example, if you use this technique to add a hat to your outfit, objects pass through the hat, and anyone who touches it would feel nothing or would feel your head and hair. If you use this spell to appear thinner than you are, the hand of someone who reaches out to touch you would bump into you while it was seemingly still in midair. To discern that you are disguised, a creature can use its action to inspect your appearance and must succeed on an Intelligence (Investigation) check against your cursed energy save DC.</p>
         </description>
         <sheet>
-            <description>For 3 cursed energy, for {{ce:modifier}} hours you can make yourself look different. The changes of this feature fail to hold up to physical inspection. To discern that you are disguised, a creature can use its action to inspect your appearance and must succeed on an Intelligence (Investigation) check against your cursed energy save DC.</description>
+            <description>For 3 CE, for {{ce:modifier}} hours you can make yourself look different. The changes of this feature fail to hold up to physical inspection. To discern that you are disguised, a creature can use its action to inspect your appearance and must succeed on an Intelligence (Investigation) check against your cursed energy save DC.</description>
         </sheet>
     </element>
 
@@ -104,7 +102,7 @@
 				</table>
 		</description>
         <sheet action="Action" usage="CE">
-            <description>You may choose an object within the range of your cursed illusion that you can see to distort its appearance. A creature can attempt to discern the illusion by rolling an investigation check against your cursed energy save DC. You can spend an additional 3 CE to make the object invisible. If a creature runs into a medium or larger invisible object, they take 1d6 bludgeoning and lose their reaction. The cost of the technique is 1, 2, 3, 4, 6, or 10 cursed energy for Tiny, Small, Medium, Large, Huge, or Gargantuan objects, respectively.</description>
+            <description>You may choose an object within the range of your cursed illusion that you can see to distort its appearance. A creature can attempt to discern the illusion by rolling an investigation check against your cursed energy save DC. You can spend an additional 3 CE to make the object invisible. If a creature runs into a medium or larger invisible object, they take 1d6 bludgeoning and lose their reaction. The cost of the technique is 1, 2, 3, 4, 6, or 10 CE for Tiny, Small, Medium, Large, Huge, or Gargantuan objects, respectively.</description>
         </sheet>
 	</element>
 
@@ -119,7 +117,7 @@
             <p class="indent">A creature can attempt to see through the illusion by rolling an Investigation or Perception check (using their Cursed Energy score if they are a Sorcerer) against your Cursed Energy save DC. A creature automatically succeeds if they have an ability like true sight.</p>
         </description>
         <sheet action="Action" usage="CE">
-            <description>For 10 cursed energy, you can manipulate the surrounding terrain around you in a 150 ft radius to create difficult terrain or an false structure which blocks line of sight. A creature can attempt to see through the illusion by rolling an Investigation or Perception check against your Cursed Energy save DC. A creature automatically succeeds if they have an ability like true sight.</description>
+            <description>For 10 CE, manipulate the surrounding terrain around you in a 150 ft radius to create difficult terrain or an false structure which blocks line of sight. A creature can attempt to see through the illusion by rolling an Investigation or Perception check against your Cursed Energy save DC. A creature automatically succeeds if they have an ability like true sight.</description>
 		</sheet>
 	</element>
 
@@ -129,7 +127,7 @@
 			<p>At 18th level, you have mastered your technique allowing you to open your domain. At initiative 20, you can force all creatures to fall under an illusion of your choice. Additionally, you can use your reaction to trick a creature that attacks you to target a random creature within range. They must roll a dice to see who is targeted with the dice depending on the number of creatures within range. On a 1, you are still targeted. On a higher roll, a different creature is targeted. If there are no other creatures in range, roll a d2. On a 2, the attack targets a random direction, missing you completely.</p>
 		</description>
         <sheet>
-			<description>At initiative 20, you can force all creatures to fall under an illusion of your choice. Additionally, you can use your reaction to trick a creature that attacks you to target a random creature within range. They must roll a dice to see who is targeted with the dice depending on the number of creatures within range. On a 1, you are still targeted. On a higher roll, a different creature is targeted. If there are no other creatures in range, roll a d2. On a 2, the attack targets a random direction, missing you completely.</description>
+			<description>At Initiative 20, you can force all creatures to fall under an illusion of your choice. Additionally, you can use your reaction to trick a creature that attacks you to target a random creature within range. They must roll a dice to see who is targeted with the dice depending on the number of creatures within range. On a 1, you are still targeted. On a higher roll, a different creature is targeted. If there are no other creatures in range, roll a d2. On a 2, the attack targets a random direction, missing you completely.</description>
 		</sheet>
 		<rules>
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION"/>
