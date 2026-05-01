@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.0">
+		<update version="6.0.1">
 			<file name="heart-catch.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/heart-catch.xml" />
 		</update>
 	</info>
@@ -34,8 +34,8 @@
 			<p>Starting at 1st level, you create a pair of translucent hands as a bonus action for 1 Cursed Energy. These hands stay within 15 ft of you and each count as medium constructs. You can replace any attacks you make on your turn with an attack from your Love Hands. These hands deal your unarmed damage, and have advantage on grappling and shoving. The hands have an AC equal to your Cursed Energy save DC, HP equal to twice your cursed energy score and you take 1/10th of damage they take. This increases to three times your cursed energy score at 6th level and four times at 11th level.</p>
 		</description>
 		<sheet action="Bonus Action" usage="CE">
-			<description level="1">For 1 cursed energy, create a pair of translucent hands that stay within 15 ft of you and count as medium constructs. You can replace any attacks you make on your turn with an attack from your Love Hands. These hands deal your unarmed damage, and have advantage on grappling and shoving. The hands have an AC of {{heart:catch:hands:dc}}, {{heart:catch:hands:hp}} HP, and you take 1/10th of damage they take.</description>
-            <description level="3">For 1 cursed energy, create a pair of translucent hands that stay within 30 ft of you and count as medium constructs. You can replace any attacks you make on your turn with an attack from your Love Hands. These hands deal your unarmed damage, and have advantage on grappling and shoving. The hands have an AC of {{heart:catch:hands:dc}}, {{heart:catch:hands:hp}} HP, and you take 1/10th of damage they take.</description>
+			<description level="1">For 1 CE, create a pair of translucent hands that stay within 15 ft of you and count as medium constructs. You can replace any attacks you make on your turn with an attack from your Love Hands. These hands deal your unarmed damage, and have advantage on grappling and shoving. The hands have an AC of {{heart:catch:hands:dc}}, {{heart:catch:hands:hp}} HP, and you take 1/10th of damage they take.</description>
+            <description level="3">For 1 CE, create a pair of translucent hands that stay within 30 ft of you and count as medium constructs. You can replace any attacks you make on your turn with an attack from your Love Hands. These hands deal your unarmed damage, and have advantage on grappling and shoving. The hands have an AC of {{heart:catch:hands:dc}}, {{heart:catch:hands:hp}} HP, and you take 1/10th of damage they take.</description>
 		</sheet>
         <rules>
             <stat name="heart:catch:hands:hp" value="cu:stat" />
@@ -80,7 +80,7 @@
 			<p>Starting at 11th level, on a hit you can spend 5 Cursed Energy to force a creature you hit with a melee attack to become Charmed. A creature charmed in this way can only target you with attacks and harmful effects for 1 minute and must make a Wisdom save at the start of their turn to end the condition.</p>
 		</description>
         <sheet>
-			<description usage="CE">On a hit you can spend 5 cursed energy to charm the hit creature. A creature charmed in this way can only target you with attacks and harmful effects for 1 minute and can make a Wisdom save at the start of their turn to end the condition.</description>
+			<description usage="CE">On a hit you can spend 5 CE to charm the hit creature. A creature charmed in this way can only target you with attacks and harmful effects for 1 minute and can make a Wisdom save at the start of their turn to end the condition.</description>
 		</sheet>
 	</element>
 
@@ -90,7 +90,7 @@
 			<p>At 18th level, you have learned the true meaning of love. At initiative 20 all creatures in the Domain are restrained and charmed until the end of their next turn. Additionally, your Love Hands automatically hit all attack rolls and creatures automatically fail grapple and shove checks as well as saving throws made by the hands.</p>
 		</description>
         <sheet>
-			<description>At initiative 20, all creatures are restrained and charmed until the end of their next turn. Your Love Hands automatically hit all attack rolls and creatures automatically fail grapple and shove checks as well as saving throws made by the hands.</description>
+			<description>At Initiative 20, all creatures are restrained and charmed until the end of their next turn. Your Love Hands automatically hit all attack rolls and creatures automatically fail grapple and shove checks as well as saving throws made by the hands.</description>
 		</sheet>
 		<rules>
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION"/>
