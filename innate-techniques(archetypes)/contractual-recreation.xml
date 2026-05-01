@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.0">
+		<update version="6.0.1">
 			<file name="contractual-recreation.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/contractual-recreation.xml" />
 		</update>
 	</info>
@@ -51,33 +51,24 @@
             <p class="indent">If you create an object over a creature, they must make a Dexterity save. On a failure they take 2d12 bludgeoning damage for every size larger than Tiny the object is. If the object is Huge or larger, a creature takes half as much damage on a successful save or is knocked prone and restrained under the object in addition to damage on a fail. Anything created through your technique lasts indefinitely.</p>
         </description>
 		<sheet action="Action" usage="CE">
-			<description level="1">Spend the required cursed energy to materialize an object from a receipt. The receipt then becomes ashes and you cannot use this technique if the receipts are wet. You can summon materializations within 100 ft. If you create an object over a creature, they must make a Dexterity save. On a failure they take 2d12 bludgeoning damage for every size larger than Tiny the object is. If the object is Huge or larger, a creature takes half as much damage on a successful save or is knocked prone and restrained under the object in addition to damage on a fail. Anything created through your technique lasts indefinitely.</description>
-			<description level="3" action="Action/Bonus Action">Spend the required cursed energy to materialize an object from a receipt. The receipt then becomes ashes and you cannot use this technique if the receipts are wet. You can summon materializations within 100 ft. If you create an object over a creature, they must make a Dexterity save. On a failure they take 2d12 bludgeoning damage for every size larger than Tiny the object is. If the object is Huge or larger, a creature takes half as much damage on a successful save or is knocked prone and restrained under the object in addition to damage on a fail. Anything created through your technique lasts indefinitely.</description>
-			<description level="18" action="Action/Bonus Action/Free Action">Spend the required cursed energy to materialize an object from a receipt. The receipt then becomes ashes and you cannot use this technique if the receipts are wet. You can summon materializations within 100 ft. If you create an object over a creature, they must make a Dexterity save. On a failure they take 2d12 bludgeoning damage for every size larger than Tiny the object is. If the object is Huge or larger, a creature takes half as much damage on a successful save or is knocked prone and restrained under the object in addition to damage on a fail. Anything created through your technique lasts indefinitely.</description>
+			<description level="1">Spend the required cursed energy to materialize a receipt. It then becomes ashes. You can summon materializations within 100 ft. If you create an object over a creature, they must make a Dexterity save. On a failure they take 2d12 bludgeoning damage for every size larger than Tiny the object is. If the object is Huge or larger, a creature takes half as much damage on a successful save or is knocked prone and restrained under the object in addition to damage on a fail. Anything created through your technique lasts indefinitely. You cannot use this technique if the receipts are wet.</description>
+			<description level="3" action="Action/Bonus Action">Spend the required cursed energy to materialize a receipt. It then becomes ashes. You can summon materializations within 100 ft. If you create an object over a creature, they must make a Dexterity save. On a failure they take 2d12 bludgeoning damage for every size larger than Tiny the object is. If the object is Huge or larger, a creature takes half as much damage on a successful save or is knocked prone and restrained under the object in addition to damage on a fail. Anything created through your technique lasts indefinitely. You cannot use this technique if the receipts are wet.</description>
+			<description level="18" action="Action/Bonus Action/Free Action">Spend the required cursed energy to materialize a receipt. It then becomes ashes. You can summon materializations within 100 ft. If you create an object over a creature, they must make a Dexterity save. On a failure they take 2d12 bludgeoning damage for every size larger than Tiny the object is. If the object is Huge or larger, a creature takes half as much damage on a successful save or is knocked prone and restrained under the object in addition to damage on a fail. Anything created through your technique lasts indefinitely. You cannot use this technique if the receipts are wet.</description>
         </sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_OBJECT" />
-			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_VEHICLE" />
+			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_OBJECT_VEHICLE" />
 			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_RESERVATION" />
 			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_STRUCTURE" />
 		</rules>
 	</element>
 	
-	<element name="Object" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_OBJECT" >
+	<element name="Object/Vehicle" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_OBJECT_VEHICLE" >
 		<description>
 			<p><strong>Object. </strong>You summon an object from the receipt, spending cursed energy equal to its size.</p>
-		</description>
-		<sheet>
-			<description>You summon an object from the receipt, spending cursed energy equal to its size.</description>
-		</sheet>
-	</element>
-	
-	<element name="Vehicle" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_VEHICLE" >
-		<description>
 			<p><strong>Vehicle. </strong>You can summon a vehicle from the receipt, spending cursed energy equal to its size.</p>
 		</description>
 		<sheet>
-			<description>You can summon a vehicle from the receipt, spending cursed energy equal to its size.</description>
+			<description>For 2, 4, 6, 8, 10, or 20 CE for sizes tiny, small, medium, large, huge, or gargantuan respectively, summon an object or vehicle from the receipt,.</description>
 		</sheet>
 	</element>
 	
@@ -86,7 +77,7 @@
 			<p><strong>Reservation. </strong>You can use a reservation receipt for 4 cursed energy, giving you the same effects staying on said place for all of the duration would. For example, a 2 day spa reservation would give you the benefits of a long rest.</p>
 		</description>
 		<sheet>
-			<description>You can use a reservation receipt for 4 cursed energy, giving you the same effects staying on said place for all of the duration would. For example, a 2 day spa reservation would give you the benefits of a long rest.</description>
+			<description>For 4 CE, you gain the same effects that staying at the receipt's location for its full duration would.</description>
 		</sheet>
 	</element>
 	<element name="Structure" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_STRUCTURE" >
@@ -94,7 +85,7 @@
 			<p><strong>Structure. </strong>You can create a structure from a receipt for 20 cursed energy.</p>
 		</description>
 		<sheet>
-			<description>You can create a structure from a receipt for 20 cursed energy.</description>
+			<description>For 20 CE, summon a structure from the receipt.</description>
 		</sheet>
 	</element>
 	
@@ -125,7 +116,7 @@
 			<p class="indent"><strong>Vehicle. </strong>You can order a vehicle to ride up to 60 ft. A creature in the path must make a Dexterity save or take the vehicle damage dice (depending on size) and be knocked prone.</p>
 		</description>
 		<sheet action="Bonus Action" usage="CE">
-			<description>You can manipulate objects or vehicles by spending 3 cursed energy per object or vehicle manipulated. Anything you use this on disappears afterwards.You can manipulate a number of objects you have summoned telepathically. You can move them in the air up to 60 ft, and can use them normally from afar. Once per turn when you take the attack action, you can replace one of your attacks with a melee cursed energy attack roll with said object if it was a weapon. On a hit, it deals up to {{contractual:control:damage}} of the weapon's damage dice. You can order a vehicle to ride up to 60 ft. A creature in the path must make a Dexterity save or take the vehicle damage dice (depending on size) and be knocked prone.</description>
+			<description>You can manipulate objects or vehicles by spending 3 CE per object or vehicle manipulated. This allows you to move objects in the air up to 60 ft and use them normally from afar, once per turn when you take the attack action replace one of your attacks with a melee CE attack roll from a object if it was a weapon dealing up to {{contractual:control:damage}} of the weapon's damage dice, and order a vehicle to ride up to 60 ft forcing creatures in its path to make a Dexterity save or take damage depending on its size and be knocked prone. Anything you use this on disappears afterwards.</description>
 		</sheet>
 		<rules>
 			<stat name="contractual:control:damage" value="5" level="11" />
@@ -140,7 +131,7 @@
 			<p>At 18th level, you have mastered your technique allowing you to expand your domain. You can use Recreation and Contractual Control at no cursed energy cost within your domain. At initiative 20, you gain a random receipt. D4 (1: Object, 2: Vehicles, 3: Reservation, 4: Structure) The DM decides the nature of the receipt.</p>
 		</description>
 		<sheet>
-			<description>You can use Recreation and Contractual Control at no cursed energy cost within your domain. At initiative 20, roll a d4 and gain a random receipt. (1: Object, 2: Vehicles, 3: Reservation, 4: Structure) The DM decides the nature of the receipt.</description>
+			<description>You can use Recreation and Contractual Control at no cost. At Initiative 20, roll a d4 and gain a random receipt. (1: Object, 2: Vehicles, 3: Reservation, 4: Structure). The DM decides the nature of the receipt.</description>
 		</sheet>
 		<rules>
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION" />
