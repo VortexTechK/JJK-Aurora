@@ -4,7 +4,7 @@
 		<name>Warrior</name>
 		<description>The Warrior class from JJK.</description>
 		<author url="https://docs.google.com/document/d/1eC8tEMHnupOuaX6At1X8JORz5iarNe6I-A7j2QzScrE/edit?tab=t.0">JJK</author>
-		<update version="6.0.1">
+		<update version="6.0.2">
 			<file name="class-warrior.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/classes/class-warrior.xml" />
 		</update>
 	</info>
@@ -123,12 +123,14 @@
 			</rules>
 		</multiclass>
 	</element>
+	
 	<element name="Cursed Energy" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_WARRIOR_CURSED_ENERGY">
 		<description>
 			<p>Starting at 1st level, you can harness your negative feelings into a usable source of energy, called cursed energy. These feelings can be harnessed into attacks or abilities. The number of cursed energy you possess is your class level + your cursed energy modifier which is charisma or wisdom (Player’s choice). You have a curse stat equal to the chosen stat</p>
 			<p class="indent"> Your cursed energy DC is 8 + user cursed energy ability modifier + proficiency bonus.</p>
 		</description>
 	</element>
+	
 	<element name="Innate Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_WARRIOR_INNATE_TECHNIQUE">
 		<requirements>!(ID_INTERNAL_FEATURE_REPLACEMENT_WARRIOR_INNATE_TECHNIQUE||ID_JJK_CLASS_SCOUT||ID_JJK_CLASS_SHIKIGAMI_USER||ID_JJK_CLASS_STRATEGIST||ID_JJK_CLASS_SUPPORT_SPECIALIST||ID_JJK_CLASS_JUGGERNAUT)</requirements>
 		<description>
@@ -139,6 +141,7 @@
 			<select type="Archetype" name="Innate Technique" supports="Innate Technique" />
 		</rules>
 	</element>
+	
 	<element name="Unarmored Defense" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_WARRIOR_UNARMORED_DEFENSE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARRIOR_UNARMORED_DEFENSE</requirements>
 		<description>
@@ -157,6 +160,7 @@
 			<stat name="ac:calculation" value="ac:unarmored defense warrior" bonus="calculation" equipped="[armor:none],[shield:none]" alt="Unarmored Defense (Warrior)" />
 		</rules>
 	</element>
+	
 	<element name="Combat Prowess" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_WARRIOR_COMBAT_PROWESS">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARRIOR_COMBAT_PROWESS</requirements>
 		<description>
@@ -177,6 +181,7 @@
 			<stat name="combat prowess:dice" value="12" bonus="combat prowess" level="17" />
 		</rules>
 	</element>
+	
 	<element name="Undaunted" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_WARRIOR_UNDAUNTED">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARRIOR_UNDAUNTED</requirements>
 		<description>
@@ -188,6 +193,7 @@
 			<description level="10" action="Bonus Action" usage="2/Short Rest">You regain 1d10+{{level:warrior}} hp.</description>
 		</sheet>
 	</element>
+	
 	<element name="Ability Score Improvement" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_WARRIOR_ABILITYSCOREIMPROVEMENT_WARRIOR">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARRIOR_ABILITYSCOREIMPROVEMENT_WARRIOR</requirements>
 		<compendium display="false" />
@@ -203,6 +209,7 @@
 			<select type="Class Feature" name="Improvement Option (Warrior 19)" supports="Improvement Option,Warrior,19" level="19" />
 		</rules>
 	</element>
+	
 	<element name="Extra Attack" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_WARRIOR_EXTRA_ATTACK">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARRIOR_EXTRA_ATTACK</requirements>
 		<description>
@@ -222,6 +229,7 @@
 			<stat name="extra attack:count" value="5" level="20" bonus="extra attack" />		
 		</rules>
 	</element>
+	
 	<element name="Battle Readiness" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_WARRIOR_BATTLE_READINESS">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARRIOR_BATTLE_READINESS</requirements>
 		<description>
@@ -231,6 +239,7 @@
 			<description>You have advantage on initiative checks.</description>
 		</sheet>
 	</element>
+	
 	<element name="Unstoppable" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_WARRIOR_UNSTOPPABLE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARRIOR_UNSTOPPABLE</requirements>
 		<description>
@@ -242,6 +251,7 @@
 			<description level="13" usage="2/Long Rest">You can reroll a saving throw that you fail. If you do so, you must use the new roll.</description>
 		</sheet>
 	</element>
+	
 	<element name="Steel Spirit" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_WARRIOR_STEEL_SPIRIT">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARRIOR_STEEL_SPIRIT</requirements>
 		<description>
@@ -258,6 +268,7 @@
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" />
 		</rules>
 	</element>
+	
 	<element name="Unerring Blows" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_WARRIOR_UNERRING_BLOWS">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_WARRIOR_UNERRING_BLOWS</requirements>
 		<description>
