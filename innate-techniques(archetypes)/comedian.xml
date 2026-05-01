@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.0">
+		<update version="6.0.1">
 			<file name="comedian.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/comedian.xml" />
 		</update>
 	</info>
@@ -35,7 +35,7 @@
             <p class="indent">A creature that knows how your technique works can make a contested Charisma (Persuasion) or Wisdom (Insight) check as an action to deconstruct your humor against your Charisma (Performance). If they roll higher, your technique deactivates as you lose confidence in your comedy and cannot use your technique. You can make a DC 15 Wisdom saving throw at the end of your turn to regain control of your technique and cause it to reactivate as normal.</p>
         </description>
 		<sheet action="Action" usage="CE">
-			<description>For 1 cursed energy, you activate Comedy for 1 minute while maintaining concentration. When you are damaged, you can spend 1 cursed energy to take no damage. A creature that knows how your technique works can make a contested Charisma (Persuasion) or Wisdom (Insight) check as an action to deconstruct your humor against your Charisma (Performance). If they roll higher, your technique deactivates. You can make a DC 15 Wisdom saving throw at the end of your turn to regain control of your technique and cause it to reactivate as normal.</description>
+			<description>For 1 CE, activate Comedy for 1 minute while maintaining concentration. When you are damaged, you can spend 1 CE to take no damage. A creature that knows how your technique works can make a contested Persuasion or Insight check as an action to deconstruct your humor against your Performance. If they roll higher, your technique deactivates. You can make a DC 15 Wisdom saving throw at the end of your turn to regain control of your technique and cause it to reactivate as normal.</description>
 		</sheet>
 		<rules>
 			<grant type="Proficiency" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_PERFORMANCE" />
@@ -87,7 +87,7 @@
 			<p>As a bonus action for 2 CE, you create a number of items equal to your CE modifier that fit in a 5 ft cube that help with your current joke or bit. These items increase to a 10 ft cube at 6th level, 15 ft cube at 11th level, and 20 ft cube at 18th level. These props last for 1 minute or until your technique deactivates.</p>
 		</description>
 		<sheet action="Bonus Action" usage="CE">
-			<description>For 2 cursed energy, you create up to {{ce:modifier}} items that fit in a {{comedian:props:cube:size}} ft cube. These items last for 1 minute or until your technique deactivates.</description>
+			<description>For 2 CE, you create up to {{ce:modifier}} items that fit in a {{comedian:props:cube:size}} ft cube. These items last for 1 minute or until your technique deactivates.</description>
 		</sheet>
 		<rules>
 			<stat name="comedian:props:cube:size" value="5" bonus="props" />
@@ -108,7 +108,7 @@
 			<p class="indent">All creatures within range must make a Strength, Dexterity, or Constitution saving throw based on the source of the punchline. On a failed save, a target takes your proficiency bonus + your CE modifier in d8s of bludgeoning, piercing, slashing, or psychic damage and an additional effect depending on the punchline (Eg. A bus runs someone over. Creatures in a 60 ft long, 5 ft wide line must make a Dexterity saving throw or take 5d8 bludgeoning damage and are pushed to the end of the line and knocked prone on a failed save or half as much damage and not pushed or prone on a success). This damage cannot kill a person since comedy isn't funny if someone dies.</p>
 		</description>
 		<sheet action="Action" usage="CE">
-			<description>For 3 cursed energy, choose a 30 ft diameter sphere within 80 ft, a 60 ft long 5 ft wide line, or a 30 ft cone. All creatures within range must make a saving throw decided by the punchline's source. On a failed save, a target takes {{comedian:powerful:punchline:damage}}d8 of bludgeoning, piercing, slashing, or psychic damage and an additional effect depending on the punchline. This damage cannot kill.</description>
+			<description>For 3 CE, choose a 30 ft diameter sphere within 80 ft, a 60 ft long 5 ft wide line, or a 30 ft cone. All creatures within range must make a saving throw decided by the punchline's source. On a failed save, a target takes {{comedian:powerful:punchline:damage}}d8 of bludgeoning, piercing, slashing, or psychic damage and an additional effect depending on the punchline. This damage cannot kill.</description>
 		</sheet>
 		<rules>
 			<stat name="comedian:powerful:punchline:damage" value="proficiency" />
@@ -123,7 +123,7 @@
 			<p class="indent">Additionally, you can choose to not allow other creatures to interfere with your combat while your technique is active. This stops other creatures from rolling for initiative or affecting the battle in any way as some random reason prevents them from joining in. You can also choose to remove a creature's ability to sense cursed energy while they are within 300 ft of you while your technique is active to stop them from being distracted from your jokes.</p>
 		</description>
         <sheet>
-            <description>A creature that starts their turn within 300 ft of you while your technique is active must make a Cursed Energy saving throw. On a failure, they cannot use any cursed techniques that would interfere with your current joke until their next turn. You can choose to stop other creatures from rolling for initiative or affecting your battle in any way. You can choose to remove a creature's ability to sense cursed energy while they are within 300 ft of you while your technique is active.</description>
+            <description>A creature that starts their turn within 300 ft of you while your technique is active must make a CE saving throw. On a failure, they cannot use any cursed techniques that would interfere with your current joke until their next turn. You can choose to stop other creatures from rolling for initiative or affecting your battle in any way. You can choose to remove a creature's ability to sense cursed energy while they are within 300 ft of you while your technique is active.</description>
         </sheet>
 	</element>
 
@@ -139,7 +139,7 @@
 			</ul>
 		</description>
         <sheet action="Action" usage="CE">
-			<description>For 10 cursed energy, you activate Comedy for 1 minute. During this minute once per turn you can use Commit to the Bit features without spending cursed energy, use Comedy's damage negation {{ce:modifier}} times per round, create up to {{comedian:maximum:peak:comedy:props}} props with Props, double the range and radius of Powerful Punchline and spend 2 additional cursed energy to deal {{proficiency}} additional damage dice, and as an action teleport creatures within 100ft into a cutaway. A target in the cutaway must make a Wisdom save or cannot attack unless they make it fit into the cutaway gag.</description>
+			<description>For 10 CE, activate Comedy for 1 minute. During this minute once per turn you can use Commit to the Bit features without spending CE, use Comedy's damage negation {{ce:modifier}} times per round for free, create up to {{comedian:maximum:peak:comedy:props}} props with Props, double the range and radius of Powerful Punchline and spend 2 additional CE to deal {{proficiency}} additional damage dice, and as an action teleport creatures within 100ft into a cutaway. A target in the cutaway must make a Wisdom save or cannot attack unless they make it fit into the cutaway gag.</description>
 		</sheet>
 		<rules>
 			<stat name="comedian:maximum:peak:comedy:props" value="ce:modifier" />
@@ -155,7 +155,7 @@
 			<p class="indent">As a Full Turn Action (Action + Bonus Action + Movement) while within your domain, you can tell a joke and make a Charisma (Persuasion) check. All creatures within your domain can make a Wisdom (Insight) check to criticize or attack it. A creature that chooses not to roll or rolls lower than you takes 8d8 psychic damage.</p>
 		</description>
         <sheet>
-			<description>At initiative 20, you can force a cutaway. A creature within your domain cannot attack you unless they can make it fit into the cutaway gag. If a creature does not act according to your jokes and gags, they take 8d8 psychic damage. A creature can only take this damage once per round. As a Full Turn Action while within your domain, you can tell a joke and make a Charisma (Persuasion) check. All creatures within your domain can make a Wisdom (Insight) check to criticize or attack it. A creature that chooses not to roll or rolls lower than you takes 8d8 psychic damage.</description>
+			<description>At Initiative 20, you can force a cutaway. A creature within your domain cannot attack you unless they can make it fit into the cutaway gag. If a creature does not act according to your jokes and gags, they take 8d8 psychic damage. A creature can only take this damage once per round. As a Full Turn Action while within your domain, you can tell a joke and make a Persuasion check. All creatures within your domain can make a Insight check to criticize or attack it. A creature that chooses not to roll or rolls lower than you takes 8d8 psychic damage.</description>
 		</sheet>
 		<rules>
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION" />
