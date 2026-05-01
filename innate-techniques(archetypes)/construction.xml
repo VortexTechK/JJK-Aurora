@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.0">
+		<update version="6.0.1">
 			<file name="construction.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/construction.xml" />
 		</update>
 	</info>
@@ -35,7 +35,7 @@
             <p class="indent">You can spend additional CE to create an object with one additional object's properties or increase the cube by 1 ft. (Eg. You create a greatsword mixed with a spear with both the Heavy, two-handed, and the Versatile and Thrown (20/60) properties. When mixing a light and heavy weapon, choose which property it will maintain.)</p>
         </description>
 		<sheet action="Bonus Action" usage="CE">
-			<description>For 3 cursed energy, you create one non-magical weapon OR simple object that fits in a 3 ft cube in your hand or within 5 ft of you, as long as you have basic understanding and information of its properties. You can spend additional CE to create an object with one additional object's properties or increase the cube by 1 ft.</description>
+			<description>For 3 CE, create one non-magical weapon or simple object that fits in a 3 ft cube in your hand or within 5 ft of you, as long as you have basic understanding and information of its properties. You can spend additional CE to create an object with one additional object's properties or increase the cube by 1 ft.</description>
 		</sheet>
 	</element>
 	
@@ -46,7 +46,7 @@
             <p class="indent">You can make a Special Grade (Legendary) Cursed Tool. However, due to the backlash of your technique, you will die afterward. You cannot be revived in any way, shape or form after using this feature.</p>
         </description>
 		<sheet usage="CE">
-      		<description>You can create a generic imbued Cursed Tool or a specific technique cursed tool you have seen for 3 cursed energy + 2 for every grade it has above 4. These cursed tools last for {{ce:modifier}} hours, before disappearing. You can make a Special Grade (Legendary) Cursed Tool, but due to the backlash of your technique, you will die afterward. You cannot be revived in any way, shape or form after using this feature.</description>
+      		<description>You can create a generic imbued Cursed Tool or a specific technique cursed tool you have seen for 3 CE + 2 for every grade it has above 4. These cursed tools last for {{ce:modifier}} hours before disappearing. You can make a Special Grade Cursed Tool but will die afterward. You cannot be revived in any way, shape or form after using this feature.</description>
 		</sheet>
 	</element>
 	
@@ -57,7 +57,7 @@
             <p class="indent">In addition, whenever you attack with them in this increased range form their damage die tier will increase equal to the cursed energy used. (1d8-1d10-1d12-2d6-2d8)</p>
         </description>
 		<sheet usage="CE">
-			<description>As part of creating a weapon with your construction, you can spend up to an additional 4 cursed energy to make them become fluid with volume. This allows you to extend the range of melee weapons 10ft per cursed energy. In addition, whenever you attack with them in this increased range form their damage die tier will increase equal to the cursed energy used. (1d8-1d10-1d12-2d6-2d8)</description>
+			<description>As part of creating a weapon with Construction, you can spend up to an additional 4 CE to extend the range of melee weapons by 10ft and increase the damage die tier by 1 per CE spent.</description>
 		</sheet>
 	</element>
 	
@@ -73,8 +73,8 @@
             </ul>
         </description>
 		<sheet action="Bonus Action" usage="CE">
-			<description level="11">For 10 cursed energy, you can surround yourself in armor and gain the following benefits for 1 hour: your Strength, Dexterity, and Armor Class scores increase by +4, you gain resistance to non-magical bludgeoning, piercing, and slashing damage, you gain a {{speed}} ft. flying speed and the ability to dash as a free action, and your unarmed strikes deal two additional damage dice and roll one additional damage dice on a critical.</description>
-		    <description level="18">For 10 cursed energy, you can surround yourself in armor and gain the following benefits for 1 hour: your Strength, Dexterity, and Armor Class scores increase by +4, you gain immunity to non-magical bludgeoning, piercing, and slashing damage, you gain a {{speed}} ft. flying speed and the ability to dash as a free action, and your unarmed strikes deal two additional damage dice and roll one additional damage dice on a critical.</description>
+			<description level="11">For 10 CE, for 1 hour your Strength, Dexterity, and Armor Class scores increase by +4, you gain resistance to non-magical bludgeoning, piercing, and slashing damage, you gain a {{speed}} ft. flying speed and the ability to dash as a free action, and your unarmed strikes deal two additional damage dice and roll one additional damage dice on a critical.</description>
+		    <description level="18">For 10 CE, for 1 hour your Strength, Dexterity, and Armor Class scores increase by +4, you gain immunity to non-magical bludgeoning, piercing, and slashing damage, you gain a {{speed}} ft. flying speed and the ability to dash as a free action, and your unarmed strikes deal two additional damage dice and roll one additional damage dice on a critical.</description>
         </sheet>
 	</element>
 	
@@ -84,7 +84,7 @@
 			<p>Finally at 18th level, you have refined your technique to the maximum point, now gaining your domain expansion. While inside your domain, you can now create any of your items by spending no cursed energy. All of these items will deal two additional damage dice and attacks made with them cannot miss. However, these weapons will only last until the end of the domain.</p>
 		</description>
 		<sheet>
-			<description>You can create any of your items by spending no cursed energy. All of these items will deal two additional damage dice and attacks made with them cannot miss. However, these weapons will only last until the end of the domain.</description>
+			<description>You can create any of your items for free which do two additional damage dice and attacks made with them cannot miss. These only last until the end of the domain.</description>
 		</sheet>
 		<rules>
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION" />
