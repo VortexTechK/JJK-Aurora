@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.0">
+		<update version="6.0.1">
 			<file name="disaster-verdure.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/disaster-verdure.xml" />
 		</update>
 	</info>
@@ -54,7 +54,7 @@
 			<p>As an action for 1 Cursed Energy, you can choose one target within 30 feet of you trapped by plants. The target must make a Strength saving throw, on a failure it will be restrained. It can make a Strength check to break free from the plants, on a success they are free from the binds, on a failure they remain stuck.</p>
         </description>
 		<sheet action="Action" usage="CE">
-			<description>For 1 cursed energy, choose one target within 30 feet of you to make a Strength saving throw. On a failure it is restrained. On its turn it can make a Strength check to break free.</description>
+			<description>For 1 CE, choose one target within 30 ft of you to make a Strength saving throw. On a failure it is restrained. On its turn it can make a Strength check to break free.</description>
 		</sheet>
 	</element>
 
@@ -63,7 +63,7 @@
 			<p>As an action for 1 Cursed Energy, you can raise a bunch of roots from the ground to strike a target. You force all creatures in a 50ft line to make a Dexterity saving throw, on a failure they take 1d12 piercing damage, on a success they take half as much damage. This damage increases to 2d12 at 5th level, 3d12 at 11th level, and to 4d12 at 18th level.</p>
         </description>
 		<sheet action="Action" usage="CE">
-			<description>For 1 cursed energy, force creatures in a 50ft line to make a Dexterity saving throw. On a failure they take {{disaster:verdure:piercing:roots:damage}}d12 piercing damage and on a success half as much.</description>
+			<description>For 1 CE, force creatures in a 50ft line to make a Dexterity saving throw. On a failure they take {{disaster:verdure:piercing:roots:damage}}d12 piercing damage and on a success half as much.</description>
 		</sheet>
         <rules>
             <stat name="disaster:verdure:piercing:roots:damage" value="1" bonus="piercing roots" level="1" />
@@ -78,7 +78,7 @@
             <p>As a reaction for 1 Cursed Energy, you rise deep roots from the ground to defend yourself or your allies from attacks. As a reaction to when you or an ally is targeted by an attack roll, you can spring forth a wall of roots that is 10ft. tall and 5ft. wide, covering 10fts around you. The wall has an amount of hit points equal to your Cursed Energy modifier times your proficiency bonus.</p>
         </description>
         <sheet action="Reaction" usage="CE">
-            <description>For 1 cursed energy, as a reaction to when you or an ally is targeted by an attack roll, create a wall of roots that is 10ft. tall and 5ft. wide within 10ft. of you. The wall has {{ce:modifier}}x{{proficiency}} hit points.</description>
+            <description>For 1 CE as a reaction to when you or an ally is targeted by an attack roll, create a wall of roots that is 10ft. tall and 5ft. wide within 10ft. of you. The wall has {{ce:modifier}}x{{proficiency}} hit points.</description>
         </sheet>
     </element>
 
@@ -88,7 +88,7 @@
 			<p>At 3rd level, you have learned how to create small wooden balls to launch and pierce your opponents. As an action, you can create a number of two wooden balls, at the price of two cursed energy. The wooden balls will have a number of hit points equal to your Cursed Energy modifier, an AC of 10 + your CE modifier, and will keep floating around you. As a bonus action, you can send one or more of your balls towards a target within 30 feet of you. Make a cursed energy attack roll, on a hit the balls create large branches that pierce through its target, dealing 2d10 piercing damage. Right after they hit or miss the balls will disappear. You can also spend your bonus action to get above one of the balls, gaining flying speed equal to half your walking speed while above them.</p>
 		</description>
 		<sheet action="Action" usage="CE">
-			<description>For 2 cursed energy, create two wooden balls with {{ce:modifier}} hit points and AC of {{disaster:verdure:root:bundle:ac}}. As a bonus action, you can make a cursed energy attack roll towards a target within 30 feet of you. On a hit deal 2d10 piercing damage. Right after they hit or miss the balls will disappear. You can also spend your bonus action to get above one of the balls, gaining flying speed equal to half your walking speed while above them.</description>
+			<description>For 2 CE, create two wooden balls with {{ce:modifier}} hit points and a AC of {{disaster:verdure:root:bundle:ac}}. As a bonus action, you can make a CE attack roll towards a target within 30 ft of you. On a hit deal 2d10 piercing damage. Right after they hit or miss the balls will disappear. You can also spend your bonus action to get above one of the balls, gaining flying speed equal to half your walking speed while above them.</description>
 		</sheet>
         <rules>
             <stat name="disaster:verdure:root:bundle:ac" value="10" />
@@ -102,7 +102,7 @@
 			<p>At 6th level, you can create a circle of flower petals that surrounds your opponents and removes their will to fight. As an action for 5 Cursed Energy, you create a 30 ft diameter circle in a point within 100 feet of yourself, all creatures within that circle must make a Wisdom saving throw. On a failure they are charmed for 1 minute as their will to fight is completely drained and their mind enters a state of tranquility and happiness. While charmed in this way, they are unable to take any kind of actions that would help in the battle. A creature can repeat the save at the beginning of its turn or when they take damage. Any attacks against a charmed creature is made at advantage, and any saving throws other than saves against this feature the creature makes are at disadvantage.</p>
 		</description>
         <sheet action="Action" usage="CE">
-            <description>For 5 cursed energy, you create a 30-foot diameter circle in a point within 100 feet of yourself. All creatures within that circle must make a Wisdom saving throw. On a failure they are charmed for 1 minute. While charmed in this way, they are unable to take any kind of actions that would help in the battle. A creature can repeat the save at the beginning of its turn or when they take damage. Any attacks against a charmed creature is made at advantage, and any saving throws this creature makes other than saves against this feature are made at disadvantage.</description>
+            <description>For 5 CE, create a 30-ft diameter circle at a point within 100 ft of yourself. All creatures within that circle must make a Wisdom saving throw. On a failure they are charmed for 1 minute. While charmed in this way, they are unable to take any kind of actions that would help in the battle. A creature can repeat the save at the beginning of its turn or when they take damage. Any attacks against a charmed creature is made at advantage, and any saving throws this creature makes other than saves against this feature are made at disadvantage.</description>
         </sheet>
 	</element>
 
@@ -113,7 +113,7 @@
             <p class="indent">You can instead spend 10 Cursed Energy to create a Large tree within 10 feet that will launch one cursed bud at every hostile creature within 30 feet. The tree has an AC equal to your Cursed Energy save DC, hit points equal to your proficiency bonus times your level and lasts for 1 minute, launching one cursed bud at creatures within range at the beginning of your turn.</p>
 		</description>
         <sheet action="Action" usage="CE">
-			<description>For 6 cursed energy, you can launch {{ce:modifier}} cursed buds toward one or more targets within 30 feet. Make a cursed energy attack roll for each, on a hit they will attach to the creature. At the beginning of the creature's turns it loses {{ce:modifier}} Hit Points and you steal 1 CE from the target. If an affected creature uses cursed energy while infected with a cursed bud, they lose {{proficiency}} hit points. An affected creature can attempt a Strength check as an action against your CE save DC to remove the curse bud. You can instead spend 10 cursed energy to create a Large tree within 10 feet that will launch one cursed bud at every hostile creature within 30 feet. The tree has an AC of {{ce:dc:total}}, {{proficiency}}x{{level}} hit points, and lasts for 1 minute, launching one cursed bud at creatures within range at the beginning of your turn.</description>
+			<description>For 6 CE, launch {{ce:modifier}} cursed buds toward one or more targets within 30 ft. Make a CE attack roll for each, attaching to a creature on a hit. At the beginning of the creature's turns it loses {{ce:modifier}} Hit Points and you steal 1 CE from the target. If an creature with a cursed bud uses CE, they lose {{proficiency}} hit points. An affected creature can attempt a Strength check as an action against your CE save DC to remove the curse bud. You can instead spend 10 CE to create a Large tree within 10 ft that will launch one cursed bud at every hostile creature within 30 ft. The tree has an AC of {{ce:dc:total}}, {{proficiency}}x{{level}} hit points, and lasts for 1 minute, launching one cursed bud at creatures within range at the beginning of your turn.</description>
 		</sheet>
 	</element>
 
@@ -123,7 +123,7 @@
 			<p>At 18th level, you have refined your technique to the absolute and learned to expand your domain. At initiative 20, creatures within your domain fall under the effect of Flower Field and take 2d4 Necrotic damage. You gain half of the damage as temporary Cursed Energy that disappears once your domain ends.</p>
 		</description>
         <sheet>
-			<description>At initiative 20, creatures within your domain fall under the effect of Flower Field and take 2d4 Necrotic damage. You gain half of the damage as temporary Cursed Energy that disappears once your domain ends.</description>
+			<description>At Initiative 20, creatures within your domain fall under the effect of Flower Field and take 2d4 Necrotic damage. You gain half of the damage as temporary CE that disappears once your domain ends.</description>
 		</sheet>
 		<rules>
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION"/>
