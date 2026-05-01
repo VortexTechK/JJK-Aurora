@@ -4,7 +4,7 @@
 		<name>Scout</name>
 		<description>The Scout class from JJK.</description>
 		<author url="https://docs.google.com/document/d/1eC8tEMHnupOuaX6At1X8JORz5iarNe6I-A7j2QzScrE/edit?tab=t.0">JJK</author>
-		<update version="6.0.1">
+		<update version="6.0.2">
 			<file name="class-scout.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/classes/class-scout.xml" />
 		</update>
 	</info>
@@ -128,12 +128,14 @@
 			</rules>
 		</multiclass>
 	</element>
+	
 	<element name="Cursed Energy" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SCOUT_CURSED_ENERGY">
 		<description>
 			<p>Starting at 1st level, you can harness your negative feelings into a usable source of energy, called cursed energy. These feelings can be harnessed into attacks or abilities. The number of cursed energy you possess is your class level + your cursed energy modifier which is charisma or wisdom (Player’s choice). You have a curse stat equal to the chosen stat</p>
 			<p class="indent"> Your cursed energy DC is 8 + user cursed energy ability modifier + proficiency bonus.</p>
 		</description>
 	</element>
+	
 	<element name="Innate Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SCOUT_INNATE_TECHNIQUE">
 		<requirements>!(ID_INTERNAL_FEATURE_REPLACEMENT_SCOUT_INNATE_TECHNIQUE||ID_JJK_CLASS_JUGGERNAUT||ID_JJK_CLASS_SHIKIGAMI_USER||ID_JJK_CLASS_STRATEGIST||ID_JJK_CLASS_SUPPORT_SPECIALIST||ID_JJK_CLASS_WARRIOR)</requirements>
 		<description>
@@ -144,6 +146,7 @@
 			<select type="Archetype" name="Innate Technique" supports="Innate Technique" />
 		</rules>
 	</element>
+	
 	<element name="Quick Strikes" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SCOUT_QUICK_STRIKES">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SCOUT_QUICK_STRIKES</requirements>
 		<description>
@@ -167,6 +170,7 @@
 			<stat name="quick strikes:dice" value="10" bonus="quick strikes" level="17" />
 		</rules>
 	</element>
+	
 	<element name="Unparalleled Movement" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SCOUT_UNPARALLELED_MOVEMENT">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SCOUT_UNPARALLELED_MOVEMENT</requirements>
 		<description>
@@ -187,6 +191,7 @@
 			<stat name="speed" value="speed:unparalleledmovementscout"/>
 		</rules>
 	</element>
+	
 	<element name="Swift Movements" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SCOUT_SWIFT_MOVEMENTS">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SCOUT_SWIFT_MOVEMENTS</requirements>
 		<description>
@@ -196,6 +201,7 @@
 			<description>Take the Dash, Disengage, or Hide action</description>
 		</sheet>
 	</element>
+	
 	<element name="Sharp Eyes" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SCOUT_SHARP_EYES">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SCOUT_SHARP_EYES</requirements>
 		<description>
@@ -206,6 +212,7 @@
 			<description level="13">Make a Insight check against an opponent’s Deception check. On a success, you gain an advantage on all rolls against that opponent for that turn and learn their weaknesses(Weak Points, Vulnerabilities) and main attacks (Damage Type and highest damage action).</description>
 		</sheet>
 	</element>
+	
 	<element name="Ability Score Improvement" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SCOUT_ABILITYSCOREIMPROVEMENT_SCOUT">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SCOUT_ABILITYSCOREIMPROVEMENT_SCOUT</requirements>
 		<compendium display="false" />
@@ -221,6 +228,7 @@
 			<select type="Class Feature" name="Improvement Option (Scout 19)" supports="Improvement Option,Scout,19" level="19" />
 		</rules>
 	</element>
+	
 	<element name="Extra Attack" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SCOUT_EXTRA_ATTACK">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SCOUT_EXTRA_ATTACK</requirements>
 		<description>
@@ -233,6 +241,7 @@
 			<stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
 		</rules>
 	</element>
+	
 	<element name="Eagle Eyes" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SCOUT_EAGLE_EYES">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SCOUT_EAGLE_EYES</requirements>
 		<description>
@@ -242,6 +251,7 @@
 			<description>You have advantage on Perception checks using sight.</description>
 		</sheet>
 	</element>
+	
 	<element name="Evasion" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SCOUT_EVASION">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SCOUT_EVASION</requirements>
 		<description>
@@ -255,6 +265,7 @@
 			<select type="Class Feature" name="Evasion Saving Throw" supports="Evasion Saving Throw" level="15"/>
 		</rules>
 	</element>
+	
 	<element name="Strength" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SCOUT_EVASION_SAVING_THROW_S">
 		<compendium display="false" />
 		<supports>Evasion Saving Throw</supports>
@@ -262,6 +273,7 @@
 		</description>
 		<sheet />
 	</element>
+	
 	<element name="Constitution" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SCOUT_EVASION_SAVING_THROW_CO">
 		<compendium display="false" />
 		<supports>Evasion Saving Throw</supports>
@@ -269,6 +281,7 @@
 		</description>
 		<sheet />
 	</element>
+	
 	<element name="Intelligence" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SCOUT_EVASION_SAVING_THROW_I">
 		<compendium display="false" />
 		<supports>Evasion Saving Throw</supports>
@@ -276,6 +289,7 @@
 		</description>
 		<sheet />
 	</element>
+	
 	<element name="Wisdom" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SCOUT_EVASION_SAVING_THROW_W">
 		<compendium display="false" />
 		<supports>Evasion Saving Throw</supports>
@@ -283,6 +297,7 @@
 		</description>
 		<sheet />
 	</element>
+	
 	<element name="Charisma" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SCOUT_EVASION_SAVING_THROW_CH">
 		<compendium display="false" />
 		<supports>Evasion Saving Throw</supports>
@@ -290,6 +305,7 @@
 		</description>
 		<sheet />
 	</element>
+	
 	<element name="Tactical Retreat" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SCOUT_TACTICAL_RETREAT">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SCOUT_TACTICAL_RETREAT</requirements>
 		<description>
@@ -305,11 +321,13 @@
 			<stat name="sc:tr:speed" value="speed" level="15"/>
 		</rules>
 	</element>
+	
 	<element name="Scanning Eyes" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SCOUT_SCANNING_EYES">
 		<description>
 			<p>Beginning at 13th level, you can now as a part of Sharp Eyes tell your opponent's weaknesses(Weak Points, Vulnerabilities) and main attacks (Damage Type and highest damage action).</p>
 		</description>
 	</element>
+	
 	<element name="Sixth Sense" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SCOUT_SIXTH_SENSE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SCOUT_SIXTH_SENSE</requirements>
 		<description>
@@ -323,6 +341,7 @@
 			<stat name="blindsight:range" value="30" bonus="base" />
 		</rules>
 	</element>
+	
 	<element name="Swift Dodge" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SCOUT_SWIFT_DODGE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SCOUT_SWIFT_DODGE</requirements>
 		<description>
@@ -332,6 +351,7 @@
 			<description>When an attacker that you can see hits you with an attack, you can ignore the attack's damage against you.</description>
 		</sheet>
 	</element>
+	
 	<element name="Unfathomable Speed" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SCOUT_UNFATHOMABLE_SPEED">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SCOUT_UNFATHOMABLE_SPEED</requirements>
 		<description>
