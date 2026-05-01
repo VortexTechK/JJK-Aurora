@@ -4,7 +4,7 @@
 		<name>Strategist</name>
 		<description>The Strategist class from JJK.</description>
 		<author url="https://docs.google.com/document/d/1eC8tEMHnupOuaX6At1X8JORz5iarNe6I-A7j2QzScrE/edit?tab=t.0">JJK</author>
-		<update version="6.0.2">
+		<update version="6.0.3">
 			<file name="class-strategist.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/classes/class-strategist.xml" />
 		</update>
 	</info>
@@ -111,6 +111,7 @@
 			</rules>
 		</multiclass>
 	</element>
+	
 	<element name="Cursed Energy" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_STRATEGIST_CURSED_ENERGY">
 		<description>
 			<p>Starting at 1st level, you can harness your negative feelings into a usable source of energy, called cursed energy. These feelings can be harnessed into attacks or abilities. The number of cursed energy you possess is your class level + your cursed energy modifier which is charisma or wisdom (Player’s choice). You have a curse stat equal to the chosen stat</p>
@@ -127,6 +128,7 @@
 			<select type="Archetype" name="Innate Technique" supports="Innate Technique" />
 		</rules>
 	</element>
+	
 	<element name="Quick Recovery" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_STRATEGIST_QUICK_RECOVERY">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_STRATEGIST_QUICK_RECOVERY</requirements>
 		<description>
@@ -140,6 +142,7 @@
 			<stat name="latent:ce:points" value="level:strategist:half:up" />
 		</rules>
 	</element>
+	
 	<element name="Technique Creativity" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_STRATEGIST_TECHNIQUE_CREATIVITY">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_STRATEGIST_TECHNIQUE_CREATIVITY</requirements>
 		<description>
@@ -155,6 +158,7 @@
 			<select type="Class Feature" name="Modification" supports="TC Modification" level="17"/>
 		</rules>
 	</element>
+	
   	<!-- Modification Options -->
 	<element name="Careful Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_STRATEGIST_MODIFICATION_CAREFUL_TECHNIQUE">
 		<supports>TC Modification</supports>
@@ -162,7 +166,7 @@
 			<p>When you use a technique that forces other creatures to make a saving throw, you can protect some of those creatures from the technique's full force. To do so, you spend 1 cursed energy and choose a number of those creatures up to your Cursed Energy modifier (minimum of one). A chosen creature automatically succeeds on its saving throw against the technique.</p>
 		</description>
 		<sheet usage="CE">
-			<description>When you use a technique that forces other creatures to make a saving throw, you can protect some of those creatures from the spell’s full force. To do so, you spend 1 cursed energy and choose up to {{modification careful technique:creatures}} of those creatures. A chosen creature automatically succeeds on its saving throw against the technique.</description>
+			<description>When you use a technique that forces other creatures to make a saving throw, you can spend 1 CE and choose up to {{modification careful technique:creatures}} of those creatures. A chosen creature automatically succeeds on its saving throw against the technique.</description>
 		</sheet>
 		<rules>
 			<stat name="modification careful technique:creatures" value="1" bonus="base" />
@@ -170,15 +174,17 @@
 			<stat name="modification careful technique:creatures" value="wisdom:modifier" bonus="base" />
 		</rules>
 	</element>
+	
 	<element name="Distant Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_STRATEGIST_MODIFICATION_DISTANT_TECHNIQUE">
 		<supports>TC Modification</supports>
 		<description>
 			<p>When you use a technique that has a range of 5 feet or greater, you can spend 1 cursed energy to double the range of the technique. When you use a technique that has a range of touch, you can spend 1 cursed energy to make the range of the technique 30 feet.</p>
 		</description>
 		<sheet usage="CE">
-			<description>When you use a technique that has a range of 5 feet or greater, you can spend 1 cursed energy to double the range of the technique. When you use a technique that has a range of touch, you can spend 1 cursed energy to make the range of the technique 30 feet.</description>
+			<description>When you use a technique that has a range of 5 ft or greater, you can spend 1 CE to double the range of the technique. When you use a technique that has a range of touch, you can spend 1 CE to make the range of the technique 30 ft.</description>
 		</sheet>
 	</element>
+	
 	<element name="Empowered Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_STRATEGIST_MODIFICATION_EMPOWERED_TECHNIQUE">
 		<supports>TC Modification</supports>
 		<description>
@@ -186,7 +192,7 @@
 			<p class="indent">You can use Empowered Technique even if you have already used a different Modification option during the casting of the technique.</p>
 		</description>
 		<sheet usage="CE">
-			<description>When you roll damage for a technique, you can spend 1 cursed energy to reroll {{modification empowered technique:rerolls}} damage dice. You must use the new rolls. You can use Empowered Technique even if you have already used a different Modification option during the casting of the technique.</description>
+			<description>When you roll damage for a technique, you can spend 1 CE to reroll {{modification empowered technique:rerolls}} damage dice. You must use the new rolls. You can use Empowered Technique even if you have already used a different Modification option during the casting of the technique.</description>
 		</sheet>
 		<rules>
 			<stat name="modification empowered technique:rerolls" value="1" bonus="base" />
@@ -194,33 +200,37 @@
 			<stat name="modification empowered technique:rerolls" value="wisdom:modifier" bonus="base" />
 		</rules>
 	</element>
+	
 	<element name="Extended Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_STRATEGIST_MODIFICATION_EXTENDED_TECHNIQUE">
 		<supports>TC Modification</supports>
 		<description>
 			<p>When you use a technique that has a duration of 1 minute or longer, you can spend 1 cursed energy to double its duration, to a maximum duration of 24 hours.</p>
 		</description>
 		<sheet usage="CE">
-			<description>When you use a technique that has a duration of 1 minute or longer, you can spend 1 cursed energy to double its duration, to a maximum duration of 24 hours.</description>
+			<description>When you use a technique that has a duration of 1 minute or longer, you can spend 1 CE to double its duration, to a maximum duration of 24 hours.</description>
 		</sheet>
 	</element>
+	
 	<element name="Heightened Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_STRATEGIST_MODIFICATION_HEIGHTENED_TECHNIQUE">
 		<supports>TC Modification</supports>
 		<description>
 			<p>When you use a technique that forces a creature to make a saving throw to resist its effects, you can spend 3 cursed energys to give one target of the technique disadvantage on its first saving throw made against the technique.</p>
 		</description>
 		<sheet usage="CE">
-			<description>When you use a technique that forces a creature to make a saving throw to resist its effects, you can spend 3 cursed energy to give one target of the technique disadvantage on its first saving throw made against the technique.</description>
+			<description>When you use a technique that forces a creature to make a saving throw to resist its effects, you can spend 3 CE to give one target of the technique disadvantage on its first saving throw made against the technique.</description>
 		</sheet>
 	</element>
+	
 	<element name="Quickened Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_STRATEGIST_MODIFICATION_QUICKENED_TECHNIQUE">
 		<supports>TC Modification</supports>
 		<description>
 			<p>When you use a technique that has a casting time of 1 action, you can spend 2 cursed energy to change the casting time to 1 bonus action for this casting.</p>
 		</description>
 		<sheet usage="CE">
-			<description>When you use a technique that has a casting time of 1 action, you can spend 2 cursed energy to change the casting time to 1 bonus action for this casting.</description>
+			<description>When you use a technique that has a casting time of 1 action, you can spend 2 CE to change the casting time to 1 bonus action for this casting.</description>
 		</sheet>
 	</element>
+	
   <element name="Seeking Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_STRATEGIST_MODIFICATION_SEEKING_TECHNIQUE">
 		<supports>TC Modification</supports>
 		<description>
@@ -228,36 +238,40 @@
       <p class="indent">You can use Seeking Technique even if you have already used a different Modification option during the casting of the technique.</p>
 		</description>
 		<sheet usage="CE">
-			<description>If you make an attack roll for a technique and miss, you can spend 2 cursed energy to reroll the d20, and you must use the new roll. You can use Seeking Technique even if you have already used a different Modification option during the casting of the technique.</description>
+			<description>If you make an attack roll for a technique and miss, you can spend 2 CE to reroll the d20, and you must use the new roll. You can use Seeking Technique even if you have already used a different Modification option during the casting of the technique.</description>
 		</sheet>
 	</element>
+	
 	<element name="Subtle Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_STRATEGIST_MODIFICATION_SUBTLE_TECHNIQUE">
 		<supports>TC Modification</supports>
 		<description>
 			<p>When you use a technique, you can spend 1 cursed energy to cast it without any somatic or verbal components.</p>
 		</description>
 		<sheet usage="CE">
-			<description>When you use a technique, you can spend 1 cursed energy to cast it without any somatic or verbal components.</description>
+			<description>When you use a technique, you can spend 1 CE to cast it without any somatic or verbal components.</description>
 		</sheet>
 	</element>
-  <element name="Transmutated Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_STRATEGIST_MODIFICATION_TRANSMUTATED_TECHNIQUE">
+	
+  	<element name="Transmutated Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_STRATEGIST_MODIFICATION_TRANSMUTATED_TECHNIQUE">
 		<supports>TC Modification</supports>
 		<description>
 			<p>When you use a technique that deals a type of damage from the following list, you can spend 1 cursed energy to change that damage type to one of the other listed types: acid, cold, fire, lightning, poison, or thunder.</p>
 		</description>
 		<sheet usage="CE">
-			<description>When you use a technique that deals a type of damage from the following list, you can spend 1 cursed energy to change that damage type to one of the other listed types: acid, cold, fire, lightning, poison, or thunder.</description>
+			<description>When you use a technique that deals a type of damage from the following list, you can spend 1 CE to change that damage type to one of the other listed types: acid, cold, fire, lightning, poison, or thunder.</description>
 		</sheet>
 	</element>
+	
 	<element name="Twinned Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_STRATEGIST_MODIFICATION_TWINNED_TECHNIQUE">
 		<supports>TC Modification</supports>
 		<description>
 			<p>When you use a technique that targets only one creature and doesn’t have a range of self, you can spend a number of cursed energy equal to the technique’s cost to target a second creature in range with the same technique (1 cursed energy if the technique is free). To be eligible, a technique must be incapable of targeting more than one creature at the technique’s current level.</p>
 		</description>
 		<sheet usage="CE">
-			<description>When you use a technique that targets only one creature and doesn’t have a range of self, you can spend a number of cursed energy equal to the technique’s cost to target a second creature in range with the same technique (1 cursed energy if the technique is free).</description>
+			<description>When you use a technique that targets only one creature and doesn’t have a range of self, you can spend CE equal to the technique’s cost to target a second creature in range with the same technique (1 CE if the technique is free).</description>
 		</sheet>
 	</element>
+	
 	<element name="Ability Score Improvement" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_STRATEGIST_ABILITYSCOREIMPROVEMENT_STRATEGIST">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_STRATEGIST_ABILITYSCOREIMPROVEMENT_STRATEGIST</requirements>
 		<compendium display="false" />
@@ -275,22 +289,24 @@
 			<select type="Class Feature" name="Improvement Option (Strategist 19)" supports="Improvement Option,Strategist,19" level="19" />
 		</rules>
 	</element>
+	
 	<element name="Sorcerous Restoration" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_STRATEGIST_SORCEROUS_RESTORATION">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_STRATEGIST_SORCEROUS_RESTORATION</requirements>
 		<description>
 			<p>At 15th level, you regain 4 cursed energy on a short rest.</p>
 		</description>
 		<sheet>
-			<description>You regain 4 cursed energy on a short rest.</description>
+			<description>You regain 4 CE on a short rest.</description>
 		</sheet>
 	</element>
+	
 	<element name="Signature Move" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_STRATEGIST_SIGNATURE_MOVE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_STRATEGIST_SIGNATURE_MOVE</requirements>
 		<description>
 			<p>At 20th level, you can choose a feature that uses cursed energy, that is not a domain expansion, maximum, or reverse curse technique, and makes it have no cursed energy cost. It counts as the minimum input of Cursed Energy necessary.</p>
 		</description>
 		<sheet>
-			<description>You can choose a feature that uses cursed energy, that is not a domain expansion, maximum, or reverse curse technique, and makes it have no cursed energy cost. It counts as the minimum input of Cursed Energy necessary.</description>
+			<description>You can choose a feature that uses CE that is not a domain expansion, maximum, or reverse curse technique, and make it have no CE cost. It counts as the minimum input of CE necessary.</description>
 		</sheet>
 	</element>
 
