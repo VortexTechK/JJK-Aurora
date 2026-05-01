@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.4">
+		<update version="6.0.5">
 			<file name="body-manipulation.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/body-manipulation.xml" />
 		</update>
 	</info>
@@ -245,187 +245,187 @@
         </rules>
     </element>
 
-    <element name="Auspicious Summon" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_AUSPICIOUS_SUMMON_3_1">
+    <element name="Auspicious Beast Summon" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_AUSPICIOUS_SUMMON_3_1">
         <supports>Skill Theft 3</supports>
         <description>
-            <p>Features from the Auspicious Summon Technique</p>
+            <p>Features from the Auspicious Beast Summon Technique</p>
         </description>
         <sheet display="false" />
         <rules>
-            <select type="Archetype Feature" name="Auspicious Summon" supports="ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_KAICHI|ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_REIKI" />
+            <select type="Archetype Feature" name="Auspicious Beast Summon" supports="ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_KAICHI|ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_REIKI" />
         </rules>
     </element>
 
-    <element name="Auspicious Summon" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_AUSPICIOUS_SUMMON_3_2">
+    <element name="Auspicious Beast Summon" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_AUSPICIOUS_SUMMON_3_2">
         <requirements>ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_AUSPICIOUS_SUMMON_3_1</requirements>
         <supports>Skill Theft 3</supports>
         <description>
-            <p>Features from the Auspicious Summon Technique</p>
+            <p>Features from the Auspicious Beast Summon Technique</p>
         </description>
         <sheet display="false" />
         <rules>
-            <select type="Archetype Feature" name="Auspicious Summon" supports="ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_KAICHI|ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_REIKI" />
+            <select type="Archetype Feature" name="Auspicious Beast Summon" supports="ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_KAICHI|ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_REIKI" />
         </rules>
     </element>
 
-    <element name="Auspicious Summon" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_AUSPICIOUS_SUMMON_6_1">
+    <element name="Auspicious Beast Summon" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_AUSPICIOUS_SUMMON_6_1">
         <supports>Skill Theft 6</supports>
         <description>
-            <p>Features from the Auspicious Summon Technique</p>
+            <p>Features from the Auspicious Beast Summon Technique</p>
         </description>
         <sheet display="false" />
         <rules>
-            <select type="Archetype Feature" name="Auspicious Summon" supports="ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_KAICHI|ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_REIKI|ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_KIRIN" />
+            <select type="Archetype Feature" name="Auspicious Beast Summon" supports="ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_KAICHI|ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_REIKI|ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_KIRIN" />
         </rules>
     </element>
 
-    <element name="Auspicious Summon" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_AUSPICIOUS_SUMMON_6_2">
+    <element name="Auspicious Beast Summon" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_AUSPICIOUS_SUMMON_6_2">
         <requirements>ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_AUSPICIOUS_SUMMON_6_1</requirements>
         <supports>Skill Theft 6</supports>
         <description>
-            <p>Features from the Auspicious Summon Technique</p>
+            <p>Features from the Auspicious Beast Summon Technique</p>
         </description>
         <sheet display="false" />
         <rules>
-            <select type="Archetype Feature" name="Auspicious Summon" supports="ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_KAICHI|ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_REIKI|ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_KIRIN" />
+            <select type="Archetype Feature" name="Auspicious Beast Summon" supports="ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_KAICHI|ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_REIKI|ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_KIRIN" />
         </rules>
     </element>
 
-    <element name="Auspicious Summon" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_AUSPICIOUS_SUMMON_11_1">
+    <element name="Auspicious Beast Summon" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_AUSPICIOUS_SUMMON_11_1">
         <supports>Skill Theft 11</supports>
         <description>
-            <p>Features from the Auspicious Summon Technique</p>
+            <p>Features from the Auspicious Beast Summon Technique</p>
         </description>
         <sheet display="false" />
         <rules>
-            <select type="Archetype Feature" name="Auspicious Summon" supports="ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_KAICHI|ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_REIKI|ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_KIRIN|ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_RYU" />
+            <select type="Archetype Feature" name="Auspicious Beast Summon" supports="ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_KAICHI|ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_REIKI|ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_KIRIN|ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_RYU" />
         </rules>
     </element>
 
-    <element name="Auspicious Summon" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_AUSPICIOUS_SUMMON_11_2">
+    <element name="Auspicious Beast Summon" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_AUSPICIOUS_SUMMON_11_2">
         <requirements>ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_AUSPICIOUS_SUMMON_11_1</requirements>
         <supports>Skill Theft 11</supports>
         <description>
-            <p>Features from the Auspicious Summon Technique</p>
+            <p>Features from the Auspicious Beast Summon Technique</p>
         </description>
         <sheet display="false" />
         <rules>
-            <select type="Archetype Feature" name="Auspicious Summon" supports="ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_KAICHI|ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_REIKI|ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_KIRIN|ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_RYU" />
+            <select type="Archetype Feature" name="Auspicious Beast Summon" supports="ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_KAICHI|ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_REIKI|ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_KIRIN|ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_RYU" />
         </rules>
     </element>
 
-    <element name="Auspicious Summon" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_AUSPICIOUS_SUMMON_18_1">
+    <element name="Auspicious Beast Summon" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_AUSPICIOUS_SUMMON_18_1">
         <supports>Skill Theft 18</supports>
         <description>
-            <p>Features from the Auspicious Summon Technique</p>
+            <p>Features from the Auspicious Beast Summon Technique</p>
         </description>
         <sheet display="false" />
         <rules>
-            <select type="Archetype Feature" name="Auspicious Summon" supports="ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_KAICHI|ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_REIKI|ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_KIRIN|ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_RYU|ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_DOMAIN_EXPANSION_BEASTS_REALM" />
+            <select type="Archetype Feature" name="Auspicious Beast Summon" supports="ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_KAICHI|ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_REIKI|ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_KIRIN|ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_RYU|ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_DOMAIN_EXPANSION_BEASTS_REALM" />
         </rules>
     </element>
 
-    <element name="Auspicious Summon" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_AUSPICIOUS_SUMMON_18_2">
+    <element name="Auspicious Beast Summon" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_AUSPICIOUS_SUMMON_18_2">
         <requirements>ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_AUSPICIOUS_SUMMON_18_1</requirements>
         <supports>Skill Theft 18</supports>
         <description>
-            <p>Features from the Auspicious Summon Technique</p>
+            <p>Features from the Auspicious Beast Summon Technique</p>
         </description>
         <sheet display="false" />
         <rules>
-            <select type="Archetype Feature" name="Auspicious Summon" supports="ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_KAICHI|ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_REIKI|ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_KIRIN|ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_RYU|ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_DOMAIN_EXPANSION_BEASTS_REALM" />
+            <select type="Archetype Feature" name="Auspicious Beast Summon" supports="ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_KAICHI|ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_REIKI|ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_KIRIN|ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_RYU|ID_JJK_ARCHETYPE_FEATURE_AUSPICIOUS_SUMMON_DOMAIN_EXPANSION_BEASTS_REALM" />
         </rules>
     </element>
 
-    <element name="Black Bird" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_BLACK_BIRD_3_1">
+    <element name="Black Bird Manipulation" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_BLACK_BIRD_3_1">
         <supports>Skill Theft 3</supports>
         <description>
-            <p>Features from the Black Bird Technique</p>
+            <p>Features from the Black Bird Manipulation Technique</p>
         </description>
         <sheet display="false"/>
         <rules>
-            <select type="Archetype Feature" name="Black Bird" supports="ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_CURSED_CROWS|ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_OMEN_OF_DEATH"/>
+            <select type="Archetype Feature" name="Black Bird Manipulation" supports="ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_CURSED_CROWS|ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_OMEN_OF_DEATH"/>
         </rules>
     </element>
 
-    <element name="Black Bird" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_BLACK_BIRD_3_2">
+    <element name="Black Bird Manipulation" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_BLACK_BIRD_3_2">
         <requirements>ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_BLACK_BIRD_3_1</requirements>
         <supports>Skill Theft 3</supports>
         <description>
-            <p>Features from the Black Bird Technique</p>
+            <p>Features from the Black Bird Manipulation Technique</p>
         </description>
         <sheet display="false"/>
         <rules>
-            <select type="Archetype Feature" name="Black Bird" supports="ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_CURSED_CROWS|ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_OMEN_OF_DEATH"/>
+            <select type="Archetype Feature" name="Black Bird Manipulation" supports="ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_CURSED_CROWS|ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_OMEN_OF_DEATH"/>
         </rules>
     </element>
 
-    <element name="Black Bird" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_BLACK_BIRD_6_1">
+    <element name="Black Bird Manipulation" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_BLACK_BIRD_6_1">
         <supports>Skill Theft 6</supports>
         <description>
-            <p>Features from the Black Bird Technique</p>
+            <p>Features from the Black Bird Manipulation Technique</p>
         </description>
         <sheet display="false"/>
         <rules>
-            <select type="Archetype Feature" name="Black Bird" supports="ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_CURSED_CROWS|ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_OMEN_OF_DEATH|ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_RAVENS_EYE"/>
+            <select type="Archetype Feature" name="Black Bird Manipulation" supports="ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_CURSED_CROWS|ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_OMEN_OF_DEATH|ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_RAVENS_EYE"/>
         </rules>
     </element>
 
-    <element name="Black Bird" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_BLACK_BIRD_6_2">
+    <element name="Black Bird Manipulation" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_BLACK_BIRD_6_2">
         <requirements>ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_BLACK_BIRD_6_1</requirements>
         <supports>Skill Theft 6</supports>
         <description>
-            <p>Features from the Black Bird Technique</p>
+            <p>Features from the Black Bird Manipulation Technique</p>
         </description>
         <sheet display="false"/>
         <rules>
-            <select type="Archetype Feature" name="Black Bird" supports="ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_CURSED_CROWS|ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_OMEN_OF_DEATH|ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_RAVENS_EYE"/>
+            <select type="Archetype Feature" name="Black Bird Manipulation" supports="ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_CURSED_CROWS|ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_OMEN_OF_DEATH|ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_RAVENS_EYE"/>
         </rules>
     </element>
 
-    <element name="Black Bird" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_BLACK_BIRD_11_1">
+    <element name="Black Bird Manipulation" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_BLACK_BIRD_11_1">
         <supports>Skill Theft 11</supports>
         <description>
-            <p>Features from the Black Bird Technique</p>
+            <p>Features from the Black Bird Manipulation Technique</p>
         </description>
         <sheet display="false"/>
         <rules>
-            <select type="Archetype Feature" name="Black Bird" supports="ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_CURSED_CROWS|ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_OMEN_OF_DEATH|ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_RAVENS_EYE|ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_BIRD_STRIKE"/>
+            <select type="Archetype Feature" name="Black Bird Manipulation" supports="ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_CURSED_CROWS|ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_OMEN_OF_DEATH|ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_RAVENS_EYE|ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_BIRD_STRIKE"/>
         </rules>
     </element>
 
-    <element name="Black Bird" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_BLACK_BIRD_11_2">
+    <element name="Black Bird Manipulation" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_BLACK_BIRD_11_2">
         <requirements>ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_BLACK_BIRD_11_1</requirements>
         <supports>Skill Theft 11</supports>
         <description>
-            <p>Features from the Black Bird Technique</p>
+            <p>Features from the Black Bird Manipulation Technique</p>
         </description>
         <sheet display="false"/>
         <rules>
-            <select type="Archetype Feature" name="Black Bird" supports="ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_CURSED_CROWS|ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_OMEN_OF_DEATH|ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_RAVENS_EYE|ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_BIRD_STRIKE"/>
+            <select type="Archetype Feature" name="Black Bird Manipulation" supports="ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_CURSED_CROWS|ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_OMEN_OF_DEATH|ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_RAVENS_EYE|ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_BIRD_STRIKE"/>
         </rules>
     </element>
 
-    <element name="Black Bird" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_BLACK_BIRD_18_1">
+    <element name="Black Bird Manipulation" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_BLACK_BIRD_18_1">
         <supports>Skill Theft 18</supports>
         <description>
-            <p>Features from the Black Bird Technique</p>
+            <p>Features from the Black Bird Manipulation Technique</p>
         </description>
         <sheet display="false"/>
         <rules>
-            <select type="Archetype Feature" name="Black Bird" supports="ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_CURSED_CROWS|ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_OMEN_OF_DEATH|ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_RAVENS_EYE|ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_BIRD_STRIKE|ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_DOMAIN_EXPANSION_BLACK_MAHAKALA"/>
+            <select type="Archetype Feature" name="Black Bird Manipulation" supports="ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_CURSED_CROWS|ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_OMEN_OF_DEATH|ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_RAVENS_EYE|ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_BIRD_STRIKE|ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_DOMAIN_EXPANSION_BLACK_MAHAKALA"/>
         </rules>
     </element>
 
-    <element name="Black Bird" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_BLACK_BIRD_18_2">
+    <element name="Black Bird Manipulation" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_BLACK_BIRD_18_2">
         <requirements>ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_BLACK_BIRD_18_1</requirements>
         <supports>Skill Theft 18</supports>
         <description>
-            <p>Features from the Black Bird Technique</p>
+            <p>Features from the Black Bird Manipulation Technique</p>
         </description>
         <sheet display="false"/>
         <rules>
-            <select type="Archetype Feature" name="Black Bird" supports="ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_CURSED_CROWS|ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_OMEN_OF_DEATH|ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_RAVENS_EYE|ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_BIRD_STRIKE|ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_DOMAIN_EXPANSION_BLACK_MAHAKALA"/>
+            <select type="Archetype Feature" name="Black Bird Manipulation" supports="ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_CURSED_CROWS|ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_OMEN_OF_DEATH|ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_RAVENS_EYE|ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_BIRD_STRIKE|ID_JJK_ARCHETYPE_FEATURE_BLACK_BIRD_DOMAIN_EXPANSION_BLACK_MAHAKALA"/>
         </rules>
     </element>
 
@@ -981,95 +981,95 @@
         </rules>
     </element>
 
-    <element name="Contractual Reconstruction" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_CONTRACTUAL_RECONSTRUCTION_3_1">
+    <element name="Contractual Recreation" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_CONTRACTUAL_RECONSTRUCTION_3_1">
         <supports>Skill Theft 3</supports>
         <description>
-            <p>Features from the Contractual Reconstruction Technique</p>
+            <p>Features from the Contractual Recreation Technique</p>
         </description>
         <sheet display="false"/>
         <rules>
-            <select type="Archetype Feature" name="Contractual Reconstruction" supports="ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_RECREATION|ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_QUICK_SPENDER"/>
+            <select type="Archetype Feature" name="Contractual Recreation" supports="ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_RECREATION|ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_QUICK_SPENDER"/>
         </rules>
     </element>
 
-    <element name="Contractual Reconstruction" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_CONTRACTUAL_RECONSTRUCTION_3_2">
+    <element name="Contractual Recreation" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_CONTRACTUAL_RECONSTRUCTION_3_2">
         <requirements>ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_CONTRACTUAL_RECONSTRUCTION_3_1</requirements>
         <supports>Skill Theft 3</supports>
         <description>
-            <p>Features from the Contractual Reconstruction Technique</p>
+            <p>Features from the Contractual Recreation Technique</p>
         </description>
         <sheet display="false"/>
         <rules>
-            <select type="Archetype Feature" name="Contractual Reconstruction" supports="ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_RECREATION|ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_QUICK_SPENDER"/>
+            <select type="Archetype Feature" name="Contractual Recreation" supports="ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_RECREATION|ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_QUICK_SPENDER"/>
         </rules>
     </element>
 
-    <element name="Contractual Reconstruction" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_CONTRACTUAL_RECONSTRUCTION_6_1">
+    <element name="Contractual Recreation" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_CONTRACTUAL_RECONSTRUCTION_6_1">
         <supports>Skill Theft 6</supports>
         <description>
-            <p>Features from the Contractual Reconstruction Technique</p>
+            <p>Features from the Contractual Recreation Technique</p>
         </description>
         <sheet display="false"/>
         <rules>
-            <select type="Archetype Feature" name="Contractual Reconstruction" supports="ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_RECREATION|ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_QUICK_SPENDER|ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_SPLURGE"/>
+            <select type="Archetype Feature" name="Contractual Recreation" supports="ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_RECREATION|ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_QUICK_SPENDER|ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_SPLURGE"/>
         </rules>
     </element>
 
-    <element name="Contractual Reconstruction" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_CONTRACTUAL_RECONSTRUCTION_6_2">
+    <element name="Contractual Recreation" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_CONTRACTUAL_RECONSTRUCTION_6_2">
         <requirements>ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_CONTRACTUAL_RECONSTRUCTION_6_1</requirements>
         <supports>Skill Theft 6</supports>
         <description>
-            <p>Features from the Contractual Reconstruction Technique</p>
+            <p>Features from the Contractual Recreation Technique</p>
         </description>
         <sheet display="false"/>
         <rules>
-            <select type="Archetype Feature" name="Contractual Reconstruction" supports="ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_RECREATION|ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_QUICK_SPENDER|ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_SPLURGE"/>
+            <select type="Archetype Feature" name="Contractual Recreation" supports="ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_RECREATION|ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_QUICK_SPENDER|ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_SPLURGE"/>
         </rules>
     </element>
 
-    <element name="Contractual Reconstruction" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_CONTRACTUAL_RECONSTRUCTION_11_1">
+    <element name="Contractual Recreation" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_CONTRACTUAL_RECONSTRUCTION_11_1">
         <supports>Skill Theft 11</supports>
         <description>
-            <p>Features from the Contractual Reconstruction Technique</p>
+            <p>Features from the Contractual Recreation Technique</p>
         </description>
         <sheet display="false"/>
         <rules>
-            <select type="Archetype Feature" name="Contractual Reconstruction" supports="ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_RECREATION|ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_QUICK_SPENDER|ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_SPLURGE|ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_CONTRACTUAL_CONTROL"/>
+            <select type="Archetype Feature" name="Contractual Recreation" supports="ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_RECREATION|ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_QUICK_SPENDER|ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_SPLURGE|ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_CONTRACTUAL_CONTROL"/>
         </rules>
     </element>
 
-    <element name="Contractual Reconstruction" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_CONTRACTUAL_RECONSTRUCTION_11_2">
+    <element name="Contractual Recreation" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_CONTRACTUAL_RECONSTRUCTION_11_2">
         <requirements>ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_CONTRACTUAL_RECONSTRUCTION_11_1</requirements>
         <supports>Skill Theft 11</supports>
         <description>
-            <p>Features from the Contractual Reconstruction Technique</p>
+            <p>Features from the Contractual Recreation Technique</p>
         </description>
         <sheet display="false"/>
         <rules>
-            <select type="Archetype Feature" name="Contractual Reconstruction" supports="ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_RECREATION|ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_QUICK_SPENDER|ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_SPLURGE|ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_CONTRACTUAL_CONTROL"/>
+            <select type="Archetype Feature" name="Contractual Recreation" supports="ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_RECREATION|ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_QUICK_SPENDER|ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_SPLURGE|ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_CONTRACTUAL_CONTROL"/>
         </rules>
     </element>
 
-    <element name="Contractual Reconstruction" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_CONTRACTUAL_RECONSTRUCTION_18_1">
+    <element name="Contractual Recreation" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_CONTRACTUAL_RECONSTRUCTION_18_1">
         <supports>Skill Theft 18</supports>
         <description>
-            <p>Features from the Contractual Reconstruction Technique</p>
+            <p>Features from the Contractual Recreation Technique</p>
         </description>
         <sheet display="false"/>
         <rules>
-            <select type="Archetype Feature" name="Contractual Reconstruction" supports="ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_RECREATION|ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_QUICK_SPENDER|ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_SPLURGE|ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_CONTRACTUAL_CONTROL|ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_DOMAIN_EXPANSION_BLACK_FRIDAY"/>
+            <select type="Archetype Feature" name="Contractual Recreation" supports="ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_RECREATION|ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_QUICK_SPENDER|ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_SPLURGE|ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_CONTRACTUAL_CONTROL|ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_DOMAIN_EXPANSION_BLACK_FRIDAY"/>
         </rules>
     </element>
 
-    <element name="Contractual Reconstruction" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_CONTRACTUAL_RECONSTRUCTION_18_2">
+    <element name="Contractual Recreation" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_CONTRACTUAL_RECONSTRUCTION_18_2">
         <requirements>ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_CONTRACTUAL_RECONSTRUCTION_18_1</requirements>
         <supports>Skill Theft 18</supports>
         <description>
-            <p>Features from the Contractual Reconstruction Technique</p>
+            <p>Features from the Contractual Recreation Technique</p>
         </description>
         <sheet display="false"/>
         <rules>
-            <select type="Archetype Feature" name="Contractual Reconstruction" supports="ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_RECREATION|ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_QUICK_SPENDER|ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_SPLURGE|ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_CONTRACTUAL_CONTROL|ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_DOMAIN_EXPANSION_BLACK_FRIDAY"/>
+            <select type="Archetype Feature" name="Contractual Recreation" supports="ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_RECREATION|ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_QUICK_SPENDER|ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_SPLURGE|ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_CONTRACTUAL_CONTROL|ID_JJK_ARCHETYPE_FEATURE_CONTRACTUAL_RECREATION_DOMAIN_EXPANSION_BLACK_FRIDAY"/>
         </rules>
     </element>
 
@@ -1165,95 +1165,95 @@
         </rules>
     </element>
 
-    <element name="Corpse Creation" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_CORPSE_CREATION_3_1">
+    <element name="Cursed Corpse Creation" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_CORPSE_CREATION_3_1">
         <supports>Skill Theft 3</supports>
         <description>
-            <p>Features from the Corpse Creation Technique</p>
+            <p>Features from the Cursed Corpse Creation Technique</p>
         </description>
         <sheet display="false"/>
         <rules>
-            <select type="Archetype Feature" name="Corpse Creation" supports="ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_CORPSE_CREATION|ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_CORPSE_TACTICS"/>
+            <select type="Archetype Feature" name="Cursed Corpse Creation" supports="ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_CORPSE_CREATION|ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_CORPSE_TACTICS"/>
         </rules>
     </element>
 
-    <element name="Corpse Creation" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_CORPSE_CREATION_3_2">
+    <element name="Cursed Corpse Creation" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_CORPSE_CREATION_3_2">
         <requirements>ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_CORPSE_CREATION_3_1</requirements>
         <supports>Skill Theft 3</supports>
         <description>
-            <p>Features from the Corpse Creation Technique</p>
+            <p>Features from the Cursed Corpse Creation Technique</p>
         </description>
         <sheet display="false"/>
         <rules>
-            <select type="Archetype Feature" name="Corpse Creation" supports="ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_CORPSE_CREATION|ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_CORPSE_TACTICS"/>
+            <select type="Archetype Feature" name="Cursed Corpse Creation" supports="ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_CORPSE_CREATION|ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_CORPSE_TACTICS"/>
         </rules>
     </element>
 
-    <element name="Corpse Creation" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_CORPSE_CREATION_6_1">
+    <element name="Cursed Corpse Creation" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_CORPSE_CREATION_6_1">
         <supports>Skill Theft 6</supports>
         <description>
-            <p>Features from the Corpse Creation Technique</p>
+            <p>Features from the Cursed Corpse Creation Technique</p>
         </description>
         <sheet display="false"/>
         <rules>
-            <select type="Archetype Feature" name="Corpse Creation" supports="ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_CORPSE_CREATION|ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_CORPSE_TACTICS|ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_CORPSE_MUTATION"/>
+            <select type="Archetype Feature" name="Cursed Corpse Creation" supports="ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_CORPSE_CREATION|ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_CORPSE_TACTICS|ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_CORPSE_MUTATION"/>
         </rules>
     </element>
 
-    <element name="Corpse Creation" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_CORPSE_CREATION_6_2">
+    <element name="Cursed Corpse Creation" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_CORPSE_CREATION_6_2">
         <requirements>ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_CORPSE_CREATION_6_1</requirements>
         <supports>Skill Theft 6</supports>
         <description>
-            <p>Features from the Corpse Creation Technique</p>
+            <p>Features from the Cursed Corpse Creation Technique</p>
         </description>
         <sheet display="false"/>
         <rules>
-            <select type="Archetype Feature" name="Corpse Creation" supports="ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_CORPSE_CREATION|ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_CORPSE_TACTICS|ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_CORPSE_MUTATION"/>
+            <select type="Archetype Feature" name="Cursed Corpse Creation" supports="ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_CORPSE_CREATION|ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_CORPSE_TACTICS|ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_CORPSE_MUTATION"/>
         </rules>
     </element>
 
-    <element name="Corpse Creation" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_CORPSE_CREATION_11_1">
+    <element name="Cursed Corpse Creation" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_CORPSE_CREATION_11_1">
         <supports>Skill Theft 11</supports>
         <description>
-            <p>Features from the Corpse Creation Technique</p>
+            <p>Features from the Cursed Corpse Creation Technique</p>
         </description>
         <sheet display="false"/>
         <rules>
-            <select type="Archetype Feature" name="Corpse Creation" supports="ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_CORPSE_CREATION|ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_CORPSE_TACTICS|ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_CORPSE_MUTATION|ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_MAXIMUM_PRIZED_CREATION"/>
+            <select type="Archetype Feature" name="Cursed Corpse Creation" supports="ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_CORPSE_CREATION|ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_CORPSE_TACTICS|ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_CORPSE_MUTATION|ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_MAXIMUM_PRIZED_CREATION"/>
         </rules>
     </element>
 
-    <element name="Corpse Creation" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_CORPSE_CREATION_11_2">
+    <element name="Cursed Corpse Creation" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_CORPSE_CREATION_11_2">
         <requirements>ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_CORPSE_CREATION_11_1</requirements>
         <supports>Skill Theft 11</supports>
         <description>
-            <p>Features from the Corpse Creation Technique</p>
+            <p>Features from the Cursed Corpse Creation Technique</p>
         </description>
         <sheet display="false"/>
         <rules>
-            <select type="Archetype Feature" name="Corpse Creation" supports="ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_CORPSE_CREATION|ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_CORPSE_TACTICS|ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_CORPSE_MUTATION|ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_MAXIMUM_PRIZED_CREATION"/>
+            <select type="Archetype Feature" name="Cursed Corpse Creation" supports="ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_CORPSE_CREATION|ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_CORPSE_TACTICS|ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_CORPSE_MUTATION|ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_MAXIMUM_PRIZED_CREATION"/>
         </rules>
     </element>
 
-    <element name="Corpse Creation" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_CORPSE_CREATION_18_1">
+    <element name="Cursed Corpse Creation" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_CORPSE_CREATION_18_1">
         <supports>Skill Theft 18</supports>
         <description>
-            <p>Features from the Corpse Creation Technique</p>
+            <p>Features from the Cursed Corpse Creation Technique</p>
         </description>
         <sheet display="false"/>
         <rules>
-            <select type="Archetype Feature" name="Corpse Creation" supports="ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_CORPSE_CREATION|ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_CORPSE_TACTICS|ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_CORPSE_MUTATION|ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_MAXIMUM_PRIZED_CREATION|ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_PERFECT_CREATIONS"/>
+            <select type="Archetype Feature" name="Cursed Corpse Creation" supports="ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_CORPSE_CREATION|ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_CORPSE_TACTICS|ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_CORPSE_MUTATION|ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_MAXIMUM_PRIZED_CREATION|ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_PERFECT_CREATIONS"/>
         </rules>
     </element>
 
-    <element name="Corpse Creation" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_CORPSE_CREATION_18_2">
+    <element name="Cursed Corpse Creation" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_CORPSE_CREATION_18_2">
         <requirements>ID_JJK_ARCHETYPE_FEATURE_BODY_MANIPULATION_SKILL_THEFT_CORPSE_CREATION_18_1</requirements>
         <supports>Skill Theft 18</supports>
         <description>
-            <p>Features from the Corpse Creation Technique</p>
+            <p>Features from the Cursed Corpse Creation Technique</p>
         </description>
         <sheet display="false"/>
         <rules>
-            <select type="Archetype Feature" name="Corpse Creation" supports="ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_CORPSE_CREATION|ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_CORPSE_TACTICS|ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_CORPSE_MUTATION|ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_MAXIMUM_PRIZED_CREATION|ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_PERFECT_CREATIONS"/>
+            <select type="Archetype Feature" name="Cursed Corpse Creation" supports="ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_CORPSE_CREATION|ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_CORPSE_TACTICS|ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_CORPSE_MUTATION|ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_MAXIMUM_PRIZED_CREATION|ID_JJK_ARCHETYPE_FEATURE_CORPSE_CREATION_PERFECT_CREATIONS"/>
         </rules>
     </element>
 
