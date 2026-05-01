@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.1">
+		<update version="6.0.2">
 			<file name="dark-claw.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/dark-claw.xml" />
 		</update>
 	</info>
@@ -34,8 +34,8 @@
 			<p>Beginning at 1st level, you have learned to harden your cursed energy into dark claws on your left hand. As a bonus action for 1 cursed energy, you form your claw for 1 hour. Your claws are natural weapons, which counts as a simple melee weapon you are proficient with. It deals 1d6 slashing damage and has the light and finesse property and can use your Cursed Energy modifier for attack and damage rolls. This increases to 1d8 at 3rd level, 1d10 at 6th level, 1d12 at 11th level, and 2d8 at 18th.</p>
 		</description>
 		<sheet action="Bonus Action" usage="CE">
-				<description>For 1 cursed energy, form your claws for 1 hour which are natural weapons and count as a simple melee weapon you are proficient with. It deals 1d{{dark:claw:claw:damage}}+{{dark:claw:claw:damage}} slashing damage and has the light and finesse property and can use your Cursed Energy modifier for attack and damage rolls. </description>
-				<description level="18">For 1 cursed energy, form your claws for 1 hour which are natural weapons and count as a simple melee weapon you are proficient with. It deals 2d8+{{dark:claw:claw:damage}} slashing damage and has the light and finesse property. You can use your Cursed Energy modifier for attack and damage rolls. </description>
+				<description>For 1 CE, form your claws for 1 hour which are natural and simple melee weapons with light and finesse that you are proficient with. It deals 1d{{dark:claw:claw:damage}}+{{dark:claw:claw:damage}} slashing damage. You can use your Cursed Energy modifier for attack and damage rolls. </description>
+				<description level="18">For 1 CE, form your claws for 1 hour which are natural and simple melee weapons with light and finesse that you are proficient with. It deals 2d8+{{dark:claw:claw:damage}} slashing damage. You can use your Cursed Energy modifier for attack and damage rolls. </description>
 		</sheet>
 		<rules>
 			<stat name="dark:claw:claw:damage" value="6" bonus="claw" />
@@ -97,7 +97,7 @@
 		<description>
 			<p>Your claws deal fire damage instead of slashing damage.</p>
 		</description>
-		<sheet>
+		<sheet/>
 			<description></description>
 		</sheet>
 	</element>
@@ -107,9 +107,7 @@
 		<description>
 			<p>Your claws deal cold damage instead of slashing damage.</p>
 		</description>
-		<sheet>
-			<description></description>
-		</sheet>
+		<sheet/>
 	</element>
 
 	<element name="Lightning" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DARK_CLAW_ELEMENTAL_CLAWS_LIGHTNING">
@@ -117,9 +115,7 @@
 		<description>
 			<p>Your claws deal lightning damage instead of slashing damage.</p>
 		</description>
-		<sheet>
-			<description></description>
-		</sheet>
+		<sheet/>
 	</element>
 
 	<element name="Thunder" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DARK_CLAW_ELEMENTAL_CLAWS_THUNDER">
@@ -127,9 +123,7 @@
 		<description>
 			<p>Your claws deal thunder damage instead of slashing damage.</p>
 		</description>
-		<sheet>
-			<description></description>
-		</sheet>
+		<sheet/>
 	</element>
 
 	<element name="Acid" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DARK_CLAW_ELEMENTAL_CLAWS_ACID">
@@ -137,9 +131,7 @@
 		<description>
 			<p>Your claws deal acid damage instead of slashing damage.</p>
 		</description>
-		<sheet>
-			<description></description>
-		</sheet>
+		<sheet/>
 	</element>
 
 	<element name="Absorbing Claws" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DARK_CLAW_ABSORBING_CLAWS">
@@ -148,7 +140,7 @@
 			<p>On a hit, you can spend 1 CE to deal an additional 1d6 necrotic damage. You regain hit points equal to the necrotic damage dealt.</p>
 		</description>
 		<sheet usage="CE">
-			<description>On a hit, you can spend 1 cursed energy to deal an additional {{dark:claw:uabsorbing:claws:damage}}d6 necrotic damage. You regain hit points equal to the necrotic damage dealt. </description>
+			<description>On a hit, you can spend 1 CE to deal an additional {{dark:claw:uabsorbing:claws:damage}}d6 necrotic damage. You regain hit points equal to the necrotic damage dealt. </description>
 		</sheet>
 		<rules>
 			<stat name="dark:claw:uabsorbing:claws:damage" value="1" bonus="uabsorbingclaws" />
@@ -173,7 +165,7 @@
 			<p>Once per turn on a hit, you can spend 2 CE to force the target to make a Constitution saving throw. On a failed save, they are bleeding and take 1d6 slashing damage at the start of their turn until a creature uses their action to staunch the wound or they regain hit points.</p>
 		</description>
 		<sheet usage="CE">
-			<description>On a hit, you can spend 2 cursed energy to force the target to make a Constitution saving throw. On a failed save, they take {{dark:claw:ubarbedclaws:damage}}d6 slashing damage at the start of their turn until a creature uses their action to staunch the wound or they regain hit points.</description>
+			<description>On a hit, you can spend 2 CE to force the target to make a Constitution saving throw. On a failed save, they take {{dark:claw:ubarbedclaws:damage}}d6 slashing damage at the start of their turn until a creature uses their action to staunch the wound or they regain hit points.</description>
 		</sheet>
 		<rules>
 			<stat name="dark:claw:ubarbedclaws:damage" value="1" bonus="ubarbedclaws" />
@@ -279,7 +271,7 @@
 				</table>
 		</description>
         <sheet action="Action" usage="CE">
-			<description>While holding a cursed tool, you can spend 3, 4, 6, or 10 cursed energy for 4th, 3rd, 2nd, and 1st grade tools respectively to destroy it. You can then use its abilities and bonuses as a Zenith Claw option. You can only have one Zenith Claw option active at a time and can swap options as part of a short or long rest.</description>
+			<description>While holding a cursed tool, you can spend 3, 4, 6, or 10 CE for 4th, 3rd, 2nd, and 1st grade tools respectively to destroy it. You can then use its abilities and bonuses as a Zenith Claw option. You can only have one Zenith Claw option active at a time and can swap options as part of a short or long rest.</description>
 		</sheet>
 	</element>
 
@@ -289,7 +281,7 @@
 			<p>Finally at 18th level, you have learned to expand your domain. At initiative 20, you stab your claws through space targeting a creature within your domain with a guaranteed hit with your claws while ignoring distance and dealing critical damage (cannot roll for Black Flash). All of your Claw attacks are guaranteed hits within your domain and you can swap any number of your Claw options at the beginning of your turn.</p>
 		</description>
         <sheet>
-			<description>At initiative 20, target a creature within your domain with a guaranteed hit with your claws while ignoring distance and dealing critical damage (cannot roll for Black Flash). All of your Claw attacks are guaranteed hits within your domain and you can swap any number of your Claw options at the beginning of your turn.</description>
+			<description>At Initiative 20, target a creature within your domain with a guaranteed hit with your claws while ignoring distance and dealing critical damage (cannot roll for Black Flash). All of your Claw attacks are guaranteed hits within your domain and you can swap any number of your Claw options at the beginning of your turn.</description>
 		</sheet>
 		<rules>
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION" />
