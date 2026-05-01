@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.3">
+		<update version="6.0.4">
 			<file name="pachinko-fever.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/pachinko-fever.xml" />
 		</update>
 	</info>
@@ -150,7 +150,7 @@
             <p class="indent">In addition, your jackpot duration is now a number of minutes equal to your Cursed Energy modifier (min of 1).</p>
 		</description>
         <sheet>
-			<description>Roll 3d20 when deciding your multiplier and choose which roll you want. Your reverse cursed technique makes you regain hit points as if you had spent a number of cursed energy equal to twice your Cursed Energy modifier, and you can use Reverse Cursed Technique as a free action while you have the jackpot bonus.</description>
+			<description>Roll 3d20 when deciding your multiplier and choose which roll you want. Your reverse cursed technique makes you regain hit points as if you had spent {{ce:modifier:double}} CE, and you can use Reverse Cursed Technique as a free action while you have the jackpot bonus.</description>
 		</sheet>
 	</element>
 
