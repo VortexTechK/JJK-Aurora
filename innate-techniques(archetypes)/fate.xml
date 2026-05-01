@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.0">
+		<update version="6.0.1">
 			<file name="fate.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/fate.xml" />
 		</update>
 	</info>
@@ -48,9 +48,9 @@
 			<p class="indent">An effect that would damage the soul is capable of cutting your thread and removing your technique's effects. Additionally, you cannot manipulate the fate of a creature that is completely lacking cursed energy (such as via Heavenly Restriction). </p>
 		</description>
 		<sheet action="Action" usage="CE">
-			<description>For 2 cursed energy, you bind two creatures within 30 ft of you with an invisible red thread for 1 minute, granting them a fate while within 30 ft of each other. If a Fate requires Touch, you must touch both targets at some point. Grant +1 Fate per additional CE spent, up to {{proficiency}}. An effect that would damage the soul is capable of cutting your thread and removing your technique's effects. You cannot manipulate the fate of a creature that is completely lacking cursed energy.</description>
-			<description level="6">For 2 cursed energy, you bind two creatures within 30 ft of you with an invisible red thread for 1 minute, granting them a fate while within 30 ft of each other. If a Fate requires Touch, you must touch both targets at some point. Grant +1 Fate and minute to the duration per additional CE spent, up to {{proficiency}}. An effect that would damage the soul is capable of cutting your thread and removing your technique's effects. You cannot manipulate the fate of a creature that is completely lacking cursed energy.</description>
-			<description level="11">For 2 cursed energy, you bind two creatures within 30 ft of you with an invisible red thread for 1 hour, granting them a fate while within 30 ft of each other. If a Fate requires Touch, you must touch both targets at some point. Grant +1 Fate and hour to the duration per additional CE spent, up to {{proficiency}}. An effect that would damage the soul is capable of cutting your thread and removing your technique's effects. You cannot manipulate the fate of a creature that is completely lacking cursed energy.</description>
+			<description>For 2 CE, bind two creatures within 30 ft of you with an invisible red thread for 1 minute, granting them a fate while within 30 ft of each other. If a Fate requires Touch, you must touch both targets at some point. Grant +1 Fate per additional CE spent, up to {{proficiency}}. An effect that would damage the soul is capable of cutting your thread and removing your technique's effects. You cannot manipulate the fate of a creature that is completely lacking cursed energy.</description>
+			<description level="6">For 2 CE, bind two creatures within 30 ft of you with an invisible red thread for 1 minute, granting them a fate while within 30 ft of each other. If a Fate requires Touch, you must touch both targets at some point. Grant +1 Fate and minute to the duration per additional CE spent, up to {{proficiency}}. An effect that would damage the soul is capable of cutting your thread and removing your technique's effects. You cannot manipulate the fate of a creature that is completely lacking cursed energy.</description>
+			<description level="11">For 2 CE, bind two creatures within 30 ft of you with an invisible red thread for 1 hour, granting them a fate while within 30 ft of each other. If a Fate requires Touch, you must touch both targets at some point. Grant +1 Fate and hour to the duration per additional CE spent, up to {{proficiency}}. An effect that would damage the soul is capable of cutting your thread and removing your technique's effects. You cannot manipulate the fate of a creature that is completely lacking cursed energy.</description>
 		</sheet>
 		<rules>
 			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_FATE_FATES" />
@@ -94,7 +94,7 @@
 			</ul>
 		</description>
 		<sheet action="Bonus Action" usage="CE">
-			<description>For 1 cursed energy, you can tell who the creatures threads of fate connect to if they are within sight, as well as the type of connection. This can range from familial connections, admiration, or feelings of love. Alternatively, you can read the target's personal thread of fate to learn the target's damage resistances, immunities, or vulnerabilities, CR or Level, remaining hit points, AC or an Ability modifier, or its current emotions.</description>
+			<description>For 1 CE, you can tell who a creatures threads of fate connect to if they are within sight, as well as the type of connection. This can range from familial connections, admiration, or feelings of love. Alternatively, you can read the target's personal thread of fate to learn the target's damage resistances, immunities, or vulnerabilities, CR or Level, remaining hit points, AC or an Ability modifier, or its current emotions.</description>
 		</sheet>
 	</element>
 
@@ -124,7 +124,7 @@
 			<p class="indent">Additionally, your innate technique features count the entirety of your domain as being within range and you can ignore the Touch Requirement of Fates.</p>
 		</description>
         <sheet>
-			<description>At initiative 20, you select a creature within your domain as your Destined Foe. While your Destined Foe is within your domain, all your attacks against them are imbued with your guaranteed hit. You can switch your Destined Foe to another creature within your domain at initiative 20. Your innate technique features count the entirety of your domain as being within range and you can ignore the Touch Requirement of Fates.</description>
+			<description>At Initiative 20, you select a creature within your domain as your Destined Foe. While your Destined Foe is within your domain, all your attacks against them are imbued with your guaranteed hit. You can switch your Destined Foe to another creature within your domain at initiative 20. Your innate technique features count the entirety of your domain as being within range and you can ignore the Touch Requirement of Fates.</description>
 		</sheet>
 		<rules>
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION"/>
