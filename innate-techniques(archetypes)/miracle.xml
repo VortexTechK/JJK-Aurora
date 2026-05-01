@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.2">
+		<update version="6.0.3">
 			<file name="miracle.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/miracle.xml" />
 		</update>
 	</info>
@@ -75,7 +75,7 @@
 			<p>At 3rd level, you can self-consciously alter fate. As a reaction to failing a roll you can spend 1 Miracle and 1 CE to add a d6 to the roll, potentially turning it into a success. This increases to a d8 at 6th level and a d10 at 11th level.</p>
 		</description>
 		<sheet action="Reaction" usage="Miracle + CE">
-			<description>As a reaction to failing a roll you can spend 1 Miracle and 1 cursed energy to add a d{{miracle:miraculous:outcome}} to the roll.</description>
+			<description>As a reaction to failing a roll you can spend 1 Miracle and 1 CE to add a d{{miracle:miraculous:outcome}} to the roll.</description>
 		</sheet>
         <rules>
             <stat name="miracle:miraculous:outcome" value="6" level="3" bonus="miraculous outcome" />
@@ -90,9 +90,9 @@
 			<p>At 6th level, you have learned that out of difficulties, miracles grow. Your technique lets you fend off death by some miracle. When you are hit by an attack or fail a saving throw that would reduce you to 0 hit points or kill you outright, you can spend 2 Miracles and 2 CE to instead succeed the save or survive the attack and take no damage or additional effects. Completely escaping harm by seemingly dumb luck. While you have at least 1 Miracle, you make death saving throws at advantage.</p>
             <p class="indent">At 11th level, you can use this feature against an attack or effect that would reduce you to 1/2 or below your hit point maximum.</p>
 		</description>
-        <sheet>
-            <description level="6">When you are hit by an attack or fail a saving throw that would reduce you to 0 hit points or kill you outright, you can spend 2 Miracles and 2 cursed energy to instead succeed the save or survive the attack and take no damage or additional effects. While you have at least 1 Miracle, you make death saving throws at advantage.</description>
-            <description level="11">When you are hit by an attack or fail a saving throw that would reduce you to anywhere below half max hit points, you can spend 2 Miracles and 2 cursed energy to instead succeed the save or survive the attack and take no damage or additional effects. While you have at least 1 Miracle, you make death saving throws at advantage.</description>
+        <sheet usage="Miracle + CE">
+            <description level="6">When you are hit by an attack or fail a saving throw that would reduce you to 0 hit points or kill you outright, you can spend 2 Miracles and 2 CE to instead succeed the save or survive the attack and take no damage or additional effects. While you have at least 1 Miracle, you make death saving throws at advantage.</description>
+            <description level="11">When you are hit by an attack or fail a saving throw that would reduce you to anywhere below half max hit points, you can spend 2 Miracles and 2 CE to instead succeed the save or survive the attack and take no damage or additional effects. While you have at least 1 Miracle, you make death saving throws at advantage.</description>
         </sheet>
 	</element>
 
@@ -113,7 +113,7 @@
             <p class="indent">At initiative 20, you gain 3 Miracles and have no limit on your max amount of Miracles. Within your domain, you can spend a Miracle on yourself or another creature when they make an attack or use a technique to imbue it with your domain's guaranteed hit.</p>
 		</description>
         <sheet>
-			<description>Your domain costs 2d20 cursed energy. At initiative 20, you gain 3 Miracles and have no limit on your max amount of Miracles. Within your domain, you can spend a Miracle on yourself or another creature when they make an attack or use a technique to imbue it with your domain's guaranteed hit. If you lack the Cursed Energy to expand your domain, you must reattempt on your next turn and reroll the 2d20. If you expand your domain as a reaction to another Domain Expansion, you can choose to spend 20 CE or to roll 2d20. Your domain lasts for 1d4 minutes.</description>
+			<description>Your domain costs 2d20 CE and lasts for 1d4 minutes. At Initiative 20, you gain 3 Miracles and have no limit on your max amount of Miracles. Within your domain, you can spend a Miracle on yourself or another creature when they make an attack or use a technique to imbue it with your domain's guaranteed hit. If you lack the CE to expand your domain, you must reattempt on your next turn and reroll the 2d20. If you expand your domain as a reaction to another Domain Expansion, you can choose to spend 20 CE or to roll 2d20.</description>
 		</sheet>
 		<rules>
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION"/>
