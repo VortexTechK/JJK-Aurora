@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.0">
+		<update version="6.0.2">
 			<file name="disaster-flames.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/disaster-flames.xml" />
 		</update>
 	</info>
@@ -37,7 +37,7 @@
 			<p>Starting at 1st level, you have learned the basics of fire manipulation, being able to launch a wave of flames from your hands as well as the ability to cast Control Flames. As a bonus action for 1 Cursed Energy, you unleash a 15-foot cone which forces people to make a Dexterity save. On a failure, they take 2d8 fire damage or half as much damage on a success. The fire ignites any flammable objects in the area that aren’t being worn or carried. Your damage dice increases to 3d8 at 5th level, 4d8 at 11th level, and 5d8 at 17th level.</p>
 		</description>
 		<sheet action="Bonus Action" usage="CE">
-			<description>For 1 cursed energy, you unleash a 15-foot cone which forces people to make a Dexterity saving throw. On a failure, they take {{flames:of:disaster:damage}}d8 fire damage or half as much damage on a success. The fire ignites any flammable objects in the area that aren't being worn or carried. You can cast Control Flames.</description>
+			<description>For 1 CE, create a 15ft cone which forces creatures to make a Dexterity saving throw. On a failure, they take {{flames:of:disaster:damage}}d8 fire damage or half as much damage on a success. The fire ignites any flammable objects in the area that aren't being worn or carried. You can cast Control Flames.</description>
 		</sheet>
         <rules>
             <grant type="Spell" id="ID_XGTE_SPELL_CONTROL_FLAMES" />
@@ -54,7 +54,7 @@
 			<p>Beginning 3rd level, with a better understanding of the flames you possess, you can now create volcanoes. As an action for 2 Cursed Energy per volcano, you can create a number of volcanos up to your Cursed Energy modifier within 120 ft. of you, with each volcano occupying a 5 ft. radius circle. As a bonus action, you can force every creature in a 30-foot-long and 10-foot-wide line originating from each volcano to make a Dexterity saving throw as the volcanos erupt. On a failure, they take 5d10 fire damage and become restrained by the magma for 1 minute. On success, they take half as much damage and are not restrained. The creature can make a Strength saving throw at the beginning of their turns, ending the condition early on success. Any area targeted by this feature becomes difficult terrain.</p>
 		</description>
 		<sheet action="Action" usage="CE">
-			<description>For 2 Cursed Energy per volcano, you can create up to {{ce:modifier}} volcanos within 120 ft. of you, with each volcano occupying a 5 ft. radius circle. As a bonus action, you can force every creature in a 30-foot-long and 10-foot-wide line originating from each volcano to make a Dexterity saving throw. On a failure, they take 5d10 fire damage and become restrained for 1 minute. On success, they take half as much damage and are not restrained. The creature can make a Strength saving throw at the beginning of their turns, ending the condition early on success. Any area targeted by this feature becomes difficult terrain.</description>
+			<description>For 2 CE per volcano, you can create up to {{ce:modifier}} volcanos within 120 ft. of you, with each volcano occupying a 5 ft. radius circle. As a bonus action, you can force every creature in a 30-foot-long and 10-foot-wide line originating from each volcano to make a Dexterity saving throw. On a failure, they take 5d10 fire damage and become restrained for 1 minute. On success, they take half as much damage and are not restrained. The creature can make a Strength saving throw at the beginning of their turns, ending the condition early on success. Any area targeted by this feature becomes difficult terrain.</description>
 		</sheet>
 	</element>
 
@@ -67,7 +67,7 @@
 			</div>
 		</description>
         <sheet action="Action" usage="CE">
-            <description>For 5 cursed energy, you can create 1 Ember Insects Swarm within 5 ft of you. These shikigami act immediately after your turn.</description>
+            <description>For 5 CE, create a Swarm of Ember Insects within 5 ft of you. These shikigami act immediately after your turn.</description>
         </sheet>
 		<rules>
 			<select type="Companion" name="Ember Insects" supports="Swarm of Ember Insects" />
@@ -80,7 +80,7 @@
 			<p>When you reach 11th level, you have learned how to extract the maximum out of your Disaster Flames, creating your maximum technique. As an action for 10 Cursed Energy, you can fly up high in the air gathering materials into a single gigantic meteor. In the following turn as you reach the ground. Every creature except you since you don't take the damage, in a 120 feet radius from you must attempt a Dexterity saving throw. On a failure, they take 10d4 bludgeoning damage + 10d6 fire damage and are knocked prone. On a success, they take half the damage.</p>
 		</description>
         <sheet action="Action" usage="CE">
-			<description>For 10 cursed energy, you fly up high in the air. The following turn as you reach the ground, every creature except you in a 120 feet radius from you must attempt a Dexterity saving throw. On a failure, they take 10d4 bludgeoning damage + 10d6 fire damage and are knocked prone. On a success, they take half the damage.</description>
+			<description>For 10 CE, fly high into the air. The following turn as you reach the ground, every creature except you in a 120 ft radius from you must attempt a Dexterity saving throw. On a failure, they take 10d4 bludgeoning damage + 10d6 fire damage and are knocked prone. On a success, they take half the damage.</description>
 		</sheet>
 	</element>
 
@@ -90,7 +90,7 @@
 			<p>At 18th level, you have learned how to expand your domain to create a massive magma dimension. Your domain is a huge volcano-like dimension, which irradiates extreme heat. At initiative 20, all creatures other than you within your domain take 10d8 fire damage.</p>
 		</description>
         <sheet>
-			<description>At initiative 20, all creatures other than you within your domain take 10d8 fire damage.</description>
+			<description>At Initiative 20, all creatures other than you within your domain take 10d8 fire damage.</description>
 		</sheet>
 		<rules>
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION" />
@@ -129,7 +129,7 @@
 	    	</ul>
 		    <h4 style="margin-top:10px">Actions</h4>
 		    <ul class="unstyled">
-		    	<li><strong><em>Explosive Charge.</em></strong> Melee Weapon Attack: +3 to hit, one target. Hit: 10 (4d4) piercing damage. After the attack, hit or miss, all creatures within a 10 ft. radius sphere of the target must make a Dexterity saving throw or take 37 (15d4) fire damage. The swarm dies after this action.</li>
+		    	<li><em><strong>Explosive Charge.</strong> Melee Weapon Attack:</em> +3 to hit, one target. Hit: 10 (4d4) piercing damage. After the attack, hit or miss, all creatures within a 10 ft. radius sphere of the target must make a Dexterity saving throw or take 37 (15d4) fire damage. The swarm dies after this action.</li>
 		    </ul>
 	    </description>
     </element>
