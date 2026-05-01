@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.1">
+		<update version="6.0.2">
 			<file name="mythical-beastamber.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/mythical-beastamber.xml" />
 		</update>
 	</info>
@@ -34,8 +34,8 @@
 			<p>Starting at 1st level, you may not know your cursed technique yet, but you have gained insane mastery over your energy. Once per turn when you deal damage with a melee attack, you can spend 1 cursed energy to add 1d10 lightning damage to the total amount. This increases to 2d10 at 3rd level, 3d10 at 6th level, 4d10 at 11th level, to 5d10 at 14th level, and to 6d10 at 18th level.</p>
 		</description>
 		<sheet usage="CE">
-			<description>Once per turn when you deal damage with a melee attack, you can spend 1 cursed energy to add {{mythical:beast:amber:energy:damage}}d10 lightning damage.</description>
-            <description level="3">Twice per turn when you deal damage with a melee attack, you can spend 1 cursed energy to add {{mythical:beast:amber:energy:damage}}d10 lightning damage.</description>
+			<description>Once per turn when you deal damage with a melee attack, you can spend 1 CE to add {{mythical:beast:amber:energy:damage}}d10 lightning damage.</description>
+            <description level="3">Twice per turn when you deal damage with a melee attack, you can spend 1 CE to add {{mythical:beast:amber:energy:damage}}d10 lightning damage.</description>
 		</sheet>
         <rules>
             <stat name="mythical:beast:amber:energy:damage" value="1" bonus="electric energy" />
@@ -96,7 +96,7 @@
                 <p class="indent"><strong>Cursed Beam(Stage 5).</strong> When you reach Stage 5 in this form, your very cursed energy has been improved. As an action for 10 cursed energy, you launch a huge cursed energy beam in a 30-foot line, forcing every creature in that line to make a Dexterity saving throw. On a failure, they take 10d10 force damage and are blinded until the beginning of your next turn. On a success, they take half as much damage and are not blinded. You can spend additional cursed energy into this technique, with each one adding 1d10 force damage and a +1 to its DC.</p>
 		</description>
         <sheet action="Action" usage="CE">
-			<description>You can only use this technique once. For 8 cursed energy, you start at Stage 1 and every 5 rounds, you gain the next stage. As a bonus action, you can spend CE to expedite your transformation by 1 round per 2 CE.  After your fifth round in Stage 5, you die instantly. At Stage 1 you gain a +2 bonus to Str, Dex, and Con ignoring limits, immunity to lightning, and +20 ft. movement. For every additional stage the bonus increases by 1 and the speed increase by 20 ft. At Stage 2, you gain a extra attack. At Stage 3, you gain a extra bonus action. At Stage 4, your extra attack becomes a action. At Stage 5, you gain a extra action. You can deactivate as a bonus action, but must make a Constitution saving throw. At Stage 1 the DC is 10, on a failure you gain 1 level of exhaustion, and on a success you suffer nothing. For each additional stage the DC increases by 5 and the levels of exhaustion increase by 1 for both a success and failure. Your body gains Cursed Claw, Loud Blast, Lightning Armor, X-Ray Vision, and Cursed Beam as your stages increase.</description>
+			<description>You can only use this technique once. For 8 CE, you start at Stage 1 and every 5 rounds, you gain the next stage. As a bonus action, you can spend CE to expedite your transformation by 1 round per 2 CE. After your fifth round in Stage 5, you die instantly. At Stage 1 you gain a +2 bonus to Str, Dex, and Con ignoring limits, immunity to lightning, and +20 ft. movement. For every additional stage the bonus increases by 1 and the speed increase by 20 ft. At Stage 2, you gain a extra attack. At Stage 3, you gain a extra bonus action. At Stage 4, your extra attack becomes a action. At Stage 5, you gain a extra action. You can deactivate this technique as a bonus action, but must make a Constitution saving throw. At Stage 1 the DC is 10, on a failure you gain 1 level of exhaustion, and on a success you suffer nothing. For each additional stage the DC increases by 5 and the levels of exhaustion increase by 1 for both a success and failure. Your body gains Cursed Claw, Loud Blast, Lightning Armor, X-Ray Vision, and Cursed Beam as your stages increase.</description>
 		</sheet>
         <rules>
             <grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_MYTHICAL_BEAST_AMBER_CURSED_CLAW" />
@@ -121,7 +121,7 @@
             <p>When you reach Stage 2 in this form, your mouth will start to get covered with cursed energy, allowing you to emit loud energy blasts from your mouth. Make a cursed energy attack roll against a creature within 30 feet of you, on a hit it will deal 6d10 lightning damage. Hit or miss, all creatures within 15 feet of the target must make a Constitution saving throw. On a failure, they take 6d6 thunder damage and are deafened until the beginning of your next turn. On a success, they take half as much damage.</p>
         </description>
         <sheet>
-            <description>Make a cursed energy attack roll against a creature within 30 feet of you, on a hit it will deal 6d10 lightning damage. Hit or miss, all creatures within 15 feet of the target must make a Constitution saving throw. On a failure, they take 6d6 thunder damage and are deafened until the beginning of your next turn. On a success, they take half as much damage.</description>
+            <description>Make a CE attack roll against a creature within 30 feet of you, on a hit it will deal 6d10 lightning damage. Hit or miss, all creatures within 15 feet of the target must make a Constitution saving throw. On a failure, they take 6d6 thunder damage and are deafened until the beginning of your next turn. On a success, they take half as much damage.</description>
         </sheet>
     </element>
 
@@ -139,7 +139,7 @@
             <p>When you reach Stage 4 in this form, your head is completely filled with cursed energy, even granting you new eyes. You will gain 120 feet of truesight, and will also be able to see all the features one creature of your choice has as a bonus action.</p>
         </description>
         <sheet>
-            <description>You gain 120 feet of truesight and can see all features of one creature as a bonus action.</description>
+            <description>You gain 120 ft of truesight and can see all features of one creature as a bonus action.</description>
         </sheet>
     </element>
 
@@ -148,7 +148,7 @@
             <p>When you reach Stage 5 in this form, your very cursed energy has been improved. As an action for 10 cursed energy, you launch a huge cursed energy beam in a 30-foot line, forcing every creature in that line to make a Dexterity saving throw. On a failure, they take 10d10 force damage and are blinded until the beginning of your next turn. On a success, they take half as much damage and are not blinded. You can spend additional cursed energy into this technique, with each one adding 1d10 force damage and a +1 to its DC.</p>
         </description>
         <sheet action="Action" usage="CE">
-            <description>For 10 cursed energy, forcing every creature in a 30-foot line to make a Dexterity saving throw. On a failure, they take 10d10 force damage and are blinded until the beginning of your next turn. On a success, they take half as much damage and are not blinded. For every additional cursed energy spent, add 1d10 force damage and +1 to the DC.</description>
+            <description>For 10 CE, force every creature in a 30-foot line to make a Dexterity saving throw. On a failure, they take 10d10 force damage and are blinded until the beginning of your next turn. On a success, they take half as much damage and are not blinded. For every additional CE spent, add 1d10 force damage and +1 to the DC.</description>
         </sheet>
     </element>
 
@@ -158,7 +158,7 @@
 			<p>Finally, at 18th level, you have honed your control over your energy into a domain expansion. Starting at initiative 20, all creatures in your domain gains 3 positive charges without a charge limit.</p>
 		</description>
         <sheet>
-			<description>At initiative 20, all creatures gain 3 positive charges without a charge limit.</description>
+			<description>At Initiative 20, all creatures gain 3 positive charges without a charge limit.</description>
 		</sheet>
         <rules>
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION" />
