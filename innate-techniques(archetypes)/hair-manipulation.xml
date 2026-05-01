@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.0">
+		<update version="6.0.1">
 			<file name="hair-manipulation.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/hair-manipulation.xml" />
 		</update>
 	</info>
@@ -34,8 +34,8 @@
 			<p>Beginning at 1st level, you have learned to move your hair into different forms using cursed energy. When you take the Attack action, you can spend 1 CE to replace an attack by shaping your hair into a barbed stinger. Make a melee cursed energy attack against a creature within 10 ft of you. On a hit you deal 1d10 + your CE modifier piercing damage. You gain a +1 bonus to attack and damage rolls with this attack at 3rd level. This increases to a +2 bonus at 6th level, +3 bonus at 11th level and +4 bonus at 18th level.</p>
 		</description>
 		<sheet usage="CE">
-			<description>When you take the Attack action, you can spend 1 cursed energy to replace an attack by shaping your hair into a barbed stinger. Make a melee cursed energy attack against a creature within 10 ft of you. On a hit you deal 1d10 + {{hair:manipulation:scorpion:hair:damage}} piercing damage.</description>
-			<description level="3">When you take the Attack action, you can spend 1 cursed energy to replace an attack by shaping your hair into a barbed stinger. Make a melee cursed energy attack with a +{{hair:manipulation:scorpion:hair:bonus}} to hit that gets against a creature within 10 ft of you. On a hit you deal 1d10 + {{hair:manipulation:scorpion:hair:damage}} piercing damage.</description>
+			<description>When you take the Attack action, you can spend 1 CE to replace an attack by shaping your hair into a barbed stinger. Make a melee CE attack against a creature within 10 ft of you. On a hit you deal 1d10 + {{hair:manipulation:scorpion:hair:damage}} piercing damage.</description>
+			<description level="3">When you take the Attack action, you can spend 1 CE to replace an attack by shaping your hair into a barbed stinger. Make a melee CE attack with a +{{hair:manipulation:scorpion:hair:bonus}} to hit against a creature within 10 ft of you. On a hit you deal 1d10 + {{hair:manipulation:scorpion:hair:damage}} piercing damage.</description>
 		</sheet>
 		<rules>
 			<stat name="hair:manipulation:scorpion:hair:bonus" value="1" level="3" bonus="scorpion hair" />
@@ -54,7 +54,7 @@
 			<p class="indent">When attacking with a drill, you can spend an additional 2 cursed energy to make the drill explode in a 5 ft radius upon the point of impact causing creatures in range to make a Dexterity saving throw. On a failure, they take an additional 3d6 fire damage. On a success, they take half as much damage. The fire damage increases to 5d6 at 6th level, 8d6 at 11th level and 10d6 at 18th level.</p>
 		</description>
 		<sheet usage="CE">
-			<description>When you take the Attack action, you can spend 1 cursed energy to replace an attack with a ranged cursed energy attack roll with a range of {{hair:manipulation:drill:hair:distance}}ft. This attack deals 1d6 + {{ce:modifier}} piercing damage. You can spend an additional 2 cursed energy to make the drill explode in a 5 ft radius upon the point of impact causing creatures in range to make a Dexterity saving throw. On a failure, they take an additional {{hair:manipulation:drill:hair:damage}}d6 fire damage. On a success, they take half as much damage.</description>
+			<description>When you take the Attack action, you can spend 1 CE to replace an attack with a ranged CE attack roll with a range of {{hair:manipulation:drill:hair:distance}}ft. This attack deals 1d6 + {{ce:modifier}} piercing damage. You can spend an additional 2 CE to make the drill explode in a 5 ft radius upon the point of impact causing creatures in range to make a Dexterity saving throw. On a failure, they take an additional {{hair:manipulation:drill:hair:damage}}d6 fire damage. On a success, they take half as much damage.</description>
 		</sheet>
 		<rules>
 			<stat name="hair:manipulation:drill:hair:distance" value="30" bonus="drill hair" />
@@ -76,7 +76,7 @@
 			<p class="indent">At 11th level, taking the Dash action while flying you instead move up to twice your flying speed. This increases to three times your flying speed at 18th level.</p>
 		</description>
         <sheet action="Action" usage="CE">
-            <description>For 3 cursed energy, you form your hair into either a Jet or Helicopter for 1 minute and can spend 1 CE to keep the form active for a additional minute</description>
+            <description>For 3 CE, form your hair into either a Jet or Helicopter for 1 minute and you can spend 1 CE to keep the form active for a additional minute.</description>
         </sheet>
 		<rules>
 			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_HAIR_MANIPULATION_HELICOPTER_HAIR" />
@@ -90,7 +90,7 @@
 			<p class="indent">A creature that hits you with an Opportunity attack takes slashing damage equal to your CE modifier. This becomes twice your CE modifier at 11th level.</p>
 		</description>
         <sheet>
-            <description>You gain a {{speed}} ft. flying speed and can take the Dash action as a bonus action. When you take the attack action, you can spend 2 cursed energy to replace one attack with a melee cursed energy attack. On a hit you deal {{hair:manipulation:helicopter:hair:damage}}d8 + {{ce:modifier}} slashing damage. A creature that hits you with an opportunity attack takes {{hair:manipulation:helicopter:hair:opportunity}} slashing damage.</description>
+            <description>You gain a {{speed}} ft. flying speed and can take the Dash action as a bonus action. When you take the attack action, you can spend 2 CE to replace one attack with a melee CE attack. On a hit you deal {{hair:manipulation:helicopter:hair:damage}}d8 + {{ce:modifier}} slashing damage. A creature that hits you with an opportunity attack takes {{hair:manipulation:helicopter:hair:opportunity}} slashing damage.</description>
         </sheet>
 		<rules>
 			<stat name="hair:manipulation:helicopter:hair:damage" value="6" bonus="helicopter hair" />
