@@ -4,7 +4,7 @@
 		<name>Shikigami User</name>
 		<description>The Shikigami User class from JJK.</description>
 		<author url="https://docs.google.com/document/d/1eC8tEMHnupOuaX6At1X8JORz5iarNe6I-A7j2QzScrE/edit?tab=t.0">JJK</author>
-		<update version="6.0.1">
+		<update version="6.0.2">
 			<file name="class-shikigamiuser.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/classes/class-shikigamiuser.xml" />
 		</update>
 	</info>
@@ -126,12 +126,14 @@
 			</rules>
 		</multiclass>
 	</element>
+	
 	<element name="Cursed Energy" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_CURSED_ENERGY">
 		<description>
 			<p>Starting at 1st level, you can harness your negative feelings into a usable source of energy, called cursed energy. These feelings can be harnessed into attacks or abilities. The number of cursed energy you possess is your class level + your cursed energy modifier which is charisma or wisdom (Player’s choice). You have a curse stat equal to the chosen stat</p>
 			<p class="indent"> Your cursed energy DC is 8 + user cursed energy ability modifier + proficiency bonus.</p>
 		</description>
 	</element>
+	
 	<element name="Innate Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_INNATE_TECHNIQUE">
 		<requirements>!(ID_INTERNAL_FEATURE_REPLACEMENT_SHIKIGAMI_USER_INNATE_TECHNIQUE||ID_JJK_CLASS_JUGGERNAUT||ID_JJK_CLASS_SCOUT||ID_JJK_CLASS_STRATEGIST||ID_JJK_CLASS_SUPPORT_SPECIALIST||ID_JJK_CLASS_WARRIOR)</requirements>
 		<description>
@@ -142,6 +144,7 @@
 			<select type="Archetype" name="Innate Technique" supports="Innate Technique" />
 		</rules>
 	</element>
+	
 	<element name="Shikigami Companion" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_SHIKIGAMI_COMPANION">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SHIKIGAMI_USER_SHIKIGAMI_COMPANION</requirements>
 		<description>
@@ -153,16 +156,192 @@
 				<div element="ID_JJK_INFORMATION_SHIKIGAMI_COMPANION"/>
 			</div>
 		</description>
-		<sheet action="Action" usage="1/Long Rest or CE">
-			<description>For 3 cursed energy, you can summon a shikigami that is bound to you. It appears in an unoccupied space of your choice within 30 feet of you.
-			The shikigami is friendly to you and your companions, and it obeys your commands.
-			In combat, the shikigami shares your initiative and takes its turn immediately after yours. It can move and use its reaction on its own, but only takes the Dodge action unless you take a bonus action on your turn to command it to take another action. That action can be one in its statblock or some other action. If you are incapacitated, the shikigami can take any action of its choice, not just Dodge.
-			The shikigami remains until reduced to 0 hit points, you summon the shikigami again, or you die. Anything the shikigami was wearing or carrying is left behind when it vanishes.</description>
+		<sheet action="Action" usage="1 Free/Long Rest or CE">
+			<description>For 3 CE, summon a shikigami that is bound to you appearing in an unoccupied space of your choice within 30 ft of you. The shikigami is friendly to you and your companions and obeys your commands. In combat, the shikigami shares your initiative and takes its turn immediately after yours. It can move and use its reaction on its own, but only takes the Dodge action unless you take a bonus action on your turn to command it to take another action. That action can be one in its statblock or some other action. If you are incapacitated, the shikigami can take any action of its choice, not just Dodge. The shikigami remains until reduced to 0 hit points, you summon the shikigami again, or you die. Anything the shikigami was wearing or carrying is left behind when it vanishes.</description>
 		</sheet>
 		<rules>
 			<select type="Companion" name="Shikigami Companion" supports="Shikigami Companion" />
 		</rules>
 	</element>
+	
+	<element name="Martial Arts" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_MARTIAL_ARTS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SHIKIGAMI_USER_MARTIAL_ARTS</requirements>
+		<description>
+			<p>At 1st level, your practice of martial arts gives you mastery of combat styles that use unarmed strikes and martial arts weapons, which are shortswords and any simple melee weapons that don’t have the two-handed or heavy property.</p>
+			<p class="indent">You gain the following benefits while you are unarmed or wielding martial arts weapons:</p>
+			<ul>
+				<li>You can use Dexterity instead of Strength for the attack and damage rolls of your unarmed strikes and martial arts weapons.</li>
+				<li>You can roll a d4 in place of the normal damage of your unarmed strike or martial arts weapon. This die changes as you gain shikigami user levels, as shown in the Martial Arts column of the Martial Arts table.</li>
+				<li>When you use the Attack action with an unarmed strike or a martial arts weapon on your turn, you can make one unarmed strike as a bonus action. For example, if you take the Attack action and attack with a quarterstaff, you can also make an unarmed strike as a bonus action, assuming you haven’t already taken a bonus action this turn.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Your unarmed strike does 1d{{martial arts:dice}}+{{martial arts:damage}} damage. You can use Strength or Dexterity for these attacks.
+			When you use the Attack action with an unarmed strike or a martial arts weapon on your turn, you can make one unarmed strike or grapple as a bonus action.</description>
+		</sheet>
+		<rules>
+			<stat name="martial arts:attack" value="strength:modifier" bonus="martial arts" />
+			<stat name="martial arts:attack" value="dexterity:modifier" bonus="martial arts" />
+			<stat name="martial arts:damage" value="strength:modifier" bonus="martial arts" />
+			<stat name="martial arts:damage" value="dexterity:modifier" bonus="martial arts" />
+			<stat name="martial arts:dice" value="4" bonus="martial arts" />
+			<stat name="martial arts:dice" value="6" bonus="martial arts" level="5" />
+			<stat name="martial arts:dice" value="8" bonus="martial arts" level="11" />
+			<stat name="martial arts:dice" value="10" bonus="martial arts" level="17" />
+		</rules>
+	</element>
+	
+	<element name="Shared Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_SHARED_TECHNIQUE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SHIKIGAMI_USER_SHARED_TECHNIQUE</requirements>
+		<description>
+			<p>At 2nd level, your attunement with your shikigami has increased. Any bonuses or actions granted to you by your technique are also granted to your Shikigami Companion (other than summons), drawing from your pool of CE.</p>
+		</description>
+		<sheet>
+			<description>Any bonuses or actions granted to you by your technique are also granted to your Shikigami Companion (other than summons), drawing from your pool of CE.</description>
+		</sheet>
+	</element>
+	
+	<element name="Ability Score Improvement" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_ABILITYSCOREIMPROVEMENT_SHIKIGAMI_USER">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SHIKIGAMI_USER_ABILITYSCOREIMPROVEMENT_SHIKIGAMI_USER</requirements>
+		<compendium display="false" />
+		<description>
+			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Shikigami User 4)" supports="Improvement Option,Shikigami User,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Shikigami User 8)" supports="Improvement Option,Shikigami User,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Shikigami User 12)" supports="Improvement Option,Shikigami User,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Shikigami User 16)" supports="Improvement Option,Shikigami User,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Shikigami User 19)" supports="Improvement Option,Shikigami User,19" level="19" />
+		</rules>
+	</element>
+	
+	<element name="Coordinated Blow" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_COORDINATED_BLOW">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SHIKIGAMI_USER_COORDINATED_BLOW</requirements>
+		<description>
+			<p>Beginning at 5th level, you and your shikigami strike as one. As part of the attack action, you can command your shikigami to move and attack a creature within range or take a different action.</p>
+		</description>
+		<sheet>
+			<description>As part of the attack action, you can command your shikigami to move and attack a creature within range or take a different action.</description>
+		</sheet>
+	</element>
+	
+	<element name="Shikigami Improvement" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_SHIKIGAMI_IMPROVEMENT">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SHIKIGAMI_USER_SHIKIGAMI_IMPROVEMENT</requirements>
+		<description>
+			<p>Starting at 7th level, your shikigami grows stronger. Your shikigami gains the following benefits:</p>
+			<ul>
+				<li>It gains a hover speed equal to its walking speed.</li>
+				<li>Its strike attacks deal 1d6 extra necrotic damage.</li>
+				<li>You can either choose for your shikigami to become medium or gain the ability to become any weapon, dealing an additional 1d6 necrotic damage on a hit.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Your shikigami gains a hover speed of 40ft. Its strike attacks deal 1d6 extra necrotic damage.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Shikigami Improvement" supports="Shikigami Improvement Choice"/>
+		</rules>
+	</element>
+	
+	<element name="Size Increase" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_SIZE_INCREASE">
+		<supports>Shikigami Improvement Choice</supports>
+		<description>
+			<p>Your shikigami increases by 1 size</p>
+		</description>
+		<sheet>
+			<description>Your shikigami increases by 1 size</description>
+		</sheet>
+	</element>
+	
+	<element name="Damage Increase" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_DAMAGE_INCREASE">
+		<supports>Shikigami Improvement Choice</supports>
+		<description>
+			<p>Your shikigami deals an additional 1d6 necrotic on a hit.</p>
+		</description>
+		<sheet>
+			<description>Your shikigami deals an additional 1d6 necrotic on a hit.</description>
+		</sheet>
+	</element>
+	
+	<element name="United Front" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_UNITED_FRONT">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SHIKIGAMI_USER_UNITED_FRONT</requirements>
+		<description>
+			<p>At 10th level, your shikigami finds new ways to help you in combat. After an attack, you can choose for your shikigami to do one of the following if they are within 5ft of you or the enemy:</p>
+			<ul>
+				<li>The attack's target takes 1d8 necrotic damage from the shikigami.</li>
+				<li>The attack's target must succeed on a Strength saving throw against your CE save DC or be moved by the shikigami up to 15 feet horizontally in a direction of your choice and knocked prone.</li>
+				<li>You are moved by the shikigami 5 feet horizontally in a direction of your choice, gaining half cover until the beginning of your next turn.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>After an attack, if your shikigami is within 5 feet of you or the target of the attack, you can choose for your shikigami to do 1d8 more damage to the target, move the target one up to 15 feet horizontally in a direction of your choice and knock them prone unless they succeed on a Strength saving throw DC{{ce:dc:total}}, or move you 5 feet horizontally in a direction of your choice, gaining half cover until the beginning of your next turn.</description>
+		</sheet>
+	</element>
+	
+	<element name="Advanced Shikigami" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_ADVANCED_SHIKIGAMI">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SHIKIGAMI_USER_ADVANCED_SHIKIGAMI</requirements>
+		<description>
+			<p>Beginning at 13th level, your shikigami grows stronger. Your shikigami gains the following benefits:</p>
+			<ul>
+				<li>You can spread out 4 points among its ability scores (max of 20).</li>
+				<li>Its strike attacks deal 1d6 extra necrotic damage(total of 2d6).</li>
+				<li>You can either choose for your shikigami to become large, or gain the ability to become any weapon, dealing an additional 2d6 necrotic damage.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Your shikigami gains 4 ability points among its ability scores (max of 20). Its strike attacks deal 1d6 extra necrotic damage(total of 2d6).</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Advanced Shikigami" supports="Advanced Shikigami Choice"/>
+		</rules>
+	</element>
+	
+	<element name="Size Increase 2" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_SIZE_INCREASE2">
+		<supports>Advanced Shikigami Choice</supports>
+		<description>
+			<p>Your shikigami increases by 1 size</p>
+		</description>
+		<sheet>
+			<description>Your shikigami increases by 1 size</description>
+		</sheet>
+	</element>
+	
+	<element name="Damage Increase 2" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_DAMAGE_INCREASE2">
+		<supports>Advanced Shikigami Choice</supports>
+		<description>
+			<p>Your shikigami deals an additional 2d6 necrotic on a hit.</p>
+		</description>
+		<sheet>
+			<description>Your shikigami deals an additional 2d6 necrotic on a hit.</description>
+		</sheet>
+	</element>
+	
+	<element name="Swift Escape" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_SWIFT_ESCAPE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SHIKIGAMI_USER_SWIFT_ESCAPE</requirements>
+		<description>
+			<p>At 17th level, your character is rescued at the last moment by your shikigami. When you take damage, you can use your reaction to give yourself resistance to that damage. You are moved by your shikigami and you are moved to an unoccupied space that you can see within your shikigami’s movement speed, where you reappear with the shikigami. You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet action="Reaction" usage="{{se:pr}}/Long Rest">
+			<description>You gain resistance to damage. You are moved by your shikigami up to your shikigami’s movement speed to an unoccupied space that you can see where you reappear with the shikigami.</description>
+		</sheet>
+		<rules>
+			<stat name="se:pr" value="proficiency" />
+		</rules>
+	</element>
+	
+	<element name="Perfected Bond" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_PERFECTED_BOND">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SHIKIGAMI_USER_PERFECTED_BOND</requirements>
+		<description>
+			<p>At 20th level, your shikigami no longer needs to be commanded, having perfect synchronicity. Your shikigami no longer takes any action to command, and you can share senses with it.</p>
+		</description>
+		<sheet>
+			<description>Your shikigami no longer takes any action to command, and you can share senses with it.</description>
+		</sheet>
+	</element>
+	
+	<!-- Companion Reference-->
 	<element name="Shikigami Companion" type="Information" source="JJK" id="ID_JJK_INFORMATION_SHIKIGAMI_COMPANION">
 		<description>
 			<p style="margin-bottom:-5px"><em>Small shikigami, unaligned</em></p>
@@ -195,171 +374,8 @@
 			</ul>
 		</description>
 	</element>
-	<element name="Martial Arts" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_MARTIAL_ARTS">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SHIKIGAMI_USER_MARTIAL_ARTS</requirements>
-		<description>
-			<p>At 1st level, your practice of martial arts gives you mastery of combat styles that use unarmed strikes and martial arts weapons, which are shortswords and any simple melee weapons that don’t have the two-handed or heavy property.</p>
-			<p class="indent">You gain the following benefits while you are unarmed or wielding martial arts weapons:</p>
-			<ul>
-				<li>You can use Dexterity instead of Strength for the attack and damage rolls of your unarmed strikes and martial arts weapons.</li>
-				<li>You can roll a d4 in place of the normal damage of your unarmed strike or martial arts weapon. This die changes as you gain shikigami user levels, as shown in the Martial Arts column of the Martial Arts table.</li>
-				<li>When you use the Attack action with an unarmed strike or a martial arts weapon on your turn, you can make one unarmed strike as a bonus action. For example, if you take the Attack action and attack with a quarterstaff, you can also make an unarmed strike as a bonus action, assuming you haven’t already taken a bonus action this turn.</li>
-			</ul>
-		</description>
-		<sheet>
-			<description>Your unarmed strike does 1d{{martial arts:dice}}+{{martial arts:damage}} damage. You can use Strength or Dexterity for these attacks.
-			When you use the Attack action with an unarmed strike or a martial arts weapon on your turn, you can make one unarmed strike or grapple as a bonus action.</description>
-		</sheet>
-		<rules>
-			<stat name="martial arts:attack" value="strength:modifier" bonus="martial arts" />
-			<stat name="martial arts:attack" value="dexterity:modifier" bonus="martial arts" />
-			<stat name="martial arts:damage" value="strength:modifier" bonus="martial arts" />
-			<stat name="martial arts:damage" value="dexterity:modifier" bonus="martial arts" />
-			<stat name="martial arts:dice" value="4" bonus="martial arts" />
-			<stat name="martial arts:dice" value="6" bonus="martial arts" level="5" />
-			<stat name="martial arts:dice" value="8" bonus="martial arts" level="11" />
-			<stat name="martial arts:dice" value="10" bonus="martial arts" level="17" />
-		</rules>
-	</element>
-	<element name="Shared Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_SHARED_TECHNIQUE">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SHIKIGAMI_USER_SHARED_TECHNIQUE</requirements>
-		<description>
-			<p>At 2nd level, your attunement with your shikigami has increased. Any bonuses or actions granted to you by your technique are also granted to your Shikigami Companion (other than summons), drawing from your pool of CE.</p>
-		</description>
-		<sheet>
-			<description>Any bonuses or actions granted to you by your technique are also granted to your Shikigami Companion (other than summons), drawing from your pool of CE.</description>
-		</sheet>
-	</element>
-	<element name="Ability Score Improvement" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_ABILITYSCOREIMPROVEMENT_SHIKIGAMI_USER">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SHIKIGAMI_USER_ABILITYSCOREIMPROVEMENT_SHIKIGAMI_USER</requirements>
-		<compendium display="false" />
-		<description>
-			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
-		</description>
-		<sheet display="false" />
-		<rules>
-			<select type="Class Feature" name="Improvement Option (Shikigami User 4)" supports="Improvement Option,Shikigami User,4" level="4" />
-			<select type="Class Feature" name="Improvement Option (Shikigami User 8)" supports="Improvement Option,Shikigami User,8" level="8" />
-			<select type="Class Feature" name="Improvement Option (Shikigami User 12)" supports="Improvement Option,Shikigami User,12" level="12" />
-			<select type="Class Feature" name="Improvement Option (Shikigami User 16)" supports="Improvement Option,Shikigami User,16" level="16" />
-			<select type="Class Feature" name="Improvement Option (Shikigami User 19)" supports="Improvement Option,Shikigami User,19" level="19" />
-		</rules>
-	</element>
-	<element name="Coordinated Blow" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_COORDINATED_BLOW">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SHIKIGAMI_USER_COORDINATED_BLOW</requirements>
-		<description>
-			<p>Beginning at 5th level, you and your shikigami strike as one. As part of the attack action, you can command your shikigami to move and attack a creature within range or take a different action.</p>
-		</description>
-		<sheet>
-			<description>As part of the attack action, you can command your shikigami to move and attack a creature within range or take a different action.</description>
-		</sheet>
-	</element>
-	<element name="Shikigami Improvement" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_SHIKIGAMI_IMPROVEMENT">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SHIKIGAMI_USER_SHIKIGAMI_IMPROVEMENT</requirements>
-		<description>
-			<p>Starting at 7th level, your shikigami grows stronger. Your shikigami gains the following benefits:</p>
-			<ul>
-				<li>It gains a hover speed equal to its walking speed.</li>
-				<li>Its strike attacks deal 1d6 extra necrotic damage.</li>
-				<li>You can either choose for your shikigami to become medium or gain the ability to become any weapon, dealing an additional 1d6 necrotic damage on a hit.</li>
-			</ul>
-		</description>
-		<sheet>
-			<description>Your shikigami gains a hover speed of 40ft. Its strike attacks deal 1d6 extra necrotic damage.</description>
-		</sheet>
-		<rules>
-			<select type="Class Feature" name="Shikigami Improvement" supports="Shikigami Improvement Choice"/>
-		</rules>
-	</element>
-	<element name="Size Increase" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_SIZE_INCREASE">
-		<supports>Shikigami Improvement Choice</supports>
-		<description>
-			<p>Your shikigami increases by 1 size</p>
-		</description>
-		<sheet>
-			<description>Your shikigami increases by 1 size</description>
-		</sheet>
-	</element>
-	<element name="Damage Increase" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_DAMAGE_INCREASE">
-		<supports>Shikigami Improvement Choice</supports>
-		<description>
-			<p>Your shikigami deals an additional 1d6 necrotic on a hit.</p>
-		</description>
-		<sheet>
-			<description>Your shikigami deals an additional 1d6 necrotic on a hit.</description>
-		</sheet>
-	</element>
-	<element name="United Front" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_UNITED_FRONT">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SHIKIGAMI_USER_UNITED_FRONT</requirements>
-		<description>
-			<p>At 10th level, your shikigami finds new ways to help you in combat. After an attack, you can choose for your shikigami to do one of the following if they are within 5ft of you or the enemy:</p>
-			<ul>
-				<li>The attack's target takes 1d8 necrotic damage from the shikigami.</li>
-				<li>The attack's target must succeed on a Strength saving throw against your CE save DC or be moved by the shikigami up to 15 feet horizontally in a direction of your choice and knocked prone.</li>
-				<li>You are moved by the shikigami 5 feet horizontally in a direction of your choice, gaining half cover until the beginning of your next turn.</li>
-			</ul>
-		</description>
-		<sheet>
-			<description>After an attack, if your shikigami is within 5 feet of you or the target of the attack, you can choose for your shikigami to do 1d8 more damage to the target, move the target one up to 15 feet horizontally in a direction of your choice and knock them prone unless they succeed on a Strength saving throw DC{{ce:dc:total}}, or move you 5 feet horizontally in a direction of your choice, gaining half cover until the beginning of your next turn.</description>
-		</sheet>
-	</element>
-	<element name="Advanced Shikigami" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_ADVANCED_SHIKIGAMI">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SHIKIGAMI_USER_ADVANCED_SHIKIGAMI</requirements>
-		<description>
-			<p>Beginning at 13th level, your shikigami grows stronger. Your shikigami gains the following benefits:</p>
-			<ul>
-				<li>You can spread out 4 points among its ability scores (max of 20).</li>
-				<li>Its strike attacks deal 1d6 extra necrotic damage(total of 2d6).</li>
-				<li>You can either choose for your shikigami to become large, or gain the ability to become any weapon, dealing an additional 2d6 necrotic damage.</li>
-			</ul>
-		</description>
-		<sheet>
-			<description>Your shikigami gains 4 ability points among its ability scores (max of 20). Its strike attacks deal 1d6 extra necrotic damage(total of 2d6).</description>
-		</sheet>
-		<rules>
-			<select type="Class Feature" name="Advanced Shikigami" supports="Advanced Shikigami Choice"/>
-		</rules>
-	</element>
-	<element name="Size Increase 2" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_SIZE_INCREASE2">
-		<supports>Advanced Shikigami Choice</supports>
-		<description>
-			<p>Your shikigami increases by 1 size</p>
-		</description>
-		<sheet>
-			<description>Your shikigami increases by 1 size</description>
-		</sheet>
-	</element>
-	<element name="Damage Increase 2" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_DAMAGE_INCREASE2">
-		<supports>Advanced Shikigami Choice</supports>
-		<description>
-			<p>Your shikigami deals an additional 2d6 necrotic on a hit.</p>
-		</description>
-		<sheet>
-			<description>Your shikigami deals an additional 2d6 necrotic on a hit.</description>
-		</sheet>
-	</element>
-	<element name="Swift Escape" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_SWIFT_ESCAPE">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SHIKIGAMI_USER_SWIFT_ESCAPE</requirements>
-		<description>
-			<p>At 17th level, your character is rescued at the last moment by your shikigami. When you take damage, you can use your reaction to give yourself resistance to that damage. You are moved by your shikigami and you are moved to an unoccupied space that you can see within your shikigami’s movement speed, where you reappear with the shikigami. You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
-		</description>
-		<sheet action="Reaction" usage="{{se:pr}}/Long Rest">
-			<description>You gain resistance to damage. You are moved by your shikigami up to your shikigami’s movement speed to an unoccupied space that you can see where you reappear with the shikigami.</description>
-		</sheet>
-		<rules>
-			<stat name="se:pr" value="proficiency" />
-		</rules>
-	</element>
-	<element name="Perfected Bond" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_PERFECTED_BOND">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SHIKIGAMI_USER_PERFECTED_BOND</requirements>
-		<description>
-			<p>At 20th level, your shikigami no longer needs to be commanded, having perfect synchronicity. Your shikigami no longer takes any action to command, and you can share senses with it.</p>
-		</description>
-		<sheet>
-			<description>Your shikigami no longer takes any action to command, and you can share senses with it.</description>
-		</sheet>
-	</element>
-	<!--Companion-->
+	
+	<!-- Companion -->
 	<element name="Shikigami Companion" type="Companion" source="JJK" id="ID_JJK_COMPANION_SHIKIGAMI_COMPANION"> 
     	<supports>Shikigami Companion</supports>
 		<setters>
@@ -402,6 +418,7 @@
 			<stat name="companion:sucbmodifier" value="wisdom:modifier" bonus="base" />
 		</rules>
 	</element>
+	
   	<element name="Innate Bond" type="Companion Trait" source="JJK" id="ID_JJK_COMPANION_TRAIT_SHIKIGAMI_COMPANION_INNATE_BOND">
     <description>
 			<p>You can add your proficiency bonus to any ability check or saving throw the shikigami makes. Your shikigami uses your proficiency bonus for attacks and saves. At 5th level your shikigami has advantage on melee attack rolls against a creature if you are within 5 feet of the creature and are not incapacitated.</p>
@@ -410,6 +427,7 @@
       		<description>You can add your PB to any ability check or saving throw the shikigami makes. Your shikigami uses your proficiency bonus for attacks and saves. At 5th level your shikigami has advantage on melee attack rolls against a creature if you are within 5 feet of the creature and are not incapacitated.</description>
 		</sheet>
 	</element>
+	
 	<element name="Close Bond" type="Companion Trait" source="JJK" id="ID_JJK_COMPANION_TRAIT_SHIKIGAMI_COMPANION_CLOSE_BOND">
 		<description>
 			<p>At 15th level, when your shikigami companion hits with an attack, you can spend cursed energy up to your CE modifier as a reaction to use Cursed Strike through your companion.</p>
@@ -418,6 +436,7 @@
 			<description>At 15th level, when your shikigami companion hits with an attack, you can spend cursed energy up to your CE modifier as a reaction to use Cursed Strike through your companion.</description>
 		</sheet>
 	</element>
+	
 	<element name="Strike" type="Companion Action" source="JJK" id="ID_JJK_COMPANION_ACTION_SHIKIGAMI_COMPANION_STRIKE">
 		<description>
 			<p>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) + your proficiency bludgeoning, piercing, or slashing damage.</p>
