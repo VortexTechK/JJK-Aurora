@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.0">
+		<update version="6.0.1">
 			<file name="moon-dregs.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/moon-dregs.xml" />
 		</update>
 	</info>
@@ -39,8 +39,8 @@
 				<div element="ID_JJK_INFORMATION_MOON_DREGS"/>
 			</div>
 		</description>
-		<sheet action="Action" usage="1/Long Rest or CE">
-			<description>For 5 cursed energy, summon Moon Dregs which lasts for 8 hours and uses your proficiency. You can spend 1 additional cursed energy to change the shikigami's size between tiny and large as an action. Moon Dregs only takes the dodge action unless you command Moon Dregs using your bonus action each turn. When Moon Dregs is destroyed, it cannot be summoned again for 1 minute.</description>
+		<sheet action="Action" usage="1 Free/Long Rest or CE">
+			<description>For 5 CE, summon Moon Dregs which lasts for 8 hours and uses your proficiency. You can spend 1 additional CE to change the shikigami's size between tiny and large as an action. Moon Dregs only takes the dodge action unless you command Moon Dregs using your bonus action each turn. When Moon Dregs is destroyed, it cannot be summoned again for 1 minute.</description>
 		</sheet>
         <rules>
             <select type="Companion" name="Moon Dregs" supports="Moon Dregs" />
@@ -54,7 +54,7 @@
             <p class="indent">You can replace any of your attacks on your turn with an attack from Moon Dregs.</p>
 		</description>
 		<sheet usage="CE">
-			<description>Once per turn, when you or Moon Dregs hit a creature with a melee attack on your turn, you can spend 1 cursed energy to cause the attack to deal an extra {{moon:dregs:poisonous:ce:damage}}d{{moon:dregs:poisonous:ce:dice}} poison damage. This damage is not amplified by a critical hit. You can replace any of your attacks on your turn with an attack from Moon Dregs.</description>
+			<description>Once per turn, when you or Moon Dregs hit a creature with a melee attack on your turn, you can spend 1 CE to cause the attack to deal an extra {{moon:dregs:poisonous:ce:damage}}d{{moon:dregs:poisonous:ce:dice}} poison damage. This damage is not amplified by a critical hit. You can replace any of your attacks on your turn with an attack from Moon Dregs.</description>
 		</sheet>
         <rules>
             <stat name="moon:dregs:poisonous:ce:damage" value="2" bonus="poisonous ce" />
@@ -95,7 +95,7 @@
             <p class="indent">At initiative 20, all creatures in your domain take 8d6 poison or acid damage. Moon Dregs attacks are imbued with your guaranteed hit and there are a number of tiny jellyfish shikigami swimming around equal to your cursed energy modifier that are also imbued with your guaranteed hit. You can command them as an action. They count as Moon Dregs, can only make 1 attack, and have 30 hitpoints.</p>
 		</description>
         <sheet>
-			<description>Your domain's terrain is difficult unless a creature has a swim speed. At initiative 20, all creatures in your domain take 8d6 poison or acid damage. Moon Dregs attacks and {{ce:modifier}} summoned tiny jellyfish shikigami are imbued with your guaranteed hit. You can command the jellyfish as an action, they count as Moon Dregs, can only make 1 attack, and have 30 hitpoints.</description>
+			<description>Your domain's terrain is difficult unless a creature has a swim speed. At Initiative 20, all creatures in your domain take 8d6 poison or acid damage. Moon Dregs attacks and {{ce:modifier}} summoned tiny jellyfish shikigami are imbued with your guaranteed hit. You can command the jellyfish as an action, they count as Moon Dregs, can only make 1 attack, and have 30 hitpoints.</description>
 		</sheet>
         <rules>
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION" />
