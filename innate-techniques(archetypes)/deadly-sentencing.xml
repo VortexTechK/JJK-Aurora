@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.0">
+		<update version="6.0.1">
 			<file name="deadly-sentencing.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/deadly-sentencing.xml" />
 		</update>
 	</info>
@@ -33,8 +33,9 @@
 		<description>
 			<p>At 1st level, once per long rest, you can summon a magical gavel for free once per long rest. Otherwise, you can spend 1 Cursed Energy to resummon it to your hand. This weapon has 3 forms: a base form a light hammer, maul, and pole hammer (Reach, d10).</p>
 		</description>
-		<sheet usage="1/Long Rest or CE">
-			<description>For one cursed energy, you can summon a magical gavel.This weapon has 3 forms: light hammer, maul, and pole hammer (Reach, d10).</description>
+		<sheet usage="1 Free/Long Rest or CE">
+			<description>For 1 CE, summon or resummon your gavel to your hand. This weapon has 3 forms: light hammer, maul, and pole hammer (Reach, d10).</description>
+			<description level="6">For 1 CE, summon your gavel to your hand. You can resummon it as a free action. This weapon has 3 forms: light hammer, maul, and pole hammer (Reach, d10).</description>
 		</sheet>
 	</element>
 
@@ -57,13 +58,12 @@
             <p class="indent"><strong>Death Penalty:</strong> Your Judge's Gavel is replaced by the Executioner's Sword which instantly kills the accused on a hit.</p>
             <p class="indent">Your DM may impose bonuses or penalties to Evidence rolls if fitting. Your domain is Non-Lethal and instead of a guaranteed hit, gains the benefits of Peace Treaty as listed in Non-Lethal Domains. If you manage to convict a target with Confiscation or Death Penalty, you are not affected by Technique Burnout when your domain ends.</p>
         </description>
-		<sheet usage="1 Free/Long Rest">
-			<description level="3">No offensive action can be taken by either party. The target must make a contested Persuasion check against you to prove their innocence. You gain a piece of Evidence determined by a d20 roll. If you succeed, they suffer the punishment based on your Evidence for 1 minute and the domain ends. On a confiscation the target loses their innate technique or any magic items they have. A creature without a technique loses their CE. On a dealth penalty your Judge's Gavel is replaced by the Executioner's Sword which instantly kills the accused on a hit. If you manage to convict a target with Confiscation or Death Penalty, you are not affected by Technique Burnout when your domain ends.</description>
-            <description level="18" usage="{{deadly:sentencing:use}} Free/Long Rest">No offensive action can be taken by either party. The target must make a contested Persuasion check against you to prove their innocence. You gain a piece of Evidence determined by a d20 roll. If you succeed, they suffer the punishment based on your Evidence for 1 minute and the domain ends. On a confiscation the target loses their innate technique or any magic items they have. A creature without a technique loses their CE. On a dealth penalty your Judge's Gavel is replaced by the Executioner's Sword which instantly kills the accused on a hit. If you manage to convict a target with Confiscation or Death Penalty, you are not affected by Technique Burnout when your domain ends.</description>
+		<sheet usage="{{deadly:sentencing:use}} Free/Long Rest">
+			<description level="3">Your domain is Non-Lethal with Peace Treaty. The target must make a contested Persuasion check against you to prove their innocence. You gain a piece of Evidence determined by a d20 roll to affect this check. If you succeed, they suffer the punishment based on your Evidence for 1 minute and the domain ends. On a confiscation the target loses their innate technique or any magic items they have. A creature without a technique loses their CE. On a dealth penalty your Judge's Gavel is replaced by the Executioner's Sword which instantly kills the accused on a hit. If you manage to convict a target with Confiscation or Death Penalty, you are not affected by Technique Burnout when your domain ends.</description>
         </sheet>
         <rules>
-			<stat name="deadly:sentencing:use" value="1" />
-			<stat name="deadly:sentencing:use" value="ce:modifier" />
+			<stat name="deadly:sentencing:use" value="1" bonus="deadly sentencing" />
+			<stat name="deadly:sentencing:use" value="ce:modifier" bonus="deadly sentencing" level="18" />
             <grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_DEADLY_SENTENCING_ONE" />
             <grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_DEADLY_SENTENCING_TWO" />
             <grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_DEADLY_SENTENCING_TEN" />
@@ -124,7 +124,7 @@
 			<p>Starting at 6th level, your mastery over Judge's Gavel has improved. You can now re-summon your gavel as a free action. You can also spend 2 CE to increase the size of the gavel for 1 minute. The damage dice increase by one tier (d8-d10-d12-2d8). As an action, you can swing the enlarged gavel down on a 10 feet diameter square within 5 feet of you, forcing creatures within range to make a Dexterity saving throw or take twice your gavel's damage.</p>
 		</description>
         <sheet usage="CE">
-            <description>You can now re-summon your gavel as a free action. For 2 cursed energy, increase the size of the gavel for 1 minute. The damage dice increase by one tier. As an action, you can swing the enlarged gavel down on a 10 feet diameter square within 5 feet of you, forcing creatures within range to make a Dexterity saving throw or take twice your gavel's damage.</description>
+            <description>For 2 CE, increase the size of your gavel for 1 minute increasing its damage die by one tier. As an action, you can swing the enlarged gavel down on a 10 ft diameter square within 5 feet of you, forcing creatures within range to make a Dexterity saving throw or take twice your gavel's damage.</description>
         </sheet>
 	</element>
 
