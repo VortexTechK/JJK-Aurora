@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.2">
+		<update version="6.0.3">
 			<file name="dark-claw.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/dark-claw.xml" />
 		</update>
 	</info>
@@ -98,8 +98,6 @@
 			<p>Your claws deal fire damage instead of slashing damage.</p>
 		</description>
 		<sheet/>
-			<description></description>
-		</sheet>
 	</element>
 
 	<element name="Cold" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_DARK_CLAW_ELEMENTAL_CLAWS_COLD">
