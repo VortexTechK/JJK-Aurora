@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.2">
+		<update version="6.0.3">
 			<file name="disaster-tides.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/disaster-tides.xml" />
 		</update>
 	</info>
@@ -41,7 +41,7 @@
 			<p>Starting at 1st level you have the ability of hydrokinesis. You can cast the Shape Water cantrip. You can spend 1 Cursed Energy as an action to roll a ranged cursed energy attack roll against a target within 80 feet, dealing 2d8 cold damage on a hit. This feature’s damage increases by 1d8 when you reach 5th level (3d8), 11th level (4d8), and 18th level (5d8).</p>
 		</description>
 		<sheet action="Action" usage="CE">
-			<description>For 1 cursed energy, roll a ranged cursed energy attack roll against a target within 80 feet, dealing {{disaster:tides:tides:of:disaster:damage}}d8 cold damage on a hit.</description>
+			<description>For 1 CE, make a ranged CE attack roll against a target within 80 ft, dealing {{disaster:tides:tides:of:disaster:damage}}d8 cold damage on a hit. You can cast Shape Water.</description>
 		</sheet>
         <rules>
             <grant type="Spell" id="ID_XGTE_SPELL_SHAPE_WATER" />
@@ -77,7 +77,7 @@
 			</div>
         </description>
 		<sheet usage="2 Free/Long Rest">
-			<description>While in your domain, you can use Death Swarm.If you don't catch hostile creatures in your domain, it lasts indefinitely.</description>
+			<description>While in your domain, you can use Death Swarm. If you don't catch hostile creatures in your domain, it lasts indefinitely.</description>
 		</sheet>
 		<rules>
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION" />
@@ -100,7 +100,7 @@
 			<p>Beginning at 6th level, you can make a ring of water that protects you from any incoming attack. As an action for 6 Cursed Energy, you can create a ring of water around you, granting you temporary hit points equal to your Cursed Energy modifier times 15. This can also be used as a reaction to incoming damage for 8 Cursed Energy. While the ring is active, you gain immunity to cold damage and resistance to bludgeoning, slashing, and piercing damage. You can only use this cursed technique again after the current ring is over.</p>
 		</description>
         <sheet action="Action" usage="CE">
-            <description>For 6 cursed energy, you gain {{disaster:tides:water:defensive:ring:temp:hp}} temporary hit points. This can also be used as a reaction to incoming damage for 8 Cursed Energy. While the ring is active, you gain immunity to cold damage and resistance to bludgeoning, slashing, and piercing damage. You can only use this cursed technique again after the current ring is over.</description>
+            <description>For 6 CE, gain {{disaster:tides:water:defensive:ring:temp:hp}} temporary hit points. This can also be used as a reaction to incoming damage for 8 CE. While the ring is active, you gain immunity to cold damage and resistance to bludgeoning, slashing, and piercing damage. You can only use this cursed technique again after the current ring is over.</description>
         </sheet>
         <rules>
             <stat name="disaster:tides:water:defensive:ring:temp:hp" value="ce:modifier" />
@@ -128,7 +128,7 @@
             <p class="indent">You can instead as an action for 8 Cursed Energy choose a point within 30 feet of you. All creatures within a 10-foot radius circle of that point must make a Dexterity saving throw. On a failure they take 8d12 cold damage or half as much damage on a success. If the area is enclosed it is filled with 10 feet of water.</p>
 		</description>
         <sheet action="Action" usage="CE">
-			<description>For 6 cursed energy, you can make a cursed energy attack roll against within 30 feet of you. On a hit, it takes 10d8 cold damage and is pushed 80 feet away from you. For 8 cursed energy choose a point within 30 feet of you. All creatures within a 10-foot radius circle of that point must make a Dexterity saving throw. On a failure they take 8d12 cold damage or half as much damage on a success. If the area is enclosed it is filled with 10 feet of water.</description>
+			<description>For 6 CE, you can make a CE attack roll against a target within 30 feet of you. On a hit, it takes 10d8 cold damage and is pushed 80 ft away from you. For 8 CE, choose a point within 30 feet of you. All creatures within a 10-ft radius circle of that point must make a Dexterity saving throw. On a failure they take 8d12 cold damage or half as much damage on a success. If the area is enclosed it is filled with 10 ft of water.</description>
 		</sheet>
 	</element>
 
@@ -138,7 +138,7 @@
 			<p>At 18th level, you have reached the pinnacle of manipulating your tides, creating a massive wave that destroys everything in its path. As an action for 10 Cursed Energy, you can cast the Tsunami spell as an 8th-level spell.</p>
 		</description>
         <sheet action="Action" usage="CE">
-			<description>For 10 cursed energy, you can cast the Tsunami spell as an 8th-level spell.</description>
+			<description>For 10 CE, cast the Tsunami spell as an 8th-level spell.</description>
 		</sheet>
         <rules>
             <grant type="Spell" id="ID_PHB_SPELL_TSUNAMI" />
