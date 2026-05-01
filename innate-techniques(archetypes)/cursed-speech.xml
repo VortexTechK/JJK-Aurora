@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.0">
+		<update version="6.0.1">
 			<file name="cursed-speech.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/cursed-speech.xml" />
 		</update>
 	</info>
@@ -46,8 +46,8 @@
             </ul>
         </description>
 		<sheet>
-			<description level="1">Your vocal cords have {{hp}}/3 (rounded up) hit points. You are unable to speak unless in terms of whatever meaningless concept you choose. For every Cursed Energy you spend in a cursed word, your vocal cords lose one hit point. Your vocal cords hit points all come back in a short or long rest. If your vocal chords reach 0 hit points, you won't be able to regain the hit points unless you receive hit points from Reverse Cursed Technique or take a long rest. If you have 0 hit points you cannot use your cursed words, and will always be under one level of exhaustion. Your vocal cords will regain 1 hit point at the beginning of your turns unless they are at 0 hit points. Any kind of hit point gain you receive affects your vocal cords' hit points.</description>
-            <description level="6">Your vocal cords have {{hp}}/2 (rounded up) hit points. You are unable to speak unless in terms of whatever meaningless concept you choose. For every Cursed Energy you spend in a cursed word, your vocal cords lose one hit point. Your vocal cords hit points all come back in a short or long rest. If your vocal chords reach 0 hit points, you won't be able to regain the hit points unless you receive hit points from Reverse Cursed Technique or take a long rest. If you have 0 hit points you cannot use your cursed words, and will always be under one level of exhaustion. Your vocal cords will regain 1 hit point at the beginning of your turns unless they are at 0 hit points. Any kind of hit point gain you receive affects your vocal cords' hit points.</description>
+			<description level="1">Your vocal cords have {{hp}}/3 (rounded up) hit points. You are unable to speak unless in terms of whatever meaningless concept you choose. For every CE you spend in a cursed word, your vocal cords lose one hit point. Your vocal cords hit points all come back in a short or long rest. If your vocal chords reach 0 hit points, you won't be able to regain the hit points unless you receive hit points from Reverse Cursed Technique or take a long rest. If you have 0 hit points you cannot use your cursed words, and will always be under one level of exhaustion. Your vocal cords will regain 1 hit point at the beginning of your turns unless they are at 0 hit points. Any kind of hit point gain you receive affects your vocal cords' hit points. You can add up to {{cursed:speech:add}} additional CE to add additional effects.</description>
+            <description level="6">Your vocal cords have {{hp}}/2 (rounded up) hit points. You are unable to speak unless in terms of whatever meaningless concept you choose. For every CE you spend in a cursed word, your vocal cords lose one hit point. Your vocal cords hit points all come back in a short or long rest. If your vocal chords reach 0 hit points, you won't be able to regain the hit points unless you receive hit points from Reverse Cursed Technique or take a long rest. If you have 0 hit points you cannot use your cursed words, and will always be under one level of exhaustion. Your vocal cords will regain 1 hit point at the beginning of your turns unless they are at 0 hit points. Any kind of hit point gain you receive affects your vocal cords' hit points. You can add up to {{cursed:speech:add}} additional CE to add additional effects.</description>
         </sheet>
         <rules>
             <stat name="cursed:speech:add" value="0" level="1" bonus="cursed speech" />
@@ -75,7 +75,7 @@
             <p>As an action for 1 cursed energy, you can cast Sleep at 1st level. You can add 3d8 per extra Cursed Energy added at 3rd, 6th, 11th, and 18th levels.</p>
         </description>
         <sheet action="Action" usage="CE">
-            <description>For 1 cursed energy, you can cast Sleep at 1st level. You can add up to {{cursed:speech:add}} cursed energy to add 3d8 to Sleep for each cursed energy added.</description>
+            <description>For 1 CE, cast Sleep at 1st level. For each CE added add 3d8 to Sleep.</description>
         </sheet>
     </element>
 
@@ -84,7 +84,7 @@
             <p>As an action for 1 cursed energy, you can make a summoned creature within 60 feet make a Charisma save against your save DC or be unsummoned. At 3rd, 6th, 11th, and 18th levels you can choose to add a +1 to your DC per Cursed Energy.</p>
         </description>
         <sheet action="Action" usage="CE">
-            <description>For 1 cursed energy, you can make a summoned creature within 60 feet make a Charisma save. On a failure, it is unsummoned. You can add up to {{cursed:speech:add}} cursed energy to give +1 to your DC for each cursed energy added.</description>
+            <description>For 1 CE, make a summoned creature within 60 ft make a Charisma save. On a failure, it is unsummoned. For each CE added give +1 to your DC.</description>
         </sheet>
     </element>
 
@@ -93,7 +93,7 @@
             <p>As an action for 2 cursed energy, you can attempt to force one creature within 60 feet away from you but not into harm. At 3rd, 6th, 11th, and 18th levels you can choose to add a +1 to your DC or a number of targets per Cursed Energy.</p>
         </description>
         <sheet action="Action" usage="CE">
-            <description>For 2 cursed energy, you can make a creature within 60 feet make a Charisma save. On a failure, it moves 60 feet away from you but not into harm. You can add up to {{cursed:speech:add}} cursed energy to give +1 to your DC for each cursed energy added.</description>
+            <description>For 2 CE, make a creature within 60 ft make a Charisma save. On a failure, it moves 60 ft away from you but not into harm. For each CE added give +1 to your DC.</description>
         </sheet>
     </element>
 
@@ -102,7 +102,7 @@
             <p>As an action for 4 cursed energy, you force one target to make a Charisma saving throw. On a failure, they will be launched 60 ft back from the spot they were in, taking 1d8 force damage per 10ft traveled. At 3rd level, you can spend 1 additional Cursed Energy to add +10 to the distance the target is blasted away. You can spend another +1 at 6th, 11th, and 18th levels.</p>
         </description>
         <sheet action="Action" usage="CE">
-            <description>For 4 cursed energy, you can force one target to make a Charisma save. On a failure, they are launched 60 ft back from the spot they were in, taking 1d8 force damage per 10ft traveled. You can add up to {{cursed:speech:add}} cursed energy to add +10 to the distance for each cursed energy added.</description>
+            <description>For 4 CE, force one target to make a Charisma save. On a failure, they are launched 60 ft back from the spot they were in, taking 1d8 force damage per 10ft traveled. For each CE added add +10 to the distance.</description>
         </sheet>
     </element>
 
@@ -111,7 +111,7 @@
             <p>As an action for 6 cursed energy, you force a target to make a Charisma saving throw. On a failure, they will receive Cursed Energy mod d10 force damage and will be knocked prone for 1 minute as a field of intensified gravity crushes them. They can remove the prone condition if they succeed on a Strength saving throw. At 3rd level, you can spend 1 additional Xd10 force damage. You can spend another +1 at 6th, 11th, and 18th levels.</p>
         </description>
         <sheet action="Action" usage="CE">
-            <description>For 6 cursed energy, you can force a target to make a Charisma save. On a failure, they take {{ce:modifier}}d10 force damage and are knocked prone for 1 minute. They can remove the prone condition if they succeed on a Strength saving throw. You can add up to {{cursed:speech:add}} cursed energy to add {{ce:modifier}}d10 to the damage for each cursed energy added.</description>
+            <description>For 6 CE, force a target to make a Charisma save. On a failure, they take {{ce:modifier}}d10 force damage and are knocked prone for 1 minute. They can remove the prone condition if they succeed on a Strength saving throw. For each CE added add {{ce:modifier}}d10 to the damage.</description>
         </sheet>
     </element>
 
@@ -120,7 +120,7 @@
             <p>As an action for 8 cursed energy, you force a target to make a Charisma saving throw. On a failure one of their legs or arms of your choice will be twisted, breaking the limb. In addition, the target will lose hit points equal to their Constitution score times half your proficiency bonus(rounded down). An arm twisted removes the ability to use that arm and reduces the creatur's Strength by 2, and twisting a leg halves movement and reduces Dexterity by 2. At 3rd level, you can spend 1 additional Cursed Energy to add a +1 to the DC. You can spend another +1 at 6th, 11th, and 18th levels.</p>
         </description>
         <sheet action="Action" usage="CE">
-            <description>For 8 cursed energy, you can force a target to make a Charisma save. On a failure, one of their legs or arms will be twisted, breaking the limb. In addition, the target will lose hit points equal to their Constitution score times {{proficiency:half}}. An arm twisted removes the ability to use that arm and reduces the creature's Strength by 2, and twisting a leg halves movement and reduces Dexterity by 2. You can add up to {{cursed:speech:add}} cursed energy to give +1 to your DC for each cursed energy added.</description>
+            <description>For 8 CE, force a target to make a Charisma save. On a failure, one of their legs or arms twist. In addition, the target will lose hit points equal to their Constitution score times {{proficiency:half}}. An arm twisted removes the ability to use that arm and reduces the creature's Strength by 2, and twisting a leg halves movement and reduces Dexterity by 2. For each CE added give +1 to your DC.</description>
         </sheet>
     </element>
 
@@ -129,7 +129,7 @@
             <p>As an action for 10 cursed energy, you force a target to make a Charisma saving throw. On a failure, they are imploded which makes them lose xd12 maximum hit points and become paralyzed. They will keep being imploded for 1 minute, this can be ended early if they succeed on a Strength saving throw, on a failure they will keep losing xd12 of their maximum hit points at the beginning of their turns. The hit points lost will be regained at the end of a long rest. At 3rd level, you can spend 1 additional Cursed Energy to add a d12 to the amount of hit points lost. You can spend another +1 at 6th, 11th, and 18th levels.</p>
         </description>
         <sheet action="Action" usage="CE">
-            <description>For 10 cursed energy, you can force a target to make a Charisma save. On a failure, they lose {{ce:modifier}}d12 maximum hit points immediately and at the beginning of their turns and become paralyzed for 1 minute. The hit points lost will be regained at the end of a long rest. This can be ended early if they succeed on a Strength saving throw. You can add up to {{cursed:speech:add}} cursed energy to add a d12 to the amount of hit points lost for each cursed energy added.</description>
+            <description>For 10 CE, force a target to make a Charisma save. On a failure, they lose {{ce:modifier}}d12 maximum hit points immediately and at the beginning of their turns, and become paralyzed for 1 minute. The hit points lost will be regained at the end of a long rest. This can be ended early if they succeed on a Strength saving throw. For each CE added add a d12 to the amount of hit points lost.</description>
         </sheet>
     </element>
 
@@ -138,7 +138,7 @@
             <p>As an action for 12 cursed energy, you cast Power Word Stun at 8th level. You increase the HP limit by 25 HP per 1 point of Cursed Energy added at 3rd, 6th, 11th, and 18th levels.</p>
         </description>
         <sheet action="Action" usage="CE">
-            <description>For 12 cursed energy, you can cast Power Word Stun at 8th level. You can add up to {{cursed:speech:add}} cursed energy to increase the HP limit by 25 HP for each cursed energy added.</description>
+            <description>For 12 CE, cast Power Word Stun at 8th level. For each CE added increase the HP limit by 25 HP.</description>
         </sheet>
     </element>
 
@@ -147,7 +147,7 @@
             <p>As an action for 14 cursed energy, you force a target and every creature within 5ft. of it to make a Charisma saving throw. On a failure, they will explode from the inside out making them receive 3d8 force damage + xd6 fire damage. At 3rd level, you can spend 1 additional Cursed Energy to add a d8 to the force damage. You can spend another +1 at 6th, 11th, and 18th levels.</p>
         </description>
         <sheet action="Action" usage="CE">
-            <description>For 14 cursed energy, you can force a target and every creature within 5ft. of it to make a Charisma saving throw. On a failure, they take 3d8 force damage + {{ce:modifier}}d6 fire damage. You can add up to {{cursed:speech:add}} cursed energy to add a d8 to the force energy for each cursed energy added.</description>
+            <description>For 14 CE, force a target and every creature within 5ft. of it to make a Charisma saving throw. On a failure, they take 3d8 force damage + {{ce:modifier}}d6 fire damage.  For each CE added add a d8 to the force energy.</description>
         </sheet>
     </element>
 
@@ -156,7 +156,7 @@
             <p>As an action for 16 Cursed Energy, you force a target with 30 times your Cursed Energy modifier hit points or less to make a Charisma saving throw. On a failure, they die instantly. At 3rd level, you can spend 1 additional Cursed Energy to add a +1 to the DC and 10 hit points to the requirement. You can spend another +1 at 6th, 11th, and 18th levels.</p>
         </description>
         <sheet action="Action" usage="CE">
-            <description>For 16 cursed energy, you can force a a target with {{cursed:speech:die:hp}} hit points or less to make a Charisma saving throw. On a failure, they die instantly. You can add up to {{cursed:speech:add}} cursed energy to give +1 to your DC and 10 hit points to the requirement for each cursed energy added.</description>
+            <description>For 16 CE, force a a target with {{cursed:speech:die:hp}} hit points or less to make a Charisma saving throw. On a failure, they die instantly. For each CE added give +1 to your DC and 10 hit points to the requirement.</description>
         </sheet>
         <rules>
             <stat name="cursed:speech:die:hp" value="ce:modifier" />
@@ -269,7 +269,7 @@
 			<p>At 11th level, you can spend 3 extra Cursed Energy to change the effect range of your technique into a 35-foot cone.</p>
 		</description>
         <sheet usage="CE">
-			<description>You can spend 3 extra cursed energy to change the effect range of a cursed word into a 35-foot cone.</description>
+			<description>You can spend 3 extra CE to change the effect range of a cursed word into a 35-foot cone.</description>
 		</sheet>
 	</element>
 
