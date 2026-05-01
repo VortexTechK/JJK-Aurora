@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.0">
+		<update version="6.0.1">
 			<file name="divergent-fist.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/divergent-fist.xml" />
 		</update>
 	</info>
@@ -34,8 +34,8 @@
 			<p>At 1st level, once per turn, you can choose the damage of one of your unarmed strikes or weapon attacks. For 1 cursed energy, you can cause the creature to take that attack's damage in necrotic damage at the beginning of their turn. These strikes can't be black flashes.</p>
 		</description>
 		<sheet usage="CE">
-			<description level="1">For 1 cursed energy, once per turn you can cause a creature to take damage of one of your unarmed strikes or weapon attacks in necrotic damage at the beginning of their turn. These strikes can't be black flashes.</description>
-			<description level="6">For 1 cursed energy, twice per turn you can cause a creature to take damage of one of your unarmed strikes or weapon attacks in necrotic damage at the beginning of their turn. These strikes can't be black flashes.</description>
+			<description level="1">For 1 CE, once per turn you can cause a creature to take damage of one of your unarmed strikes or weapon attacks in necrotic damage at the beginning of their turn. These strikes can't be black flashes.</description>
+			<description level="6">For 1 CE, twice per turn you can cause a creature to take damage of one of your unarmed strikes or weapon attacks in necrotic damage at the beginning of their turn. These strikes can't be black flashes.</description>
         </sheet>
 	</element>
 
