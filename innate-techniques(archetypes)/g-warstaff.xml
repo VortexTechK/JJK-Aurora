@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.0">
+		<update version="6.0.1">
 			<file name="g-warstaff.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/g-warstaff.xml" />
 		</update>
 	</info>
@@ -48,7 +48,7 @@
             <p>You can only see into a number of seconds into a creature's future equal to your proficiency bonus. The number of creatures that can be affected by this technique is equal to your CE modifier, and you can end the technique at will or it ends when the combat ends.</p>
         </description>
 		<sheet action="Bonus Action" usage="CE">
-			<description>For 2 cursed energy, you create an oversized pen-like cursed tool. This cursed tool has the reach and two-handed properties and you can use your CE modifier for its attack and damage rolls. On a hit it deals 1d4 + {{ce:modifier}} piercing damage and counts as a grade 4 cursed tool and can be used with martial arts die. You can dismiss the Warstaff at will and can only have one created at a time. Hitting a target adds 1 second to the creature. As a reaction or bonus action for 1 cursed energy, you gain the foresights until the beginning of your next turn depending on the creature's marks. You cannot use this while blinded. You can only see {{proficiency}} seconds into a creature's future. You can affect {{ce:modifier}} creatures with this technique, and you can end the technique at will or it ends when the combat ends.</description>
+			<description>For 2 CE, create an Warstaff. This cursed tool has the reach and two-handed properties and you can use your CE modifier for its attack and damage rolls. On a hit it deals 1d4 + {{ce:modifier}} piercing damage and counts as a grade 4 cursed tool and can be used with martial arts die. You can dismiss the Warstaff at will and can only have one created at a time. Hitting a target adds 1 second to the creature. As a reaction or bonus action for 1 CE, you gain cumulative Foresight until the beginning of your next turn depending on the creature's marks. You cannot use this while blinded. You can only see {{proficiency}} seconds into a creature's future. You can affect {{ce:modifier}} creatures with this technique, and you can end the technique at will or it ends when the combat ends.</description>
 		</sheet>
 		<rules>
 			<grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_G_WARSTAFF_FORESIGHT" />
@@ -71,7 +71,7 @@
             	</table>
 		</description>
 		<sheet>
-			<description>At 1 second, the creature's attack rolls against you are made at disadvantage. At 2 seconds, you have advantage on saving throws from that creature. At 3 seconds, you have advantage on attack rolls against that creature. At 4, 5, or 6 seconds the DM tells you the next actions of the creature at the start of their turn, end of your turn, or beginning of your turn</description>
+			<description>At 1 second, the creature's attack rolls against you are made at disadvantage. At 2 seconds, you have advantage on saving throws from that creature. At 3 seconds, you have advantage on attack rolls against that creature. At 4, 5, and 6 seconds the DM tells you the next actions of the creature at the start of their turn, end of your turn, and beginning of your turn respectively.</description>
 		</sheet>
 	</element>
 	
@@ -112,7 +112,7 @@
 			<p>At 18th level, you have mastered your technique allowing you to expand your domain. All creatures in your domain count as having 6 seconds marked and at initiative 20, you can see 6 seconds into the future of all creatures.</p>
 		</description>
         <sheet>
-			<description>All creatures in your domain count as having 6 seconds marked. At initiative 20, you can see 6 seconds into the future of all creatures.</description>
+			<description>All creatures in your domain count as having 6 seconds marked. At Initiative 20, you can see 6 seconds into the future of all creatures.</description>
 		</sheet>
 		<rules>
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION"/>
