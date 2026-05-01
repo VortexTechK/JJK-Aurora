@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.0">
+		<update version="6.0.1">
 			<file name="idle-transfiguration.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/idle-transfiguration.xml" />
 		</update>
 	</info>
@@ -45,7 +45,7 @@
             <p class="indent">You can command with simple orders such as to attack a creature as a bonus action. Complex orders like area control are an action. You can store transfigured creatures, extracting any number as a bonus action.</p>
 		</description>
 		<sheet>
-			<description>Whenever you hit a creature with a natural weapon, unarmed strike, or touch them, you can deal an additional 1d6 Necrotic damage. As an action for 1 cursed energy, you can force said creature within your reach to make a Constitution saving throw. On a failure, they will take {{idle:transfiguration:damage}}d10 Necrotic Damage which reduces a creature's hit point maximum until they finish a long rest. On a success, the creature takes half as much damage. If Necrotic damage from any features of your Idle Transfiguration reduces a creature's total hit points to 0, the creature will become one of your Transfigured Creatures. This does not work on Constructs.</description>
+			<description>Whenever you hit a creature with a natural weapon, unarmed strike, or touch them, you can deal an additional 1d6 Necrotic damage. As an action for 1 CE, force said creature within your reach to make a Constitution saving throw. On a failure, they will take {{idle:transfiguration:damage}}d10 Necrotic Damage which reduces a creature's hit point maximum until they finish a long rest. On a success, the creature takes half as much damage. If Necrotic damage from any features of your Idle Transfiguration reduces a creature's total hit points to 0, the creature will become one of your Transfigured Creatures. This does not work on Constructs.</description>
 		</sheet>
         <rules>
             <grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_IDLE_TRANSFIGURATION_TRANSFIGURED_CREATURES" />
@@ -120,7 +120,7 @@
 			<p>At 6th level, you have learned how to create a near perfect clone of yourself. As an action for 6 Cursed Energy, you create a copy of yourself, giving it half of your current and max Hit Points and Cursed Energy. It is identical to you, controlled by you, acts at the end of your turn, and you can view through its senses. Your clone cannot use your Innate Technique features except Self-Alteration. You can't make another clone until it dies or you touch it and rejoin, granting you back the rest of your max HP and Cursed Energy.</p>
 		</description>
         <sheet action="Action" usage="CE">
-            <description>For 6 cursed energy, you create a copy of yourself, giving it half of your current and max Hit Points and Cursed Energy. It is identical to you, controlled by you, acts at the end of your turn, and you can view through its senses. Your clone cannot use your Innate Technique features except Self-Alteration. You can't make another clone until it dies or you touch it and rejoin, granting you back the rest of your max HP and Cursed Energy.</description>
+            <description>For 6 CE, create a copy of yourself, giving it half of your current and max Hit Points and CE. It is identical to you, controlled by you, acts at the end of your turn, and you can view through its senses. Your clone cannot use your Innate Technique features except Self-Alteration. You can't make another clone until it dies or you touch it and rejoin, granting you back the rest of your max HP and CE.</description>
         </sheet>
 	</element>
 
@@ -137,7 +137,7 @@
             </ul>
 		</description>
         <sheet action="Action" usage="CE">
-			<description>For 5 cursed energy, you can fuse 2 or more of your Transfigured Creatures to use Body Repel or create a Polymorphic Soul Isomer. </description>
+			<description>For 5 CE,  fuse 2 or more of your Transfigured Creatures to use Body Repel or create a Polymorphic Soul Isomer. </description>
 		</sheet>
         <rules>
             <grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_IDLE_TRANSFIGURATION_SOUL_MULTIPLICITY_BODY_REPEL" />
@@ -151,7 +151,7 @@
             <p>You create a barrage of Transfigured creatures being launched at high speeds. You make a ranged Cursed Energy attack with a range of 60/120 feet that deals 4d8 necrotic damage on a hit. For every additional Transfigured Creature, you deal another 1d8 necrotic damage and can split the damage die between different targets to make multiple attacks.</p>
         </description>
         <sheet>
-            <description>You make a ranged Cursed Energy attack with a range of 60/120 feet that deals 4d8 necrotic damage on a hit. For every additional Transfigured Creature, you deal another 1d8 necrotic damage and can split the damage die between different targets to make multiple attacks.</description>
+            <description>Make a ranged CE attack with a range of 60/120 feet that deals 4d8 necrotic damage on a hit. For every additional Transfigured Creature, you deal another 1d8 necrotic damage and can split the damage die between different targets to make multiple attacks.</description>
         </sheet>
     </element>
 
@@ -170,7 +170,7 @@
 			<p>Finally, at 18th level, you have studied your powers and have finally learned your most powerful technique. You create a large dimension filled with your body parts, making escaping death impossible. At initiative 20 creatures within your domain suffer twice your Transfiguration touch damage.</p>
 		</description>
         <sheet>
-			<description>At initiative 20, creatures within your domain suffer twice your Transfiguration touch damage.</description>
+			<description>At Initiative 20, creatures within your domain suffer twice your Transfiguration touch damage.</description>
 		</sheet>
 		<rules>
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION"/>
