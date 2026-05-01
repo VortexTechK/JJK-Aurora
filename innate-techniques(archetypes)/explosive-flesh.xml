@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.0">
+		<update version="6.0.1">
 			<file name="explosive-flesh.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/explosive-flesh.xml" />
 		</update>
 	</info>
@@ -46,7 +46,8 @@
             <p class="indent">The X is your CE modifier. Damage from this technique deals twice as much damage to objects and structures.</p>
         </description>
 		<sheet>
-			<description>You can spend cursed energy to remove and throw your body parts. Damage from this technique deals twice as much damage to objects and structures.</description>
+			<description>You can spend CE to remove and throw your body parts. Damage from this technique deals twice as much damage to objects and structures.</description>
+			<description level="11">You can spend CE to remove and throw your body parts. Damage from this technique deals thrice as much damage to objects and structures.</description>
 		</sheet>
         <rules>
             <grant type="Archetype Feature" id="ID_JJK_ARCHETYPE_FEATURE_EXPLOSIVE_FLESH_SELF_DESTRUCTION_TINY" />
@@ -63,8 +64,9 @@
             <p>Effect: You throw the body part at a point within 120ft. Creatures within 5 ft make a Dex save. On a failure, they take Xd6 force damage. On a success, they take half.</p>
         </description>
         <sheet action="Free Action" usage="CE">
-            <description>For 1 cursed energy + {{constitution:modifier}} HP, you throw the body part at a point within 120ft. Creatures within 5 ft make a Dex save. On a failure, they take {{ce:modifier}}d6 force damage. On a success, they take half.</description>
-        </sheet>
+            <description>For 1 CE + {{constitution:modifier}} HP, throw a tiny body part at a point within 120ft. Creatures within 5 ft make a Dex save. On a failure, they take {{ce:modifier}}d6 force damage. On a success, they take half.</description>
+            <description level="11">For 1 CE + {{constitution:modifier}} HP, throw a tiny body part at a point within 120ft. Creatures within 10 ft make a Dex save. On a failure, they take {{ce:modifier}}d6 force damage. On a success, they take half.</description>
+		</sheet>
     </element>
 
     <element name="Small(Ears, Nose)" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_EXPLOSIVE_FLESH_SELF_DESTRUCTION_SMALL">
@@ -74,8 +76,9 @@
             <p>Effect: You throw the body part at a point within 100ft. Creatures within 10 ft make a Dex save. On a failure, they take Xd8 force damage and are knocked prone. On a success they take half.</p>
         </description>
         <sheet action="Bonus Action" usage="CE">
-            <description>For 2 cursed energy + ({{constitution:modifier}}*{{level:half}}) HP, you throw the body part at a point within 100ft. Creatures within 10 ft make a Dex save. On a failure, they take {{ce:modifier}}d8 force damage and are knocked prone. On a success they take half.</description>
-        </sheet>
+            <description>For 2 CE + ({{constitution:modifier}}*{{level:half}}) HP, throw a small body part at a point within 100ft. Creatures within 10 ft make a Dex save. On a failure, they take {{ce:modifier}}d8 force damage and are knocked prone. On a success they take half.</description>
+            <description level="11">For 2 CE + ({{constitution:modifier}}*{{level:half}}) HP, throw a small body part at a point within 100ft. Creatures within 15 ft make a Dex save. On a failure, they take {{ce:modifier}}d8 force damage and are knocked prone. On a success they take half.</description>
+		</sheet>
     </element>
 
     <element name="Medium(Hands, Feet)" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_EXPLOSIVE_FLESH_SELF_DESTRUCTION_MEDIUM">
@@ -85,8 +88,9 @@
             <p>Effect: You throw the body part at a point within 80ft. Creatures within 15 ft make a Dex save. On a failure, they take Xd10 force damage and are knocked prone. On a success, they take half.</p>
         </description>
         <sheet action="Action" usage="CE">
-            <description>For 4 cursed energy + ({{constitution:modifier}}*{{level}}) HP, you throw the body part at a point within 80ft. Creatures within 15 ft make a Dex save. On a failure, they take {{ce:modifier}}d10 force damage and are knocked prone. On a success, they take half.</description>
-        </sheet>
+            <description>For 4 CE + ({{constitution:modifier}}*{{level}}) HP, throw a medium body part at a point within 80ft. Creatures within 15 ft make a Dex save. On a failure, they take {{ce:modifier}}d10 force damage and are knocked prone. On a success, they take half.</description>
+            <description level="11">For 4 CE + ({{constitution:modifier}}*{{level}}) HP, throw a medium body part at a point within 80ft. Creatures within 20 ft make a Dex save. On a failure, they take {{ce:modifier}}d10 force damage and are knocked prone. On a success, they take half.</description>
+		</sheet>
     </element>
 
     <element name="Large(Arms, Legs)" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_EXPLOSIVE_FLESH_SELF_DESTRUCTION_LARGE">
@@ -96,8 +100,9 @@
             <p>Effect: You throw the body part at a point within 60ft. Creatures within 20 ft make a Dex save. On a failure, they take Xd12 force damage and are knocked prone. On a success, they take half.</p>
         </description>
         <sheet action="Full Turn Action" usage="CE">
-            <description>For 6 cursed energy + ({{constitution:modifier}}*{{level}}) HP, you throw the body part at a point within 60ft. Creatures within 20 ft make a Dex save. On a failure, they take {{ce:modifier}}d12 force damage and are knocked prone. On a success, they take half.</description>
-        </sheet>
+            <description>For 6 CE + ({{constitution:modifier}}*{{level}}) HP, throw a large body part at a point within 60ft. Creatures within 20 ft make a Dex save. On a failure, they take {{ce:modifier}}d12 force damage and are knocked prone. On a success, they take half.</description>
+            <description level="11">For 6 CE + ({{constitution:modifier}}*{{level}}) HP, throw a large body part at a point within 60ft. Creatures within 25 ft make a Dex save. On a failure, they take {{ce:modifier}}d12 force damage and are knocked prone. On a success, they take half.</description>
+		</sheet>
     </element>
 
 	<element name="Faster Throws" type="Archetype Feature" source="JJK" id="ID_JJK_ARCHETYPE_FEATURE_EXPLOSIVE_FLESH_FASTER_THROWS">
@@ -127,8 +132,8 @@
             <p class="indent">At 18th level, the creature also gains the blinded condition.</p>
         </description>
         <sheet>
-			<description level="11">When a creature fails the saving throw of your explosions, they gain the deafened condition for 1 minute. They can make a Constitution saving throw at the beginning of their turns, ending the condition early on a success. Also, your explosions deal three times as much damage to objects and structures and their explosion range is increased by 5ft.</description>
-			<description level="18">When a creature fails the saving throw of your explosions, they gain the deafened and blinded conditions for 1 minute. They can make a Constitution saving throw at the beginning of their turns, ending the condition early on a success. Also, your explosions deal three times as much damage to objects and structures and their explosion range is increased by 5ft.</description>
+			<description level="11">When a creature fails the saving throw of your explosions, they gain the deafened condition for 1 minute. They can make a Constitution saving throw at the beginning of their turns, ending the condition early on a success.</description>
+			<description level="18">When a creature fails the saving throw of your explosions, they gain the deafened and blinded conditions for 1 minute. They can make a Constitution saving throw at the beginning of their turns, ending the condition early on a success.</description>
         </sheet>
 	</element>
 
@@ -138,7 +143,7 @@
 			<p>At 18th level, you have mastered your technique, allowing you to expand your domain. You can detonate any of your body parts for no CE cost. At initiative 20, you can choose a limb from a creature inside your domain and detonate it.</p>
 		</description>
         <sheet>
-			<description>You can detonate any of your body parts for no CE cost. At initiative 20, you can choose a limb from a creature inside your domain and detonate it.</description>
+			<description>You can detonate any of your body parts for no CE cost. At Initiative 20, you can choose a limb from a creature inside your domain and detonate it.</description>
 		</sheet>
 		<rules>
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_DOMAIN_EXPANSION"/>
