@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="6.0.0">
+		<update version="6.0.1">
 			<file name="ice-formation.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/innate-techniques(archetypes)/ice-formation.xml" />
 		</update>
 	</info>
@@ -37,7 +37,7 @@
             <p class="indent">At 3rd level, the damage of this feature increases to 2d10, to 3d10 at 6th, to 4d10 at 10th, to 5d10 at 14th, and to 6d10 cold damage at 20th level.</p>
 		</description>
 		<sheet action="Action" usage="CE">
-			<description>For 1 cursed energy, you can force creatures in a 10ft cone to make a Dexterity saving throw. On a failure, they take {{ice:formation:creation:damage}}d10 cold damage and are restrained by ice. On a success, they take half as much damage and are not restrained. The creature can make a Strength saving throw at the beginning of its turns to end the restrained condition. All ice created by your technique will last until you end it as a free action, a creature breaks it, or you are poisoned, incapacitated, or unconscious.</description>
+			<description>For 1 CE, force creatures in a 10ft cone to make a Dexterity saving throw. On a failure, they take {{ice:formation:creation:damage}}d10 cold damage and are restrained by ice. On a success, they take half as much damage and are not restrained. The creature can make a Strength saving throw at the beginning of its turns to end the restrained condition. All ice created by your technique will last until you end it as a free action, a creature breaks it, or you are poisoned, incapacitated, or unconscious.</description>
 		</sheet>
         <rules>
             <stat name="ice:formation:creation:damage" value="1" level="1" bonus="ice creation"/>
@@ -66,7 +66,7 @@
             <p class="indent">The creature can make a Strength saving throw at the beginning of its turns to break the ice and end the restrained condition.</p>
 		</description>
         <sheet action="Action" usage="CE">
-            <description>For 4 cursed energy, you send a mist to a spot within 60 feet of you. Every creature in a 30-foot radius circle from that spot must make a Dexterity saving throw. On a failure, they take 6d8 cold damage and are restrained by ice. On a success, they take half as much damage and are not restrained. The creature can make a Strength saving throw at the beginning of its turns to break the ice and end the restrained condition.</description>
+            <description>For 4 CE, send a mist to a spot within 60 ft of you. Every creature in a 30-ft radius circle from that spot must make a Dexterity saving throw. On a failure, they take 6d8 cold damage and are restrained by ice. On a success, they take half as much damage and are not restrained. The creature can make a Strength saving throw at the beginning of its turns to break the ice and end the restrained condition.</description>
         </sheet>
 	</element>
 
@@ -78,7 +78,7 @@
             <p class="indent">Hitting or missing, giant spikes of ice will fall from the sky on top of the targeted creatures, forcing them to make a Dexterity saving throw. On a failure, they take 6d8 cold damage and 6d8 piercing damage. On a success, they take half as much damage.</p>
 		</description>
         <sheet action="Action" usage="CE">
-            <description>For 8 cursed energy, you fall prone until the beginning of your next turn. You make a cursed energy attack roll at every creature within 30 ft of you. On a hit, they take 1d10 cold damage and become restrained. The creature can make a Strength saving throw at the beginning of its turns to break the ice and end the restrained condition. All targeted creatures must make a Dexterity saving throw. On a failure, they take 6d8 cold damage and 6d8 piercing damage. On a success, they take half as much damage.</description>
+            <description>For 8 CE, fall prone until the beginning of your next turn and you make a CE attack roll at every creature within 30 ft of you. On a hit, they take 1d10 cold damage and become restrained. The creature can make a Strength saving throw at the beginning of its turns to break the ice and end the restrained condition. All targeted creatures must make a Dexterity saving throw. On a failure, they take 6d8 cold damage and 6d8 piercing damage. On a success, they take half as much damage.</description>
         </sheet>
 	</element>
 
